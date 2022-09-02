@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>IGLU on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/iglu/</link>
+    <description>Recent content in IGLU on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Dec 2021 15:10:56 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/iglu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iglu Neurips 2021 Workshop</title>
+      <link>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/</link>
+      <pubDate>Fri, 10 Dec 2021 06:18:31 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/</guid>
+      <description>[TOC]
+IGLU Minecraft challenge NeurIPS 2021 workshop https://nips.cc/virtual/2021/competition/22444
+The organiser introduced a Web environment for data collection
+ CraftAssist and VoxelWorld.js      Architect task Baseline model
+Ha! No winner that outperforms the baseline?!
+&amp;hellip;. which means I have a chance !
+Builder task  the organiser found out that the reward function would motivate the agent to break blocks  Their Future direction Breakout session Winner Solution https://github.</description>
+    </item>
+    
+    <item>
+      <title>Julia_kiseleva Interactive Grounded Language Understanding in a Collaborative Environment 2021</title>
+      <link>https://sino-huang.github.io/posts/julia_kiseleva-interactive-grounded-language-understanding-in-a-collaborative-environment-2021/</link>
+      <pubDate>Wed, 22 Dec 2021 15:10:56 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/julia_kiseleva-interactive-grounded-language-understanding-in-a-collaborative-environment-2021/</guid>
+      <description>[TOC]
+ Title: Interactive Grounded Language Understanding in a Collaborative Environment Author: Julia Kiseleva et. al. Publish Year: 2021 Review Date: Dec 2021  Summary of paper The primary goal of the competition is to approach the problem of how to build interactive agents that learn to solve a task while provided with grounded natural language instructions in a collaborative environment.
+The split the problem into following concrete research questions, which correspond to separate tasks that can be used to study each component individually before joining all of them into one system</description>
+    </item>
+    
+  </channel>
+</rss>

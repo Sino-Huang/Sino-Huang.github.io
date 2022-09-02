@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>multimodal on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/multimodal/</link>
+    <description>Recent content in multimodal on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 09 Aug 2022 07:26:46 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jiali_duan Multimodal Alignment Using Representation Codebook 2022</title>
+      <link>https://sino-huang.github.io/posts/jiali_duan-multimodal-alignment-using-representation-codebook-2022/</link>
+      <pubDate>Tue, 09 Aug 2022 07:26:46 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiali_duan-multimodal-alignment-using-representation-codebook-2022/</guid>
+      <description>[TOC]
+ Title: Multi-modal Alignment Using Representation Codebook Author: Jiali Duan, Liqun Chen et. al. Publish Year: 2022 CVPR Review Date: Tue, Aug 9, 2022  Summary of paper Motivation  aligning signals from different modalities is an important step as it affects the performance of later stage such as cross-modality fusion. since image and text often reside in different regions of the feature space, directly aligning them at instance level is challenging especially when features are still evolving during training.</description>
+    </item>
+    
+    <item>
+      <title>Deepmind Flamingo a Visual Language Model for Few Shot Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/deepmind-flamingo-a-visual-language-model-for-few-shot-learning-2022/</link>
+      <pubDate>Wed, 11 May 2022 16:35:03 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/deepmind-flamingo-a-visual-language-model-for-few-shot-learning-2022/</guid>
+      <description>[TOC]
+ Title: Flamingo: a Visual Language Model for Few-Shot Learning Author: Jean-Baptiste Alayrac et. al. Publish Year: Apr 2022 Review Date: May 2022  Summary of paper Flamingo architecture Pretrained vision encoder: from pixels to features
+the model&amp;rsquo;s vision encoder is a pretrained Normalizer-Free ResNet (NFNet)
+they pretrain the vision encoder using a contrastive objective on their datasets of image and text pairs, using the two term contrastive loss from paper &amp;ldquo;Learning Transferable Visual Models From Natural Language Supervision&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Junyang_lin M6 a Chinese Multimodal Pretrainer 2021</title>
+      <link>https://sino-huang.github.io/posts/junyang_lin-m6-a-chinese-multimodal-pretrainer-2021/</link>
+      <pubDate>Wed, 12 Jan 2022 13:38:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/junyang_lin-m6-a-chinese-multimodal-pretrainer-2021/</guid>
+      <description>[TOC]
+ Title: M6: A Chinese Multimodal Pretrainer Author: Junyang Lin et. al. Publish Year: May 2021 Review Date: Jan 2022  Summary of paper This paper re-emphasises that
+ large model trained on big data have extremely large capacity and it can outperform the SOTA in downstream tasks especially in the zero-shot setting.  So, the author trained a big multi-modal model
+Also, they proposed a innovative way to tackle downstream tasks.</description>
+    </item>
+    
+  </channel>
+</rss>

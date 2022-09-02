@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>semantic parsing on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/semantic-parsing/</link>
+    <description>Recent content in semantic parsing on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 23 Feb 2022 19:42:39 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/semantic-parsing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anton_belyy Guided K Best Selection for Semantic Parsing Annotation 2021</title>
+      <link>https://sino-huang.github.io/posts/anton_belyy-guided-k-best-selection-for-semantic-parsing-annotation-2021/</link>
+      <pubDate>Wed, 23 Feb 2022 19:42:39 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/anton_belyy-guided-k-best-selection-for-semantic-parsing-annotation-2021/</guid>
+      <description>[TOC]
+ Title: Guided K-best Selection for Semantic Parsing Annotation Author: Anton Belyy et. al. Publish Year: 2021 Review Date: Feb 2022  Summary of paper Motivation They wanted to tackle the challenge of efficient data collection (data annotation) for the conversational semantic parsing task.
+In the presence of little available training data, they proposed human-in-the-loop interfaces for guided K-best selection, using a prototype model trained on limited data.
+Result Their user studies showed that the keyword searching function combined with a keyword suggestion method strikes the balance between annotation accuracy and speed</description>
+    </item>
+    
+    <item>
+      <title>Jiayuan_mao Grammar Based Grounded Lexicon Learning 2021</title>
+      <link>https://sino-huang.github.io/posts/jiayuan_mao-grammar-based-grounded-lexicon-learning-2021/</link>
+      <pubDate>Wed, 22 Dec 2021 17:22:15 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiayuan_mao-grammar-based-grounded-lexicon-learning-2021/</guid>
+      <description>[TOC]
+ Title: Grammar-Based Grounded Lexicon Learning Author: Jiayuan Mao Publish Year: 2021 NeurIPS Review Date: Dec 2021  Summary of paper The paper extend the previous work &amp;ldquo;Neuro-Symbolic Concept Learner&amp;rdquo; by parsing the natural language questions using symbolic manner.
+The core semantic parsing technique is Combinatory Categorical Grammar with CKY algorithm to prune unlikely expressions.
+The full picture looks like this
+The detailed algorithm process looks like this
+How to derive concept embedding</description>
+    </item>
+    
+  </channel>
+</rss>

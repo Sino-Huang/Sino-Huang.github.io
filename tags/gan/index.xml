@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GAN on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/gan/</link>
+    <description>Recent content in GAN on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Jan 2022 16:54:01 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/gan/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alex_nichol Glide Towards Photorealistic Image Generation and Editing With Text Guided Diffusion Models 2021</title>
+      <link>https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/</link>
+      <pubDate>Wed, 12 Jan 2022 16:54:01 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/</guid>
+      <description>[TOC]
+ Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models Author: Alex Nichol et. al. Publish Year: Dec 2021 Review Date: Jan 2022  Summary of paper In author&amp;rsquo;s previous work, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with classifier guidance, a technique which allows diffusion models to condition on a classifier&amp;rsquo;s labels.
+ The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label.</description>
+    </item>
+    
+  </channel>
+</rss>

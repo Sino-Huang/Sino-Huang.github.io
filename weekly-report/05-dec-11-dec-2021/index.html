@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>05 December -- 11 December, 2021 | Sukai Huang</title>
+<meta content="" name="keywords"/>
+<meta content="Last Week’s Work Review
+We finally decided that we should work on Interactive Grounded Language Understanding in Minecraft environment.
+First of all, we should test on the baseline model provided and check the performance of existing models.
+Notice that the NeurIPS Minecraft competition workshop will start at Fri Dec 10 06:45 AM -- 07:05 AM (AEDT)
+We should follow up on the competition model when they are available.
+
+You need password to access to the content, go to Slack *#phdsukai to find more." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/" rel="canonical"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/index.xml" rel="alternate" type="application/rss+xml"/>
+<noscript>
+<style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+<style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
+}
+</script>
+<meta content="05 December -- 11 December, 2021" property="og:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
+<meta content="05 December -- 11 December, 2021" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Weekly-reports",
+      "item": "https://sino-huang.github.io/weekly-report/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "05 December -- 11 December, 2021",
+      "item": "https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archives">
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="📁">
+<span>📁</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="🏷️">
+<span>🏷️</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/search/" title="🔍">
+<span>🔍</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main">
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
+<h1>
+    05 December -- 11 December, 2021
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
+</header>
+<div class="post-content"><h2 id="last-weeks-work-review">Last Week’s Work Review<a aria-hidden="true" class="anchor" hidden="" href="#last-weeks-work-review">#</a></h2>
+<p>We finally decided that we should work on Interactive <a href="https://www.iglu-contest.net/">Grounded Language Understanding in Minecraft environment</a>.</p>
+<p>First of all, we should test on the baseline model provided and check the performance of existing models.</p>
+<p>Notice that the NeurIPS Minecraft competition workshop will start at <code>Fri Dec 10 06:45 AM -- 07:05 AM (AEDT)</code></p>
+<p>We should follow up on the competition model when they are available.</p>
+<hr/>
+<p>You need password to access to the content, go to Slack *#phdsukai to find more.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<script>
+  
+  document.querySelector(".hugo-encryptor-input").addEventListener("keyup", event => {
+      if(event.key !== "Enter") return; 
+      document.querySelector(".hugo-encryptor-button").click(); 
+      event.preventDefault(); 
+  });
+</script>
+</div>
+<article class="post-entry">
+<header class="entry-header">
+<h2>Iglu Neurips 2021 Workshop
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+IGLU Minecraft challenge NeurIPS 2021 workshop https://nips.cc/virtual/2021/competition/22444
+The organiser introduced a Web environment for data collection
+ CraftAssist and VoxelWorld.js      Architect task Baseline model
+Ha! No winner that outperforms the baseline?!
+…. which means I have a chance !
+Builder task  the organiser found out that the reward function would motivate the agent to break blocks  Their Future direction Breakout session Winner Solution https://github....</p>
+</div>
+<footer class="entry-footer"><span title="2021-12-10 06:18:31 +1100 AEDT">December 10, 2021</span> · 1 min · Sukai Huang</footer>
+<a aria-label="post link to Iglu Neurips 2021 Workshop" class="entry-link" href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/"></a>
+</article>
+<article class="post-entry">
+<header class="entry-header">
+<h2>Interesting Tutorial Slides in Neurips 2021
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Interesting Tutorial Slides in NeurIPS 2021 I am going to gather interesting Slides from each Workshops I watched
+DeepMind NeuroSymbolic AI The Art of Gaussian Process Self supervised learning Emergent Communication Attention over learned object embeddings enables complex visual reasoning  read the paper !  https://github.com/deepmind/deepmind-research/tree/master/object_attention_for_reasoning</p>
+</div>
+<footer class="entry-footer"><span title="2021-12-08 17:14:57 +1100 AEDT">December 8, 2021</span> · 1 min · Sukai Huang</footer>
+<a aria-label="post link to Interesting Tutorial Slides in Neurips 2021" class="entry-link" href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/interesting-slides-in-neurips-2021/"></a>
+</article>
+<article class="post-entry">
+<header class="entry-header">
+<h2>Environment deployment Notes
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Setup dreamer builder for IGLU Minecraft task — setup notes Advantages of using pip install git check https://dev.to/fronkan/pip-install-a-git-repository-111b
+This will not create dependencies on the local machine
+python -c flag execute the python code in command
+e.g,
+python -c ' import pprint pprint.pprint(1) ' set TF_XLA variable TF_XLA_FLAGS=--tf_xla_auto_jit=2
+use python=3.7 otherwise the environment will crash.
+some strange bugs of the environment if I directly follow the instructions from https://github.com/iglu-contest/iglu, I will install the iglu:0....</p>
+</div>
+<footer class="entry-footer"><span title="2021-12-06 20:13:12 +1100 AEDT">December 6, 2021</span> · 4 min · Sukai Huang</footer>
+<a aria-label="post link to Environment deployment Notes" class="entry-link" href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/engineering-notes/"></a>
+</article>
+<article class="post-entry">
+<header class="entry-header">
+<h2>Docker Notes
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Setup dreamer builder for IGLU Minecraft task — Docker Session The author suggested to use Docker environment.
+HOWEVER, due to some unknown reason, my current ubuntu desktop cannot run nvidia-docker, and thus cannot connect to GPU device in the container, thus I decided that we do not deploy the model on docker!
+The following are useful tips regarding to docker commands.
+docker permission issue in order to connect to docker sock...</p>
+</div>
+<footer class="entry-footer"><span title="2021-12-05 20:40:59 +1100 AEDT">December 5, 2021</span> · 3 min · Sukai Huang</footer>
+<a aria-label="post link to Docker Notes" class="entry-link" href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/docker-notes/"></a>
+</article>
+</main>
+<footer class="footer">
+<span>© 2022 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+</span>
+</footer>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
+</a>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</html>

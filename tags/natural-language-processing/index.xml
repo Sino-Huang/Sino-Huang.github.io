@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>natural language processing on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/natural-language-processing/</link>
+    <description>Recent content in natural language processing on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 27 Aug 2022 00:31:38 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gregor_geigle Retrieve Fast Rerank Smart Cooperative and Joint Approaches for Improved Cross Modal Retrieval 2022</title>
+      <link>https://sino-huang.github.io/posts/gregor_geigle-retrieve-fast-rerank-smart-coorperative-and-joint-approaches-for-improved-cross-modal-retrieval-2022/</link>
+      <pubDate>Sat, 27 Aug 2022 00:31:38 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/gregor_geigle-retrieve-fast-rerank-smart-coorperative-and-joint-approaches-for-improved-cross-modal-retrieval-2022/</guid>
+      <description>[TOC]
+ Title: Retrieve Fast, Rerank Smart: Cooperative and Joint Approaches for Improved Cross-Modal Retrieval Author: Gregor Geigle et. al. Publish Year: 19 Feb, 2022 Review Date: Sat, Aug 27, 2022  Summary of paper Motivation they want to combine the cross encoder and the bi encoder advantages and have a more efficient cross-modal search and retrieval
+ efficiency and simplicity of BE approach based on twin network expressiveness and cutting-edge performance of CE methods.</description>
+    </item>
+    
+    <item>
+      <title>Kaitao_song Mpnet Masked and Permuted Retrain for Language Understanding 2020</title>
+      <link>https://sino-huang.github.io/posts/kaitao_song-mpnet-masked-and-permuted-retrain-for-language-understanding-2020/</link>
+      <pubDate>Thu, 25 Aug 2022 12:24:55 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/kaitao_song-mpnet-masked-and-permuted-retrain-for-language-understanding-2020/</guid>
+      <description>[TOC]
+ Title: MPNet: Masked and Permuted Pre-training for Language Understanding Author: Kaitao Song et. al. Publish Year: 2020 Review Date: Thu, Aug 25, 2022  Summary of paper Motivation   BERT adopts masked language modelling (MLM) for pre-training and is one of the most successful pre-training models.
+  Since BERT is all attention block and the positional embedding is the only info that care about the ordering, BERT neglects dependency among predicted tokens</description>
+    </item>
+    
+    <item>
+      <title>Deepmind Flamingo a Visual Language Model for Few Shot Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/deepmind-flamingo-a-visual-language-model-for-few-shot-learning-2022/</link>
+      <pubDate>Wed, 11 May 2022 16:35:03 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/deepmind-flamingo-a-visual-language-model-for-few-shot-learning-2022/</guid>
+      <description>[TOC]
+ Title: Flamingo: a Visual Language Model for Few-Shot Learning Author: Jean-Baptiste Alayrac et. al. Publish Year: Apr 2022 Review Date: May 2022  Summary of paper Flamingo architecture Pretrained vision encoder: from pixels to features
+the model&amp;rsquo;s vision encoder is a pretrained Normalizer-Free ResNet (NFNet)
+they pretrain the vision encoder using a contrastive objective on their datasets of image and text pairs, using the two term contrastive loss from paper &amp;ldquo;Learning Transferable Visual Models From Natural Language Supervision&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Angela_fan Augmenting Transformer With Knn Composite Memory for Dialog 2021</title>
+      <link>https://sino-huang.github.io/posts/angela_fan-augmenting-transformer-with-knn-composite-memory-for-dialog-2021/</link>
+      <pubDate>Thu, 21 Apr 2022 11:01:14 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/angela_fan-augmenting-transformer-with-knn-composite-memory-for-dialog-2021/</guid>
+      <description>[TOC]
+ Title: Augmenting Transformers with KNN-based composite memory for dialog Author: Angela Fan et. al. Publish Year: 2021 Review Date: Apr 2022  Summary of paper Motivation The author proposed augmenting generative Transformer neural network with KNN based Information Fetching module
+Each KIF module learns a read operation to access fix external knowledge (e.g., WIKI)
+The author demonstrated the effectiveness of this approach by identifying relevant knowledge required for knowledgeable but engaging dialog from Wikipedia, images and human-written dialog utterances.</description>
+    </item>
+    
+    <item>
+      <title>Sebastian_borgeaud Improving Language Models by Retrieving From Trillions of Tokens 2022</title>
+      <link>https://sino-huang.github.io/posts/sebastian_borgeaud-improving-language-models-by-retrieving-from-trillions-of-tokens-2022/</link>
+      <pubDate>Mon, 21 Mar 2022 19:07:36 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/sebastian_borgeaud-improving-language-models-by-retrieving-from-trillions-of-tokens-2022/</guid>
+      <description>[TOC]
+ Title: Improving language models by retrieving from trillions of tokens Author: Sebastian Borgeaud et. al. Publish Year: Feb 2022 Review Date: Mar 2022  Summary of paper Motivation in order to decrease the size of language model, this work suggested retrieval from a large text database as a complementary path to scaling language models.
+they equip models with the ability to directly access a large dataset to perform prediction &amp;ndash; a semi-parametric approach.</description>
+    </item>
+    
+    <item>
+      <title>Machel_reid Can Wikipedia Help Offline Rl 2022</title>
+      <link>https://sino-huang.github.io/posts/machel_reid-can-wikipedia-help-offline-rl-2022/</link>
+      <pubDate>Wed, 16 Mar 2022 21:18:24 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/machel_reid-can-wikipedia-help-offline-rl-2022/</guid>
+      <description>[TOC]
+ Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022  Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
+Moreover, when the model is trained from scratch, it suffers from slow convergence speeds
+In this paper, they look to take advantage of this formulation of reinforcement learning as sequence modelling and investigate the transferability of pre-trained sequence models on other domains (vision, language) when fine tuned on offline RL tasks (control, games).</description>
+    </item>
+    
+    <item>
+      <title>Wenfeng_feng Extracting Action Sequences From Texts by Rl</title>
+      <link>https://sino-huang.github.io/posts/wenfeng_feng-extracting-action-sequences-from-texts-by-rl/</link>
+      <pubDate>Tue, 15 Mar 2022 14:40:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/wenfeng_feng-extracting-action-sequences-from-texts-by-rl/</guid>
+      <description>[TOC]
+ Title: Extracting Action Sequences from Texts Based on Deep Reinforcement Learning Author: Wenfeng Feng et. al. Publish Year: Mar 2018 Review Date: Mar 2022  Summary of paper Motivation the author want to build a model that learns to directly extract action sequences without external tools like POS tagging and dependency parsing results&amp;hellip;
+Annotation dataset structure
+example
+Model
+they exploit the framework to learn two models to predict action names and arguments respectively.</description>
+    </item>
+    
+    <item>
+      <title>Shivam_miglani Nltopddl Learning From Nlp Manuals 2020</title>
+      <link>https://sino-huang.github.io/posts/shivam_miglani-nltopddl-learning-from-nlp-manuals-2020/</link>
+      <pubDate>Mon, 14 Mar 2022 15:08:45 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/shivam_miglani-nltopddl-learning-from-nlp-manuals-2020/</guid>
+      <description>[TOC]
+ Title: NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals Author: Shivam Miglani et. al. Publish Year: 2020 Review Date: Mar 2022  Summary of paper Motivation pipeline
+Pipeline architecture
+Phase 1 we have a DQN that learns to extract words that represent action name, action arguments, and the sequence of actions present in annotated NL process manuals. (why only action name, do we need to extract other information?</description>
+    </item>
+    
+    <item>
+      <title>Roma_patel Learning to Ground Language Temporal Logical Form 2019</title>
+      <link>https://sino-huang.github.io/posts/roma_patel-learning-to-ground-language-temporal-logical-form-2019/</link>
+      <pubDate>Mon, 28 Feb 2022 21:40:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/roma_patel-learning-to-ground-language-temporal-logical-form-2019/</guid>
+      <description>[TOC]
+ Title: Learning to Ground Language to Temporal Logical Form Author: Roma Patel et. al. Publish Year: 2019 Review Date: Feb 2022  Summary of paper Motivation natural language commands often exhibits sequential (temporal) constraints e.g., &amp;ldquo;go through the kitchen and then into the living room&amp;rdquo;.
+But this constraints cannot be expressed in the reward of Markov Decision Process setting. (see this paper)
+Therefore, they proposed to ground language to Linear Temporal logic (LTL) and after that continue to map from LTL expressions to action sequences.</description>
+    </item>
+    
+    <item>
+      <title>Anton_belyy Guided K Best Selection for Semantic Parsing Annotation 2021</title>
+      <link>https://sino-huang.github.io/posts/anton_belyy-guided-k-best-selection-for-semantic-parsing-annotation-2021/</link>
+      <pubDate>Wed, 23 Feb 2022 19:42:39 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/anton_belyy-guided-k-best-selection-for-semantic-parsing-annotation-2021/</guid>
+      <description>[TOC]
+ Title: Guided K-best Selection for Semantic Parsing Annotation Author: Anton Belyy et. al. Publish Year: 2021 Review Date: Feb 2022  Summary of paper Motivation They wanted to tackle the challenge of efficient data collection (data annotation) for the conversational semantic parsing task.
+In the presence of little available training data, they proposed human-in-the-loop interfaces for guided K-best selection, using a prototype model trained on limited data.
+Result Their user studies showed that the keyword searching function combined with a keyword suggestion method strikes the balance between annotation accuracy and speed</description>
+    </item>
+    
+    <item>
+      <title>Jacob_andreas Compositionality as Lexical Symmetry 2022</title>
+      <link>https://sino-huang.github.io/posts/jacob_andreas-compositionality-as-lexical-symmetry-2022/</link>
+      <pubDate>Tue, 08 Feb 2022 14:20:19 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jacob_andreas-compositionality-as-lexical-symmetry-2022/</guid>
+      <description>[TOC]
+ Title: Compositionality as Lexical Symmetry Author: Ekin Akyurek; Jacob Andreas Publish Year: Jan 2022 Review Date: Feb 2022  Summary of paper Motivation Standard deep network models lack the inductive bias needed to generalize compositionally in tasks like semantic parsing, translation, and question answering.
+So, a large body of work in NLP seeks to overcome this limitation with new model architectures that enforce a compositional process of sentence interpretation.</description>
+    </item>
+    
+    <item>
+      <title>Alex_nichol Glide Towards Photorealistic Image Generation and Editing With Text Guided Diffusion Models 2021</title>
+      <link>https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/</link>
+      <pubDate>Wed, 12 Jan 2022 16:54:01 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/</guid>
+      <description>[TOC]
+ Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models Author: Alex Nichol et. al. Publish Year: Dec 2021 Review Date: Jan 2022  Summary of paper In author&amp;rsquo;s previous work, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with classifier guidance, a technique which allows diffusion models to condition on a classifier&amp;rsquo;s labels.
+ The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label.</description>
+    </item>
+    
+    <item>
+      <title>Yiding_jiang Language as Abstraction for Hierarchical Deep Reinforcement Learning</title>
+      <link>https://sino-huang.github.io/posts/yiding_jiang-language-as-abstraction-for-hierarchical-deep-reinforcement-learning/</link>
+      <pubDate>Wed, 15 Dec 2021 19:49:28 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yiding_jiang-language-as-abstraction-for-hierarchical-deep-reinforcement-learning/</guid>
+      <description>[TOC]
+ Title: Language as an Abstraction for Hierarchical Deep Reinforcement Learning Author: Yiding Jiang et. al. Publish Year: 2019 NeurIPS Review Date: Dec 2021  Summary of paper Solving complex, temporally-extended tasks is a long-standing problem in RL.
+Acquiring effective yet general abstractions for hierarchical RL is remarkably challenging.
+Therefore, they propose to use language as the abstraction, as it provides unique compositional structure, enabling fast learning and combinatorial generalisation</description>
+    </item>
+    
+    <item>
+      <title>Hengyuan_hu Hierarchical Decision Making by Generating and Following Natural Language Instructions 2019</title>
+      <link>https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/</link>
+      <pubDate>Wed, 15 Dec 2021 13:11:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/</guid>
+      <description>[TOC]
+ Title: Hierarchical Decision Making by Generating and Following Natural Language Instructions Author: Hengyuan Hu et. al. FAIR Publish Year: 2019 Review Date: Dec 2021  Summary of paper One line summary: they build a Architect Builder model to clone human behaviour for playing RTS game
+Their task environment is very similar to IGLU competition setting, but their model is too task-specific
+The author mentioned some properties about natural language instructions</description>
+    </item>
+    
+    <item>
+      <title>David_ding Attention Over Learned Object Embeddings Enables Complex Visual Reasoning 2021</title>
+      <link>https://sino-huang.github.io/posts/david_ding-attention-over-learned-object-embeddings-enables-complex-visual-reasoning-2021/</link>
+      <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/david_ding-attention-over-learned-object-embeddings-enables-complex-visual-reasoning-2021/</guid>
+      <description>Title: Attention Over Learned Object Embeddings Enables Complex Visual Reasoning Author: David Ding et. al. Publish Year: 2021 NeurIPS Review Date: Dec 2021  Background info for this paper:
+Their paper propose a all-in-one transformer model that is able to answer CLEVRER counterfactual questions with higher accuracy (75.6% vs 46.5%) and less training data (- 40%)
+They believe that their model relies on three key aspects:
+ self-attention soft-discretization self-supervised learning  What is self-attention</description>
+    </item>
+    
+    <item>
+      <title>Jacob_andreas Modular Multitask Reinforcement Learning With Policy Sketches 2017</title>
+      <link>https://sino-huang.github.io/posts/jacob_andreas-modular-multitask-reinforcement-learning-with-policy-sketches-2017/</link>
+      <pubDate>Mon, 13 Dec 2021 17:23:12 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jacob_andreas-modular-multitask-reinforcement-learning-with-policy-sketches-2017/</guid>
+      <description>Title: Modular Multitask Reinforcement Learning with Policy Sketches Author: Jacob Andreas et. al. Publish Year: 2017 Review Date: Dec 2021  Background info for this paper:
+Their paper describe a framework that is inspired by on options MDP, for which a reinforcement learning task is handled by several sub-MDP modules. (that is why they call it Modular RL)
+They consider a multitask RL problem in a shared environment. (See the figure below).</description>
+    </item>
+    
+    <item>
+      <title>Cristian Paul Bara Mindcraft Theory of Mind Modelling 2021 Paper Review</title>
+      <link>https://sino-huang.github.io/posts/cristian-paul-bara-mindcraft-theory-of-mind-modelling-2021-paper-review/</link>
+      <pubDate>Fri, 12 Nov 2021 12:56:24 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/cristian-paul-bara-mindcraft-theory-of-mind-modelling-2021-paper-review/</guid>
+      <description>[TOC]
+ Title: MINDCRAFT: Theory of Mind Modeling for Situated Dialogue in Collaborative Tasks Author: Cristian-Paul Bara et. al. Publish Year: 2021 EMNLP Review Date: 12 Nov 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
+ The contribution of this paper is the mind modelling dataset (Using Minecraft environment).</description>
+    </item>
+    
+  </channel>
+</rss>

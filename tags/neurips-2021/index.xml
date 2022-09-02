@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NeurIPS-2021 on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/neurips-2021/</link>
+    <description>Recent content in NeurIPS-2021 on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 Dec 2021 06:18:31 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/neurips-2021/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iglu Neurips 2021 Workshop</title>
+      <link>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/</link>
+      <pubDate>Fri, 10 Dec 2021 06:18:31 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/</guid>
+      <description>[TOC]
+IGLU Minecraft challenge NeurIPS 2021 workshop https://nips.cc/virtual/2021/competition/22444
+The organiser introduced a Web environment for data collection
+ CraftAssist and VoxelWorld.js      Architect task Baseline model
+Ha! No winner that outperforms the baseline?!
+&amp;hellip;. which means I have a chance !
+Builder task  the organiser found out that the reward function would motivate the agent to break blocks  Their Future direction Breakout session Winner Solution https://github.</description>
+    </item>
+    
+    <item>
+      <title>Interesting Tutorial Slides in Neurips 2021</title>
+      <link>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/interesting-slides-in-neurips-2021/</link>
+      <pubDate>Wed, 08 Dec 2021 17:14:57 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/interesting-slides-in-neurips-2021/</guid>
+      <description>[TOC]
+Interesting Tutorial Slides in NeurIPS 2021 I am going to gather interesting Slides from each Workshops I watched
+DeepMind NeuroSymbolic AI The Art of Gaussian Process Self supervised learning Emergent Communication Attention over learned object embeddings enables complex visual reasoning  read the paper !  https://github.com/deepmind/deepmind-research/tree/master/object_attention_for_reasoning</description>
+    </item>
+    
+  </channel>
+</rss>

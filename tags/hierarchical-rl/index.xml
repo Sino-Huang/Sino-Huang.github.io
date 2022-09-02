@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>hierarchical RL on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/hierarchical-rl/</link>
+    <description>Recent content in hierarchical RL on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 15 Dec 2021 13:11:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/hierarchical-rl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hengyuan_hu Hierarchical Decision Making by Generating and Following Natural Language Instructions 2019</title>
+      <link>https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/</link>
+      <pubDate>Wed, 15 Dec 2021 13:11:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/</guid>
+      <description>[TOC]
+ Title: Hierarchical Decision Making by Generating and Following Natural Language Instructions Author: Hengyuan Hu et. al. FAIR Publish Year: 2019 Review Date: Dec 2021  Summary of paper One line summary: they build a Architect Builder model to clone human behaviour for playing RTS game
+Their task environment is very similar to IGLU competition setting, but their model is too task-specific
+The author mentioned some properties about natural language instructions</description>
+    </item>
+    
+    <item>
+      <title>Jacob_andreas Modular Multitask Reinforcement Learning With Policy Sketches 2017</title>
+      <link>https://sino-huang.github.io/posts/jacob_andreas-modular-multitask-reinforcement-learning-with-policy-sketches-2017/</link>
+      <pubDate>Mon, 13 Dec 2021 17:23:12 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jacob_andreas-modular-multitask-reinforcement-learning-with-policy-sketches-2017/</guid>
+      <description>Title: Modular Multitask Reinforcement Learning with Policy Sketches Author: Jacob Andreas et. al. Publish Year: 2017 Review Date: Dec 2021  Background info for this paper:
+Their paper describe a framework that is inspired by on options MDP, for which a reinforcement learning task is handled by several sub-MDP modules. (that is why they call it Modular RL)
+They consider a multitask RL problem in a shared environment. (See the figure below).</description>
+    </item>
+    
+  </channel>
+</rss>

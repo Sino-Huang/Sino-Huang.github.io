@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>docker on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/docker/</link>
+    <description>Recent content in docker on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Dec 2021 20:40:59 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker Notes</title>
+      <link>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/docker-notes/</link>
+      <pubDate>Sun, 05 Dec 2021 20:40:59 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/docker-notes/</guid>
+      <description>[TOC]
+Setup dreamer builder for IGLU Minecraft task &amp;mdash; Docker Session The author suggested to use Docker environment.
+HOWEVER, due to some unknown reason, my current ubuntu desktop cannot run nvidia-docker, and thus cannot connect to GPU device in the container, thus I decided that we do not deploy the model on docker!
+The following are useful tips regarding to docker commands.
+docker permission issue in order to connect to docker sock</description>
+    </item>
+    
+  </channel>
+</rss>
