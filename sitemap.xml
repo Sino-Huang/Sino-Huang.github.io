@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/weekly-report/01-sep-11-sep-2022/</loc>
+    <lastmod>2022-09-03T16:26:36+10:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/weekly-report/07-aug-13-aug-2022/</loc>
     <lastmod>2022-08-08T17:40:55+10:00</lastmod>
   </url><url>
@@ -99,7 +102,28 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2022-08-27T16:03:42+10:00</lastmod>
+    <lastmod>2022-09-03T17:17:47+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2022-09-03T17:17:47+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/pengchuan_zhang-vinvl-revisiting-visual-representations-in-vision-language-models-2021/</loc>
+    <lastmod>2022-09-03T17:17:47+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2022-09-03T17:17:47+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2022-09-03T17:17:47+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/xiujun_li-oscar-object-semantic-aligned-pro-training-for-vision-language-tasks-2020/</loc>
+    <lastmod>2022-09-03T17:12:54+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/september-2022-weekly-progress/</loc>
+    <lastmod>2022-09-03T16:26:36+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/weekly-report/</loc>
+    <lastmod>2022-09-03T16:26:36+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/contrastive-learning/</loc>
     <lastmod>2022-08-27T16:03:42+10:00</lastmod>
@@ -107,16 +131,7 @@
     <loc>https://sino-huang.github.io/tags/future-work/</loc>
     <lastmod>2022-08-27T16:03:42+10:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2022-08-27T16:03:42+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2022-08-27T16:03:42+10:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/tags/sentence-embeddings/</loc>
-    <lastmod>2022-08-27T16:03:42+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
     <lastmod>2022-08-27T16:03:42+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/</loc>
@@ -150,9 +165,6 @@
     <lastmod>2022-08-09T07:26:46+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/august-2022-weekly-progress/</loc>
-    <lastmod>2022-08-08T17:40:55+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/weekly-report/</loc>
     <lastmod>2022-08-08T17:40:55+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/instruction-following-as-a-path-to-general-problem-solving-agent-aug-2022/</loc>
