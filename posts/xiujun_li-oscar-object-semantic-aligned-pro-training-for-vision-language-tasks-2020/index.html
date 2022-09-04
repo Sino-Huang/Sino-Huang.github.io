@@ -5,9 +5,10 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Xiujun_li Oscar Object Semantic Aligned Pro Training for Vision Language Tasks 2020 | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="multimodal" name="keywords"/>
 <meta content="[TOC]
- Title: Oscar: Object Semantic Aligned Pro Training for Vision Language Tasks Author: Xiujun Li et. al. Publish Year: 26 Jul 2020 Review Date: Sat, Sep 3, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: Oscar: Object Semantic Aligned Pro Training for Vision Language Tasks Author: Xiujun Li et. al. Publish Year: 26 Jul 2020 Review Date: Sat, Sep 3, 2022  Summary of paper Motivation   Existing method simply concatenates image region features (patch features) and text features as input to the model to be pre-trained and use self-attention to learn image-text semantic alignments in a brute force manner.
+  the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/xiujun_li-oscar-object-semantic-aligned-pro-training-for-vision-language-tasks-2020/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -200,13 +201,80 @@ if (!doNotTrack) {
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>
+<p>Existing method simply concatenates image region features (patch features) and text features as input to the model to be pre-trained and use self-attention to learn image-text semantic alignments in a brute force manner.</p>
+</li>
+<li>
+<p>the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task.</p>
+</li>
+<li>
+<p>Moreover, visual regions are often over-sampled, noisy and ambiguous, which makes the task even more challenging.</p>
+</li>
+<li>
+<p>in this paper, they proposed a method that uses object tag detected in images as <em>anchor points</em> to significantly ease the learning of alignments.</p>
+</li>
+</ul>
+<p><strong>Motivation</strong></p>
+<ul>
+<li>the salient objects in an image can be accurately detected and are often mentioned in the text.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
+<p><strong>how self-attention transformer learn cross-modal contextualised representation</strong></p>
+<ul>
+<li>it takes visual region features $v = {v_1, …, v_k}$ and word embedding $w = {w_1, …, w_T}$ of its paired text as input, and relies on the self-attention mechanism to learn image-text alignments to produce cross-modal contextual representation.</li>
+</ul>
+<p><strong>What things VLP method suffers</strong></p>
+<ol>
+<li>ambiguity,
+<ol>
+<li>the visual region features are usually extracted from over-sampled regions, which inevitably results in overlaps among image regions at different positions. This renders ambiguities for the extracted visual embeddings.</li>
+<li>i.e., overlap of objects in the image</li>
+</ol>
+</li>
+<li>lack of grounding.
+<ol>
+<li>there is no explicit label alignments between regions or objects in an image and words or phrases in text.</li>
+<li>therefore we may want to summarised the image further so that we can match with the abstract words.</li>
+</ol>
+</li>
+</ol>
+<p><strong>OSCAR architecture</strong></p>
+<p><img alt="image-20220904135123964" loading="lazy" src="image-assets/image-20220904135123964.png"/>
+</p>
+<ul>
+<li>word and tag are all in BERT text embeddings</li>
+<li>images is the set of region vectors of the image.</li>
+</ul>
+<p><strong>Preprocess Region feature</strong></p>
+<ul>
+<li>Given an image with K regions of objects (normally over-sampled and noisy), Faster R-CNN is used to extract the visual semantics of each region as (v’, z), where v’ is the region feature and z is the region position. They concatenate $v’$ and $z$ to form a position-sensitive region feature vector, which is further transformed into $v$ using a linear projection to ensure that it has the same vector dimension as that of word embeddings.</li>
+</ul>
+<p><strong>Pre-training objective</strong></p>
+<ul>
+<li>
+<p>15% Maksed Token Loss</p>
+</li>
+<li>
+<p>Contrastive loss</p>
+<ul>
+<li>apply a fully-connected (FC) layer on the top of the special token [CLS] as a binary classifier f(.) to predict whether the pair contains the original image representation or any polluted ones.</li>
+</ul>
+</li>
+<li>
+<p>$\mathcal{L}<em>{\text{Pre-training}} = \mathcal{L}</em>{\text{MTL}} + \mathcal{L}_C$</p>
+</li>
+</ul>
+<h3 id="results">Results<a aria-hidden="true" class="anchor" hidden="" href="#results">#</a></h3>
+<p>feature visualisation</p>
+<p><img alt="image-20220904143351769" loading="lazy" src="image-assets/image-20220904143351769.png"/>
+</p>
+<ul>
+<li>We observe small distances between text and image features of the same objects; some of them are perfectly aligned, as demonstrated by the overlapping regions.</li>
+</ul>
 <h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p>The code and pre-trained models are released: <a href="https://github.com/microsoft/">https://github.com/microsoft/</a>
+Oscar</p>
 </div>
 </main>
 <footer class="footer">
