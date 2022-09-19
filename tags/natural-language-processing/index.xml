@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 27 Aug 2022 00:31:38 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2022 21:55:13 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wenlong_huang Language Models as Zero Shot Planners Extracting Actionable Knowledge for Embodied Agents 2022</title>
+      <link>https://sino-huang.github.io/posts/wenlong_huang-language-models-as-zero-shot-planners-extracting-actionable-knowledge-for-embodied-agents-2022/</link>
+      <pubDate>Mon, 19 Sep 2022 21:55:13 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/wenlong_huang-language-models-as-zero-shot-planners-extracting-actionable-knowledge-for-embodied-agents-2022/</guid>
+      <description>[TOC]
+ Title: Language Models as Zero Shot Planners: Extracting Actionable Knowledge for Embodied Agents Author: Wenlong Huang et. al. Publish Year: Mar 2022 Review Date: Mon, Sep 19, 2022  Summary of paper Motivation  Large language models are learning general commonsense world knowledge. so this paper, the author investigate the possibility of grounding high-level tasks, expressed as natural language (e.g., &amp;ldquo;make breakfast&amp;rdquo;) to a chosen set of action steps (&amp;ldquo;open fridge&amp;rdquo;).</description>
+    </item>
+    
     <item>
       <title>Gregor_geigle Retrieve Fast Rerank Smart Cooperative and Joint Approaches for Improved Cross Modal Retrieval 2022</title>
       <link>https://sino-huang.github.io/posts/gregor_geigle-retrieve-fast-rerank-smart-coorperative-and-joint-approaches-for-improved-cross-modal-retrieval-2022/</link>
