@@ -9,7 +9,19 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 09 Aug 2022 07:37:30 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/blog-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 16:34:09 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/blog-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alex_petrekno Sample Factory Asynchronous Rl at Very High Fps 2020</title>
+      <link>https://sino-huang.github.io/posts/alex_petrekno-sample-factory-asynchronous-rl-at-very-high-fps-2020/</link>
+      <pubDate>Sun, 25 Sep 2022 16:34:09 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alex_petrekno-sample-factory-asynchronous-rl-at-very-high-fps-2020/</guid>
+      <description>[TOC]
+ Title: Sample Factory: Asynchronous Rl at Very High FPS Author: Alex Petrenko Publish Year: Oct, 2020 Review Date: Sun, Sep 25, 2022  Summary of paper Motivation Identifying performance bottlenecks
+  RL involves three workloads:
+ environment simulation inference backpropagation   overall performance depends on the lowest workload In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -&amp;gt; under-utilisation of the system resources.    Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.</description>
+    </item>
+    
     <item>
       <title>Sergios_karagiannakos Vision Language Models Towards Multimodal Dl 2022</title>
       <link>https://sino-huang.github.io/posts/sergios_karagiannakos-vision-language-models-towards-multimodal-dl-2022/</link>
