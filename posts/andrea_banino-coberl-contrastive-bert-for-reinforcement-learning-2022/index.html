@@ -4,11 +4,12 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
-<title>paper review | Sukai Huang</title>
+<title>Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022 | Sukai Huang</title>
 <meta content="" name="keywords"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="description"/>
+<meta content="[TOC]
+ Title: CoBERL Contrastive BERT for Reinforcement Learning Author: Andrea Banino et. al. DeepMind Publish Year: Feb 2022 Review Date: Wed, Oct 5, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
 <meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/categories/paper-review/" rel="canonical"/>
+<link href="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -17,7 +18,7 @@
 <link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
 <meta content="#2e2e33" name="theme-color"/>
 <meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
 <style>
         #theme-toggle,
@@ -55,6 +56,25 @@
 
     </style>
 </noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
@@ -65,14 +85,35 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="paper review" property="og:title"/>
+<meta content="Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/categories/paper-review/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/" property="og:url"/>
+<meta content="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="paper review" name="twitter:title"/>
+<meta content="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/image-assets/cover.png" name="twitter:image"/>
+<meta content="Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022" name="twitter:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://sino-huang.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022",
+      "item": "https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/"
+    }
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
 <script>
@@ -138,9 +179,9 @@ if (!doNotTrack) {
 </nav>
 </header>
 <main class="main">
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
 <h1>
-    paper review
+    Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022
     <a aria-label="RSS" href="index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
@@ -150,76 +191,23 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>David_abel on the Expressivity of Markov Reward 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: On the Expressivity of Markov Reward Author: David Abel et. al. Publish Year: NuerIPS 2021 Review Date: 6 Dec 2021  Summary of paper This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
-The author found out that in the Markov Decision Process scenario, (i.e., we do not look at the history of the trajectory to provide rewards), some tasks cannot be realised perfectly by reward functions....</p>
+<div class="post-content"><p>[TOC]</p>
+<ol>
+<li>Title: CoBERL Contrastive BERT for Reinforcement Learning</li>
+<li>Author: Andrea Banino et. al. DeepMind</li>
+<li>Publish Year: Feb 2022</li>
+<li>Review Date: Wed, Oct 5, 2022</li>
+</ol>
+<h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
+<h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
+<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
+<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
+<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
+<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
+<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
 </div>
-<footer class="entry-footer"><span title="2021-12-05 12:02:23 +1100 AEDT">December 5, 2021</span> · 5 min · Sukai Huang</footer>
-<a aria-label="post link to David_abel on the Expressivity of Markov Reward 2021" class="entry-link" href="https://sino-huang.github.io/posts/david_abel-on-the-expressivity-of-markov-reward-2021/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Rishabh_agarwal Deep Reinforcement Learning at the Edge of the Stats Precipice 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Deep Reinforcement Learning at the Edge of the Statistical Precipice Author: Rishabh Agarwal et. al. Publish Year: NeurIPS 2021 Review Date: 3 Dec 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- Most current published results on deep RL benchmarks uses point estimate of aggregate performance such as mean and median score across the task....</p>
-</div>
-<footer class="entry-footer"><span title="2021-12-03 19:50:10 +1100 AEDT">December 3, 2021</span> · 3 min · Sukai Huang</footer>
-<a aria-label="post link to Rishabh_agarwal Deep Reinforcement Learning at the Edge of the Stats Precipice 2021" class="entry-link" href="https://sino-huang.github.io/posts/rishabh_agarwal-deep-reinforcement-learning-at-the-edge-of-the-stats-precipice-2021/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Borja_ibarz Reward Learning From Human Preferences and Demonstrations in Atari 2018
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Reward learning from human preferences and demonstractions in Atari Author: Borja Ibarz et. al. Publish Year: 2018 Review Date: Nov 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- The author proposed a method that uses human expert’s annotation rather than extrinsic reward from the environment to guide the reinforcement learning....</p>
-</div>
-<footer class="entry-footer"><span title="2021-11-27 19:14:04 +1100 AEDT">November 27, 2021</span> · 2 min · Sukai Huang</footer>
-<a aria-label="post link to Borja_ibarz Reward Learning From Human Preferences and Demonstrations in Atari 2018" class="entry-link" href="https://sino-huang.github.io/posts/borja_ibarz-reward-learning-from-human-preferences-and-demonstrations-in-atari-2018/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Adrien_ecoffet Go Explore a New Approach for Hard Exploration Problems 2021 Paper Review
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Go-Explore: a New Approach for Hard-Exploration Problems Author: Adrien Ecoffet et. al. Publish Year: 2021 Review Date: Nov 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- The author hypothesised that there are two main issues that prevent DRL agents from achieving high score in exploration-hard game (e....</p>
-</div>
-<footer class="entry-footer"><span title="2021-11-27 18:58:32 +1100 AEDT">November 27, 2021</span> · 4 min · Sukai Huang</footer>
-<a aria-label="post link to Adrien_ecoffet Go Explore a New Approach for Hard Exploration Problems 2021 Paper Review" class="entry-link" href="https://sino-huang.github.io/posts/adrien_ecoffet-go-explore-a-new-approach-for-hard-exploration-problems-2021-paper-review/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Tuomas_haarnoja Soft Actor Critic Off Policy Maximum Entropy Deep Reinforcement Learning With a Stochastic Actor 2018 Paper Review
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290] hat means estimation</p>
-</div>
-<footer class="entry-footer"><span title="2021-11-18 12:08:53 +1100 AEDT">November 18, 2021</span> · 1 min · Sukai Huang</footer>
-<a aria-label="post link to Tuomas_haarnoja Soft Actor Critic Off Policy Maximum Entropy Deep Reinforcement Learning With a Stochastic Actor 2018 Paper Review" class="entry-link" href="https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/"></a>
-</article>
-<footer class="page-footer">
-<nav class="pagination">
-<a class="prev" href="https://sino-huang.github.io/categories/paper-review/page/9/">« Prev</a>
-<a class="next" href="https://sino-huang.github.io/categories/paper-review/page/11/">Next »</a>
-</nav>
-</footer>
 </main>
 <footer class="footer">
 <span>© 2022 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>

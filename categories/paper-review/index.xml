@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Sep 2022 20:40:21 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 23:04:49 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/</link>
+      <pubDate>Wed, 05 Oct 2022 23:04:49 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/</guid>
+      <description>[TOC]
+ Title: CoBERL Contrastive BERT for Reinforcement Learning Author: Andrea Banino et. al. DeepMind Publish Year: Feb 2022 Review Date: Wed, Oct 5, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Jonathan_ho Video Diffusion Models 2022</title>
       <link>https://sino-huang.github.io/posts/jonathan_ho-video-diffusion-models-2022/</link>

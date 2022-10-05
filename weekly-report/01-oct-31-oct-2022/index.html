@@ -4,11 +4,23 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
-<title>paper review | Sukai Huang</title>
+<title>01 Oct -- 31 Oct, 2022 | Sukai Huang</title>
 <meta content="" name="keywords"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="description"/>
+<meta content="Last Week’s Work Review
+We finally complete both the language reward shaping module and the language reward shaping RL agent. This month we are going to upgrade and refine the reward shaping approach.
+
+There are some issues for the current approach
+
+the RL environment config setting is not in the standard way (standard -&gt; deepmind way)
+The whole training is quite heavy ( 60 it/sec -&gt; ~46 hours to train 10M steps )
+It took too much ram space (25.1 GB for 1 gym env)
+
+
+
+
+You need password to access to the content, go to Slack *#phdsukai to find more." name="description"/>
 <meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/categories/paper-review/" rel="canonical"/>
+<link href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -17,7 +29,7 @@
 <link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
 <meta content="#2e2e33" name="theme-color"/>
 <meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
 <style>
         #theme-toggle,
@@ -55,6 +67,35 @@
 
     </style>
 </noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+<script>
+    var decryptedcustomevent = new Event('hugo-text-decrypted-alert');
+    console.log("Create hugo-text-decrypted-alert event");
+
+    
+    document.addEventListener("DOMContentLoaded", bindDecryptEventHandler);
+
+    function bindDecryptEventHandler(){
+        console.log("bindDecryptEventHandler")
+        document.addEventListener("hugo-text-decrypted-alert", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    }); 
+
+    }
+</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
@@ -65,14 +106,34 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="paper review" property="og:title"/>
+<meta content="01 Oct -- 31 Oct, 2022" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/categories/paper-review/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="paper review" name="twitter:title"/>
+<meta content="01 Oct -- 31 Oct, 2022" name="twitter:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Weekly-reports",
+      "item": "https://sino-huang.github.io/weekly-report/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "01 Oct -- 31 Oct, 2022",
+      "item": "https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/"
+    }
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
 <script>
@@ -138,9 +199,9 @@ if (!doNotTrack) {
 </nav>
 </header>
 <main class="main">
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
 <h1>
-    paper review
+    01 Oct -- 31 Oct, 2022
     <a aria-label="RSS" href="index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
@@ -150,76 +211,38 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>David_abel on the Expressivity of Markov Reward 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: On the Expressivity of Markov Reward Author: David Abel et. al. Publish Year: NuerIPS 2021 Review Date: 6 Dec 2021  Summary of paper This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
-The author found out that in the Markov Decision Process scenario, (i.e., we do not look at the history of the trajectory to provide rewards), some tasks cannot be realised perfectly by reward functions....</p>
+<div class="post-content"><h2 id="last-weeks-work-review">Last Week’s Work Review<a aria-hidden="true" class="anchor" hidden="" href="#last-weeks-work-review">#</a></h2>
+<p>We finally complete both the language reward shaping module and the language reward shaping RL agent. This month we are going to upgrade and refine the reward shaping approach.</p>
+<ul>
+<li>There are some issues for the current approach
+<ol>
+<li>the RL environment config setting is not in the standard way (standard -&gt; deepmind way)</li>
+<li>The whole training is quite heavy ( 60 it/sec -&gt; ~46 hours to train 10M steps )</li>
+<li>It took too much ram space (25.1 GB for 1 gym env)</li>
+</ol>
+</li>
+</ul>
+<hr/>
+<p>You need password to access to the content, go to Slack *#phdsukai to find more.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
 </div>
-<footer class="entry-footer"><span title="2021-12-05 12:02:23 +1100 AEDT">December 5, 2021</span> · 5 min · Sukai Huang</footer>
-<a aria-label="post link to David_abel on the Expressivity of Markov Reward 2021" class="entry-link" href="https://sino-huang.github.io/posts/david_abel-on-the-expressivity-of-markov-reward-2021/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Rishabh_agarwal Deep Reinforcement Learning at the Edge of the Stats Precipice 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Deep Reinforcement Learning at the Edge of the Statistical Precipice Author: Rishabh Agarwal et. al. Publish Year: NeurIPS 2021 Review Date: 3 Dec 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- Most current published results on deep RL benchmarks uses point estimate of aggregate performance such as mean and median score across the task....</p>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
 </div>
-<footer class="entry-footer"><span title="2021-12-03 19:50:10 +1100 AEDT">December 3, 2021</span> · 3 min · Sukai Huang</footer>
-<a aria-label="post link to Rishabh_agarwal Deep Reinforcement Learning at the Edge of the Stats Precipice 2021" class="entry-link" href="https://sino-huang.github.io/posts/rishabh_agarwal-deep-reinforcement-learning-at-the-edge-of-the-stats-precipice-2021/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Borja_ibarz Reward Learning From Human Preferences and Demonstrations in Atari 2018
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Reward learning from human preferences and demonstractions in Atari Author: Borja Ibarz et. al. Publish Year: 2018 Review Date: Nov 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- The author proposed a method that uses human expert’s annotation rather than extrinsic reward from the environment to guide the reinforcement learning....</p>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
 </div>
-<footer class="entry-footer"><span title="2021-11-27 19:14:04 +1100 AEDT">November 27, 2021</span> · 2 min · Sukai Huang</footer>
-<a aria-label="post link to Borja_ibarz Reward Learning From Human Preferences and Demonstrations in Atari 2018" class="entry-link" href="https://sino-huang.github.io/posts/borja_ibarz-reward-learning-from-human-preferences-and-demonstrations-in-atari-2018/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Adrien_ecoffet Go Explore a New Approach for Hard Exploration Problems 2021 Paper Review
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Go-Explore: a New Approach for Hard-Exploration Problems Author: Adrien Ecoffet et. al. Publish Year: 2021 Review Date: Nov 2021  Summary of paper  This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.
- The author hypothesised that there are two main issues that prevent DRL agents from achieving high score in exploration-hard game (e....</p>
+<script>
+  
+  document.querySelector(".hugo-encryptor-input").addEventListener("keyup", event => {
+      if(event.key !== "Enter") return; 
+      document.querySelector(".hugo-encryptor-button").click(); 
+      event.preventDefault(); 
+  });
+</script>
 </div>
-<footer class="entry-footer"><span title="2021-11-27 18:58:32 +1100 AEDT">November 27, 2021</span> · 4 min · Sukai Huang</footer>
-<a aria-label="post link to Adrien_ecoffet Go Explore a New Approach for Hard Exploration Problems 2021 Paper Review" class="entry-link" href="https://sino-huang.github.io/posts/adrien_ecoffet-go-explore-a-new-approach-for-hard-exploration-problems-2021-paper-review/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Tuomas_haarnoja Soft Actor Critic Off Policy Maximum Entropy Deep Reinforcement Learning With a Stochastic Actor 2018 Paper Review
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290] hat means estimation</p>
-</div>
-<footer class="entry-footer"><span title="2021-11-18 12:08:53 +1100 AEDT">November 18, 2021</span> · 1 min · Sukai Huang</footer>
-<a aria-label="post link to Tuomas_haarnoja Soft Actor Critic Off Policy Maximum Entropy Deep Reinforcement Learning With a Stochastic Actor 2018 Paper Review" class="entry-link" href="https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/"></a>
-</article>
-<footer class="page-footer">
-<nav class="pagination">
-<a class="prev" href="https://sino-huang.github.io/categories/paper-review/page/9/">« Prev</a>
-<a class="next" href="https://sino-huang.github.io/categories/paper-review/page/11/">Next »</a>
-</nav>
-</footer>
 </main>
 <footer class="footer">
 <span>© 2022 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
@@ -288,5 +311,5 @@ The author found out that in the Markov Decision Process scenario, (i.e., we do 
     })
 
 </script>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
 </html>
