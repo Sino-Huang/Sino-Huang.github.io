@@ -113,13 +113,22 @@
     <loc>https://sino-huang.github.io/posts/</loc>
     <lastmod>2022-10-05T23:22:01+11:00</lastmod>
   </url><url>
+    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2022-10-05T23:22:01+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/</loc>
     <lastmod>2022-10-05T23:22:01+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/</loc>
     <lastmod>2022-10-05T23:22:01+11:00</lastmod>
   </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2022-10-05T23:22:01+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/</loc>
+    <lastmod>2022-10-05T23:04:49+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/transformer/</loc>
     <lastmod>2022-10-05T23:04:49+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/october-2022-weekly-progress/</loc>
@@ -132,12 +141,6 @@
     <lastmod>2022-09-25T16:34:09+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/blog-review/</loc>
-    <lastmod>2022-09-25T16:34:09+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
-    <lastmod>2022-09-25T16:34:09+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2022-09-25T16:34:09+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/jonathan_ho-video-diffusion-models-2022/</loc>
@@ -180,9 +183,6 @@
     <lastmod>2022-08-27T16:03:42+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/gregor_geigle-retrieve-fast-rerank-smart-coorperative-and-joint-approaches-for-improved-cross-modal-retrieval-2022/</loc>
-    <lastmod>2022-08-27T00:31:38+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/transformer/</loc>
     <lastmod>2022-08-27T00:31:38+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/kaitao_song-mpnet-masked-and-permuted-retrain-for-language-understanding-2020/</loc>

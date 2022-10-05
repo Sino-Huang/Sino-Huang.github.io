@@ -9,7 +9,29 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 25 Sep 2022 16:34:09 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 23:22:01 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Steven_kapturowski Human Level Atari 200x Faster 2022</title>
+      <link>https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/</link>
+      <pubDate>Wed, 05 Oct 2022 23:22:01 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/</guid>
+      <description>[TOC]
+ Title: Human Level Atari 200x Faster Author: Steven Kapturowski et. al. DeepMind Publish Year: September 2022 Review Date: Wed, Oct 5, 2022  Summary of paper https://arxiv.org/pdf/2209.07550.pdf
+Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/</link>
+      <pubDate>Wed, 05 Oct 2022 23:04:49 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/</guid>
+      <description>[TOC]
+ Title: CoBERL Contrastive BERT for Reinforcement Learning Author: Andrea Banino et. al. DeepMind Publish Year: Feb 2022 Review Date: Wed, Oct 5, 2022  Summary of paper https://arxiv.org/pdf/2107.05431.pdf
+Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments  They measure performance on all 57 Atari games after running for 200 million frames (steps)&amp;hellip;  Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Alex_petrekno Sample Factory Asynchronous Rl at Very High Fps 2020</title>
       <link>https://sino-huang.github.io/posts/alex_petrekno-sample-factory-asynchronous-rl-at-very-high-fps-2020/</link>
