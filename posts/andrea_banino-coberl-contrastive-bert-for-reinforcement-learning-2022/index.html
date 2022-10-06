@@ -8,7 +8,8 @@
 <meta content="transformer, reinforcement learning" name="keywords"/>
 <meta content="[TOC]
  Title: CoBERL Contrastive BERT for Reinforcement Learning Author: Andrea Banino et. al. DeepMind Publish Year: Feb 2022 Review Date: Wed, Oct 5, 2022  Summary of paper https://arxiv.org/pdf/2107.05431.pdf
-Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments  They measure performance on all 57 Atari games after running for 200 million frames (steps)…  Incomprehension Potential future work " name="description"/>
+Motivation Contribution Some key terms Representation learning in reinforcement learning
+ motivation:  if state information could be effectively extracted from raw observations it may then be possible to learn from there as fast as from states. however, given the often sparse reward signal coming from the environment, learning representations in RL has to be achieved with little to no supervision." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -204,6 +205,30 @@ if (!doNotTrack) {
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
+<p><strong>Representation learning in reinforcement learning</strong></p>
+<ul>
+<li>motivation:
+<ul>
+<li>if state information could be effectively extracted from raw observations it may then be possible to learn from there as fast as from states.</li>
+<li>however, given the often sparse reward signal coming from the environment, learning representations in RL has to be achieved with little to no supervision.</li>
+</ul>
+</li>
+<li>approach types
+<ul>
+<li>class 1: auxiliary self-supervised losses to accelerate the learning speed in model-free RL algorithm</li>
+<li>class 2: learn a world model and use this to collect imagined rollouts, which then act as extra data to train the RL algorithm reducing the samples required from the environment</li>
+<li>CoBERL is in class 1
+<ul>
+<li>​	it uses both masked language modelling and contrastive learning</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>RL using BERT architecture</strong></p>
+<ul>
+<li>unlike BERT where the input is a discrete vocabulary for language learning and <u>targets</u> are available, in RL inputs consist of images</li>
+</ul>
 <h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
 <h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
 <h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
