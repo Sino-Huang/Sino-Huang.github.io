@@ -225,18 +225,39 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<p><strong>RL using BERT architecture</strong></p>
+<p><strong>RL using BERT architecture</strong> – RELIC</p>
 <ul>
-<li>unlike BERT where the input is a discrete vocabulary for language learning and <u>targets</u> are available, in RL inputs consist of images</li>
+<li>unlike BERT where the input is a discrete vocabulary for language learning and <u>targets</u> are available, in RL inputs consist of images, rewards and actions, so they construct proxy targets and the corresponding proxy tasks to solve. They used contrastive learning, RELIC</li>
+<li><img alt="image-20221008213136999" loading="lazy" src="image-assets/image-20221008213136999.png"/>
+</li>
+<li>Instead we rely on the sequential nature of our input data to create the
+necessary groupings of similar and dissimilar points needed for contrastive learning.</li>
 </ul>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
+<p><strong>Auxiliary loss</strong></p>
+<ul>
+<li>15% MASK and recover</li>
+<li><img alt="image-20221008222610330" loading="lazy" src="image-assets/image-20221008222610330.png"/>
+</li>
+</ul>
+<p><strong>CoBERL architecture</strong></p>
+<p><img alt="image-20221008223116721" loading="lazy" src="image-assets/image-20221008223116721.png"/>
+</p>
+<ul>
+<li><img alt="image-20221008222651241" loading="lazy" src="image-assets/image-20221008222651241.png"/>
+</li>
+<li>LSTM is more efficient</li>
+<li><img alt="image-20221008222737169" loading="lazy" src="image-assets/image-20221008222737169.png"/>
+</li>
+<li><img alt="image-20221008223816978" loading="lazy" src="image-assets/image-20221008223816978.png"/>
+<ul>
+<li>means 2 layer (one GRU one LSTM)</li>
+</ul>
+</li>
+</ul>
 <h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
 <ul>
 <li>They measure performance on all 57 Atari games after running for 200 million frames (steps)…</li>
 </ul>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
 </div>
 </main>
 <footer class="footer">
