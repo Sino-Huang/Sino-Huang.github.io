@@ -8,7 +8,7 @@
 <meta content="reinforcement learning" name="keywords"/>
 <meta content="[TOC]
  Title: Human Level Atari 200x Faster Author: Steven Kapturowski et. al. DeepMind Publish Year: September 2022 Review Date: Wed, Oct 5, 2022  Summary of paper https://arxiv.org/pdf/2209.07550.pdf
-Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+Motivation  Agent 57 came at the cost of poor data-efficiency , requiring nearly 80,000 million frames of experience to achieve. this one can achieve the same performance in 390 million frames  Contribution Some key terms NFNet - Normalisation Free Network" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -202,13 +202,82 @@ if (!doNotTrack) {
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <p><a href="https://arxiv.org/pdf/2209.07550.pdf">https://arxiv.org/pdf/2209.07550.pdf</a></p>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>Agent 57 came at the cost of <u>poor data-efficiency</u> , requiring nearly 80,000 million frames of experience to achieve.</li>
+<li>this one can achieve the same performance in 390 million frames</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>NFNet - Normalisation Free Network</strong></p>
+<ul>
+<li><a href="https://towardsdatascience.com/nfnets-explained-deepminds-new-state-of-the-art-image-classifier-10430c8599ee">https://towardsdatascience.com/nfnets-explained-deepminds-new-state-of-the-art-image-classifier-10430c8599ee</a></li>
+<li>Batch normalisation – the bad
+<ul>
+<li>it is expensive</li>
+<li>batch normalisation breaks the assumption of data independence</li>
+</ul>
+</li>
+<li>NFNet applies 3 different techniques:
+<ul>
+<li>Modified residual branches and convolutions with Scaled Weight standardisation</li>
+<li>Adaptive Gradient Clipping</li>
+<li>Architecture optimisation for improved accuracy and training speed.</li>
+</ul>
+</li>
+<li><a href="https://github.com/vballoli/nfnets-pytorch">https://github.com/vballoli/nfnets-pytorch</a></li>
+</ul>
+<p><strong>Previous Non-Image features</strong></p>
+<ul>
+<li><img alt="image-20221009173737788" loading="lazy" src="image-assets/image-20221009173737788.png"/>
+</li>
+</ul>
+<p><strong>New features</strong></p>
+<p><strong>A1. Bootstrapping with online network</strong></p>
+<ul>
+<li>target networks are frequently used in conjunction with value-based agents due to their stabilising effect, but this design choice places a fundamental restriction on how quickly changes in the Q-function are able to propagate.
+<ul>
+<li>but if we update the target more frequently, then it is no more stable</li>
+</ul>
+</li>
+<li>so they use online network bootstrapping, and they stabilise the learning by introducing an approximate trust region for value updates that allows us to filter which samples contribute the loss.</li>
+<li>The trust region masks out the loss at any timestep for which both the following condition hold:</li>
+<li><img alt="image-20221009175650185" loading="lazy" src="image-assets/image-20221009175650185.png"/>
+</li>
+<li>this is similar to PPO</li>
+<li><img alt="image-20221009180106580" loading="lazy" src="image-assets/image-20221009180106580.png"/>
+</li>
+</ul>
+<p><strong>A2. Target computation with tolerance</strong></p>
+<ul>
+<li>Agent57 uses Rtrace (Similar to Vtrace) to compute return estimate from off-policy data, but they observed that it tends to cut traces too aggressively when using e-greedy policy thus slowing down the propagation of information into the value function</li>
+<li>so the new return estimater is
+<ul>
+<li><img alt="image-20221009181401049" loading="lazy" src="image-assets/image-20221009181401049.png"/>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>B1. Loss and priority normalisation</strong></p>
+<p>**B2. Cross-mixture training. **</p>
+<ul>
+<li>train all the policy network (distributed RL) rather than single policy network to increase efficiency</li>
+</ul>
+<p><strong>C1. Normalizer-free torso network</strong></p>
+<ul>
+<li>use NFNet architecture</li>
+</ul>
+<p><strong>C2. shared torso with combined loss</strong></p>
+<ul>
+<li>intrinsic and extrinsic components are going to use shared network</li>
+</ul>
+<p><strong>D. Robustifying behaviour via policy distillation</strong></p>
+<ul>
+<li><img alt="image-20221009182402783" loading="lazy" src="image-assets/image-20221009182402783.png"/>
+</li>
+<li><img alt="image-20221009182412385" loading="lazy" src="image-assets/image-20221009182412385.png"/>
+</li>
+<li>they proposed to train an explicit policy head $\pi_{\text{dist}}$ via policy distillation to match the e-greedy policy induced by the Q-function (since it is value-based RL so the policy is just a greedy policy)</li>
+</ul>
 </div>
 </main>
 <footer class="footer">
