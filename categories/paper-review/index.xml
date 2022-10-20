@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Oct 2022 23:22:01 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Oct 2022 19:06:41 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yuetian_weng an Efficient Spatio Temporal Pyramid Transformer for Action Detection 2022</title>
+      <link>https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022/</link>
+      <pubDate>Thu, 20 Oct 2022 19:06:41 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022/</guid>
+      <description>[TOC]
+ Title: An Efficient Spatio-Temporal Pyramid Transformer for Action Detection Author: Yuetian Weng et. al. Publish Year: Jul 2022 Review Date: Thu, Oct 20, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Steven_kapturowski Human Level Atari 200x Faster 2022</title>
       <link>https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/</link>
