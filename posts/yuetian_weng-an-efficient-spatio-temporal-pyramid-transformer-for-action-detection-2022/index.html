@@ -5,9 +5,9 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Yuetian_weng an Efficient Spatio Temporal Pyramid Transformer for Action Detection 2022 | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="action detection, future work" name="keywords"/>
 <meta content="[TOC]
- Title: An Efficient Spatio-Temporal Pyramid Transformer for Action Detection Author: Yuetian Weng et. al. Publish Year: Jul 2022 Review Date: Thu, Oct 20, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: An Efficient Spatio-Temporal Pyramid Transformer for Action Detection Author: Yuetian Weng et. al. Publish Year: Jul 2022 Review Date: Thu, Oct 20, 2022  Summary of paper Motivation  the task of action detection aims at deducing both the action category and localisation of the start and end moment for each action instance in a long, untrimmed video. it is non-trivial to design an efficient architecture for action detection due to the prohibitively expensive self-attentions over a long sequence of video clips To this end, they present an efficient hierarchical spatial temporal transformer for action detection Building upon the fact that the early self-attention layer in Transformer still focus on local patterns." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -200,13 +200,93 @@ if (!doNotTrack) {
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>the task of action detection aims at deducing both the action category and localisation of the start and end moment for each action instance in a long, untrimmed video.</li>
+<li>it is non-trivial to design an efficient architecture for action detection due to the prohibitively <strong>expensive</strong> self-attentions over a long sequence of video clips</li>
+<li>To this end, they present an efficient hierarchical spatial temporal transformer for action detection</li>
+<li>Building upon the fact that the early self-attention layer in Transformer still focus on local patterns.</li>
+</ul>
+<h3 id="background">Background<a aria-hidden="true" class="anchor" hidden="" href="#background">#</a></h3>
+<ul>
+<li>to date, the majority of action detection methods are driven by 3D convolutional neural networks (CNNs), e.g., C3D, I3D, to encode video segment features from video RGB frames and optical flows
+<ul>
+<li>however, the limited receptive field hinders the CNN-based models to capture long-term spatio-temporal dependencies. alternatively, vision transformers have shown the advantage of capturing global dependencies via the self-attention mechanism.</li>
+</ul>
+</li>
+<li>Hierarchical ViTs divide Transformer blocks into several stages and progressively reduce the spatial size of feature maps when the network goes deeper.
+<ul>
+<li>but having self-attention over a sequence of images is expensive</li>
+<li>also they found out that the <em>global attention</em> in the early layers actually only encodes local visual pattens (i.e., <u>it only attends to its nearby tokens in adjacent frames</u> while rarely interacting with tokens in distance frames)</li>
+<li><img alt="image-20221021185742980" loading="lazy" src="image-assets/image-20221021185742980.png"/>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="efficient-spatio-temporal-pyramid-transformer">Efficient Spatio-temporal Pyramid Transformer<a aria-hidden="true" class="anchor" hidden="" href="#efficient-spatio-temporal-pyramid-transformer">#</a></h3>
+<p><img alt="image-20221022182202983" loading="lazy" src="image-assets/image-20221022182202983.png"/>
+</p>
+<ul>
+<li>
+<p>some issues about redundancy</p>
+<ul>
+<li>target motions across adjacent frames are subtle, which implies large temporal redundancy when encoding video representations.</li>
+<li>they observed that the self-attention in the shallow layers mainly focuses on neighbouring tokens in a small spatial area and adjacent frames, rarely attending to other tokens in distant frames.</li>
+</ul>
+</li>
+<li>
+<p>encourage locality inductive bias</p>
+<ul>
+<li>from theoretical perspective, locality inductive bias suppresses the negative Hessian eigenvalues, thus assisting in optimisation by convexifying the loss landscape [Park, N., Kim, S.: How do vision transformers work? In: ICLR (2022)]</li>
+</ul>
+</li>
+<li>
+<p>jointly learn spatio-temporal representation</p>
+<ul>
+<li>the model used Conv3D and attention to do this jointly rather than learn separately</li>
+</ul>
+</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
+<p><strong>Temporal feature pyramid network</strong></p>
+<ul>
+<li>progressively reduce the spatial and temporal dimension and enlarge the receptive field into different scales.</li>
+<li>the multi-scale spatio-temporal feature representation are further utilised to predict the temporal boundaries and categories via an anchor-free prediction and refinement module</li>
+</ul>
+<p><strong>MViT</strong></p>
+<ul>
+<li>previous work lacks hierarchical structure or model spatio-temporal dependencies <strong>separately</strong>, which may not be sufficient for the task of action detection</li>
+<li>targeting these issues, MViT presents a hierarchical Transformer to progressively <strong>thrink</strong> the spatio-temporal resolution of feature maps while <strong>expanding the channels</strong> as the network goes deeper.</li>
+</ul>
+<p><strong>Relation to existing video Transformers</strong></p>
+<ol>
+<li>while others are based on separate space-time attention factorization, this method can encode the target motions by jointly aggregating spatio-temporal relations, without loss of spatio-temporal correspondence.</li>
+<li>apply local self-attention -&gt; lower computational cost</li>
+<li>LSTA is data-dependent and flexible in terms of window size</li>
+</ol>
+<p><strong>Additional Illustration of LSTA</strong></p>
+<p><img alt="image-20221022201738733" loading="lazy" src="image-assets/image-20221022201738733.png"/>
+</p>
+<h3 id="temporal-feature-pyramid">Temporal Feature Pyramid<a aria-hidden="true" class="anchor" hidden="" href="#temporal-feature-pyramid">#</a></h3>
+<ul>
+<li>given an untrimmed video, action detection aims to find the temporal boundaries and categories of action instances, with annotation denoted by ${\psi_n = (t_n^s, t_n^e, c_n)}_{n=1}^{N}$</li>
+<li>the 3D feature maps are then fed to TFPN to obtain <strong>multi-scale temporal feature</strong> maps</li>
+<li><img alt="image-20221022202635358" loading="lazy" src="image-assets/image-20221022202635358.png"/>
+</li>
+<li>motivation
+<ul>
+<li>multi-scale feature maps contribute to tackle the variation of action duration</li>
+</ul>
+</li>
+<li>specifically, we construct an M-level temporal feature pyramid ${f_m}_{m=1}^M$, where $f_m \in \mathbb R^{T_m \times C’}$ and $T_m$ is the temporal dimension of the m-th level.</li>
+<li>TFPN contains <em><strong>two 3D convolution</strong></em> layers followed by 1D Conv layer to progressively forms a feature hierarchy</li>
+</ul>
+<p><strong>Refinement</strong></p>
+<p>after we predict class label $\hat y_i^C$ and boundary distances $(\hat b_i^s, \hat b_i^e)$, they further predict an offset $(\Delta \hat b_i^s, \Delta \hat b_i^e)$ and the refinement action category label $\hat y _i^R$</p>
+<p>In the final prediction, we have the following form</p>
+<p><img alt="image-20221022204827786" loading="lazy" src="image-assets/image-20221022204827786.png"/>
+</p>
 <h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p>we may use this to construct lang rew module</p>
 </div>
 </main>
 <footer class="footer">
