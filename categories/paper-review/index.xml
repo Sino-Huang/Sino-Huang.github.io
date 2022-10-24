@@ -9,7 +9,40 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Oct 2022 19:06:41 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Oct 2022 19:14:34 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yizhou_zhao Semantic Aligned Fusion Transformer for One Shot Object Detection 2022</title>
+      <link>https://sino-huang.github.io/posts/yizhou_zhao-semantic-aligned-fusion-transformer-for-one-shot-object-detection-2022/</link>
+      <pubDate>Mon, 24 Oct 2022 19:14:34 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yizhou_zhao-semantic-aligned-fusion-transformer-for-one-shot-object-detection-2022/</guid>
+      <description>[TOC]
+ Title: Semantic-Aligned Fusion Transformer for One Shot Object Detection Author: Yizhou Zhao et. al. Publish Year: 2022 Review Date: Mon, Oct 24, 2022  https://arxiv.org/pdf/2203.09093v2.pdf
+Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Ting_i_hsieh One Shot Object Detection With Co Attention and Co Excitation 2019</title>
+      <link>https://sino-huang.github.io/posts/ting_i_hsieh-one-shot-object-detection-with-co-attention-and-co-excitation-2019/</link>
+      <pubDate>Mon, 24 Oct 2022 19:13:10 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ting_i_hsieh-one-shot-object-detection-with-co-attention-and-co-excitation-2019/</guid>
+      <description>[TOC]
+ Title: One-Shot Object Detection With Co-Attention and Co-Excitation Author: Ting-I Hsieh et. al. Publish Year: Nov 2019 Review Date: Mon, Oct 24, 2022  https://arxiv.org/pdf/1911.12529.pdf
+Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Ayan_kumar_bhunia a Deep One Shot Network for Query Based Logo Retrieval 2019</title>
+      <link>https://sino-huang.github.io/posts/ayan_kumar_bhunia-a-deep-one-shot-network-for-query-based-logo-retrieval-2019/</link>
+      <pubDate>Mon, 24 Oct 2022 19:12:22 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ayan_kumar_bhunia-a-deep-one-shot-network-for-query-based-logo-retrieval-2019/</guid>
+      <description>[TOC]
+ Title: A Deep-One Shot Network for Query-Based Logo Retrieval Author: Ayan Kumar Bhunia et. al. Publish Year: Jul 2019 Review Date: Mon, Oct 24, 2022  https://arxiv.org/pdf/1811.01395.pdf
+Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Yuetian_weng an Efficient Spatio Temporal Pyramid Transformer for Action Detection 2022</title>
       <link>https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022/</link>
