@@ -8,7 +8,7 @@
 <meta content="" name="keywords"/>
 <meta content="[TOC]
  Title: A Deep-One Shot Network for Query-Based Logo Retrieval Author: Ayan Kumar Bhunia et. al. Publish Year: Jul 2019 Review Date: Mon, Oct 24, 2022  https://arxiv.org/pdf/1811.01395.pdf
-Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+Summary of paper Motivation  Existing general purpose just cannot handle unseen new logos (not labelled logos) in this work, they developed an easy-to-implement query based logo detection and localisation system by employing a one-shot learning technique using off-the-shelf neural network components." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/ayan_kumar_bhunia-a-deep-one-shot-network-for-query-based-logo-retrieval-2019/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -202,13 +202,41 @@ if (!doNotTrack) {
 <p><a href="https://arxiv.org/pdf/1811.01395.pdf">https://arxiv.org/pdf/1811.01395.pdf</a></p>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>Existing general purpose just cannot handle unseen new logos (not labelled logos)</li>
+<li>in this work, they developed an easy-to-implement query based logo detection and localisation system by employing a one-shot learning technique using off-the-shelf neural network components.</li>
+</ul>
+<p><img alt="image-20221025130007528" loading="lazy" src="image-assets/image-20221025130007528.png"/>
+</p>
+<h3 id="limitation-of-current-work">Limitation of current work<a aria-hidden="true" class="anchor" hidden="" href="#limitation-of-current-work">#</a></h3>
+<ul>
+<li>Deep-learning based framework are largely data-driven, contrary to logo-dataset that have several image classes but <strong>few images</strong>.</li>
+<li>need to be robust to new unseen logos, the model should be designed to satisfy the incremental demands for logo classes, contrary to existing methods which are limited to a set of seen logos and are not.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
-<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
+<ul>
+<li>propose a scalable solution for the logo detection problem, they present a query-based logo search and detection system by employing a simple fully differentiable one-shot learning framework which can be used for new logo classes without further training the whole network.</li>
+<li>to deal with the logos of varying sizes, we propose a novel one-shot framework through multi-scale conditioning that is specially designed to learn the similarity between the query image and target image at multiple scales and resolutions.</li>
+</ul>
+<h3 id="architecture">Architecture<a aria-hidden="true" class="anchor" hidden="" href="#architecture">#</a></h3>
+<p><img alt="image-20221025151708843" loading="lazy" src="image-assets/image-20221025151708843.png"/>
+</p>
+<p><strong>Conditioning module</strong></p>
+<ul>
+<li>the logo image is converted into a multichannel feature vector of unit spatial dimension (1 x 1 x 512)</li>
+</ul>
+<p><strong>Multi-scale conditioning</strong></p>
+<ul>
+<li>the Tile module helps to scale the 1x1x512 vector to target WxHx512
+<ul>
+<li>tile: Constructs a tensor by <em>repeating</em> the elements of <code>input</code></li>
+</ul>
+</li>
+</ul>
 <h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<ul>
+<li>they still need training data</li>
+</ul>
 </div>
 </main>
 <footer class="footer">

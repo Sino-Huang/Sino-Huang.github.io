@@ -8,7 +8,7 @@
 <meta content="" name="keywords"/>
 <meta content="[TOC]
  Title: One-Shot Object Detection With Co-Attention and Co-Excitation Author: Ting-I Hsieh et. al. Publish Year: Nov 2019 Review Date: Mon, Oct 24, 2022  https://arxiv.org/pdf/1911.12529.pdf
-Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+Summary of paper Motivation  this paper aims to tackle the challenging problem of one-shot object detection, Given a query image patch whose class label is not included in the training data, To this end, they developed a novel co-attention and co-excitation (CoAE) framework that makes contributions in three key technical aspects  first, use the non-local operation to explore the co-attention embodied in each query-target pair and yield region proposals accounting for the one-shot situation." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/ting_i_hsieh-one-shot-object-detection-with-co-attention-and-co-excitation-2019/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -200,15 +200,26 @@ if (!doNotTrack) {
 <li>Review Date: Mon, Oct 24, 2022</li>
 </ol>
 <p><a href="https://arxiv.org/pdf/1911.12529.pdf">https://arxiv.org/pdf/1911.12529.pdf</a></p>
+<p><img alt="image-20221025160104142" loading="lazy" src="image-assets/image-20221025160104142.png"/>
+</p>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
-<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<ul>
+<li>this paper aims to tackle the challenging problem of one-shot object detection, Given a query image patch whose class label is not included in the training data,</li>
+<li>To this end, they developed a novel co-attention and co-excitation (CoAE) framework that makes contributions in three key technical aspects
+<ul>
+<li>first, use the non-local operation to explore the co-attention embodied in each query-target pair and yield region proposals accounting for the one-shot situation.</li>
+<li>second, we formulate a squeeze-and-co-excitation scheme that can adaptively emphasise correlated feature channels to help uncover relevant object proposals and eventually the target objects</li>
+<li>third, we design a margin-based ranking loss for implicitly learning a metric to predict the similarity of a region proposal to the underlying query, no matter its class label is seen or unseen training.</li>
+</ul>
+</li>
+</ul>
+<h3 id="heading"><a aria-hidden="true" class="anchor" hidden="" href="#heading">#</a></h3>
+<p><img alt="image-20221025162638405" loading="lazy" src="image-assets/image-20221025162638405.png"/>
+</p>
+<p><img alt="image-20221025162824423" loading="lazy" src="image-assets/image-20221025162824423.png"/>
+</p>
+<p><a href="https://github.com/timy90022/One-Shot-Object-Detection">https://github.com/timy90022/One-Shot-Object-Detection</a></p>
 </div>
 </main>
 <footer class="footer">
