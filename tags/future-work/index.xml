@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 20 Oct 2022 19:06:41 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/future-work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Nov 2022 20:41:04 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/future-work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jie_huang Can Language Models Be Specific How 2022</title>
+      <link>https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/</link>
+      <pubDate>Tue, 08 Nov 2022 20:41:04 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/</guid>
+      <description>[TOC]
+ Title: Can Language Models Be Specific? How? Author: Jie Huang et. al. Publish Year: 11 Oct 2022 Review Date: Tue, Nov 8, 2022  Summary of paper Motivation  they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts. for instance given &amp;ldquo;J.</description>
+    </item>
+    
     <item>
       <title>Yuetian_weng an Efficient Spatio Temporal Pyramid Transformer for Action Detection 2022</title>
       <link>https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022/</link>
