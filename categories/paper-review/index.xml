@@ -9,7 +9,18 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Nov 2022 20:41:04 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Nov 2022 16:32:31 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xiang_li Diffusion-LM Improves Controllable Text Generation 2022</title>
+      <link>https://sino-huang.github.io/posts/xiang_li-diffusion_lm_improves_controllable_text_generation_2022/</link>
+      <pubDate>Mon, 14 Nov 2022 16:32:31 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xiang_li-diffusion_lm_improves_controllable_text_generation_2022/</guid>
+      <description>[TOC]
+ Title: Diffusion-LM Improves Controllable Text Generation Author: Xiang Lisa Li Publish Year: May 2022 Review Date: Mon, Nov 14, 2022  https://arxiv.org/pdf/2205.14217.pdf
+Summary of paper Motivation  can language tokens be represented as floating number? they develop a new non-autoregressive language model based on continuous diffusion Diffusion LM iteratively denoises as sequence of Gaussian vectors into word vectors, yielding a sequence of intermediate latent variable. how to convert from continuous embeddings back to words  they used rounding and many other tricks to stabilise the training process    Contribution  they tried diffusion model for Language Model  Incomprehension Not sure if the model is good at text generation.</description>
+    </item>
+    
     <item>
       <title>Jie_huang Can Language Models Be Specific How 2022</title>
       <link>https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/</link>
