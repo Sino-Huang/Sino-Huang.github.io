@@ -9,7 +9,37 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Nov 2022 16:32:31 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 16:29:59 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Charlie_snell Context Aware Language Modeling for Goal Oriented Dialogue Systems 2022</title>
+      <link>https://sino-huang.github.io/posts/charlie_snell-context-aware-language-modeling-for-goal-oriented-dialogue-systems-2022/</link>
+      <pubDate>Sun, 20 Nov 2022 16:29:59 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/charlie_snell-context-aware-language-modeling-for-goal-oriented-dialogue-systems-2022/</guid>
+      <description>[TOC]
+ Title: Context Aware Language Modeling for Goal Oriented Dialogue Systems Author: Charlie Snell et. al. Publish Year: 22 Apr 2022 Review Date: Sun, Nov 20, 2022  Summary of paper Motivation  while supervised learning with large language models is capable of producing realistic text, how to steer such responses towards completing a specific task without sacrificing language quality remains an open question. how can we scalably and effectively introduce the mechanisms of goal-directed decision making into end-to-end language models, to steer language generation toward completing specific dialogue tasks rather than simply generating probable responses.</description>
+    </item>
+    
+    <item>
+      <title>Sanchit_agarwal Building Goal Oriented Dialogue Systems With Situated Visual Context 2021</title>
+      <link>https://sino-huang.github.io/posts/sanchit_agarwal-building-goal-oriented-dialogue-systems-with-situated-visual-context-2021/</link>
+      <pubDate>Sun, 20 Nov 2022 16:29:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/sanchit_agarwal-building-goal-oriented-dialogue-systems-with-situated-visual-context-2021/</guid>
+      <description>[TOC]
+ Title: Building Goal Oriented Dialogue Systems With Situated Visual Context 2021 Author: Sanchit Agarwal et. al. Publish Year: 22 Nov 2021 Review Date: Sun, Nov 20, 2022  Summary of paper Motivation  with the surge of virtual assistants with screen, the next generation of agents are required to also understand screen context in order to provide a proper interactive experience, and better understand users&amp;rsquo; goals. So in this paper, they propose a novel multimodal conversational framework, where the agent&amp;rsquo;s next action and their arguments are derived jointly conditioned on the conversational and the visual context.</description>
+    </item>
+    
+    <item>
+      <title>Yichi_zhang Danli Deliberative Agent for Following Natural Language Instructions 2022</title>
+      <link>https://sino-huang.github.io/posts/yichi_zhang-danli-deliberative-agent-for-following-natural-language-instructions-2022/</link>
+      <pubDate>Sun, 20 Nov 2022 16:28:23 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yichi_zhang-danli-deliberative-agent-for-following-natural-language-instructions-2022/</guid>
+      <description>[TOC]
+ Title: DANLI: Deliberative Agent for Following Natural Language Instructions Author: Yichi Zhang Publish Year: 22 Oct, 2022 Review Date: Sun, Nov 20, 2022  Summary of paper Motivation  reactive agent simply learn and imitate behaviours encountered in the training data these reactive agents are insufficient for long-horizon complex tasks. To address this limitation, we propose a neuro-symbolic deliberative agent that, while following language instructions, proactively applies reasoning and planning based on its neural and symbolic representations acquired from the past experience.</description>
+    </item>
+    
     <item>
       <title>Xiang_li Diffusion-LM Improves Controllable Text Generation 2022</title>
       <link>https://sino-huang.github.io/posts/xiang_li-diffusion_lm_improves_controllable_text_generation_2022/</link>
