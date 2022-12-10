@@ -9,7 +9,18 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Oct 2022 23:22:01 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Dec 2022 00:47:33 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jacob_andreas Language Models as Agent Models 2022</title>
+      <link>https://sino-huang.github.io/posts/jacob_andreas-language-models-as-agent-models-2022/</link>
+      <pubDate>Sat, 10 Dec 2022 00:47:33 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jacob_andreas-language-models-as-agent-models-2022/</guid>
+      <description>[TOC]
+ Title: Language Models as Agent Models Author: Jacob Andreas Publish Year: 3 Dec 2022 Review Date: Sat, Dec 10, 2022  https://arxiv.org/pdf/2212.01681.pdf
+Summary of paper Motivation  during training, LMs have access only to the text of the documents, with no direct evidence of the internal states of the human agent that produce them. (kind of hidden MDP thing) this is a fact often used to argue that LMs are incapable of modelling goal-directed aspects of human language production and comprehension.</description>
+    </item>
+    
     <item>
       <title>Steven_kapturowski Human Level Atari 200x Faster 2022</title>
       <link>https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022/</link>
