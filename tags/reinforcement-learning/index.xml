@@ -9,7 +9,37 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Dec 2022 00:47:33 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Dec 2022 22:38:13 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zuxin_liu on the Robustness of Safe Reinforcement Learning Under Observational Perturbations 2022</title>
+      <link>https://sino-huang.github.io/posts/zuxin_liu-on-the-robustness-of-safe-reinforcement-learning-under-observational-perturbations-2022/</link>
+      <pubDate>Thu, 22 Dec 2022 22:38:13 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/zuxin_liu-on-the-robustness-of-safe-reinforcement-learning-under-observational-perturbations-2022/</guid>
+      <description>[TOC]
+ Title: On the Robustness of Safe Reinforcement Learning Under Observational Perturbations Author: Zuxin Liu et. al. Publish Year: 3 Oct 2022 Review Date: Thu, Dec 22, 2022  Summary of paper Motivation  While many recent safe RL methods with deep policies can achieve outstanding constraint satisfaction in noise-free simulation environment, such a concern regarding their vulnerability under adversarial perturbation has not been studies in the safe RL setting.</description>
+    </item>
+    
+    <item>
+      <title>Ruben_majadas Disturbing Reinforcement Learning Agents With Corrupted Rewards 2021</title>
+      <link>https://sino-huang.github.io/posts/ruben_majadas-disturbing-reinforcement-learning-agents-with-corrupted-rewards-2021/</link>
+      <pubDate>Sat, 17 Dec 2022 00:38:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ruben_majadas-disturbing-reinforcement-learning-agents-with-corrupted-rewards-2021/</guid>
+      <description>[TOC]
+ Title: Disturbing Reinforcement Learning Agents With Corrupted Rewards Author: Ruben Majadas et. al. Publish Year: Feb 2021 Review Date: Sat, Dec 17, 2022  Summary of paper Motivation  recent works have shown how the performance of RL algorithm decreases under the influence of soft changes in the reward function. However, little work has been done about how sensitive these disturbances are depending on the aggressiveness of the attack and the learning learning exploration strategy.</description>
+    </item>
+    
+    <item>
+      <title>Jingkang_wang Reinforcement Learning With Perturbed Rewards 2020</title>
+      <link>https://sino-huang.github.io/posts/jingkang_wang-reinforcement-learning-with-perturbed-rewards-2020/</link>
+      <pubDate>Fri, 16 Dec 2022 20:48:51 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jingkang_wang-reinforcement-learning-with-perturbed-rewards-2020/</guid>
+      <description>[TOC]
+ Title: Reinforcement Learning With Perturbed Rewards Author: Jingkang Wang et. al. Publish Year: 1 Feb 2020 Review Date: Fri, Dec 16, 2022  Summary of paper Motivation  this paper studies RL with perturbed rewards, where a technical challenge is to revert the perturbation process so that the right policy is learned. Some experiments are used to support the algorithm (i.e., estimate the confusion matrix and revert) using existing techniques from the supervised learning (and crowdsourcing) literature.</description>
+    </item>
+    
     <item>
       <title>Jacob_andreas Language Models as Agent Models 2022</title>
       <link>https://sino-huang.github.io/posts/jacob_andreas-language-models-as-agent-models-2022/</link>

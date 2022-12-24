@@ -9,22 +9,31 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Dec 2022 00:47:33 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Dec 2022 22:38:13 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>natural language processing</title>
-      <link>https://sino-huang.github.io/tags/natural-language-processing/</link>
-      <pubDate>Sat, 10 Dec 2022 00:47:33 +1100</pubDate>
+      <title>perturbed rewards</title>
+      <link>https://sino-huang.github.io/tags/perturbed-rewards/</link>
+      <pubDate>Thu, 22 Dec 2022 22:38:13 +1100</pubDate>
       
-      <guid>https://sino-huang.github.io/tags/natural-language-processing/</guid>
+      <guid>https://sino-huang.github.io/tags/perturbed-rewards/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reinforcement learning</title>
       <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
-      <pubDate>Sat, 10 Dec 2022 00:47:33 +1100</pubDate>
+      <pubDate>Thu, 22 Dec 2022 22:38:13 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>natural language processing</title>
+      <link>https://sino-huang.github.io/tags/natural-language-processing/</link>
+      <pubDate>Sat, 10 Dec 2022 00:47:33 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/natural-language-processing/</guid>
       <description></description>
     </item>
     

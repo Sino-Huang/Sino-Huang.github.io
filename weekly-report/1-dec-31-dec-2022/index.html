@@ -257,7 +257,25 @@ if (!doNotTrack) {
 <li>emphasise that training without language reward is more efficient.</li>
 <li>the consistently perturbed reward signals is more harmful to the performance.</li>
 <li>empirical analysis of the tolerance of the model-free reinforcement learning algorithm such as PPO, RND on the perturbed reward</li>
-<li>Empirical analysis of the tolerance on the compound perturbed rewards that simulate language reward shaping on compound of longer instruction.</li>
+<li>Empirical analysis of the tolerance on the compound perturbed rewards that simulate language reward shaping on compound of longer instruction.  accumulated false positive reward over a sequence of natural language instruction</li>
+</ul>
+</li>
+<li>something to highlight the contribution
+<ul>
+<li>our focus is the sparse reward setting (which hence require language rewards)</li>
+<li>we are discussing the tolerance. nost solution.</li>
+<li>some suggestions about solving the false positive rewards. some suggestions about how to utilise natural language instructions on the learning agent.</li>
+<li>not noisy setting, but the false positive rewards influence.</li>
+</ul>
+</li>
+<li><strong>keyword</strong>:
+<ul>
+<li>false positive rewards,</li>
+<li>sparse reward setting,</li>
+<li>tolerance,</li>
+<li>criticism on language reward shaping,</li>
+<li>reinforcement learning algorithm</li>
+<li>Suggestion on the natural language assisted learning. inspire future work on language reward shaping</li>
 </ul>
 </li>
 </ul>
@@ -275,6 +293,27 @@ if (!doNotTrack) {
 </li>
 <li>hard case (Montezuma)</li>
 </ol>
+<h2 id="experiment-setting">Experiment setting<a hidden class="anchor" aria-hidden="true" href="#experiment-setting">#</a></h2>
+<ul>
+<li>tolerance
+<ul>
+<li>number of walkthrough sentence</li>
+<li>consistent false positive occurence per sentence</li>
+<li>reward value consistent to be 1</li>
+</ul>
+</li>
+<li>environment
+<ul>
+<li>simple environment</li>
+<li>hard environment</li>
+</ul>
+</li>
+<li>RND (exploration triggered by reaching the new unseen state)
+<ul>
+<li>explain why we use this. and show them that without using this we cannot even solve those difficult and sparse reward tasks.</li>
+</ul>
+</li>
+</ul>
 <div style="page-break-after:always" /> 
 <h2 id="future-work-for-thesis">Future work (for thesis)<a hidden class="anchor" aria-hidden="true" href="#future-work-for-thesis">#</a></h2>
 <ul>
@@ -313,15 +352,43 @@ if (!doNotTrack) {
 <li>the old way given Goyal&rsquo;s experiment, the compound of instructions  leads to the product of success rate of each atomic instructions, and  thereby causing the final success rate to drop dramatically.</li>
 <li>the new way -&gt; description generation based on the past  trajectory (random sampling chunks with varying lengths) -&gt; stop  until the text generated is cosine similar to the first line of the  walkthrough instruction. or if it reaches the maximum memory, we pop out the old memory -&gt; now focus on the second line of the walkthrough  instruction and clean the memory and restart text generation, use a new  policy network and start the episode from the end of the first  trajectory.</li>
 <li>no language reward here it is something like a guided exploration</li>
-<li>in the end, there is no consistent false positive rewards, the  exploration trajectory by the language instruction will be further used  as the training replays for the learning agent.</li>
+<li>in the end, there is no consistent false positive rewards, the  exploration trajectory by the language instruction will be further used  as the training replays for the learning agent. and we prioritise the experiences that follows the instruction</li>
 </ol>
 </li>
 </ol>
 </li>
 </ol>
 <div style="page-break-after:always" /> 
-<h2 id="paper-reading-notes">Paper Reading Notes<a hidden class="anchor" aria-hidden="true" href="#paper-reading-notes">#</a></h2>
+<h2 id="paper-reading-notes-on-perturbed-reward">Paper Reading Notes on Perturbed reward<a hidden class="anchor" aria-hidden="true" href="#paper-reading-notes-on-perturbed-reward">#</a></h2>
 <p>we are going to read the paper that discuss noisy / perturbed rewards</p>
+<ul>
+<li>
+<p>Reinforcement Learning With Perturbed Rewards</p>
+<ul>
+<li>Author: Jingkang Wang et. al.</li>
+<li>Publish Year: 1 Feb 2020</li>
+<li>Review Date: Fri, Dec 16, 2022</li>
+</ul>
+</li>
+<li>
+<p>Disturbing Reinforcement Learning Agents With Corrupted Rewards</p>
+<ul>
+<li>Author: Ruben Majadas et. al.</li>
+<li>Publish Year: Feb 2021</li>
+<li>Review Date: Sat, Dec 17, 2022</li>
+</ul>
+</li>
+<li>
+<p>On the Robustness of Safe Reinforcement Learning Under Observational Perturbations</p>
+<ul>
+<li>Author: Zuxin Liu et. al.</li>
+<li>Publish Year: 3 Oct 2022</li>
+<li>Review Date: Thu, Dec 22, 2022</li>
+</ul>
+</li>
+</ul>
+<h2 id="paper-reading-notes-on-reward-poisoning">Paper Reading Notes on Reward poisoning<a hidden class="anchor" aria-hidden="true" href="#paper-reading-notes-on-reward-poisoning">#</a></h2>
+<p>we are going to read the paper that discuss reward poisoning</p>
 <ul>
 <li>Title, authors, conference, year</li>
 </ul>
