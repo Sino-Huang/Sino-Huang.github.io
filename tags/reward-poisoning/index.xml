@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>reward poisoning on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/reward-poisoning/</link>
+    <description>Recent content in reward poisoning on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 25 Dec 2022 19:12:17 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reward-poisoning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yunhan_huang Manipulating Reinforcement Learning Stealthy Attacks on Cost Signals 2020</title>
+      <link>https://sino-huang.github.io/posts/yunhan_huang-manipulating-reinforcement-learning-stealthy-attacks-on-cost-signals-2020/</link>
+      <pubDate>Sun, 25 Dec 2022 19:12:17 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yunhan_huang-manipulating-reinforcement-learning-stealthy-attacks-on-cost-signals-2020/</guid>
+      <description>[TOC]
+ Title: Manipulating Reinforcement Learning Stealthy Attacks on Cost Signals Deceptive Reinforcement Learning Under Adversarial Manipulations on Cost Signals Author: Yunhan Huang et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation understand the impact of the falsification of cost signals on the convergence of Q-learning algorithm
+Contribution  In Q-learning, we show that Q-learning algorithms converge under stealthy attacks and bounded falsifications on cost signals.</description>
+    </item>
+    
+  </channel>
+</rss>

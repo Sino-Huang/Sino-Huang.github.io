@@ -9,7 +9,67 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Dec 2022 22:38:13 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/perturbed-rewards/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Dec 2022 01:11:23 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/perturbed-rewards/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tom_everitt Reinforcement Learning With a Corrupted Reward Channel 2017</title>
+      <link>https://sino-huang.github.io/posts/tom_everitt-reinforcement-learning-with-a-corrupted-reward-channel-2017/</link>
+      <pubDate>Mon, 26 Dec 2022 01:11:23 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/tom_everitt-reinforcement-learning-with-a-corrupted-reward-channel-2017/</guid>
+      <description>[TOC]
+ Title: Reinforcement Learning With a Corrupted Reward Channel Author: Tom Everitt Publish Year: August 22, 2017 Review Date: Mon, Dec 26, 2022  Summary of paper Motivation  we formalise this problem as a generalised Markov Decision Problem called Corrupt Reward MDP Traditional RL  Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Vincent_zhuang No Regret Reinforcement Learning With Heavy Tailed Rewards 2021</title>
+      <link>https://sino-huang.github.io/posts/vincent_zhuang-no-regret-reinforcement-learning-with-heavy-tailed-rewards-2021/</link>
+      <pubDate>Sun, 25 Dec 2022 18:15:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/vincent_zhuang-no-regret-reinforcement-learning-with-heavy-tailed-rewards-2021/</guid>
+      <description>[TOC]
+ Title: No-Regret Reinforcement Learning With Heavy Tailed Rewards Author: Vincent Zhuang et. al. Publish Year: 2021 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation  To the best of our knowledge, no prior work has considered our setting of heavy-tailed rewards in the MDP setting.  Contribution  We demonstrate that robust mean estimation techniques can be broadly applied to reinforcement learning algorithms (specifically confidence-based methods) in order to provably han- dle the heavy-tailed reward setting  Some key terms Robust UCB algorithm</description>
+    </item>
+    
+    <item>
+      <title>Wenshuai_zhao Towards Closing the Sim to Real Gap in Collaborative Multi Robot Deep Reinforcement Learning 2020</title>
+      <link>https://sino-huang.github.io/posts/wenshuai_zhao-towards-closing-the-sim-to-real-gap-in-collaborative-multi-robot-deep-reinforcement-learning-2020/</link>
+      <pubDate>Sun, 25 Dec 2022 16:54:11 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/wenshuai_zhao-towards-closing-the-sim-to-real-gap-in-collaborative-multi-robot-deep-reinforcement-learning-2020/</guid>
+      <description>[TOC]
+ Title: Towards Closing the Sim to Real Gap in Collaborative Multi Robot Deep Reinforcement Learning Author: Wenshuai Zhao et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation  we introduce the effect of sensing, calibration, and accuracy mismatches in distributed reinforcement learning we discuss on how both the different types of perturbations and how the number of agents experiencing those perturbations affect the collaborative learning effort  Contribution   This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors</description>
+    </item>
+    
+    <item>
+      <title>Jan_corazza Reinforcement Learning With Stochastic Reward Machines 2022</title>
+      <link>https://sino-huang.github.io/posts/jan_corazza-reinforcement-learning-with-stochastic-reward-machines-2022/</link>
+      <pubDate>Sat, 24 Dec 2022 22:36:07 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jan_corazza-reinforcement-learning-with-stochastic-reward-machines-2022/</guid>
+      <description>[TOC]
+ Title: Reinforcement Learning With Stochastic Reward Machines Author: Jan Corazza et. al. Publish Year: AAAI 2022 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  reward machines are an established tool for dealing with reinforcement learning problems in which rewards are sparse and depend on complex sequence of actions. However, existing algorithms for learning reward machines assume an overly idealized setting where rewards have to be free of noise.</description>
+    </item>
+    
+    <item>
+      <title>Oguzhan_dogru Reinforcement Learning With Constrained Uncertain Reward Function Through Particle Filtering 2022</title>
+      <link>https://sino-huang.github.io/posts/oguzhan_dogru-reinforcement-learning-with-constrained-uncertain-reward-function-through-particle-filtering-2022/</link>
+      <pubDate>Sat, 24 Dec 2022 19:32:25 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/oguzhan_dogru-reinforcement-learning-with-constrained-uncertain-reward-function-through-particle-filtering-2022/</guid>
+      <description>[TOC]
+ Title: Reinforcement Learning With Constrained Uncertain Reward Function Through Particle Filtering Author: Oguzhan Dogru et. al. Publish Year: July 2022 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  this study consider a type of uncertainty, which is caused by the sensor that are utilised for reward function. When the noise is Gaussian and the system is linear  Contribution  this work used &amp;ldquo;particle filtering&amp;rdquo; technique to estimate the true reward function from the perturbed discrete reward sampling points.</description>
+    </item>
+    
+    <item>
+      <title>Inaam_ilahi Challenges and Countermeasures for Adversarial Attacks on Reinforcement Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/inaam_ilahi-challenges-and-countermeasures-for-adversarial-attacks-on-reinforcement-learning-2022/</link>
+      <pubDate>Sat, 24 Dec 2022 17:06:12 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/inaam_ilahi-challenges-and-countermeasures-for-adversarial-attacks-on-reinforcement-learning-2022/</guid>
+      <description>[TOC]
+ Title: Challenges and Countermeasures for Adversarial Attacks on Reinforcement Learning Author: Inaam Ilahi et. al. Publish Year: 13 Sep 2021 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  DRL is susceptible to adversarial attacks, which precludes its use in real-life critical system and applications. Therefore, we provide a comprehensive survey that discusses emerging attacks on DRL-based system and the potential countermeasures to defend against these attacks.</description>
+    </item>
+    
     <item>
       <title>Zuxin_liu on the Robustness of Safe Reinforcement Learning Under Observational Perturbations 2022</title>
       <link>https://sino-huang.github.io/posts/zuxin_liu-on-the-robustness-of-safe-reinforcement-learning-under-observational-perturbations-2022/</link>

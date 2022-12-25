@@ -9,11 +9,11 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Dec 2022 22:38:13 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Dec 2022 01:11:23 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>perturbed rewards</title>
       <link>https://sino-huang.github.io/tags/perturbed-rewards/</link>
-      <pubDate>Thu, 22 Dec 2022 22:38:13 +1100</pubDate>
+      <pubDate>Mon, 26 Dec 2022 01:11:23 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/perturbed-rewards/</guid>
       <description></description>
@@ -22,9 +22,27 @@
     <item>
       <title>reinforcement learning</title>
       <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
-      <pubDate>Thu, 22 Dec 2022 22:38:13 +1100</pubDate>
+      <pubDate>Mon, 26 Dec 2022 01:11:23 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reward poisoning</title>
+      <link>https://sino-huang.github.io/tags/reward-poisoning/</link>
+      <pubDate>Sun, 25 Dec 2022 19:12:17 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/reward-poisoning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>non-markovian rewards</title>
+      <link>https://sino-huang.github.io/tags/non-markovian-rewards/</link>
+      <pubDate>Sat, 24 Dec 2022 22:36:07 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/non-markovian-rewards/</guid>
       <description></description>
     </item>
     
