@@ -9,7 +9,77 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Dec 2022 19:50:35 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Dec 2022 14:36:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alekh_agarwal on the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020</title>
+      <link>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</link>
+      <pubDate>Wed, 28 Dec 2022 14:36:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</guid>
+      <description>[TOC]
+ Title: On the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020 Author: Alekh Agarwal et. al. Publish Year: 14 Oct 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Chloe_ching_yun_hsu Revisiting Design Choices in Proximal Policy Optimisation 2020</title>
+      <link>https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/</link>
+      <pubDate>Wed, 28 Dec 2022 14:32:15 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/</guid>
+      <description>[TOC]
+ Title: Revisiting Design Choices in Proximal Policy Optimisation Author: Chloe Ching-Yun Hsu et. al. Publish Year: 23 Sep 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>James_queeney Generalized Proximal Policy Optimisation With Sample Reuse 2021</title>
+      <link>https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/</link>
+      <pubDate>Wed, 28 Dec 2022 14:00:32 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/</guid>
+      <description>[TOC]
+ Title: Generalized Proximal Policy Optimisation With Sample Reuse 2021 Author: James Queeney et. al. Publish Year: 29 Oct 2021 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation  it is critical for data-driven reinforcement learning methods to be both stable and sample efficient. On-policy methods typically generate reliable policy improvement throughout training, while off-policy methods make more efficient use of data through sample reuse.  Contribution  in this work, we combine the theoretically supported stability benefits of on-policy algorithms with the sample efficiency of off-policy algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Young_wu Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning 2022</title>
+      <link>https://sino-huang.github.io/posts/young_wu-reward-poisoning-attacks-on-offline-multi-agent-reinforcement-learning-2022/</link>
+      <pubDate>Tue, 27 Dec 2022 22:50:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/young_wu-reward-poisoning-attacks-on-offline-multi-agent-reinforcement-learning-2022/</guid>
+      <description>[TOC]
+ Title: Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning Author: Young Wu et. al. Publish Year: 1 Dec 2022 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation Contribution  unlike attacks on single-agent RL, we show that the attacker can install the target poilcy as a Markov Perfect Dominant Strategy Equilibrium (MPDSE), which rational agents are guaranteed to follow. This attack can be significantly cheaper than separate single-agent attacks.</description>
+    </item>
+    
+    <item>
+      <title>Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021</title>
+      <link>https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/</link>
+      <pubDate>Tue, 27 Dec 2022 18:27:17 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/</guid>
+      <description>[TOC]
+ Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.  Contribution   we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.</description>
+    </item>
+    
+    <item>
+      <title>Amin_rakhsha Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments 2021</title>
+      <link>https://sino-huang.github.io/posts/amin_rakhsha-reward-poisoning-in-reinforcement-learning-attacks-against-unknown-learners-in-unknown-environments-2021/</link>
+      <pubDate>Tue, 27 Dec 2022 15:50:22 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/amin_rakhsha-reward-poisoning-in-reinforcement-learning-attacks-against-unknown-learners-in-unknown-environments-2021/</guid>
+      <description>[TOC]
+ Title: Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments Author: Amin Rakhsha et. al. Publish Year: 16 Feb 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  Our attack makes minimum assumptions on the prior knowledge of the environment or the learner&amp;rsquo;s learning algorithm. most of the prior work makes strong assumptions on the knowledge of adversary &amp;ndash; it often assumed that the adversary has full knowledge of the environment or the agent&amp;rsquo;s learning algorithm or both.</description>
+    </item>
+    
+    <item>
+      <title>Xuezhou_zhang Adaptive Reward Poisoning Attacks Against Reinforcement Learning 2020</title>
+      <link>https://sino-huang.github.io/posts/xuezhou_zhang-adaptive-reward-poisoning-attacks-against-reinforcement-learning-2020/</link>
+      <pubDate>Tue, 27 Dec 2022 00:21:15 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xuezhou_zhang-adaptive-reward-poisoning-attacks-against-reinforcement-learning-2020/</guid>
+      <description>[TOC]
+ Title: Adaptive Reward Poisoning Attacks Against Reinforcement Learning Author: Xuezhou Zhang et. al. Publish Year: 22 Jun, 2020 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  Non-adaptive attacks have been the focus of prior works. However, we show that under mild conditions, adaptive attacks can achieve the nefarious policy in steps polynomial in state-space size $|S|$ whereas non-adaptive attacks require exponential steps.  Contribution  we provide a lower threshold below which reward-poisoning attack is infeasible and RL is certified to be safe.</description>
+    </item>
+    
     <item>
       <title>Proximal Policy Optimisation Explained Blog</title>
       <link>https://sino-huang.github.io/posts/proximal-policy-optimisation-explained-blog/</link>
@@ -17,8 +87,8 @@
       
       <guid>https://sino-huang.github.io/posts/proximal-policy-optimisation-explained-blog/</guid>
       <description>[TOC]
- Title: Proximal Policy Optimisation Explained Blog Author: Xiao-Yang Liu; DI engine Publish Year: May 4, 2021 Review Date: Mon, Dec 26, 2022   Difference between on-policy and off-policy
- For on-policy algorithms, they update the policy network based on the transitions generated by the current policy network. The critic network would make a more accurate value-prediction for the current policy network in common environments. For off-policy algorithms, they allow to update the current policy network using the transitions from old policies.</description>
+ Title: Proximal Policy Optimisation Explained Blog Author: Xiao-Yang Liu; DI engine Publish Year: May 4, 2021 Review Date: Mon, Dec 26, 2022   Highly recommend reading this blog  https://lilianweng.github.io/posts/2018-04-08-policy-gradient/    Difference between on-policy and off-policy
+ For on-policy algorithms, they update the policy network based on the transitions generated by the current policy network. The critic network would make a more accurate value-prediction for the current policy network in common environments.</description>
     </item>
     
     <item>

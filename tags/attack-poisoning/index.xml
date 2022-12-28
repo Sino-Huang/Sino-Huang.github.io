@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>attack poisoning on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/attack-poisoning/</link>
+    <description>Recent content in attack poisoning on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 27 Dec 2022 20:35:10 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/attack-poisoning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xuezhou_zhang Robust Policy Gradient Against Strong Data Corruption 2021</title>
+      <link>https://sino-huang.github.io/posts/xuezhou_zhang-robust-policy-gradient-against-strong-data-corruption-2021/</link>
+      <pubDate>Tue, 27 Dec 2022 20:35:10 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xuezhou_zhang-robust-policy-gradient-against-strong-data-corruption-2021/</guid>
+      <description>[TOC]
+ Title: Robust Policy Gradient Against Strong Data Corruption Author: Xuezhou Zhang et. al. Publish Year: 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Abstract Contribution  the author utilised a SVD-denoising technique to identify and remove the possible reward perturbations this approach gives a robust RL algorithm  Limitation
+ This approach only solve the attack perturbation that is not consistent. (i.e. not stealthy)  Some key terms Policy gradient methods</description>
+    </item>
+    
+  </channel>
+</rss>

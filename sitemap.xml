@@ -110,38 +110,86 @@
     <loc>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/</loc>
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/blog-review/</loc>
-    <lastmod>2022-12-26T19:50:35+11:00</lastmod>
+    <loc>https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/</loc>
+    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2022-12-26T19:50:35+11:00</lastmod>
+    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</loc>
+    <lastmod>2022-12-28T14:36:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/policy-gradient/</loc>
+    <lastmod>2022-12-28T14:36:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2022-12-28T14:36:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2022-12-28T14:36:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/</loc>
+    <lastmod>2022-12-28T14:32:15+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/</loc>
+    <lastmod>2022-12-28T14:00:32+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/lun_wang-backdoorl-backdoor-attack-against-competitive-reinforcement-learning-2021/</loc>
+    <lastmod>2022-12-28T03:57:59+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/sandy_huang-adversarial-attacks-on-neural-network-policies-2017/</loc>
+    <lastmod>2022-12-28T00:08:22+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/yinglun_xu-efficient-reward-poisoning-attacks-on-online-deep-reinforcement-learning-2022/</loc>
+    <lastmod>2022-12-27T23:14:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/reward-poisoning/</loc>
+    <lastmod>2022-12-27T22:50:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/young_wu-reward-poisoning-attacks-on-offline-multi-agent-reinforcement-learning-2022/</loc>
+    <lastmod>2022-12-27T22:50:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/attack-poisoning/</loc>
+    <lastmod>2022-12-27T20:35:10+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/robust-reinforcement-learning/</loc>
+    <lastmod>2022-12-27T20:35:10+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/xuezhou_zhang-robust-policy-gradient-against-strong-data-corruption-2021/</loc>
+    <lastmod>2022-12-27T20:35:10+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/</loc>
+    <lastmod>2022-12-27T18:27:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/amin_rakhsha-reward-poisoning-in-reinforcement-learning-attacks-against-unknown-learners-in-unknown-environments-2021/</loc>
+    <lastmod>2022-12-27T15:50:22+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/xuezhou_zhang-adaptive-reward-poisoning-attacks-against-reinforcement-learning-2020/</loc>
+    <lastmod>2022-12-27T00:21:15+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/anindya_sarkar-reward-delay-attacks-on-deep-reinforcement-learning-2022/</loc>
+    <lastmod>2022-12-26T21:07:03+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/blog-review/</loc>
     <lastmod>2022-12-26T19:50:35+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/proximal-policy-optimisation-explained-blog/</loc>
     <lastmod>2022-12-26T19:50:35+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
-    <lastmod>2022-12-26T19:50:35+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2022-12-26T19:50:35+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
-    <lastmod>2022-12-26T19:50:35+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2022-12-26T01:11:23+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/perturbed-rewards/</loc>
     <lastmod>2022-12-26T01:11:23+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/tom_everitt-reinforcement-learning-with-a-corrupted-reward-channel-2017/</loc>
     <lastmod>2022-12-26T01:11:23+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/reward-poisoning/</loc>
-    <lastmod>2022-12-25T19:12:17+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/yunhan_huang-manipulating-reinforcement-learning-stealthy-attacks-on-cost-signals-2020/</loc>
     <lastmod>2022-12-25T19:12:17+11:00</lastmod>

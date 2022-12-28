@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>policy gradient on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/policy-gradient/</link>
+    <description>Recent content in policy gradient on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Dec 2022 14:36:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/policy-gradient/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alekh_agarwal on the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020</title>
+      <link>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</link>
+      <pubDate>Wed, 28 Dec 2022 14:36:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</guid>
+      <description>[TOC]
+ Title: On the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020 Author: Alekh Agarwal et. al. Publish Year: 14 Oct 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Chloe_ching_yun_hsu Revisiting Design Choices in Proximal Policy Optimisation 2020</title>
+      <link>https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/</link>
+      <pubDate>Wed, 28 Dec 2022 14:32:15 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/</guid>
+      <description>[TOC]
+ Title: Revisiting Design Choices in Proximal Policy Optimisation Author: Chloe Ching-Yun Hsu et. al. Publish Year: 23 Sep 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>James_queeney Generalized Proximal Policy Optimisation With Sample Reuse 2021</title>
+      <link>https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/</link>
+      <pubDate>Wed, 28 Dec 2022 14:00:32 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/</guid>
+      <description>[TOC]
+ Title: Generalized Proximal Policy Optimisation With Sample Reuse 2021 Author: James Queeney et. al. Publish Year: 29 Oct 2021 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation  it is critical for data-driven reinforcement learning methods to be both stable and sample efficient. On-policy methods typically generate reliable policy improvement throughout training, while off-policy methods make more efficient use of data through sample reuse.  Contribution  in this work, we combine the theoretically supported stability benefits of on-policy algorithms with the sample efficiency of off-policy algorithms.</description>
+    </item>
+    
+  </channel>
+</rss>
