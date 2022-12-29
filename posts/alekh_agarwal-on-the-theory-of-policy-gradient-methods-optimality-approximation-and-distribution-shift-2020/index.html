@@ -7,7 +7,7 @@
 <title>Alekh_agarwal on the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020 | Sukai Huang</title>
 <meta content="policy gradient, reinforcement learning" name="keywords"/>
 <meta content="[TOC]
- Title: On the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020 Author: Alekh Agarwal et. al. Publish Year: 14 Oct 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: On the Theory of Policy Gradient Methods Optimality Approximation and Distribution Shift 2020 Author: Alekh Agarwal et. al. Publish Year: 14 Oct 2020 Review Date: Wed, Dec 28, 2022  Summary of paper Motivation  little is known about even their most basic theoretical convergence properties, including: if and how fast they converge to a globally optimal solution and how they cope with approximation error due to using a restricted class of parametric policies." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -202,13 +202,88 @@ if (!doNotTrack) {
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
 <p><img alt="image-20221228143829438" loading="lazy" src="image-assets/cover.png"/>
 </p>
+<ul>
+<li>little is known about even their most basic theoretical convergence properties, including: if and how fast they converge to a globally optimal solution and how they cope with approximation error due to using a restricted class of parametric policies.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>One central contribution of this work is in providing approximation guarantees that are average case - which avoid explicit worst-case dependencies on the size of state space – by making a formal connection to supervised learning under distribution shift. This characterisation shows an important between estimation error, approximation error and exploration (as characterised through a precisely defined condition number)</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
+<p><strong>basic theoretical convergence questions</strong></p>
+<ol>
+<li>if and how fast they converge to a globally optimal solution (say with a sufficiently rich policy class)</li>
+<li>how they cope with approximation error due to using a restricted class of parametric policies</li>
+<li>how they cope with approximation error their finite sample behaviour.</li>
+</ol>
+<p><strong>tabular policy parameterisation</strong></p>
+<ol>
+<li>there is one parameter per state-action pair so the policy class is complete in that it contains the optimal policy</li>
+</ol>
+<p><strong>function approximation</strong></p>
+<ol>
+<li>we have a restricted class or parametric policies which may not contain the globally optimal policy.</li>
+</ol>
+<p><strong>convergence rates</strong> (IMPORTANT)</p>
+<ul>
+<li>it depends on the optimisation measure <strong>having coverage over the state space</strong>, as measured by the <u>distribution mismatch coefficient</u> $D_\infty$</li>
+<li>$D_\infty$ is a measure of the coverage of this initial distribution</li>
+<li>note that the convergence rate has no dependence on the number of states or the number of actions, nor does it depend on the distribution mismatch coefficient $D_\infty$</li>
+<li>the convergence rate analysis uses a mirror descent style of analysis</li>
+<li><img alt="image-20221229184129977" loading="lazy" src="image-assets/image-20221229184129977.png"/>
+</li>
+<li>in that the worst-case density ratio only depends on the state visitation distribution of an optimal policy</li>
+</ul>
+<p><strong>excess risk</strong></p>
+<ul>
+<li>the regret</li>
+<li>the estimation error</li>
+</ul>
+<p><strong>Apprixmation error</strong></p>
+<ul>
+<li>due to that the best linear fit using $w_\star^{(t)}$ may not perfectly match the Q-value.</li>
+</ul>
+<p><strong>non-stationary policy</strong></p>
+<ul>
+<li>policy might change over time</li>
+</ul>
+<p><strong>Concentrability coefficient</strong></p>
+<ol>
+<li>Concentrability ensures that the ratio between the induced state-action distribution of any non-stationary policy and the state-action distribution in the batch data is upper bounded by a constant, called the concentrability coefficient.</li>
+</ol>
+<p><strong>overview of approximate methods</strong></p>
+<ul>
+<li>the suboptimality $V^\star (s_0) - V^\pi (s_0)$  after T iterations for various approximate algorithm, which use different notions of approximation error.</li>
+<li>$D_\infty \leq C_\infty$ distribution mismatch coefficient is smaller than concentrability coefficient as discussed</li>
+<li>in our policy optimisation approach, the analysis of both computational and statistical complexities are straightforward, since we can leverage known statistical and computational results from stochastic approximation literature.</li>
+</ul>
+<p><strong>The performance difference lemma</strong></p>
+<ul>
+<li><img alt="image-20221229205656973" loading="lazy" src="image-assets/image-20221229205656973.png"/>
+</li>
+</ul>
+<p><strong>The distribution mismatch coefficient</strong></p>
+<ol>
+<li>we often characterise the difficulty of the exploration problem faced by our policy optimisation algorithms when maximising the objective $V^\pi(\mu)$ through the following notion of distribution mismatch coefficient</li>
+<li>越大说明 explore 很差, the hardness of the exploration problem is captured through the distribution mismatch coefficient.</li>
+<li><img alt="image-20221229212507801" loading="lazy" src="image-assets/image-20221229212507801.png"/>
+</li>
+<li>discounted state visitation distribution $d_{s_0}^\pi(s)$
+<ul>
+<li><img alt="image-20221229210454833" loading="lazy" src="image-assets/image-20221229210454833.png"/>
+</li>
+</ul>
+</li>
+<li>Given a policy $\pi$ and measures $\rho, \mu \in \Delta(S)$, we refer to $||\frac{d_\rho^\pi}{\mu}||_\infty$, $\rho$ distribution of starting states
+<ol>
+<li>$\mu$ is fitting state distribution, (initial) state distribution</li>
+</ol>
+</li>
+</ol>
 <h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<ul>
+<li>we can use this suboptimality after T iterations to prove that the PPO is slowed down by due to distribution mismatch coefficient gets harder.</li>
+</ul>
 </div>
 </main>
 <footer class="footer">

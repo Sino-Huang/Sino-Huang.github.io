@@ -5,9 +5,9 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Alekh_agarwal PC-PG Policy Cover Directed Exploration for Provable Policy Gradient Learning 2020 | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="policy gradient, reinforcement learning" name="keywords"/>
 <meta content="[TOC]
- Title: PC-PG Policy Cover Directed Exploration for Provable Policy Gradient Learning Author: Alekh Agarwal et. al. Publish Year: Review Date: Wed, Dec 28, 2022  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: PC-PG Policy Cover Directed Exploration for Provable Policy Gradient Learning Author: Alekh Agarwal et. al. Publish Year: Review Date: Wed, Dec 28, 2022  Summary of paper Motivation  The primary drawback of direct policy gradient methods is that, by being local in nature, they fail to adequately explore the environment. In contrast, while model-based approach and Q-learning directly handle exploration through the use of optimism.  Contribution  Policy Cover-Policy Gradient algorithm (PC-PG), a direct, model-free, policy optimisation approach which addresses exploration through the use of a learned ensemble of policies, the latter provides a policy cover over the state space." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -202,13 +202,44 @@ if (!doNotTrack) {
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
 <p><img alt="image-20221228144306599" loading="lazy" src="image-assets/cover.png"/>
 </p>
+<ul>
+<li>The primary drawback of direct policy gradient methods is that, by being local in nature, they fail to adequately explore the environment.</li>
+<li>In contrast, while model-based approach and Q-learning directly handle exploration through the use of optimism.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>Policy Cover-Policy Gradient algorithm (PC-PG), a direct, model-free, policy optimisation approach which addresses exploration through the use of a learned ensemble of policies, the latter provides a policy cover over the state space.
+<ul>
+<li>the use of a learned policy cover address exploration, and also address what is the catastrophic forgetting problem in policy gradient approaches (which use reward bonuses);</li>
+<li>the on-policy algorithm, where approximation errors due to model mispecification amplify (see [Lu et al., 2018] for discussion)</li>
+</ul>
+</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
+<p><strong>suffering from sparse reward</strong></p>
+<ul>
+<li>The assumptions in these works imply that the state space is already well-explored. Conversely, without such coverage (and, say, with sparse rewards), policy gradients often suffer from the vanishing gradient problem.</li>
+</ul>
+<p><strong>original objective function and coverage of state space</strong></p>
+<p><img alt="image-20221229224603580" loading="lazy" src="image-assets/image-20221229224603580.png"/>
+</p>
+<p><strong>wider coverage objective</strong></p>
+<p><img alt="image-20221229224833293" loading="lazy" src="image-assets/image-20221229224833293.png"/>
+</p>
+<p><strong>iterative algorithm PC-PG</strong></p>
+<ul>
+<li>the idea is to successively improve both the current policy $\pi$ and the coverage distribution</li>
+<li>the algorithm starts with some policy $\pi^0$, and works in episodes.</li>
+<li><img alt="image-20221229233551464" loading="lazy" src="image-assets/image-20221229233551464.png"/>
+</li>
+<li>a bonus bn in order to encourage the algorithm to find a policy πn+1 which covers a novel part of the state-action space</li>
+<li><img alt="image-20221229234549382" loading="lazy" src="image-assets/image-20221229234549382.png"/>
+</li>
+</ul>
 <h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<ul>
+<li>so exploration essentially means we need to have a good state coverage for our training trajectory so that convergence to optimum is guaranteed.</li>
+</ul>
 </div>
 </main>
 <footer class="footer">
