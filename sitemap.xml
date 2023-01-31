@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/weekly-report/01-feb-28-feb-2023/</loc>
+    <lastmod>2023-01-29T23:15:54+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/weekly-report/1-dec-31-dec-2022/</loc>
     <lastmod>2022-12-16T19:25:59+11:00</lastmod>
   </url><url>
@@ -110,28 +113,49 @@
     <loc>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/</loc>
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/</loc>
-    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
+    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</loc>
+    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/february-2023-weekly-progress/</loc>
+    <lastmod>2023-01-29T23:15:54+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/weekly-report/</loc>
+    <lastmod>2023-01-29T23:15:54+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/shailaja_keyur_sampat-reasoning-about-actions-over-visual-and-linguistic-modalities-a-survey-2022/</loc>
+    <lastmod>2023-01-20T13:59:00+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/language-reward-shaping/</loc>
+    <lastmod>2023-01-18T09:48:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
+    <lastmod>2023-01-18T09:48:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2023-01-18T09:48:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</loc>
+    <lastmod>2023-01-18T09:48:14+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/</loc>
     <lastmod>2022-12-28T14:39:25+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/policy-gradient/</loc>
     <lastmod>2022-12-28T14:39:25+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
-    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2022-12-28T14:39:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2022-12-28T14:39:25+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/alekh_agarwal-on-the-theory-of-policy-gradient-methods-optimality-approximation-and-distribution-shift-2020/</loc>
@@ -222,9 +246,6 @@
     <lastmod>2022-12-16T20:48:51+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/december-2022-weekly-progress/</loc>
-    <lastmod>2022-12-16T19:25:59+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/weekly-report/</loc>
     <lastmod>2022-12-16T19:25:59+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/jacob_andreas-language-models-as-agent-models-2022/</loc>

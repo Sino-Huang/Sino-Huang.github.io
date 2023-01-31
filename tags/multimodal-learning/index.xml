@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>multimodal learning on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
+    <description>Recent content in multimodal learning on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 18 Jan 2023 09:48:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xin_wang Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019</title>
+      <link>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</link>
+      <pubDate>Wed, 18 Jan 2023 09:48:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</guid>
+      <description>[TOC]
+ Title: Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019 Author: Xin Wang et. al. Publish Year: Review Date: Wed, Jan 18, 2023  Summary of paper Motivation Visual Language Navigation (VLN) presents some unique challenges
+ first, reasoning over images and natural language instructions can be difficult. secondly, except for strictly following expert demonstrations, the feedback is rather coarse, since the &amp;ldquo;Success&amp;rdquo; feedback is provided only when the agent reaches a target position (sparse reward) A good &amp;ldquo;instruction following&amp;rdquo; trajectory may ended up just stop before you reaching the goal state and then receive zero rewards.</description>
+    </item>
+    
+  </channel>
+</rss>

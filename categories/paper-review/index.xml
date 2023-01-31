@@ -9,7 +9,42 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Dec 2022 14:39:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 13:43:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022</title>
+      <link>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</link>
+      <pubDate>Mon, 30 Jan 2023 13:43:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</guid>
+      <description>[TOC]
+ Title: Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022 Author: Publish Year: Review Date: Mon, Jan 30, 2023  Summary of paper Motivation Contribution Some key terms ideal model-based RL
+   Why neural nets + trajectory optimisation is a headache
+ Long-horizon predictions are unreliable Optimizing for reward with neural net models produces adversarial examples in trajectory spaces  A generative model of trajectories
+   What is autoregressive model</description>
+    </item>
+    
+    <item>
+      <title>Shailaja_keyur_sampat Reasoning About Actions Over Visual and Linguistic Modalities a Survey 2022</title>
+      <link>https://sino-huang.github.io/posts/shailaja_keyur_sampat-reasoning-about-actions-over-visual-and-linguistic-modalities-a-survey-2022/</link>
+      <pubDate>Fri, 20 Jan 2023 13:59:00 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/shailaja_keyur_sampat-reasoning-about-actions-over-visual-and-linguistic-modalities-a-survey-2022/</guid>
+      <description>[TOC]
+ Title: Shailaja_keyur_sampat Reasoning About Actions Over Visual and Linguistic Modalities a Survey 2022 Author: Publish Year: Review Date: Fri, Jan 20, 2023  Summary of paper Motivation  reasoning about actions &amp;amp; changes has been widely studies in the knowledge representation community, it has recently piqued the interest of NLP and computer vision researchers.  Contribution Some key terms Six most frequent types of commonsense knowledge
+   tasks that involve language-based reasoning about actions</description>
+    </item>
+    
+    <item>
+      <title>Xin_wang Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019</title>
+      <link>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</link>
+      <pubDate>Wed, 18 Jan 2023 09:48:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</guid>
+      <description>[TOC]
+ Title: Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019 Author: Xin Wang et. al. Publish Year: Review Date: Wed, Jan 18, 2023  Summary of paper Motivation Visual Language Navigation (VLN) presents some unique challenges
+ first, reasoning over images and natural language instructions can be difficult. secondly, except for strictly following expert demonstrations, the feedback is rather coarse, since the &amp;ldquo;Success&amp;rdquo; feedback is provided only when the agent reaches a target position (sparse reward) A good &amp;ldquo;instruction following&amp;rdquo; trajectory may ended up just stop before you reaching the goal state and then receive zero rewards.</description>
+    </item>
+    
     <item>
       <title>Alekh_agarwal PC-PG Policy Cover Directed Exploration for Provable Policy Gradient Learning 2020</title>
       <link>https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/</link>
