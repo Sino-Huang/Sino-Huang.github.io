@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>diffusion model on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/diffusion-model/</link>
+    <description>Recent content in diffusion model on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 30 Jan 2023 13:43:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/diffusion-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022</title>
+      <link>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</link>
+      <pubDate>Mon, 30 Jan 2023 13:43:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</guid>
+      <description>[TOC]
+ Title: Planning With Diffusion for Flexible Behaviour Synthesis Author: Michael Janner et. al. Publish Year: 21 Dec 2022 Review Date: Mon, Jan 30, 2023  Summary of paper Motivation  use the diffusion model to learn the dynamics tight coupling of the modelling and planning our goal is to break this abstraction barrier by designing a model and planning algorithm that are trained alongside one another, resulting in a non-autoregressive trajectory-level model for which sampling and planning are nearly identical.</description>
+    </item>
+    
+  </channel>
+</rss>

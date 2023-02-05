@@ -5,12 +5,9 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022 | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="diffusion model, planning" name="keywords"/>
 <meta content="[TOC]
- Title: Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022 Author: Publish Year: Review Date: Mon, Jan 30, 2023  Summary of paper Motivation Contribution Some key terms ideal model-based RL
-   Why neural nets + trajectory optimisation is a headache
- Long-horizon predictions are unreliable Optimizing for reward with neural net models produces adversarial examples in trajectory spaces  A generative model of trajectories
-   What is autoregressive model" name="description"/>
+ Title: Planning With Diffusion for Flexible Behaviour Synthesis Author: Michael Janner et. al. Publish Year: 21 Dec 2022 Review Date: Mon, Jan 30, 2023  Summary of paper Motivation  use the diffusion model to learn the dynamics tight coupling of the modelling and planning our goal is to break this abstraction barrier by designing a model and planning algorithm that are trained alongside one another, resulting in a non-autoregressive trajectory-level model for which sampling and planning are nearly identical." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -196,16 +193,20 @@ if (!doNotTrack) {
 </header>
 <div class="post-content"><p>[TOC]</p>
 <ol>
-<li>Title: Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022</li>
-<li>Author:</li>
-<li>Publish Year:</li>
+<li>Title: Planning With Diffusion for Flexible Behaviour Synthesis</li>
+<li>Author: Michael Janner et. al.</li>
+<li>Publish Year: 21 Dec 2022</li>
 <li>Review Date: Mon, Jan 30, 2023</li>
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <p><img alt="image-20230130134456046" loading="lazy" src="image-assets/cover.png"/>
 </p>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>use the diffusion model to learn the dynamics</li>
+<li>tight coupling of the modelling and planning</li>
+<li>our goal is to break this abstraction barrier by designing a model and planning algorithm that are trained alongside one another, resulting in a non-autoregressive trajectory-level model for which sampling and planning are nearly identical.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
 <p><strong>ideal model-based RL</strong></p>
 <p><img alt="image-20230130134558295" loading="lazy" src="image-assets/image-20230130134558295.png"/>
@@ -255,11 +256,32 @@ if (!doNotTrack) {
 <li><img alt="image-20230130171547970" loading="lazy" src="image-assets/image-20230130171547970.png"/>
 </li>
 </ul>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>Tight coupling between modelling and planning</strong></p>
+<ul>
+<li><img alt="image-20230131135918292" loading="lazy" src="image-assets/image-20230131135918292.png"/>
+</li>
+<li>it requires finding trajectories that are both physically realistic under $p_\theta(\tau)$ and high-reward (or constraint-satisfying) under $h(\tau)$
+<ul>
+<li>because the dynamics information is separated from the perturbation distribution $h(\tau)$, a single diffusion model $p_\theta(\tau)$ may be reused for multiple tasks in the same environment.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Algorithm</strong></p>
+<ul>
+<li><img alt="image-20230131163923412" loading="lazy" src="image-assets/image-20230131163923412.png"/>
+</li>
+</ul>
+<p><strong>Goal-conditioned RL as Inpainting</strong></p>
+<ul>
+<li>some planning problems are more naturally posed as constraint satisfaction than reward maximization.</li>
+<li>In practice, this may be implemented by sampling from the unperturbed reverse process $\tau^{i-1} \sim p_\theta(\tau^{i-1} | \tau^i)$ and <strong>replacing</strong> the sampled values with conditioning values $c_t$ after all diffusion timesteps $i \in {0,1,…,N}$</li>
+</ul>
+<p><strong>Task compositionality</strong></p>
+<ul>
+<li>while diffuser contains information about both environment dynamics and behaviours, it is independent of reward function. Because the model acts as a prior over possible futures, planning can be guided by comparatively lightweight perturbation functions $h(\tau)$ (or even combinations of multiple perturbations)</li>
+<li><img alt="image-20230131181013011" loading="lazy" src="image-assets/image-20230131181013011.png"/>
+</li>
+</ul>
 </div>
 </main>
 <footer class="footer">

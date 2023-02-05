@@ -9,7 +9,25 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Jan 2023 09:48:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Jan 2023 13:43:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>diffusion model</title>
+      <link>https://sino-huang.github.io/tags/diffusion-model/</link>
+      <pubDate>Mon, 30 Jan 2023 13:43:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/diffusion-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>planning</title>
+      <link>https://sino-huang.github.io/tags/planning/</link>
+      <pubDate>Mon, 30 Jan 2023 13:43:20 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/planning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>language reward shaping</title>
       <link>https://sino-huang.github.io/tags/language-reward-shaping/</link>
@@ -223,15 +241,6 @@
       <pubDate>Tue, 15 Mar 2022 16:34:45 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/domain-modelling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>planning</title>
-      <link>https://sino-huang.github.io/tags/planning/</link>
-      <pubDate>Tue, 15 Mar 2022 16:34:45 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/planning/</guid>
       <description></description>
     </item>
     

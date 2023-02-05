@@ -9,7 +9,47 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Jan 2023 13:43:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Feb 2023 13:28:19 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xiaotian_liu a Planning Based Neural Symbolic Approach for Embodied Instruction Following 2022</title>
+      <link>https://sino-huang.github.io/posts/xiaotian_liu-a-planning-based-neural-symbolic-approach-for-embodied-instruction-following-2022/</link>
+      <pubDate>Thu, 02 Feb 2023 13:28:19 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xiaotian_liu-a-planning-based-neural-symbolic-approach-for-embodied-instruction-following-2022/</guid>
+      <description>[TOC]
+ Title: A Planning Based Neural Symbolic Approach for Embodied Instruction Following Author: Xiaotian Liu et. al. Publish Year: 2022 Review Date: Thu, Feb 2, 2023 url: https://embodied-ai.org/papers/2022/15.pdf  Summary of paper Motivation  end-to-end deep learning methods struggle at these tasks due to long-horizon and sparse rewards.  Contribution  Our main innovation relies on combining DL models for perception and NLP with a new egocentric planner based on successive planning problems formulated using the PDDL syntax, both for exploration and task accomplishment.</description>
+    </item>
+    
+    <item>
+      <title>So_yeon_min Film Following Instructions in Language With Modular Methods 2022</title>
+      <link>https://sino-huang.github.io/posts/so_yeon_min-film-following-instructions-in-language-with-modular-methods-2022/</link>
+      <pubDate>Wed, 01 Feb 2023 18:32:24 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/so_yeon_min-film-following-instructions-in-language-with-modular-methods-2022/</guid>
+      <description>[TOC]
+ Title: FILM: Following Instructions in Language With Modular Methods Author: So Yeon Min et. al. Publish Year: 16 Mar 2022 Review Date: Wed, Feb 1, 2023 url: https://arxiv.org/pdf/2110.07342.pdf  Summary of paper Motivation  current approaches assume that neural states will integrate multimodal semantics to perform state tracking, building spatial memory, exploration, and long-term planning. in contrast, we propose a modular method with structured representation that  build a semantic map of scene and perform exploration with a semantic search policy, to achieve natural language goal.</description>
+    </item>
+    
+    <item>
+      <title>Yuki_inoue Prompter Utilizing Large Language Model Prompting for a Data Efficient Embodied Instruction Following 2022</title>
+      <link>https://sino-huang.github.io/posts/yuki_inoue-prompter-utilizing-large-language-model-prompting-for-a-data-efficient-embodied-instruction-following-2022/</link>
+      <pubDate>Wed, 01 Feb 2023 17:22:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yuki_inoue-prompter-utilizing-large-language-model-prompting-for-a-data-efficient-embodied-instruction-following-2022/</guid>
+      <description>[TOC]
+ Title: Prompter: Utilizing Large Language Model Prompting for a Data Efficient Embodied Instruction Following Author: Yuki Inoue et. al. Publish Year: 7 Nov 2022 Review Date: Wed, Feb 1, 2023 url: https://arxiv.org/pdf/2211.03267.pdf  Summary of paper Motivation  we propose FILM++ which extends the existing work FILM with modifications that do not require extra data. furthermore, we propose Prompter, which replace FILM++&amp;rsquo;s semantic search module with language model prompting.</description>
+    </item>
+    
+    <item>
+      <title>Kyle_mahowald Dissociating Language and Thought in Large Language Models a Cognitive Perspective 2023</title>
+      <link>https://sino-huang.github.io/posts/kyle_mahowald-dissociating-language-and-thought-in-large-language-models-a-cognitive-perspective-2023/</link>
+      <pubDate>Tue, 31 Jan 2023 18:47:45 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/kyle_mahowald-dissociating-language-and-thought-in-large-language-models-a-cognitive-perspective-2023/</guid>
+      <description>[TOC]
+ Title: Dissociating Language and Thought in Large Language Models a Cognitive Perspective Author: Kyle Mahowald et. al. Publish Year: 16 Jan 2023 Review Date: Tue, Jan 31, 2023 url: https://arxiv.org/pdf/2301.06627.pdf  Summary of paper Motivation  the author tried to challenge the &amp;ldquo;good at language $\implies$ good at thought&amp;rdquo; fallacy. the second fallacy is &amp;ldquo;bad at thought $\implies$ bad at language&amp;rdquo;  Contribution  the author argued that LLMs have promise as scientific models of one piece of the human cognitive toolbox &amp;ndash; formal language processing &amp;ndash; but fall short of modelling human thought.</description>
+    </item>
+    
     <item>
       <title>Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022</title>
       <link>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</link>
@@ -17,10 +57,7 @@
       
       <guid>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</guid>
       <description>[TOC]
- Title: Michael_janner Planning With Diffusion for Flexible Behaviour Synthesis 2022 Author: Publish Year: Review Date: Mon, Jan 30, 2023  Summary of paper Motivation Contribution Some key terms ideal model-based RL
-   Why neural nets + trajectory optimisation is a headache
- Long-horizon predictions are unreliable Optimizing for reward with neural net models produces adversarial examples in trajectory spaces  A generative model of trajectories
-   What is autoregressive model</description>
+ Title: Planning With Diffusion for Flexible Behaviour Synthesis Author: Michael Janner et. al. Publish Year: 21 Dec 2022 Review Date: Mon, Jan 30, 2023  Summary of paper Motivation  use the diffusion model to learn the dynamics tight coupling of the modelling and planning our goal is to break this abstraction barrier by designing a model and planning algorithm that are trained alongside one another, resulting in a non-autoregressive trajectory-level model for which sampling and planning are nearly identical.</description>
     </item>
     
     <item>
