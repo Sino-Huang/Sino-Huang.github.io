@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Dec 2022 14:39:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 18:18:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Danijar_hafner Mastering Diverse Domains Through World Models 2023</title>
+      <link>https://sino-huang.github.io/posts/danijar_hafner-mastering-diverse-domains-through-world-models-2023/</link>
+      <pubDate>Tue, 07 Feb 2023 18:18:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/danijar_hafner-mastering-diverse-domains-through-world-models-2023/</guid>
+      <description>[TOC]
+ Title: Mastering Diverse Domains Through World Models Author: Danijar Hafner et. al. Publish Year: 10 Jan 2023 Review Date: Tue, Feb 7, 2023 url: https://www.youtube.com/watch?v=vfpZu0R1s1Y  Summary of paper Motivation  general intelligence requires solving tasks across many domains. Current reinforcement learning algorithms carry this potential but held back by the resources and knowledge required tune them for new task.  Contribution  we present DreamerV3, a general and scalable algorithm based on world models that outperforms previous approaches across a wide range of domains with fixed hyperparameters.</description>
+    </item>
+    
     <item>
       <title>Alekh_agarwal PC-PG Policy Cover Directed Exploration for Provable Policy Gradient Learning 2020</title>
       <link>https://sino-huang.github.io/posts/alekh_agarwal-pcpg-policy-cover-directed-exploration-for-provable-policy-gradient-learning-2020/</link>

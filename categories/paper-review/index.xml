@@ -9,7 +9,47 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Feb 2023 13:28:19 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 18:18:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Danijar_hafner Mastering Diverse Domains Through World Models 2023</title>
+      <link>https://sino-huang.github.io/posts/danijar_hafner-mastering-diverse-domains-through-world-models-2023/</link>
+      <pubDate>Tue, 07 Feb 2023 18:18:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/danijar_hafner-mastering-diverse-domains-through-world-models-2023/</guid>
+      <description>[TOC]
+ Title: Mastering Diverse Domains Through World Models Author: Danijar Hafner et. al. Publish Year: 10 Jan 2023 Review Date: Tue, Feb 7, 2023 url: https://www.youtube.com/watch?v=vfpZu0R1s1Y  Summary of paper Motivation  general intelligence requires solving tasks across many domains. Current reinforcement learning algorithms carry this potential but held back by the resources and knowledge required tune them for new task.  Contribution  we present DreamerV3, a general and scalable algorithm based on world models that outperforms previous approaches across a wide range of domains with fixed hyperparameters.</description>
+    </item>
+    
+    <item>
+      <title>Yuanhan_zhang What Makes Good Examples for Visual in Context Learning 2023</title>
+      <link>https://sino-huang.github.io/posts/yuanhan_zhang-what-makes-good-examples-for-visual-in-context-learning-2023/</link>
+      <pubDate>Mon, 06 Feb 2023 22:38:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yuanhan_zhang-what-makes-good-examples-for-visual-in-context-learning-2023/</guid>
+      <description>[TOC]
+ Title: What Makes Good Examples for Visual in Context Learning Author: Yuan Zhang et. al. Publish Year: 1 Feb 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.13670.pdf  Summary of paper Motivation  in this paper, the main focus is on an emergent ability in large vision models, known. as in-context learning this concept has been well-known in natural language processing but has only been studied very recently for large vision models.</description>
+    </item>
+    
+    <item>
+      <title>Jing_yu_koh Grounding Language Models to Images for Multimodal Generation 2023</title>
+      <link>https://sino-huang.github.io/posts/jing_yu_koh-grounding-language-models-to-images-for-multimodal-generation-2023/</link>
+      <pubDate>Mon, 06 Feb 2023 22:37:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jing_yu_koh-grounding-language-models-to-images-for-multimodal-generation-2023/</guid>
+      <description>[TOC]
+ Title: Grounding Language Models to Images for Multimodal Generation Author: Jing Yu Koh et. al. Publish Year: 31 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.13823.pdf  Summary of paper Motivation  we propose an efficient method to ground pre-trained text-only language models to the visual domain How  we keep the language model frozen, and finetune input and output linear layers to enable cross-modality interactions. This allows our model to process arbitrarily interleaved    Contribution  our approach works with any off-the-shelf language model and paves the way towards an effective, general solution for leveraging pre-trained language models in visually grounded settings.</description>
+    </item>
+    
+    <item>
+      <title>Zhenfang_chen See Think Confirm Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning 2023</title>
+      <link>https://sino-huang.github.io/posts/zhenfang_chen-see-think-confirm-interactive-prompting-between-vision-and-language-models-for-knowledge-based-visual-reasoning-2023/</link>
+      <pubDate>Mon, 06 Feb 2023 22:36:41 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/zhenfang_chen-see-think-confirm-interactive-prompting-between-vision-and-language-models-for-knowledge-based-visual-reasoning-2023/</guid>
+      <description>[TOC]
+ Title: See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning Author: Zhenfang Chen et. al. Publish Year: 12 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.05226.pdf  Summary of paper Motivation  Solving the knowledge-based visual reasoning tasks remains challenging, which requires a model to comprehensively understand image content, connect external world knowledge, and perform step-by-step reasoning to answer the questions correctly.</description>
+    </item>
+    
     <item>
       <title>Xiaotian_liu a Planning Based Neural Symbolic Approach for Embodied Instruction Following 2022</title>
       <link>https://sino-huang.github.io/posts/xiaotian_liu-a-planning-based-neural-symbolic-approach-for-embodied-instruction-following-2022/</link>

@@ -9,7 +9,43 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Jan 2023 13:43:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Feb 2023 18:18:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
+      <pubDate>Tue, 07 Feb 2023 18:18:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prompt learning</title>
+      <link>https://sino-huang.github.io/tags/prompt-learning/</link>
+      <pubDate>Mon, 06 Feb 2023 22:38:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/prompt-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multimodal learning</title>
+      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
+      <pubDate>Mon, 06 Feb 2023 22:37:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual question answering</title>
+      <link>https://sino-huang.github.io/tags/visual-question-answering/</link>
+      <pubDate>Mon, 06 Feb 2023 22:36:41 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/visual-question-answering/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>diffusion model</title>
       <link>https://sino-huang.github.io/tags/diffusion-model/</link>
@@ -38,29 +74,11 @@
     </item>
     
     <item>
-      <title>multimodal learning</title>
-      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
-      <pubDate>Wed, 18 Jan 2023 09:48:14 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>policy gradient</title>
       <link>https://sino-huang.github.io/tags/policy-gradient/</link>
       <pubDate>Wed, 28 Dec 2022 14:39:25 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/policy-gradient/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reinforcement learning</title>
-      <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
-      <pubDate>Wed, 28 Dec 2022 14:39:25 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     
@@ -160,15 +178,6 @@
       <pubDate>Wed, 05 Oct 2022 23:04:49 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/transformer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>prompt learning</title>
-      <link>https://sino-huang.github.io/tags/prompt-learning/</link>
-      <pubDate>Mon, 19 Sep 2022 21:55:13 +1000</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/prompt-learning/</guid>
       <description></description>
     </item>
     
