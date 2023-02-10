@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Feb 2023 22:37:53 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Feb 2023 02:51:23 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xiwen_liang Contrastive Instruction Trajectory Learning for Vision Language Navigation 2022</title>
+      <link>https://sino-huang.github.io/posts/xiwen_liang-contrastive-instruction-trajectory-learning-for-vision-language-navigation-2022/</link>
+      <pubDate>Fri, 10 Feb 2023 02:51:23 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xiwen_liang-contrastive-instruction-trajectory-learning-for-vision-language-navigation-2022/</guid>
+      <description>[TOC]
+ Title: Contrastive Instruction Trajectory Learning for Vision Language Navigation Author: Xiwen Liang et. al. Publish Year: AAAI 2022 Review Date: Fri, Feb 10, 2023 url: https://arxiv.org/abs/2112.04138  Summary of paper Motivation  previous works learn to navigate step-by-step following an instruction. However, these works may fail to discriminate the similarities and discrepancies across instruction-trajectory pairs and ignore the temporal continuity of sub-instructions. These problems hinder agents from learning distinctive vision-and-language representations,  Contribution  we propose  a coarse-grained contrastive learning objective to enhance vision-and-language representations by contrasting semantics of full trajectory observations and instructions respectively; a fine-grained contrastive learning objective to perceive instructions by leveraging the temporal information of the sub-instructions.</description>
+    </item>
+    
+    <item>
+      <title>Zhuosheng_zhang Multimodal Chain of Thought Reasoning in Language Models 2023</title>
+      <link>https://sino-huang.github.io/posts/zhuosheng_zhang-multimodal-chain-of-thought-reasoning-in-language-models-2023/</link>
+      <pubDate>Wed, 08 Feb 2023 22:23:45 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/zhuosheng_zhang-multimodal-chain-of-thought-reasoning-in-language-models-2023/</guid>
+      <description>[TOC]
+ Title: Multimodal Chain of Thought Reasoning in Language Models Author: Zhuosheng Zhang et. al. Publish Year: 2023 Review Date: Wed, Feb 8, 2023 url: https://arxiv.org/pdf/2302.00923.pdf  Summary of paper Motivation  LLMs have shown impressive performance on complex reasoning by leveraging chain-of-thought (CoT) prompting to generate intermediate reasoning chains as the rationale to infer the answer. to elicit CoT reasoning in multimodality, a possible solution is to fine-tune small language models by fusing the vision and language features to perform CoT reasoning.</description>
+    </item>
+    
     <item>
       <title>Jing_yu_koh Grounding Language Models to Images for Multimodal Generation 2023</title>
       <link>https://sino-huang.github.io/posts/jing_yu_koh-grounding-language-models-to-images-for-multimodal-generation-2023/</link>
