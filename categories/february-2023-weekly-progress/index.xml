@@ -9,13 +9,29 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 29 Jan 2023 23:15:54 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/february-2023-weekly-progress/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 12 Feb 2023 09:53:46 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/february-2023-weekly-progress/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>01 Feb -- 28 Feb, 2023</title>
-      <link>https://sino-huang.github.io/weekly-report/01-feb-28-feb-2023/</link>
+      <title>12 Feb -- 28 Feb, 2023</title>
+      <link>https://sino-huang.github.io/weekly-report/12-feb-28-feb-2023/</link>
+      <pubDate>Sun, 12 Feb 2023 09:53:46 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/weekly-report/12-feb-28-feb-2023/</guid>
+      <description>&lt;h2 id=&#34;previous-work-review&#34;&gt;Previous Work Review&lt;/h2&gt;
+&lt;p&gt;We will work on the two projects&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;ALFRED environment&lt;/li&gt;
+&lt;li&gt;Visualise planed path as a line&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;You need password to access to the content, go to Slack *#phdsukai to find more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>01 Feb -- 11 Feb, 2023</title>
+      <link>https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/</link>
       <pubDate>Sun, 29 Jan 2023 23:15:54 +1100</pubDate>
       
-      <guid>https://sino-huang.github.io/weekly-report/01-feb-28-feb-2023/</guid>
+      <guid>https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/</guid>
       <description>&lt;h2 id=&#34;previous-work-review&#34;&gt;Previous Work Review&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;We finish investigating the Language Reward Shaping model and we find out that it is slower than a vanilla PPO+RND learning agent. We found out that rewarding to partially matched trajectories significantly slows down the learning speed.&lt;/li&gt;
