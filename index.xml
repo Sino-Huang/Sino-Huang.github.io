@@ -1,16 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Sukai Huang</title>
-    <link>https://sino-huang.github.io/</link>
-    <description>Recent content on Sukai Huang</description>
-    <image>
-      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
-      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 12 Feb 2023 09:53:46 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
+<channel>
+<title>Sukai Huang</title>
+<link>https://sino-huang.github.io/</link>
+<description>Recent content on Sukai Huang</description>
+<image>
+<url>https://sino-huang.github.io/cute_avatar.jpg</url>
+<link>https://sino-huang.github.io/cute_avatar.jpg</link>
+</image>
+<generator>Hugo -- gohugo.io</generator>
+<lastBuildDate>Sun, 12 Feb 2023 09:53:46 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+</channel>
 </rss>

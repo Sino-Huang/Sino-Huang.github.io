@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>01 Nov -- 30 Nov, 2022 | Sukai Huang</title>
-<meta name="keywords" content="">
-<meta name="description" content="Last Week&rsquo;s Work Review
+<meta content="" name="keywords"/>
+<meta content="Last Week’s Work Review
 
 for the last month we found out that the agent had the following issues
 
@@ -18,44 +17,44 @@ it gives more weights to the object detection than action detection,
 thus it gave wrong rewards when the agent was close to the target object but did the wrong action
 
 
-e.g., it gave high rewards for sentence &ldquo;climb down the ladder&rdquo; when the agent was staying on the ladder
+e.g., it gave high rewards for sentence “climb down the ladder” when the agent was staying on the ladder
 
 
 
 
 it tried to analyse each single word instead of recognising the phrases and the qualifier
 
-e.g.,  it gave rewards for sentence &ldquo;go to the ladder on the right&rdquo; when the agent was at the ladder on the middle
-e.g., it gave reward for sentence &ldquo;climb down the ladder on the right&rdquo; when the agent was jumping to the right platform
-the module cannot correctly handle the phrase &ldquo;the ladder on the right&rdquo;, instead, it treated it as two things &ndash; &ldquo;ladder&rdquo; and &ldquo;right&rdquo;
+e.g.,  it gave rewards for sentence “go to the ladder on the right” when the agent was at the ladder on the middle
+e.g., it gave reward for sentence “climb down the ladder on the right” when the agent was jumping to the right platform
+the module cannot correctly handle the phrase “the ladder on the right”, instead, it treated it as two things – “ladder” and “right”
 
 
 
 
-our solution is to generate hard negative examples by replacing the noun phrase and the verb phrase in the original sentence with random phrases picked from the phrase set. and I call it &ldquo;phrase polluted hard negative example generation&rdquo;
+our solution is to generate hard negative examples by replacing the noun phrase and the verb phrase in the original sentence with random phrases picked from the phrase set. and I call it “phrase polluted hard negative example generation”
 
 
-You need password to access to the content, go to Slack *#phdsukai to find more.">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/index.xml">
+You need password to access to the content, go to Slack *#phdsukai to find more." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/" rel="canonical"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -84,10 +83,9 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     </style>
 </noscript>
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
 <script>
     var decryptedcustomevent = new Event('hugo-text-decrypted-alert');
     console.log("Create hugo-text-decrypted-alert event");
@@ -114,10 +112,7 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     }
 </script>
-
-    
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -127,18 +122,14 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="01 Nov -- 30 Nov, 2022" />
-<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/" /><meta property="og:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
-
-<meta name="twitter:title" content="01 Nov -- 30 Nov, 2022"/>
-<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
-
-
+<meta content="01 Nov -- 30 Nov, 2022" property="og:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
+<meta content="01 Nov -- 30 Nov, 2022" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -160,7 +151,6 @@ if (!doNotTrack) {
 }
 </script>
 </head>
-
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -172,78 +162,72 @@ if (!doNotTrack) {
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/categories/" title="📁">
-                    <span>📁</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/tags/" title="🏷️">
-                    <span>🏷️</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/search/" title="🔍">
-                    <span>🔍</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archives">
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="📁">
+<span>📁</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="🏷️">
+<span>🏷️</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/search/" title="🔍">
+<span>🔍</span>
+</a>
+</li>
+</ul>
+</nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
-  <h1>
+<main class="main">
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
+<h1>
     01 Nov -- 30 Nov, 2022
-    <a href="index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
 </header>
-<div class="post-content"><h2 id="last-weeks-work-review">Last Week&rsquo;s Work Review<a hidden class="anchor" aria-hidden="true" href="#last-weeks-work-review">#</a></h2>
+<div class="post-content"><h2 id="last-weeks-work-review">Last Week’s Work Review<a aria-hidden="true" class="anchor" hidden="" href="#last-weeks-work-review">#</a></h2>
 <ul>
 <li>for the last month we found out that the agent had the following issues
 <ul>
@@ -254,455 +238,33 @@ if (!doNotTrack) {
 <p>thus it gave wrong rewards when the agent was close to the target object but did the wrong action</p>
 </li>
 <li>
-<p>e.g., it gave high rewards for sentence &ldquo;<em>climb down</em> the ladder&rdquo; when the agent was <em>staying</em> on the ladder</p>
+<p>e.g., it gave high rewards for sentence “<em>climb down</em> the ladder” when the agent was <em>staying</em> on the ladder</p>
 </li>
 </ul>
 </li>
 <li>
 <p>it tried to analyse each single word instead of recognising the phrases and the qualifier</p>
 <ul>
-<li>e.g.,  it gave rewards for sentence &ldquo;go to <em>the ladder on the right</em>&rdquo; when the agent was at the ladder on the middle</li>
-<li>e.g., it gave reward for sentence &ldquo;climb down <em>the ladder on the right</em>&rdquo; when the agent was jumping to the <em>right</em> platform</li>
-<li>the module cannot correctly handle the phrase &ldquo;the ladder on the right&rdquo;, instead, it treated it as two things &ndash; &ldquo;ladder&rdquo; and &ldquo;right&rdquo;</li>
+<li>e.g.,  it gave rewards for sentence “go to <em>the ladder on the right</em>” when the agent was at the ladder on the middle</li>
+<li>e.g., it gave reward for sentence “climb down <em>the ladder on the right</em>” when the agent was jumping to the <em>right</em> platform</li>
+<li>the module cannot correctly handle the phrase “the ladder on the right”, instead, it treated it as two things – “ladder” and “right”</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>our solution is to generate hard negative examples by replacing the noun phrase and the verb phrase in the original sentence with random phrases picked from the phrase set. and I call it &ldquo;phrase polluted hard negative example generation&rdquo;</li>
+<li>our solution is to generate hard negative examples by replacing the noun phrase and the verb phrase in the original sentence with random phrases picked from the phrase set. and I call it “phrase polluted hard negative example generation”</li>
 </ul>
-<hr>
+<hr/>
 <p>You need password to access to the content, go to Slack *#phdsukai to find more.</p>
 <div class="hugo-encryptor-container">
-  <div class="hugo-encryptor-prompt">
-    
-      <p>Part of this article is encrypted with password:</p>
-    
-  </div>
-  <div class="hugo-encryptor-form">
-    <input
-      class="hugo-encryptor-input"
-      placeholder='Please input the password'
-    />
-    <input
-      class="hugo-encryptor-button"
-      type="button"
-      value='Click to verify'
-      onclick="_click_handler(this)"
-    />
-  </div>
-  <div
-    class="hugo-encryptor-cipher-text"
-    data-password="sukai-1995"
-    style="display: none;"
-  >
-    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
-    <p>[TOC]</p>
-<h2 id="todo-list">TODO List<a hidden class="anchor" aria-hidden="true" href="#todo-list">#</a></h2>
-<ul>
-<li>
-<p><input checked="" disabled="" type="checkbox"> continue the hard negative example stuffs and see if it can solve the problem</p>
-<ul>
-<li><input checked="" disabled="" type="checkbox"> solution: manually select hard negative phrases</li>
-</ul>
-</li>
-<li>
-<p><input checked="" disabled="" type="checkbox"> Object detection module -&gt; we need it eventually if we go symbolic AI planning</p>
-<ol>
-<li>check <a href="https://labelstud.io/">https://labelstud.io/</a> for video object annotation</li>
-</ol>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> mask instructions&rsquo; tokens to see what is the most important token in the sentence -&gt; we may create a group of masked descriptions from specific to vague (e.g., stand at the conveyor belt and then jump right to the yellow rope -&gt; jump to the yellow rope -&gt; to the rope) (this is an evaluation stuff -&gt; create a GUI for it)
-1. if we want to annotate by ourselves, try this paraphrase tool <a href="https://github.com/PrithivirajDamodaran/Parrot_Paraphraser">https://github.com/PrithivirajDamodaran/Parrot_Paraphraser</a>
-1. also this tool <a href="https://github.com/words/powerthesaurus-api">https://github.com/words/powerthesaurus-api</a></p>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> Generating training data</p>
-<ul>
-<li><input disabled="" type="checkbox"> More negative examples generation
-<ul>
-<li><input disabled="" type="checkbox"> reverse the video and make it negative example (neglect pairs that has &ldquo;stay&rdquo;, &ldquo;wait&rdquo; or other similar words in the sentence)</li>
-<li><input disabled="" type="checkbox"> freeze the video frame and make it negative (neglect pairs that has &ldquo;stay&rdquo;, &ldquo;wait&rdquo; words in the sentence)</li>
-<li><input disabled="" type="checkbox"> disrupt the order of the video clips for the long merged video (event ordering understanding) (check this <a href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/#sentence-1">qualitative analysis</a> )</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> More positive examples
-<ul>
-<li><input disabled="" type="checkbox"> swap synonym</li>
-<li><input disabled="" type="checkbox"> concatenation of two or three pairs, and we know that at the merge point, we complete 50%/33.3% of the long text.</li>
-</ul>
-</li>
-<li><input disabled="" type="checkbox"> balance the phrase frequency in the negative and the positive training dataset.</li>
-</ul>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> A better validation dataset -&gt; maybe create it by our hands?</p>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> Try video caption generation -&gt; improve the interpretability, otherwise we don&rsquo;t know what&rsquo;s going on.</p>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> May continue the TODOs listed in the confirmation report (Which is Hindsight Experience Relabelling)</p>
-</li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20221102201616678.png" alt="image-20221102201616678"  />
-</p>
-<div style="page-break-after:always" /> 
-<p><strong>11 Nov &ndash; 18 Nov</strong></p>
-<hr>
-<h2 id="evaluation-of-the-importance-of-each-phrase-in-the-sentence">Evaluation of the importance of each phrase in the sentence<a hidden class="anchor" aria-hidden="true" href="#evaluation-of-the-importance-of-each-phrase-in-the-sentence">#</a></h2>
-<p>Go Teamviewer to run this tool</p>
-<ul>
-<li>we found that the prediction is invariant to the sliding window size for the video input</li>
-<li>the pretraining for the video encoder contributes this</li>
-</ul>
-<p><strong>Correct prediction example</strong></p>
-<img src="image-assets/image-20221117004319444.png" alt="image-20221117004319444" style="width:70%;" />
-<ul>
-<li>this one is good, it captures all important info</li>
-</ul>
-<p><strong>Correct prediction but wrong understanding</strong></p>
-<img src="image-assets/image-20221117004502980.png" alt="image-20221117004502980" style="width:70%;" />
-<ul>
-<li>to the left should be more important</li>
-</ul>
-<p><strong>Wrong prediction example</strong></p>
-<img src="image-assets/image-20221117003639054.png" alt="image-20221117003639054" style="width:70%;" />
-<ul>
-<li>the man just stays on the ladder, but the module cannot recognise this</li>
-</ul>
-<h2 id="other-ways-to-create-training-examples-to-measure-the-degree-of-completion-of-event">Other ways to create training examples to measure the degree of completion of event<a hidden class="anchor" aria-hidden="true" href="#other-ways-to-create-training-examples-to-measure-the-degree-of-completion-of-event">#</a></h2>
-<p><strong>Prediction accuracy for Positive examples are low &ndash;&gt; 0.683</strong></p>
-<img src="image-assets/image-20221116200325226.png" alt="image-20221116200325226" style="width:50%;" />
-<ul>
-<li>
-<p>The language reward module&rsquo;s task is about</p>
-<ol>
-<li>checking whether the past behaviour is matched with the correct instruction. (solved by in-batch negatives and hard negatives )</li>
-<li>check the degree of completion (not solved yet) -&gt; this is about the temporal understanding</li>
-</ol>
-</li>
-<li>
-<p>The language reward model indeed had the issue on understanding the degree of completion of event (see the <a href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/#sentence-2">qualitative analysis 2</a> )</p>
-</li>
-<li>
-<p>Previously we thought that it is hard to get training data for predicting the completeness of the event is because</p>
-<ul>
-<li>we cannot tell the critical time of a single task (e.g., it is hard to determine what is 50% completion of a single task)</li>
-</ul>
-</li>
-<li>
-<p>Solution: <strong>concatenation of two or three video-text pairs together</strong>, and we know that at the merge point, we complete 50%/33.3% of the long text.</p>
-</li>
-<li>
-<p>Some other negative example generation options</p>
-<ul>
-<li>reverse the matched video (temporal understanding)</li>
-<li>freeze the video frame (temporal understanding)</li>
-<li>disrupt the order of the video clips for the long merged video (event ordering understanding) (check this <a href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/#sentence-1">qualitative analysis</a> )</li>
-</ul>
-</li>
-</ul>
-<h2 id="immediate-todos-delete-this-section-once-finish">Immediate TODOs (Delete this section once finish)<a hidden class="anchor" aria-hidden="true" href="#immediate-todos-delete-this-section-once-finish">#</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"> retrain the model with the annotated video</li>
-<li><input disabled="" type="checkbox"> set action identifier&rsquo;s video input to be 84 x 84</li>
-<li><input disabled="" type="checkbox"> but set language reward shaping main input to be 256 x 256 so that the model can see the labels on the video more clearly</li>
-</ul>
-<h2 id="rl-agent-performance">RL agent performance<a hidden class="anchor" aria-hidden="true" href="#rl-agent-performance">#</a></h2>
-<img src="image-assets/image-20221113225355381.png" alt="image-20221113225355381" style="zoom:50%;" />
-<ul>
-<li>
-<p><del>it appears that the language reward shaping method can help the agent to increase the frequency of getting out of the first room.</del></p>
-</li>
-<li>
-<p>Well, we need to admit that the RL agent can easily fall into local minima due to the inaccuracy of the language reward module.</p>
-</li>
-</ul>
-<p><strong>Successful trajectory record</strong></p>
-<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
-    <source src="image-assets/successful_trajecotry.mov" type="video/mp4">
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
-<h2 id="qualitative-analysis">Qualitative analysis<a hidden class="anchor" aria-hidden="true" href="#qualitative-analysis">#</a></h2>
-<p><strong>Ideally the language reward module should give highest reward at the time when the agent completed the task.</strong></p>
-<h3 id="sentence-1">Sentence 1<a hidden class="anchor" aria-hidden="true" href="#sentence-1">#</a></h3>
-<ol>
-<li><img loading="lazy" src="image-assets/image-20221113230547091.png" alt="image-20221113230547091"  />
-</li>
-<li>interestingly, the agent directly jump to the rope instead of climb down the middle ladder, thus when the agent is on the ladder, the language reward module does not give the reward</li>
-<li><img loading="lazy" src="image-assets/image-20221113230308779.png" alt="image-20221113230308779"  />
-</li>
-<li>After the agent climb down the right ladder, it gets the highest reward.</li>
-<li>It seems that the language reward module does not handle the temporal ordering clearly.</li>
-</ol>
-<h3 id="sentence-2">Sentence 2<a hidden class="anchor" aria-hidden="true" href="#sentence-2">#</a></h3>
-<ol>
-<li>again the language reward shaping module still has difficulty detect if the instruction is completed or not
-<ol>
-<li>Ideally it should give highest reward at the time when the agent complete the task.</li>
-<li><img loading="lazy" src="image-assets/image-20221113225823205.png" alt="image-20221113225823205"  />
-</li>
-<li>see the screenshot above, the model gives the highest matched probability (0.74) for the instruction &ldquo;climb upside the ladder on the left to get the key&rdquo; when the agent is at the bottom of the left ladder</li>
-<li><img loading="lazy" src="image-assets/image-20221113230037373.png" alt="image-20221113230037373"  />
-</li>
-<li>See the screenshot above, when the agent get the key, the matched probability is 0.61, which is lower than 0.74 which was obtained when the agent was at the bottom of the ladder.</li>
-</ol>
-</li>
-</ol>
-<h2 id="fall-into-local-minima">Fall into local minima<a hidden class="anchor" aria-hidden="true" href="#fall-into-local-minima">#</a></h2>
-<p><strong>gain all the reward by staying on the ladder</strong></p>
-<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
-    <source src="image-assets/local_minima_staying_on_ladder.mov" type="video/mp4">
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
-<p><strong>gain first sentence&rsquo;s reward by jumping</strong></p>
-<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
-    <source src="image-assets/localminima_first_sent.mov" type="video/mp4">
-    There should have been a video here but your browser does not seem
-    to support it.
-</video>
-<h2 id="known-issues">Known issues<a hidden class="anchor" aria-hidden="true" href="#known-issues">#</a></h2>
-<p>the language reward shaping module (the binary classifier of matched video and language description) not robust to small changes in sentences</p>
-<ul>
-<li>
-<p>sometimes it just failed to recognise when we add just some qualifiers in the description (e.g., jump right to the platform vs jump right to the platform on the right)</p>
-<ul>
-<li><input disabled="" type="checkbox"> can be solved by having more training data with vague to specific language descriptions</li>
-</ul>
-</li>
-<li>
-<p>Ideally the language reward module should give highest reward at the time when the agent completed the task. But the <a href="https://sino-huang.github.io/weekly-report/01-nov-30-nov-2022/#sentence-2">qualitative analysis 2</a> show that the model failed to do it.</p>
-<ul>
-<li><input disabled="" type="checkbox"> can be solved by concatenating two or three pairs of data</li>
-</ul>
-</li>
-<li>
-<p>it recognises the wrong subject</p>
-<ul>
-<li>for sentence &ldquo;walk to the right&rdquo;, it gives reward when the skull is rolling to the right.</li>
-<li><input disabled="" type="checkbox"> can be solved by the object detection annotated observation</li>
-</ul>
-</li>
-<li>
-<p>it does not give rewards if the phrase appears more often in the negative training dataset.</p>
-<ul>
-<li><input disabled="" type="checkbox"> e.g., the phrase &ldquo;conveyor belt&rdquo; is appeared more often in the negative examples, therefore the language reward shaping module tends to not give any reward when it sees the phrase &ldquo;conveyor belt&rdquo; in the sentence.</li>
-<li><input disabled="" type="checkbox"> can be solved by balancing the phrase frequency</li>
-</ul>
-</li>
-<li>
-<p>Interpretability issue: I just don&rsquo;t know why the language reward module is just inaccurate in analysing the following relevant instruction with the game scene</p>
-<ol>
-<li>
-<p><img loading="lazy" src="image-assets/image-20221112235456461.png" alt="image-20221112235456461"  />
-</p>
-</li>
-<li>
-<p>sometimes the module is over-confident on some sentences, (think they are always relevant) sometimes it&rsquo;s under-confident on some others (think that they are always irrelevant), it&rsquo;s very hard to evaluate the module.</p>
-</li>
-<li>
-<p><input disabled="" type="checkbox"> we can create video -&gt; text generator so that we can evaluate what&rsquo;s going on</p>
-</li>
-</ol>
-</li>
-</ul>
-<p><strong>1 Nov &ndash; 10 Nov</strong></p>
-<h2 id="phrase-polluted-hard-negative-examples">Phrase polluted hard negative examples<a hidden class="anchor" aria-hidden="true" href="#phrase-polluted-hard-negative-examples">#</a></h2>
-<ul>
-<li>
-<p>workflow</p>
-<ol>
-<li>
-<p>get the phrase in the sentence (e.g., verb phrases)</p>
-<p><img loading="lazy" src="image-assets/image-20221102202149626.png" alt="image-20221102202149626"  />
-</p>
-</li>
-<li>
-<p>randomly pick one verb phrase (e.g, &lt;wait for&gt;), swap with one random verb phrase (e.g, &lt;jump into&gt;) in the verb phrase collection set</p>
-</li>
-<li>
-<p>As a result, we get a &ldquo;verb phrase polluted hard negative example&rdquo; &ldquo;<em><u>Jump into</u></em> the steps on the right to appear &hellip;.&rdquo;</p>
-</li>
-<li>
-<p>We can see that the new sentence may not make sense.</p>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="training-config-version-1">Training config version 1<a hidden class="anchor" aria-hidden="true" href="#training-config-version-1">#</a></h3>
-<ul>
-<li>
-<p>we did not change the testing dataset &ndash; meaning that in the testing dataset, the negative examples are still in-batch negative examples (i.e., pair the sentence with another random trajectory in the same batch)</p>
-</li>
-<li>
-<p>But for the training dataset: 50% are positive examples (matched pairs), 15% are <u>verb</u> phrase polluted hard negative examples, 15% are <u>verb</u> phrase polluted hard negative examples, 20% are both polluted negative examples.</p>
-</li>
-</ul>
-<p><strong>Result</strong></p>
-<ul>
-<li>Interestingly, the model did not perform well on the testing dataset.</li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20221103005345687.png" alt="image-20221103005345687"  />
-</p>
-<img src="image-assets/image-20221103005228944.png" alt="image-20221103005228944" style="zoom:50%;" />
-<ul>
-<li>this means that although the model that was trained by hard negative examples can recognise polluted &ldquo;hard&rdquo; negative examples, it cannot recognise the in-batch normal negative examples &ndash; false positive is high.</li>
-</ul>
-<h3 id="training-config-version-2----20-normal-in-batch-negative">Training config version 2 &ndash; 20% normal in-batch negative<a hidden class="anchor" aria-hidden="true" href="#training-config-version-2----20-normal-in-batch-negative">#</a></h3>
-<ul>
-<li>I changed from 20% are both polluted negative examples to 20% normal in-batch negative examples</li>
-<li>the testing performance indeed increases, but the false positive is still large</li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20221103005948500.png" alt="image-20221103005948500"  />
-</p>
-<p><img loading="lazy" src="image-assets/image-20221103010018946.png" alt="image-20221103010018946"  />
-</p>
-<h2 id="the-result-above-implies-that-the-phrase-polluted-hard-negative-examples-are-not-that-effective">The result above implies that the phrase polluted hard negative examples are not that effective<a hidden class="anchor" aria-hidden="true" href="#the-result-above-implies-that-the-phrase-polluted-hard-negative-examples-are-not-that-effective">#</a></h2>
-<ul>
-<li>common-sense intuition suggests that if the model can handle hard negative examples, it can also handle normal negative example</li>
-<li>At the very least, the false negative should be large instead of false positive</li>
-</ul>
-<h3 id="possible-reasons">Possible reasons<a hidden class="anchor" aria-hidden="true" href="#possible-reasons">#</a></h3>
-<ul>
-<li>I mentioned that sometimes the generated phrase-polluted hard negative sentence doesn&rsquo;t make sense (e.g, you can &ldquo;climb down&rdquo; the ladder but you cannot &ldquo;wait for&rdquo; the ladder or climb down the <u>skull</u>.)</li>
-<li>And then I also used a SOTA <em>sentence embedding model</em> that can convert sentence into a latent vector that has semantic meaning.</li>
-<li>I suspect that this sentence transformer is able to detect whether the a sentence makes sense or not.</li>
-<li>and the non-sense sentence will has very different latent vector compared to that of coherent sentences.</li>
-</ul>
-<h2 id="check-cosine-similarity-score">Check cosine similarity score<a hidden class="anchor" aria-hidden="true" href="#check-cosine-similarity-score">#</a></h2>
-<ul>
-<li>
-<p><input checked="" disabled="" type="checkbox"> calculate the cosine similarity score of positive example and associated hard negative examples</p>
-</li>
-<li>
-<p>If the assumption is true:</p>
-<ul>
-<li>solution: I can try to create hard negative examples by hand or some semi-automatic method to avoid non-sense hard negative examples.</li>
-</ul>
-</li>
-<li>
-<p>if the assumption is false:</p>
-<ul>
-<li>solution: I can try word embedding models to encode the sentence rather than using sentence embedding model</li>
-</ul>
-</li>
-</ul>
-<h3 id="result">Result<a hidden class="anchor" aria-hidden="true" href="#result">#</a></h3>
-<p><img loading="lazy" src="image-assets/image-20221103120922092.png" alt="image-20221103120922092"  />
-</p>
-<ul>
-<li>looks like on average, the cosine similarity of hard negative examples are higher than in-batch negatives
-<ul>
-<li>thus our assumption is <strong>false</strong></li>
-</ul>
-</li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20221103120939585.png" alt="image-20221103120939585"  />
-</p>
-<p><img loading="lazy" src="image-assets/image-20221103121958829.png" alt="image-20221103121958829"  />
-</p>
-<ul>
-<li>We actually use this cosine similarity method to find out some bad training data</li>
-</ul>
-<h2 id="dealing-with-the-false-positive">Dealing with the false positive<a hidden class="anchor" aria-hidden="true" href="#dealing-with-the-false-positive">#</a></h2>
-<ul>
-<li>we realise that the false positive is due to that fact that the model is able to find a shortcut to tell if the sentence is polluted or not.</li>
-<li>[train epoch 20] loss: 0.007, acc: 0.906, lr: 0.00099: 100%|██████████| 177/177 [00:00&lt;00:00, 830.08it/s] A simple linear model can reach 90% accuracy to distinguish them.I am going to think about some semi-automatic way to generate more coherent hard negative sentences. Hopefully next week we can get a game playing agent that can play Montezuma</li>
-<li>After generating hard negative examples by manual annotation, a simple linear model can reach 70% accuracy to distinguish polluted sentences.</li>
-</ul>
-<h2 id="using-rnd-rl-model">Using RND RL model<a hidden class="anchor" aria-hidden="true" href="#using-rnd-rl-model">#</a></h2>
-<ul>
-<li>Random Network Distillation</li>
-<li>check if the agent encounter the exact same state before</li>
-<li>give intrinsic reward if it reaches unseen state.</li>
-<li>
-<img src="image-assets/image-20221110123752690.png" alt="image-20221110123752690" style="zoom:50%;" />
-</li>
-<li>it is able to get the key in room one within 2 hours training</li>
-</ul>
-<h3 id="some-terminology">Some Terminology<a hidden class="anchor" aria-hidden="true" href="#some-terminology">#</a></h3>
-<p><strong>rollout</strong></p>
-<ul>
-<li>refer to a sampled sequence of (s,a,r) from interacting with the environment under a certain policy, but it might be only a segment of the episode, or even a segment of a continuing task, where it does not even make sense to talk about episodes.</li>
-<li>this is common in model-based reinforcement learning where artificial episodes are generated according to the current esimated model. this model might be very different from the actual environment.</li>
-<li>rollouts are used in planning (e.g., MCTS) where planning might be hard in the real world but it might be easy to generate virtual episode using a reasonable policy. rollout -&gt; a future trajectory simulated by the current policy.</li>
-</ul>
-<p><strong>episode</strong></p>
-<ul>
-<li>it begins with an initial state and finishes with a terminal state.</li>
-</ul>
-<h2 id="room-one-instruction-and-observations">Room One instruction and observations<a hidden class="anchor" aria-hidden="true" href="#room-one-instruction-and-observations">#</a></h2>
-<pre tabindex="0"><code>sentence: [
-  &#34;Climb down the middle ladder to the middle platform&#34;,
-  &#34;Jump right to the rope and jump right again to the platform on the right&#34;,
-  &#34;Walk left to the left side of the screen&#34;,
-  &#34;Climb up the ladder at the left end, jump to grab the key&#34;
-]
-</code></pre><ul>
-<li>agent does not understand &ldquo;the middle conveyor belt&rdquo;, I changed to &ldquo;the middle platform&rdquo; and then it can understand .</li>
-<li>agent still faced difficulty detecting &ldquo;jump over the skull&rdquo;
-<ul>
-<li>but it can detect whether our agent reach the mentioned &ldquo;location&rdquo; e.g., &ldquo;xxx to the platform on the right&rdquo;</li>
-<li>so I put  &ldquo;Walk left to the left side of the screen&rdquo; instead of &ldquo;Jump over the skull to the left side&rdquo;
-<ul>
-<li>the RL agent will find its own way to move to the left</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<div style="page-break-after:always" /> 
-<h2 id="current-lang-rew-module-architecture">Current lang rew module architecture<a hidden class="anchor" aria-hidden="true" href="#current-lang-rew-module-architecture">#</a></h2>
-<p><img loading="lazy" src="image-assets/image-20221103124009088.png" alt="image-20221103124009088"  />
-</p>
-<h2 id="paper-reading-notes">Paper Reading Notes<a hidden class="anchor" aria-hidden="true" href="#paper-reading-notes">#</a></h2>
-<ul>
-<li>
-<p><a href="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022">Can Language Models Be Specific? How?</a></p>
-<ul>
-<li>Author: Jie Huang et. al.</li>
-<li>Publish Year: 11 Oct 2022</li>
-<li>Review Date: Tue, Nov 8, 2022</li>
-</ul>
-</li>
-<li>
-<p><a href="https://sino-huang.github.io/posts/xiang_li-diffusion_lm_improves_controllable_text_generation_2022">Diffusion-LM Improves Controllable Text Generation</a></p>
-<ul>
-<li>Author: Xiang Lisa Li</li>
-<li>Publish Year: May 2022</li>
-<li>Review Date: Mon, Nov 14, 2022</li>
-</ul>
-</li>
-<li>
-<p><a href="https://sino-huang.github.io/posts/charlie_snell-context-aware-language-modeling-for-goal-oriented-dialogue-systems-2022">Context Aware Language Modeling for Goal Oriented Dialogue Systems</a></p>
-<ul>
-<li>Author: Charlie Snell et. al.</li>
-<li>Publish Year: 22 Apr 2022</li>
-<li>Review Date: Sun, Nov 20, 2022</li>
-</ul>
-</li>
-<li>
-<p><a href="https://sino-huang.github.io/posts/sanchit_agarwal-building-goal-oriented-dialogue-systems-with-situated-visual-context-2021">Building Goal Oriented Dialogue Systems With Situated Visual Context 2021</a></p>
-<ul>
-<li>Author: Sanchit Agarwal et. al.</li>
-<li>Publish Year: 22 Nov 2021</li>
-<li>Review Date: Sun, Nov 20, 2022</li>
-</ul>
-</li>
-<li>
-<p><a href="https://sino-huang.github.io/posts/yichi_zhang-danli-deliberative-agent-for-following-natural-language-instructions-2022">DANLI: Deliberative Agent for Following Natural Language Instructions</a></p>
-<ul>
-<li>Author: Yichi Zhang</li>
-<li>Publish Year: 22 Oct, 2022</li>
-<li>Review Date: Sun, Nov 20, 2022</li>
-</ul>
-</li>
-</ul>
-
-  </div>
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
 </div>
 <script>
   
@@ -712,24 +274,21 @@ if (!doNotTrack) {
       event.preventDefault(); 
   });
 </script>
-
 </div>
-    </main>
-    
+</main>
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-    <span>
+<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -784,6 +343,5 @@ if (!doNotTrack) {
     })
 
 </script>
-</body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
 </html>
