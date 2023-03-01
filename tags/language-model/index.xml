@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>language model on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/language-model/</link>
+    <description>Recent content in language model on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 01 Mar 2023 19:57:49 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Timo_schick Toolformer Language Models Can Teach Themselves to Use Tools 2023</title>
+      <link>https://sino-huang.github.io/posts/timo_schick-toolformer-language-models-can-teach-themselves-to-use-tools-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 19:57:49 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/timo_schick-toolformer-language-models-can-teach-themselves-to-use-tools-2023/</guid>
+      <description>[TOC]
+ Title: Toolformer: Language Models Can Teach Themselves to Use Tools 2023 Author: Timo Schick et. al. META AI research Publish Year: 9 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04761.pdf  Summary of paper Motivation  LMs exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also struggle with basic functionality, such as arithmetic or factual lookup.</description>
+    </item>
+    
+    <item>
+      <title>Almog_gueta Knowledge Is a Region in Weight Space for Fine Tuned Language Model 2023</title>
+      <link>https://sino-huang.github.io/posts/almog_gueta-knowledge-is-a-region-in-weight-space-for-fine-tuned-language-model-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 12:45:54 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/almog_gueta-knowledge-is-a-region-in-weight-space-for-fine-tuned-language-model-2023/</guid>
+      <description>[TOC]
+ Title: Knowledge Is a Region in Weight Space for Fine Tuned Language Model Author: Almog Gueta et. al. Publish Year: 12 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04863.pdf  Summary of paper Motivation  relatively little is known a bout the relationships between different models, especially those trained or tested on different datasets.  Contribution  we demonstrate that fine-tuned models that were optimized for high performance, reside in well-defined regions in weight space, and vice versa language models that have been fine-tuned on the same dataset form a tight cluster in the same weight space and that models fine-tuned on different datasets from the same underlying task form a looser cluster.</description>
+    </item>
+    
+  </channel>
+</rss>
