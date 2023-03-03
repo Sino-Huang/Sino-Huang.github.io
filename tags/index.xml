@@ -9,22 +9,76 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Mar 2023 21:02:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Mar 2023 16:16:19 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>reinforcement learning</title>
-      <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
-      <pubDate>Wed, 01 Mar 2023 21:02:25 +1100</pubDate>
+      <title>future work</title>
+      <link>https://sino-huang.github.io/tags/future-work/</link>
+      <pubDate>Fri, 03 Mar 2023 16:16:19 +1100</pubDate>
       
-      <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <guid>https://sino-huang.github.io/tags/future-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>natural language reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/natural-language-reinforcement-learning/</link>
+      <pubDate>Fri, 03 Mar 2023 16:16:19 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/natural-language-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multimodal learning</title>
+      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
+      <pubDate>Fri, 03 Mar 2023 15:26:55 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hindsight instruction relabeling</title>
+      <link>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</link>
+      <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>language model</title>
       <link>https://sino-huang.github.io/tags/language-model/</link>
-      <pubDate>Wed, 01 Mar 2023 19:57:49 +1100</pubDate>
+      <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/language-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
+      <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>commonsense learning</title>
+      <link>https://sino-huang.github.io/tags/commonsense-learning/</link>
+      <pubDate>Thu, 02 Mar 2023 15:22:51 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/commonsense-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>offline reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/offline-reinforcement-learning/</link>
+      <pubDate>Wed, 01 Mar 2023 22:14:11 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/offline-reinforcement-learning/</guid>
       <description></description>
     </item>
     
@@ -70,15 +124,6 @@
       <pubDate>Fri, 10 Feb 2023 02:51:23 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/data-augmentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multimodal learning</title>
-      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
-      <pubDate>Fri, 10 Feb 2023 02:51:23 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
       <description></description>
     </item>
     
@@ -214,15 +259,6 @@
       <pubDate>Sun, 20 Nov 2022 16:28:23 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/symbolic-planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>future work</title>
-      <link>https://sino-huang.github.io/tags/future-work/</link>
-      <pubDate>Tue, 08 Nov 2022 20:41:04 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/future-work/</guid>
       <description></description>
     </item>
     

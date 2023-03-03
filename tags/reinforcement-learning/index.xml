@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 01 Mar 2023 21:02:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2023 19:06:35 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tianjun_zhang the Wisdom of Hindsight Makes Language Models Better Instruction Followers 2023</title>
+      <link>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</link>
+      <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</guid>
+      <description>[TOC]
+ Title: The Wisdom of Hindsight Makes Language Models Better Instruction Followers Author: Tianjun Zhang et. al. Publish Year: 10 Feb 2023 Review Date: Thu, Mar 2, 2023 url: https://arxiv.org/pdf/2302.05206.pdf  Summary of paper Motivation  Reinforcement learning with Human Feedback (RLHF) demonstrates impressive performance on the GPT series models. However, the pipeline for reward and value networks  Contribution  in this paper, we consider an alternative approach: converting feedback to instruction by relabeling the original one and training the model for better alignment in a supervised manner.</description>
+    </item>
+    
+    <item>
+      <title>Alexander_nikulin Anti Exploration by Random Network Distillation 2023</title>
+      <link>https://sino-huang.github.io/posts/alexander_nikulin-anti-exploration-by-random-network-distillation-2023/</link>
+      <pubDate>Wed, 01 Mar 2023 22:14:11 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alexander_nikulin-anti-exploration-by-random-network-distillation-2023/</guid>
+      <description>[TOC]
+ Title: Anti Exploration by Random Network Distillation Author: Alexander Nikulin et. al. Publish Year: 31 Jan 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2301.13616.pdf  Summary of paper Motivation  despite the success of Random Network Distillation (RND) in various domains, it was shown as not discriminative enough to be used as an uncertainty estimator for penalizing out-of-distribution actions in offline reinforcement learning  ?? wait, why we want to penalizing out-of-distribution actions?</description>
+    </item>
+    
     <item>
       <title>Edoardo_cetin Learning Pessimism for Reinforcement Learning 2023</title>
       <link>https://sino-huang.github.io/posts/edoardo_cetin-learning-pessimism-for-reinforcement-learning-2023/</link>

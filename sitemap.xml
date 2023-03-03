@@ -117,28 +117,70 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/future-work/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/natural-language-reinforcement-learning/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
+    <lastmod>2023-03-03T15:26:55+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/tatsuki_kuribayashi-does-vision-accelerate-hierarchical-generalisation-of-neural-language-learners-2023/</loc>
+    <lastmod>2023-03-03T15:26:55+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/jing_cheng_pang-natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation-2023/</loc>
+    <lastmod>2023-03-03T15:19:43+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/suvaansh_bhambri-multi-level-compositional-reasoning-for-interactive-instruction-following-2023/</loc>
+    <lastmod>2023-03-03T11:17:01+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</loc>
+    <lastmod>2023-03-02T19:06:35+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/language-model/</loc>
+    <lastmod>2023-03-02T19:06:35+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2023-03-02T19:06:35+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</loc>
+    <lastmod>2023-03-02T19:06:35+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/ying_shen-learning-by-asking-for-embodied-visual-navigation-and-task-completion-2023/</loc>
+    <lastmod>2023-03-02T17:51:02+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/commonsense-learning/</loc>
+    <lastmod>2023-03-02T15:22:51+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/ernest_davis-benchmarks-for-automated-commonsense-reasoning-a-survey-2023/</loc>
+    <lastmod>2023-03-02T15:22:51+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/alexander_nikulin-anti-exploration-by-random-network-distillation-2023/</loc>
+    <lastmod>2023-03-01T22:14:11+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/offline-reinforcement-learning/</loc>
+    <lastmod>2023-03-01T22:14:11+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/edoardo_cetin-learning-pessimism-for-reinforcement-learning-2023/</loc>
     <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
-    <lastmod>2023-03-01T21:02:25+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/language-model/</loc>
-    <lastmod>2023-03-01T19:57:49+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/prompt-learning/</loc>
     <lastmod>2023-03-01T19:57:49+11:00</lastmod>
@@ -165,9 +207,6 @@
     <lastmod>2023-02-10T02:51:23+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/data-augmentation/</loc>
-    <lastmod>2023-02-10T02:51:23+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
     <lastmod>2023-02-10T02:51:23+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/xiwen_liang-contrastive-instruction-trajectory-learning-for-vision-language-navigation-2022/</loc>
@@ -361,9 +400,6 @@
   </url><url>
     <loc>https://sino-huang.github.io/categories/november-2022-weekly-progress/</loc>
     <lastmod>2022-11-13T15:59:12+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/future-work/</loc>
-    <lastmod>2022-11-08T20:41:04+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/</loc>
     <lastmod>2022-11-08T20:41:04+11:00</lastmod>
