@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/weekly-report/12-mar-18-mar-2023/</loc>
+    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/weekly-report/01-mar-11-mar-2023/</loc>
     <lastmod>2023-03-06T14:43:14+11:00</lastmod>
   </url><url>
@@ -120,16 +123,43 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-03-06T14:43:14+11:00</lastmod>
+    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/march-2023-weekly-progress/</loc>
-    <lastmod>2023-03-06T14:43:14+11:00</lastmod>
+    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2023-03-06T14:43:14+11:00</lastmod>
+    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/weekly-report/</loc>
-    <lastmod>2023-03-06T14:43:14+11:00</lastmod>
+    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/diffusion-model/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2023-03-09T19:36:17+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/alan_lindsay-framer-planning-models-from-natural-language-action-descriptions-2017/</loc>
+    <lastmod>2023-03-09T19:28:47+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/open-world-reasoning/</loc>
+    <lastmod>2023-03-09T19:28:47+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/pddl/</loc>
+    <lastmod>2023-03-09T19:28:47+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/future-work/</loc>
     <lastmod>2023-03-03T16:16:19+11:00</lastmod>
@@ -137,16 +167,7 @@
     <loc>https://sino-huang.github.io/tags/natural-language-reinforcement-learning/</loc>
     <lastmod>2023-03-03T16:16:19+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/</loc>
-    <lastmod>2023-03-03T16:16:19+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2023-03-03T16:16:19+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
@@ -165,9 +186,6 @@
     <lastmod>2023-03-02T19:06:35+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/language-model/</loc>
-    <lastmod>2023-03-02T19:06:35+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/reinforcement-learning/</loc>
     <lastmod>2023-03-02T19:06:35+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</loc>
@@ -262,9 +280,6 @@
   </url><url>
     <loc>https://sino-huang.github.io/posts/kyle_mahowald-dissociating-language-and-thought-in-large-language-models-a-cognitive-perspective-2023/</loc>
     <lastmod>2023-01-31T18:47:45+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/diffusion-model/</loc>
-    <lastmod>2023-01-30T13:43:20+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022/</loc>
     <lastmod>2023-01-30T13:43:20+11:00</lastmod>
@@ -553,9 +568,6 @@
   </url><url>
     <loc>https://sino-huang.github.io/posts/wenfeng_feng-extracting-action-sequences-from-texts-by-rl/</loc>
     <lastmod>2022-03-15T14:40:38+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/pddl/</loc>
-    <lastmod>2022-03-14T15:08:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/shivam_miglani-nltopddl-learning-from-nlp-manuals-2020/</loc>
     <lastmod>2022-03-14T15:08:45+11:00</lastmod>

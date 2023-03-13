@@ -9,7 +9,28 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Mar 2023 16:16:19 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 19:36:17 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cheng_chi Diffusion Policy Visuomotor Policy Learning via Action Diffusion 2023</title>
+      <link>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</link>
+      <pubDate>Thu, 09 Mar 2023 19:36:17 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</guid>
+      <description>[TOC]
+ Title: Diffusion Policy Visuomotor Policy Learning via Action Diffusion Author: Cheng Chi et. al. Publish Year: 2023 Review Date: Thu, Mar 9, 2023 url: https://diffusion-policy.cs.columbia.edu/diffusion_policy_2023.pdf  Summary of paper Motivation Contribution  introducing a new form of robot visuomotor policy that generates behaviour via a &amp;ldquo;conditional denoising diffusion process&amp;rdquo; on robot action space  Some key terms Explicit policy
+ learning this is like imitation learning  Implicit policy</description>
+    </item>
+    
+    <item>
+      <title>Alan_lindsay Framer Planning Models From Natural Language Action Descriptions 2017</title>
+      <link>https://sino-huang.github.io/posts/alan_lindsay-framer-planning-models-from-natural-language-action-descriptions-2017/</link>
+      <pubDate>Thu, 09 Mar 2023 19:28:47 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alan_lindsay-framer-planning-models-from-natural-language-action-descriptions-2017/</guid>
+      <description>[TOC]
+ Title: Framer: Planning Models From Natural Language Action Descriptions Author: Alan Lindsay et. al. Publish Year: 2017 Review Date: Thu, Mar 9, 2023 url: https://core.ac.uk/download/pdf/322329049.pdf  Summary of paper Motivation  for modelling assisting and model generation tools, there is a underlying assumption that the user can formulate the problem using some formal language. this motivates us to generate planning domain models directly from NL descriptions.  Some key terms approach</description>
+    </item>
+    
     <item>
       <title>Siddharth_karamcheti Language Driven Representation Learning for Robotics 2023</title>
       <link>https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/</link>
