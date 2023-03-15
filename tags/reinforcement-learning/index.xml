@@ -17,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</guid>
       <description>[TOC]
- Title: Diffusion Policy Visuomotor Policy Learning via Action Diffusion Author: Cheng Chi et. al. Publish Year: 2023 Review Date: Thu, Mar 9, 2023 url: https://diffusion-policy.cs.columbia.edu/diffusion_policy_2023.pdf  Summary of paper Motivation Contribution  introducing a new form of robot visuomotor policy that generates behaviour via a &amp;ldquo;conditional denoising diffusion process&amp;rdquo; on robot action space  Some key terms Explicit policy
+ Title: Diffusion Policy Visuomotor Policy Learning via Action Diffusion Author: Cheng Chi et. al. Publish Year: 2023 Review Date: Thu, Mar 9, 2023 url: https://diffusion-policy.cs.columbia.edu/diffusion_policy_2023.pdf  Summary of paper Contribution  introducing a new form of robot visuomotor policy that generates behaviour via a &amp;ldquo;conditional denoising diffusion process&amp;rdquo; on robot action space  Some key terms Explicit policy
  learning this is like imitation learning  Implicit policy</description>
     </item>
     
