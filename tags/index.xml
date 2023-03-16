@@ -9,22 +9,31 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Mar 2023 19:36:17 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 21:09:32 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>diffusion model</title>
-      <link>https://sino-huang.github.io/tags/diffusion-model/</link>
-      <pubDate>Thu, 09 Mar 2023 19:36:17 +1100</pubDate>
+      <title>instruction following agent</title>
+      <link>https://sino-huang.github.io/tags/instruction-following-agent/</link>
+      <pubDate>Wed, 15 Mar 2023 21:09:32 +0800</pubDate>
       
-      <guid>https://sino-huang.github.io/tags/diffusion-model/</guid>
+      <guid>https://sino-huang.github.io/tags/instruction-following-agent/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reinforcement learning</title>
       <link>https://sino-huang.github.io/tags/reinforcement-learning/</link>
-      <pubDate>Thu, 09 Mar 2023 19:36:17 +1100</pubDate>
+      <pubDate>Wed, 15 Mar 2023 21:09:32 +0800</pubDate>
       
       <guid>https://sino-huang.github.io/tags/reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>diffusion model</title>
+      <link>https://sino-huang.github.io/tags/diffusion-model/</link>
+      <pubDate>Thu, 09 Mar 2023 19:36:17 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/diffusion-model/</guid>
       <description></description>
     </item>
     

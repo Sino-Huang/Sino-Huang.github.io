@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Mar 2023 19:36:17 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 21:09:32 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Theodore_r_sumers How to Talk So Ai Will Learn 2022</title>
+      <link>https://sino-huang.github.io/posts/theodore_r_sumers-how-to-talk-so-ai-will-learn-2022/</link>
+      <pubDate>Wed, 15 Mar 2023 21:09:32 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/theodore_r_sumers-how-to-talk-so-ai-will-learn-2022/</guid>
+      <description>[TOC]
+ Title: How to talk so AI will learn: Instructions, descriptions, and autonomy Author: Theodore R. Sumers et. al. Publish Year: NeurIPS 2022 Review Date: Wed, Mar 15, 2023 url: https://arxiv.org/pdf/2206.07870.pdf  Summary of paper Motivation  yet today, we lack computational models explaining such language use  Contribution  To address this challenge, we formalise learning from language in a contextual bandit setting and ask how a human might communicate preferences over behaviours.</description>
+    </item>
+    
     <item>
       <title>Cheng_chi Diffusion Policy Visuomotor Policy Learning via Action Diffusion 2023</title>
       <link>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</link>
