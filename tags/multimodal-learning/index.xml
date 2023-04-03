@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 Mar 2023 15:26:55 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 11:28:43 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anthony_liu a Picture Is Worth a Thousand Words Language Models Plan From Pixels 2023</title>
+      <link>https://sino-huang.github.io/posts/anthony_liu-a-picture-is-worth-a-thousand-words-language-models-plan-from-pixels-2023/</link>
+      <pubDate>Mon, 03 Apr 2023 11:28:43 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/anthony_liu-a-picture-is-worth-a-thousand-words-language-models-plan-from-pixels-2023/</guid>
+      <description>[TOC]
+ Title: A Picture Is Worth a Thousand Words Language Models Plan From Pixels Author: Anthony Liu et.al. Publish Year: 16 Mar 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.09031v1.pdf  Summary of paper Motivation  planning is a important capability of AI that perform long-horizon tasks in real-world environments. prior PLM based approaches for planning either assume observations are available in the form of text, reason about plans from the instruction alone, or incorporate information about the visual environment in limited ways.</description>
+    </item>
+    
     <item>
       <title>Tatsuki_kuribayashi Does Vision Accelerate Hierarchical Generalisation of Neural Language Learners 2023</title>
       <link>https://sino-huang.github.io/posts/tatsuki_kuribayashi-does-vision-accelerate-hierarchical-generalisation-of-neural-language-learners-2023/</link>

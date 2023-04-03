@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 02 Mar 2023 19:06:35 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-model/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 15:25:01 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-model/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Luke_zettlemoyer Scaling Expert Language Models With Unsupervised Domain Discovery 2023</title>
+      <link>https://sino-huang.github.io/posts/luke_zettlemoyer-scaling-expert-language-models-with-unsupervised-domain-discovery-2023/</link>
+      <pubDate>Mon, 03 Apr 2023 15:25:01 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/luke_zettlemoyer-scaling-expert-language-models-with-unsupervised-domain-discovery-2023/</guid>
+      <description>[TOC]
+ Title: Scaling Expert Language Models With Unsupervised Domain Discovery Author: Luke Zettlemoyer et. al. Publish Year: 24 Mar, 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.14177.pdf  Summary of paper Contribution  we introduce a simple but efficient method to asynchronously train large, sparse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference.</description>
+    </item>
+    
+    <item>
+      <title>Xuanting_chen How Robust Is GPT 3.5 to Predecessors a Comprehensive Study on Language Understanding Tasks</title>
+      <link>https://sino-huang.github.io/posts/xuanting_chen-how-robust-is-gpt35-to-predecessors-a-comprehensive-study-on-language-understanding-tasks/</link>
+      <pubDate>Mon, 03 Apr 2023 15:00:57 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xuanting_chen-how-robust-is-gpt35-to-predecessors-a-comprehensive-study-on-language-understanding-tasks/</guid>
+      <description>[TOC]
+ Title: How Robust Is GPT 3.5 to Predecessors a Comprehensive Study on Language Understanding Tasks Author: Xuanting Chen et. al. Publish Year: 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/ftp/arxiv/papers/2303/2303.00293.pdf  Summary of paper Motivation  GPT3.5, their robustness, and abilities to handle various complexities of the open world have yet to be explored, which is especially crucial in assessing the stability of models and is a key aspect of trustworthy AI  Contribution  Our study yielded the following findings by comparing GPT 3.</description>
+    </item>
+    
     <item>
       <title>Tianjun_zhang the Wisdom of Hindsight Makes Language Models Better Instruction Followers 2023</title>
       <link>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</link>

@@ -9,7 +9,34 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Mar 2023 21:20:31 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Apr 2023 15:25:01 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>language model</title>
+      <link>https://sino-huang.github.io/tags/language-model/</link>
+      <pubDate>Mon, 03 Apr 2023 15:25:01 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/language-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multimodal learning</title>
+      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
+      <pubDate>Mon, 03 Apr 2023 11:28:43 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/language-reinforcement-learning/</link>
+      <pubDate>Thu, 30 Mar 2023 23:45:18 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/language-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>generative models</title>
       <link>https://sino-huang.github.io/tags/generative-models/</link>
@@ -101,29 +128,11 @@
     </item>
     
     <item>
-      <title>multimodal learning</title>
-      <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
-      <pubDate>Fri, 03 Mar 2023 15:26:55 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>hindsight instruction relabeling</title>
       <link>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</link>
       <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>language model</title>
-      <link>https://sino-huang.github.io/tags/language-model/</link>
-      <pubDate>Thu, 02 Mar 2023 19:06:35 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/language-model/</guid>
       <description></description>
     </item>
     

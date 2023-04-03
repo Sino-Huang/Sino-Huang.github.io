@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>language reinforcement learning on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/language-reinforcement-learning/</link>
+    <description>Recent content in language reinforcement learning on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Mar 2023 23:45:18 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wenlong_huang Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control 2023</title>
+      <link>https://sino-huang.github.io/posts/wenlong_huang-grounded-decoding-guiding-text-generation-with-grounded-models-for-robot-control-2023/</link>
+      <pubDate>Thu, 30 Mar 2023 23:45:18 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/wenlong_huang-grounded-decoding-guiding-text-generation-with-grounded-models-for-robot-control-2023/</guid>
+      <description>[TOC]
+ Title: Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control Author: WenLong Huang et. al. Publish Year: 1 Mar, 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.00855  Summary of paper Motivation  Unfortunately, applying LLMs to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of rewards or safety constraints that robots may require.</description>
+    </item>
+    
+  </channel>
+</rss>
