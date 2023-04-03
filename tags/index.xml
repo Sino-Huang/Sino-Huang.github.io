@@ -9,7 +9,34 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 15 Mar 2023 21:09:32 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 21:20:31 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>generative models</title>
+      <link>https://sino-huang.github.io/tags/generative-models/</link>
+      <pubDate>Thu, 30 Mar 2023 21:20:31 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/generative-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goal-conditioned reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/goal-conditioned-reinforcement-learning/</link>
+      <pubDate>Thu, 30 Mar 2023 21:20:31 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/goal-conditioned-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hierarchical reinforcement learning</title>
+      <link>https://sino-huang.github.io/tags/hierarchical-reinforcement-learning/</link>
+      <pubDate>Thu, 30 Mar 2023 15:01:16 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/hierarchical-reinforcement-learning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>instruction following agent</title>
       <link>https://sino-huang.github.io/tags/instruction-following-agent/</link>
