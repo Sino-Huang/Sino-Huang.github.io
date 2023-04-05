@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Mar 2023 23:45:18 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 10:02:24 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jacob_andreas Guiding Pretraining in Reinforcement Learning With Llms 2023</title>
+      <link>https://sino-huang.github.io/posts/jacob_andreas-guiding-pretraining-in-reinforcement-learning-with-llms-2023/</link>
+      <pubDate>Wed, 05 Apr 2023 10:02:24 +0800</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jacob_andreas-guiding-pretraining-in-reinforcement-learning-with-llms-2023/</guid>
+      <description>[TOC]
+ Title: Guiding Pretraining in Reinforcement Learning With Large Language Models Author: Yuqing De, Jacob Andreas et. al. Publish Year: 13 Feb 2023 Review Date: Wed, Apr 5, 2023 url: https://arxiv.org/pdf/2302.06692.pdf  Summary of paper Motivation  intrinstically motivated exploration methods address sparse reward problem by rewarding agents for visiting novel states or transitions.  Contribution  we describe a method that uses background knowledge from text corpora to shape exploration.</description>
+    </item>
+    
     <item>
       <title>Wenlong_huang Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control 2023</title>
       <link>https://sino-huang.github.io/posts/wenlong_huang-grounded-decoding-guiding-text-generation-with-grounded-models-for-robot-control-2023/</link>
