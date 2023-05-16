@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/weekly-report/15-may-21-may-2023/</loc>
+    <lastmod>2023-05-15T10:56:05+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/weekly-report/10-apr-16-apr-2023/</loc>
+    <lastmod>2023-04-12T10:24:37+08:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/weekly-report/12-mar-18-mar-2023/</loc>
     <lastmod>2023-03-10T18:12:42+11:00</lastmod>
   </url><url>
@@ -123,21 +129,33 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-04-06T10:02:22+08:00</lastmod>
+    <lastmod>2023-05-15T15:06:48+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-05-15T15:06:48+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-05-15T15:06:48+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/rohit_gridhar-imagebind-one-embedding-space-to-bind-them-all-2023/</loc>
+    <lastmod>2023-05-15T15:06:48+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-05-15T15:06:48+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/may-2023-weekly-progress/</loc>
+    <lastmod>2023-05-15T10:56:05+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/weekly-report/</loc>
+    <lastmod>2023-05-15T10:56:05+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/april-2023-weekly-progress/</loc>
+    <lastmod>2023-04-12T10:24:37+08:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
     <lastmod>2023-04-06T10:02:22+08:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2023-04-06T10:02:22+08:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2023-04-06T10:02:22+08:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/qinghao_hitea-hierarchical-temporal-aware-video-language-pre-training-2022/</loc>
-    <lastmod>2023-04-06T10:02:22+08:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
     <lastmod>2023-04-06T10:02:22+08:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/</loc>
@@ -195,9 +213,6 @@
     <lastmod>2023-03-15T21:09:32+08:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/march-2023-weekly-progress/</loc>
-    <lastmod>2023-03-10T18:12:42+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/weekly-report/</loc>
     <lastmod>2023-03-10T18:12:42+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/cheng_chi-diffusion-policy-visuomotor-policy-learning-via-action-diffusion-2023/</loc>
