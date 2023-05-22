@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Apr 2023 10:02:22 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 11:17:28 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Junnan_li BLIP Bootstrapping Language Image Pre Training for Unified Vision Language Understanding and Generation 2022</title>
+      <link>https://sino-huang.github.io/posts/junnan_li-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation-2022/</link>
+      <pubDate>Mon, 22 May 2023 11:17:28 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/junnan_li-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation-2022/</guid>
+      <description>[TOC]
+ Title: BLIP Bootstrapping Language Image Pre Training for Unified Vision Language Understanding and Generation 2022 Author: Junnan Li et. al. Publish Year: 15 Feb 2022 Review Date: Mon, May 22, 2023 url: https://arxiv.org/pdf/2201.12086.pdf  Summary of paper Motivation  performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision  Contribution  BLIP effectively utilises the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones.</description>
+    </item>
+    
+    <item>
+      <title>Rohit_gridhar Imagebind One Embedding Space to Bind Them All 2023</title>
+      <link>https://sino-huang.github.io/posts/rohit_gridhar-imagebind-one-embedding-space-to-bind-them-all-2023/</link>
+      <pubDate>Mon, 15 May 2023 15:06:48 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/rohit_gridhar-imagebind-one-embedding-space-to-bind-them-all-2023/</guid>
+      <description>[TOC]
+ Title: ImageBind One Embedding Space to Bind Them All Author: Rohit Girdhar et. al. Publish Year: 9 May 2023 Review Date: Mon, May 15, 2023 url: https://arxiv.org/pdf/2305.05665.pdf  Summary of paper Motivation  we present ImageBind, an approach to learn a joint embedding across six different modalities ImageBind can leverage recent large scale vision-language models, and extend their zero shot capabilities to new modalities just using their natural pairing with images.</description>
+    </item>
+    
     <item>
       <title>Qinghao_hitea Hierarchical Temporal Aware Video Language Pre Training 2022</title>
       <link>https://sino-huang.github.io/posts/qinghao_hitea-hierarchical-temporal-aware-video-language-pre-training-2022/</link>

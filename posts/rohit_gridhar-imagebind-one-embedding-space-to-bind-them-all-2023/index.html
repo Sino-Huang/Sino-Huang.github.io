@@ -5,9 +5,9 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Rohit_gridhar Imagebind One Embedding Space to Bind Them All 2023 | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="multimodal learning" name="keywords"/>
 <meta content="[TOC]
- Title: Rohit_gridhar Imagebind One Embedding Space to Bind Them All 2023 Author: Publish Year: Review Date: Mon, May 15, 2023 url:  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: ImageBind One Embedding Space to Bind Them All Author: Rohit Girdhar et. al. Publish Year: 9 May 2023 Review Date: Mon, May 15, 2023 url: https://arxiv.org/pdf/2305.05665.pdf  Summary of paper Motivation  we present ImageBind, an approach to learn a joint embedding across six different modalities ImageBind can leverage recent large scale vision-language models, and extend their zero shot capabilities to new modalities just using their natural pairing with images." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/rohit_gridhar-imagebind-one-embedding-space-to-bind-them-all-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -193,21 +193,45 @@ if (!doNotTrack) {
 </header>
 <div class="post-content"><p>[TOC]</p>
 <ol>
-<li>Title: Rohit_gridhar Imagebind One Embedding Space to Bind Them All 2023</li>
-<li>Author:</li>
-<li>Publish Year:</li>
+<li>Title: ImageBind One Embedding Space to Bind Them All</li>
+<li>Author: Rohit Girdhar et. al.</li>
+<li>Publish Year: 9 May 2023</li>
 <li>Review Date: Mon, May 15, 2023</li>
-<li>url:</li>
+<li>url: <a href="https://arxiv.org/pdf/2305.05665.pdf">https://arxiv.org/pdf/2305.05665.pdf</a></li>
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>we present ImageBind, an approach to learn a joint embedding across six different modalities</li>
+<li>ImageBind can leverage recent large scale vision-language models, and extend their zero shot capabilities to new modalities just using their natural pairing with images.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>we show that all combinations of paired data are not necessary to train such a joint embedding, and only image-paired data is sufficient to bind the modalities together.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>multimodality binding</strong></p>
+<ul>
+<li>ideally, for a single joint joint embedding space, visual features should be <u>learned</u> by aligning to all these sensors
+<ul>
+<li>however, this requires acquiring all types and combinations of paired data with same set of images, which is infeasible.</li>
+<li>for existing models, the final embeddings are limited to the pairs of modalities used for training. Thus, video-audio embeddings cannot directly used for image-text tasks and vice versa.</li>
+</ul>
+</li>
+</ul>
+<p><strong>ImageBind method</strong></p>
+<ul>
+<li>we show that just aligning each modality’s embedding to image embeddings leads to an emergent alignment across all of modalities.</li>
+<li>ImageBind outperforms specialist models trained with direct data pair supervision.</li>
+<li>The goal is to learn a single joint embedding space for all modalities by using images to bind them together. we align each modalities’s embedding to image embeddings.</li>
+<li><img alt="image-20230521114711625" loading="lazy" src="image-assets/image-20230521114711625.png"/>
+</li>
+</ul>
+<p><strong>The objective loss is InfoNCE</strong></p>
+<ul>
+<li><img alt="image-20230521115055209" loading="lazy" src="image-assets/image-20230521115055209.png"/>
+</li>
+</ul>
 </div>
 </main>
 <footer class="footer">

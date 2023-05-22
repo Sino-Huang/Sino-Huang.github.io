@@ -9,13 +9,40 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Apr 2023 10:02:22 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 May 2023 11:17:28 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>multimodal learning</title>
       <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
-      <pubDate>Thu, 06 Apr 2023 10:02:22 +0800</pubDate>
+      <pubDate>Mon, 22 May 2023 11:17:28 +1000</pubDate>
       
       <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>future work</title>
+      <link>https://sino-huang.github.io/tags/future-work/</link>
+      <pubDate>Mon, 22 May 2023 09:54:04 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/future-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>natural language understanding</title>
+      <link>https://sino-huang.github.io/tags/natural-language-understanding/</link>
+      <pubDate>Mon, 22 May 2023 09:54:04 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/natural-language-understanding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>computer vision</title>
+      <link>https://sino-huang.github.io/tags/computer-vision/</link>
+      <pubDate>Sun, 21 May 2023 11:56:54 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     
@@ -124,15 +151,6 @@
       <pubDate>Thu, 09 Mar 2023 19:28:47 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/pddl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>future work</title>
-      <link>https://sino-huang.github.io/tags/future-work/</link>
-      <pubDate>Fri, 03 Mar 2023 16:16:19 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/future-work/</guid>
       <description></description>
     </item>
     
@@ -461,15 +479,6 @@
     </item>
     
     <item>
-      <title>natural language understanding</title>
-      <link>https://sino-huang.github.io/tags/natural-language-understanding/</link>
-      <pubDate>Mon, 28 Feb 2022 18:58:52 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/natural-language-understanding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>semantic parsing</title>
       <link>https://sino-huang.github.io/tags/semantic-parsing/</link>
       <pubDate>Wed, 23 Feb 2022 19:42:39 +1100</pubDate>
@@ -601,15 +610,6 @@
       <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/causal-reasoning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>computer vision</title>
-      <link>https://sino-huang.github.io/tags/computer-vision/</link>
-      <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/computer-vision/</guid>
       <description></description>
     </item>
     
