@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 May 2023 12:30:25 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 May 2023 11:57:02 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yongliang Hugginggpt 2023</title>
+      <link>https://sino-huang.github.io/posts/yongliang-hugginggpt-2023/</link>
+      <pubDate>Tue, 23 May 2023 11:57:02 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yongliang-hugginggpt-2023/</guid>
+      <description>[TOC]
+ Title: HuggingGPT: Solving AI tasks with ChatGPT and its Friends in Hugging Face Author: Yongliang Shen et. al. Publish Year: 2 Apr 2023 Review Date: Tue, May 23, 2023 url: https://arxiv.org/pdf/2303.17580.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Yaqi_xie Translating Natural Language to Planning Goals With Llm 2023</title>
       <link>https://sino-huang.github.io/posts/yaqi_xie-translating-natural-language-to-planning-goals-with-llm-2023/</link>
