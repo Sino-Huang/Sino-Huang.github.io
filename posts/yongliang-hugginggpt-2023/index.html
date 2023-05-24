@@ -7,7 +7,7 @@
 <title>Yongliang Hugginggpt 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content="[TOC]
- Title: HuggingGPT: Solving AI tasks with ChatGPT and its Friends in Hugging Face Author: Yongliang Shen et. al. Publish Year: 2 Apr 2023 Review Date: Tue, May 23, 2023 url: https://arxiv.org/pdf/2303.17580.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: HuggingGPT: Solving AI tasks with ChatGPT and its Friends in Hugging Face Author: Yongliang Shen et. al. Publish Year: 2 Apr 2023 Review Date: Tue, May 23, 2023 url: https://arxiv.org/pdf/2303.17580.pdf  Summary of paper Motivation  while there are abundant AI models available for different domains and modalities, they cannot handle complicated AI tasks. we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks and language could be a generic interface to empower this  Contribution  specifically, we use ChatGPT to conduct task planning when receiving a user request, select models according to their function descriptions available in Hugging face, execute each subtask with the selected AI model, and summarize the response according to the execution results." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/yongliang-hugginggpt-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -201,13 +201,49 @@ if (!doNotTrack) {
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>while there are abundant AI models available for different domains and modalities, they cannot handle complicated AI tasks.</li>
+<li>we advocate that LLMs could act as a controller to manage existing AI models to solve complicated AI tasks and language could be a generic interface to empower this</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>specifically, we use ChatGPT to conduct task planning when receiving a user request, select models according to their function descriptions available in Hugging face, execute each subtask with the selected AI model, and summarize the response according to the execution results.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
+<p><strong>Model</strong></p>
+<p><img alt="image-20230523214622761" loading="lazy" src="image-assets/cover.png"/>
+</p>
+<p><strong>the bridge</strong></p>
+<ul>
+<li>we notice that each AI model can be denoted as a form of language by summarizing its model function.</li>
+<li>therefore, by incorporating these model descriptions into prompt, LLMs can be considered as the brain to manage AI models.</li>
+</ul>
+<p><strong>process</strong></p>
+<ul>
+<li>task planning: using ChatGPT to analyse the request of users to understand their intention, and disassemble them into possible solvable tasks via prompts</li>
+<li>model selection: to solve the planned tasks, ChatGPT selects expert models that are hosted on Hugging Face based on model descriptions</li>
+<li>task execution: invoke and execute each selected model, and return the results to ChatGPT</li>
+<li>response generation: using ChatGPT to integrate the prediction of all models, and generate answers for users</li>
+</ul>
+<p><img alt="image-20230523221642013" loading="lazy" src="image-assets/image-20230523221642013.png"/>
+</p>
+<p><img alt="image-20230523221705774" loading="lazy" src="image-assets/image-20230523221705774.png"/>
+</p>
+<p><strong>Prompt design in ChatGPT</strong></p>
+<ul>
+<li><img alt="image-20230523222146100" loading="lazy" src="image-assets/image-20230523222146100.png"/>
+</li>
+</ul>
 <h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>limitation of HuggingGPT</strong></p>
+<ul>
+<li>
+<p>stability</p>
+<ul>
+<li>rebellion that occurs during the inference of large language models. LLM occasionally fail to conform to instructions when inferring, and the output format may defy expectations, leading to exceptions in the program workflow.</li>
+</ul>
+</li>
+</ul>
 </div>
 </main>
 <footer class="footer">
