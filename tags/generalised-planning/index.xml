@@ -17,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/</guid>
       <description>[TOC]
- Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+ Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation  a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies  Contribution  we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists.</description>
     </item>
     
   </channel>

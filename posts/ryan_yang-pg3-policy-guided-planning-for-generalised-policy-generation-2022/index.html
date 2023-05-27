@@ -7,7 +7,7 @@
 <title>Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022 | Sukai Huang</title>
 <meta content="generalised planning" name="keywords"/>
 <meta content="[TOC]
- Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation  a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies  Contribution  we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -203,13 +203,60 @@ if (!doNotTrack) {
 <p><img alt="image-20230524195832214" loading="lazy" src="image-assets/cover.png"/>
 </p>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain</li>
+<li>this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>what is generalised planning and generalised policy search (GPS)</strong></p>
+<ul>
+<li>GPS is a flexible paradigm for generalised planning. In this family of methods, a search is performed through a class of generalised (goal-conditioned) policies, with the search informed by a score function that maps candidates policies to scalar values.</li>
+<li>there has been relatively less work on the score function. the score function plays an important role: if the score are uninformative or misleading, the search will languish in less promising regions of policy space.</li>
+</ul>
+<p><strong>Problem setting in generalised planning</strong></p>
+<ul>
+<li>Given:
+<ul>
+<li>PDDL domain</li>
+<li>Training problems</li>
+<li>PLanner</li>
+</ul>
+</li>
+<li>Goal: Learn a goal-conditioned policy that generalises to all test problems in domain.</li>
+</ul>
+<p><strong>How does PG3 work</strong></p>
+<ul>
+<li>search through the space of candidate policies</li>
+<li>candidate policies representation is a lifted decision list which consists of an ordered list of rules</li>
+<li><img alt="image-20230526000923745" loading="lazy" src="image-assets/image-20230526000923745.png"/>
+</li>
+</ul>
+<p><strong>Evaluation process</strong></p>
+<ul>
+<li>calculate how many problems can a given candidate policy is able to solve</li>
+</ul>
+<p><strong>policy evaluation</strong></p>
+<ul>
+<li>executes the policy on the training tasks and records the number of success</li>
+<li>extremely sparse, effectively forcing an exhaustive search until reaching a region of non-zero scores.</li>
+</ul>
+<p><strong>plan comparison</strong></p>
+<ul>
+<li>plans on the training tasks and records the agreement between the found plans and the candidate policy.</li>
+<li>(in practice the score is the priority score, lower is better)</li>
+</ul>
+<p><img alt="image-20230526004102515" loading="lazy" src="image-assets/image-20230526004102515.png"/>
+</p>
+<ul>
+<li><img alt="image-20230526004119468" loading="lazy" src="image-assets/image-20230526004119468.png"/>
+</li>
+</ul>
+<p><img alt="image-20230526005835198" loading="lazy" src="image-assets/image-20230526005835198.png"/>
+</p>
 </div>
 </main>
 <footer class="footer">

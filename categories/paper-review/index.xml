@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 May 2023 19:57:16 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 May 2023 01:00:02 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jiannan_xiang Language Models Meet World Models 2023</title>
+      <link>https://sino-huang.github.io/posts/jiannan_xiang-language-models-meet-world-models-2023/</link>
+      <pubDate>Fri, 26 May 2023 01:00:02 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiannan_xiang-language-models-meet-world-models-2023/</guid>
+      <description>[TOC]
+ Title: Language Models Meet World Models: Embodied Experiences Enhance Language Models Author: Jiannan Xiang et. al. Publish Year: 22 May 2023 Review Date: Fri, May 26, 2023 url: https://arxiv.org/pdf/2305.10626v2.pdf  Summary of paper Motivation  LLM often struggle with simple reasoning and planning in physical environment the limitation arises from the fact that LMs are trained only on written text and miss essential embodied knowledge and skills.  Contribution  we propose a new paradigm of enhancing LMs by finetuning them with world models, to gain diverse embodied knowledge while retaining their general language capabilities.</description>
+    </item>
+    
     <item>
       <title>Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022</title>
       <link>https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/</link>
@@ -17,7 +27,7 @@
       
       <guid>https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/</guid>
       <description>[TOC]
- Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+ Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf  Summary of paper Motivation  a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies  Contribution  we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists.</description>
     </item>
     
     <item>
