@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>programming notes on Sukai Huang</title>
+    <link>https://sino-huang.github.io/categories/programming-notes/</link>
+    <description>Recent content in programming notes on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 28 May 2023 11:56:47 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Module and Package Management 2023</title>
+      <link>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</link>
+      <pubDate>Sun, 28 May 2023 11:56:47 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</guid>
+      <description>[TOC]
+ Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    </description>
+    </item>
+    
+  </channel>
+</rss>

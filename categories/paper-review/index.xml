@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 May 2023 01:00:02 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 May 2023 09:52:32 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dharma_kc Neural Machine Translation for Code Generation 2023</title>
+      <link>https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/</link>
+      <pubDate>Sun, 28 May 2023 09:52:32 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/</guid>
+      <description>[TOC]
+ Title: Neural Machine Translation for Code Generation Author: Dharma KC et. al. Publish Year: 22 May 2023 Review Date: Sun, May 28, 2023 url: https://arxiv.org/pdf/2305.13504.pdf  Summary of paper Motivation  Recently, NMT methods have been adapted to the generation of program code. In NMT for code generation, the task is to generate output source code that satisfies constraints expressed in the input.  Conclusion  NMT-based architecture are getting quite popular for source generation from various input.</description>
+    </item>
+    
     <item>
       <title>Jiannan_xiang Language Models Meet World Models 2023</title>
       <link>https://sino-huang.github.io/posts/jiannan_xiang-language-models-meet-world-models-2023/</link>
