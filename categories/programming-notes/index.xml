@@ -17,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</guid>
       <description>[TOC]
- Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    </description>
+ Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&amp;gt; from moduledir/packagename import filename avoid using relative path  e.</description>
     </item>
     
   </channel>

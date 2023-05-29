@@ -7,7 +7,7 @@
 <title>Python Module and Package Management 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content="[TOC]
- Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    " name="description"/>
+ Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
@@ -199,13 +199,92 @@ if (!doNotTrack) {
 <h2 id="python-module">Python module<a aria-hidden="true" class="anchor" hidden="" href="#python-module">#</a></h2>
 <h3 id="common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code><a aria-hidden="true" class="anchor" hidden="" href="#common-issue-1-python--m-dir--vs-python-dir">#</a></h3>
 <ul>
-<li><code>python dir</code> will use the dir as the <code>PYTHONPATH</code> as run <code>__main.py</code> file.</li>
+<li><code>python dir</code> will use the dir as the <code>PYTHONPATH</code> as run <code>__main__.py</code> file.</li>
 <li>however, <code>python -m dir</code> will not use the dir as <code>PYTHONPATH</code> but rather it will search the local library.
 <ul>
 <li>thus <code>ModuleNotFoundError</code> may appear</li>
 </ul>
 </li>
 </ul>
+<h3 id="standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module<a aria-hidden="true" class="anchor" hidden="" href="#standard-way-of-import-when-you-want-to-create-a-module">#</a></h3>
+<ul>
+<li>use absolute path -&gt; <code>from moduledir/packagename import filename</code></li>
+<li>avoid using relative path
+<ul>
+<li>e.g., <code>import xxx</code> or <code>from . import xxx</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a aria-hidden="true" class="anchor" hidden="" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
+<ul>
+<li><code>pyproject.toml</code> should be outside of the code dir</li>
+<li><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></li>
+</ul>
+<p>example</p>
+<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">requires</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"setuptools"</span><span class="p">,</span> <span class="s2">"setuptools-scm"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">"setuptools.build_meta"</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"snakesayhello"</span>  <span class="c"># project name can be different </span>
+</span></span><span class="line"><span class="cl">                        <span class="c"># but the module name is the dirname</span>
+</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">"1.0.0"</span>
+</span></span></code></pre></div><ul>
+<li>once we setup the toml file, we can use <code>pip install -e .</code></li>
+</ul>
+<h3 id="extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-where-do-these-square-brackets-do-in-pip-install">#</a></h3>
+<ul>
+<li>we often see</li>
+</ul>
+<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="s2">"splinter[django]"</span>
+</span></span></code></pre></div><ul>
+<li>you are installing splinter package which has the added support for django, the django is the extra dependencies that require further installation.</li>
+<li>in pyproject.toml, we have the following config to control the extra dependencies</li>
+</ul>
+<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">.</span><span class="nx">optional-dependencies</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pdf</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"ReportLab&gt;=1.2"</span><span class="p">,</span> <span class="s2">"RXP"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rest</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"docutils&gt;=0.3"</span><span class="p">,</span> <span class="s2">"pack ==1.1, ==1.3"</span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
+<ul>
+<li><img alt="image-20230528181250046" loading="lazy" src="image-assets/image-20230528181250046.png"/>
+</li>
+</ul>
+<h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a aria-hidden="true" class="anchor" hidden="" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
+<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">black</span><span class="p">]</span>   <span class="c"># format code</span>
+</span></span><span class="line"><span class="cl"><span class="nx">line-length</span> <span class="p">=</span> <span class="mi">88</span>
+</span></span><span class="line"><span class="cl"><span class="nx">target-version</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"py38"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 'extend-exclude' excludes files or directories in addition to the defaults</span>
+</span></span><span class="line"><span class="cl"><span class="nx">extend-exclude</span> <span class="p">=</span> <span class="s2">"""
+</span></span></span><span class="line"><span class="cl"><span class="s2"># A regex preceded with ^/ will apply only to files and directories
+</span></span></span><span class="line"><span class="cl"><span class="s2"># in the root of the project.
+</span></span></span><span class="line"><span class="cl"><span class="s2">(
+</span></span></span><span class="line"><span class="cl"><span class="s2">  llm_genplan/third_party
+</span></span></span><span class="line"><span class="cl"><span class="s2">)
+</span></span></span><span class="line"><span class="cl"><span class="s2">"""</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">isort</span><span class="p">]</span>  <span class="c"># format import libs</span>
+</span></span><span class="line"><span class="cl"><span class="nx">py_version</span> <span class="p">=</span> <span class="mi">38</span>
+</span></span><span class="line"><span class="cl"><span class="nx">profile</span> <span class="p">=</span> <span class="s2">"black"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">multi_line_output</span> <span class="p">=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">skip_glob</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">split_on_trailing_comma</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">]</span>  <span class="c"># add static type comments</span>
+</span></span><span class="line"><span class="cl"><span class="nx">strict_equality</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">disallow_untyped_calls</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">warn_unreachable</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">follow_imports</span> <span class="p">=</span> <span class="s2">"skip"</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">.</span><span class="nx">overrides</span><span class="p">]]</span>  <span class="c"># we specify certain modules that we want to ignore the mypy static type check</span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span> <span class="p">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"matplotlib.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pddlgym.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pyperclip.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pandas.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">ignore_missing_imports</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></div>
 </div>
 </main>
 <footer class="footer">
