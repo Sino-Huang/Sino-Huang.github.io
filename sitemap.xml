@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/weekly-report/01-jun-06-jun-2023/</loc>
+    <lastmod>2023-05-29T17:07:51+10:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/weekly-report/15-may-21-may-2023/</loc>
     <lastmod>2023-05-15T10:56:05+10:00</lastmod>
   </url><url>
@@ -129,7 +132,16 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-05-28T11:56:47+10:00</lastmod>
+    <lastmod>2023-05-29T17:07:51+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/june-2023-weekly-progress/</loc>
+    <lastmod>2023-05-29T17:07:51+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-05-29T17:07:51+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/weekly-report/</loc>
+    <lastmod>2023-05-29T17:07:51+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/programming-notes/</loc>
     <lastmod>2023-05-28T11:56:47+10:00</lastmod>
@@ -138,9 +150,6 @@
     <lastmod>2023-05-28T11:56:47+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</loc>
-    <lastmod>2023-05-28T11:56:47+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
     <lastmod>2023-05-28T11:56:47+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/code-generation/</loc>
@@ -213,9 +222,6 @@
     <lastmod>2023-05-15T15:06:48+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/may-2023-weekly-progress/</loc>
-    <lastmod>2023-05-15T10:56:05+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/weekly-report/</loc>
     <lastmod>2023-05-15T10:56:05+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/april-2023-weekly-progress/</loc>
