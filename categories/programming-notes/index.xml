@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 May 2023 11:56:47 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jun 2023 22:38:28 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Scrawler Using Selenium 2023</title>
+      <link>https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/</link>
+      <pubDate>Thu, 22 Jun 2023 22:38:28 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/</guid>
+      <description>[TOC]
+ Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&amp;gt;=3.4.6 webdriver-manager jupyterlab  known where is the Google Chrome user file location  MAC ~/Library/Application Support/Google/Chrome Linux ~/.config/google-chrome # load options options = webdriver.ChromeOptions() options.add_argument(&amp;#39;--user-data-dir=&amp;lt;profile-folder&amp;gt;&amp;#39;) options.</description>
+    </item>
+    
     <item>
       <title>Python Module and Package Management 2023</title>
       <link>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</link>

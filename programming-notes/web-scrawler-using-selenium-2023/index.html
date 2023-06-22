@@ -4,11 +4,12 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
-<title>programming notes | Sukai Huang</title>
+<title>Web Scrawler Using Selenium 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="description"/>
+<meta content="[TOC]
+ Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab  known where is the Google Chrome user file location  MAC ~/Library/Application Support/Google/Chrome Linux ~/.config/google-chrome # load options options = webdriver.ChromeOptions() options.add_argument('--user-data-dir=&lt;profile-folder&gt;') options." name="description"/>
 <meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/categories/programming-notes/" rel="canonical"/>
+<link href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -17,7 +18,7 @@
 <link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
 <meta content="#2e2e33" name="theme-color"/>
 <meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
 <style>
         #theme-toggle,
@@ -55,6 +56,25 @@
 
     </style>
 </noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
@@ -65,14 +85,35 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="programming notes" property="og:title"/>
+<meta content="Web Scrawler Using Selenium 2023" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/categories/programming-notes/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" property="og:url"/>
+<meta content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="programming notes" name="twitter:title"/>
+<meta content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" name="twitter:image"/>
+<meta content="Web Scrawler Using Selenium 2023" name="twitter:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Programming-notes",
+      "item": "https://sino-huang.github.io/programming-notes/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Web Scrawler Using Selenium 2023",
+      "item": "https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/"
+    }
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
 <script>
@@ -138,9 +179,9 @@ if (!doNotTrack) {
 </nav>
 </header>
 <main class="main">
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/categories/">Categories</a></div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
 <h1>
-    programming notes
+    Web Scrawler Using Selenium 2023
     <a aria-label="RSS" href="index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
@@ -150,34 +191,39 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
-<article class="post-entry tag-entry">
-<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png"/>
-</figure>
-<header class="entry-header">
-<h2>Web Scrawler Using Selenium 2023
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab  known where is the Google Chrome user file location  MAC ~/Library/Application Support/Google/Chrome Linux ~/.config/google-chrome # load options options = webdriver.ChromeOptions() options.add_argument('--user-data-dir=&lt;profile-folder&gt;') options....</p>
+<div class="post-content"><p>[TOC]</p>
+<ol>
+<li>Title: Web Scrawler Using Selenium 2023</li>
+<li>Review Date: Thu, Jun 22, 2023</li>
+</ol>
+<h2 id="web-scrawler-ticket-buying-as-a-case-study">Web scrawler, ticket buying as a case study<a aria-hidden="true" class="anchor" hidden="" href="#web-scrawler-ticket-buying-as-a-case-study">#</a></h2>
+<h3 id="preparation-python-venv">Preparation: python venv<a aria-hidden="true" class="anchor" hidden="" href="#preparation-python-venv">#</a></h3>
+<ul>
+<li>check <a href="https://www.youtube.com/watch?v=Kg1Yvry_Ydk">https://www.youtube.com/watch?v=Kg1Yvry_Ydk</a></li>
+</ul>
+<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv venv
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> venv/bin/activate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># install the following using pip </span>
+</span></span><span class="line"><span class="cl"><span class="nv">selenium</span><span class="o">==</span>4.9.1
+</span></span><span class="line"><span class="cl">undetected-chromedriver&gt;<span class="o">=</span>3.4.6
+</span></span><span class="line"><span class="cl">webdriver-manager
+</span></span><span class="line"><span class="cl">jupyterlab
+</span></span></code></pre></div><ul>
+<li>known where is the Google Chrome user file location</li>
+</ul>
+<pre tabindex="0"><code>MAC ~/Library/Application Support/Google/Chrome
+Linux ~/.config/google-chrome
+</code></pre><div class="highlight"><pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--user-data-dir=&lt;profile-folder&gt;'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--profile-directory=Default'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headless</span><span class="o">=</span><span class="n">HEADLESS</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span></code></pre></div>
 </div>
-<footer class="entry-footer"><span title="2023-06-22 22:38:28 +1000 AEST">June 22, 2023</span> · 1 min · 70 words · Sukai Huang</footer>
-<a aria-label="post link to Web Scrawler Using Selenium 2023" class="entry-link" href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/"></a>
-</article>
-<article class="post-entry tag-entry">
-<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png"/>
-</figure>
-<header class="entry-header">
-<h2>Python Module and Package Management 2023
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
- Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e....</p>
-</div>
-<footer class="entry-footer"><span title="2023-05-28 11:56:47 +1000 AEST">May 28, 2023</span> · 2 min · 341 words · Sukai Huang</footer>
-<a aria-label="post link to Python Module and Package Management 2023" class="entry-link" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/"></a>
-</article>
 </main>
 <footer class="footer">
 <span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
