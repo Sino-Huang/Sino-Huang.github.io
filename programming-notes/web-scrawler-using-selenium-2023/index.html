@@ -7,10 +7,10 @@
 <title>Web Scrawler Using Selenium 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content="[TOC]
- Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab  known where is the Google Chrome user file location  MAC ~/Library/Application Support/Google/Chrome Linux ~/.config/google-chrome # load options options = webdriver.ChromeOptions() options.add_argument('--user-data-dir=&lt;profile-folder&gt;') options." name="description"/>
+ Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  1 2 3 4 5 6 7 8  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab    known where is the Google Chrome user file location  1 2  MAC ~/Library/Application Support/Google/Chrome Linux ~/." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -201,7 +201,19 @@ if (!doNotTrack) {
 <ul>
 <li>check <a href="https://www.youtube.com/watch?v=Kg1Yvry_Ydk">https://www.youtube.com/watch?v=Kg1Yvry_Ydk</a></li>
 </ul>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv venv
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv venv
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> venv/bin/activate
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># install the following using pip </span>
@@ -209,12 +221,34 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">undetected-chromedriver&gt;<span class="o">=</span>3.4.6
 </span></span><span class="line"><span class="cl">webdriver-manager
 </span></span><span class="line"><span class="cl">jupyterlab
-</span></span></code></pre></div><ul>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
 <li>known where is the Google Chrome user file location</li>
 </ul>
-<pre tabindex="0"><code>MAC ~/Library/Application Support/Google/Chrome
-Linux ~/.config/google-chrome
-</code></pre><div class="highlight"><pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">MAC ~/Library/Application Support/Google/Chrome
+</span></span><span class="line"><span class="cl">Linux ~/.config/google-chrome
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--user-data-dir=&lt;profile-folder&gt;'</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--profile-directory=Default'</span><span class="p">)</span>
@@ -222,7 +256,367 @@ Linux ~/.config/google-chrome
 </span></span><span class="line"><span class="cl">            <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="n">headless</span><span class="o">=</span><span class="n">HEADLESS</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">        <span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="utils-functions">Utils functions<a aria-hidden="true" class="anchor" hidden="" href="#utils-functions">#</a></h2>
+<ul>
+<li>sleep find element</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">sleepy_find_element</span><span class="p">(</span><span class="n">by</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">attempt_count</span> <span class="p">:</span><span class="nb">int</span> <span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">sleep_duration</span> <span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">'''
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Finds the web element using the locator and query.
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">    This function attempts to find the element multiple times with a specified
+</span></span></span><span class="line"><span class="cl"><span class="s1">    sleep duration between attempts. If the element is found, the function returns the element.
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Args:
+</span></span></span><span class="line"><span class="cl"><span class="s1">        by (selenium.webdriver.common.by.By): The method used to locate the element.
+</span></span></span><span class="line"><span class="cl"><span class="s1">        query (str): The query string to locate the element.
+</span></span></span><span class="line"><span class="cl"><span class="s1">        attempt_count (int, optional): The number of attempts to find the element. Default: 20.
+</span></span></span><span class="line"><span class="cl"><span class="s1">        sleep_duration (int, optional): The duration to sleep between attempts. Default: 1.
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">    Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s1">        selenium.webdriver.remote.webelement.WebElement: Web element or None if not found.
+</span></span></span><span class="line"><span class="cl"><span class="s1">    '''</span>
+</span></span><span class="line"><span class="cl">    <span class="k">global</span> <span class="n">browser</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">_count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">attempt_count</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">item</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span><span class="n">by</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> has found'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span>
+</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> is not present, attempt: </span><span class="si">{</span><span class="n">_count</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_duration</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="nb">list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">"Element not find!"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">item</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>move to element</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># import Action chains</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver</span> <span class="kn">import</span> <span class="n">ActionChains</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#element</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#action chain object</span>
+</span></span><span class="line"><span class="cl"><span class="n">action</span> <span class="o">=</span> <span class="n">ActionChains</span><span class="p">(</span><span class="n">driver</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># move to element operation</span>
+</span></span><span class="line"><span class="cl"><span class="n">action</span><span class="o">.</span><span class="n">move_to_element</span><span class="p">(</span><span class="n">source</span><span class="p">)</span><span class="o">.</span><span class="n">click</span><span class="p">()</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>useful imports</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">undetected_chromedriver</span> <span class="k">as</span> <span class="nn">uc</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># from selenium import webdriver</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.keys</span> <span class="kn">import</span> <span class="n">Keys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support.wait</span> <span class="kn">import</span> <span class="n">WebDriverWait</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">selenium.common.exceptions</span> <span class="k">as</span> <span class="nn">Exceptions</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="xpath-cheatsheet">Xpath cheatsheet<a aria-hidden="true" class="anchor" hidden="" href="#xpath-cheatsheet">#</a></h2>
+<script crossorigin="anonymous" integrity="sha512-i+UmpoqoJqHkpXQ3mQfaIF8UZ2RAGoyqJvMzAKTadhBVhRk883EHluxdPsMf7c5/43D5tVpwIE8KLE1kQa0uCg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-NuVK4+sDE809oDhbdAABRO1nTe80t56vXda8dg1UQ+RcQ8x7WakwTzKE7LOosoNCKi7EH7FXo7mritFNWpZiLQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js"></script>
+<style>
+.embed-pdf-the-canvas {
+  direction: ltr;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+#paginator {
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#loadingWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d2d0d0;;
+  border-radius: 50%;
+  border-top-color: #383838;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+</style>
+<div id="paginator">
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+       
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<div id="embed-pdf-container">
+<div id="loadingWrapper">
+<div id="loading"></div>
+</div>
+<canvas class="embed-pdf-the-canvas" id="the-canvas-1"></canvas>
+</div>
+<script type="text/javascript">
+window.onload = function() {
+
+
+var url =  'assets\/xpath-cheatsheet.pdf';
+
+var hidePaginator =  true ;
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var showMultiPage = parseInt("1") || 1;
+
+
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/sino-huang.github.io\/" + '/js/pdf-js/build/pdf.worker.js';
+
+
+var pdfDoc = null,
+    pageNum = selectedPageNum,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById('the-canvas-1'),
+    ctx = canvas.getContext('2d'),
+    paginator = document.getElementById("paginator"),
+    loadingWrapper = document.getElementById('loadingWrapper');
+
+
+
+showPaginator();
+showLoader();
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      showContent(canvas);
+      
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+function renderPageExpanded(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    let localcanvas = document.getElementById('the-canvas-'+num);
+    let ctx = localcanvas.getContext('2d');
+    localcanvas.height = viewport.height;
+    localcanvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      showContent(localcanvas);
+      
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+
+
+function showContent(mycanvas) {
+  loadingWrapper.style.display = 'none';
+  mycanvas.style.display = 'block';
+}
+
+
+
+function showLoader() {
+  if(hideLoader) return
+  loadingWrapper.style.display = 'flex';
+  canvas.style.display = 'none';
+}
+
+
+
+function showPaginator() {
+  if(hidePaginator) return
+  paginator.style.display = 'block';
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum <= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById('prev').addEventListener('click', onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum >= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById('next').addEventListener('click', onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  var numPages = pdfDoc.numPages;
+  document.getElementById('page_count').textContent = numPages;
+  
+  
+  if(pageNum > numPages) {
+    pageNum = numPages
+  }
+
+  
+  if (showMultiPage > 1){
+    while (pageNum <= numPages){
+      renderPageExpanded(pageNum);
+      pageNum++;
+    }
+  } else {
+    renderPage(pageNum);
+  }
+});
+}
+
+</script>
 </div>
 </main>
 <footer class="footer">

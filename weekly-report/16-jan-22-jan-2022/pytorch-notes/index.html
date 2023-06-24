@@ -8,12 +8,11 @@
 <meta content="" name="keywords"/>
 <meta content="[TOC]
 PyTorch Dataset and DataLoader check the video
- https://www.youtube.com/watch?v=Sj-gIb0QiRM  collate_fn(batch) @staticmethod def collate_fn(batch): # 官方实现的default_collate可以参考 # https://github.com/pytorch/pytorch/blob/67b7e751e6b5931a9f45274653f4f653a4e6cdf6/torch/utils/data/_utils/collate.py images, labels = tuple(zip(*batch)) images = torch.stack(images, dim=0) labels = torch.as_tensor(labels) return images, labels collate_fn would settle how to output the data batch
-a =[(1,2), (3,4)] tuple(zip(*a)) Out[4]: ((1, 3), (2, 4)) ConcatDataset (list(Dataset)) can be used for data that is stored in different files.
-the ConcatDataset will automatically concatenate each Dataset efficiently" name="description"/>
+ https://www.youtube.com/watch?v=Sj-gIb0QiRM  collate_fn(batch) 1 2 3 4 5 6 7 8 9  @staticmethod def collate_fn(batch): # 官方实现的default_collate可以参考 # https://github.com/pytorch/pytorch/blob/67b7e751e6b5931a9f45274653f4f653a4e6cdf6/torch/utils/data/_utils/collate.py images, labels = tuple(zip(*batch)) images = torch.stack(images, dim=0) labels = torch.as_tensor(labels) return images, labels   collate_fn would settle how to output the data batch
+1 2 3  a =[(1,2), (3,4)] tuple(zip(*a)) Out[4]: ((1, 3), (2, 4))   ConcatDataset (list(Dataset)) can be used for data that is stored in different files." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/weekly-report/16-jan-22-jan-2022/pytorch-notes/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -187,7 +186,20 @@ if (!doNotTrack) {
 <li><a href="https://www.youtube.com/watch?v=Sj-gIb0QiRM">https://www.youtube.com/watch?v=Sj-gIb0QiRM</a></li>
 </ul>
 <h3 id="collate_fnbatch">collate_fn(batch)<a aria-hidden="true" class="anchor" hidden="" href="#collate_fnbatch">#</a></h3>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="nd">@staticmethod</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="nd">@staticmethod</span>
 </span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">collate_fn</span><span class="p">(</span><span class="n">batch</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># 官方实现的default_collate可以参考</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># https://github.com/pytorch/pytorch/blob/67b7e751e6b5931a9f45274653f4f653a4e6cdf6/torch/utils/data/_utils/collate.py</span>
@@ -196,18 +208,46 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">        <span class="n">images</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">stack</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">labels</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">as_tensor</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">images</span><span class="p">,</span> <span class="n">labels</span>
-</span></span></code></pre></div><p>collate_fn would settle how to output the data batch</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span>  <span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>collate_fn would settle how to output the data batch</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">a</span>  <span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)]</span>
 </span></span><span class="line"><span class="cl"><span class="nb">tuple</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">a</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="n">Out</span><span class="p">[</span><span class="mi">4</span><span class="p">]:</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-</span></span></code></pre></div><h3 id="concatdataset-listdataset">ConcatDataset (list(Dataset))<a aria-hidden="true" class="anchor" hidden="" href="#concatdataset-listdataset">#</a></h3>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="concatdataset-listdataset">ConcatDataset (list(Dataset))<a aria-hidden="true" class="anchor" hidden="" href="#concatdataset-listdataset">#</a></h3>
 <p>can be used for data that is stored in different files.</p>
 <p>the <code>ConcatDataset</code> will automatically concatenate each Dataset efficiently</p>
 <h3 id="iterabledatasethttpspytorchorgdocsstabledatahtmltorchutilsdataiterabledataset"><a href="https://pytorch.org/docs/stable/data.html#torch.utils.data.IterableDataset"><code>IterableDataset</code></a><a aria-hidden="true" class="anchor" hidden="" href="#iterabledatasethttpspytorchorgdocsstabledatahtmltorchutilsdataiterabledataset">#</a></h3>
 <p>An iterable-style dataset is an instance of a subclass of <a href="https://pytorch.org/docs/stable/data.html#torch.utils.data.IterableDataset"><code>IterableDataset</code></a> that implements the <code>__iter__()</code> protocol, and represents an iterable over data samples. This type of datasets is particularly suitable for cases where random reads are expensive or even improbable, and where the batch size depends on the fetched data.</p>
 <p>For example, such a dataset, when called <code>iter(dataset)</code>, could return <u>a stream of data reading from a database, a remote server, or even logs generated in real time.</u></p>
 <h3 id="dataset-for-pickle">Dataset for pickle<a aria-hidden="true" class="anchor" hidden="" href="#dataset-for-pickle">#</a></h3>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">Dataset</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch.utils.data</span> <span class="kn">import</span> <span class="n">ConcatDataset</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pickle</span>
 </span></span><span class="line"><span class="cl">
@@ -220,7 +260,9 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">        <span class="c1"># import data</span>
 </span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_pathname</span><span class="p">,</span> <span class="s1">'rb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">episode_arr</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </div>
 </main>
 <footer class="footer">

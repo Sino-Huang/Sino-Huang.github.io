@@ -21,9 +21,9 @@ Setup dreamer builder for IGLU Minecraft task &amp;mdash; setup notes Advantages
 This will not create dependencies on the local machine
 python -c flag execute the python code in command
 e.g,
-python -c &amp;#39; import pprint pprint.pprint(1) &amp;#39; set TF_XLA variable TF_XLA_FLAGS=--tf_xla_auto_jit=2
+1 2 3 4  python -c &amp;#39; import pprint pprint.pprint(1) &amp;#39;   set TF_XLA variable TF_XLA_FLAGS=--tf_xla_auto_jit=2
 use python=3.7 otherwise the environment will crash.
-some strange bugs of the environment if I directly follow the instructions from https://github.com/iglu-contest/iglu, I will install the iglu:0.</description>
+some strange bugs of the environment if I directly follow the instructions from https://github.</description>
     </item>
     
   </channel>

@@ -13,7 +13,7 @@ The following are useful tips regarding to docker commands.
 docker permission issue in order to connect to docker sock" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/docker-notes/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -202,14 +202,28 @@ if (!doNotTrack) {
 <p>Others: you might find out that the error message</p>
 <p><code>Could not load dynamic library 'libcusolver.so.11'</code></p>
 <p>so just create a soft link</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo ln -s /usr/local/cuda-11.1/lib64/libcusolver.so.11 /usr/local/cuda-11.1/lib64/libcusolver.so.10
-</span></span></code></pre></div><p><strong>Note</strong>: not recommended because it cause the container unstable and there is just a lot of bugs there.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo ln -s /usr/local/cuda-11.1/lib64/libcusolver.so.11 /usr/local/cuda-11.1/lib64/libcusolver.so.10
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Note</strong>: not recommended because it cause the container unstable and there is just a lot of bugs there.</p>
 <h3 id="docker-setup">docker setup<a aria-hidden="true" class="anchor" hidden="" href="#docker-setup">#</a></h3>
 <p>docker build from Dockerfile</p>
 <p><a href="https://docs.docker.com/engine/reference/commandline/build/">https://docs.docker.com/engine/reference/commandline/build/</a></p>
 <p><code>-t</code> means you set a name for it with version tag</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker build - &lt; Dockerfile -t minerl:0.1
-</span></span></code></pre></div><h3 id="docker-check-image">docker check image<a aria-hidden="true" class="anchor" hidden="" href="#docker-check-image">#</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker build - &lt; Dockerfile -t minerl:0.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="docker-check-image">docker check image<a aria-hidden="true" class="anchor" hidden="" href="#docker-check-image">#</a></h3>
 <p>just use <code>docker image ls</code></p>
 <h3 id="docker-remove-image">docker remove image<a aria-hidden="true" class="anchor" hidden="" href="#docker-remove-image">#</a></h3>
 <p><code>docker image rm</code></p>
@@ -225,8 +239,15 @@ if (!doNotTrack) {
 <h3 id="docker-mount-local-repo-to-container">docker mount local repo to container<a aria-hidden="true" class="anchor" hidden="" href="#docker-mount-local-repo-to-container">#</a></h3>
 <p>use <code>-v your/local/path:/root/container/path</code></p>
 <p>e.g.,</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run --network host --rm -it -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/root/iglu_dev docker-image-name <span class="nb">command</span> parameters
-</span></span></code></pre></div><h3 id="docker-network">docker network<a aria-hidden="true" class="anchor" hidden="" href="#docker-network">#</a></h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">docker run --network host --rm -it -v <span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/root/iglu_dev docker-image-name <span class="nb">command</span> parameters
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="docker-network">docker network<a aria-hidden="true" class="anchor" hidden="" href="#docker-network">#</a></h3>
 <p><a href="https://www.youtube.com/watch?v=c6Ord0GAOp8">https://www.youtube.com/watch?v=c6Ord0GAOp8</a></p>
 <p>there are five different types of network that docker provides</p>
 <ul>
@@ -265,10 +286,19 @@ if (!doNotTrack) {
 <p>So use <code>docker exec</code> rather than <code>docker attach</code></p>
 <h3 id="avoid-interaction-during-docker-build">avoid interaction during docker build<a aria-hidden="true" class="anchor" hidden="" href="#avoid-interaction-during-docker-build">#</a></h3>
 <p>example dockerfile</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> UBUNTU</span><span class="err">
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> UBUNTU</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">ARG</span> <span class="nv">DEBIAN_FRONTEND</span><span class="o">=</span>noninteractive
 </span></span><span class="line"><span class="cl"><span class="k">ENV</span> <span class="nv">TZ</span><span class="o">=</span>Australia/Sydney<span class="err">
-</span></span></span></code></pre></div><p><strong>ENV is for future running containers</strong>. ARG for building your Docker image.</p>
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>ENV is for future running containers</strong>. ARG for building your Docker image.</p>
 <h3 id="conda-env-check">conda env check<a aria-hidden="true" class="anchor" hidden="" href="#conda-env-check">#</a></h3>
 <p><code>conda env list</code></p>
 </div>

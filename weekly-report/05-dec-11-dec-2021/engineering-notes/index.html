@@ -11,12 +11,12 @@ Setup dreamer builder for IGLU Minecraft task — setup notes Advantages of usin
 This will not create dependencies on the local machine
 python -c flag execute the python code in command
 e.g,
-python -c ' import pprint pprint.pprint(1) ' set TF_XLA variable TF_XLA_FLAGS=--tf_xla_auto_jit=2
+1 2 3 4  python -c ' import pprint pprint.pprint(1) '   set TF_XLA variable TF_XLA_FLAGS=--tf_xla_auto_jit=2
 use python=3.7 otherwise the environment will crash.
-some strange bugs of the environment if I directly follow the instructions from https://github.com/iglu-contest/iglu, I will install the iglu:0." name="description"/>
+some strange bugs of the environment if I directly follow the instructions from https://github." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/engineering-notes/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.67906323a4149e4eba6e09e5bff6529da9ec1a5a614705a10a878fb840fdbf8a.css" integrity="sha256-Z5BjI6QUnk66bgnlv/ZSnansGlphRwWhCoePuED9v4o=" rel="preload stylesheet"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -191,11 +191,21 @@ if (!doNotTrack) {
 <h3 id="python--c-flag"><code>python -c</code> flag<a aria-hidden="true" class="anchor" hidden="" href="#python--c-flag">#</a></h3>
 <p>execute the python code in command</p>
 <p>e.g,</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -c <span class="s1">'
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -c <span class="s1">'
 </span></span></span><span class="line"><span class="cl"><span class="s1">import pprint
 </span></span></span><span class="line"><span class="cl"><span class="s1">pprint.pprint(1)
 </span></span></span><span class="line"><span class="cl"><span class="s1">'</span>
-</span></span></code></pre></div><h3 id="set-tf_xla-variable">set TF_XLA variable<a aria-hidden="true" class="anchor" hidden="" href="#set-tf_xla-variable">#</a></h3>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="set-tf_xla-variable">set TF_XLA variable<a aria-hidden="true" class="anchor" hidden="" href="#set-tf_xla-variable">#</a></h3>
 <p><code>TF_XLA_FLAGS=--tf_xla_auto_jit=2</code></p>
 <h3 id="use-python37">use <code>python=3.7</code><a aria-hidden="true" class="anchor" hidden="" href="#use-python37">#</a></h3>
 <p>otherwise the environment will crash.</p>
@@ -208,7 +218,35 @@ if (!doNotTrack) {
 <p>In the end we update the python from 3.7 to 3.8</p>
 <p><strong>Update 2</strong></p>
 <p>The <code>minerl-patched==0.1.0</code> has some issue on my device, following is the error message</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
 </span></span><span class="line"><span class="cl">  File <span class="s2">"test_env.py"</span>, line 2, in &lt;module&gt;
 </span></span><span class="line"><span class="cl">    import minerl_patched
 </span></span><span class="line"><span class="cl">  File <span class="s2">"/home/sukai/anaconda3/envs/iglu_env337/lib/python3.7/site-packages/minerl_patched-0.1.0-py3.7-linux-x86_64.egg/minerl_patched/__init__.py"</span>, line 7, in &lt;module&gt;
@@ -232,10 +270,57 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">  File <span class="s2">"/home/sukai/anaconda3/envs/iglu_env337/lib/python3.7/site-packages/minerl_patched-0.1.0-py3.7-linux-x86_64.egg/minerl_patched/herobraine/hero/spaces.py"</span>, line 206, in __init__
 </span></span><span class="line"><span class="cl">    self.shape <span class="o">=</span> <span class="o">()</span>
 </span></span><span class="line"><span class="cl">AttributeError: can<span class="err">'</span>t <span class="nb">set</span> attribute
-</span></span></code></pre></div><p>However, if I install <code>minerl==0.4.2.1</code> and run the sample codes on <a href="https://github.com/minerllabs/minerl">https://github.com/minerllabs/minerl</a> , it can work.</p>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>However, if I install <code>minerl==0.4.2.1</code> and run the sample codes on <a href="https://github.com/minerllabs/minerl">https://github.com/minerllabs/minerl</a> , it can work.</p>
 <p><code>minerl-patched==0.1.0</code> is the iglu version</p>
 <p>after I installed <code>minerl==0.4.2.1</code>, the error message changed</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>iglu_env437<span class="o">)</span> ➜  iglu git:<span class="o">(</span>master<span class="o">)</span> ✗ python test/test_env.py   
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="o">(</span>iglu_env437<span class="o">)</span> ➜  iglu git:<span class="o">(</span>master<span class="o">)</span> ✗ python test/test_env.py   
 </span></span><span class="line"><span class="cl">/home/sukai/anaconda3/envs/iglu_env437/lib/python3.7/site-packages/gym/logger.py:34: UserWarning: WARN: Box bound precision lowered by casting to float32
 </span></span><span class="line"><span class="cl">  warnings.warn<span class="o">(</span>colorize<span class="o">(</span><span class="s2">"%s: %s"</span> % <span class="o">(</span><span class="s2">"WARN"</span>, msg % args<span class="o">)</span>, <span class="s2">"yellow"</span><span class="o">))</span>
 </span></span><span class="line"><span class="cl">/home/sukai/anaconda3/envs/iglu_env437/lib/python3.7/site-packages/gym/logger.py:34: UserWarning: WARN: Box bound precision lowered by casting to float32
@@ -276,20 +361,44 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">  File <span class="s2">"/home/sukai/anaconda3/envs/iglu_env437/lib/python3.7/site-packages/minerl_patched-0.1.0-py3.7-linux-x86_64.egg/minerl_patched/herobraine/hero/handlers/translation.py"</span>, line 80, in walk_dict
 </span></span><span class="line"><span class="cl">    raise KeyError<span class="o">()</span>
 </span></span><span class="line"><span class="cl">KeyError
-</span></span></code></pre></div><p><strong>Update 3</strong></p>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Update 3</strong></p>
 <p>Interestingly, I can run the program in Docker container.</p>
 <p>By looking at the Dockerfile</p>
 <p>the only difference seems that the docker container uses a older Ubuntu system with cudnn7 rather than the latest cudnn8</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04</span><span class="err">
-</span></span></span></code></pre></div><p>In order to find the bug, we change the line to</p>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> nvidia/cuda:11.4.2-cudnn8-runtime-ubuntu20.04</span><span class="err">
-</span></span></span></code></pre></div><p>Nope…</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>In order to find the bug, we change the line to</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="k">FROM</span><span class="s"> nvidia/cuda:11.4.2-cudnn8-runtime-ubuntu20.04</span><span class="err">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>Nope…</p>
 <p><strong>Final update</strong></p>
 <p>I don’t need to figure out what’s wrong now. I just use the docker version</p>
 <h2 id="git----how-to-remove-uncommitted-files">git – how to remove uncommitted files<a aria-hidden="true" class="anchor" hidden="" href="#git----how-to-remove-uncommitted-files">#</a></h2>
-<div class="highlight"><pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clean -df
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clean -df
 </span></span><span class="line"><span class="cl">git checkout -- .
-</span></span></code></pre></div>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </div>
 </main>
 <footer class="footer">
