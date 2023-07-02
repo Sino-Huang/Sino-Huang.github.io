@@ -9,7 +9,25 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 May 2023 09:52:32 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 02 Jul 2023 21:24:50 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>large language models</title>
+      <link>https://sino-huang.github.io/tags/large-language-models/</link>
+      <pubDate>Sun, 02 Jul 2023 21:24:50 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/large-language-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prompting design</title>
+      <link>https://sino-huang.github.io/tags/prompting-design/</link>
+      <pubDate>Sun, 02 Jul 2023 16:09:58 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/prompting-design/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>code generation</title>
       <link>https://sino-huang.github.io/tags/code-generation/</link>

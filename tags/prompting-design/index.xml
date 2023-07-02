@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>prompting design on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/prompting-design/</link>
+    <description>Recent content in prompting design on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 02 Jul 2023 16:09:58 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/prompting-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jianning_wang Boosting Language Models Reasoning With Chain of Knowledge Prompting 2023</title>
+      <link>https://sino-huang.github.io/posts/jianning_wang-boosting-language-models-reasoning-with-chain-of-knowledge-prompting-2023/</link>
+      <pubDate>Sun, 02 Jul 2023 16:09:58 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jianning_wang-boosting-language-models-reasoning-with-chain-of-knowledge-prompting-2023/</guid>
+      <description>[TOC]
+ Title: Boosting Language Models Reasoning With Chain of Knowledge Prompting Author: Jianing Wang et. al. Publish Year: 10 Jun 2023 Review Date: Sun, Jul 2, 2023 url: https://arxiv.org/pdf/2306.06427.pdf  Summary of paper Motivation  &amp;ldquo;Chain of Thought (CoT)&amp;rdquo; aims at designing a simple prompt like &amp;ldquo;Let&amp;rsquo;s think step by step&amp;rdquo; however, the generated rationales often come with mistakes, making unfactual and unfaithful reasoning chain To mitigate this brittleness, we propose a novel Chain-of-Knowlege knowledge evidence in the form of structure triple  Contribution  Benefiting from CoK, we additional introduce a F^2 -Verification method to estimate the reliable response, the wrong evidence can be indicated to prompt the LLM to rethink.</description>
+    </item>
+    
+  </channel>
+</rss>
