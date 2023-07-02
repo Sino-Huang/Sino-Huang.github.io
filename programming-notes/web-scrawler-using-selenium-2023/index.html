@@ -178,7 +178,32 @@ if (!doNotTrack) {
 </ul>
 </nav>
 </header>
-<main class="main">
+<main class="main"><div class="toc">
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
+<li>
+<a aria-label="Web scrawler, ticket buying as a case study" href="#web-scrawler-ticket-buying-as-a-case-study">Web scrawler, ticket buying as a case study</a><ul>
+<li>
+<a aria-label="Preparation: python venv" href="#preparation-python-venv">Preparation: python venv</a></li></ul>
+</li>
+<li>
+<a aria-label="Utils functions" href="#utils-functions">Utils functions</a></li>
+<li>
+<a aria-label="Firefox configs and page load strategy" href="#firefox-configs-and-page-load-strategy">Firefox configs and page load strategy</a></li>
+<li>
+<a aria-label="lxml html xpath with requests" href="#lxml-html-xpath-with-requests">lxml html xpath with requests</a></li>
+<li>
+<a aria-label="concurrent tqdm process_map" href="#concurrent-tqdm-process_map">concurrent tqdm process_map</a></li>
+<li>
+<a aria-label="Xpath cheatsheet" href="#xpath-cheatsheet">Xpath cheatsheet</a>
+</li>
+</ul>
+</div>
+</details>
+</div>
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
 <h1>
     Web Scrawler Using Selenium 2023
@@ -380,6 +405,139 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">selenium.common.exceptions</span> <span class="k">as</span> <span class="nn">Exceptions</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="firefox-configs-and-page-load-strategy">Firefox configs and page load strategy<a aria-hidden="true" class="anchor" hidden="" href="#firefox-configs-and-page-load-strategy">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">FirefoxOptions</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"-profile"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"/home/sukai/snap/firefox/common/.mozilla/firefox/irinbvf5.default-release"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">page_load_strategy</span> <span class="o">=</span> <span class="s2">"eager"</span> <span class="c1"># none, eager, normal</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">(</span><span class="n">service</span><span class="o">=</span><span class="n">FirefoxService</span><span class="p">(</span><span class="n">GeckoDriverManager</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">()),</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="lxml-html-xpath-with-requests">lxml html xpath with requests<a aria-hidden="true" class="anchor" hidden="" href="#lxml-html-xpath-with-requests">#</a></h2>
+<ul>
+<li>used for requests (simpler and faster in some cases)</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">html</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">complete_url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
+</span></span><span class="line"><span class="cl"><span class="n">tree</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="c1"># read byte content</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># print("start loading")</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># latitude </span>
+</span></span><span class="line"><span class="cl"><span class="n">latitude_xp</span> <span class="o">=</span> <span class="s1">'//h3[contains(text(), "Coordinates")]/following-sibling::p[contains(text(), "Latitude")]'</span>
+</span></span><span class="line"><span class="cl"><span class="n">latitude_ele</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">latitude_xp</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">latitude_ele</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">latitude_ele</span> <span class="o">=</span> <span class="n">latitude_ele</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">latitude_info</span> <span class="o">=</span> <span class="n">latitude_ele</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"Latitude: "</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print('latitude_info', latitude_info)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">'latitude'</span><span class="p">]</span> <span class="o">=</span> <span class="n">latitude_info</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>text_content() will get all the text in the node, which is same as <code>.text</code> in selenium</li>
+</ul>
+<h2 id="concurrent-tqdm-process_map">concurrent tqdm process_map<a aria-hidden="true" class="anchor" hidden="" href="#concurrent-tqdm-process_map">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm.contrib.concurrent</span> <span class="kn">import</span> <span class="n">process_map</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span><span class="p">,</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Lock</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">manager</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span> <span class="c1"># Manager dictionary must be used for multiprocessing</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">postcode_info_manager_dict</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function_star</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">obtain_postcode_info_pure_content</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">postcode_info_manager_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">postcode_unique_lst</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># with Pool(10) as p: # tqdm cannot sync in this way</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#     results = list(tqdm(p.imap(my_function_star, args), total=len(args)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">process_map</span><span class="p">(</span><span class="n">my_function_star</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># IMPORTANT we must attach dict to the manager dict, nest dict update is banned in multiprocessing</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">"United States"</span><span class="p">:</span> <span class="s2">"New York"</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="s2">"Italy"</span><span class="p">:</span> <span class="s2">"Naples"</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="s2">"England"</span><span class="p">:</span> <span class="s2">"London"</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span> <span class="c1"># OK</span>
+</span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">][</span><span class="s1">'United States'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"New York"</span> <span class="c1"># BAD</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="xpath-cheatsheet">Xpath cheatsheet<a aria-hidden="true" class="anchor" hidden="" href="#xpath-cheatsheet">#</a></h2>
