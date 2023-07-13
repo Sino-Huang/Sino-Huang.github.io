@@ -191,6 +191,8 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Standard way of import when you want to create a module" href="#standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module</a></li>
 <li>
+<a aria-label="However, in a complicated project where there are too many modules." href="#however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.</a></li>
+<li>
 <a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
 <li>
 <a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code></a></li>
@@ -241,10 +243,43 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
+<h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a aria-hidden="true" class="anchor" hidden="" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
+<ul>
+<li>one workaround is that we still make it a module, but try to append folder path to the system path.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>always use it as the last resort.</li>
+</ul>
 <h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a aria-hidden="true" class="anchor" hidden="" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
 <ul>
-<li><code>pyproject.toml</code> should be outside of the code dir</li>
-<li><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></li>
+<li>
+<p><code>python -m venv .venv</code></p>
+</li>
+<li>
+<p><code>pip install -U pip</code></p>
+</li>
+<li>
+<p><code>pip install -U setuptools</code></p>
+</li>
+<li>
+<p><code>pip install -r requirements.txt</code></p>
+</li>
+<li>
+<p><code>pyproject.toml</code> should be outside of the code dir</p>
+</li>
+<li>
+<p><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></p>
+</li>
 </ul>
 <p>example</p>
 <div class="highlight"><div class="chroma">
@@ -264,9 +299,48 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">"setuptools.build_meta"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"snakesayhello"</span>  <span class="c"># project name can be different </span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"&lt;my_package_name&gt;"</span>  <span class="c"># project name can be different </span>
 </span></span><span class="line"><span class="cl">                        <span class="c"># but the module name is the dirname</span>
 </span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">"1.0.0"</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>a sample structure can be</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
+</span></span><span class="line"><span class="cl">|   pyproject.toml
+</span></span><span class="line"><span class="cl">|   README.md
+</span></span><span class="line"><span class="cl">|    
+</span></span><span class="line"><span class="cl">+---your_project_name
+</span></span><span class="line"><span class="cl">|   |   __init__.py
+</span></span><span class="line"><span class="cl">|   |       
+</span></span><span class="line"><span class="cl">|   +---pkg1
+</span></span><span class="line"><span class="cl">|   |       t1.py
+</span></span><span class="line"><span class="cl">|   |       __init__.py
+</span></span><span class="line"><span class="cl">|   |       
+</span></span><span class="line"><span class="cl">|   +---pkg2
+</span></span><span class="line"><span class="cl">|   |   |   t2.py
+</span></span><span class="line"><span class="cl">|   |   |   __init__.py
+</span></span><span class="line"><span class="cl">|   |   |   
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
