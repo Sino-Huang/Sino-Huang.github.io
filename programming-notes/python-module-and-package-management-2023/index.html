@@ -195,6 +195,8 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
 <li>
+<a aria-label="Sample code" href="#sample-code">Sample code</a></li>
+<li>
 <a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code></a></li>
 <li>
 <a aria-label="Extra: what is [tool.setuptools.packages.find]" href="#extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code></a></li>
@@ -202,7 +204,7 @@ if (!doNotTrack) {
 <a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li></ul>
 </li>
 <li>
-<a aria-label="Appendix" href="#appendix">Appendix</a>
+<a aria-label="Useful VSCode python extension" href="#useful-vscode-python-extension">Useful VSCode python extension</a>
 </li>
 </ul>
 </div>
@@ -282,17 +284,76 @@ if (!doNotTrack) {
 <p><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></p>
 </li>
 </ul>
-<p>example</p>
+<h3 id="sample-code">Sample code<a aria-hidden="true" class="anchor" hidden="" href="#sample-code">#</a></h3>
+<ul>
+<li>hydra <code>default.yaml</code> config</li>
+</ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">_self_</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hydra</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">job</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="kc">True</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="s2">"outputs/${now:%Y-%m-%d}/${monitor.name}_${now:%H-%M-%S}"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">monitor</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_wandb</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Test Program"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">taglist</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l">None</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">data</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">if_test</span><span class="p">:</span><span class="w"> </span><span class="kc">True</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>pyproject.toml</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
@@ -300,9 +361,126 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">"setuptools.build_meta"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"&lt;my_package_name&gt;"</span>  <span class="c"># project name can be different </span>
-</span></span><span class="line"><span class="cl">                        <span class="c"># but the module name is the dirname</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"my-test"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">authors</span> <span class="p">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span> <span class="p">=</span> <span class="s2">"Sukai Huang"</span><span class="p">,</span> <span class="nx">email</span> <span class="p">=</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">"My test package description"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">readme</span> <span class="p">=</span> <span class="s2">"readme.md"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">dependencies</span> <span class="p">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"hydra-core"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"tqdm"</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">"1.0.0"</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">setuptools</span><span class="p">.</span><span class="nx">packages</span><span class="p">.</span><span class="nx">find</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"config"</span><span class="p">,</span> <span class="s2">"outputs"</span><span class="p">,</span> <span class="s2">"multirun"</span><span class="p">,</span> <span class="s2">"logs"</span><span class="p">]</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>module <code>__main__</code> code</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">wandb</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">omegaconf</span> <span class="kn">import</span> <span class="n">OmegaConf</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hydra</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">hydra.utils</span> <span class="kn">import</span> <span class="n">HydraConfig</span><span class="p">,</span> <span class="n">get_original_cwd</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
+</span></span><span class="line"><span class="cl">    <span class="n">wandb_cfg</span> <span class="o">=</span> <span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_container</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">resolve</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"--------Model Config---------"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_yaml</span><span class="p">(</span><span class="n">cfg</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"-----End of Model Config-----"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">projectname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">project_name</span>
+</span></span><span class="line"><span class="cl">    <span class="n">jobname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">name</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tagslist</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">taglist</span>
+</span></span><span class="line"><span class="cl">    <span class="n">notes</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">notes</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">use_wandb</span> <span class="ow">and</span> <span class="n">cfg</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"train"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">project</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">name</span><span class="o">=</span><span class="n">jobname</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">notes</span><span class="o">=</span><span class="n">notes</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">tags</span><span class="o">=</span><span class="n">tagslist</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">config</span><span class="o">=</span><span class="n">wandb_cfg</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># set up random seed</span>
+</span></span><span class="line"><span class="cl">    <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">CONSTANT</span><span class="o">.</span><span class="n">RANDOM_SEED</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">torch</span><span class="o">.</span><span class="n">manual_seed</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">CONSTANT</span><span class="o">.</span><span class="n">RANDOM_SEED</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">cfg</span><span class="o">.</span><span class="n">CONSTANT</span><span class="o">.</span><span class="n">RANDOM_SEED</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">cfg</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nd">@hydra</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">"config"</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">cfg</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>.vscode/settings.json</code></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.languageServer"</span><span class="p">:</span> <span class="s2">"Pylance"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.analysis.extraPaths"</span><span class="p">:</span> <span class="p">[</span> <span class="s2">".venv/lib/python3.9/site-packages"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -325,14 +503,22 @@ if (!doNotTrack) {
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
 </span></span><span class="line"><span class="cl">|   pyproject.toml
 </span></span><span class="line"><span class="cl">|   README.md
-</span></span><span class="line"><span class="cl">|    
+</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">|
 </span></span><span class="line"><span class="cl">+---your_project_name
-</span></span><span class="line"><span class="cl">|   |   __init__.py
+</span></span><span class="line"><span class="cl">|   +---config
+</span></span><span class="line"><span class="cl">|   |   |       default.yaml  
+</span></span><span class="line"><span class="cl">|   |
+</span></span><span class="line"><span class="cl">|   |   __main__.py
 </span></span><span class="line"><span class="cl">|   |       
 </span></span><span class="line"><span class="cl">|   +---pkg1
 </span></span><span class="line"><span class="cl">|   |       t1.py
@@ -455,8 +641,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="nx">ignore_missing_imports</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="appendix">Appendix<a aria-hidden="true" class="anchor" hidden="" href="#appendix">#</a></h2>
-<p>useful VSCode python extension</p>
+</div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a aria-hidden="true" class="anchor" hidden="" href="#useful-vscode-python-extension">#</a></h2>
 <ol>
 <li>Python Extension Package</li>
 <li>GitGraph</li>
