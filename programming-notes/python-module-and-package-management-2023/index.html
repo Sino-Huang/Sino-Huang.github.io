@@ -242,9 +242,10 @@ if (!doNotTrack) {
 <li>use absolute path -&gt; <code>from moduledir/packagename import filename</code></li>
 <li>avoid using relative path
 <ul>
-<li>e.g., <code>import xxx</code> or <code>from . import xxx</code></li>
+<li>e.g., <code>from .xxx import yyy</code></li>
 </ul>
 </li>
+<li>if within the same module, you can just use <code>from xxx import yyy</code></li>
 </ul>
 <h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a aria-hidden="true" class="anchor" hidden="" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
 <ul>
