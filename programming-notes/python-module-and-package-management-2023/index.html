@@ -476,13 +476,41 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
@@ -490,6 +518,34 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">    <span class="nt">"python.analysis.extraPaths"</span><span class="p">:</span> <span class="p">[</span> <span class="s2">".venv/lib/python3.9/site-packages"</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">    <span class="nt">"terminal.integrated.env.linux"</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">"PYTHONPATH"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}"</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.variables"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectCreationYear"</span><span class="p">,</span> <span class="s2">"2023"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"authoremail"</span><span class="p">,</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectname"</span><span class="p">,</span> <span class="s2">"Modular RL from LLM"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"company"</span><span class="p">,</span> <span class="s2">"Sukai@Unimelb NLP Group"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.templates"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">"language"</span><span class="p">:</span> <span class="s2">"*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">"template"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"File Created: &lt;&lt;filecreated('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Author: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;)"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Last Modified: &lt;&lt;dateformat('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Modified By: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;&gt;)"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Copyright &lt;&lt;projectCreationYear&gt;&gt; - &lt;&lt;year&gt;&gt; by &lt;&lt;company&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"All rights reserved."</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"This file is part of The &lt;&lt;projectname&gt;&gt; Project,"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"and is released under The MIT License. Please see the LICENSE"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"file that should have been included as part of this project."</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"[python]"</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">"editor.defaultFormatter"</span><span class="p">:</span> <span class="s2">"ms-python.autopep8"</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
