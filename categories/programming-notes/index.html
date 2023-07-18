@@ -151,6 +151,20 @@ if (!doNotTrack) {
 </h1>
 </header>
 <article class="post-entry tag-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/pytorch-multiprocessing-2023/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>Pytorch Multiprocessing 2023
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+ Title: Pytorch Multiprocessing 2023 Review Date: Tue, Jul 18, 2023 url: https://pytorch.org/docs/stable/multiprocessing.html  Best Practices for Pytorch multiprocessing 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  from torch import multiprocessing from torch.multiprocessing import Pipe multiprocessing.set_start_method('spawn') # for torch multiprocessing, spawn method is required  model = Model() model.share_memory() p_conn, c_conn = Pipe() tensor_1 = torch....</p>
+</div>
+<footer class="entry-footer"><span title="2023-07-18 16:48:13 +1000 AEST">July 18, 2023</span> · 1 min · 93 words · Sukai Huang</footer>
+<a aria-label="post link to Pytorch Multiprocessing 2023" class="entry-link" href="https://sino-huang.github.io/programming-notes/pytorch-multiprocessing-2023/"></a>
+</article>
+<article class="post-entry tag-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/remote-server-and-tmux-2023/image-assets/cover.png"/>
 </figure>
 <header class="entry-header">
@@ -189,7 +203,7 @@ if (!doNotTrack) {
 <p>[TOC]
  Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e....</p>
 </div>
-<footer class="entry-footer"><span title="2023-05-28 11:56:47 +1000 AEST">May 28, 2023</span> · 4 min · 747 words · Sukai Huang</footer>
+<footer class="entry-footer"><span title="2023-05-28 11:56:47 +1000 AEST">May 28, 2023</span> · 4 min · 755 words · Sukai Huang</footer>
 <a aria-label="post link to Python Module and Package Management 2023" class="entry-link" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/"></a>
 </article>
 </main>

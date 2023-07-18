@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Jul 2023 18:45:57 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 16:48:13 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pytorch Multiprocessing 2023</title>
+      <link>https://sino-huang.github.io/programming-notes/pytorch-multiprocessing-2023/</link>
+      <pubDate>Tue, 18 Jul 2023 16:48:13 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/pytorch-multiprocessing-2023/</guid>
+      <description>[TOC]
+ Title: Pytorch Multiprocessing 2023 Review Date: Tue, Jul 18, 2023 url: https://pytorch.org/docs/stable/multiprocessing.html  Best Practices for Pytorch multiprocessing 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21  from torch import multiprocessing from torch.multiprocessing import Pipe multiprocessing.set_start_method(&amp;#39;spawn&amp;#39;) # for torch multiprocessing, spawn method is required  model = Model() model.share_memory() p_conn, c_conn = Pipe() tensor_1 = torch.</description>
+    </item>
+    
     <item>
       <title>Remote Server, Tmux and Joshuto 2023</title>
       <link>https://sino-huang.github.io/programming-notes/remote-server-and-tmux-2023/</link>
