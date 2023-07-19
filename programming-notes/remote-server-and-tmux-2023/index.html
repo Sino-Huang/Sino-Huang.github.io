@@ -305,16 +305,18 @@ if (!doNotTrack) {
 </span><span class="lnt">12
 </span><span class="lnt">13
 </span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># example</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 </span></span><span class="line"><span class="cl"><span class="n">a_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">save_interval</span> <span class="o">=</span> <span class="mi">20000</span>
 </span></span><span class="line"><span class="cl"><span class="n">a_dict_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_dict</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'preprocess_log.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">log_f</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">b_dict</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">file</span><span class="o">=</span><span class="n">log_f</span><span class="p">,</span> <span class="n">mininterval</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">b_dict</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">file</span><span class="o">=</span><span class="n">log_f</span><span class="p">,</span> <span class="n">mininterval</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># temp save </span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_dict</span><span class="p">)</span> <span class="o">%</span> <span class="mi">20000</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">a_dict</span><span class="p">)</span> <span class="o">%</span> <span class="n">save_interval</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'a_dict.pkl'</span><span class="p">,</span> <span class="s1">'wb'</span><span class="p">)</span> <span class="k">as</span> <span class="n">save_f</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">                <span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">a_dict</span><span class="p">,</span> <span class="n">save_f</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a_dict</span><span class="p">:</span>
