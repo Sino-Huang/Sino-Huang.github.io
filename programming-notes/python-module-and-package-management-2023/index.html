@@ -476,11 +476,13 @@ if (!doNotTrack) {
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">PYTHONPATH</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'VIRTUAL_ENV'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">parent</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">PYTHONPATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'PYTHONPATH'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">PYTHONPATH</span><span class="p">,</span> <span class="s2">"igv_mask_training/config"</span><span class="p">),</span> <span class="n">job_name</span><span class="o">=</span><span class="s2">"debug"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"relative../config"</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">"dataloadtestconfig"</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -488,6 +490,7 @@ if (!doNotTrack) {
 <li><code>.vscode/settings.json</code>
 <ul>
 <li><a href="https://code.visualstudio.com/docs/editor/variables-reference">https://code.visualstudio.com/docs/editor/variables-reference</a></li>
+<li>python.envFile is for interactive window (IPython)</li>
 </ul>
 </li>
 </ul>
@@ -528,6 +531,7 @@ if (!doNotTrack) {
 </span><span class="lnt">33
 </span><span class="lnt">34
 </span><span class="lnt">35
+</span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
@@ -536,6 +540,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">    <span class="nt">"terminal.integrated.env.linux"</span><span class="p">:</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">        <span class="nt">"PYTHONPATH"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}"</span>
 </span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.envFile"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}/.env"</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    
 </span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.variables"</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectCreationYear"</span><span class="p">,</span> <span class="s2">"2023"</span><span class="p">],</span>
@@ -591,12 +596,18 @@ if (!doNotTrack) {
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
 </span></span><span class="line"><span class="cl">|   pyproject.toml
 </span></span><span class="line"><span class="cl">|   README.md
-</span></span><span class="line"><span class="cl">|
+</span></span><span class="line"><span class="cl">|   .venv
+</span></span><span class="line"><span class="cl">|   .vscode
+</span></span><span class="line"><span class="cl">|   .env
+</span></span><span class="line"><span class="cl">|   
 </span></span><span class="line"><span class="cl">|
 </span></span><span class="line"><span class="cl">+---your_project_name
 </span></span><span class="line"><span class="cl">|   +---config
