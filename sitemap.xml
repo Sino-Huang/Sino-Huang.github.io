@@ -141,7 +141,28 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-07-18T16:48:13+10:00</lastmod>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/reward-machine/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/rodrigo-reward-machines-exploiting-reward-function-structure-in-rl-2022/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2023-08-17T16:32:09+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/rodrigo-using-reward-machines-for-high-level-task-specification-and-decomposition-in-rl-2018/</loc>
+    <lastmod>2023-08-17T11:13:24+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/programming-notes/</loc>
     <lastmod>2023-07-18T16:48:13+10:00</lastmod>
@@ -150,9 +171,6 @@
     <lastmod>2023-07-18T16:48:13+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/programming-notes/pytorch-multiprocessing-2023/</loc>
-    <lastmod>2023-07-18T16:48:13+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
     <lastmod>2023-07-18T16:48:13+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/programming-notes/remote-server-and-tmux-2023/</loc>
@@ -164,12 +182,6 @@
     <loc>https://sino-huang.github.io/weekly-report/</loc>
     <lastmod>2023-07-05T00:35:22+10:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2023-07-03T19:33:22+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2023-07-03T19:33:22+10:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/william_berrios-towards-language-models-that-can-see-2023/</loc>
     <lastmod>2023-07-03T19:33:22+10:00</lastmod>
   </url><url>
@@ -177,9 +189,6 @@
     <lastmod>2023-07-02T21:24:50+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/lionel_wong-from-word-models-to-world-models-2023/</loc>
-    <lastmod>2023-07-02T21:24:50+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2023-07-02T21:24:50+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/jianning_wang-boosting-language-models-reasoning-with-chain-of-knowledge-prompting-2023/</loc>
