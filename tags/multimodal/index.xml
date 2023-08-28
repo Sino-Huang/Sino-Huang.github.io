@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 03 Sep 2022 17:17:47 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 18:48:08 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Junnan_li Blip2 Boostrapping Language Image Pretraining 2023</title>
+      <link>https://sino-huang.github.io/posts/junnan_li-blip2-boostrapping-language-image-pretraining-2023/</link>
+      <pubDate>Mon, 28 Aug 2023 18:48:08 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/junnan_li-blip2-boostrapping-language-image-pretraining-2023/</guid>
+      <description>[TOC]
+ Title: BLIP2 - Boostrapping Language Image Pretraining 2023 Author: Junnan Li et. al. Publish Year: 15 Jun 2023 Review Date: Mon, Aug 28, 2023 url: https://arxiv.org/pdf/2301.12597.pdf  Summary of paper The paper titled &amp;ldquo;BLIP-2&amp;rdquo; proposes a new and efficient pre-training strategy for vision-and-language models. The cost of training such models has been increasingly prohibitive due to the large scale of the models. BLIP-2 aims to address this issue by leveraging off-the-shelf, pre-trained image encoders and large language models (LLMs) that are kept frozen during the pre-training process.</description>
+    </item>
+    
     <item>
       <title>Pengchuan_zhang Vinvl Revisiting Visual Representations in Vision Language Models 2021</title>
       <link>https://sino-huang.github.io/posts/pengchuan_zhang-vinvl-revisiting-visual-representations-in-vision-language-models-2021/</link>

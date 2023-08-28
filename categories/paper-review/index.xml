@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Aug 2023 16:32:09 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 18:48:08 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Junnan_li Blip2 Boostrapping Language Image Pretraining 2023</title>
+      <link>https://sino-huang.github.io/posts/junnan_li-blip2-boostrapping-language-image-pretraining-2023/</link>
+      <pubDate>Mon, 28 Aug 2023 18:48:08 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/junnan_li-blip2-boostrapping-language-image-pretraining-2023/</guid>
+      <description>[TOC]
+ Title: BLIP2 - Boostrapping Language Image Pretraining 2023 Author: Junnan Li et. al. Publish Year: 15 Jun 2023 Review Date: Mon, Aug 28, 2023 url: https://arxiv.org/pdf/2301.12597.pdf  Summary of paper The paper titled &amp;ldquo;BLIP-2&amp;rdquo; proposes a new and efficient pre-training strategy for vision-and-language models. The cost of training such models has been increasingly prohibitive due to the large scale of the models. BLIP-2 aims to address this issue by leveraging off-the-shelf, pre-trained image encoders and large language models (LLMs) that are kept frozen during the pre-training process.</description>
+    </item>
+    
+    <item>
+      <title>Peng_gao Llama Adapter V2 2023</title>
+      <link>https://sino-huang.github.io/posts/peng_gao-llama-adapter-v2-2023/</link>
+      <pubDate>Mon, 28 Aug 2023 18:47:05 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/peng_gao-llama-adapter-v2-2023/</guid>
+      <description>[TOC]
+ Title: Llama Adapter V2 Author: Peng Gao et. al. Publish Year: 28 Apr 2023 Review Date: Mon, Aug 28, 2023 url: https://arxiv.org/pdf/2304.15010.pdf  Summary of paper The paper presents LLaMA-Adapter V2, an enhanced version of the original LLaMA-Adapter designed for multi-modal reasoning and instruction following. The paper aims to address the limitations of the original LLaMA-Adapter, which could not generalize well to open-ended visual instructions and lagged behind GPT-4 in performance.</description>
+    </item>
+    
     <item>
       <title>Rodrigo Reward Machines Exploiting Reward Function Structure in Rl 2022</title>
       <link>https://sino-huang.github.io/posts/rodrigo-reward-machines-exploiting-reward-function-structure-in-rl-2022/</link>

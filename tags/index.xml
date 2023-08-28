@@ -9,7 +9,16 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Aug 2023 16:32:09 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Aug 2023 18:48:08 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>multimodal</title>
+      <link>https://sino-huang.github.io/tags/multimodal/</link>
+      <pubDate>Mon, 28 Aug 2023 18:48:08 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/multimodal/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>reward machine</title>
       <link>https://sino-huang.github.io/tags/reward-machine/</link>
@@ -421,15 +430,6 @@
       <pubDate>Wed, 05 Oct 2022 23:04:49 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/transformer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>multimodal</title>
-      <link>https://sino-huang.github.io/tags/multimodal/</link>
-      <pubDate>Sat, 03 Sep 2022 17:17:47 +1000</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/multimodal/</guid>
       <description></description>
     </item>
     

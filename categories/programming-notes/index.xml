@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 18 Jul 2023 16:48:13 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Aug 2023 17:36:47 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Langchain Use Cases 2023</title>
+      <link>https://sino-huang.github.io/programming-notes/langchain-use-cases-2023/</link>
+      <pubDate>Sat, 26 Aug 2023 17:36:47 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/langchain-use-cases-2023/</guid>
+      <description>[TOC]
+ Title: Langchain Use Cases 2023 Review Date: Sat, Aug 26, 2023 url: https://python.langchain.com/docs/get_started/quickstart  Langchain quickstart  The core building block of LangChain applications is the LLMChain. This combines three things:  LLM: The language model is the core reasoning engine here. In order to work with LangChain, you need to understand the different types of language models and how to work with them. Prompt Templates: This provides instructions to the language model.</description>
+    </item>
+    
     <item>
       <title>Pytorch Multiprocessing 2023</title>
       <link>https://sino-huang.github.io/programming-notes/pytorch-multiprocessing-2023/</link>
