@@ -201,7 +201,9 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Extra: what is [tool.setuptools.packages.find]" href="#extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code></a></li>
 <li>
-<a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li></ul>
+<a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li>
+<li>
+<a aria-label="Extra: update gitignore" href="#extra-update-gitignore">Extra: update gitignore</a></li></ul>
 </li>
 <li>
 <a aria-label="Useful VSCode python extension" href="#useful-vscode-python-extension">Useful VSCode python extension</a>
@@ -734,6 +736,24 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">    <span class="s2">"pandas.*"</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">ignore_missing_imports</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="extra-update-gitignore">Extra: update gitignore<a aria-hidden="true" class="anchor" hidden="" href="#extra-update-gitignore">#</a></h3>
+<ul>
+<li>when we want to update gitignore, often we need to remove all the cache and then add it back again</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm -r --cached .
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m<span class="s1">'.gitignore update'</span>
+</span></span><span class="line"><span class="cl">git push origin master
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a aria-hidden="true" class="anchor" hidden="" href="#useful-vscode-python-extension">#</a></h2>
