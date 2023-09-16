@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Aug 2023 18:48:08 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Sep 2023 00:46:56 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vishal Pallagani Plansformer Tool Demonstrating Generation of Symbolic Plans Using Transformers 2023</title>
+      <link>https://sino-huang.github.io/posts/vishal-pallagani-plansformer-tool-demonstrating-generation-of-symbolic-plans-using-transformers-2023/</link>
+      <pubDate>Sat, 16 Sep 2023 00:46:56 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/vishal-pallagani-plansformer-tool-demonstrating-generation-of-symbolic-plans-using-transformers-2023/</guid>
+      <description>[TOC]
+ Title: Plansformer &amp;ndash; Tool Demonstrating Generation of Symbolic Plans Using Transformers Author: Vishal Pallagani et. al. Publish Year: IJCAI-23 Review Date: Sat, Sep 16, 2023 url: https://www.ijcai.org/proceedings/2023/0839.pdf  Summary of paper Motivation  making a bridge between planning in LLM and planning in traditional automatic planner  Design of Plansformer  in the evaluation phase, planner testing helps to validate the plan (both the syntax validation and plan optimality validation), model testing helps to force a linguistic consistency (in this case it supervise the semantics).</description>
+    </item>
+    
     <item>
       <title>Junnan_li Blip2 Boostrapping Language Image Pretraining 2023</title>
       <link>https://sino-huang.github.io/posts/junnan_li-blip2-boostrapping-language-image-pretraining-2023/</link>
