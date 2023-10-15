@@ -140,25 +140,37 @@
     <loc>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/</loc>
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
+    <loc>https://sino-huang.github.io/posts/baptiste-roziere-code-llama-open-foundation-model-for-code-2023/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2023-10-06T18:16:28+11:00</lastmod>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/code-generation/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2023-10-16T02:58:20+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/haotian-liu-improved-baselines-with-visual-instruction-tuning-2023/</loc>
+    <lastmod>2023-10-08T10:37:37+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
+    <lastmod>2023-10-08T10:37:37+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/christabel-wayllace-goal-recognition-design-with-stochastic-agent-action-outcomes-2016/</loc>
     <lastmod>2023-10-06T18:16:28+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2023-10-06T18:16:28+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/tags/pddl/</loc>
-    <lastmod>2023-10-06T18:16:28+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2023-10-06T18:16:28+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2023-10-06T18:16:28+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2023-10-06T18:16:28+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/alba-gragera-pddl-domain-repair-fixing-domains-with-incomplete-action-effects-2023/</loc>
@@ -245,9 +257,6 @@
     <loc>https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/</loc>
     <lastmod>2023-05-28T11:56:47+10:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/tags/code-generation/</loc>
-    <lastmod>2023-05-28T09:52:32+10:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/</loc>
     <lastmod>2023-05-28T09:52:32+10:00</lastmod>
   </url><url>
@@ -282,9 +291,6 @@
     <lastmod>2023-05-22T11:31:39+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/junnan_li-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation-2022/</loc>
-    <lastmod>2023-05-22T11:17:28+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/multimodal-learning/</loc>
     <lastmod>2023-05-22T11:17:28+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/future-work/</loc>
