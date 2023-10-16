@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Oct 2023 02:58:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/code-generation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Oct 2023 07:24:26 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/code-generation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mark Chen Evaluating Large Language Models Trained on Code 2021</title>
+      <link>https://sino-huang.github.io/posts/mark-chen-evaluating-large-language-models-trained-on-code-2021/</link>
+      <pubDate>Mon, 16 Oct 2023 07:24:26 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/mark-chen-evaluating-large-language-models-trained-on-code-2021/</guid>
+      <description>[TOC]
+ Title: Evaluating Large Language Models Trained on Code Author: Mark Chen et. al. OPENAI Publish Year: 14 Jul 2021 Review Date: Mon, Oct 16, 2023 url: https://arxiv.org/pdf/2107.03374.pdf  Summary of paper Motivation  it is the research paper behind Github Copilot tech more recently, language models have also fueled progress towards the longstanding challenge of program synthesis.  Contribution  we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts.</description>
+    </item>
+    
     <item>
       <title>Baptiste Roziere Code Llama Open Foundation Model for Code 2023</title>
       <link>https://sino-huang.github.io/posts/baptiste-roziere-code-llama-open-foundation-model-for-code-2023/</link>
