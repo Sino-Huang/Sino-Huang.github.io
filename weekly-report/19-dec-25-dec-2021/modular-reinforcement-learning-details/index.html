@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
-<head><meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<meta content="index, follow" name="robots"/>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Modular Reinforcement Learning Details | Sukai Huang</title>
-<meta content="" name="keywords"/>
-<meta content="NOTES: for IGLU environment, we can test
+<meta name="keywords" content="">
+<meta name="description" content="NOTES: for IGLU environment, we can test
  Winner model Decision Transformer Modular RL agent  Background we consider a multitask problem in shared environment
 This environment is specified by a tuple
 $(S, A, P, \gamma)$, with $S$ a set of states, $A$ a set of low-level actions (actions are common and shared in multitasks)
 $P: S\times A\times S \rightarrow \mathbb R$ is a transition probability distribution,
-$\gamma$ is a discount factor." name="description"/>
-<meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
-<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
-<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
-<meta content="#2e2e33" name="theme-color"/>
-<meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/index.xml" rel="alternate" type="application/rss+xml"/>
+$\gamma$ is a discount factor.">
+<meta name="author" content="Sukai Huang">
+<link rel="canonical" href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/index.xml">
 <noscript>
-<style>
+    <style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-<style>
+    <style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -60,7 +61,7 @@ $\gamma$ is a discount factor." name="description"/>
 
     </style>
 </noscript>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -70,14 +71,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="Modular Reinforcement Learning Details" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="Modular Reinforcement Learning Details" name="twitter:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<meta property="og:title" content="Modular Reinforcement Learning Details" />
+<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/modular-reinforcement-learning-details/" /><meta property="og:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
+
+<meta name="twitter:title" content="Modular Reinforcement Learning Details"/>
+<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -105,6 +110,8 @@ if (!doNotTrack) {
 }
 </script>
 </head>
+
+
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -116,96 +123,105 @@ if (!doNotTrack) {
     }
 
 </script>
+
 <header class="header">
-<nav class="nav">
-<div class="logo">
-<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-<div class="logo-switches">
-<button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-</svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="5"></circle>
-<line x1="12" x2="12" y1="1" y2="3"></line>
-<line x1="12" x2="12" y1="21" y2="23"></line>
-<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
-<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
-<line x1="1" x2="3" y1="12" y2="12"></line>
-<line x1="21" x2="23" y1="12" y2="12"></line>
-<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
-<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
-</svg>
-</button>
-</div>
-</div>
-<ul id="menu">
-<li>
-<a href="https://sino-huang.github.io/archives" title="Archives">
-<span>Archives</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/biography/" title="Biography">
-<span>Biography</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/" title="📁">
-<span>📁</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/tags/" title="🏷️">
-<span>🏷️</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/search/" title="🔍">
-<span>🔍</span>
-</a>
-</li>
-</ul>
-</nav>
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sino-huang.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/biography/" title="Biography">
+                    <span>Biography</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/categories/" title="📁">
+                    <span>📁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/tags/" title="🏷️">
+                    <span>🏷️</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Background" href="#background">Background</a></li>
-<li>
-<a aria-label="Model" href="#model">Model</a></li>
-<li>
-<a aria-label="Policy Optimisation" href="#policy-optimisation">Policy Optimisation</a><ul>
-<li>
-<a aria-label="Actor - critic method" href="#actor---critic-method">Actor - critic method</a></li>
-<li>
-<a aria-label="Back to the paper" href="#back-to-the-paper">Back to the paper</a></li>
-<li>
-<a aria-label="a complete procedure for computing a single gradient step" href="#a-complete-procedure-for-computing-a-single-gradient-step">a complete procedure for computing a single gradient step</a></li>
-<li>
-<a aria-label="the curriculum learning" href="#the-curriculum-learning">the curriculum learning</a>
-</li>
-</ul>
-</li>
-</ul>
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#background" aria-label="Background">Background</a></li>
+                <li>
+                    <a href="#model" aria-label="Model">Model</a></li>
+                <li>
+                    <a href="#policy-optimisation" aria-label="Policy Optimisation">Policy Optimisation</a><ul>
+                        
+                <li>
+                    <a href="#actor---critic-method" aria-label="Actor - critic method">Actor - critic method</a></li>
+                <li>
+                    <a href="#back-to-the-paper" aria-label="Back to the paper">Back to the paper</a></li>
+                <li>
+                    <a href="#a-complete-procedure-for-computing-a-single-gradient-step" aria-label="a complete procedure for computing a single gradient step">a complete procedure for computing a single gradient step</a></li>
+                <li>
+                    <a href="#the-curriculum-learning" aria-label="the curriculum learning">the curriculum learning</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
 </div>
-</details>
-</div>
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a> » <a href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/">19 December -- 31 December, 2021</a></div>
-<h1>
+ 
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/weekly-report/19-dec-25-dec-2021/">19 December -- 31 December, 2021</a></div>
+  <h1>
     Modular Reinforcement Learning Details
-    <a aria-label="RSS" href="index.xml" title="RSS">
-<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 11a9 9 0 0 1 9 9"></path>
-<path d="M4 4a16 16 0 0 1 16 16"></path>
-<circle cx="5" cy="19" r="1"></circle>
-</svg>
-</a>
-</h1>
+    <a href="index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 <div class="post-content"><p>NOTES: for IGLU environment, we can test</p>
 <ol>
@@ -213,15 +229,15 @@ if (!doNotTrack) {
 <li>Decision Transformer</li>
 <li>Modular RL agent</li>
 </ol>
-<h2 id="background">Background<a aria-hidden="true" class="anchor" hidden="" href="#background">#</a></h2>
+<h2 id="background">Background<a hidden class="anchor" aria-hidden="true" href="#background">#</a></h2>
 <p>we consider a multitask problem in shared environment</p>
 <p>This environment is specified by a tuple</p>
 <p>$(S, A, P, \gamma)$, with $S$ a set of states, $A$ a set of low-level actions (actions are common and shared in multitasks)</p>
 <p>$P: S\times A\times S \rightarrow \mathbb R$ is a transition probability distribution,</p>
 <p>$\gamma$ is a discount factor.</p>
 <p>for each task $\tau \in \mathcal T$ is then specified by a pair $(R_{\tau}, \rho _\tau)$ with $R$ a special reward function and $\rho$ an initial distribution over states.</p>
-<p>And we assume that tasks are annotated with <em>sketches</em> $K_\tau$, each task sketches consists of a sequence $(b_{\tau 1},b_{\tau 2},b_{\tau 3},…)$ of high-level symbolic labels drawn from a fixed vocabulary $\mathcal B$</p>
-<h2 id="model">Model<a aria-hidden="true" class="anchor" hidden="" href="#model">#</a></h2>
+<p>And we assume that tasks are annotated with <em>sketches</em> $K_\tau$, each task sketches consists of a sequence $(b_{\tau 1},b_{\tau 2},b_{\tau 3},&hellip;)$ of high-level symbolic labels drawn from a fixed vocabulary $\mathcal B$</p>
+<h2 id="model">Model<a hidden class="anchor" aria-hidden="true" href="#model">#</a></h2>
 <p>constructing for each sketch $b$ a corresponding sub-policy $\pi_b$</p>
 <p>this sub-policy $\pi_b$ is shared over multitasks.</p>
 <ul>
@@ -231,7 +247,7 @@ if (!doNotTrack) {
 <ul>
 <li>potential issue
 <ul>
-<li>agent’s actions are composed in a very complex way, e.g., in IGLU, the agent moves its viewsight, walks and put building blocks in the same time.</li>
+<li>agent&rsquo;s actions are composed in a very complex way, e.g., in IGLU, the agent moves its viewsight, walks and put building blocks in the same time.</li>
 <li>so it is quite hard to split the IGLU task into concrete, non-overlapping sub-tasks.
 <ul>
 <li>Solution: can we just allow policy overlapping ???</li>
@@ -249,90 +265,90 @@ if (!doNotTrack) {
 </li>
 </ul>
 <p>control is passed from $\pi_{b_{i}}$ to $\pi_{b_{i+1}}$ when STOP signal is emitted.</p>
-<p><img alt="image-20211226201043159" loading="lazy" src="image-assets/image-20211226201043159.png"/>
+<p><img loading="lazy" src="image-assets/image-20211226201043159.png" alt="image-20211226201043159"  />
 </p>
 <p>The learning problem is to optimize over all $\theta_b$ to maximise expected discounted reward</p>
-<p><img alt="image-20211226201319448" loading="lazy" src="image-assets/image-20211226201319448.png"/>
+<p><img loading="lazy" src="image-assets/image-20211226201319448.png" alt="image-20211226201319448"  />
 </p>
-<h2 id="policy-optimisation">Policy Optimisation<a aria-hidden="true" class="anchor" hidden="" href="#policy-optimisation">#</a></h2>
-<h3 id="actor---critic-method">Actor - critic method<a aria-hidden="true" class="anchor" hidden="" href="#actor---critic-method">#</a></h3>
-<p><img alt="image-20211226205752184" loading="lazy" src="image-assets/image-20211226205752184.png"/>
+<h2 id="policy-optimisation">Policy Optimisation<a hidden class="anchor" aria-hidden="true" href="#policy-optimisation">#</a></h2>
+<h3 id="actor---critic-method">Actor - critic method<a hidden class="anchor" aria-hidden="true" href="#actor---critic-method">#</a></h3>
+<p><img loading="lazy" src="image-assets/image-20211226205752184.png" alt="image-20211226205752184"  />
 </p>
-<p><img alt="image-20211226214759357" loading="lazy" src="image-assets/image-20211226214759357.png"/>
+<p><img loading="lazy" src="image-assets/image-20211226214759357.png" alt="image-20211226214759357"  />
 </p>
 <p>Policy-based RL supports stochastic policy which is good in some cases</p>
-<p><img alt="image-20211227154539866" loading="lazy" src="image-assets/image-20211227154539866.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227154539866.png" alt="image-20211227154539866"  />
 </p>
-<p><img alt="image-20211227155219600" loading="lazy" src="image-assets/image-20211227155219600.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227155219600.png" alt="image-20211227155219600"  />
 </p>
 <p><strong>So what objectives we want to optimised</strong></p>
 <ul>
 <li>again, maximise the accumulative reward</li>
 <li>or maximise the value of the states</li>
 </ul>
-<p><img alt="image-20211227160013980" loading="lazy" src="image-assets/image-20211227160013980.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227160013980.png" alt="image-20211227160013980"  />
 </p>
 <p>average reward per time-step -&gt; you may want to accumulate it / or just maximise the final reward</p>
 <p>actually, the $\mu$ distribution is the time ratio that we would stay in the states based on current policy</p>
-<p><img alt="image-20211227183120536" loading="lazy" src="image-assets/image-20211227183120536.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227183120536.png" alt="image-20211227183120536"  />
 </p>
-<p><img alt="image-20211227183254215" loading="lazy" src="image-assets/image-20211227183254215.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227183254215.png" alt="image-20211227183254215"  />
 </p>
-<p><img alt="image-20211227191004452" loading="lazy" src="image-assets/image-20211227191004452.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227191004452.png" alt="image-20211227191004452"  />
 </p>
-<p><img alt="image-20211227191237079" loading="lazy" src="image-assets/image-20211227191237079.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227191237079.png" alt="image-20211227191237079"  />
 </p>
-<p><img alt="image-20211227191858533" loading="lazy" src="image-assets/image-20211227191858533.png"/>
+<p><img loading="lazy" src="image-assets/image-20211227191858533.png" alt="image-20211227191858533"  />
 </p>
-<p><img alt="image-20211228140246750" loading="lazy" src="image-assets/image-20211228140246750.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228140246750.png" alt="image-20211228140246750"  />
 </p>
-<p><img alt="image-20211228145421057" loading="lazy" src="image-assets/image-20211228145421057.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228145421057.png" alt="image-20211228145421057"  />
 </p>
 <p>All the slides above is focusing on immediate reward, but we want to extend it to accumulative reward (a.k.a. value of states)</p>
-<p><img alt="image-20211228145917522" loading="lazy" src="image-assets/image-20211228145917522.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228145917522.png" alt="image-20211228145917522"  />
 </p>
-<p><img alt="image-20211228150043844" loading="lazy" src="image-assets/image-20211228150043844.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228150043844.png" alt="image-20211228150043844"  />
 </p>
-<p><img alt="image-20211228150846753" loading="lazy" src="image-assets/image-20211228150846753.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228150846753.png" alt="image-20211228150846753"  />
 </p>
-<p>in other words, the policy only affects the decision but it doesn’t change the dynamics of the environment.</p>
+<p>in other words, the policy only affects the decision but it doesn&rsquo;t change the dynamics of the environment.</p>
 <p><strong>Reduce the variance to make the optimisation process more stable</strong></p>
-<p><img alt="image-20211228151743008" loading="lazy" src="image-assets/image-20211228151743008.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228151743008.png" alt="image-20211228151743008"  />
 </p>
-<p><img alt="image-20211228154504687" loading="lazy" src="image-assets/image-20211228154504687.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228154504687.png" alt="image-20211228154504687"  />
 </p>
 <p>E over trajectories</p>
-<p>the “baseline” property allows us to remove some rewards R in the formula that is not dependent on the Action A</p>
+<p>the &ldquo;baseline&rdquo; property allows us to remove some rewards R in the formula that is not dependent on the Action A</p>
 <p><strong>Continue our baseline function</strong></p>
-<p><img alt="image-20211228155923638" loading="lazy" src="image-assets/image-20211228155923638.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228155923638.png" alt="image-20211228155923638"  />
 </p>
 <p>this is on policy TD learning</p>
-<p><img alt="image-20211228160756929" loading="lazy" src="image-assets/image-20211228160756929.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228160756929.png" alt="image-20211228160756929"  />
 </p>
-<p><img alt="image-20211228161327147" loading="lazy" src="image-assets/image-20211228161327147.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228161327147.png" alt="image-20211228161327147"  />
 </p>
 <p>(BTW, in some cases, this is exact the same updates as Neural Q learning)</p>
-<p><img alt="image-20211228162335709" loading="lazy" src="image-assets/image-20211228162335709.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228162335709.png" alt="image-20211228162335709"  />
 </p>
-<p><img alt="image-20211228163337379" loading="lazy" src="image-assets/image-20211228163337379.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228163337379.png" alt="image-20211228163337379"  />
 </p>
-<p><img alt="image-20211228163455391" loading="lazy" src="image-assets/image-20211228163455391.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228163455391.png" alt="image-20211228163455391"  />
 </p>
 <p><strong>be careful of the updates, because you are changing the policy</strong></p>
-<p><img alt="image-20211228164025270" loading="lazy" src="image-assets/image-20211228164025270.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228164025270.png" alt="image-20211228164025270"  />
 </p>
-<p><img alt="image-20211228164128192" loading="lazy" src="image-assets/image-20211228164128192.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228164128192.png" alt="image-20211228164128192"  />
 </p>
-<p><img alt="image-20211228164657920" loading="lazy" src="image-assets/image-20211228164657920.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228164657920.png" alt="image-20211228164657920"  />
 </p>
-<p><img alt="image-20211228164712513" loading="lazy" src="image-assets/image-20211228164712513.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228164712513.png" alt="image-20211228164712513"  />
 </p>
-<p><img alt="image-20211228165310271" loading="lazy" src="image-assets/image-20211228165310271.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228165310271.png" alt="image-20211228165310271"  />
 </p>
-<hr/>
-<h3 id="back-to-the-paper">Back to the paper<a aria-hidden="true" class="anchor" hidden="" href="#back-to-the-paper">#</a></h3>
+<hr>
+<h3 id="back-to-the-paper">Back to the paper<a hidden class="anchor" aria-hidden="true" href="#back-to-the-paper">#</a></h3>
 <p>so the paper compute the gradient steps of the following form</p>
-<p><img alt="image-20211228215732135" loading="lazy" src="image-assets/image-20211228215732135.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228215732135.png" alt="image-20211228215732135"  />
 </p>
 <p>For a fixed sequence ${(s_i, a_i)}$ of states and actions obtained from a rollout of a given policy, we denote the empirical <strong><u>return</u></strong> starting in state $s_i$ as $q_i := \sum_{j=i+1} \gamma^{j-i-1}R(s_j)$</p>
 <p>(ok, this full return would give high variance but low bias)</p>
@@ -342,38 +358,42 @@ if (!doNotTrack) {
 <li>because subpolicies $\pi_b$ might participate in a number of composed policies $\Pi_{\tau}$, each would associated with its own reward function $R_{\tau}$. Thus individual subpolicies are not uniquely identified with value functions.</li>
 </ul>
 <p><strong>The gradient for subpolicy $\pi_{b}$</strong></p>
-<p><img alt="image-20211228221824581" loading="lazy" src="image-assets/image-20211228221824581.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228221824581.png" alt="image-20211228221824581"  />
 </p>
 <p>For critic, we approximate it using a network with parameters $\eta_{\tau}$</p>
 <p>We train it by minimising a squared error criterion, with gradients given by</p>
-<p><img alt="image-20211228222738134" loading="lazy" src="image-assets/image-20211228222738134.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228222738134.png" alt="image-20211228222738134"  />
 </p>
 <p>(note that this is minimisation and the previous reward on is maximisation)</p>
 <p>note that this baseline function (i.e., critic function) is $c_{\tau}(s_i)$, thus it is dependent on both <em>task</em> and <em>state</em> identity</p>
-<h3 id="a-complete-procedure-for-computing-a-single-gradient-step">a complete procedure for computing a single gradient step<a aria-hidden="true" class="anchor" hidden="" href="#a-complete-procedure-for-computing-a-single-gradient-step">#</a></h3>
+<h3 id="a-complete-procedure-for-computing-a-single-gradient-step">a complete procedure for computing a single gradient step<a hidden class="anchor" aria-hidden="true" href="#a-complete-procedure-for-computing-a-single-gradient-step">#</a></h3>
 <p>The complete procedure for computing a <em>single</em> gradient step is given as follow</p>
-<p><img alt="image-20211228224341468" loading="lazy" src="image-assets/image-20211228224341468.png"/>
+<p><img loading="lazy" src="image-assets/image-20211228224341468.png" alt="image-20211228224341468"  />
 </p>
 <p>(well, we can add more stuffs to stablise the training process)</p>
-<h3 id="the-curriculum-learning">the curriculum learning<a aria-hidden="true" class="anchor" hidden="" href="#the-curriculum-learning">#</a></h3>
-<p><img alt="image-20211228224440839" loading="lazy" src="image-assets/image-20211228224440839.png"/>
+<h3 id="the-curriculum-learning">the curriculum learning<a hidden class="anchor" aria-hidden="true" href="#the-curriculum-learning">#</a></h3>
+<p><img loading="lazy" src="image-assets/image-20211228224440839.png" alt="image-20211228224440839"  />
 </p>
-<p>This is the part we can use “Width”</p>
+<p>This is the part we can use &ldquo;Width&rdquo;</p>
+
+
 </div>
-</main>
+    </main>
+    
 <footer class="footer">
-<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+    <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-</span>
+    </span>
 </footer>
-<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
-<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6H0l6-6z"></path>
-</svg>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
+
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -429,4 +449,5 @@ if (!doNotTrack) {
 
 </script>
 </body>
+
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
-<head><meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<meta content="index, follow" name="robots"/>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>01 Oct -- 31 Oct, 2022 | Sukai Huang</title>
-<meta content="" name="keywords"/>
-<meta content="Last Week’s Work Review
+<meta name="keywords" content="">
+<meta name="description" content="Last Week&rsquo;s Work Review
 We finally complete both the language reward shaping module and the language reward shaping RL agent. This month we are going to upgrade and refine the reward shaping approach.
 
 There are some issues for the current approach
@@ -18,27 +19,27 @@ It took too much ram space (25.1 GB for 1 gym env)
 
 
 
-You need password to access to the content, go to Slack *#phdsukai to find more." name="description"/>
-<meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
-<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
-<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
-<meta content="#2e2e33" name="theme-color"/>
-<meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/index.xml" rel="alternate" type="application/rss+xml"/>
+You need password to access to the content, go to Slack *#phdsukai to find more.">
+<meta name="author" content="Sukai Huang">
+<link rel="canonical" href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/index.xml">
 <noscript>
-<style>
+    <style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-<style>
+    <style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -67,9 +68,10 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
 <script>
     var decryptedcustomevent = new Event('hugo-text-decrypted-alert');
     console.log("Create hugo-text-decrypted-alert event");
@@ -96,7 +98,10 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     }
 </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -106,14 +111,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="01 Oct -- 31 Oct, 2022" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="01 Oct -- 31 Oct, 2022" name="twitter:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<meta property="og:title" content="01 Oct -- 31 Oct, 2022" />
+<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sino-huang.github.io/weekly-report/01-oct-31-oct-2022/" /><meta property="og:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
+
+<meta name="twitter:title" content="01 Oct -- 31 Oct, 2022"/>
+<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -135,6 +144,8 @@ if (!doNotTrack) {
 }
 </script>
 </head>
+
+
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -146,72 +157,78 @@ if (!doNotTrack) {
     }
 
 </script>
+
 <header class="header">
-<nav class="nav">
-<div class="logo">
-<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-<div class="logo-switches">
-<button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-</svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="5"></circle>
-<line x1="12" x2="12" y1="1" y2="3"></line>
-<line x1="12" x2="12" y1="21" y2="23"></line>
-<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
-<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
-<line x1="1" x2="3" y1="12" y2="12"></line>
-<line x1="21" x2="23" y1="12" y2="12"></line>
-<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
-<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
-</svg>
-</button>
-</div>
-</div>
-<ul id="menu">
-<li>
-<a href="https://sino-huang.github.io/archives" title="Archives">
-<span>Archives</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/biography/" title="Biography">
-<span>Biography</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/" title="📁">
-<span>📁</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/tags/" title="🏷️">
-<span>🏷️</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/search/" title="🔍">
-<span>🔍</span>
-</a>
-</li>
-</ul>
-</nav>
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sino-huang.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/biography/" title="Biography">
+                    <span>Biography</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/categories/" title="📁">
+                    <span>📁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/tags/" title="🏷️">
+                    <span>🏷️</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<main class="main">
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
-<h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
+  <h1>
     01 Oct -- 31 Oct, 2022
-    <a aria-label="RSS" href="index.xml" title="RSS">
-<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 11a9 9 0 0 1 9 9"></path>
-<path d="M4 4a16 16 0 0 1 16 16"></path>
-<circle cx="5" cy="19" r="1"></circle>
-</svg>
-</a>
-</h1>
+    <a href="index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
-<div class="post-content"><h2 id="last-weeks-work-review">Last Week’s Work Review<a aria-hidden="true" class="anchor" hidden="" href="#last-weeks-work-review">#</a></h2>
+<div class="post-content"><h2 id="last-weeks-work-review">Last Week&rsquo;s Work Review<a hidden class="anchor" aria-hidden="true" href="#last-weeks-work-review">#</a></h2>
 <p>We finally complete both the language reward shaping module and the language reward shaping RL agent. This month we are going to upgrade and refine the reward shaping approach.</p>
 <ul>
 <li>There are some issues for the current approach
@@ -222,17 +239,375 @@ if (!doNotTrack) {
 </ol>
 </li>
 </ul>
-<hr/>
+<hr>
 <p>You need password to access to the content, go to Slack *#phdsukai to find more.</p>
 <div class="hugo-encryptor-container">
-<div class="hugo-encryptor-prompt">
-<p>Part of this article is encrypted with password:</p>
+  <div class="hugo-encryptor-prompt">
+    
+      <p>Part of this article is encrypted with password:</p>
+    
+  </div>
+  <div class="hugo-encryptor-form">
+    <input
+      class="hugo-encryptor-input"
+      placeholder='Please input the password'
+    />
+    <input
+      class="hugo-encryptor-button"
+      type="button"
+      value='Click to verify'
+      onclick="_click_handler(this)"
+    />
+  </div>
+  <div
+    class="hugo-encryptor-cipher-text"
+    data-password="sukai-1995"
+    style="display: none;"
+  >
+    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
+    <p>[TOC]</p>
+<h2 id="todo-list">TODO List<a hidden class="anchor" aria-hidden="true" href="#todo-list">#</a></h2>
+<p><img loading="lazy" src="https://sino-huang.github.io/weekly-report/01-sep-11-sep-2022/image-assets/image-20220919203738495.png" alt=""  />
+</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Self-attention pretraining Video text autoencoder</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> Video - <del>action</del> - text autoencoder (no more action information)</li>
+<li><input checked="" disabled="" type="checkbox"> Random speed up or slow down the training video -&gt; while the semantic meaning remains the same.</li>
+<li><input disabled="" type="checkbox"> <del>Trim Video and measure completeness</del> (not applicable)</li>
+</ul>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Observe and handle side effect of language reward shaping</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> <del>Consider the region of interests for the visual observation (Soft-discretisation of visual inputs)</del></p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> Data annotation on toxic demonstrations</p>
+</li>
+</ul>
+<div style="page-break-after:always" /> 
+<p><strong>21 OCT &ndash; 27 OCT</strong></p>
+<h2 id="todos">TODOs<a hidden class="anchor" aria-hidden="true" href="#todos">#</a></h2>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> try lang rew module w/o original image as input</li>
+<li><input disabled="" type="checkbox"> <del>try pretrain transformer before using it as binary classifier</del></li>
+<li><input checked="" disabled="" type="checkbox"> use decay record high</li>
+<li><input checked="" disabled="" type="checkbox"> check video transcript academic papers</li>
+<li><input disabled="" type="checkbox"> Consider how to solve the following problems
+<ul>
+<li><input checked="" disabled="" type="checkbox"> segment sentences into objects/actions (hard) (using phrase chunking model)</li>
+<li><input checked="" disabled="" type="checkbox"> grounding nouns with qualifiers (easy) (using phrase chunking model)
+<ul>
+<li><input checked="" disabled="" type="checkbox"> <del>label the words with POS tags <a href="https://huggingface.co/flair/upos-english-fast?text=I+love+Berlin">https://huggingface.co/flair/upos-english-fast?text=I+love+Berlin</a></del></li>
+<li><input checked="" disabled="" type="checkbox"> <del>create hard negative examples using POS tags (swap the words with the same tag, e.g., left vs right, jump vs walk vs move)</del></li>
+<li><input disabled="" type="checkbox"> <del>may use this as object detection module <a href="https://github.com/timy90022/One-Shot-Object-Detection">https://github.com/timy90022/One-Shot-Object-Detection</a></del></li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"> <del>learn when the action is finished (too complex)</del></li>
+</ul>
+</li>
+</ul>
+<h2 id="action-and-object-detection">Action and Object detection<a hidden class="anchor" aria-hidden="true" href="#action-and-object-detection">#</a></h2>
+<p>in terms of pre-training, since now we  know that the job of language reward module is to analyse whether both the “action” and the “objects” are relevant to the language description, we can then do the following</p>
+<ol>
+<li>Given video -&gt; predict joystick actions -&gt; match to the “verbs” in the language descriptions (verbs are extracted by an off-the-shelf language parser)</li>
+<li>Given video -&gt; identify objects (may need training dataset or we check one-shot object-detection methods) -&gt; match to the “nouns” in the language descriptions</li>
+</ol>
+<h2 id="how-to-train-both-action-and-object-detection">How to train both action and object detection<a hidden class="anchor" aria-hidden="true" href="#how-to-train-both-action-and-object-detection">#</a></h2>
+<ul>
+<li>so far it looks like we cannot detach them from each other</li>
+<li>the proposed architecture</li>
+<li><img loading="lazy" src="image-assets/image-20221030150647334.png" alt="image-20221030150647334"  />
+</li>
+</ul>
+<p><strong>10 OCT &ndash; 20 OCT</strong></p>
+<p>TOC</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> train the language reward shaping module without action info as input</li>
+<li><input checked="" disabled="" type="checkbox"> human inspection of the reward module</li>
+<li><input disabled="" type="checkbox"> train the game playing agent.</li>
+</ul>
+<h2 id="language-reward-shaping-module-training">Language Reward shaping module training<a hidden class="anchor" aria-hidden="true" href="#language-reward-shaping-module-training">#</a></h2>
+<p>Goal of the language reward shaping module:</p>
+<ul>
+<li>
+<p>predicting if a sequence of observation and a sentence description is matched or not</p>
+</li>
+<li>
+<p>output range [0, 1], 0 -&gt; mismatched, 1 -&gt; matched, 0.5 -&gt; not sure</p>
+</li>
+<li>
+<p>The final output = $\max(output - 0.5, 0)$</p>
+<ul>
+<li>it means we only give rewards when the module think that the pairs are matched.</li>
+</ul>
+</li>
+</ul>
+<h3 id="transformer-architecture-is-difficult-to-converge">Transformer architecture is difficult to converge<a hidden class="anchor" aria-hidden="true" href="#transformer-architecture-is-difficult-to-converge">#</a></h3>
+<ol>
+<li>The module cannot learn when using Transformer as backbone
+<ul>
+<li>not sure if it is because of the learning rate issue.</li>
+</ul>
+</li>
+<li>It can learn when we simply concatenate vectors and use <strong>MLP layer</strong></li>
+</ol>
+<h3 id="accuracy-increases-when-we-add-img_t---img_t-1-relative-offset">Accuracy increases when we add $img_t - img_{t-1}$ relative offset<a hidden class="anchor" aria-hidden="true" href="#accuracy-increases-when-we-add-img_t---img_t-1-relative-offset">#</a></h3>
+<p><img loading="lazy" src="image-assets/image-20221020100537632.png" alt="image-20221020100537632"  />
+</p>
+<h2 id="immediate-language-reward-re-design">Immediate Language Reward re-design<a hidden class="anchor" aria-hidden="true" href="#immediate-language-reward-re-design">#</a></h2>
+<ul>
+<li>
+<p>In Goyal&rsquo;s original work, the immediate language reward is calculated as</p>
+<ul>
+<li>imme_lang_rew = $f_{t} - f_{t-1}$ where $f_t$ is the output of the language reward shaping module at time $t$</li>
+<li>the input of $f_t$ is 1) the past observation from time $t-\text{memory size}$ to time $t$ plus 2) the walkthrough sentence.</li>
+</ul>
+</li>
+<li>
+<p>The new approach is</p>
+<ul>
+<li>
+<p>imme_lang_rew = $f_{t} - f_{\text{record high}}$ where $f_{\text{record high}}$ is the highest historical value of $f$</p>
+</li>
+<li>
+<p>advantages</p>
+<ol>
+<li>Now, there is an upper limit for the accumulated language reward, the agent will not cheat lots of rewards any more by repeating its actions.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="human-inspection">Human inspection<a hidden class="anchor" aria-hidden="true" href="#human-inspection">#</a></h2>
+<h3 id="climb-down-the-middle-ladder">climb down the middle ladder<a hidden class="anchor" aria-hidden="true" href="#climb-down-the-middle-ladder">#</a></h3>
+<p><strong>correct move:</strong></p>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/climb_down_the_middle_ladder.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<p><strong>* jump to the right platform</strong></p>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/jump_to_right_platform.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<ul>
+<li>we can see that the language reward model gives very little amount of reward for sentence &ldquo;climb down the ladder on the right&rdquo;
+<ul>
+<li>possible reason: the module gives reward as it saw that the agent moved left and the word &ldquo;right&rdquo; was appeared in the sentence.</li>
+</ul>
+</li>
+</ul>
+<p><strong>* stay on the ladder</strong></p>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/stay_on_the_ladder.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<ul>
+<li>
+<p>the language reward module gave the reward even if the agent did not climb down the ladder.</p>
+<ul>
+<li>possible reason: the module gives high reward as long as the agent is close to the <strong>ladder object</strong>, while it is less sensitive to the <strong>actions</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="jump-from-the-conveyor-belt-to-rope-and-jump-again-to-the-right-platform">jump from the conveyor belt to rope and jump again to the right platform<a hidden class="anchor" aria-hidden="true" href="#jump-from-the-conveyor-belt-to-rope-and-jump-again-to-the-right-platform">#</a></h3>
+<p><strong>correct move</strong></p>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/second_task_correct_move.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<p><strong>* stay on the conveyor belt</strong></p>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/second_task_stay_on_the_conveyor_belt.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<ul>
+<li>The language reward module gives wrong reward for the sentence &ldquo;go to the top of the ladder on the right&rdquo;
+<ul>
+<li>Possible reason: the module cannot recognise the target ladder (&ldquo;the ladder on the right&rdquo;) Instead, it found out that the agent was close to the middle ladder and hence gives reward.</li>
+</ul>
+</li>
+</ul>
+<h2 id="room-one-manually-selected-walkthrough">Room one manually selected walkthrough<a hidden class="anchor" aria-hidden="true" href="#room-one-manually-selected-walkthrough">#</a></h2>
+<p><img loading="lazy" src="image-assets/final_outcome.png" alt="final_outcome"  />
+</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">  </span><span class="nt">sentence</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s2">&#34;Climb down the middle ladder and do not stay on the ladder&#34;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s2">&#34;Move right, jump on the rope and jump again to the right platform&#34;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s2">&#34;Go to the ladder at the bottom left&#34;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="s2">&#34;Climb up the ladder at the left end, jump to grab the key&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
 </div>
-<div class="hugo-encryptor-form">
-<input class="hugo-encryptor-input" placeholder="Please input the password"/>
-<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
-</div>
-<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div><h2 id="known-issues-for-the-current-language-reward-shaping-module">Known issues for the current language reward shaping module<a hidden class="anchor" aria-hidden="true" href="#known-issues-for-the-current-language-reward-shaping-module">#</a></h2>
+<ol>
+<li>
+<p>it gives more weights to the <strong>object</strong> detection than <strong>action</strong> detection,</p>
+<ul>
+<li>
+<p>thus it gave wrong rewards when the agent was close to the target object but did the wrong action</p>
+</li>
+<li>
+<p>e.g., it gave high rewards for sentence &ldquo;<em>climb down</em> the ladder&rdquo; when the agent was <em>staying</em> on the ladder</p>
+</li>
+</ul>
+</li>
+<li>
+<p>it tried to analyse each single word instead of recognising the phrases and the qualifier</p>
+<ul>
+<li>e.g.,  it gave rewards for sentence &ldquo;go to <em>the ladder on the right</em>&rdquo; when the agent was at the ladder on the middle</li>
+<li>e.g., it gave reward for sentence &ldquo;climb down <em>the ladder on the right</em>&rdquo; when the agent was jumping to the <em>right</em> platform</li>
+<li>the module cannot correctly handle the phrase &ldquo;the ladder on the right&rdquo;, instead, it treated it as two things &ndash; &ldquo;ladder&rdquo; and &ldquo;right&rdquo;</li>
+</ul>
+</li>
+</ol>
+<p><strong>1 OCT &ndash; 9 OCT</strong></p>
+<h2 id="rl-training-result">RL Training Result<a hidden class="anchor" aria-hidden="true" href="#rl-training-result">#</a></h2>
+<p><strong>Recall Deepmind DQN replay</strong></p>
+<p><img loading="lazy" src="https://sino-huang.github.io/weekly-report/22-may-28-may-2022/image-assets/dqn_replay_traj.gif" alt=""  />
+</p>
+<p><img loading="lazy" src="image-assets/image-20221006115827401.png" alt="image-20221006115827401"  />
+</p>
+<h3 id="lang-rew-rl-agent-trained-after-about-2-million-frames-steps">Lang Rew RL agent trained after about 2 million frames (steps)<a hidden class="anchor" aria-hidden="true" href="#lang-rew-rl-agent-trained-after-about-2-million-frames-steps">#</a></h3>
+<video class="video-shortcode" preload="auto" controls style="width:100%; margin:1em">
+    <source src="image-assets/rl_train_after_two_m.webm" type="video/webm">
+    There should have been a video here but your browser does not seem
+    to support it.
+</video>
+<h3 id="analysis">Analysis<a hidden class="anchor" aria-hidden="true" href="#analysis">#</a></h3>
+<ul>
+<li>
+<p>The agent got stuck at local minimum</p>
+</li>
+<li>
+<p>the agent wanders around the ladder, and perform actions that did not change the states but activate the reward of other sentences that are not relevant to the current state</p>
+<ul>
+<li>​	(e.g., performing &ldquo;RIght Jump&rdquo; action while on the ladder will not change the state, but the language reward shaping module will believe that sentence 3 is activated)</li>
+</ul>
+</li>
+<li>
+<p>the agent can reach about 150 language rewards by cheating like this</p>
+<ul>
+<li><img loading="lazy" src="image-assets/image-20221006120626857.png" alt="image-20221006120626857"  />
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="solutions">Solutions<a hidden class="anchor" aria-hidden="true" href="#solutions">#</a></h3>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Set the maximum limit for each sentence&rsquo;s reward</p>
+<ul>
+<li>prevent the agent from doing the same thing repeatedly</li>
+</ul>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> Remove action information from the language reward shaping module</p>
+<ul>
+<li>the agent is less likely to activate irrelevant sentences</li>
+</ul>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> A better reward sentence activation mechanism that prevent cheating</p>
+<ul>
+<li>
+<p>Current mechanism</p>
+<ul>
+<li>at initial state, only sentence 1 is activated, when the accumulated reward of sentence 1 reaches 0.2 (hyper-parameter), the next sentence is activated</li>
+<li>the language reward is the sum of the reward of all activated sentences</li>
+</ul>
+</li>
+<li>
+<p>Possible Improvements: limit the number of activated sentence: we activate the next instruction sentence only when</p>
+<ol>
+<li>the current instruction is 50 percent complete, and</li>
+<li>the previous instruction is completed, also we deactivate the completed instruction</li>
+<li>so not more than 2 sentences are activated at each step</li>
+</ol>
+</li>
+<li>
+<p>This requires the language reward shaping module to detect the completeness of the instructions</p>
+<ul>
+<li>how: for language reward module training dataset, the output is no more binary classification about relevancy, but the completeness of the description, 0 means 0% completeness, 1 means 100% completeness. If the description and the video are negatively paired, then the target label is also 0</li>
+<li>For positively paired description and video, if we cut 30% of video (end of the video), then target label is 0.7</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div style="page-break-after:always" /> 
+<h2 id="paper-reading-notes">Paper Reading Notes<a hidden class="anchor" aria-hidden="true" href="#paper-reading-notes">#</a></h2>
+<ul>
+<li>
+<p><a href="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022">CoBERL Contrastive BERT for Reinforcement Learning</a></p>
+<ul>
+<li>Author: Andrea Banino et. al. DeepMind</li>
+<li>Publish Year: Feb 2022</li>
+<li>Review Date: Wed, Oct 5, 2022</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sino-huang.github.io/posts/steven_kapturowski-human-level-atari-200x-faster-2022">Human Level Atari 200x Faster </a></p>
+<ul>
+<li>Author: Steven Kapturowski et. al. DeepMind</li>
+<li>Publish Year: September 2022</li>
+<li>Review Date: Wed, Oct 5, 2022</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sino-huang.github.io/posts/yuetian_weng-an-efficient-spatio-temporal-pyramid-transformer-for-action-detection-2022">An Efficient Spatio-Temporal Pyramid Transformer for Action Detection</a></p>
+<ul>
+<li>Author: Yuetian Weng et. al.</li>
+<li>Publish Year: Jul 2022</li>
+<li>Review Date: Thu, Oct 20, 2022</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sino-huang.github.io/posts/ayan_kumar_bhunia-a-deep-one-shot-network-for-query-based-logo-retrieval-2019">A Deep-One Shot Network for Query-Based Logo Retrieval</a></p>
+<ul>
+<li>Author: Ayan Kumar Bhunia et. al.</li>
+<li>Publish Year: Jul 2019</li>
+<li>Review Date: Mon, Oct 24, 2022</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sino-huang.github.io/posts/ting_i_hsieh-one-shot-object-detection-with-co-attention-and-co-excitation-2019">One-Shot Object Detection With Co-Attention and Co-Excitation </a></p>
+<ul>
+<li>Author: Ting-I Hsieh et. al.</li>
+<li>Publish Year: Nov 2019</li>
+<li>Review Date: Mon, Oct 24, 2022</li>
+</ul>
+</li>
+<li>
+<p><a href="https://sino-huang.github.io/posts/yizhou_zhao-semantic-aligned-fusion-transformer-for-one-shot-object-detection-2022">Semantic-Aligned Fusion Transformer for One Shot Object Detection </a></p>
+<ul>
+<li>Author: Yizhou Zhao et. al.</li>
+<li>Publish Year: 2022</li>
+<li>Review Date: Mon, Oct 24, 2022</li>
+</ul>
+</li>
+</ul>
+
+  </div>
 </div>
 <script>
   
@@ -242,21 +617,24 @@ if (!doNotTrack) {
       event.preventDefault(); 
   });
 </script>
+
 </div>
-</main>
+    </main>
+    
 <footer class="footer">
-<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+    <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-</span>
+    </span>
 </footer>
-<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
-<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6H0l6-6z"></path>
-</svg>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
+
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -311,5 +689,6 @@ if (!doNotTrack) {
     })
 
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</body>
+
 </html>

@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
-<head><meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<meta content="index, follow" name="robots"/>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Python Module and Package Management 2023 | Sukai Huang</title>
-<meta content="" name="keywords"/>
-<meta content="[TOC]
- Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e." name="description"/>
-<meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
-<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
-<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
-<meta content="#2e2e33" name="theme-color"/>
-<meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/index.xml" rel="alternate" type="application/rss+xml"/>
+<meta name="keywords" content="">
+<meta name="description" content="[TOC]
+ Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e.">
+<meta name="author" content="Sukai Huang">
+<link rel="canonical" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/index.xml">
 <noscript>
-<style>
+    <style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-<style>
+    <style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -56,9 +57,10 @@
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -75,7 +77,9 @@
         });
     });
 </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -85,15 +89,18 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="Python Module and Package Management 2023" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
-<meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" property="og:url"/>
-<meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" name="twitter:image"/>
-<meta content="Python Module and Package Management 2023" name="twitter:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<meta property="og:title" content="Python Module and Package Management 2023" />
+<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" />
+<meta property="og:image" content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" />
+<meta name="twitter:title" content="Python Module and Package Management 2023"/>
+<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -115,6 +122,8 @@ if (!doNotTrack) {
 }
 </script>
 </head>
+
+
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -126,111 +135,120 @@ if (!doNotTrack) {
     }
 
 </script>
+
 <header class="header">
-<nav class="nav">
-<div class="logo">
-<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-<div class="logo-switches">
-<button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-</svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="5"></circle>
-<line x1="12" x2="12" y1="1" y2="3"></line>
-<line x1="12" x2="12" y1="21" y2="23"></line>
-<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
-<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
-<line x1="1" x2="3" y1="12" y2="12"></line>
-<line x1="21" x2="23" y1="12" y2="12"></line>
-<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
-<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
-</svg>
-</button>
-</div>
-</div>
-<ul id="menu">
-<li>
-<a href="https://sino-huang.github.io/archives" title="Archives">
-<span>Archives</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/biography/" title="Biography">
-<span>Biography</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/" title="📁">
-<span>📁</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/tags/" title="🏷️">
-<span>🏷️</span>
-</a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/search/" title="🔍">
-<span>🔍</span>
-</a>
-</li>
-</ul>
-</nav>
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sino-huang.github.io/archives" title="Archives">
+                    <span>Archives</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/biography/" title="Biography">
+                    <span>Biography</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/categories/" title="📁">
+                    <span>📁</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/tags/" title="🏷️">
+                    <span>🏷️</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://sino-huang.github.io/search/" title="🔍">
+                    <span>🔍</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Python module" href="#python-module">Python module</a><ul>
-<li>
-<a aria-label="common issue 1: python -m dir  vs python dir" href="#common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code></a></li>
-<li>
-<a aria-label="Standard way of import when you want to create a module" href="#standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module</a></li>
-<li>
-<a aria-label="However, in a complicated project where there are too many modules." href="#however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.</a></li>
-<li>
-<a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
-<li>
-<a aria-label="Sample code" href="#sample-code">Sample code</a></li>
-<li>
-<a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code></a></li>
-<li>
-<a aria-label="Extra: what is [tool.setuptools.packages.find]" href="#extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code></a></li>
-<li>
-<a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li>
-<li>
-<a aria-label="Extra: update gitignore" href="#extra-update-gitignore">Extra: update gitignore</a></li></ul>
-</li>
-<li>
-<a aria-label="Useful VSCode python extension" href="#useful-vscode-python-extension">Useful VSCode python extension</a>
-</li>
-</ul>
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#python-module" aria-label="Python module">Python module</a><ul>
+                        
+                <li>
+                    <a href="#common-issue-1-python--m-dir--vs-python-dir" aria-label="common issue 1: python -m dir  vs python dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code></a></li>
+                <li>
+                    <a href="#standard-way-of-import-when-you-want-to-create-a-module" aria-label="Standard way of import when you want to create a module">Standard way of import when you want to create a module</a></li>
+                <li>
+                    <a href="#however-in-a-complicated-project-where-there-are-too-many-modules" aria-label="However, in a complicated project where there are too many modules.">However, in a complicated project where there are too many modules.</a></li>
+                <li>
+                    <a href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module" aria-label="Solution: setup pyproject.toml and install it as a proper module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
+                <li>
+                    <a href="#sample-code" aria-label="Sample code">Sample code</a></li>
+                <li>
+                    <a href="#extra-where-do-these-square-brackets-do-in-pip-install" aria-label="Extra: where do these square brackets do in pip install">Extra: where do these square brackets do in <code>pip install</code></a></li>
+                <li>
+                    <a href="#extra-what-is-toolsetuptoolspackagesfind" aria-label="Extra: what is [tool.setuptools.packages.find]">Extra: what is <code>[tool.setuptools.packages.find]</code></a></li>
+                <li>
+                    <a href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml" aria-label="Extra: useful tools that can integrate within pyproject.toml">Extra: useful tools that can integrate within pyproject.toml</a></li>
+                <li>
+                    <a href="#extra-update-gitignore" aria-label="Extra: update gitignore">Extra: update gitignore</a></li></ul>
+                </li>
+                <li>
+                    <a href="#useful-vscode-python-extension" aria-label="Useful VSCode python extension">Useful VSCode python extension</a>
+                </li>
+            </ul>
+        </div>
+    </details>
 </div>
-</details>
-</div>
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
-<h1>
+ 
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
+  <h1>
     Python Module and Package Management 2023
-    <a aria-label="RSS" href="index.xml" title="RSS">
-<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 11a9 9 0 0 1 9 9"></path>
-<path d="M4 4a16 16 0 0 1 16 16"></path>
-<circle cx="5" cy="19" r="1"></circle>
-</svg>
-</a>
-</h1>
+    <a href="index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 <div class="post-content"><p>[TOC]</p>
 <ol>
 <li>Title: Python Module and Package Management 2023</li>
 <li>url: <a href="https://www.youtube.com/watch?v=v6tALyc4C10">https://www.youtube.com/watch?v=v6tALyc4C10</a></li>
 </ol>
-<h2 id="python-module">Python module<a aria-hidden="true" class="anchor" hidden="" href="#python-module">#</a></h2>
-<h3 id="common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code><a aria-hidden="true" class="anchor" hidden="" href="#common-issue-1-python--m-dir--vs-python-dir">#</a></h3>
+<h2 id="python-module">Python module<a hidden class="anchor" aria-hidden="true" href="#python-module">#</a></h2>
+<h3 id="common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code><a hidden class="anchor" aria-hidden="true" href="#common-issue-1-python--m-dir--vs-python-dir">#</a></h3>
 <ul>
 <li><code>python dir</code> will use the dir as the <code>PYTHONPATH</code> as run <code>__main__.py</code> file.</li>
 <li>however, <code>python -m dir</code> will not use the dir as <code>PYTHONPATH</code> but rather it will search the local library.
@@ -239,7 +257,7 @@ if (!doNotTrack) {
 </ul>
 </li>
 </ul>
-<h3 id="standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module<a aria-hidden="true" class="anchor" hidden="" href="#standard-way-of-import-when-you-want-to-create-a-module">#</a></h3>
+<h3 id="standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module<a hidden class="anchor" aria-hidden="true" href="#standard-way-of-import-when-you-want-to-create-a-module">#</a></h3>
 <ul>
 <li>use absolute path -&gt; <code>from moduledir/packagename import filename</code></li>
 <li>avoid using relative path
@@ -249,24 +267,24 @@ if (!doNotTrack) {
 </li>
 <li>if within the same module, you can just use <code>from xxx import yyy</code></li>
 </ul>
-<h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a aria-hidden="true" class="anchor" hidden="" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
+<h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a hidden class="anchor" aria-hidden="true" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
 <ul>
 <li>one workaround is that we still make it a module, but try to append folder path to the system path.</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 </span></span><span class="line"><span class="cl"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>always use it as the last resort.</li>
 </ul>
-<h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a aria-hidden="true" class="anchor" hidden="" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
+<h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a hidden class="anchor" aria-hidden="true" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
 <ul>
 <li>
 <p><code>python -m venv .venv</code></p>
@@ -287,13 +305,13 @@ if (!doNotTrack) {
 <p><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></p>
 </li>
 </ul>
-<h3 id="sample-code">Sample code<a aria-hidden="true" class="anchor" hidden="" href="#sample-code">#</a></h3>
+<h3 id="sample-code">Sample code<a hidden class="anchor" aria-hidden="true" href="#sample-code">#</a></h3>
 <ul>
 <li>hydra <code>default.yaml</code> config</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -313,19 +331,19 @@ if (!doNotTrack) {
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">defaults</span><span class="p">:</span><span class="w">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">defaults</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">_self_</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hydra</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">job</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="kc">True</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="s2">"outputs/${now:%Y-%m-%d}/${monitor.name}_${now:%H-%M-%S}"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;outputs/${now:%Y-%m-%d}/${monitor.name}_${now:%H-%M-%S}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">monitor</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_wandb</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Test Program"</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Test Program&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;default&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">taglist</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l">None</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -338,7 +356,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -359,25 +377,25 @@ if (!doNotTrack) {
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">requires</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"setuptools"</span><span class="p">,</span> <span class="s2">"setuptools-scm"</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">"setuptools.build_meta"</span>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">requires</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;setuptools&#34;</span><span class="p">,</span> <span class="s2">&#34;setuptools-scm&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">&#34;setuptools.build_meta&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"my-test"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;my-test&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">authors</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span> <span class="p">=</span> <span class="s2">"Sukai Huang"</span><span class="p">,</span> <span class="nx">email</span> <span class="p">=</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Sukai Huang&#34;</span><span class="p">,</span> <span class="nx">email</span> <span class="p">=</span> <span class="s2">&#34;sukaih@student.unimelb.edu.au&#34;</span><span class="p">},</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">"My test package description"</span>
-</span></span><span class="line"><span class="cl"><span class="nx">readme</span> <span class="p">=</span> <span class="s2">"readme.md"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;My test package description&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">readme</span> <span class="p">=</span> <span class="s2">&#34;readme.md&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">dependencies</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"hydra-core"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"tqdm"</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;hydra-core&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;tqdm&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">"1.0.0"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;1.0.0&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">setuptools</span><span class="p">.</span><span class="nx">packages</span><span class="p">.</span><span class="nx">find</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"config"</span><span class="p">,</span> <span class="s2">"outputs"</span><span class="p">,</span> <span class="s2">"multirun"</span><span class="p">,</span> <span class="s2">"logs"</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;config&#34;</span><span class="p">,</span> <span class="s2">&#34;outputs&#34;</span><span class="p">,</span> <span class="s2">&#34;multirun&#34;</span><span class="p">,</span> <span class="s2">&#34;logs&#34;</span><span class="p">]</span> 
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -385,7 +403,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -427,7 +445,7 @@ if (!doNotTrack) {
 </span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">wandb</span>
@@ -438,14 +456,14 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
 </span></span><span class="line"><span class="cl">    <span class="n">wandb_cfg</span> <span class="o">=</span> <span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_container</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">resolve</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"--------Model Config---------"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;--------Model Config---------&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_yaml</span><span class="p">(</span><span class="n">cfg</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"-----End of Model Config-----"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;-----End of Model Config-----&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">projectname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">project_name</span>
 </span></span><span class="line"><span class="cl">    <span class="n">jobname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">name</span>
 </span></span><span class="line"><span class="cl">    <span class="n">tagslist</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">taglist</span>
 </span></span><span class="line"><span class="cl">    <span class="n">notes</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">notes</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">use_wandb</span> <span class="ow">and</span> <span class="n">cfg</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"train"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">use_wandb</span> <span class="ow">and</span> <span class="n">cfg</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&#34;train&#34;</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">            <span class="n">project</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="n">name</span><span class="o">=</span><span class="n">jobname</span><span class="p">,</span>
@@ -463,7 +481,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nd">@hydra</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">"config"</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@hydra</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">&#34;config&#34;</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">&#34;default&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">cfg</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
 </span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">)</span>
@@ -474,18 +492,18 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">PYTHONPATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'PYTHONPATH'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">PYTHONPATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;PYTHONPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"relative../config"</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">"dataloadtestconfig"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;relative../config&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">&#34;dataloadtestconfig&#34;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -498,7 +516,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -536,40 +554,40 @@ if (!doNotTrack) {
 </span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"python.languageServer"</span><span class="p">:</span> <span class="s2">"Pylance"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"python.analysis.extraPaths"</span><span class="p">:</span> <span class="p">[</span> <span class="s2">".venv/lib/python3.9/site-packages"</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"terminal.integrated.env.linux"</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">"PYTHONPATH"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}"</span>
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.languageServer&#34;</span><span class="p">:</span> <span class="s2">&#34;Pylance&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.analysis.extraPaths&#34;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&#34;.venv/lib/python3.9/site-packages&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;terminal.integrated.env.linux&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PYTHONPATH&#34;</span><span class="p">:</span> <span class="s2">&#34;${workspaceFolder}&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"python.envFile"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}/.env"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.envFile&#34;</span><span class="p">:</span> <span class="s2">&#34;${workspaceFolder}/.env&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.variables"</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectCreationYear"</span><span class="p">,</span> <span class="s2">"2023"</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"authoremail"</span><span class="p">,</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectname"</span><span class="p">,</span> <span class="s2">"Modular RL from LLM"</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"company"</span><span class="p">,</span> <span class="s2">"Sukai@Unimelb NLP Group"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;psi-header.variables&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;projectCreationYear&#34;</span><span class="p">,</span> <span class="s2">&#34;2023&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;authoremail&#34;</span><span class="p">,</span> <span class="s2">&#34;sukaih@student.unimelb.edu.au&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;projectname&#34;</span><span class="p">,</span> <span class="s2">&#34;Modular RL from LLM&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;company&#34;</span><span class="p">,</span> <span class="s2">&#34;Sukai@Unimelb NLP Group&#34;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.templates"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;psi-header.templates&#34;</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">"language"</span><span class="p">:</span> <span class="s2">"*"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">"template"</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"File Created: &lt;&lt;filecreated('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"Author: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;)"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"Last Modified: &lt;&lt;dateformat('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"Modified By: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;&gt;)"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"Copyright &lt;&lt;projectCreationYear&gt;&gt; - &lt;&lt;year&gt;&gt; by &lt;&lt;company&gt;&gt;"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"All rights reserved."</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"This file is part of The &lt;&lt;projectname&gt;&gt; Project,"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"and is released under The MIT License. Please see the LICENSE"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">"file that should have been included as part of this project."</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&#34;template&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;File Created: &lt;&lt;filecreated(&#39;dddd, Do MMMM YYYY h:mm:ss a&#39;)&gt;&gt;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Author: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-----&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Last Modified: &lt;&lt;dateformat(&#39;dddd, Do MMMM YYYY h:mm:ss a&#39;)&gt;&gt;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Modified By: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;&gt;)&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-----&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Copyright &lt;&lt;projectCreationYear&gt;&gt; - &lt;&lt;year&gt;&gt; by &lt;&lt;company&gt;&gt;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;All rights reserved.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;This file is part of The &lt;&lt;projectname&gt;&gt; Project,&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;and is released under The MIT License. Please see the LICENSE&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;file that should have been included as part of this project.&#34;</span>
 </span></span><span class="line"><span class="cl">            <span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">"[python]"</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">"editor.defaultFormatter"</span><span class="p">:</span> <span class="s2">"ms-python.autopep8"</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;[python]&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&#34;editor.defaultFormatter&#34;</span><span class="p">:</span> <span class="s2">&#34;ms-python.autopep8&#34;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
@@ -579,7 +597,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -603,7 +621,7 @@ if (!doNotTrack) {
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
 </span></span><span class="line"><span class="cl">|   pyproject.toml
 </span></span><span class="line"><span class="cl">|   README.md
 </span></span><span class="line"><span class="cl">|   .venv
@@ -630,16 +648,16 @@ if (!doNotTrack) {
 </div><ul>
 <li>once we setup the toml file, we can use <code>pip install -e .</code></li>
 </ul>
-<h3 id="extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-where-do-these-square-brackets-do-in-pip-install">#</a></h3>
+<h3 id="extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code><a hidden class="anchor" aria-hidden="true" href="#extra-where-do-these-square-brackets-do-in-pip-install">#</a></h3>
 <ul>
 <li>we often see</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="s2">"splinter[django]"</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="s2">&#34;splinter[django]&#34;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -648,25 +666,25 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">.</span><span class="nx">optional-dependencies</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">pdf</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"ReportLab&gt;=1.2"</span><span class="p">,</span> <span class="s2">"RXP"</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">rest</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"docutils&gt;=0.3"</span><span class="p">,</span> <span class="s2">"pack ==1.1, ==1.3"</span><span class="p">]</span>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">.</span><span class="nx">optional-dependencies</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pdf</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;ReportLab&gt;=1.2&#34;</span><span class="p">,</span> <span class="s2">&#34;RXP&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rest</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;docutils&gt;=0.3&#34;</span><span class="p">,</span> <span class="s2">&#34;pack ==1.1, ==1.3&#34;</span><span class="p">]</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
+</div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a hidden class="anchor" aria-hidden="true" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
 <ul>
-<li><img alt="image-20230528181250046" loading="lazy" src="image-assets/image-20230528181250046.png"/>
+<li><img loading="lazy" src="image-assets/image-20230528181250046.png" alt="image-20230528181250046"  />
 </li>
 </ul>
-<h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a aria-hidden="true" class="anchor" hidden="" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
+<h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a hidden class="anchor" aria-hidden="true" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -702,61 +720,61 @@ if (!doNotTrack) {
 </span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">black</span><span class="p">]</span>   <span class="c"># format code</span>
+<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">black</span><span class="p">]</span>   <span class="c"># format code</span>
 </span></span><span class="line"><span class="cl"><span class="nx">line-length</span> <span class="p">=</span> <span class="mi">88</span>
-</span></span><span class="line"><span class="cl"><span class="nx">target-version</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"py38"</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="c"># 'extend-exclude' excludes files or directories in addition to the defaults</span>
-</span></span><span class="line"><span class="cl"><span class="nx">extend-exclude</span> <span class="p">=</span> <span class="s2">"""
+</span></span><span class="line"><span class="cl"><span class="nx">target-version</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;py38&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c"># &#39;extend-exclude&#39; excludes files or directories in addition to the defaults</span>
+</span></span><span class="line"><span class="cl"><span class="nx">extend-exclude</span> <span class="p">=</span> <span class="s2">&#34;&#34;&#34;
 </span></span></span><span class="line"><span class="cl"><span class="s2"># A regex preceded with ^/ will apply only to files and directories
 </span></span></span><span class="line"><span class="cl"><span class="s2"># in the root of the project.
 </span></span></span><span class="line"><span class="cl"><span class="s2">(
 </span></span></span><span class="line"><span class="cl"><span class="s2">  llm_genplan/third_party
 </span></span></span><span class="line"><span class="cl"><span class="s2">)
-</span></span></span><span class="line"><span class="cl"><span class="s2">"""</span>
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">isort</span><span class="p">]</span>  <span class="c"># format import libs</span>
 </span></span><span class="line"><span class="cl"><span class="nx">py_version</span> <span class="p">=</span> <span class="mi">38</span>
-</span></span><span class="line"><span class="cl"><span class="nx">profile</span> <span class="p">=</span> <span class="s2">"black"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">profile</span> <span class="p">=</span> <span class="s2">&#34;black&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="nx">multi_line_output</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="nx">skip_glob</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">skip_glob</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;venv/*&#34;</span><span class="p">,</span> <span class="s2">&#34;llm_genplan/third_party/*&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">split_on_trailing_comma</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">]</span>  <span class="c"># add static type comments</span>
 </span></span><span class="line"><span class="cl"><span class="nx">strict_equality</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="nx">disallow_untyped_calls</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="nx">warn_unreachable</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">follow_imports</span> <span class="p">=</span> <span class="s2">"skip"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;venv/*&#34;</span><span class="p">,</span> <span class="s2">&#34;llm_genplan/third_party/*&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">follow_imports</span> <span class="p">=</span> <span class="s2">&#34;skip&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">.</span><span class="nx">overrides</span><span class="p">]]</span>  <span class="c"># we specify certain modules that we want to ignore the mypy static type check</span>
 </span></span><span class="line"><span class="cl"><span class="nx">module</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"matplotlib.*"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"pddlgym.*"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"pyperclip.*"</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">"pandas.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;matplotlib.*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pddlgym.*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pyperclip.*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pandas.*&#34;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">ignore_missing_imports</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="extra-update-gitignore">Extra: update gitignore<a aria-hidden="true" class="anchor" hidden="" href="#extra-update-gitignore">#</a></h3>
+</div><h3 id="extra-update-gitignore">Extra: update gitignore<a hidden class="anchor" aria-hidden="true" href="#extra-update-gitignore">#</a></h3>
 <ul>
 <li>when we want to update gitignore, often we need to remove all the cache and then add it back again</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm -r --cached .
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm -r --cached .
 </span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m<span class="s1">'.gitignore update'</span>
+</span></span><span class="line"><span class="cl">git commit -m<span class="s1">&#39;.gitignore update&#39;</span>
 </span></span><span class="line"><span class="cl">git push origin master
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a aria-hidden="true" class="anchor" hidden="" href="#useful-vscode-python-extension">#</a></h2>
+</div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a hidden class="anchor" aria-hidden="true" href="#useful-vscode-python-extension">#</a></h2>
 <ol>
 <li>Python Extension Package</li>
 <li>GitGraph</li>
@@ -767,21 +785,25 @@ if (!doNotTrack) {
 <li>Better Comments</li>
 <li>Choose a License</li>
 </ol>
+
+
 </div>
-</main>
+    </main>
+    
 <footer class="footer">
-<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+    <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-</span>
+    </span>
 </footer>
-<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
-<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6H0l6-6z"></path>
-</svg>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
+
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -837,4 +859,5 @@ if (!doNotTrack) {
 
 </script>
 </body>
+
 </html>

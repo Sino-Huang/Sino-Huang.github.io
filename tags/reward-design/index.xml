@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>reward design on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/reward-design/</link>
+    <description>Recent content in reward design on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 27 Oct 2023 16:44:22 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reward-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yecheng Jason Ma Eureka Human Level Reward Design via Coding Large Language Models 2023</title>
+      <link>https://sino-huang.github.io/posts/yecheng-jason-ma-eureka-human-level-reward-design-via-coding-large-language-models-2023/</link>
+      <pubDate>Fri, 27 Oct 2023 16:44:22 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/yecheng-jason-ma-eureka-human-level-reward-design-via-coding-large-language-models-2023/</guid>
+      <description>[TOC]
+ Title: Eureka Human Level Reward Design via Coding Large Language Models 2023 Author: Yecheng Jason Ma et. al. Publish Year: 19 Oct 2023 Review Date: Fri, Oct 27, 2023 url: https://arxiv.org/pdf/2310.12931.pdf  Summary of paper Motivation  harnessing LLMs to learn complex low-level manipulation tasks, remains an open problem. we bridge this fundamental gap by using LLMs to produce rewards that can be used to acquire conplex skill via reinforcement learning.</description>
+    </item>
+    
+  </channel>
+</rss>
