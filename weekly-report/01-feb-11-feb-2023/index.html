@@ -1,39 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>01 Feb -- 11 Feb, 2023 | Sukai Huang</title>
-<meta name="keywords" content="">
-<meta name="description" content="Previous Work Review
+<meta content="" name="keywords"/>
+<meta content="Previous Work Review
 
-We finish investigating the Language Reward Shaping model and we find out that it is slower than a vanilla PPO&#43;RND learning agent. We found out that rewarding to partially matched trajectories significantly slows down the learning speed.
+We finish investigating the Language Reward Shaping model and we find out that it is slower than a vanilla PPO+RND learning agent. We found out that rewarding to partially matched trajectories significantly slows down the learning speed.
 Now we should move forward to the next research questions.
 
 
-You need password to access to the content, go to Slack *#phdsukai to find more.">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/index.xml">
+You need password to access to the content, go to Slack *#phdsukai to find more." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/" rel="canonical"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -62,10 +61,9 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     </style>
 </noscript>
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
 <script>
     var decryptedcustomevent = new Event('hugo-text-decrypted-alert');
     console.log("Create hugo-text-decrypted-alert event");
@@ -92,10 +90,7 @@ You need password to access to the content, go to Slack *#phdsukai to find more.
 
     }
 </script>
-
-    
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -105,18 +100,14 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="01 Feb -- 11 Feb, 2023" />
-<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/" /><meta property="og:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://sino-huang.github.io/cute_avatar.jpg"/>
-
-<meta name="twitter:title" content="01 Feb -- 11 Feb, 2023"/>
-<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
-
-
+<meta content="01 Feb -- 11 Feb, 2023" property="og:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/weekly-report/01-feb-11-feb-2023/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
+<meta content="01 Feb -- 11 Feb, 2023" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -138,8 +129,6 @@ if (!doNotTrack) {
 }
 </script>
 </head>
-
-
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -151,389 +140,87 @@ if (!doNotTrack) {
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/categories/" title="📁">
-                    <span>📁</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/tags/" title="🏷️">
-                    <span>🏷️</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/search/" title="🔍">
-                    <span>🔍</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archives">
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="📁">
+<span>📁</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="🏷️">
+<span>🏷️</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/search/" title="🔍">
+<span>🔍</span>
+</a>
+</li>
+</ul>
+</nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
-  <h1>
+<main class="main">
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/weekly-report/">Weekly-reports</a></div>
+<h1>
     01 Feb -- 11 Feb, 2023
-    <a href="index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
 </header>
-<div class="post-content"><h2 id="previous-work-review">Previous Work Review<a hidden class="anchor" aria-hidden="true" href="#previous-work-review">#</a></h2>
+<div class="post-content"><h2 id="previous-work-review">Previous Work Review<a aria-hidden="true" class="anchor" hidden="" href="#previous-work-review">#</a></h2>
 <ul>
 <li>We finish investigating the Language Reward Shaping model and we find out that it is slower than a vanilla PPO+RND learning agent. We found out that rewarding to partially matched trajectories significantly slows down the learning speed.</li>
 <li>Now we should move forward to the next research questions.</li>
 </ul>
-<hr>
+<hr/>
 <p>You need password to access to the content, go to Slack *#phdsukai to find more.</p>
 <div class="hugo-encryptor-container">
-  <div class="hugo-encryptor-prompt">
-    
-      <p>Part of this article is encrypted with password:</p>
-    
-  </div>
-  <div class="hugo-encryptor-form">
-    <input
-      class="hugo-encryptor-input"
-      placeholder='Please input the password'
-    />
-    <input
-      class="hugo-encryptor-button"
-      type="button"
-      value='Click to verify'
-      onclick="_click_handler(this)"
-    />
-  </div>
-  <div
-    class="hugo-encryptor-cipher-text"
-    data-password="sukai-1995"
-    style="display: none;"
-  >
-    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
-    <p>[TOC]</p>
-<h2 id="todo">TODO<a hidden class="anchor" aria-hidden="true" href="#todo">#</a></h2>
-<ul>
-<li><input disabled="" type="checkbox"> test ALFRED model FILM++</li>
-<li><input disabled="" type="checkbox"> think about how to mathematically express the ALFRED model</li>
-<li><input disabled="" type="checkbox"> think about how to generate line from natural language instruction (diffusion way or something, how to represent line in math)</li>
-</ul>
-<h2 id="the-new-environment-alfred">The new environment ALFRED<a hidden class="anchor" aria-hidden="true" href="#the-new-environment-alfred">#</a></h2>
-<p><a href="https://github.com/askforalfred/alfred/tree/master/data">https://github.com/askforalfred/alfred/tree/master/data</a></p>
-<ul>
-<li>contains 8k+ expert demonstrations with 3 or more language annotation each</li>
-<li>a trajectory consists of
-<ul>
-<li>a sequence of expert actions,</li>
-<li>the corresponding image observations,</li>
-<li>and language annotations describing segments of the trajectory</li>
-</ul>
-</li>
-<li><img loading="lazy" src="image-assets/image-20230208013132186.png" alt="image-20230208013132186"  />
-</li>
-</ul>
-<p><strong>Can we generate data for ourselves?</strong></p>
-<p><a href="https://github.com/askforalfred/alfred/tree/master/gen">https://github.com/askforalfred/alfred/tree/master/gen</a></p>
-<ul>
-<li>although we <u><em>cannot directly interact</em></u> with the environment, the author told us that they use <em><strong>PDDL</strong></em> to generate expert trajectories
-<ul>
-<li>this means that translating natural language instruction back to PDDL and then control the agent is the go-to solution.</li>
-</ul>
-</li>
-</ul>
-<h2 id="nirs-recommended-paper">Nir&rsquo;s recommended paper<a hidden class="anchor" aria-hidden="true" href="#nirs-recommended-paper">#</a></h2>
-<p><a href="https://embodied-ai.org/papers/2022/15.pdf">https://embodied-ai.org/papers/2022/15.pdf</a></p>
-<h3 id="what-is-their-motivation">What is their motivation<a hidden class="anchor" aria-hidden="true" href="#what-is-their-motivation">#</a></h3>
-<ul>
-<li>end-to-end deep learning methods struggle at these tasks due to long-horizon and sparse rewards.</li>
-</ul>
-<h3 id="what-is-their-contribution">What is their contribution<a hidden class="anchor" aria-hidden="true" href="#what-is-their-contribution">#</a></h3>
-<ul>
-<li>Their main innovation relies on combining DL models for perception and NLP with a new egocentric planner based on successive planning problems formulated using PDDL syntax, both for exploration and task accomplishment</li>
-<li>their planning framework can naturally recover from action failures at any stage of the planned trajectory</li>
-</ul>
-<h3 id="their-model">Their model<a hidden class="anchor" aria-hidden="true" href="#their-model">#</a></h3>
-<img src="image-assets/image-20230208015717170.png" alt="image-20230208015717170" style="width: 70%;" />
-<ul>
-<li>Their vision module helps to set up spatial semantic graph. This semantic graph will be converted to the <em>current condition</em> written in PDDL</li>
-<li>the Language module will translate the high-level instructions to the <em>goal condition</em> written in PDDL</li>
-<li>after that, the egocentric PDDL planner can plan the actions by using the goal information from the language module and the state information from the spatial semantic graph</li>
-</ul>
-<h3 id="however-they-did-not-write-how-they-build-the-egocentric-planner-in-this-paper">HOWEVER, they did not write how they build the egocentric planner in this paper<a hidden class="anchor" aria-hidden="true" href="#however-they-did-not-write-how-they-build-the-egocentric-planner-in-this-paper">#</a></h3>
-<ul>
-<li>so we cannot know how exactly this planner can recover from failure</li>
-<li>and we cannot know how their Egocentric planner is different from planners in the previous studies.</li>
-</ul>
-<h3 id="we-know-the-architecture-of-their-language-module">We know the architecture of their language module<a hidden class="anchor" aria-hidden="true" href="#we-know-the-architecture-of-their-language-module">#</a></h3>
-<ul>
-<li>they say they use the same language module  in the previous work FILM</li>
-<li><a href="https://arxiv.org/pdf/2110.07342.pdf#subsection.A.9">https://arxiv.org/pdf/2110.07342.pdf#subsection.A.9</a></li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20230208021257252.png" alt="image-20230208021257252"  />
-</p>
-<ul>
-<li>since this benchmark only have 7 task types</li>
-<li>they design a task template for each task types</li>
-<li>then they train the language module to extract the arguments from the instruction</li>
-</ul>
-<h3 id="limitation-of-current-work">Limitation of current work<a hidden class="anchor" aria-hidden="true" href="#limitation-of-current-work">#</a></h3>
-<ol>
-<li>most studies did not fully utilise the low-level instructions
-<ol>
-<li>some directly map the &ldquo;goal instruction&rdquo; to a subtask template (e.g., FILM)</li>
-<li>FILM tried to use low-level instruction but only got 2% improvement</li>
-</ol>
-</li>
-<li>Why did current work not want to use low-level instructions?
-<ol>
-<li>Those authors did not think that low-level instructions can contribute to constructing the semantic map (environment model)
-<ol>
-<li>Once the environment model (in PDDL) is built by agent exploration and the goal is parsed from the goal instruction, then the action plan can be generated automatically without the need of those low-level instructions.</li>
-</ol>
-</li>
-</ol>
-</li>
-<li><img loading="lazy" src="image-assets/image-20230202144616928.png" alt="image-20230202144616928"  />
-
-<ol>
-<li>the table shows that language processing error is still an big error for those models (the language processing is to convert natural language instructions into goals or sequence of low-level agent controls)</li>
-</ol>
-</li>
-</ol>
-<h3 id="what-we-can-improve">What we can improve<a hidden class="anchor" aria-hidden="true" href="#what-we-can-improve">#</a></h3>
-<ul>
-<li>we can better utilise the low-level instructions dataset to train our agent</li>
-</ul>
-<h3 id="how-to-utilise-the-low-level-instructions-dataset">How to utilise the low-level instructions dataset?<a hidden class="anchor" aria-hidden="true" href="#how-to-utilise-the-low-level-instructions-dataset">#</a></h3>
-<ul>
-<li>I think there can be some directions
-<ol>
-<li><strong><u><em>RQ1</em></u></strong>: how to use low-level instructions to assist the construction of the spatial semantic graph (i.e., the World Model)?
-<ul>
-<li>this is a multimodal learning problem -&gt; using both visual observations and low-level language to construct the semantic graph.</li>
-</ul>
-</li>
-<li>low-level instructions should have the same semantic meaning as the plan generated by the planner -&gt; <strong><u><em>RQ2:</em></u></strong> how to translate low-level instructions to PDDL plan or the other way round?
-<ul>
-<li>so this is a translation problem</li>
-</ul>
-</li>
-<li>we notice that there is still a gap between the planed action and the real action (e.g., action in the plan (Pickup, Apple), real action sequence: &lt;RotateLeft, Forward, Click&gt;)
-<ol>
-<li><em>the trajectory sequence (in RGB) should match with the low-level instructions</em> <strong><u><em>RQ3:</em></u></strong> how to map low-level instructions to low-level actions (instruction following)?
-<ul>
-<li>the low-level actions is dependent both on the low-level instruction and the current environment.</li>
-<li>this is a visual observation and language alignment problem (aligning state, action, temporal constraints?)</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-</li>
-</ul>
-<h3 id="example-for-rq1">Example for RQ1:<a hidden class="anchor" aria-hidden="true" href="#example-for-rq1">#</a></h3>
-<p><a href="https://arxiv.org/pdf/2211.03267.pdf">https://arxiv.org/pdf/2211.03267.pdf</a></p>
-<img src="image-assets/image-20230208135226585.png" alt="image-20230208135226585" style="width:70%;" />
-<ul>
-<li>one of their approach is to use low-level instructions / observation descriptions to extract the location of objects by using language model prompting method</li>
-<li>They use the low-level instruction as the in-context input, then attached with the query prompt:
-<ul>
-<li>prompt is “Something you find at [Y] is <input checked="" disabled="" type="checkbox"> .”, where <input checked="" disabled="" type="checkbox"> is filled with the name of the object to find, and LLMs fill [Y] with landmark names.</li>
-<li>landmark objects are those big, immovable objects, manually selected by the authors</li>
-<li><img loading="lazy" src="image-assets/image-20230208135625142.png" alt="image-20230208135625142"  />
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="extra-a-tiny-proposal-for-continuing-the-montezumas-revenge-stuffs">Extra: A tiny proposal for continuing the Montezuma&rsquo;s Revenge stuffs<a hidden class="anchor" aria-hidden="true" href="#extra-a-tiny-proposal-for-continuing-the-montezumas-revenge-stuffs">#</a></h2>
-<ul>
-<li>we want to let agent to follow instructions with various lengths</li>
-<li>we want to avoid accumulated false positive errors.</li>
-</ul>
-<h3 id="visualise-low-level-instructions-as-a-line">visualise low level instructions as a line<a hidden class="anchor" aria-hidden="true" href="#visualise-low-level-instructions-as-a-line">#</a></h3>
-<p><img loading="lazy" src="image-assets/image-20230202160832294.png" alt="image-20230202160832294"  />
-</p>
-<ul>
-<li>since the camera and the environment is fixed, we can actually draw a line to represent the agent&rsquo;s trajectory</li>
-<li>then natural language instruction can also be converted into a line</li>
-<li>short instruction maps to a short line, <strong>long instruction maps to a long line</strong></li>
-<li>in deployment, the agent just follows the line generated by the natural language instruction</li>
-<li>advantages
-<ul>
-<li>there is no more no more false positive reward issue because it is no more a RL agent</li>
-</ul>
-</li>
-</ul>
-<div style="page-break-after:always" /> 
-<h2 id="reference">Reference<a hidden class="anchor" aria-hidden="true" href="#reference">#</a></h2>
-<ul>
-<li><a href="https://sino-huang.github.io/posts/michael_janner-planning-with-diffusion-for-flexible-behaviour-synthesis-2022">Planning With Diffusion for Flexible Behaviour Synthesis</a>
-<ul>
-<li>Author: Michael Janner et. al.</li>
-<li>Publish Year: 21 Dec 2022</li>
-<li>Review Date: Mon, Jan 30, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/jacob_andreas-language-models-as-agent-models-2022/">Language Models as Agent Models</a>
-<ul>
-<li>Author: Jacob Andreas</li>
-<li>Publish Year: 3 Dec 2022</li>
-<li>Review Date: Sat, Dec 10, 2022</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/kyle_mahowald-dissociating-language-and-thought-in-large-language-models-a-cognitive-perspective-2023">Dissociating Language and Thought in Large Language Models a Cognitive Perspective</a>
-<ul>
-<li>Author: Kyle Mahowald et. al.</li>
-<li>Publish Year: 16 Jan 2023</li>
-<li>Review Date: Tue, Jan 31, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/so_yeon_min-film-following-instructions-in-language-with-modular-methods-2022">FILM: Following Instructions in Language With Modular Methods</a>
-<ul>
-<li>Author: So Yeon Min et. al.</li>
-<li>Publish Year: 16 Mar 2022</li>
-<li>Review Date: Wed, Feb 1, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/yuki_inoue-prompter-utilizing-large-language-model-prompting-for-a-data-efficient-embodied-instruction-following-2022">Prompter: Utilizing Large Language Model Prompting for a Data Efficient Embodied Instruction Following</a>
-<ul>
-<li>Author: Yuki Inoue et. al.</li>
-<li>Publish Year: 7 Nov 2022</li>
-<li>Review Date: Wed, Feb 1, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/xiaotian_liu-a-planning-based-neural-symbolic-approach-for-embodied-instruction-following-2022">A Planning Based Neural Symbolic Approach for Embodied Instruction Following</a>
-<ul>
-<li>Author: Xiaotian Liu et. al.</li>
-<li>Publish Year: 2022</li>
-<li>Review Date: Thu, Feb 2, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/zhenfang_chen-see-think-confirm-interactive-prompting-between-vision-and-language-models-for-knowledge-based-visual-reasoning-2023">See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning</a>
-<ul>
-<li>Author: Zhenfang Chen et. al.</li>
-<li>Publish Year: 12 Jan 2023</li>
-<li>Review Date: Mon, Feb 6, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/yuanhan_zhang-what-makes-good-examples-for-visual-in-context-learning-2023">What Makes Good Examples for Visual in Context Learning</a>
-<ul>
-<li>Author: Yuan Zhang et. al.</li>
-<li>Publish Year: 1 Feb 2023</li>
-<li>Review Date: Mon, Feb 6, 2023</li>
-</ul>
-</li>
-<li><a href="https://sino-huang.github.io/posts/jing_yu_koh-grounding-language-models-to-images-for-multimodal-generation-2023">Grounding Language Models to Images for Multimodal Generation</a>
-<ul>
-<li>Author: Jing Yu Koh et. al.</li>
-<li>Publish Year: 31 Jan 2023</li>
-<li>Review Date: Mon, Feb 6, 2023</li>
-</ul>
-</li>
-<li><a href="">Mastering Diverse Domains Through World Models</a>
-<ul>
-<li>Author: Danijar Hafner et. al.</li>
-<li>Publish Year: 10 Jan 2023</li>
-<li>Review Date: Tue, Feb 7, 2023</li>
-</ul>
-</li>
-</ul>
-<h2 id="appendix">Appendix<a hidden class="anchor" aria-hidden="true" href="#appendix">#</a></h2>
-<h3 id="natural-language-instructions-following-with-different-specificity-levels">Natural language instructions following with different specificity levels<a hidden class="anchor" aria-hidden="true" href="#natural-language-instructions-following-with-different-specificity-levels">#</a></h3>
-<ul>
-<li>this research proposal is linked to handling the &ldquo;abstraction level&rdquo; of instructions</li>
-</ul>
-<p><img loading="lazy" src="image-assets/image-20230130122022443.png" alt="image-20230130122022443"  />
-</p>
-<p><strong>Specificity level</strong></p>
-<ul>
-<li>The term &ldquo;specificity level&rdquo; is related to &ldquo;abstraction level&rdquo; and &ldquo;granularity level&rdquo;.</li>
-<li>The term &ldquo;specificity level&rdquo; is from this paper &ldquo;Huang, Jie, et al. &ldquo;Can Language Models Be Specific? How?.&rdquo; <em>arXiv preprint arXiv:2210.05159</em> (2022).&rdquo; <a href="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/">paper review blog</a> here</li>
-<li><img loading="lazy" src="image-assets/image-20230130123900240.png" alt="image-20230130123900240"  />
-</li>
-</ul>
-<p><strong>Why is the specific level of instructions important in instruction-following tasks</strong></p>
-<ul>
-<li>While it is easy for an instruction-following agent to deal with specific (low-level) instructions, it is hard to deal with less specific (ambiguous) instructions.
-<ul>
-<li>It is a one-to-many mapping from less-specific (general) instructions to agent trajectories. Thus, a supervised learning method that maps one instruction to one trajectory may not work</li>
-</ul>
-</li>
-</ul>
-<p><strong>Why deriving low-level instruction from high-level instructions is hard</strong></p>
-<ul>
-<li>high-level instruction is abstract and general and can be independent from the environment.</li>
-<li>direct mapping from high-level instruction to low-level instructions is impossible because low-level instructions are grounded by specific environments.</li>
-</ul>
-<h3 id="some-random-ideas">Some random ideas<a hidden class="anchor" aria-hidden="true" href="#some-random-ideas">#</a></h3>
-<p><strong>This is a loop</strong></p>
-<ul>
-<li><img loading="lazy" src="image-assets/image-20230202152350338.png" alt="image-20230202152350338"  />
-</li>
-<li>This loop can form a iterative translation situation</li>
-<li>I think Trevor had discussed about the iterative translation situation before in paper:
-<ul>
-<li>Hoang, Vu Cong Duy, et al. &ldquo;Iterative back-translation for neural machine translation.&rdquo; <em>Proceedings of the 2nd workshop on neural machine translation and generation</em>. 2018.</li>
-<li><a href="https://aclanthology.org/W18-2703.pdf">https://aclanthology.org/W18-2703.pdf</a></li>
-</ul>
-</li>
-</ul>
-<p><strong>again, phrase corruption</strong></p>
-<ul>
-<li>we can again augment the text data by replacing noun phrase and the verb phrases to create hard negatives to improve agent&rsquo;s performance</li>
-</ul>
-<h3 id="other-images-about-alfred-benchmark">Other images about ALFRED benchmark<a hidden class="anchor" aria-hidden="true" href="#other-images-about-alfred-benchmark">#</a></h3>
-<p><strong>CURRENT SOTA model overview</strong></p>
-<ul>
-<li><img loading="lazy" src="image-assets/image-20230202143931727.png" alt="image-20230202143931727"  />
-</li>
-<li><img loading="lazy" src="image-assets/image-20230202143940762.png" alt="image-20230202143940762"  />
-</li>
-</ul>
-
-  </div>
+<div class="hugo-encryptor-prompt">
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
 </div>
 <script>
   
@@ -543,24 +230,21 @@ if (!doNotTrack) {
       event.preventDefault(); 
   });
 </script>
-
 </div>
-    </main>
-    
+</main>
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-    <span>
+<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -615,6 +299,5 @@ if (!doNotTrack) {
     })
 
 </script>
-</body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
 </html>
