@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>Web Scrawler Using Selenium 2023 | Sukai Huang</title>
-<meta name="keywords" content="">
-<meta name="description" content="[TOC]
- Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  1 2 3 4 5 6 7 8 9  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab pyopenssl    known where is the Google Chrome user file location  1 2  MAC ~/Library/Application Support/Google/Chrome Linux ~/.">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/index.xml">
+<meta content="" name="keywords"/>
+<meta content="[TOC]
+ Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023  Web scrawler, ticket buying as a case study Preparation: python venv  check https://www.youtube.com/watch?v=Kg1Yvry_Ydk  1 2 3 4 5 6 7 8 9  python -m venv venv source venv/bin/activate # install the following using pip  selenium==4.9.1 undetected-chromedriver&gt;=3.4.6 webdriver-manager jupyterlab pyopenssl    known where is the Google Chrome user file location  1 2  MAC ~/Library/Application Support/Google/Chrome Linux ~/." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" rel="canonical"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -57,10 +56,9 @@
 
     </style>
 </noscript>
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -77,9 +75,7 @@
         });
     });
 </script>
-    
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -89,18 +85,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Web Scrawler Using Selenium 2023" />
-<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" />
-<meta property="og:image" content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" />
-<meta name="twitter:title" content="Web Scrawler Using Selenium 2023"/>
-<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
-
-
+<meta content="Web Scrawler Using Selenium 2023" property="og:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/" property="og:url"/>
+<meta content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png" name="twitter:image"/>
+<meta content="Web Scrawler Using Selenium 2023" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -122,8 +115,6 @@ if (!doNotTrack) {
 }
 </script>
 </head>
-
-
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -135,118 +126,109 @@ if (!doNotTrack) {
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/categories/" title="📁">
-                    <span>📁</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/tags/" title="🏷️">
-                    <span>🏷️</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/search/" title="🔍">
-                    <span>🔍</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archives">
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="📁">
+<span>📁</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="🏷️">
+<span>🏷️</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/search/" title="🔍">
+<span>🔍</span>
+</a>
+</li>
+</ul>
+</nav>
 </header>
 <main class="main"><div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#web-scrawler-ticket-buying-as-a-case-study" aria-label="Web scrawler, ticket buying as a case study">Web scrawler, ticket buying as a case study</a><ul>
-                        
-                <li>
-                    <a href="#preparation-python-venv" aria-label="Preparation: python venv">Preparation: python venv</a></li></ul>
-                </li>
-                <li>
-                    <a href="#utils-functions" aria-label="Utils functions">Utils functions</a></li>
-                <li>
-                    <a href="#firefox-configs-and-page-load-strategy" aria-label="Firefox configs and page load strategy">Firefox configs and page load strategy</a></li>
-                <li>
-                    <a href="#lxml-html-xpath-with-requests" aria-label="lxml html xpath with requests">lxml html xpath with requests</a></li>
-                <li>
-                    <a href="#concurrent-tqdm-process_map" aria-label="concurrent tqdm process_map">concurrent tqdm process_map</a></li>
-                <li>
-                    <a href="#xpath-cheatsheet" aria-label="Xpath cheatsheet">Xpath cheatsheet</a>
-                </li>
-            </ul>
-        </div>
-    </details>
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
+<li>
+<a aria-label="Web scrawler, ticket buying as a case study" href="#web-scrawler-ticket-buying-as-a-case-study">Web scrawler, ticket buying as a case study</a><ul>
+<li>
+<a aria-label="Preparation: python venv" href="#preparation-python-venv">Preparation: python venv</a></li></ul>
+</li>
+<li>
+<a aria-label="Utils functions" href="#utils-functions">Utils functions</a></li>
+<li>
+<a aria-label="Firefox configs and page load strategy" href="#firefox-configs-and-page-load-strategy">Firefox configs and page load strategy</a></li>
+<li>
+<a aria-label="lxml html xpath with requests" href="#lxml-html-xpath-with-requests">lxml html xpath with requests</a></li>
+<li>
+<a aria-label="concurrent tqdm process_map" href="#concurrent-tqdm-process_map">concurrent tqdm process_map</a></li>
+<li>
+<a aria-label="Xpath cheatsheet" href="#xpath-cheatsheet">Xpath cheatsheet</a>
+</li>
+</ul>
 </div>
- 
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
-  <h1>
+</details>
+</div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-notes</a></div>
+<h1>
     Web Scrawler Using Selenium 2023
-    <a href="index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
 </header>
 <div class="post-content"><p>[TOC]</p>
 <ol>
 <li>Title: Web Scrawler Using Selenium 2023</li>
 <li>Review Date: Thu, Jun 22, 2023</li>
 </ol>
-<h2 id="web-scrawler-ticket-buying-as-a-case-study">Web scrawler, ticket buying as a case study<a hidden class="anchor" aria-hidden="true" href="#web-scrawler-ticket-buying-as-a-case-study">#</a></h2>
-<h3 id="preparation-python-venv">Preparation: python venv<a hidden class="anchor" aria-hidden="true" href="#preparation-python-venv">#</a></h3>
+<h2 id="web-scrawler-ticket-buying-as-a-case-study">Web scrawler, ticket buying as a case study<a aria-hidden="true" class="anchor" hidden="" href="#web-scrawler-ticket-buying-as-a-case-study">#</a></h2>
+<h3 id="preparation-python-venv">Preparation: python venv<a aria-hidden="true" class="anchor" hidden="" href="#preparation-python-venv">#</a></h3>
 <ul>
 <li>check <a href="https://www.youtube.com/watch?v=Kg1Yvry_Ydk">https://www.youtube.com/watch?v=Kg1Yvry_Ydk</a></li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -257,7 +239,7 @@ if (!doNotTrack) {
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv venv
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">python -m venv venv
 </span></span><span class="line"><span class="cl"><span class="nb">source</span> venv/bin/activate
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># install the following using pip </span>
@@ -273,17 +255,17 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">MAC ~/Library/Application Support/Google/Chrome
+<pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">MAC ~/Library/Application Support/Google/Chrome
 </span></span><span class="line"><span class="cl">Linux ~/.config/google-chrome
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -293,23 +275,23 @@ if (!doNotTrack) {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--user-data-dir=&lt;profile-folder&gt;&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--profile-directory=Default&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--user-data-dir=&lt;profile-folder&gt;'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--profile-directory=Default'</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">            <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="n">headless</span><span class="o">=</span><span class="n">HEADLESS</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">        <span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="utils-functions">Utils functions<a hidden class="anchor" aria-hidden="true" href="#utils-functions">#</a></h2>
+</div><h2 id="utils-functions">Utils functions<a aria-hidden="true" class="anchor" hidden="" href="#utils-functions">#</a></h2>
 <ul>
 <li>sleep find element</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -339,8 +321,8 @@ if (!doNotTrack) {
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">sleepy_find_element</span><span class="p">(</span><span class="n">by</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">attempt_count</span> <span class="p">:</span><span class="nb">int</span> <span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">sleep_duration</span> <span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="s1">&#39;&#39;&#39;
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">sleepy_find_element</span><span class="p">(</span><span class="n">by</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">attempt_count</span> <span class="p">:</span><span class="nb">int</span> <span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">sleep_duration</span> <span class="o">=</span><span class="mf">0.3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">'''
 </span></span></span><span class="line"><span class="cl"><span class="s1">    Finds the web element using the locator and query.
 </span></span></span><span class="line"><span class="cl"><span class="s1">
 </span></span></span><span class="line"><span class="cl"><span class="s1">    This function attempts to find the element multiple times with a specified
@@ -354,18 +336,18 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="s1">
 </span></span></span><span class="line"><span class="cl"><span class="s1">    Returns:
 </span></span></span><span class="line"><span class="cl"><span class="s1">        selenium.webdriver.remote.webelement.WebElement: Web element or None if not found.
-</span></span></span><span class="line"><span class="cl"><span class="s1">    &#39;&#39;&#39;</span>
+</span></span></span><span class="line"><span class="cl"><span class="s1">    '''</span>
 </span></span><span class="line"><span class="cl">    <span class="k">global</span> <span class="n">browser</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">_count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">attempt_count</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">        <span class="n">item</span> <span class="o">=</span> <span class="n">browser</span><span class="o">.</span><span class="n">find_elements</span><span class="p">(</span><span class="n">by</span><span class="p">,</span> <span class="n">query</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">            <span class="n">item</span> <span class="o">=</span> <span class="n">item</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> has found&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> has found'</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="k">break</span>
-</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> is not present, attempt: </span><span class="si">{</span><span class="n">_count</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Element </span><span class="si">{</span><span class="n">query</span><span class="si">}</span><span class="s1"> is not present, attempt: </span><span class="si">{</span><span class="n">_count</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_duration</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">item</span> <span class="ow">is</span> <span class="nb">list</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&#34;Element not find!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">logging</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">"Element not find!"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">item</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -374,7 +356,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -384,10 +366,10 @@ if (!doNotTrack) {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># import Action chains</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># import Action chains</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver</span> <span class="kn">import</span> <span class="n">ActionChains</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#element</span>
-</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">&#34;name&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">source</span> <span class="o">=</span> <span class="n">driver</span><span class="o">.</span><span class="n">find_element_by_id</span><span class="p">(</span><span class="s2">"name"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1">#action chain object</span>
 </span></span><span class="line"><span class="cl"><span class="n">action</span> <span class="o">=</span> <span class="n">ActionChains</span><span class="p">(</span><span class="n">driver</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># move to element operation</span>
@@ -399,7 +381,7 @@ if (!doNotTrack) {
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -413,7 +395,7 @@ if (!doNotTrack) {
 </span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">undetected_chromedriver</span> <span class="k">as</span> <span class="nn">uc</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
@@ -427,10 +409,10 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="firefox-configs-and-page-load-strategy">Firefox configs and page load strategy<a hidden class="anchor" aria-hidden="true" href="#firefox-configs-and-page-load-strategy">#</a></h2>
+</div><h2 id="firefox-configs-and-page-load-strategy">Firefox configs and page load strategy<a aria-hidden="true" class="anchor" hidden="" href="#firefox-configs-and-page-load-strategy">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -440,23 +422,23 @@ if (!doNotTrack) {
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">FirefoxOptions</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&#34;-profile&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&#34;/home/sukai/snap/firefox/common/.mozilla/firefox/irinbvf5.default-release&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">page_load_strategy</span> <span class="o">=</span> <span class="s2">&#34;eager&#34;</span> <span class="c1"># none, eager, normal</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"-profile"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"/home/sukai/snap/firefox/common/.mozilla/firefox/irinbvf5.default-release"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">page_load_strategy</span> <span class="o">=</span> <span class="s2">"eager"</span> <span class="c1"># none, eager, normal</span>
 </span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">True</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">(</span><span class="n">service</span><span class="o">=</span><span class="n">FirefoxService</span><span class="p">(</span><span class="n">GeckoDriverManager</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">()),</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="lxml-html-xpath-with-requests">lxml html xpath with requests<a hidden class="anchor" aria-hidden="true" href="#lxml-html-xpath-with-requests">#</a></h2>
+</div><h2 id="lxml-html-xpath-with-requests">lxml html xpath with requests<a aria-hidden="true" class="anchor" hidden="" href="#lxml-html-xpath-with-requests">#</a></h2>
 <ul>
 <li>used for requests (simpler and faster in some cases)</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -477,23 +459,23 @@ if (!doNotTrack) {
 </span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">html</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">lxml</span> <span class="kn">import</span> <span class="n">html</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">complete_url</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span>
 </span></span><span class="line"><span class="cl"><span class="n">tree</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">content</span><span class="p">)</span> <span class="c1"># read byte content</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># print(&#34;start loading&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print("start loading")</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># latitude </span>
-</span></span><span class="line"><span class="cl"><span class="n">latitude_xp</span> <span class="o">=</span> <span class="s1">&#39;//h3[contains(text(), &#34;Coordinates&#34;)]/following-sibling::p[contains(text(), &#34;Latitude&#34;)]&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">latitude_xp</span> <span class="o">=</span> <span class="s1">'//h3[contains(text(), "Coordinates")]/following-sibling::p[contains(text(), "Latitude")]'</span>
 </span></span><span class="line"><span class="cl"><span class="n">latitude_ele</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">xpath</span><span class="p">(</span><span class="n">latitude_xp</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">latitude_ele</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="n">latitude_ele</span> <span class="o">=</span> <span class="n">latitude_ele</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="n">latitude_info</span> <span class="o">=</span> <span class="n">latitude_ele</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&#34;Latitude: &#34;</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># print(&#39;latitude_info&#39;, latitude_info)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">latitude_info</span> <span class="o">=</span> <span class="n">latitude_ele</span><span class="o">.</span><span class="n">text_content</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"Latitude: "</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print('latitude_info', latitude_info)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">temp</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">latitude_info</span>
+</span></span><span class="line"><span class="cl">    <span class="n">temp</span><span class="p">[</span><span class="s1">'latitude'</span><span class="p">]</span> <span class="o">=</span> <span class="n">latitude_info</span>
 </span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="k">return</span> 
 </span></span></code></pre></td></tr></table>
@@ -501,10 +483,10 @@ if (!doNotTrack) {
 </div><ul>
 <li>text_content() will get all the text in the node, which is same as <code>.text</code> in selenium</li>
 </ul>
-<h2 id="concurrent-tqdm-process_map">concurrent tqdm process_map<a hidden class="anchor" aria-hidden="true" href="#concurrent-tqdm-process_map">#</a></h2>
+<h2 id="concurrent-tqdm-process_map">concurrent tqdm process_map<a aria-hidden="true" class="anchor" hidden="" href="#concurrent-tqdm-process_map">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -532,7 +514,7 @@ if (!doNotTrack) {
 </span><span class="lnt">26
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm.contrib.concurrent</span> <span class="kn">import</span> <span class="n">process_map</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm.contrib.concurrent</span> <span class="kn">import</span> <span class="n">process_map</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span><span class="p">,</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Lock</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -552,16 +534,16 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="c1"># IMPORTANT we must attach dict to the manager dict, nest dict update is banned in multiprocessing</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">temp</span> <span class="o">=</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;United States&#34;</span><span class="p">:</span> <span class="s2">&#34;New York&#34;</span><span class="p">,</span> 
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Italy&#34;</span><span class="p">:</span> <span class="s2">&#34;Naples&#34;</span><span class="p">,</span> 
-</span></span><span class="line"><span class="cl">  <span class="s2">&#34;England&#34;</span><span class="p">:</span> <span class="s2">&#34;London&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">"United States"</span><span class="p">:</span> <span class="s2">"New York"</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="s2">"Italy"</span><span class="p">:</span> <span class="s2">"Naples"</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">  <span class="s2">"England"</span><span class="p">:</span> <span class="s2">"London"</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span> <span class="c1"># OK</span>
-</span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">][</span><span class="s1">&#39;United States&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;New York&#34;</span> <span class="c1"># BAD</span>
+</span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">][</span><span class="s1">'United States'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"New York"</span> <span class="c1"># BAD</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="xpath-cheatsheet">Xpath cheatsheet<a hidden class="anchor" aria-hidden="true" href="#xpath-cheatsheet">#</a></h2>
-<html><head><script crossorigin="anonymous" integrity="sha512-i+UmpoqoJqHkpXQ3mQfaIF8UZ2RAGoyqJvMzAKTadhBVhRk883EHluxdPsMf7c5/43D5tVpwIE8KLE1kQa0uCg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+</div><h2 id="xpath-cheatsheet">Xpath cheatsheet<a aria-hidden="true" class="anchor" hidden="" href="#xpath-cheatsheet">#</a></h2>
+<script crossorigin="anonymous" integrity="sha512-i+UmpoqoJqHkpXQ3mQfaIF8UZ2RAGoyqJvMzAKTadhBVhRk883EHluxdPsMf7c5/43D5tVpwIE8KLE1kQa0uCg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
 <script crossorigin="anonymous" integrity="sha512-NuVK4+sDE809oDhbdAABRO1nTe80t56vXda8dg1UQ+RcQ8x7WakwTzKE7LOosoNCKi7EH7FXo7mritFNWpZiLQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js"></script>
 <style>
 .embed-pdf-the-canvas {
@@ -603,7 +585,7 @@ if (!doNotTrack) {
   to { -webkit-transform: rotate(360deg); }
 }
 </style>
-</head><body><div id="paginator">
+<div id="paginator">
 <button id="prev">Previous</button>
 <button id="next">Next</button>
        
@@ -613,12 +595,7 @@ if (!doNotTrack) {
 <div id="loadingWrapper">
 <div id="loading"></div>
 </div>
-
-  
-    <canvas class="embed-pdf-the-canvas" id="the-canvas-1"></canvas>
-  
-
-
+<canvas class="embed-pdf-the-canvas" id="the-canvas-1"></canvas>
 </div>
 <script type="text/javascript">
 window.onload = function() {
@@ -800,26 +777,21 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 }
 
 </script>
-</body></html>
-
-
 </div>
-    </main>
-    
+</main>
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-    <span>
+<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -875,5 +847,4 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 
 </script>
 </body>
-
 </html>

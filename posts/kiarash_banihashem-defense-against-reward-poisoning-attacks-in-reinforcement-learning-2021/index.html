@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021 | Sukai Huang</title>
-<meta name="keywords" content="reward poisoning, reinforcement learning, robust reinforcement learning">
-<meta name="description" content="[TOC]
- Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.  Contribution   we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/index.xml">
+<meta content="reward poisoning, reinforcement learning, robust reinforcement learning" name="keywords"/>
+<meta content="[TOC]
+ Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.  Contribution   we formalise this reasoning and characterize the utility of our novel framework for designing defense policies." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/" rel="canonical"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/index.xml" rel="alternate" type="application/rss+xml"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -57,10 +56,9 @@
 
     </style>
 </noscript>
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -77,9 +75,7 @@
         });
     });
 </script>
-    
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -89,18 +85,15 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta property="og:title" content="Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021" />
-<meta property="og:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/" />
-<meta property="og:image" content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/image-assets/cover.png" />
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/image-assets/cover.png" />
-<meta name="twitter:title" content="Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021"/>
-<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews"/>
-
-
+<meta content="Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021" property="og:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/" property="og:url"/>
+<meta content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/image-assets/cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/image-assets/cover.png" name="twitter:image"/>
+<meta content="Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -122,8 +115,6 @@ if (!doNotTrack) {
 }
 </script>
 </head>
-
-
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -135,99 +126,90 @@ if (!doNotTrack) {
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/archives" title="Archives">
-                    <span>Archives</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/categories/" title="📁">
-                    <span>📁</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/tags/" title="🏷️">
-                    <span>🏷️</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://sino-huang.github.io/search/" title="🔍">
-                    <span>🔍</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archives">
+<span>Archives</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="📁">
+<span>📁</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="🏷️">
+<span>🏷️</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/search/" title="🔍">
+<span>🔍</span>
+</a>
+</li>
+</ul>
+</nav>
 </header>
 <main class="main"><div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#summary-of-paper" aria-label="Summary of paper">Summary of paper</a><ul>
-                        
-                <li>
-                    <a href="#motivation" aria-label="Motivation">Motivation</a></li>
-                <li>
-                    <a href="#contribution" aria-label="Contribution">Contribution</a></li>
-                <li>
-                    <a href="#some-key-terms" aria-label="Some key terms">Some key terms</a>
-                </li>
-            </ul>
-            </li>
-            </ul>
-        </div>
-    </details>
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
+<li>
+<a aria-label="Summary of paper" href="#summary-of-paper">Summary of paper</a><ul>
+<li>
+<a aria-label="Motivation" href="#motivation">Motivation</a></li>
+<li>
+<a aria-label="Contribution" href="#contribution">Contribution</a></li>
+<li>
+<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a>
+</li>
+</ul>
+</li>
+</ul>
 </div>
- 
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/posts/">Posts</a></div>
-  <h1>
+</details>
+</div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
+<h1>
     Kiarash_banihashem Defense Against Reward Poisoning Attacks in Reinforcement Learning 2021
-    <a href="index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
 </header>
 <div class="post-content"><p>[TOC]</p>
 <ol>
@@ -236,18 +218,18 @@ if (!doNotTrack) {
 <li>Publish Year: 20 Jun 2021</li>
 <li>Review Date: Tue, Dec 27, 2022</li>
 </ol>
-<h2 id="summary-of-paper">Summary of paper<a hidden class="anchor" aria-hidden="true" href="#summary-of-paper">#</a></h2>
-<h3 id="motivation">Motivation<a hidden class="anchor" aria-hidden="true" href="#motivation">#</a></h3>
+<h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
+<h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
 <ul>
 <li>our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.</li>
 </ul>
-<h3 id="contribution">Contribution<a hidden class="anchor" aria-hidden="true" href="#contribution">#</a></h3>
+<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
 <ul>
 <li>
 <p>we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include</p>
 <ul>
 <li>we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal</li>
-<li>we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks &ndash; this framework focuses on optimizing the agent&rsquo;s worst-case utility among the set of reward functions that are plausible candidates of the true reward function</li>
+<li>we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks – this framework focuses on optimizing the agent’s worst-case utility among the set of reward functions that are plausible candidates of the true reward function</li>
 <li>we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy</li>
 <li>we empirically demonstrate the effectiveness of our approach using numerical simulations</li>
 </ul>
@@ -263,40 +245,36 @@ if (!doNotTrack) {
 <ul>
 <li>sample efficiency is not the focus of this study.</li>
 </ul>
-<h3 id="some-key-terms">Some key terms<a hidden class="anchor" aria-hidden="true" href="#some-key-terms">#</a></h3>
+<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
 <p><strong>score of policy</strong></p>
 <p>$\mathbb E[(1-\gamma) \sum_{t=1}^\infty \gamma^{t-1} R(s_t, a_t) | \pi, \sigma]$</p>
 <ul>
 <li>this is the total expected return scaled by a factor of $1 - \gamma$</li>
 </ul>
 <p><strong>attack model</strong></p>
-<p><img loading="lazy" src="image-assets/image-20221227201612330.png" alt="image-20221227201612330"  />
+<p><img alt="image-20221227201612330" loading="lazy" src="image-assets/image-20221227201612330.png"/>
 </p>
 <p><strong>the proposed optmisation objective</strong></p>
-<p><img loading="lazy" src="image-assets/image-20221227201954082.png" alt="image-20221227201954082"  />
+<p><img alt="image-20221227201954082" loading="lazy" src="image-assets/image-20221227201954082.png"/>
 </p>
 <ul>
 <li>this is the optimisation problem of maximising the worst case performance of the agent.</li>
 </ul>
-
-
 </div>
-    </main>
-    
+</main>
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-    <span>
+<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -352,5 +330,4 @@ if (!doNotTrack) {
 
 </script>
 </body>
-
 </html>
