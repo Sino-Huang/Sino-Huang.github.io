@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Oct 2023 16:44:22 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 22:33:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pascal Bercher Detecting Ai Planning Modelling Mistakes Potential Errors and Benchmark Domains 2023</title>
+      <link>https://sino-huang.github.io/posts/pascal-bercher-detecting-ai-planning-modelling-mistakes-potential-errors-and-benchmark-domains-2023/</link>
+      <pubDate>Mon, 13 Nov 2023 22:33:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/pascal-bercher-detecting-ai-planning-modelling-mistakes-potential-errors-and-benchmark-domains-2023/</guid>
+      <description>[TOC]
+ Title: Detecting Ai Planning Modelling Mistakes Potential Errors and Benchmark Domains Author: Pascal Bercher et. al. Publish Year: 2023 Review Date: Mon, Nov 13, 2023 url: https://bercher.net/publications/2023/Sleath2023PossibleModelingErrors.pdf  Summary of paper Contribution  the author provided a compilation of potential modelling errors the author supply a public repository of 56 (flawed) benchmark domains conducted an evaluation of well-known AI planning tools for their ability to diagnose those errors, showing that not a single tool is able to spot all errors, with no tool being strictly stronger than another.</description>
+    </item>
+    
     <item>
       <title>Yecheng Jason Ma Eureka Human Level Reward Design via Coding Large Language Models 2023</title>
       <link>https://sino-huang.github.io/posts/yecheng-jason-ma-eureka-human-level-reward-design-via-coding-large-language-models-2023/</link>

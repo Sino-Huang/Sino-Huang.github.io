@@ -9,7 +9,25 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Oct 2023 16:44:22 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Nov 2023 22:33:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pddl</title>
+      <link>https://sino-huang.github.io/tags/pddl/</link>
+      <pubDate>Mon, 13 Nov 2023 22:33:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/pddl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>planning</title>
+      <link>https://sino-huang.github.io/tags/planning/</link>
+      <pubDate>Mon, 13 Nov 2023 22:33:14 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/planning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>large language model</title>
       <link>https://sino-huang.github.io/tags/large-language-model/</link>
@@ -43,15 +61,6 @@
       <pubDate>Sun, 08 Oct 2023 10:37:37 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/multimodal-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pddl</title>
-      <link>https://sino-huang.github.io/tags/pddl/</link>
-      <pubDate>Fri, 06 Oct 2023 18:16:28 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/pddl/</guid>
       <description></description>
     </item>
     
@@ -349,15 +358,6 @@
       <pubDate>Mon, 06 Feb 2023 22:36:41 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/visual-question-answering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>planning</title>
-      <link>https://sino-huang.github.io/tags/planning/</link>
-      <pubDate>Mon, 30 Jan 2023 13:43:20 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/planning/</guid>
       <description></description>
     </item>
     
