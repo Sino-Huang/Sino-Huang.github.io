@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Nov 2023 22:33:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 17:24:08 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alex_coulter Theory Alignment via a Classical Encoding of Regular Bismulation 2022</title>
+      <link>https://sino-huang.github.io/posts/alex_coulter-theory-alignment-via-a-classical-encoding-of-regular-bismulation-2022/</link>
+      <pubDate>Wed, 29 Nov 2023 17:24:08 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/alex_coulter-theory-alignment-via-a-classical-encoding-of-regular-bismulation-2022/</guid>
+      <description>[TOC]
+ Title: Theory Alignment via a Classical Encoding of Regular Bismulation 2022 Author: Alex Coulter et. al. Publish Year: KEPS 2022 Review Date: Wed, Nov 29, 2023 url: https://icaps22.icaps-conference.org/workshops/KEPS/KEPS-22_paper_7781.pdf  Summary of paper Motivation  the main question we seek to answer is how we can test if two models align (where the fluents and action implementations may differ), and if not, where that misalignment occurs.  Contribution  the work is built on a foundation of regular bisimulation found that the proposed alignment was not only viable, with many submissions having &amp;ldquo;solutions&amp;rdquo; to the merged model showing where a modelling error occurs, but several cases demonstrated errors with the submitted domains that were subtle and detected only by this added approach.</description>
+    </item>
+    
     <item>
       <title>Pascal Bercher Detecting Ai Planning Modelling Mistakes Potential Errors and Benchmark Domains 2023</title>
       <link>https://sino-huang.github.io/posts/pascal-bercher-detecting-ai-planning-modelling-mistakes-potential-errors-and-benchmark-domains-2023/</link>

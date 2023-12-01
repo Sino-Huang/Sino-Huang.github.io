@@ -9,11 +9,20 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Nov 2023 22:33:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Nov 2023 17:24:08 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>model comparison</title>
+      <link>https://sino-huang.github.io/tags/model-comparison/</link>
+      <pubDate>Wed, 29 Nov 2023 17:24:08 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/model-comparison/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>pddl</title>
       <link>https://sino-huang.github.io/tags/pddl/</link>
-      <pubDate>Mon, 13 Nov 2023 22:33:14 +1100</pubDate>
+      <pubDate>Wed, 29 Nov 2023 17:24:08 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/pddl/</guid>
       <description></description>
