@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 27 Dec 2022 22:50:14 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reward-poisoning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Young_wu Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning 2022</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/young_wu-reward-poisoning-attacks-on-offline-multi-agent-reinforcement-learning-2022/</guid>
       <description>[TOC]
- Title: Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning Author: Young Wu et. al. Publish Year: 1 Dec 2022 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation Contribution  unlike attacks on single-agent RL, we show that the attacker can install the target poilcy as a Markov Perfect Dominant Strategy Equilibrium (MPDSE), which rational agents are guaranteed to follow. This attack can be significantly cheaper than separate single-agent attacks.</description>
+Title: Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning Author: Young Wu et. al. Publish Year: 1 Dec 2022 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation Contribution unlike attacks on single-agent RL, we show that the attacker can install the target poilcy as a Markov Perfect Dominant Strategy Equilibrium (MPDSE), which rational agents are guaranteed to follow. This attack can be significantly cheaper than separate single-agent attacks.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/</guid>
       <description>[TOC]
- Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.  Contribution   we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.</description>
+Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards. Contribution we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/amin_rakhsha-reward-poisoning-in-reinforcement-learning-attacks-against-unknown-learners-in-unknown-environments-2021/</guid>
       <description>[TOC]
- Title: Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments Author: Amin Rakhsha et. al. Publish Year: 16 Feb 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  Our attack makes minimum assumptions on the prior knowledge of the environment or the learner&amp;rsquo;s learning algorithm. most of the prior work makes strong assumptions on the knowledge of adversary &amp;ndash; it often assumed that the adversary has full knowledge of the environment or the agent&amp;rsquo;s learning algorithm or both.</description>
+Title: Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments Author: Amin Rakhsha et. al. Publish Year: 16 Feb 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation Our attack makes minimum assumptions on the prior knowledge of the environment or the learner&amp;rsquo;s learning algorithm. most of the prior work makes strong assumptions on the knowledge of adversary &amp;ndash; it often assumed that the adversary has full knowledge of the environment or the agent&amp;rsquo;s learning algorithm or both.</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@
       
       <guid>https://sino-huang.github.io/posts/xuezhou_zhang-adaptive-reward-poisoning-attacks-against-reinforcement-learning-2020/</guid>
       <description>[TOC]
- Title: Adaptive Reward Poisoning Attacks Against Reinforcement Learning Author: Xuezhou Zhang et. al. Publish Year: 22 Jun, 2020 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  Non-adaptive attacks have been the focus of prior works. However, we show that under mild conditions, adaptive attacks can achieve the nefarious policy in steps polynomial in state-space size $|S|$ whereas non-adaptive attacks require exponential steps.  Contribution  we provide a lower threshold below which reward-poisoning attack is infeasible and RL is certified to be safe.</description>
+Title: Adaptive Reward Poisoning Attacks Against Reinforcement Learning Author: Xuezhou Zhang et. al. Publish Year: 22 Jun, 2020 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation Non-adaptive attacks have been the focus of prior works. However, we show that under mild conditions, adaptive attacks can achieve the nefarious policy in steps polynomial in state-space size $|S|$ whereas non-adaptive attacks require exponential steps. Contribution we provide a lower threshold below which reward-poisoning attack is infeasible and RL is certified to be safe.</description>
     </item>
     
     <item>
@@ -57,8 +58,8 @@
       
       <guid>https://sino-huang.github.io/posts/yunhan_huang-manipulating-reinforcement-learning-stealthy-attacks-on-cost-signals-2020/</guid>
       <description>[TOC]
- Title: Manipulating Reinforcement Learning Stealthy Attacks on Cost Signals Deceptive Reinforcement Learning Under Adversarial Manipulations on Cost Signals Author: Yunhan Huang et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation understand the impact of the falsification of cost signals on the convergence of Q-learning algorithm
-Contribution  In Q-learning, we show that Q-learning algorithms converge under stealthy attacks and bounded falsifications on cost signals.</description>
+Title: Manipulating Reinforcement Learning Stealthy Attacks on Cost Signals Deceptive Reinforcement Learning Under Adversarial Manipulations on Cost Signals Author: Yunhan Huang et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022 Summary of paper Motivation understand the impact of the falsification of cost signals on the convergence of Q-learning algorithm
+Contribution In Q-learning, we show that Q-learning algorithms converge under stealthy attacks and bounded falsifications on cost signals. and there is a robust region within which the adversarial attacks cannot achieve its objective.</description>
     </item>
     
   </channel>

@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 26 Dec 2022 01:11:23 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/perturbed-rewards/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tom_everitt Reinforcement Learning With a Corrupted Reward Channel 2017</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/tom_everitt-reinforcement-learning-with-a-corrupted-reward-channel-2017/</guid>
       <description>[TOC]
- Title: Reinforcement Learning With a Corrupted Reward Channel Author: Tom Everitt Publish Year: August 22, 2017 Review Date: Mon, Dec 26, 2022  Summary of paper Motivation  we formalise this problem as a generalised Markov Decision Problem called Corrupt Reward MDP Traditional RL methods fare poorly in CRMDPs, even under strong simplifying assumptions and when trying to compensate for the possibly corrupt rewards  Contribution  two ways around the problem are investigated.</description>
+Title: Reinforcement Learning With a Corrupted Reward Channel Author: Tom Everitt Publish Year: August 22, 2017 Review Date: Mon, Dec 26, 2022 Summary of paper Motivation we formalise this problem as a generalised Markov Decision Problem called Corrupt Reward MDP Traditional RL methods fare poorly in CRMDPs, even under strong simplifying assumptions and when trying to compensate for the possibly corrupt rewards Contribution two ways around the problem are investigated.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/vincent_zhuang-no-regret-reinforcement-learning-with-heavy-tailed-rewards-2021/</guid>
       <description>[TOC]
- Title: No-Regret Reinforcement Learning With Heavy Tailed Rewards Author: Vincent Zhuang et. al. Publish Year: 2021 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation  To the best of our knowledge, no prior work has considered our setting of heavy-tailed rewards in the MDP setting.  Contribution  We demonstrate that robust mean estimation techniques can be broadly applied to reinforcement learning algorithms (specifically confidence-based methods) in order to provably han- dle the heavy-tailed reward setting  Some key terms Robust UCB algorithm</description>
+Title: No-Regret Reinforcement Learning With Heavy Tailed Rewards Author: Vincent Zhuang et. al. Publish Year: 2021 Review Date: Sun, Dec 25, 2022 Summary of paper Motivation To the best of our knowledge, no prior work has considered our setting of heavy-tailed rewards in the MDP setting. Contribution We demonstrate that robust mean estimation techniques can be broadly applied to reinforcement learning algorithms (specifically confidence-based methods) in order to provably han- dle the heavy-tailed reward setting Some key terms Robust UCB algorithm</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/wenshuai_zhao-towards-closing-the-sim-to-real-gap-in-collaborative-multi-robot-deep-reinforcement-learning-2020/</guid>
       <description>[TOC]
- Title: Towards Closing the Sim to Real Gap in Collaborative Multi Robot Deep Reinforcement Learning Author: Wenshuai Zhao et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022  Summary of paper Motivation  we introduce the effect of sensing, calibration, and accuracy mismatches in distributed reinforcement learning we discuss on how both the different types of perturbations and how the number of agents experiencing those perturbations affect the collaborative learning effort  Contribution   This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors</description>
+Title: Towards Closing the Sim to Real Gap in Collaborative Multi Robot Deep Reinforcement Learning Author: Wenshuai Zhao et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022 Summary of paper Motivation we introduce the effect of sensing, calibration, and accuracy mismatches in distributed reinforcement learning we discuss on how both the different types of perturbations and how the number of agents experiencing those perturbations affect the collaborative learning effort Contribution This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@
       
       <guid>https://sino-huang.github.io/posts/jan_corazza-reinforcement-learning-with-stochastic-reward-machines-2022/</guid>
       <description>[TOC]
- Title: Reinforcement Learning With Stochastic Reward Machines Author: Jan Corazza et. al. Publish Year: AAAI 2022 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  reward machines are an established tool for dealing with reinforcement learning problems in which rewards are sparse and depend on complex sequence of actions. However, existing algorithms for learning reward machines assume an overly idealized setting where rewards have to be free of noise.</description>
+Title: Reinforcement Learning With Stochastic Reward Machines Author: Jan Corazza et. al. Publish Year: AAAI 2022 Review Date: Sat, Dec 24, 2022 Summary of paper Motivation reward machines are an established tool for dealing with reinforcement learning problems in which rewards are sparse and depend on complex sequence of actions. However, existing algorithms for learning reward machines assume an overly idealized setting where rewards have to be free of noise.</description>
     </item>
     
     <item>
@@ -57,7 +58,7 @@
       
       <guid>https://sino-huang.github.io/posts/oguzhan_dogru-reinforcement-learning-with-constrained-uncertain-reward-function-through-particle-filtering-2022/</guid>
       <description>[TOC]
- Title: Reinforcement Learning With Constrained Uncertain Reward Function Through Particle Filtering Author: Oguzhan Dogru et. al. Publish Year: July 2022 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  this study consider a type of uncertainty, which is caused by the sensor that are utilised for reward function. When the noise is Gaussian and the system is linear  Contribution  this work used &amp;ldquo;particle filtering&amp;rdquo; technique to estimate the true reward function from the perturbed discrete reward sampling points.</description>
+Title: Reinforcement Learning With Constrained Uncertain Reward Function Through Particle Filtering Author: Oguzhan Dogru et. al. Publish Year: July 2022 Review Date: Sat, Dec 24, 2022 Summary of paper Motivation this study consider a type of uncertainty, which is caused by the sensor that are utilised for reward function. When the noise is Gaussian and the system is linear Contribution this work used &amp;ldquo;particle filtering&amp;rdquo; technique to estimate the true reward function from the perturbed discrete reward sampling points.</description>
     </item>
     
     <item>
@@ -67,7 +68,7 @@
       
       <guid>https://sino-huang.github.io/posts/inaam_ilahi-challenges-and-countermeasures-for-adversarial-attacks-on-reinforcement-learning-2022/</guid>
       <description>[TOC]
- Title: Challenges and Countermeasures for Adversarial Attacks on Reinforcement Learning Author: Inaam Ilahi et. al. Publish Year: 13 Sep 2021 Review Date: Sat, Dec 24, 2022  Summary of paper Motivation  DRL is susceptible to adversarial attacks, which precludes its use in real-life critical system and applications. Therefore, we provide a comprehensive survey that discusses emerging attacks on DRL-based system and the potential countermeasures to defend against these attacks.</description>
+Title: Challenges and Countermeasures for Adversarial Attacks on Reinforcement Learning Author: Inaam Ilahi et. al. Publish Year: 13 Sep 2021 Review Date: Sat, Dec 24, 2022 Summary of paper Motivation DRL is susceptible to adversarial attacks, which precludes its use in real-life critical system and applications. Therefore, we provide a comprehensive survey that discusses emerging attacks on DRL-based system and the potential countermeasures to defend against these attacks. Contribution we provide the DRL fundamentals along with a non-exhaustive taxonomy of advanced DRL algorithms we present a comprehensive survey of adversarial attacks on DRL and their potential countermeasures we discuss the available benchmarks and metrics for the robustness of DRL finally, we highlight the open issues and research challenges in the robustness of DRL and introduce some potential research directions .</description>
     </item>
     
     <item>
@@ -77,7 +78,7 @@
       
       <guid>https://sino-huang.github.io/posts/zuxin_liu-on-the-robustness-of-safe-reinforcement-learning-under-observational-perturbations-2022/</guid>
       <description>[TOC]
- Title: On the Robustness of Safe Reinforcement Learning Under Observational Perturbations Author: Zuxin Liu et. al. Publish Year: 3 Oct 2022 Review Date: Thu, Dec 22, 2022  Summary of paper Motivation  While many recent safe RL methods with deep policies can achieve outstanding constraint satisfaction in noise-free simulation environment, such a concern regarding their vulnerability under adversarial perturbation has not been studies in the safe RL setting.</description>
+Title: On the Robustness of Safe Reinforcement Learning Under Observational Perturbations Author: Zuxin Liu et. al. Publish Year: 3 Oct 2022 Review Date: Thu, Dec 22, 2022 Summary of paper Motivation While many recent safe RL methods with deep policies can achieve outstanding constraint satisfaction in noise-free simulation environment, such a concern regarding their vulnerability under adversarial perturbation has not been studies in the safe RL setting. Contribution we are the first to formally analyze the unique vulnerability of the optimal policy in safe RL under observational corruptions.</description>
     </item>
     
     <item>
@@ -87,7 +88,7 @@
       
       <guid>https://sino-huang.github.io/posts/ruben_majadas-disturbing-reinforcement-learning-agents-with-corrupted-rewards-2021/</guid>
       <description>[TOC]
- Title: Disturbing Reinforcement Learning Agents With Corrupted Rewards Author: Ruben Majadas et. al. Publish Year: Feb 2021 Review Date: Sat, Dec 17, 2022  Summary of paper Motivation  recent works have shown how the performance of RL algorithm decreases under the influence of soft changes in the reward function. However, little work has been done about how sensitive these disturbances are depending on the aggressiveness of the attack and the learning learning exploration strategy.</description>
+Title: Disturbing Reinforcement Learning Agents With Corrupted Rewards Author: Ruben Majadas et. al. Publish Year: Feb 2021 Review Date: Sat, Dec 17, 2022 Summary of paper Motivation recent works have shown how the performance of RL algorithm decreases under the influence of soft changes in the reward function. However, little work has been done about how sensitive these disturbances are depending on the aggressiveness of the attack and the learning learning exploration strategy.</description>
     </item>
     
     <item>
@@ -97,7 +98,7 @@
       
       <guid>https://sino-huang.github.io/posts/jingkang_wang-reinforcement-learning-with-perturbed-rewards-2020/</guid>
       <description>[TOC]
- Title: Reinforcement Learning With Perturbed Rewards Author: Jingkang Wang et. al. Publish Year: 1 Feb 2020 Review Date: Fri, Dec 16, 2022  Summary of paper Motivation  this paper studies RL with perturbed rewards, where a technical challenge is to revert the perturbation process so that the right policy is learned. Some experiments are used to support the algorithm (i.e., estimate the confusion matrix and revert) using existing techniques from the supervised learning (and crowdsourcing) literature.</description>
+Title: Reinforcement Learning With Perturbed Rewards Author: Jingkang Wang et. al. Publish Year: 1 Feb 2020 Review Date: Fri, Dec 16, 2022 Summary of paper Motivation this paper studies RL with perturbed rewards, where a technical challenge is to revert the perturbation process so that the right policy is learned. Some experiments are used to support the algorithm (i.e., estimate the confusion matrix and revert) using existing techniques from the supervised learning (and crowdsourcing) literature.</description>
     </item>
     
   </channel>

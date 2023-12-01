@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 30 Mar 2023 21:20:31 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/generative-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mariana_learning Generative Models With Goal Conditioned Reinforcement Learning 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/mariana_learning-generative-models-with-goal-conditioned-reinforcement-learning-2023/</guid>
       <description>[TOC]
- Title: Learning Generative Models With Goal Conditioned Reinforcement Learning Author: Mariana Vargas Vieyra et. al. Publish Year: 26 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.14811  Summary of paper Contribution  we present a novel framework for learning generative models with goal-conditioned reinforcement learning we define two agents, a goal conditioned agent (GC-agent) and a supervised agent (S-agent) Given a user-input initial state, the GC-agent learns to reconstruct the training set.</description>
+Title: Learning Generative Models With Goal Conditioned Reinforcement Learning Author: Mariana Vargas Vieyra et. al. Publish Year: 26 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.14811 Summary of paper Contribution we present a novel framework for learning generative models with goal-conditioned reinforcement learning we define two agents, a goal conditioned agent (GC-agent) and a supervised agent (S-agent) Given a user-input initial state, the GC-agent learns to reconstruct the training set.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/itsugun_cho-deep-rl-with-hierarchical-action-exploration-for-dialogue-generation-2023/</guid>
       <description>[TOC]
- Title: Deep RL With Hierarchical Action Exploration for Dialogue Generation Author: Itsugun Cho et. al. Publish Year: 22 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/pdf/2303.13465v1.pdf  Summary of paper Motivation  Approximate dynamic programming applied to dialogue generation involves policy improvement with action sampling. However, such a practice is inefficient for reinforcement learning because the eligible (high action value) responses are very sparse, and the greedy policy sustained by the random sampling is flabby.</description>
+Title: Deep RL With Hierarchical Action Exploration for Dialogue Generation Author: Itsugun Cho et. al. Publish Year: 22 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/pdf/2303.13465v1.pdf Summary of paper Motivation Approximate dynamic programming applied to dialogue generation involves policy improvement with action sampling. However, such a practice is inefficient for reinforcement learning because the eligible (high action value) responses are very sparse, and the greedy policy sustained by the random sampling is flabby.</description>
     </item>
     
   </channel>

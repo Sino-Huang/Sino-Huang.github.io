@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 20 Sep 2023 23:17:51 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/pddl-repair/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alba Gragera Pddl Domain Repair Fixing Domains With Incomplete Action Effects 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/alba-gragera-pddl-domain-repair-fixing-domains-with-incomplete-action-effects-2023/</guid>
       <description>[TOC]
- Title: PDDL Domain Repair Fixing Domains With Incomplete Action Effects Author: Alba Gragera et. al. Publish Year: ICAPS 2023 Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/demos/papers/2791_paper.pdf  Summary of paper Contribution  in this paper, they present a tool to repair planning models where the effects of some actions are incomplete. The received input is compiled to a new extended planning task, in which actions are permitted to insert possible missing effects.</description>
+Title: PDDL Domain Repair Fixing Domains With Incomplete Action Effects Author: Alba Gragera et. al. Publish Year: ICAPS 2023 Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/demos/papers/2791_paper.pdf Summary of paper Contribution in this paper, they present a tool to repair planning models where the effects of some actions are incomplete. The received input is compiled to a new extended planning task, in which actions are permitted to insert possible missing effects.</description>
     </item>
     
   </channel>

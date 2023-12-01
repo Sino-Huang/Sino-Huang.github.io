@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 16 Oct 2023 07:24:26 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/code-generation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mark Chen Evaluating Large Language Models Trained on Code 2021</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/mark-chen-evaluating-large-language-models-trained-on-code-2021/</guid>
       <description>[TOC]
- Title: Evaluating Large Language Models Trained on Code Author: Mark Chen et. al. OPENAI Publish Year: 14 Jul 2021 Review Date: Mon, Oct 16, 2023 url: https://arxiv.org/pdf/2107.03374.pdf  Summary of paper Motivation  it is the research paper behind Github Copilot tech more recently, language models have also fueled progress towards the longstanding challenge of program synthesis.  Contribution  we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts.</description>
+Title: Evaluating Large Language Models Trained on Code Author: Mark Chen et. al. OPENAI Publish Year: 14 Jul 2021 Review Date: Mon, Oct 16, 2023 url: https://arxiv.org/pdf/2107.03374.pdf Summary of paper Motivation it is the research paper behind Github Copilot tech more recently, language models have also fueled progress towards the longstanding challenge of program synthesis. Contribution we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/baptiste-roziere-code-llama-open-foundation-model-for-code-2023/</guid>
       <description>[TOC]
- Title: Code Llama Open Foundation Model for Code Author: Baptiste Roziere et. al. META AI Publish Year: 2023 Review Date: Mon, Oct 16, 2023 url: https://scontent.fmel13-1.fna.fbcdn.net/v/t39.2365-6/369856151_1754812304950972_1159666448927483931_n.pdf?_nc_cat=107&amp;amp;ccb=1-7&amp;amp;_nc_sid=3c67a6&amp;amp;_nc_ohc=Hcg6QsYJx1wAX_okEZO&amp;amp;_nc_ht=scontent.fmel13-1.fna&amp;amp;oh=00_AfAYtfHJfYeomAQWiMUTRo96iP8d4sZrlIfD_KAeYlYaDQ&amp;amp;oe=6531E8CF  Summary of paper Motivation  CODE Llama, support for large input contexts, and zero-shot instruction following ability for programming tasks.  Contribution  CODE llama reaches SOTA performance among open models on several code benchmarks  Some key terms   By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.</description>
+Title: Code Llama Open Foundation Model for Code Author: Baptiste Roziere et. al. META AI Publish Year: 2023 Review Date: Mon, Oct 16, 2023 url: https://scontent.fmel13-1.fna.fbcdn.net/v/t39.2365-6/369856151_1754812304950972_1159666448927483931_n.pdf?_nc_cat=107&amp;amp;ccb=1-7&amp;amp;_nc_sid=3c67a6&amp;amp;_nc_ohc=Hcg6QsYJx1wAX_okEZO&amp;amp;_nc_ht=scontent.fmel13-1.fna&amp;amp;oh=00_AfAYtfHJfYeomAQWiMUTRo96iP8d4sZrlIfD_KAeYlYaDQ&amp;amp;oe=6531E8CF Summary of paper Motivation CODE Llama, support for large input contexts, and zero-shot instruction following ability for programming tasks. Contribution CODE llama reaches SOTA performance among open models on several code benchmarks Some key terms By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/</guid>
       <description>[TOC]
- Title: Neural Machine Translation for Code Generation Author: Dharma KC et. al. Publish Year: 22 May 2023 Review Date: Sun, May 28, 2023 url: https://arxiv.org/pdf/2305.13504.pdf  Summary of paper Motivation  Recently, NMT methods have been adapted to the generation of program code. In NMT for code generation, the task is to generate output source code that satisfies constraints expressed in the input.  Conclusion  NMT-based architecture are getting quite popular for source generation from various input.</description>
+Title: Neural Machine Translation for Code Generation Author: Dharma KC et. al. Publish Year: 22 May 2023 Review Date: Sun, May 28, 2023 url: https://arxiv.org/pdf/2305.13504.pdf Summary of paper Motivation Recently, NMT methods have been adapted to the generation of program code. In NMT for code generation, the task is to generate output source code that satisfies constraints expressed in the input. Conclusion NMT-based architecture are getting quite popular for source generation from various input.</description>
     </item>
     
   </channel>

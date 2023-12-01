@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Mon, 03 Apr 2023 15:25:01 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-model/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Luke_zettlemoyer Scaling Expert Language Models With Unsupervised Domain Discovery 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/luke_zettlemoyer-scaling-expert-language-models-with-unsupervised-domain-discovery-2023/</guid>
       <description>[TOC]
- Title: Scaling Expert Language Models With Unsupervised Domain Discovery Author: Luke Zettlemoyer et. al. Publish Year: 24 Mar, 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.14177.pdf  Summary of paper Contribution  we introduce a simple but efficient method to asynchronously train large, sparse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference.</description>
+Title: Scaling Expert Language Models With Unsupervised Domain Discovery Author: Luke Zettlemoyer et. al. Publish Year: 24 Mar, 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.14177.pdf Summary of paper Contribution we introduce a simple but efficient method to asynchronously train large, sparse language models on arbitrary text corpora. Our method clusters a corpus into sets of related documents, trains a separate expert language model on each cluster, and combines them in a sparse ensemble for inference.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/xuanting_chen-how-robust-is-gpt35-to-predecessors-a-comprehensive-study-on-language-understanding-tasks/</guid>
       <description>[TOC]
- Title: How Robust Is GPT 3.5 to Predecessors a Comprehensive Study on Language Understanding Tasks Author: Xuanting Chen et. al. Publish Year: 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/ftp/arxiv/papers/2303/2303.00293.pdf  Summary of paper Motivation  GPT3.5, their robustness, and abilities to handle various complexities of the open world have yet to be explored, which is especially crucial in assessing the stability of models and is a key aspect of trustworthy AI  Contribution  Our study yielded the following findings by comparing GPT 3.</description>
+Title: How Robust Is GPT 3.5 to Predecessors a Comprehensive Study on Language Understanding Tasks Author: Xuanting Chen et. al. Publish Year: 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/ftp/arxiv/papers/2303/2303.00293.pdf Summary of paper Motivation GPT3.5, their robustness, and abilities to handle various complexities of the open world have yet to be explored, which is especially crucial in assessing the stability of models and is a key aspect of trustworthy AI Contribution Our study yielded the following findings by comparing GPT 3.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</guid>
       <description>[TOC]
- Title: The Wisdom of Hindsight Makes Language Models Better Instruction Followers Author: Tianjun Zhang et. al. Publish Year: 10 Feb 2023 Review Date: Thu, Mar 2, 2023 url: https://arxiv.org/pdf/2302.05206.pdf  Summary of paper Motivation  Reinforcement learning with Human Feedback (RLHF) demonstrates impressive performance on the GPT series models. However, the pipeline for reward and value networks  Contribution  in this paper, we consider an alternative approach: converting feedback to instruction by relabeling the original one and training the model for better alignment in a supervised manner.</description>
+Title: The Wisdom of Hindsight Makes Language Models Better Instruction Followers Author: Tianjun Zhang et. al. Publish Year: 10 Feb 2023 Review Date: Thu, Mar 2, 2023 url: https://arxiv.org/pdf/2302.05206.pdf Summary of paper Motivation Reinforcement learning with Human Feedback (RLHF) demonstrates impressive performance on the GPT series models. However, the pipeline for reward and value networks Contribution in this paper, we consider an alternative approach: converting feedback to instruction by relabeling the original one and training the model for better alignment in a supervised manner.</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@
       
       <guid>https://sino-huang.github.io/posts/timo_schick-toolformer-language-models-can-teach-themselves-to-use-tools-2023/</guid>
       <description>[TOC]
- Title: Toolformer: Language Models Can Teach Themselves to Use Tools 2023 Author: Timo Schick et. al. META AI research Publish Year: 9 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04761.pdf  Summary of paper Motivation  LMs exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also struggle with basic functionality, such as arithmetic or factual lookup.</description>
+Title: Toolformer: Language Models Can Teach Themselves to Use Tools 2023 Author: Timo Schick et. al. META AI research Publish Year: 9 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04761.pdf Summary of paper Motivation LMs exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also struggle with basic functionality, such as arithmetic or factual lookup. Contribution In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds.</description>
     </item>
     
     <item>
@@ -57,7 +58,7 @@
       
       <guid>https://sino-huang.github.io/posts/almog_gueta-knowledge-is-a-region-in-weight-space-for-fine-tuned-language-model-2023/</guid>
       <description>[TOC]
- Title: Knowledge Is a Region in Weight Space for Fine Tuned Language Model Author: Almog Gueta et. al. Publish Year: 12 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04863.pdf  Summary of paper Motivation  relatively little is known a bout the relationships between different models, especially those trained or tested on different datasets.  Contribution  we demonstrate that fine-tuned models that were optimized for high performance, reside in well-defined regions in weight space, and vice versa language models that have been fine-tuned on the same dataset form a tight cluster in the same weight space and that models fine-tuned on different datasets from the same underlying task form a looser cluster.</description>
+Title: Knowledge Is a Region in Weight Space for Fine Tuned Language Model Author: Almog Gueta et. al. Publish Year: 12 Feb 2023 Review Date: Wed, Mar 1, 2023 url: https://arxiv.org/pdf/2302.04863.pdf Summary of paper Motivation relatively little is known a bout the relationships between different models, especially those trained or tested on different datasets. Contribution we demonstrate that fine-tuned models that were optimized for high performance, reside in well-defined regions in weight space, and vice versa language models that have been fine-tuned on the same dataset form a tight cluster in the same weight space and that models fine-tuned on different datasets from the same underlying task form a looser cluster.</description>
     </item>
     
   </channel>

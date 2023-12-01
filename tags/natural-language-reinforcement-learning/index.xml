@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 26 May 2023 01:00:02 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/natural-language-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jiannan_xiang Language Models Meet World Models 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/jiannan_xiang-language-models-meet-world-models-2023/</guid>
       <description>[TOC]
- Title: Language Models Meet World Models: Embodied Experiences Enhance Language Models Author: Jiannan Xiang et. al. Publish Year: 22 May 2023 Review Date: Fri, May 26, 2023 url: https://arxiv.org/pdf/2305.10626v2.pdf  Summary of paper Motivation  LLM often struggle with simple reasoning and planning in physical environment the limitation arises from the fact that LMs are trained only on written text and miss essential embodied knowledge and skills.  Contribution  we propose a new paradigm of enhancing LMs by finetuning them with world models, to gain diverse embodied knowledge while retaining their general language capabilities.</description>
+Title: Language Models Meet World Models: Embodied Experiences Enhance Language Models Author: Jiannan Xiang et. al. Publish Year: 22 May 2023 Review Date: Fri, May 26, 2023 url: https://arxiv.org/pdf/2305.10626v2.pdf Summary of paper Motivation LLM often struggle with simple reasoning and planning in physical environment the limitation arises from the fact that LMs are trained only on written text and miss essential embodied knowledge and skills. Contribution we propose a new paradigm of enhancing LMs by finetuning them with world models, to gain diverse embodied knowledge while retaining their general language capabilities.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/</guid>
       <description>[TOC]
- Title: Language-Driven Representation Learning for Robotics Author: Siddharth Karamcheti et. al. Publish Year: 24 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.12766.pdf  Summary of paper Motivation  recent work in visual representation learning for robotics demonstrates the viability of learning from large video datasets of humans performing everyday tasks. leveraging methods such as masked autoencoding and contrastive learning, these representations exhibit strong transfer to policy learning for visuomotor control but robot learning encompasses a diverse set of problems beyond control including grasp affordance prediction, language-conditioned imitation learning, and intent scoring for human-robot collaboration amongst others.</description>
+Title: Language-Driven Representation Learning for Robotics Author: Siddharth Karamcheti et. al. Publish Year: 24 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.12766.pdf Summary of paper Motivation recent work in visual representation learning for robotics demonstrates the viability of learning from large video datasets of humans performing everyday tasks. leveraging methods such as masked autoencoding and contrastive learning, these representations exhibit strong transfer to policy learning for visuomotor control but robot learning encompasses a diverse set of problems beyond control including grasp affordance prediction, language-conditioned imitation learning, and intent scoring for human-robot collaboration amongst others.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/jing_cheng_pang-natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation-2023/</guid>
       <description>[TOC]
- Title: Jing_cheng_pang Natural Language Conditioned Reinforcement Learning With Inside Out Task Language Development and Translation 2023 Author: Jing-Cheng Pang et. al. Publish Year: 18 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.09368.pdf  Summary of paper Motivation  previous approaches generally implemented language-conditioned RL by providing human instructions in natural language and training a following policy  this is outside-in approach the policy needs to comprehend the NL and manage the task simultaneously.</description>
+Title: Jing_cheng_pang Natural Language Conditioned Reinforcement Learning With Inside Out Task Language Development and Translation 2023 Author: Jing-Cheng Pang et. al. Publish Year: 18 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.09368.pdf Summary of paper Motivation previous approaches generally implemented language-conditioned RL by providing human instructions in natural language and training a following policy this is outside-in approach the policy needs to comprehend the NL and manage the task simultaneously.</description>
     </item>
     
   </channel>

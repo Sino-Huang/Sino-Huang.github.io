@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 14 Jan 2022 00:26:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/rnn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tao_lei When Attention Meets Fast Recurrence Training Language Models With Reduced Compute 2021</title>
@@ -17,9 +18,10 @@
       
       <guid>https://sino-huang.github.io/posts/tao_lei-when-attention-meets-fast-recurrence-training-language-models-with-reduced-compute-2021/</guid>
       <description>[TOC]
- Title: When Attention Meets Fast Recurrence: Training Language Models with Reduce Compute Author: Tao Lei Publish Year: Sep 2021 Review Date: Jan 2022  Summary of paper As the author mentioned, the inspiration of SRU++ comes from two lines of research:
- paralleization / speed problem of Original RNN     leveraging recurrence in conjunction with self-attention  Structure of SRU++
-New discovery :little attention is needed given recurrence.</description>
+Title: When Attention Meets Fast Recurrence: Training Language Models with Reduce Compute Author: Tao Lei Publish Year: Sep 2021 Review Date: Jan 2022 Summary of paper As the author mentioned, the inspiration of SRU++ comes from two lines of research:
+paralleization / speed problem of Original RNN leveraging recurrence in conjunction with self-attention Structure of SRU++
+New discovery :little attention is needed given recurrence.
+Similar to the observation of Merity (2019), they found using a couple of attention layers sufficient to obtain SOTA results.</description>
     </item>
     
   </channel>

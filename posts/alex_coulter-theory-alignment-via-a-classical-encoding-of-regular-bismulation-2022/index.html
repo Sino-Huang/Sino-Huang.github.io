@@ -7,7 +7,7 @@
 <title>Alex_coulter Theory Alignment via a Classical Encoding of Regular Bismulation 2022 | Sukai Huang</title>
 <meta content="pddl, model comparison" name="keywords"/>
 <meta content="[TOC]
- Title: Theory Alignment via a Classical Encoding of Regular Bismulation 2022 Author: Alex Coulter et. al. Publish Year: KEPS 2022 Review Date: Wed, Nov 29, 2023 url: https://icaps22.icaps-conference.org/workshops/KEPS/KEPS-22_paper_7781.pdf  Summary of paper Motivation  the main question we seek to answer is how we can test if two models align (where the fluents and action implementations may differ), and if not, where that misalignment occurs.  Contribution  the work is built on a foundation of regular bisimulation found that the proposed alignment was not only viable, with many submissions having “solutions” to the merged model showing where a modelling error occurs, but several cases demonstrated errors with the submitted domains that were subtle and detected only by this added approach." name="description"/>
+Title: Theory Alignment via a Classical Encoding of Regular Bismulation 2022 Author: Alex Coulter et. al. Publish Year: KEPS 2022 Review Date: Wed, Nov 29, 2023 url: https://icaps22.icaps-conference.org/workshops/KEPS/KEPS-22_paper_7781.pdf Summary of paper Motivation the main question we seek to answer is how we can test if two models align (where the fluents and action implementations may differ), and if not, where that misalignment occurs. Contribution the work is built on a foundation of regular bisimulation found that the proposed alignment was not only viable, with many submissions having “solutions” to the merged model showing where a modelling error occurs, but several cases demonstrated errors with the submitted domains that were subtle and detected only by this added approach." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/alex_coulter-theory-alignment-via-a-classical-encoding-of-regular-bismulation-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -191,18 +191,14 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Contribution" href="#contribution">Contribution</a></li>
 <li>
-<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
+<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li>
+<li>
+<a aria-label="Evaluation" href="#evaluation">Evaluation</a></li></ul>
 </li>
 <li>
 <a aria-label="Good things about the paper (one paragraph)" href="#good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)</a></li>
 <li>
-<a aria-label="Major comments" href="#major-comments">Major comments</a></li>
-<li>
-<a aria-label="Minor comments" href="#minor-comments">Minor comments</a></li>
-<li>
-<a aria-label="Incomprehension" href="#incomprehension">Incomprehension</a></li>
-<li>
-<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
+<a aria-label="Major comments" href="#major-comments">Major comments</a>
 </li>
 </ul>
 </div>
@@ -299,15 +295,76 @@ if (!doNotTrack) {
 <li><img alt="image-20231201130304259" loading="lazy" src="image-assets/image-20231201130304259.png"/>
 </li>
 </ul>
-<p>TODO: read example</p>
+<p><strong>Error Example</strong></p>
+<p><img alt="image-20231201193802959" loading="lazy" src="image-assets/image-20231201193802959.png"/>
+</p>
+<p><img alt="image-20231201195846651" loading="lazy" src="image-assets/image-20231201195846651.png"/>
+</p>
+<ul>
+<li>this is an erroneous action definition as it did not set <code>not (off ?l)</code>. (forgetting to delete a fluent.) The found plan for the merged domain is then <code>(turnon light2)</code> and then <code>(fail_turnon2 light2)</code>.
+<ul>
+<li>this means the action was allowed to execute in the second domain, but not the first</li>
+<li>it is only through the analysis we present here that the misalignment between the two models is detected.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Diagnose a misalignment between models</strong></p>
+<ul>
+<li><em>Failed action precondition</em>. The most common source of error found is an error in precondition of the failed action. Thus, the first step in analyzing a plan is to contrast the precondition of act in both of the models, and see if there is mismatch in what is implemented</li>
+<li><em>Previous Action Effect</em>: If the two models capture act similarly, then the next most common issue leading to misalignment is a previous action in the plan. Typically, candidate solutions that lead to a failure are short, and so the space of actions that must be considered is limited.
+<ul>
+<li>it would be an action that directly influences the failed action act (through its preconditions)</li>
+</ul>
+</li>
+<li><em>Initial State</em>: the most rare source of errors is a misalignment in the initial state implementation.
+<ul>
+<li>this source of error can be seen as analogous to the “Previous Action Effect” Errors, when one views the initial state as the effects of a single action at the start of a plan.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Precondition Satisfaction</strong></p>
+<ul>
+<li>Applicability, by its very definition, is concerned with precondition satisfaction</li>
+</ul>
+<p><strong>How planner is involved in this work</strong></p>
+<ul>
+<li>to decide if they are indeed regular bisimilar</li>
+<li>if they are not, a candidate explanation as to why in the form of a sequence of actions
+<ul>
+<li>if <code>(fail_turnon2 light2)</code> is in the plan, then check the correctness of <code>turnon2</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="evaluation">Evaluation<a aria-hidden="true" class="anchor" hidden="" href="#evaluation">#</a></h3>
+<ul>
+<li>there is an assignment task where the implementation involved devising (1) the fluents for the domain; (2) the preconditions and effects for 4 actions (move, pickup, drop, unlock; (3) the initial and goal states for 3 described problems</li>
+</ul>
+<p><strong>Other grading indicators</strong></p>
+<ul>
+<li>other planning oriented functionality included
+<ol>
+<li>running student domain/problem files to generate plans</li>
+<li>validating student-found plans with the reference model</li>
+<li>validating reference plans with the student model</li>
+<li>align to a model which include the most common error</li>
+</ol>
+</li>
+<li>in the end, we can find the following errors
+<ul>
+<li>plan-based errors</li>
+<li>validation errors (the plan from one model should be executable and valid in the other model)</li>
+<li>alignment error (the aligning method in this paper)</li>
+</ul>
+</li>
+</ul>
 <h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
+<ul>
+<li>There is a rich theory behind what is being analyzed – plans in the merged model effectively provide us with a proof of contradiction to the two models being a regular bismulation ([Milner 1990](Milner, R. 1990. Operational and Algebraic Semantics of Concurrent Processes. In van Leeuwen, J., ed., Handbook of Theoretical Computer Science, Volume B: Formal Models and Semantics, 1201–1242. Elsevier and MIT Press))</li>
+</ul>
 <h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
 <ul>
 <li>They discuss the (mainly qualitative) results in Section 4.</li>
 </ul>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
 </div>
 </main>
 <footer class="footer">

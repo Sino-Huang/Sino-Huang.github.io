@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 22 Dec 2021 17:22:15 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/neuro-symbolic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jiayuan_mao Grammar Based Grounded Lexicon Learning 2021</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/jiayuan_mao-grammar-based-grounded-lexicon-learning-2021/</guid>
       <description>[TOC]
- Title: Grammar-Based Grounded Lexicon Learning Author: Jiayuan Mao Publish Year: 2021 NeurIPS Review Date: Dec 2021  Summary of paper The paper extend the previous work &amp;ldquo;Neuro-Symbolic Concept Learner&amp;rdquo; by parsing the natural language questions using symbolic manner.
+Title: Grammar-Based Grounded Lexicon Learning Author: Jiayuan Mao Publish Year: 2021 NeurIPS Review Date: Dec 2021 Summary of paper The paper extend the previous work &amp;ldquo;Neuro-Symbolic Concept Learner&amp;rdquo; by parsing the natural language questions using symbolic manner.
 The core semantic parsing technique is Combinatory Categorical Grammar with CKY algorithm to prune unlikely expressions.
 The full picture looks like this
 The detailed algorithm process looks like this

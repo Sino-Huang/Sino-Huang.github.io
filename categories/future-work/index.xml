@@ -9,6 +9,7 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 21 Apr 2022 11:01:14 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/future-work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Angela_fan Augmenting Transformer With Knn Composite Memory for Dialog 2021</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/angela_fan-augmenting-transformer-with-knn-composite-memory-for-dialog-2021/</guid>
       <description>[TOC]
- Title: Augmenting Transformers with KNN-based composite memory for dialog Author: Angela Fan et. al. Publish Year: 2021 Review Date: Apr 2022  Summary of paper Motivation The author proposed augmenting generative Transformer neural network with KNN based Information Fetching module
+Title: Augmenting Transformers with KNN-based composite memory for dialog Author: Angela Fan et. al. Publish Year: 2021 Review Date: Apr 2022 Summary of paper Motivation The author proposed augmenting generative Transformer neural network with KNN based Information Fetching module
 Each KIF module learns a read operation to access fix external knowledge (e.g., WIKI)
 The author demonstrated the effectiveness of this approach by identifying relevant knowledge required for knowledgeable but engaging dialog from Wikipedia, images and human-written dialog utterances.</description>
     </item>
@@ -29,7 +30,7 @@ The author demonstrated the effectiveness of this approach by identifying releva
       
       <guid>https://sino-huang.github.io/posts/machel_reid-can-wikipedia-help-offline-rl-2022/</guid>
       <description>[TOC]
- Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022  Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
+Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022 Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
 Moreover, when the model is trained from scratch, it suffers from slow convergence speeds
 In this paper, they look to take advantage of this formulation of reinforcement learning as sequence modelling and investigate the transferability of pre-trained sequence models on other domains (vision, language) when fine tuned on offline RL tasks (control, games).</description>
     </item>
