@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Aug 2023 17:36:47 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Dec 2023 20:25:12 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python Logger</title>
+      <link>https://sino-huang.github.io/programming-notes/python-logger/</link>
+      <pubDate>Mon, 04 Dec 2023 20:25:12 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/python-logger/</guid>
+      <description>[TOC]
+Title: Python Logger Review Date: Mon, Dec 4, 2023 Python Logger python logging library is a good way to logging the progress Common use case 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 logger = logging.getLogger(__name__) logger.setLevel(logging.DEBUG) formatter = logging.Formatter(&amp;#39;%(asctime)s - %(name)s - %(levelname)s - %(message)s&amp;#39;) # console handler stream_handler = logging.StreamHandler() stream_handler.setLevel(logging.DEBUG) stream_handler.setFormatter(formatter) logger.addHandler(stream_handler) # file handler file_handler = logging.</description>
+    </item>
+    
     <item>
       <title>Langchain Use Cases 2023</title>
       <link>https://sino-huang.github.io/programming-notes/langchain-use-cases-2023/</link>
