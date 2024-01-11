@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Nov 2023 17:24:08 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Jan 2024 19:54:29 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gerevini Plan Constraints and Preferences in Pddl3 2005</title>
+      <link>https://sino-huang.github.io/posts/gerevini-plan-constraints-and-preferences-in-pddl3-2005/</link>
+      <pubDate>Thu, 11 Jan 2024 19:54:29 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/gerevini-plan-constraints-and-preferences-in-pddl3-2005/</guid>
+      <description>[TOC]
+ Title: Gerevini Plan Constraints and Preferences in PDDL3 Author: Alfonso Gerevini, Derek Long Publish Year: 2005 Review Date: Thu, Jan 11, 2024 url: http://www.cs.yale.edu/~dvm/papers/pddl-ipc5.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Nir Lipo Planning With Perspectives Using Functional Strips 2022</title>
+      <link>https://sino-huang.github.io/posts/nir-lipo-planning-with-perspectives-using-functional-strips-2022/</link>
+      <pubDate>Thu, 11 Jan 2024 19:41:55 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/nir-lipo-planning-with-perspectives-using-functional-strips-2022/</guid>
+      <description>[TOC]
+ Title: Planning With Perspectives &amp;ndash; Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+    </item>
+    
     <item>
       <title>Alex_coulter Theory Alignment via a Classical Encoding of Regular Bismulation 2022</title>
       <link>https://sino-huang.github.io/posts/alex_coulter-theory-alignment-via-a-classical-encoding-of-regular-bismulation-2022/</link>
