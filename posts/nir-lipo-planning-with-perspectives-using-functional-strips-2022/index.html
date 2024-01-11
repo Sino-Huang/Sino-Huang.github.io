@@ -7,7 +7,7 @@
 <title>Nir Lipo Planning With Perspectives Using Functional Strips 2022 | Sukai Huang</title>
 <meta content="pddl" name="keywords"/>
 <meta content="[TOC]
- Title: Planning With Perspectives – Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work " name="description"/>
+ Title: Planning With Perspectives – Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation  we present a novel approach to epistemic planning called planning with perspectives (PWP) that is both more expressive and computationally more efficient than existing state of the art epistemic planning tools.  Contribution  in this paper, we decompose epistemic planning by delegating reasoning about epistemic formulae to an external solver, i." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/nir-lipo-planning-with-perspectives-using-functional-strips-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -191,18 +191,11 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Contribution" href="#contribution">Contribution</a></li>
 <li>
-<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
+<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li>
+<li>
+<a aria-label="F-STRIPS" href="#f-strips">F-STRIPS</a>
 </li>
-<li>
-<a aria-label="Good things about the paper (one paragraph)" href="#good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)</a></li>
-<li>
-<a aria-label="Major comments" href="#major-comments">Major comments</a></li>
-<li>
-<a aria-label="Minor comments" href="#minor-comments">Minor comments</a></li>
-<li>
-<a aria-label="Incomprehension" href="#incomprehension">Incomprehension</a></li>
-<li>
-<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
+</ul>
 </li>
 </ul>
 </div>
@@ -232,13 +225,36 @@ if (!doNotTrack) {
 <p><img alt="image-20240111194239165" loading="lazy" src="image-assets/cover.png"/>
 </p>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>we present a novel approach to epistemic planning called planning with perspectives (PWP) that is both more expressive and computationally more efficient than existing state of the art epistemic planning tools.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<ul>
+<li>in this paper, we decompose epistemic planning by delegating reasoning about epistemic formulae to an external solver, i.e., Functional STRIPS</li>
+<li>F-STRIPS supports the user of external, black-box functions within action models.</li>
+<li>Building on recent work that demonstrates the relationship between what an agent ‘sees’ and what it knows, we define the perspective of each agent using an external function, and build a solver for epistemic logic around this.</li>
+</ul>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)<a aria-hidden="true" class="anchor" hidden="" href="#good-things-about-the-paper-one-paragraph">#</a></h2>
-<h2 id="major-comments">Major comments<a aria-hidden="true" class="anchor" hidden="" href="#major-comments">#</a></h2>
-<h2 id="minor-comments">Minor comments<a aria-hidden="true" class="anchor" hidden="" href="#minor-comments">#</a></h2>
-<h2 id="incomprehension">Incomprehension<a aria-hidden="true" class="anchor" hidden="" href="#incomprehension">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>external functions (black-box)</strong></p>
+<ul>
+<li>they are arbitrary functions implemented in a programming language that can be called during planning.</li>
+</ul>
+<p><strong>epistemic planning</strong></p>
+<ul>
+<li>in many scenarios, autonomous agents need to plan about the knowledge or beliefs of other agents in the environment.</li>
+<li>epistemic planning is concerned about action theories may allow modellers reasoning not only about variables representing the state of the world, but also the beliefs and knowledge that other agents have about those variables.</li>
+</ul>
+<h3 id="f-strips">F-STRIPS<a aria-hidden="true" class="anchor" hidden="" href="#f-strips">#</a></h3>
+<p><strong>external functions representation</strong></p>
+<ul>
+<li>they start with the @ character.</li>
+<li><code>@validMove</code> is an external function that checks whether the move is valid, encoding Pacman’s Maze implicitly.</li>
+<li><code>@move_ghost</code> encodes deterministic movement strategy followed by all ghosts, a strategy that depends on Pacman’s Manhattan distance.
+<ul>
+<li>it looks like the effect of the external function will not be recorded as fluents.</li>
+</ul>
+</li>
+</ul>
 </div>
 </main>
 <footer class="footer">

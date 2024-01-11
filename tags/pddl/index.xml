@@ -17,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/gerevini-plan-constraints-and-preferences-in-pddl3-2005/</guid>
       <description>[TOC]
- Title: Gerevini Plan Constraints and Preferences in PDDL3 Author: Alfonso Gerevini, Derek Long Publish Year: 2005 Review Date: Thu, Jan 11, 2024 url: http://www.cs.yale.edu/~dvm/papers/pddl-ipc5.pdf  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+ Title: Gerevini Plan Constraints and Preferences in PDDL3 Author: Alfonso Gerevini, Derek Long Publish Year: 2005 Review Date: Thu, Jan 11, 2024 url: http://www.cs.yale.edu/~dvm/papers/pddl-ipc5.pdf  Summary of paper Motivation  the notion of plan quality in automated planning is a practically very important issue. it is important to generate plans of good or optimal quality and we need to express the plan quality the proposed extended language allows us to express strong and soft constraints on plan trajectories  i.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@
       
       <guid>https://sino-huang.github.io/posts/nir-lipo-planning-with-perspectives-using-functional-strips-2022/</guid>
       <description>[TOC]
- Title: Planning With Perspectives &amp;ndash; Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation Contribution Some key terms Good things about the paper (one paragraph) Major comments Minor comments Incomprehension Potential future work </description>
+ Title: Planning With Perspectives &amp;ndash; Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation  we present a novel approach to epistemic planning called planning with perspectives (PWP) that is both more expressive and computationally more efficient than existing state of the art epistemic planning tools.  Contribution  in this paper, we decompose epistemic planning by delegating reasoning about epistemic formulae to an external solver, i.</description>
     </item>
     
     <item>
