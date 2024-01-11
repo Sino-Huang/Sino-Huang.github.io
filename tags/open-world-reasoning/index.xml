@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Thu, 09 Mar 2023 19:28:47 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/open-world-reasoning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Alan_lindsay Framer Planning Models From Natural Language Action Descriptions 2017</title>
@@ -18,8 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/alan_lindsay-framer-planning-models-from-natural-language-action-descriptions-2017/</guid>
       <description>[TOC]
-Title: Framer: Planning Models From Natural Language Action Descriptions Author: Alan Lindsay et. al. Publish Year: 2017 Review Date: Thu, Mar 9, 2023 url: https://core.ac.uk/download/pdf/322329049.pdf Summary of paper Motivation for modelling assisting and model generation tools, there is a underlying assumption that the user can formulate the problem using some formal language. this motivates us to generate planning domain models directly from NL descriptions. Some key terms approach
-we start from NL descriptions of actions and use NL analysis to construct structured representation, from which we construct formal representations of action sequences ?</description>
+ Title: Framer: Planning Models From Natural Language Action Descriptions Author: Alan Lindsay et. al. Publish Year: 2017 Review Date: Thu, Mar 9, 2023 url: https://core.ac.uk/download/pdf/322329049.pdf  Summary of paper Motivation  for modelling assisting and model generation tools, there is a underlying assumption that the user can formulate the problem using some formal language. this motivates us to generate planning domain models directly from NL descriptions.  Some key terms approach</description>
     </item>
     
   </channel>

@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Thu, 06 Apr 2023 10:02:22 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/video-captioning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Qinghao_hitea Hierarchical Temporal Aware Video Language Pre Training 2022</title>
@@ -18,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/qinghao_hitea-hierarchical-temporal-aware-video-language-pre-training-2022/</guid>
       <description>[TOC]
-Title: Hierarchical Temporal Aware Video Language Pre Training Author: Qinghao Ye, Fei Huang et. al. Publish Year: 30 Dec 2022 Review Date: Thu, Apr 6, 2023 url: https://arxiv.org/pdf/2212.14546.pdf Summary of paper Motivation most previous methods directly inherit or adapt typical image-language pre-training paradigms to video-language pretraining, thus not fully exploiting the unique characteristic of video, i.e., temporal. Contribution this paper, the two novel pretraining tasks for modeling cross-modal alignment between moments and texts as well as the temporal relations of video-text pairs.</description>
+ Title: Hierarchical Temporal Aware Video Language Pre Training Author: Qinghao Ye, Fei Huang et. al. Publish Year: 30 Dec 2022 Review Date: Thu, Apr 6, 2023 url: https://arxiv.org/pdf/2212.14546.pdf  Summary of paper Motivation  most previous methods directly inherit or adapt typical image-language pre-training paradigms to video-language pretraining, thus not fully exploiting the unique characteristic of video, i.e., temporal.  Contribution  this paper, the two novel pretraining tasks for modeling cross-modal alignment between moments and texts as well as the temporal relations of video-text pairs.</description>
     </item>
     
   </channel>

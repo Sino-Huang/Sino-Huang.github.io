@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Mon, 28 Feb 2022 18:58:52 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/glue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thang_m_pham Out of Order How Important Is the Sequential Order of Words in a Sentence in Natural Language Understanding Tasks 2021</title>
@@ -18,9 +17,9 @@
       
       <guid>https://sino-huang.github.io/posts/thang_m_pham-out-of-order-how-important-is-the-sequential-order-of-words-in-a-sentence-in-natural-language-understanding-tasks-2021/</guid>
       <description>[TOC]
-Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks? Author: Thang M. Pham Publish Year: Jul 2021 Review Date: Feb 2022 Summary of paper The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
+ Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks? Author: Thang M. Pham Publish Year: Jul 2021 Review Date: Feb 2022  Summary of paper The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
 The research questions are the following
-Do BERT-based models trained on GLUE care about the order of words in a sentence?</description>
+ Do BERT-based models trained on GLUE care about the order of words in a sentence?</description>
     </item>
     
   </channel>

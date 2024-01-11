@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Tue, 15 Mar 2022 16:34:45 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/domain-modelling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stephen_cresswell Generalised Domain Model Acquisition From Action Traces 2013</title>
@@ -18,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/stephen_cresswell-generalised-domain-model-acquisition-from-action-traces-2013/</guid>
       <description>[TOC]
-Title: Generalised Domain Model Acquisition from Action Traces (LOCM2) Author: Stephen Cresswell et. al. Publish Year: 2013 Review Date: Mar 2022 Summary of paper Motivation One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.
+ Title: Generalised Domain Model Acquisition from Action Traces (LOCM2) Author: Stephen Cresswell et. al. Publish Year: 2013 Review Date: Mar 2022  Summary of paper Motivation One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.
 This work extended LOCM by allowing multiple parameterised state machine to represent a single object.
 In other words, it is possible to automatically infer the underlying transition system from sample action sequences of the domain.</description>
     </item>

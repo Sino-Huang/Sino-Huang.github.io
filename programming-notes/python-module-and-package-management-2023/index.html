@@ -7,7 +7,7 @@
 <title>Python Module and Package Management 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content="[TOC]
-Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10 Python module common issue 1: python -m dir vs python dir python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library. thus ModuleNotFoundError may appear Standard way of import when you want to create a module use absolute path -&gt; from moduledir/packagename import filename avoid using relative path e." name="description"/>
+ Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10  Python module common issue 1: python -m dir  vs python dir  python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library.  thus ModuleNotFoundError may appear    Standard way of import when you want to create a module  use absolute path -&gt; from moduledir/packagename import filename avoid using relative path  e." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -187,7 +187,7 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Python module" href="#python-module">Python module</a><ul>
 <li>
-<a aria-label="common issue 1: python -m dir vs python dir" href="#common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code></a></li>
+<a aria-label="common issue 1: python -m dir  vs python dir" href="#common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code></a></li>
 <li>
 <a aria-label="Standard way of import when you want to create a module" href="#standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module</a></li>
 <li>
@@ -475,7 +475,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nd">@hydra.main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">"config"</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@hydra</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">"config"</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">cfg</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
 </span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">)</span>
@@ -782,7 +782,7 @@ if (!doNotTrack) {
 </div>
 </main>
 <footer class="footer">
-<span>© 2023 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
 <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;

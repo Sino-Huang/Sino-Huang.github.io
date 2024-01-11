@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Tue, 22 Mar 2022 19:01:49 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/offline-rl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ilya_kostrikov Offline Rl With Implicit Q Learning 2021</title>
@@ -18,9 +17,9 @@
       
       <guid>https://sino-huang.github.io/posts/ilya_kostrikov-offline-rl-with-implicit-q-learning-2021/</guid>
       <description>[TOC]
-Title: Offline Reinforcement Learning with Implicit Q-learning Author:Ilya Kostrikov et. al. Publish Year: 2021 Review Date: Mar 2022 Summary of paper Motivation conflict in offline reinforcement learning
+ Title: Offline Reinforcement Learning with Implicit Q-learning Author:Ilya Kostrikov et. al. Publish Year: 2021 Review Date: Mar 2022  Summary of paper Motivation conflict in offline reinforcement learning
 offline reinforcement learning requires reconciling two conflicting aims:
-learning a policy that improves over the behaviour policy (old policy) that collected the dataset while at the same time minimizing the deviation from the behaviour policy so as to avoid errors due to distributional shift (e.</description>
+ learning a policy that improves over the behaviour policy (old policy) that collected the dataset while at the same time minimizing the deviation from the behaviour policy so as to avoid errors due to distributional shift (e.</description>
     </item>
     
   </channel>

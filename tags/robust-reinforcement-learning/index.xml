@@ -9,7 +9,6 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Tue, 27 Dec 2022 20:35:10 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/robust-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Xuezhou_zhang Robust Policy Gradient Against Strong Data Corruption 2021</title>
@@ -18,8 +17,8 @@
       
       <guid>https://sino-huang.github.io/posts/xuezhou_zhang-robust-policy-gradient-against-strong-data-corruption-2021/</guid>
       <description>[TOC]
-Title: Robust Policy Gradient Against Strong Data Corruption Author: Xuezhou Zhang et. al. Publish Year: 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Abstract Contribution the author utilised a SVD-denoising technique to identify and remove the possible reward perturbations this approach gives a robust RL algorithm Limitation
-This approach only solve the attack perturbation that is not consistent. (i.e. not stealthy) Some key terms Policy gradient methods</description>
+ Title: Robust Policy Gradient Against Strong Data Corruption Author: Xuezhou Zhang et. al. Publish Year: 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Abstract Contribution  the author utilised a SVD-denoising technique to identify and remove the possible reward perturbations this approach gives a robust RL algorithm  Limitation
+ This approach only solve the attack perturbation that is not consistent. (i.e. not stealthy)  Some key terms Policy gradient methods</description>
     </item>
     
     <item>
@@ -29,7 +28,7 @@ This approach only solve the attack perturbation that is not consistent. (i.e. n
       
       <guid>https://sino-huang.github.io/posts/kiarash_banihashem-defense-against-reward-poisoning-attacks-in-reinforcement-learning-2021/</guid>
       <description>[TOC]
-Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards. Contribution we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.</description>
+ Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022  Summary of paper Motivation  our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards.  Contribution   we formalise this reasoning and characterize the utility of our novel framework for designing defense policies.</description>
     </item>
     
   </channel>
