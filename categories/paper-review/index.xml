@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 11 Jan 2024 19:54:29 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Jan 2024 00:34:56 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jun Wang Conformal Temporal Logic Planning Using Llm 2023</title>
+      <link>https://sino-huang.github.io/posts/jun-wang-conformal-temporal-logic-planning-using-llm-2023/</link>
+      <pubDate>Sun, 21 Jan 2024 00:34:56 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jun-wang-conformal-temporal-logic-planning-using-llm-2023/</guid>
+      <description>[TOC]
+ Title: Conformal Temporal Logic Planning Using Llm 2023 Author: Jun Wang et. al. Publish Year: 19 Dec, 2023 Review Date: Sun, Jan 21, 2024 url: arXiv:2309.10092v2  Summary of paper Motivation  Unlike previous methods that focus on low-level system configurations, this approach focuses on NL-based atomic propositions.  now the LTL tasks are defined over NL-based atomic propositions   Robots are required to perform high-level sub tasks specified in natural language.</description>
+    </item>
+    
     <item>
       <title>Gerevini Plan Constraints and Preferences in Pddl3 2005</title>
       <link>https://sino-huang.github.io/posts/gerevini-plan-constraints-and-preferences-in-pddl3-2005/</link>
