@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jan 2024 18:51:51 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Jan 2024 17:40:43 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React Js Development 2024</title>
+      <link>https://sino-huang.github.io/programming-notes/react-js-development-2024/</link>
+      <pubDate>Sun, 21 Jan 2024 17:40:43 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/react-js-development-2024/</guid>
+      <description>[TOC]
+ Title: React Js Development 2024 Review Date: Sun, Jan 21, 2024 url:  React JS development (Typescript + Vite + React) VSC extension  ES7 + React NPM support for VS Coe Vite JavaScript and TypeScript  Init 1 2 3 4 5 6 7 8 9 10 11  curl -fsSL https://deb.nodesource.com/setup_21.x | sudo -E bash - &amp;amp;&amp;amp;\ sudo apt-get install -y nodejs npm create vite@latest npm create vite@latest yourapp -- --template react-ts cd yourapp npm install npm install antd react-redux react-router-dom redux sass reset-css # can also add them to package npm i -D @types/node npm run dev    add path hint in tsconfig add resolve alias @ in vite.</description>
+    </item>
+    
     <item>
       <title>Python and Os Utils 2024</title>
       <link>https://sino-huang.github.io/programming-notes/python-and-os-utils-2024/</link>
