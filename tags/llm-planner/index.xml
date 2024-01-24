@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>llm planner on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/llm-planner/</link>
+    <description>Recent content in llm planner on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 25 Jan 2024 00:55:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm-planner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Marta Skreta Replan Robotic Replanning 2024</title>
+      <link>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</link>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</guid>
+      <description>[TOC]
+ Title: Marta Skreta Replan Robotic Replanning 2024 Author: Marta Skreta et. al. Publish Year: 8 Jan 2024 Review Date: Thu, Jan 25, 2024 url: arXiv:2401.04157v1  Summary of paper Motivation Contribution Some key terms Results Summary Potential future work </description>
+    </item>
+    
+  </channel>
+</rss>

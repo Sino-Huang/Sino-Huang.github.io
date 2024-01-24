@@ -9,13 +9,22 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Jan 2024 16:01:20 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 00:55:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>llm agent</title>
       <link>https://sino-huang.github.io/tags/llm-agent/</link>
-      <pubDate>Mon, 22 Jan 2024 16:01:20 +1100</pubDate>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/llm-agent/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm planner</title>
+      <link>https://sino-huang.github.io/tags/llm-planner/</link>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
       <description></description>
     </item>
     
