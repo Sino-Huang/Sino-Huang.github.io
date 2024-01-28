@@ -141,27 +141,81 @@
     <lastmod>2021-12-05T10:48:45+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/machine-translation-reward-model/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/quality-estimation/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/zhiwei-he-improving-machine-translation-use-quality-estimation-as-a-reward-model-2024/</loc>
+    <lastmod>2024-01-28T22:53:41+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/krishan-rana-sayplan-grounding-llm-for-scalable-task-planning-2023/</loc>
+    <lastmod>2024-01-28T21:37:21+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/llm-planner-robotics/</loc>
+    <lastmod>2024-01-28T21:37:21+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/robotics/</loc>
+    <lastmod>2024-01-28T21:37:21+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/action-trajectory-constraints/</loc>
+    <lastmod>2024-01-28T21:28:51+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/luigi-bonassi-planning-with-qualitative-constraints-pddl3-2022/</loc>
+    <lastmod>2024-01-28T21:28:51+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/pddl3/</loc>
+    <lastmod>2024-01-28T21:28:51+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/language-reward-shaping/</loc>
+    <lastmod>2024-01-28T09:31:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/parsa-mahmoudieh-zero-shot-reward-specification-via-grounded-natural-language-2022/</loc>
+    <lastmod>2024-01-28T09:31:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/robotic-arm/</loc>
+    <lastmod>2024-01-28T09:31:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/allen-z-ren-robots-that-ask-for-help-uncertainty-alignment-2023/</loc>
+    <lastmod>2024-01-26T17:29:29+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/future-work/</loc>
+    <lastmod>2024-01-26T17:29:29+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/language-ambiguity/</loc>
+    <lastmod>2024-01-26T17:29:29+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/uncertainty-estimation/</loc>
+    <lastmod>2024-01-26T17:29:29+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/llm-agent/</loc>
+    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/llm-for-reward-function/</loc>
     <lastmod>2024-01-25T00:55:05+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/llm-planner/</loc>
     <lastmod>2024-01-25T00:55:05+11:00</lastmod>
   </url><url>
+    <loc>https://sino-huang.github.io/tags/lm-for-uncertainty/</loc>
+    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</loc>
-    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
-    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2024-01-25T00:55:05+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2024-01-25T00:55:05+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/binghai-wang-secrets-of-rlhf-reward-modelling-2024/</loc>
@@ -368,9 +422,6 @@
     <loc>https://sino-huang.github.io/posts/junnan_li-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation-2022/</loc>
     <lastmod>2023-05-22T11:17:28+10:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/tags/future-work/</loc>
-    <lastmod>2023-05-22T09:54:04+10:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/harsh_jhamtani-natural-language-decomposition-and-interpretation-of-complex-utterances-2023/</loc>
     <lastmod>2023-05-22T09:54:04+10:00</lastmod>
   </url><url>
@@ -574,9 +625,6 @@
   </url><url>
     <loc>https://sino-huang.github.io/posts/shailaja_keyur_sampat-reasoning-about-actions-over-visual-and-linguistic-modalities-a-survey-2022/</loc>
     <lastmod>2023-01-20T13:59:00+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/language-reward-shaping/</loc>
-    <lastmod>2023-01-18T09:48:14+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</loc>
     <lastmod>2023-01-18T09:48:14+11:00</lastmod>

@@ -9,7 +9,106 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jan 2024 00:55:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2024 22:53:41 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>machine translation reward model</title>
+      <link>https://sino-huang.github.io/tags/machine-translation-reward-model/</link>
+      <pubDate>Sun, 28 Jan 2024 22:53:41 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/machine-translation-reward-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quality estimation</title>
+      <link>https://sino-huang.github.io/tags/quality-estimation/</link>
+      <pubDate>Sun, 28 Jan 2024 22:53:41 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/quality-estimation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm planner robotics</title>
+      <link>https://sino-huang.github.io/tags/llm-planner-robotics/</link>
+      <pubDate>Sun, 28 Jan 2024 21:37:21 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-planner-robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robotics</title>
+      <link>https://sino-huang.github.io/tags/robotics/</link>
+      <pubDate>Sun, 28 Jan 2024 21:37:21 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>action trajectory constraints</title>
+      <link>https://sino-huang.github.io/tags/action-trajectory-constraints/</link>
+      <pubDate>Sun, 28 Jan 2024 21:28:51 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/action-trajectory-constraints/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pddl3</title>
+      <link>https://sino-huang.github.io/tags/pddl3/</link>
+      <pubDate>Sun, 28 Jan 2024 21:28:51 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/pddl3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language reward shaping</title>
+      <link>https://sino-huang.github.io/tags/language-reward-shaping/</link>
+      <pubDate>Sun, 28 Jan 2024 09:31:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/language-reward-shaping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>robotic arm</title>
+      <link>https://sino-huang.github.io/tags/robotic-arm/</link>
+      <pubDate>Sun, 28 Jan 2024 09:31:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/robotic-arm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>future work</title>
+      <link>https://sino-huang.github.io/tags/future-work/</link>
+      <pubDate>Fri, 26 Jan 2024 17:29:29 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/future-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>language ambiguity</title>
+      <link>https://sino-huang.github.io/tags/language-ambiguity/</link>
+      <pubDate>Fri, 26 Jan 2024 17:29:29 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/language-ambiguity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uncertainty estimation</title>
+      <link>https://sino-huang.github.io/tags/uncertainty-estimation/</link>
+      <pubDate>Fri, 26 Jan 2024 17:29:29 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/uncertainty-estimation/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>llm agent</title>
       <link>https://sino-huang.github.io/tags/llm-agent/</link>
@@ -20,11 +119,29 @@
     </item>
     
     <item>
+      <title>llm for reward function</title>
+      <link>https://sino-huang.github.io/tags/llm-for-reward-function/</link>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-for-reward-function/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>llm planner</title>
       <link>https://sino-huang.github.io/tags/llm-planner/</link>
       <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lm for uncertainty</title>
+      <link>https://sino-huang.github.io/tags/lm-for-uncertainty/</link>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/lm-for-uncertainty/</guid>
       <description></description>
     </item>
     
@@ -196,15 +313,6 @@
       <pubDate>Wed, 24 May 2023 19:57:16 +1000</pubDate>
       
       <guid>https://sino-huang.github.io/tags/generalised-planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>future work</title>
-      <link>https://sino-huang.github.io/tags/future-work/</link>
-      <pubDate>Mon, 22 May 2023 09:54:04 +1000</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/future-work/</guid>
       <description></description>
     </item>
     
@@ -421,15 +529,6 @@
       <pubDate>Mon, 06 Feb 2023 22:36:41 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/visual-question-answering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>language reward shaping</title>
-      <link>https://sino-huang.github.io/tags/language-reward-shaping/</link>
-      <pubDate>Wed, 18 Jan 2023 09:48:14 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/language-reward-shaping/</guid>
       <description></description>
     </item>
     

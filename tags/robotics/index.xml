@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>robotics on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/robotics/</link>
+    <description>Recent content in robotics on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 28 Jan 2024 21:37:21 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Krishan Rana Sayplan Grounding Llm for Scalable Task Planning 2023</title>
+      <link>https://sino-huang.github.io/posts/krishan-rana-sayplan-grounding-llm-for-scalable-task-planning-2023/</link>
+      <pubDate>Sun, 28 Jan 2024 21:37:21 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/krishan-rana-sayplan-grounding-llm-for-scalable-task-planning-2023/</guid>
+      <description>[TOC]
+ Title: SayPlan: Grounding Large Language Models using 3D Scene for for Scalable Task Planning Author: Krishan Rana Publish Year: CoRL 2023 Review Date: Sun, Jan 28, 2024 url: https://arxiv.org/abs/2307.06135  Summary of paper Motivation  this is a pipeline introduction paper  Contribution  Hierarchical Exploration: SayPlan leverages the hierarchical structure of 3DSGs to enable LLMs to conduct semantic searches for task-relevant subgraphs from a condensed representation of the full graph.</description>
+    </item>
+    
+  </channel>
+</rss>

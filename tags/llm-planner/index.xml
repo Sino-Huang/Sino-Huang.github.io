@@ -17,7 +17,7 @@
       
       <guid>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</guid>
       <description>[TOC]
- Title: Marta Skreta Replan Robotic Replanning 2024 Author: Marta Skreta et. al. Publish Year: 8 Jan 2024 Review Date: Thu, Jan 25, 2024 url: arXiv:2401.04157v1  Summary of paper Motivation Contribution Some key terms Results Summary Potential future work </description>
+ Title: RePlan: Robotic Replanning with Perception and Language Models Author: Marta Skreta et. al. Publish Year: 8 Jan 2024 Review Date: Thu, Jan 25, 2024 url: arXiv:2401.04157v1  Summary of paper Motivation  However, the challenge remains that even with syntac- tically correct plans, robots can still fail to achieve their intended goals. This failure can be attributed to imperfect plans proposed by LLMs or to unforeseeable environmental circumstances that hinder the execution of planned subtasks due to erroneous assumptions about the state of objects.</description>
     </item>
     
   </channel>
