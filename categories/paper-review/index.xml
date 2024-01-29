@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Jan 2024 22:53:41 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 Jan 2024 23:11:28 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ziwei Xu Hallucination Is Inevitable an Innate Limitation Llm 2024</title>
+      <link>https://sino-huang.github.io/posts/ziwei-xu-hallucination-is-inevitable-an-innate-limitation-llm-2024/</link>
+      <pubDate>Sun, 28 Jan 2024 23:11:28 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ziwei-xu-hallucination-is-inevitable-an-innate-limitation-llm-2024/</guid>
+      <description>[TOC]
+ Title: Hallucination Is Inevitable an Innate Limitation Llm 2024 Author: Ziwei Xu et. al. Publish Year: 22 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.11817v1  Summary of paper Contribution The paper formalizes the issue of hallucination in large language models (LLMs) and argues that it is impossible to completely eliminate hallucination. It defines hallucination as inconsistencies between a computable LLM and a computable ground truth function.</description>
+    </item>
+    
     <item>
       <title>Zhiwei He Improving Machine Translation Use Quality Estimation as a Reward Model 2024</title>
       <link>https://sino-huang.github.io/posts/zhiwei-he-improving-machine-translation-use-quality-estimation-as-a-reward-model-2024/</link>
@@ -17,7 +27,7 @@
       
       <guid>https://sino-huang.github.io/posts/zhiwei-he-improving-machine-translation-use-quality-estimation-as-a-reward-model-2024/</guid>
       <description>[TOC]
- Title: Improving Machine Translation Use Quality Estimation as a Reward Model 2024 Author: Zhiwei He et. al. Publish Year: 23 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.12873v1  Summary of paper Motivation Contribution Some key terms Results Summary Potential future work </description>
+ Title: Improving Machine Translation Use Quality Estimation as a Reward Model 2024 Author: Zhiwei He et. al. Publish Year: 23 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.12873v1  Summary of paper Contribution In this research, the authors explore using Quality Estimation (QE) models as a basis for reward systems in translation quality improvement through human feedback. They note that while QE has shown promise aligning with human evaluations, there&amp;rsquo;s a risk of overoptimization where translations receive high rewards despite declining quality.</description>
     </item>
     
     <item>

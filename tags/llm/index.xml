@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>llm on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/llm/</link>
+    <description>Recent content in llm on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 28 Jan 2024 23:11:28 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ziwei Xu Hallucination Is Inevitable an Innate Limitation Llm 2024</title>
+      <link>https://sino-huang.github.io/posts/ziwei-xu-hallucination-is-inevitable-an-innate-limitation-llm-2024/</link>
+      <pubDate>Sun, 28 Jan 2024 23:11:28 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ziwei-xu-hallucination-is-inevitable-an-innate-limitation-llm-2024/</guid>
+      <description>[TOC]
+ Title: Hallucination Is Inevitable an Innate Limitation Llm 2024 Author: Ziwei Xu et. al. Publish Year: 22 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.11817v1  Summary of paper Contribution The paper formalizes the issue of hallucination in large language models (LLMs) and argues that it is impossible to completely eliminate hallucination. It defines hallucination as inconsistencies between a computable LLM and a computable ground truth function.</description>
+    </item>
+    
+  </channel>
+</rss>
