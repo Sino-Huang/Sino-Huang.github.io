@@ -9,7 +9,43 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 28 Jan 2024 23:11:28 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jan 2024 20:25:43 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>llm planner</title>
+      <link>https://sino-huang.github.io/tags/llm-planner/</link>
+      <pubDate>Mon, 29 Jan 2024 20:25:43 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm cot</title>
+      <link>https://sino-huang.github.io/tags/llm-cot/</link>
+      <pubDate>Mon, 29 Jan 2024 17:44:10 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-cot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm empirical strategy</title>
+      <link>https://sino-huang.github.io/tags/llm-empirical-strategy/</link>
+      <pubDate>Mon, 29 Jan 2024 17:44:10 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-empirical-strategy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm weak supervision</title>
+      <link>https://sino-huang.github.io/tags/llm-weak-supervision/</link>
+      <pubDate>Mon, 29 Jan 2024 15:32:21 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-weak-supervision/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>llm</title>
       <link>https://sino-huang.github.io/tags/llm/</link>
@@ -142,15 +178,6 @@
       <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/llm-for-reward-function/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>llm planner</title>
-      <link>https://sino-huang.github.io/tags/llm-planner/</link>
-      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
       <description></description>
     </item>
     

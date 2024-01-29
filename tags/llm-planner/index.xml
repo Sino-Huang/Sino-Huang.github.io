@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jan 2024 00:55:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm-planner/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jan 2024 20:25:43 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm-planner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avichai Levy Understanding Natural Language in Context 2023</title>
+      <link>https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/</link>
+      <pubDate>Mon, 29 Jan 2024 20:25:43 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/</guid>
+      <description>[TOC]
+ Title: Understanding Natural Language in Context Author: Avichai Levy et. al. Publish Year: ICAPS 2023 Review Date: Mon, Jan 29, 2024 url: https://ojs.aaai.org/index.php/ICAPS/article/view/27248  Summary of paper Contribution The paper discusses the increasing prevalence of applications with natural language interfaces, such as chatbots and personal assistants like Alexa, Google Assistant, Siri, and Cortana. While current dialogue systems mainly involve static robots, the challenge intensifies with cognitive robots capable of movement and object manipulation in home environments.</description>
+    </item>
+    
     <item>
       <title>Marta Skreta Replan Robotic Replanning 2024</title>
       <link>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</link>
