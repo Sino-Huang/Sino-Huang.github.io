@@ -9,7 +9,29 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Jan 2024 20:25:43 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jan 2024 23:02:47 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vishal Pallagani Llm N Planning Survey 2024</title>
+      <link>https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/</link>
+      <pubDate>Mon, 29 Jan 2024 23:02:47 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/</guid>
+      <description>[TOC]
+ Title: &amp;ldquo;On the Prospects of Incorporating Large Language Models (LLMs) in Automated Planning and Scheduling (APS).&amp;rdquo; Author: Pallagani, Vishal, et al. Publish Year: arXiv preprint arXiv:2401.02500 (2024). Review Date: Mon, Jan 29, 2024 url:  Summary of paper Contribution The paper provides a comprehensive review of 126 papers focusing on the integration of Large Language Models (LLMs) within Automated Planning and Scheduling, a growing area in Artificial Intelligence (AI).</description>
+    </item>
+    
+    <item>
+      <title>Ishika Singh Progprompt Program Generation for Robot Task Planning 2023</title>
+      <link>https://sino-huang.github.io/posts/ishika-singh-progprompt-program-generation-for-robot-task-planning-2023/</link>
+      <pubDate>Mon, 29 Jan 2024 20:45:59 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/ishika-singh-progprompt-program-generation-for-robot-task-planning-2023/</guid>
+      <description>[TOC]
+ Title: ProgPrompt: program generation for situated robot task planning using large language models Author: Ishika Singh et. al. Publish Year: 28 August 2023 Review Date: Mon, Jan 29, 2024 url: https://progprompt.github.io/  Summary of paper Motivation Classical Task planning
+ requires myriad domain knowledge large serach space, hard toscale domain specific require concrete goal specification  Planning with LLMs
+ LLM is not situated in the scene Plan steps using unavailable actions and objects Text-to-robot action mapping may not be trivial combinatorial admissible action space.</description>
+    </item>
+    
     <item>
       <title>Avichai Levy Understanding Natural Language in Context 2023</title>
       <link>https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/</link>
