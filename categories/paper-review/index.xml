@@ -9,7 +9,27 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Jan 2024 23:02:47 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 30 Jan 2024 23:17:51 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Philip Cohen Intention Is Choice With Commitment 1990</title>
+      <link>https://sino-huang.github.io/posts/philip-cohen-intention-is-choice-with-commitment-1990/</link>
+      <pubDate>Tue, 30 Jan 2024 23:17:51 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/philip-cohen-intention-is-choice-with-commitment-1990/</guid>
+      <description>[TOC]
+ Title: Intention Is Choice With Commitment Author: Philip Cohen et. al. Publish Year: 1990 Review Date: Tue, Jan 30, 2024 url: https://www.sciencedirect.com/science/article/pii/0004370290900555  Summary of paper Contribution This paper delves into the principles governing the rational balance between an agent&amp;rsquo;s beliefs, goals, actions, and intentions, offering valuable insights for both artificial agents and a theory of human action. It focuses on clarifying when an agent can abandon their goals and how strongly they are committed to these goals.</description>
+    </item>
+    
+    <item>
+      <title>Christian Muise Planning for Goal Oriented Dialgue Systems 2019</title>
+      <link>https://sino-huang.github.io/posts/christian-muise-planning-for-goal-oriented-dialgue-systems-2019/</link>
+      <pubDate>Tue, 30 Jan 2024 16:58:06 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/christian-muise-planning-for-goal-oriented-dialgue-systems-2019/</guid>
+      <description>[TOC]
+ Title: Christian Muise Planning for Goal Oriented Dialgue Systems 2019 Author: Publish Year: Review Date: Tue, Jan 30, 2024 url: arXiv:1910.08137v1  Summary of paper Motivation  there is increasing demand for dialogue agents capable of handling specific tasks and interactions in a business context  Contribution  the author propose a new approach that eliminates the need for manual specification of dialogue trees, a common practice in existing systems.</description>
+    </item>
+    
     <item>
       <title>Vishal Pallagani Llm N Planning Survey 2024</title>
       <link>https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/</link>

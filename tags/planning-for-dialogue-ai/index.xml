@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>planning for dialogue AI on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/planning-for-dialogue-ai/</link>
+    <description>Recent content in planning for dialogue AI on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 30 Jan 2024 16:58:06 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/planning-for-dialogue-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Christian Muise Planning for Goal Oriented Dialgue Systems 2019</title>
+      <link>https://sino-huang.github.io/posts/christian-muise-planning-for-goal-oriented-dialgue-systems-2019/</link>
+      <pubDate>Tue, 30 Jan 2024 16:58:06 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/christian-muise-planning-for-goal-oriented-dialgue-systems-2019/</guid>
+      <description>[TOC]
+ Title: Christian Muise Planning for Goal Oriented Dialgue Systems 2019 Author: Publish Year: Review Date: Tue, Jan 30, 2024 url: arXiv:1910.08137v1  Summary of paper Motivation  there is increasing demand for dialogue agents capable of handling specific tasks and interactions in a business context  Contribution  the author propose a new approach that eliminates the need for manual specification of dialogue trees, a common practice in existing systems.</description>
+    </item>
+    
+  </channel>
+</rss>
