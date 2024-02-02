@@ -9,7 +9,18 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Jan 2024 17:40:43 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Feb 2024 19:50:31 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Design Your Research Project Structure</title>
+      <link>https://sino-huang.github.io/programming-notes/how-to-design-your-research-project-structure/</link>
+      <pubDate>Fri, 02 Feb 2024 19:50:31 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/how-to-design-your-research-project-structure/</guid>
+      <description>[TOC]
+ Title: How to Design Your Research Project Structure Review Date: Fri, Feb 2, 2024  Basic Component  Policy model Environment Reward model Evaluation Logging and Result Postprocess Training  train reward train policy   Dataloader Utils  Logging Setup Multiprocessing Helper etc    it’s better to have interface class in the __init__.py
+Separate subproject for Data collection and PreTraining  Environment simulation running  how to save label, how to save images, align with the requirement of dali.</description>
+    </item>
+    
     <item>
       <title>React Js Development 2024</title>
       <link>https://sino-huang.github.io/programming-notes/react-js-development-2024/</link>
