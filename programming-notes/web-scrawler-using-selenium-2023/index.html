@@ -192,13 +192,9 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Utils functions" href="#utils-functions">Utils functions</a></li>
 <li>
-<a aria-label="Firefox configs and page load strategy" href="#firefox-configs-and-page-load-strategy">Firefox configs and page load strategy</a></li>
-<li>
 <a aria-label="lxml html xpath with requests" href="#lxml-html-xpath-with-requests">lxml html xpath with requests</a></li>
 <li>
-<a aria-label="concurrent tqdm process_map" href="#concurrent-tqdm-process_map">concurrent tqdm process_map</a></li>
-<li>
-<a aria-label="Xpath cheatsheet" href="#xpath-cheatsheet">Xpath cheatsheet</a>
+<a aria-label="multiprocessing with tqdm" href="#multiprocessing-with-tqdm">multiprocessing with tqdm</a>
 </li>
 </ul>
 </div>
@@ -265,24 +261,80 @@ if (!doNotTrack) {
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--user-data-dir=&lt;profile-folder&gt;'</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--profile-directory=Default'</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="n">headless</span><span class="o">=</span><span class="n">HEADLESS</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">ChromeOptions</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">page_load_strategy</span> <span class="o">=</span> <span class="s1">'eager'</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># options.add_argument("--auto-open-devtools-for-tabs") # help to avoid cloudfare human verify check</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--disable-popup-blocking"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--window-size=800,600"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--start-maximized"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--disable-gpu'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--no-sandbox"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--disable-setuid-sandbox"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--disable-extensions"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">'--disable-application-cache'</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--disable-dev-shm-usage"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">HEADLESS</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"--headless=new"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># check os system</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">"posix"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># wait for chrome profile to be ready</span>
+</span></span><span class="line"><span class="cl">        <span class="n">driver</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">driver_executable_path</span><span class="o">=</span><span class="n">ChromeDriverManager</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">user_data_dir</span><span class="o">=</span><span class="n">chrome_profile_path</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1"># version_main=VERSION,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">user_multi_procs</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">"nt"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># wait for chrome profile to be ready</span>
+</span></span><span class="line"><span class="cl">        <span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="sa">f</span><span class="s2">"--user-data-dir=</span><span class="si">{</span><span class="n">chrome_profile_path</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">driver</span> <span class="o">=</span> <span class="n">uc</span><span class="o">.</span><span class="n">Chrome</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">driver_executable_path</span><span class="o">=</span><span class="n">ChromeDriverManager</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">(),</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">#    driver_executable_path=os.path.join(os.path.abspath(os.getcwd()), 'chromedriver-win64/chromedriver-win64/chromedriver.exe'),</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">user_multi_procs</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">"Unknown OS"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="utils-functions">Utils functions<a aria-hidden="true" class="anchor" hidden="" href="#utils-functions">#</a></h2>
@@ -393,43 +445,26 @@ if (!doNotTrack) {
 </span><span class="lnt">10
 </span><span class="lnt">11
 </span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">undetected_chromedriver</span> <span class="k">as</span> <span class="nn">uc</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># from selenium import webdriver</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.by</span> <span class="kn">import</span> <span class="n">By</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.common.keys</span> <span class="kn">import</span> <span class="n">Keys</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support.wait</span> <span class="kn">import</span> <span class="n">WebDriverWait</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.webdriver.support</span> <span class="kn">import</span> <span class="n">expected_conditions</span> <span class="k">as</span> <span class="n">EC</span>
-</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">selenium.common.exceptions</span> <span class="k">as</span> <span class="nn">Exceptions</span>
-</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium</span> <span class="kn">import</span> <span class="n">webdriver</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h2 id="firefox-configs-and-page-load-strategy">Firefox configs and page load strategy<a aria-hidden="true" class="anchor" hidden="" href="#firefox-configs-and-page-load-strategy">#</a></h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma" tabindex="0"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># load options</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">FirefoxOptions</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"-profile"</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">"/home/sukai/snap/firefox/common/.mozilla/firefox/irinbvf5.default-release"</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">page_load_strategy</span> <span class="o">=</span> <span class="s2">"eager"</span> <span class="c1"># none, eager, normal</span>
-</span></span><span class="line"><span class="cl"><span class="n">options</span><span class="o">.</span><span class="n">headless</span> <span class="o">=</span> <span class="kc">True</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="o">=</span> <span class="n">webdriver</span><span class="o">.</span><span class="n">Firefox</span><span class="p">(</span><span class="n">service</span><span class="o">=</span><span class="n">FirefoxService</span><span class="p">(</span><span class="n">GeckoDriverManager</span><span class="p">()</span><span class="o">.</span><span class="n">install</span><span class="p">()),</span><span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">selenium.common.exceptions</span> <span class="kn">import</span> <span class="n">TimeoutException</span><span class="p">,</span> <span class="n">NoSuchElementException</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">logging</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm.auto</span> <span class="kn">import</span> <span class="n">tqdm</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pickle</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">csv</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">time</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">threading</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">argparse</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="lxml-html-xpath-with-requests">lxml html xpath with requests<a aria-hidden="true" class="anchor" hidden="" href="#lxml-html-xpath-with-requests">#</a></h2>
@@ -483,7 +518,7 @@ if (!doNotTrack) {
 </div><ul>
 <li>text_content() will get all the text in the node, which is same as <code>.text</code> in selenium</li>
 </ul>
-<h2 id="concurrent-tqdm-process_map">concurrent tqdm process_map<a aria-hidden="true" class="anchor" hidden="" href="#concurrent-tqdm-process_map">#</a></h2>
+<h2 id="multiprocessing-with-tqdm">multiprocessing with tqdm<a aria-hidden="true" class="anchor" hidden="" href="#multiprocessing-with-tqdm">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma" tabindex="0"><code><span class="lnt"> 1
@@ -512,24 +547,66 @@ if (!doNotTrack) {
 </span><span class="lnt">24
 </span><span class="lnt">25
 </span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tqdm.contrib.concurrent</span> <span class="kn">import</span> <span class="n">process_map</span>
 </span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span><span class="p">,</span> <span class="n">Process</span><span class="p">,</span> <span class="n">Manager</span><span class="p">,</span> <span class="n">Lock</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">manager</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span> <span class="c1"># Manager dictionary must be used for multiprocessing</span>
+</span></span><span class="line"><span class="cl">  <span class="n">manager</span> <span class="o">=</span> <span class="n">Manager</span><span class="p">()</span> <span class="c1"># Manager dictionary must be used for multiprocessing</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># m_saved_postcode_lst = manager.list(saved_postcode_lst)</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># m_no_data_lst = manager.list(no_data_lst)</span>
+</span></span><span class="line"><span class="cl">  <span class="n">m_chromelock</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="n">m_nodatalock</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">  <span class="n">m_savedpstcdlock</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">postcode_info_manager_dict</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">dict</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">my_function_star</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">obtain_postcode_info_pure_content</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl"><span class="n">args</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">postcode_info_manager_dict</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">postcode_unique_lst</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="n">m_profile_path_list</span> <span class="o">=</span> <span class="n">manager</span><span class="o">.</span><span class="n">list</span><span class="p">(</span><span class="n">profile_path_list</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># with Pool(10) as p: # tqdm cannot sync in this way</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#     results = list(tqdm(p.imap(my_function_star, args), total=len(args)))</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">process_map</span><span class="p">(</span><span class="n">my_function_star</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># %%</span>
+</span></span><span class="line"><span class="cl">  <span class="n">postcode_list_chunks</span> <span class="o">=</span> <span class="p">[</span><span class="n">postcode_list</span><span class="p">[</span><span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">+</span><span class="n">CHUNK_SIZE</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">postcode_list</span><span class="p">),</span> <span class="n">CHUNK_SIZE</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="c1"># %%</span>
+</span></span><span class="line"><span class="cl">  <span class="n">args</span> <span class="o">=</span> <span class="p">[(</span><span class="n">chunk</span><span class="p">,</span> <span class="n">m_chromelock</span><span class="p">,</span><span class="n">m_nodatalock</span><span class="p">,</span><span class="n">m_savedpstcdlock</span><span class="p">,</span> <span class="n">m_profile_path_list</span><span class="p">,</span> <span class="n">loggername</span><span class="p">,</span> <span class="n">loggingfile</span><span class="p">,</span> <span class="n">data_index</span><span class="p">)</span> <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">postcode_list_chunks</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="k">with</span> <span class="n">mp</span><span class="o">.</span><span class="n">Pool</span><span class="p">(</span><span class="n">PROCESS_NUM</span><span class="p">)</span> <span class="k">as</span> <span class="n">pool</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="n">results</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">logging_tqdm</span><span class="p">(</span><span class="n">pool</span><span class="o">.</span><span class="n">imap</span><span class="p">(</span><span class="n">helperf</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">chunksize</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">total</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                                      <span class="n">loggername</span><span class="o">=</span><span class="n">loggername</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                      <span class="n">loggingfile</span><span class="o">=</span><span class="n">loggingfile</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                      <span class="n">desc</span><span class="o">=</span><span class="s2">"Progress Status in Main Process"</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="k">raise</span> <span class="n">e</span>
+</span></span><span class="line"><span class="cl">  <span class="k">finally</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">active_children</span> <span class="o">=</span> <span class="n">mp</span><span class="o">.</span><span class="n">active_children</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">active_children</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">          <span class="n">p</span><span class="o">.</span><span class="n">kill</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">          <span class="n">p</span><span class="o">.</span><span class="n">join</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">      <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Killing all processes"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># IMPORTANT we must attach dict to the manager dict, nest dict update is banned in multiprocessing</span>
 </span></span><span class="line"><span class="cl">
@@ -542,241 +619,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="n">postcode_info_dict</span><span class="p">[</span><span class="n">postcode</span><span class="p">][</span><span class="s1">'United States'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"New York"</span> <span class="c1"># BAD</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="xpath-cheatsheet">Xpath cheatsheet<a aria-hidden="true" class="anchor" hidden="" href="#xpath-cheatsheet">#</a></h2>
-<script crossorigin="anonymous" integrity="sha512-i+UmpoqoJqHkpXQ3mQfaIF8UZ2RAGoyqJvMzAKTadhBVhRk883EHluxdPsMf7c5/43D5tVpwIE8KLE1kQa0uCg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
-<script crossorigin="anonymous" integrity="sha512-NuVK4+sDE809oDhbdAABRO1nTe80t56vXda8dg1UQ+RcQ8x7WakwTzKE7LOosoNCKi7EH7FXo7mritFNWpZiLQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js"></script>
-<style>
-.embed-pdf-the-canvas {
-  direction: ltr;
-  width: 100%;
-  height: auto;
-  display: none;
-}
-
-#paginator {
-  display: none;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#loadingWrapper {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 350px;
-}
-
-#loading {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #d2d0d0;;
-  border-radius: 50%;
-  border-top-color: #383838;
-  animation: spin 1s ease-in-out infinite;
-  -webkit-animation: spin 1s ease-in-out infinite;
-}
-
-@keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
-}
-@-webkit-keyframes spin {
-  to { -webkit-transform: rotate(360deg); }
-}
-</style>
-<div id="paginator">
-<button id="prev">Previous</button>
-<button id="next">Next</button>
-       
-    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
 </div>
-<div id="embed-pdf-container">
-<div id="loadingWrapper">
-<div id="loading"></div>
-</div>
-<canvas class="embed-pdf-the-canvas" id="the-canvas-1"></canvas>
-</div>
-<script type="text/javascript">
-window.onload = function() {
-
-
-var url =  'assets\/xpath-cheatsheet.pdf';
-
-var hidePaginator =  true ;
-var hideLoader = "" === "true";
-var selectedPageNum = parseInt("") || 1;
-var showMultiPage = parseInt("1") || 1;
-
-
-var pdfjsLib = window['pdfjs-dist/build/pdf'];
-
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/sino-huang.github.io\/" + '/js/pdf-js/build/pdf.worker.js';
-
-
-var pdfDoc = null,
-    pageNum = selectedPageNum,
-    pageRendering = false,
-    pageNumPending = null,
-    scale = 3,
-    canvas = document.getElementById('the-canvas-1'),
-    ctx = canvas.getContext('2d'),
-    paginator = document.getElementById("paginator"),
-    loadingWrapper = document.getElementById('loadingWrapper');
-
-
-
-showPaginator();
-showLoader();
-
-
-
-function renderPage(num) {
-  pageRendering = true;
-  
-  pdfDoc.getPage(num).then(function(page) {
-    var viewport = page.getViewport({scale: scale});
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    
-    var renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    var renderTask = page.render(renderContext);
-
-    
-    renderTask.promise.then(function() {
-      pageRendering = false;
-      showContent(canvas);
-      
-      if (pageNumPending !== null) {
-        
-        renderPage(pageNumPending);
-        pageNumPending = null;
-      }
-    });
-  });
-
-  
-  document.getElementById('page_num').textContent = num;
-}
-
-function renderPageExpanded(num) {
-  pageRendering = true;
-  
-  pdfDoc.getPage(num).then(function(page) {
-    var viewport = page.getViewport({scale: scale});
-    let localcanvas = document.getElementById('the-canvas-'+num);
-    let ctx = localcanvas.getContext('2d');
-    localcanvas.height = viewport.height;
-    localcanvas.width = viewport.width;
-
-    
-    var renderContext = {
-      canvasContext: ctx,
-      viewport: viewport
-    };
-    var renderTask = page.render(renderContext);
-
-    
-    renderTask.promise.then(function() {
-      pageRendering = false;
-      showContent(localcanvas);
-      
-      if (pageNumPending !== null) {
-        
-        renderPage(pageNumPending);
-        pageNumPending = null;
-      }
-    });
-  });
-
-  
-  document.getElementById('page_num').textContent = num;
-}
-
-
-
-function showContent(mycanvas) {
-  loadingWrapper.style.display = 'none';
-  mycanvas.style.display = 'block';
-}
-
-
-
-function showLoader() {
-  if(hideLoader) return
-  loadingWrapper.style.display = 'flex';
-  canvas.style.display = 'none';
-}
-
-
-
-function showPaginator() {
-  if(hidePaginator) return
-  paginator.style.display = 'block';
-}
-
-
-
-function queueRenderPage(num) {
-  if (pageRendering) {
-    pageNumPending = num;
-  } else {
-    renderPage(num);
-  }
-}
-
-
-
-function onPrevPage() {
-  if (pageNum <= 1) {
-    return;
-  }
-  pageNum--;
-  queueRenderPage(pageNum);
-}
-document.getElementById('prev').addEventListener('click', onPrevPage);
-
-
-
-function onNextPage() {
-  if (pageNum >= pdfDoc.numPages) {
-    return;
-  }
-  pageNum++;
-  queueRenderPage(pageNum);
-}
-document.getElementById('next').addEventListener('click', onNextPage);
-
-
-
-pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-  pdfDoc = pdfDoc_;
-  var numPages = pdfDoc.numPages;
-  document.getElementById('page_count').textContent = numPages;
-  
-  
-  if(pageNum > numPages) {
-    pageNum = numPages
-  }
-
-  
-  if (showMultiPage > 1){
-    while (pageNum <= numPages){
-      renderPageExpanded(pageNum);
-      pageNum++;
-    }
-  } else {
-    renderPage(pageNum);
-  }
-});
-}
-
-</script>
 </div>
 <article class="post-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png"/>
@@ -791,6 +634,20 @@ Parsing a Property website in multiprocessing way 1 2 3 4 5 6 7 8 9 10 11 12 13 
 </div>
 <footer class="entry-footer"><span title="2023-06-22 22:38:28 +1000 AEST">June 22, 2023</span> · 8 min · 1670 words · Sukai Huang</footer>
 <a aria-label="post link to Undetected Chromedriver Use Case" class="entry-link" href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/uc-use-case/"></a>
+</article>
+<article class="post-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/web-scrawler-using-selenium-2023/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>Xpath-cheatsheet
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Xpath cheatsheet    .embed-pdf-the-canvas { direction: ltr; width: 100%; height: auto; display: none; } #paginator { display: none; text-align: center; margin-bottom: 10px; } #loadingWrapper { display: none; justify-content: center; align-items: center; width: 100%; height: 350px; } #loading { display: inline-block; width: 50px; height: 50px; border: 3px solid #d2d0d0;; border-radius: 50%; border-top-color: #383838; animation: spin 1s ease-in-out infinite; -webkit-animation: spin 1s ease-in-out infinite; } @keyframes spin { to { -webkit-transform: rotate(360deg); } } @-webkit-keyframes spin { to { -webkit-transform: rotate(360deg); } }  Previous Next Page:  /       window....</p>
+</div>
+<footer class="entry-footer"><span title="2023-06-22 22:38:28 +1000 AEST">June 22, 2023</span> · 2 min · 356 words · Sukai Huang</footer>
+<a aria-label="post link to Xpath-cheatsheet" class="entry-link" href="https://sino-huang.github.io/programming-notes/web-scrawler-using-selenium-2023/xpath-cheatsheet/"></a>
 </article>
 </main>
 <footer class="footer">
