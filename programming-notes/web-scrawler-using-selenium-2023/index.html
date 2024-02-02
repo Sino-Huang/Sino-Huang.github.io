@@ -190,6 +190,8 @@ if (!doNotTrack) {
 <a aria-label="Preparation: python venv" href="#preparation-python-venv">Preparation: python venv</a></li></ul>
 </li>
 <li>
+<a aria-label="Some known issue about selenium" href="#some-known-issue-about-selenium">Some known issue about selenium</a></li>
+<li>
 <a aria-label="Utils functions" href="#utils-functions">Utils functions</a></li>
 <li>
 <a aria-label="lxml html xpath with requests" href="#lxml-html-xpath-with-requests">lxml html xpath with requests</a></li>
@@ -337,7 +339,12 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl">    <span class="n">driver</span><span class="o">.</span><span class="n">implicitly_wait</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="utils-functions">Utils functions<a aria-hidden="true" class="anchor" hidden="" href="#utils-functions">#</a></h2>
+</div><h2 id="some-known-issue-about-selenium">Some known issue about selenium<a aria-hidden="true" class="anchor" hidden="" href="#some-known-issue-about-selenium">#</a></h2>
+<ol>
+<li>to avoid memory leak in multiprocessing env, please import the driver inside the subprocess (e.g., inside the function)</li>
+<li>wait until presence is very slow, try the sleepy find element</li>
+</ol>
+<h2 id="utils-functions">Utils functions<a aria-hidden="true" class="anchor" hidden="" href="#utils-functions">#</a></h2>
 <ul>
 <li>sleep find element</li>
 </ul>
