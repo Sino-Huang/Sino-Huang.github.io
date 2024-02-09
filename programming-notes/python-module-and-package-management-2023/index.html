@@ -195,7 +195,10 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
 <li>
-<a aria-label="Sample code" href="#sample-code">Sample code</a></li>
+<a aria-label="Sample code" href="#sample-code">Sample code</a></li></ul>
+</li>
+<li>
+<a aria-label="Hydra module" href="#hydra-module">Hydra module</a><ul>
 <li>
 <a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code></a></li>
 <li>
@@ -392,9 +395,7 @@ if (!doNotTrack) {
 </span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"config"</span><span class="p">,</span> <span class="s2">"outputs"</span><span class="p">,</span> <span class="s2">"multirun"</span><span class="p">,</span> <span class="s2">"logs"</span><span class="p">]</span> 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><ul>
-<li>module <code>__main__</code> code</li>
-</ul>
+</div><h2 id="hydra-module">Hydra module<a aria-hidden="true" class="anchor" hidden="" href="#hydra-module">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma" tabindex="0"><code><span class="lnt"> 1
@@ -493,11 +494,11 @@ if (!doNotTrack) {
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl">    <span class="n">PYTHONPATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'PYTHONPATH'</span><span class="p">,</span> <span class="s1">''</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">pathsep</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">"relative../config"</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">"dataloadtestconfig"</span><span class="p">)</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">"../../config"</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">get_original_cwd</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"PYTHONPATH"</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
