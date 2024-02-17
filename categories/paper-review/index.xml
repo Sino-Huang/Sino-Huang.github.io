@@ -9,7 +9,17 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Jan 2024 23:17:51 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Feb 2024 12:56:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sudhir Agarwal Translate Infer Compile for Accurate Text to Plan 2024</title>
+      <link>https://sino-huang.github.io/posts/sudhir-agarwal-translate-infer-compile-for-accurate-text-to-plan-2024/</link>
+      <pubDate>Sat, 17 Feb 2024 12:56:25 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/sudhir-agarwal-translate-infer-compile-for-accurate-text-to-plan-2024/</guid>
+      <description>[TOC]
+ Title: TIC: Translate-Infer-Compile for accurate &amp;ldquo;text to plan&amp;rdquo; using LLMs and logical intermediate representations Author: Sudhir Agarwal et. al. Publish Year: Jan 2024 Review Date: Sat, Feb 17, 2024 url: https://arxiv.org/pdf/2402.06608.pdf  Summary of paper Motivation  using an LLM to generate the task PDDL from a natural language planning task descriptions is challenging. One of the primary reasons for failure is that the LLM often make errors generating information that must abide by the constraints specified in the domain knowledge or the task descriptions  It could be that the crucial domain knowledge information is often implicitly embedded or hidden within the descriptions, making it difficult for the LLM to accurately generate the task PDDL.</description>
+    </item>
+    
     <item>
       <title>Philip Cohen Intention Is Choice With Commitment 1990</title>
       <link>https://sino-huang.github.io/posts/philip-cohen-intention-is-choice-with-commitment-1990/</link>
