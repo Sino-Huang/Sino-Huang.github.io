@@ -9,7 +9,43 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Jan 2024 23:17:51 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>chain of thought</title>
+      <link>https://sino-huang.github.io/tags/chain-of-thought/</link>
+      <pubDate>Wed, 28 Feb 2024 19:59:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/chain-of-thought/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code generation</title>
+      <link>https://sino-huang.github.io/tags/code-generation/</link>
+      <pubDate>Wed, 28 Feb 2024 19:59:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/code-generation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>llm</title>
+      <link>https://sino-huang.github.io/tags/llm/</link>
+      <pubDate>Wed, 28 Feb 2024 19:59:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>confidence estimation</title>
+      <link>https://sino-huang.github.io/tags/confidence-estimation/</link>
+      <pubDate>Wed, 28 Feb 2024 16:12:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/confidence-estimation/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AI assistant</title>
       <link>https://sino-huang.github.io/tags/ai-assistant/</link>
@@ -79,15 +115,6 @@
       <pubDate>Mon, 29 Jan 2024 15:32:21 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/llm-weak-supervision/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>llm</title>
-      <link>https://sino-huang.github.io/tags/llm/</link>
-      <pubDate>Sun, 28 Jan 2024 23:11:28 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/llm/</guid>
       <description></description>
     </item>
     
@@ -304,15 +331,6 @@
       <pubDate>Fri, 27 Oct 2023 16:44:22 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/reward-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>code generation</title>
-      <link>https://sino-huang.github.io/tags/code-generation/</link>
-      <pubDate>Mon, 16 Oct 2023 07:24:26 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/code-generation/</guid>
       <description></description>
     </item>
     

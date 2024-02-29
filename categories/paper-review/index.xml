@@ -9,7 +9,37 @@
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Feb 2024 12:56:25 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jia Li Structured Cot Prompting for Code Generation 2023</title>
+      <link>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</link>
+      <pubDate>Wed, 28 Feb 2024 19:59:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</guid>
+      <description>[TOC]
+ Title: Structured Chaint of Thought Prompting for Code Generation 2023 Author: Jia Li et. al. Publish Year: 7 Sep 2023 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2305.06599.pdf  Summary of paper Contribution The paper introduces Structured CoTs (SCoTs) and a novel prompting technique called SCoT prompting for improving code generation with Large Language Models (LLMs) like ChatGPT and Codex. Unlike the previous Chain-of-Thought (CoT) prompting, which focuses on natural language reasoning steps, SCoT prompting leverages the structural information inherent in source code.</description>
+    </item>
+    
+    <item>
+      <title>Stephanie Teaching Models to Express Their Uncertainty in Words 2022</title>
+      <link>https://sino-huang.github.io/posts/stephanie-teaching-models-to-express-their-uncertainty-in-words-2022/</link>
+      <pubDate>Wed, 28 Feb 2024 16:12:53 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/stephanie-teaching-models-to-express-their-uncertainty-in-words-2022/</guid>
+      <description>[TOC]
+ Title: Teaching Models to Express Their Uncertainty in Words Author: Stephanie Lin et. al. Publish Year: 13 Jun 2022 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2205.14334.pdf  Summary of paper Motivation The study demonstrates that a GPT-3 model can articulate uncertainty about its answers in natural language without relying on model logits. It generates both an answer and a confidence level (e.g., &amp;ldquo;90% confidence&amp;rdquo; or &amp;ldquo;high confidence&amp;rdquo;), which map to well-calibrated probabilities.</description>
+    </item>
+    
+    <item>
+      <title>Gwenyth Estimating Confidence of Llm by Prompt Agreement 2023</title>
+      <link>https://sino-huang.github.io/posts/gwenyth-estimating-confidence-of-llm-by-prompt-agreement-2023/</link>
+      <pubDate>Tue, 27 Feb 2024 15:44:06 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/gwenyth-estimating-confidence-of-llm-by-prompt-agreement-2023/</guid>
+      <description>[TOC]
+ Title: Strength in Numbers: Estimating Confidence of Large Language Models by Prompt Agreement Author: Gwenyth Portillo Wightman et. al. Publish Year: TrustNLP 2023 Review Date: Tue, Feb 27, 2024 url: https://aclanthology.org/2023.trustnlp-1.28.pdf  Summary of paper Motivation  while traditional classifiers produce scores for each label, language models instead produce scores for the generation which may not be well calibrated. the authors proposed a method that involves comparing generated outputs across diverse prompts to create confidence score.</description>
+    </item>
+    
     <item>
       <title>Sudhir Agarwal Translate Infer Compile for Accurate Text to Plan 2024</title>
       <link>https://sino-huang.github.io/posts/sudhir-agarwal-translate-infer-compile-for-accurate-text-to-plan-2024/</link>

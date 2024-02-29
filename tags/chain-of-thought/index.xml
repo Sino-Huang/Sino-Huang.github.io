@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>chain of thought on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/chain-of-thought/</link>
+    <description>Recent content in chain of thought on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/chain-of-thought/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jia Li Structured Cot Prompting for Code Generation 2023</title>
+      <link>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</link>
+      <pubDate>Wed, 28 Feb 2024 19:59:38 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</guid>
+      <description>[TOC]
+ Title: Structured Chaint of Thought Prompting for Code Generation 2023 Author: Jia Li et. al. Publish Year: 7 Sep 2023 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2305.06599.pdf  Summary of paper Contribution The paper introduces Structured CoTs (SCoTs) and a novel prompting technique called SCoT prompting for improving code generation with Large Language Models (LLMs) like ChatGPT and Codex. Unlike the previous Chain-of-Thought (CoT) prompting, which focuses on natural language reasoning steps, SCoT prompting leverages the structural information inherent in source code.</description>
+    </item>
+    
+  </channel>
+</rss>
