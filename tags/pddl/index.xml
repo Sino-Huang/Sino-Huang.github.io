@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>pddl on Sukai Huang</title>
+    <title>Pddl on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/pddl/</link>
-    <description>Recent content in pddl on Sukai Huang</description>
+    <description>Recent content in Pddl on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 11 Jan 2024 19:54:29 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/pddl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gerevini Plan Constraints and Preferences in Pddl3 2005</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/gerevini-plan-constraints-and-preferences-in-pddl3-2005/</guid>
       <description>[TOC]
- Title: Gerevini Plan Constraints and Preferences in PDDL3 Author: Alfonso Gerevini, Derek Long Publish Year: 2005 Review Date: Thu, Jan 11, 2024 url: http://www.cs.yale.edu/~dvm/papers/pddl-ipc5.pdf  Summary of paper Motivation  the notion of plan quality in automated planning is a practically very important issue. it is important to generate plans of good or optimal quality and we need to express the plan quality the proposed extended language allows us to express strong and soft constraints on plan trajectories  i.</description>
+Title: Gerevini Plan Constraints and Preferences in PDDL3 Author: Alfonso Gerevini, Derek Long Publish Year: 2005 Review Date: Thu, Jan 11, 2024 url: http://www.cs.yale.edu/~dvm/papers/pddl-ipc5.pdf Summary of paper Motivation the notion of plan quality in automated planning is a practically very important issue. it is important to generate plans of good or optimal quality and we need to express the plan quality the proposed extended language allows us to express strong and soft constraints on plan trajectories i.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/nir-lipo-planning-with-perspectives-using-functional-strips-2022/</guid>
       <description>[TOC]
- Title: Planning With Perspectives &amp;ndash; Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/  Summary of paper Motivation  we present a novel approach to epistemic planning called planning with perspectives (PWP) that is both more expressive and computationally more efficient than existing state of the art epistemic planning tools.  Contribution  in this paper, we decompose epistemic planning by delegating reasoning about epistemic formulae to an external solver, i.</description>
+Title: Planning With Perspectives &amp;ndash; Using Decomposing Epistemic Planning using Functional STRIPS Author: Guang Hu, Nir Lipovetzky Publish Year: 2022 Review Date: Thu, Jan 11, 2024 url: https://nirlipo.github.io/publication/hu-2022-planning/ Summary of paper Motivation we present a novel approach to epistemic planning called planning with perspectives (PWP) that is both more expressive and computationally more efficient than existing state of the art epistemic planning tools. Contribution in this paper, we decompose epistemic planning by delegating reasoning about epistemic formulae to an external solver, i.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/alex_coulter-theory-alignment-via-a-classical-encoding-of-regular-bismulation-2022/</guid>
       <description>[TOC]
- Title: Theory Alignment via a Classical Encoding of Regular Bismulation 2022 Author: Alex Coulter et. al. Publish Year: KEPS 2022 Review Date: Wed, Nov 29, 2023 url: https://icaps22.icaps-conference.org/workshops/KEPS/KEPS-22_paper_7781.pdf  Summary of paper Motivation  the main question we seek to answer is how we can test if two models align (where the fluents and action implementations may differ), and if not, where that misalignment occurs.  Contribution  the work is built on a foundation of regular bisimulation found that the proposed alignment was not only viable, with many submissions having &amp;ldquo;solutions&amp;rdquo; to the merged model showing where a modelling error occurs, but several cases demonstrated errors with the submitted domains that were subtle and detected only by this added approach.</description>
+Title: Theory Alignment via a Classical Encoding of Regular Bismulation 2022 Author: Alex Coulter et. al. Publish Year: KEPS 2022 Review Date: Wed, Nov 29, 2023 url: https://icaps22.icaps-conference.org/workshops/KEPS/KEPS-22_paper_7781.pdf Summary of paper Motivation the main question we seek to answer is how we can test if two models align (where the fluents and action implementations may differ), and if not, where that misalignment occurs. Contribution the work is built on a foundation of regular bisimulation found that the proposed alignment was not only viable, with many submissions having &amp;ldquo;solutions&amp;rdquo; to the merged model showing where a modelling error occurs, but several cases demonstrated errors with the submitted domains that were subtle and detected only by this added approach.</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@
       
       <guid>https://sino-huang.github.io/posts/pascal-bercher-detecting-ai-planning-modelling-mistakes-potential-errors-and-benchmark-domains-2023/</guid>
       <description>[TOC]
- Title: Detecting Ai Planning Modelling Mistakes Potential Errors and Benchmark Domains Author: Pascal Bercher et. al. Publish Year: 2023 Review Date: Mon, Nov 13, 2023 url: https://bercher.net/publications/2023/Sleath2023PossibleModelingErrors.pdf  Summary of paper Contribution  the author provided a compilation of potential modelling errors the author supply a public repository of 56 (flawed) benchmark domains conducted an evaluation of well-known AI planning tools for their ability to diagnose those errors, showing that not a single tool is able to spot all errors, with no tool being strictly stronger than another.</description>
+Title: Detecting Ai Planning Modelling Mistakes Potential Errors and Benchmark Domains Author: Pascal Bercher et. al. Publish Year: 2023 Review Date: Mon, Nov 13, 2023 url: https://bercher.net/publications/2023/Sleath2023PossibleModelingErrors.pdf Summary of paper Contribution the author provided a compilation of potential modelling errors the author supply a public repository of 56 (flawed) benchmark domains conducted an evaluation of well-known AI planning tools for their ability to diagnose those errors, showing that not a single tool is able to spot all errors, with no tool being strictly stronger than another.</description>
     </item>
     
     <item>
@@ -57,8 +58,8 @@
       
       <guid>https://sino-huang.github.io/posts/christabel-wayllace-goal-recognition-design-with-stochastic-agent-action-outcomes-2016/</guid>
       <description>[TOC]
- Title: Christabel Wayllace Goal Recognition Design With Stochastic Agent Action Outcomes 2016 Author: Christable Wayllace et. al. Publish Year: IJCAI 2016 Review Date: Fri, Oct 6, 2023 url: https://www.ijcai.org/Proceedings/16/Papers/464.pdf  Summary of paper Motivation  in this paper, they generalize the Goal Recognition Design (GRD) problem to Stochastic GRD (S-GRD) problems, which handle stochastic action outcomes.  Some key terms Plan and goal recognition problem
- it aims to identify the actual plan or goal of an agent given its behaviour.</description>
+Title: Christabel Wayllace Goal Recognition Design With Stochastic Agent Action Outcomes 2016 Author: Christable Wayllace et. al. Publish Year: IJCAI 2016 Review Date: Fri, Oct 6, 2023 url: https://www.ijcai.org/Proceedings/16/Papers/464.pdf Summary of paper Motivation in this paper, they generalize the Goal Recognition Design (GRD) problem to Stochastic GRD (S-GRD) problems, which handle stochastic action outcomes. Some key terms Plan and goal recognition problem
+it aims to identify the actual plan or goal of an agent given its behaviour.</description>
     </item>
     
     <item>
@@ -68,7 +69,7 @@
       
       <guid>https://sino-huang.github.io/posts/alba-gragera-pddl-domain-repair-fixing-domains-with-incomplete-action-effects-2023/</guid>
       <description>[TOC]
- Title: PDDL Domain Repair Fixing Domains With Incomplete Action Effects Author: Alba Gragera et. al. Publish Year: ICAPS 2023 Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/demos/papers/2791_paper.pdf  Summary of paper Contribution  in this paper, they present a tool to repair planning models where the effects of some actions are incomplete. The received input is compiled to a new extended planning task, in which actions are permitted to insert possible missing effects.</description>
+Title: PDDL Domain Repair Fixing Domains With Incomplete Action Effects Author: Alba Gragera et. al. Publish Year: ICAPS 2023 Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/demos/papers/2791_paper.pdf Summary of paper Contribution in this paper, they present a tool to repair planning models where the effects of some actions are incomplete. The received input is compiled to a new extended planning task, in which actions are permitted to insert possible missing effects.</description>
     </item>
     
     <item>
@@ -78,7 +79,7 @@
       
       <guid>https://sino-huang.github.io/posts/alba-gragera-exploring-the-limitations-of-using-llms-to-fix-planning-tasks-2023/</guid>
       <description>[TOC]
- Title: Exploring the Limitations of Using LLMs to Fix Planning Tasks Author: Alba Gragera et. al. Publish Year: icaps23.icaps-conference Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/program/workshops/keps/KEPS-23_paper_3645.pdf  Summary of paper Motivation  In this work, the authors present ongoing efforts on exploring the limitations of LLMs in task requiring reasoning and planning competences: that of assisting humans in the process of fixing planning tasks.  Contribution  investigate how good LLMs are at repairing planning tasks when the prompt is given in PDDL and when it is given in natural language.</description>
+Title: Exploring the Limitations of Using LLMs to Fix Planning Tasks Author: Alba Gragera et. al. Publish Year: icaps23.icaps-conference Review Date: Wed, Sep 20, 2023 url: https://icaps23.icaps-conference.org/program/workshops/keps/KEPS-23_paper_3645.pdf Summary of paper Motivation In this work, the authors present ongoing efforts on exploring the limitations of LLMs in task requiring reasoning and planning competences: that of assisting humans in the process of fixing planning tasks. Contribution investigate how good LLMs are at repairing planning tasks when the prompt is given in PDDL and when it is given in natural language.</description>
     </item>
     
     <item>
@@ -88,7 +89,7 @@
       
       <guid>https://sino-huang.github.io/posts/tathagata-chakraborti-plan-explanations-as-model-reconciliation-2017/</guid>
       <description>[TOC]
- Title: Plan Explanations as Model Reconciliation: Moving beyond explanation as soliloquy Author: Tathagata Chakraborti Publish Year: 30 May 2017 Review Date: Tue, Sep 19, 2023 url: https://arxiv.org/pdf/1701.08317.pdf  Summary of paper Motivation  Past work on plan explanations primarily involved AI system explaining the correctness of its plan and t he rationale for its decision in terms of its own model. Such soliloquy is inadequate (think about the case where GPT4 cannot find errors in PDDL domain file due to over confidence) in this work, the author said that due to the domain and task model difference between human and AI system, the soliloquy is inadequate.</description>
+Title: Plan Explanations as Model Reconciliation: Moving beyond explanation as soliloquy Author: Tathagata Chakraborti Publish Year: 30 May 2017 Review Date: Tue, Sep 19, 2023 url: https://arxiv.org/pdf/1701.08317.pdf Summary of paper Motivation Past work on plan explanations primarily involved AI system explaining the correctness of its plan and t he rationale for its decision in terms of its own model. Such soliloquy is inadequate (think about the case where GPT4 cannot find errors in PDDL domain file due to over confidence) in this work, the author said that due to the domain and task model difference between human and AI system, the soliloquy is inadequate.</description>
     </item>
     
     <item>
@@ -98,7 +99,7 @@
       
       <guid>https://sino-huang.github.io/posts/vishal-pallagani-plansformer-tool-demonstrating-generation-of-symbolic-plans-using-transformers-2023/</guid>
       <description>[TOC]
- Title: Plansformer &amp;ndash; Tool Demonstrating Generation of Symbolic Plans Using Transformers Author: Vishal Pallagani et. al. Publish Year: IJCAI-23 Review Date: Sat, Sep 16, 2023 url: https://www.ijcai.org/proceedings/2023/0839.pdf  Summary of paper Motivation  making a bridge between planning in LLM and planning in traditional automatic planner  Design of Plansformer  in the evaluation phase, planner testing helps to validate the plan (both the syntax validation and plan optimality validation), model testing helps to force a linguistic consistency (in this case it supervise the semantics).</description>
+Title: Plansformer &amp;ndash; Tool Demonstrating Generation of Symbolic Plans Using Transformers Author: Vishal Pallagani et. al. Publish Year: IJCAI-23 Review Date: Sat, Sep 16, 2023 url: https://www.ijcai.org/proceedings/2023/0839.pdf Summary of paper Motivation making a bridge between planning in LLM and planning in traditional automatic planner Design of Plansformer in the evaluation phase, planner testing helps to validate the plan (both the syntax validation and plan optimality validation), model testing helps to force a linguistic consistency (in this case it supervise the semantics).</description>
     </item>
     
     <item>
@@ -108,7 +109,8 @@
       
       <guid>https://sino-huang.github.io/posts/alan_lindsay-framer-planning-models-from-natural-language-action-descriptions-2017/</guid>
       <description>[TOC]
- Title: Framer: Planning Models From Natural Language Action Descriptions Author: Alan Lindsay et. al. Publish Year: 2017 Review Date: Thu, Mar 9, 2023 url: https://core.ac.uk/download/pdf/322329049.pdf  Summary of paper Motivation  for modelling assisting and model generation tools, there is a underlying assumption that the user can formulate the problem using some formal language. this motivates us to generate planning domain models directly from NL descriptions.  Some key terms approach</description>
+Title: Framer: Planning Models From Natural Language Action Descriptions Author: Alan Lindsay et. al. Publish Year: 2017 Review Date: Thu, Mar 9, 2023 url: https://core.ac.uk/download/pdf/322329049.pdf Summary of paper Motivation for modelling assisting and model generation tools, there is a underlying assumption that the user can formulate the problem using some formal language. this motivates us to generate planning domain models directly from NL descriptions. Some key terms approach
+we start from NL descriptions of actions and use NL analysis to construct structured representation, from which we construct formal representations of action sequences ?</description>
     </item>
     
     <item>
@@ -118,7 +120,7 @@
       
       <guid>https://sino-huang.github.io/posts/shivam_miglani-nltopddl-learning-from-nlp-manuals-2020/</guid>
       <description>[TOC]
- Title: NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals Author: Shivam Miglani et. al. Publish Year: 2020 Review Date: Mar 2022  Summary of paper Motivation pipeline
+Title: NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals Author: Shivam Miglani et. al. Publish Year: 2020 Review Date: Mar 2022 Summary of paper Motivation pipeline
 Pipeline architecture
 Phase 1 we have a DQN that learns to extract words that represent action name, action arguments, and the sequence of actions present in annotated NL process manuals. (why only action name, do we need to extract other information?</description>
     </item>

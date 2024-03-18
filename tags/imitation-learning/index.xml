@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>imitation learning on Sukai Huang</title>
+    <title>Imitation Learning on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/imitation-learning/</link>
-    <description>Recent content in imitation learning on Sukai Huang</description>
+    <description>Recent content in Imitation Learning on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 24 Dec 2021 23:29:49 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/imitation-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lili_chen Decision Transformer Reinforcement Learning via Sequence Modeling 2021</title>
@@ -17,10 +18,11 @@
       
       <guid>https://sino-huang.github.io/posts/lili_chen-decision-transformer-reinforcement-learning-via-sequence-modeling-2021/</guid>
       <description>[TOC]
- Title: Decision Transformer: Reinforcement Learning via Sequence Modeling Author: Lili Chen et. al. Publish Year: Jun 2021 Review Date: Dec 2021  Summary of paper The Architecture of Decision Transformer
+Title: Decision Transformer: Reinforcement Learning via Sequence Modeling Author: Lili Chen et. al. Publish Year: Jun 2021 Review Date: Dec 2021 Summary of paper The Architecture of Decision Transformer
 Inputs are reward, observation and action
 Outputs are action, in training time, the future action will be masked out.
-I believe this model is able to generate a very good long sequence of actions due to transformer architecture.</description>
+I believe this model is able to generate a very good long sequence of actions due to transformer architecture.
+But somehow this is not RL anymore because the transformer is not trained by reward signal &amp;hellip;</description>
     </item>
     
   </channel>

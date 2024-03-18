@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>llm on Sukai Huang</title>
+    <title>Llm on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/llm/</link>
-    <description>Recent content in llm on Sukai Huang</description>
+    <description>Recent content in Llm on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jia Li Structured Cot Prompting for Code Generation 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</guid>
       <description>[TOC]
- Title: Structured Chaint of Thought Prompting for Code Generation 2023 Author: Jia Li et. al. Publish Year: 7 Sep 2023 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2305.06599.pdf  Summary of paper Contribution The paper introduces Structured CoTs (SCoTs) and a novel prompting technique called SCoT prompting for improving code generation with Large Language Models (LLMs) like ChatGPT and Codex. Unlike the previous Chain-of-Thought (CoT) prompting, which focuses on natural language reasoning steps, SCoT prompting leverages the structural information inherent in source code.</description>
+Title: Structured Chaint of Thought Prompting for Code Generation 2023 Author: Jia Li et. al. Publish Year: 7 Sep 2023 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2305.06599.pdf Summary of paper Contribution The paper introduces Structured CoTs (SCoTs) and a novel prompting technique called SCoT prompting for improving code generation with Large Language Models (LLMs) like ChatGPT and Codex. Unlike the previous Chain-of-Thought (CoT) prompting, which focuses on natural language reasoning steps, SCoT prompting leverages the structural information inherent in source code.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/stephanie-teaching-models-to-express-their-uncertainty-in-words-2022/</guid>
       <description>[TOC]
- Title: Teaching Models to Express Their Uncertainty in Words Author: Stephanie Lin et. al. Publish Year: 13 Jun 2022 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2205.14334.pdf  Summary of paper Motivation The study demonstrates that a GPT-3 model can articulate uncertainty about its answers in natural language without relying on model logits. It generates both an answer and a confidence level (e.g., &amp;ldquo;90% confidence&amp;rdquo; or &amp;ldquo;high confidence&amp;rdquo;), which map to well-calibrated probabilities.</description>
+Title: Teaching Models to Express Their Uncertainty in Words Author: Stephanie Lin et. al. Publish Year: 13 Jun 2022 Review Date: Wed, Feb 28, 2024 url: https://arxiv.org/pdf/2205.14334.pdf Summary of paper Motivation The study demonstrates that a GPT-3 model can articulate uncertainty about its answers in natural language without relying on model logits. It generates both an answer and a confidence level (e.g., &amp;ldquo;90% confidence&amp;rdquo; or &amp;ldquo;high confidence&amp;rdquo;), which map to well-calibrated probabilities.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/ziwei-xu-hallucination-is-inevitable-an-innate-limitation-llm-2024/</guid>
       <description>[TOC]
- Title: Hallucination Is Inevitable an Innate Limitation Llm 2024 Author: Ziwei Xu et. al. Publish Year: 22 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.11817v1  Summary of paper Contribution The paper formalizes the issue of hallucination in large language models (LLMs) and argues that it is impossible to completely eliminate hallucination. It defines hallucination as inconsistencies between a computable LLM and a computable ground truth function.</description>
+Title: Hallucination Is Inevitable an Innate Limitation Llm 2024 Author: Ziwei Xu et. al. Publish Year: 22 Jan 2024 Review Date: Sun, Jan 28, 2024 url: arXiv:2401.11817v1 Summary of paper Contribution The paper formalizes the issue of hallucination in large language models (LLMs) and argues that it is impossible to completely eliminate hallucination. It defines hallucination as inconsistencies between a computable LLM and a computable ground truth function. By drawing from learning theory, the paper demonstrates that LLMs cannot learn all computable functions, thus always prone to hallucination.</description>
     </item>
     
   </channel>

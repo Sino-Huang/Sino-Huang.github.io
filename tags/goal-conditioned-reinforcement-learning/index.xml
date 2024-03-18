@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>goal-conditioned reinforcement learning on Sukai Huang</title>
+    <title>Goal-Conditioned Reinforcement Learning on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/goal-conditioned-reinforcement-learning/</link>
-    <description>Recent content in goal-conditioned reinforcement learning on Sukai Huang</description>
+    <description>Recent content in Goal-Conditioned Reinforcement Learning on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 30 Mar 2023 21:20:31 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/goal-conditioned-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mariana_learning Generative Models With Goal Conditioned Reinforcement Learning 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/mariana_learning-generative-models-with-goal-conditioned-reinforcement-learning-2023/</guid>
       <description>[TOC]
- Title: Learning Generative Models With Goal Conditioned Reinforcement Learning Author: Mariana Vargas Vieyra et. al. Publish Year: 26 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.14811  Summary of paper Contribution  we present a novel framework for learning generative models with goal-conditioned reinforcement learning we define two agents, a goal conditioned agent (GC-agent) and a supervised agent (S-agent) Given a user-input initial state, the GC-agent learns to reconstruct the training set.</description>
+Title: Learning Generative Models With Goal Conditioned Reinforcement Learning Author: Mariana Vargas Vieyra et. al. Publish Year: 26 Mar 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.14811 Summary of paper Contribution we present a novel framework for learning generative models with goal-conditioned reinforcement learning we define two agents, a goal conditioned agent (GC-agent) and a supervised agent (S-agent) Given a user-input initial state, the GC-agent learns to reconstruct the training set.</description>
     </item>
     
   </channel>

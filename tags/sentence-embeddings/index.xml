@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>sentence embeddings on Sukai Huang</title>
+    <title>Sentence Embeddings on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/sentence-embeddings/</link>
-    <description>Recent content in sentence embeddings on Sukai Huang</description>
+    <description>Recent content in Sentence Embeddings on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 27 Aug 2022 16:03:42 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/sentence-embeddings/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Yung_sung_chuang Diffcse Difference Based Contrastive Learning for Sentence Embeddings 2022</title>
@@ -17,7 +18,8 @@
       
       <guid>https://sino-huang.github.io/posts/yung_sung_chuang-diffcse-difference-based-contrastive-learning-for-sentence-embeddings-2022/</guid>
       <description>[TOC]
- Title: DiffCSE: Difference Based Contrastive Learning for Sentence Embeddings Author: Yung-Sung Chuang et. al. Publish Year: 21 Apr 2022 Review Date: Sat, Aug 27, 2022  Summary of paper Motivation  DiffCSE learns sentences that are sensitive to the difference between the original sentence and and edited sentence.  Contribution  we propose DiffCSE, an unsupervised contrastive learning framework for learning sentence embeddings  Some key terms DiffCSE</description>
+Title: DiffCSE: Difference Based Contrastive Learning for Sentence Embeddings Author: Yung-Sung Chuang et. al. Publish Year: 21 Apr 2022 Review Date: Sat, Aug 27, 2022 Summary of paper Motivation DiffCSE learns sentences that are sensitive to the difference between the original sentence and and edited sentence. Contribution we propose DiffCSE, an unsupervised contrastive learning framework for learning sentence embeddings Some key terms DiffCSE
+this is an unsupervsied contrastive learning framework rather than model architecture Contrastive learning in single modality data</description>
     </item>
     
   </channel>

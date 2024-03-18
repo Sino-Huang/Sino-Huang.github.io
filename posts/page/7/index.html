@@ -18,6 +18,7 @@
 <meta content="#2e2e33" name="theme-color"/>
 <meta content="#2e2e33" name="msapplication-TileColor"/>
 <link href="https://sino-huang.github.io/posts/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/posts/" hreflang="en" rel="alternate"/>
 <noscript>
 <style>
         #theme-toggle,
@@ -120,6 +121,8 @@ if (!doNotTrack) {
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
+<ul class="lang-switch"><li>|</li>
+</ul>
 </div>
 </div>
 <ul id="menu">
@@ -171,11 +174,11 @@ if (!doNotTrack) {
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Offline Reinforcement Learning with Implicit Q-learning Author:Ilya Kostrikov et. al. Publish Year: 2021 Review Date: Mar 2022  Summary of paper Motivation conflict in offline reinforcement learning
+Title: Offline Reinforcement Learning with Implicit Q-learning Author:Ilya Kostrikov et. al. Publish Year: 2021 Review Date: Mar 2022 Summary of paper Motivation conflict in offline reinforcement learning
 offline reinforcement learning requires reconciling two conflicting aims:
- learning a policy that improves over the behaviour policy (old policy) that collected the dataset while at the same time minimizing the deviation from the behaviour policy so as to avoid errors due to distributional shift (e....</p>
+learning a policy that improves over the behaviour policy (old policy) that collected the dataset while at the same time minimizing the deviation from the behaviour policy so as to avoid errors due to distributional shift (e....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-22 19:01:49 +1100 AEDT">March 22, 2022</span> · 4 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-22 19:01:49 +1100 AEDT'&gt;March 22, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Ilya_kostrikov Offline Rl With Implicit Q Learning 2021" class="entry-link" href="https://sino-huang.github.io/posts/ilya_kostrikov-offline-rl-with-implicit-q-learning-2021/"></a>
 </article>
 <article class="post-entry">
@@ -185,12 +188,12 @@ offline reinforcement learning requires reconciling two conflicting aims:
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Online Decision Transformer Author: Qinqing Zheng Publish Year: Feb 2022 Review Date: Mar 2022  Summary of paper Motivation the author proposed online Decision transformer (ODT), an RL algorithm based on sequence modelling that blends offline pretraining with online fine-tuning in a unified framework.
+Title: Online Decision Transformer Author: Qinqing Zheng Publish Year: Feb 2022 Review Date: Mar 2022 Summary of paper Motivation the author proposed online Decision transformer (ODT), an RL algorithm based on sequence modelling that blends offline pretraining with online fine-tuning in a unified framework.
 ODT builds on the decision transformer architecture previously introduced for offline RL
 quantify exploration
 compared to DT, they shifted from deterministic to stochastic policies for defining exploration objectives during the online phase....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-21 21:56:45 +1100 AEDT">March 21, 2022</span> · 4 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-21 21:56:45 +1100 AEDT'&gt;March 21, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Qinqing_zheng Online Decision Transformer 2022" class="entry-link" href="https://sino-huang.github.io/posts/qinqing_zheng-online-decision-transformer-2022/"></a>
 </article>
 <article class="post-entry">
@@ -200,10 +203,10 @@ compared to DT, they shifted from deterministic to stochastic policies for defin
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Improving language models by retrieving from trillions of tokens Author: Sebastian Borgeaud et. al. Publish Year: Feb 2022 Review Date: Mar 2022  Summary of paper Motivation in order to decrease the size of language model, this work suggested retrieval from a large text database as a complementary path to scaling language models.
+Title: Improving language models by retrieving from trillions of tokens Author: Sebastian Borgeaud et. al. Publish Year: Feb 2022 Review Date: Mar 2022 Summary of paper Motivation in order to decrease the size of language model, this work suggested retrieval from a large text database as a complementary path to scaling language models.
 they equip models with the ability to directly access a large dataset to perform prediction – a semi-parametric approach....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-21 19:07:36 +1100 AEDT">March 21, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-21 19:07:36 +1100 AEDT'&gt;March 21, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Sebastian_borgeaud Improving Language Models by Retrieving From Trillions of Tokens 2022" class="entry-link" href="https://sino-huang.github.io/posts/sebastian_borgeaud-improving-language-models-by-retrieving-from-trillions-of-tokens-2022/"></a>
 </article>
 <article class="post-entry">
@@ -213,11 +216,11 @@ they equip models with the ability to directly access a large dataset to perform
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022  Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
+Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022 Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
 Moreover, when the model is trained from scratch, it suffers from slow convergence speeds
 In this paper, they look to take advantage of this formulation of reinforcement learning as sequence modelling and investigate the transferability of pre-trained sequence models on other domains (vision, language) when fine tuned on offline RL tasks (control, games)....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-16 21:18:24 +1100 AEDT">March 16, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-16 21:18:24 +1100 AEDT'&gt;March 16, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Machel_reid Can Wikipedia Help Offline Rl 2022" class="entry-link" href="https://sino-huang.github.io/posts/machel_reid-can-wikipedia-help-offline-rl-2022/"></a>
 </article>
 <article class="post-entry">
@@ -227,11 +230,11 @@ In this paper, they look to take advantage of this formulation of reinforcement 
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Generalised Domain Model Acquisition from Action Traces (LOCM2) Author: Stephen Cresswell et. al. Publish Year: 2013 Review Date: Mar 2022  Summary of paper Motivation One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.
+Title: Generalised Domain Model Acquisition from Action Traces (LOCM2) Author: Stephen Cresswell et. al. Publish Year: 2013 Review Date: Mar 2022 Summary of paper Motivation One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.
 This work extended LOCM by allowing multiple parameterised state machine to represent a single object.
 In other words, it is possible to automatically infer the underlying transition system from sample action sequences of the domain....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-15 16:34:45 +1100 AEDT">March 15, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-15 16:34:45 +1100 AEDT'&gt;March 15, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Stephen_cresswell Generalised Domain Model Acquisition From Action Traces 2013" class="entry-link" href="https://sino-huang.github.io/posts/stephen_cresswell-generalised-domain-model-acquisition-from-action-traces-2013/"></a>
 </article>
 <article class="post-entry">
@@ -241,13 +244,13 @@ In other words, it is possible to automatically infer the underlying transition 
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Extracting Action Sequences from Texts Based on Deep Reinforcement Learning Author: Wenfeng Feng et. al. Publish Year: Mar 2018 Review Date: Mar 2022  Summary of paper Motivation the author want to build a model that learns to directly extract action sequences without external tools like POS tagging and dependency parsing results…
+Title: Extracting Action Sequences from Texts Based on Deep Reinforcement Learning Author: Wenfeng Feng et. al. Publish Year: Mar 2018 Review Date: Mar 2022 Summary of paper Motivation the author want to build a model that learns to directly extract action sequences without external tools like POS tagging and dependency parsing results…
 Annotation dataset structure
 example
 Model
 they exploit the framework to learn two models to predict action names and arguments respectively....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-15 14:40:38 +1100 AEDT">March 15, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-15 14:40:38 +1100 AEDT'&gt;March 15, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Wenfeng_feng Extracting Action Sequences From Texts by Rl" class="entry-link" href="https://sino-huang.github.io/posts/wenfeng_feng-extracting-action-sequences-from-texts-by-rl/"></a>
 </article>
 <article class="post-entry">
@@ -257,11 +260,11 @@ they exploit the framework to learn two models to predict action names and argum
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals Author: Shivam Miglani et. al. Publish Year: 2020 Review Date: Mar 2022  Summary of paper Motivation pipeline
+Title: NLtoPDDL: One-Shot Learning of PDDL Models from Natural Language Process Manuals Author: Shivam Miglani et. al. Publish Year: 2020 Review Date: Mar 2022 Summary of paper Motivation pipeline
 Pipeline architecture
 Phase 1 we have a DQN that learns to extract words that represent action name, action arguments, and the sequence of actions present in annotated NL process manuals. (why only action name, do we need to extract other information?...</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-14 15:08:45 +1100 AEDT">March 14, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-14 15:08:45 +1100 AEDT'&gt;March 14, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Shivam_miglani Nltopddl Learning From Nlp Manuals 2020" class="entry-link" href="https://sino-huang.github.io/posts/shivam_miglani-nltopddl-learning-from-nlp-manuals-2020/"></a>
 </article>
 <article class="post-entry">
@@ -271,11 +274,11 @@ Phase 1 we have a DQN that learns to extract words that represent action name, a
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Foundations for Restraining Bolts: Reinforcement Learning with LTLf/LDLf Restraining Specification Author: Giuseppe De Giacomo et. al. Publish Year: 2019 Review Date: Mar 2022  Summary of paper The author investigated the concept of “restraining bolt” that can control the behaviour of learning agents.
+Title: Foundations for Restraining Bolts: Reinforcement Learning with LTLf/LDLf Restraining Specification Author: Giuseppe De Giacomo et. al. Publish Year: 2019 Review Date: Mar 2022 Summary of paper The author investigated the concept of “restraining bolt” that can control the behaviour of learning agents.
 Essentially, the way to control a RL agent is that the bolt provides additional rewards to the agent
 Although this method is essentially the same as reward shaping (providing additional rewards to the agent), the contribution of this paper is...</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-04 12:12:57 +1100 AEDT">March 4, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-04 12:12:57 +1100 AEDT'&gt;March 4, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Giuseppe_de_giacomo Foundations for Retraining Bolts Rl With Ltl 2019" class="entry-link" href="https://sino-huang.github.io/posts/giuseppe_de_giacomo-foundations-for-retraining-bolts-rl-with-ltl-2019/"></a>
 </article>
 <article class="post-entry">
@@ -286,9 +289,9 @@ Although this method is essentially the same as reward shaping (providing additi
 <div class="entry-content">
 <p>please modify the following
 [TOC]
- Title: Collaborative Planning with Encoding of Users’ High-level Strategies Author: Joseph Kim et. al. Publish Year: 2017 Review Date: Mar 2022  Summary of paper Motivation Automatic planning is computationally expensive. Greedy search heuristics often yield low-quality plans that can result in wasted resources; also, even in the event that an adequate plan is generated, users may have difficulty interpreting the reason why the plan performs well and trusting it....</p>
+Title: Collaborative Planning with Encoding of Users’ High-level Strategies Author: Joseph Kim et. al. Publish Year: 2017 Review Date: Mar 2022 Summary of paper Motivation Automatic planning is computationally expensive. Greedy search heuristics often yield low-quality plans that can result in wasted resources; also, even in the event that an adequate plan is generated, users may have difficulty interpreting the reason why the plan performs well and trusting it....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-04 12:12:27 +1100 AEDT">March 4, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-04 12:12:27 +1100 AEDT'&gt;March 4, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Joseph_kim Collaborative Planning With Encoding of High Level Strategies 2017" class="entry-link" href="https://sino-huang.github.io/posts/joseph_kim-collaborative-planning-with-encoding-of-high-level-strategies-2017/"></a>
 </article>
 <article class="post-entry">
@@ -298,9 +301,9 @@ Although this method is essentially the same as reward shaping (providing additi
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: MiniHack the Planet: A Sandbox for Open-Ended Reinforcement Learning Research Author: Mikayel Samvelyan et. al. Publish Year: Nov 2021 Review Date: Mar 2022  Summary of paper They presented MiniHack, an easy-to-use framework for creating rich and varied RL environments, as well as a suite of tasks developed using this framework. Built upon NLE and the des-file format, MiniHack enables the use of rich entities and dynamics from the game of NetHack to create a large variety of RL environments for targeted experimentation, while also allowing painless scaling-up of the difficulty of existing environments....</p>
+Title: MiniHack the Planet: A Sandbox for Open-Ended Reinforcement Learning Research Author: Mikayel Samvelyan et. al. Publish Year: Nov 2021 Review Date: Mar 2022 Summary of paper They presented MiniHack, an easy-to-use framework for creating rich and varied RL environments, as well as a suite of tasks developed using this framework. Built upon NLE and the des-file format, MiniHack enables the use of rich entities and dynamics from the game of NetHack to create a large variety of RL environments for targeted experimentation, while also allowing painless scaling-up of the difficulty of existing environments....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-04 12:11:55 +1100 AEDT">March 4, 2022</span> · 3 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-04 12:11:55 +1100 AEDT'&gt;March 4, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Mikayel_samvelyan Minihack the Planet a Sandbox for Open Ended Rl Research 2021" class="entry-link" href="https://sino-huang.github.io/posts/mikayel_samvelyan-minihack-the-planet-a-sandbox-for-open-ended-rl-research-2021/"></a>
 </article>
 <article class="post-entry">
@@ -310,10 +313,10 @@ Although this method is essentially the same as reward shaping (providing additi
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Constrained Language models yield few-shot semantic parsers Author: Richard Shin et. al. Publish Year: Nov 2021 Review Date: Mar 2022  Summary of paper Motivation The author wanted to explore the use of large pretrained language models as few-shot semantic parsers
+Title: Constrained Language models yield few-shot semantic parsers Author: Richard Shin et. al. Publish Year: Nov 2021 Review Date: Mar 2022 Summary of paper Motivation The author wanted to explore the use of large pretrained language models as few-shot semantic parsers
 However, language models are trained to generate natural language. To bridge the gap, they used language models to paraphrase inputs into a controlled sublanguage resembling English that can be automatically mapped to a target meaning representation....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-02 00:19:18 +1100 AEDT">March 2, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-02 00:19:18 +1100 AEDT'&gt;March 2, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Richard_shin Constrained Language Models Yield Few Shot Semantic Parsers 2021" class="entry-link" href="https://sino-huang.github.io/posts/richard_shin-constrained-language-models-yield-few-shot-semantic-parsers-2021/"></a>
 </article>
 <article class="post-entry">
@@ -323,10 +326,10 @@ However, language models are trained to generate natural language. To bridge the
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: The NetHack Learning Environment Author: Heinrich Kuttler et. al. Publish Year: Dec 2020 Review Date: Mar 2022  Summary of paper The NetHack Learning Environment (NLE), a scalable, procedurally generated, stochastic, rich, and challenging environment for RL research based on the popular single-player terminal-based roguelike game, NetHack.
+Title: The NetHack Learning Environment Author: Heinrich Kuttler et. al. Publish Year: Dec 2020 Review Date: Mar 2022 Summary of paper The NetHack Learning Environment (NLE), a scalable, procedurally generated, stochastic, rich, and challenging environment for RL research based on the popular single-player terminal-based roguelike game, NetHack.
 NetHack is sufficiently complex to drive long-term research on problems such as exploration, planning, skill acquisition, and language-conditioned RL, while dramatically reducing the computational resources required to gather a large amount of experience....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-02 00:18:35 +1100 AEDT">March 2, 2022</span> · 3 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-02 00:18:35 +1100 AEDT'&gt;March 2, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Heinrich_kuttler the Nethack Learning Environment 2020" class="entry-link" href="https://sino-huang.github.io/posts/heinrich_kuttler-the-nethack-learning-environment-2020/"></a>
 </article>
 <article class="post-entry">
@@ -337,11 +340,11 @@ NetHack is sufficiently complex to drive long-term research on problems such as 
 <div class="entry-content">
 <p>please modify the following
 [TOC]
- Title: LTL2Action: Generalizing LTL Instructions for Multi-Task RL Author: Pashootan Vaezipoor et. al. Publish Year: 2021 Review Date: March 2022  Summary of paper Motivation they addressed the problem of teaching a deep reinforcement learning agent to follow instructions in multi-task environments. Instructions are expressed in a well-known formal language – linear temporal logic (LTL)
+Title: LTL2Action: Generalizing LTL Instructions for Multi-Task RL Author: Pashootan Vaezipoor et. al. Publish Year: 2021 Review Date: March 2022 Summary of paper Motivation they addressed the problem of teaching a deep reinforcement learning agent to follow instructions in multi-task environments. Instructions are expressed in a well-known formal language – linear temporal logic (LTL)
 Limitation of the vanilla MDP
 temporal constraints cannot be expressed as rewards in MDP setting and thus modular policy and other stuffs are not able to obtain maximum rewards....</p>
 </div>
-<footer class="entry-footer"><span title="2022-03-01 20:53:10 +1100 AEDT">March 1, 2022</span> · 3 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-03-01 20:53:10 +1100 AEDT'&gt;March 1, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Pashootan_vaezipoor Ltl2action Generalising Ltl Instructions for Multi Task Rl 2021" class="entry-link" href="https://sino-huang.github.io/posts/pashootan_vaezipoor-ltl2action-generalising-ltl-instructions-for-multi-task-rl-2021/"></a>
 </article>
 <article class="post-entry">
@@ -351,11 +354,11 @@ temporal constraints cannot be expressed as rewards in MDP setting and thus modu
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Learning to Ground Language to Temporal Logical Form Author: Roma Patel et. al. Publish Year: 2019 Review Date: Feb 2022  Summary of paper Motivation natural language commands often exhibits sequential (temporal) constraints e.g., “go through the kitchen and then into the living room”.
+Title: Learning to Ground Language to Temporal Logical Form Author: Roma Patel et. al. Publish Year: 2019 Review Date: Feb 2022 Summary of paper Motivation natural language commands often exhibits sequential (temporal) constraints e.g., “go through the kitchen and then into the living room”.
 But this constraints cannot be expressed in the reward of Markov Decision Process setting. (see this paper)
 Therefore, they proposed to ground language to Linear Temporal logic (LTL) and after that continue to map from LTL expressions to action sequences....</p>
 </div>
-<footer class="entry-footer"><span title="2022-02-28 21:40:53 +1100 AEDT">February 28, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-02-28 21:40:53 +1100 AEDT'&gt;February 28, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Roma_patel Learning to Ground Language Temporal Logical Form 2019" class="entry-link" href="https://sino-huang.github.io/posts/roma_patel-learning-to-ground-language-temporal-logical-form-2019/"></a>
 </article>
 <article class="post-entry">
@@ -365,11 +368,11 @@ Therefore, they proposed to ground language to Linear Temporal logic (LTL) and a
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks? Author: Thang M. Pham Publish Year: Jul 2021 Review Date: Feb 2022  Summary of paper The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
+Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks? Author: Thang M. Pham Publish Year: Jul 2021 Review Date: Feb 2022 Summary of paper The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
 The research questions are the following
- Do BERT-based models trained on GLUE care about the order of words in a sentence?...</p>
+Do BERT-based models trained on GLUE care about the order of words in a sentence?...</p>
 </div>
-<footer class="entry-footer"><span title="2022-02-28 18:58:52 +1100 AEDT">February 28, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-02-28 18:58:52 +1100 AEDT'&gt;February 28, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Thang_m_pham Out of Order How Important Is the Sequential Order of Words in a Sentence in Natural Language Understanding Tasks 2021" class="entry-link" href="https://sino-huang.github.io/posts/thang_m_pham-out-of-order-how-important-is-the-sequential-order-of-words-in-a-sentence-in-natural-language-understanding-tasks-2021/"></a>
 </article>
 <article class="post-entry">
@@ -379,11 +382,11 @@ The research questions are the following
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Guided K-best Selection for Semantic Parsing Annotation Author: Anton Belyy et. al. Publish Year: 2021 Review Date: Feb 2022  Summary of paper Motivation They wanted to tackle the challenge of efficient data collection (data annotation) for the conversational semantic parsing task.
+Title: Guided K-best Selection for Semantic Parsing Annotation Author: Anton Belyy et. al. Publish Year: 2021 Review Date: Feb 2022 Summary of paper Motivation They wanted to tackle the challenge of efficient data collection (data annotation) for the conversational semantic parsing task.
 In the presence of little available training data, they proposed human-in-the-loop interfaces for guided K-best selection, using a prototype model trained on limited data.
 Result Their user studies showed that the keyword searching function combined with a keyword suggestion method strikes the balance between annotation accuracy and speed...</p>
 </div>
-<footer class="entry-footer"><span title="2022-02-23 19:42:39 +1100 AEDT">February 23, 2022</span> · 3 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-02-23 19:42:39 +1100 AEDT'&gt;February 23, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Anton_belyy Guided K Best Selection for Semantic Parsing Annotation 2021" class="entry-link" href="https://sino-huang.github.io/posts/anton_belyy-guided-k-best-selection-for-semantic-parsing-annotation-2021/"></a>
 </article>
 <article class="post-entry">
@@ -393,12 +396,12 @@ Result Their user studies showed that the keyword searching function combined wi
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Argumentative Zoning Author: Simone Teufel Publish Year: 2000 Review Date: Feb 2022  https://www.cl.cam.ac.uk/~sht25/az.html
+Title: Argumentative Zoning Author: Simone Teufel Publish Year: 2000 Review Date: Feb 2022 https://www.cl.cam.ac.uk/~sht25/az.html
 Summary Abstract We present a new type of analysis for scientific text which we call Argumentative Zoning.
 We demonstrate that this type of text analysis can be used for generating user-tailored and task-tailored summaries and for performing more informative citation analyses.
 We also demonstrate that our type of analysis can be applied to unrestricted text, both automatically and by humans....</p>
 </div>
-<footer class="entry-footer"><span title="2022-02-16 14:40:57 +1100 AEDT">February 16, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-02-16 14:40:57 +1100 AEDT'&gt;February 16, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to S_teufel Argumentative Zoning 2000" class="entry-link" href="https://sino-huang.github.io/posts/s_teufel-argumentative-zoning-2000/"></a>
 </article>
 <article class="post-entry">
@@ -408,10 +411,11 @@ We also demonstrate that our type of analysis can be applied to unrestricted tex
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Compositionality as Lexical Symmetry Author: Ekin Akyurek; Jacob Andreas Publish Year: Jan 2022 Review Date: Feb 2022  Summary of paper Motivation Standard deep network models lack the inductive bias needed to generalize compositionally in tasks like semantic parsing, translation, and question answering.
-So, a large body of work in NLP seeks to overcome this limitation with new model architectures that enforce a compositional process of sentence interpretation....</p>
+Title: Compositionality as Lexical Symmetry Author: Ekin Akyurek; Jacob Andreas Publish Year: Jan 2022 Review Date: Feb 2022 Summary of paper Motivation Standard deep network models lack the inductive bias needed to generalize compositionally in tasks like semantic parsing, translation, and question answering.
+So, a large body of work in NLP seeks to overcome this limitation with new model architectures that enforce a compositional process of sentence interpretation.
+Goal...</p>
 </div>
-<footer class="entry-footer"><span title="2022-02-08 14:20:19 +1100 AEDT">February 8, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-02-08 14:20:19 +1100 AEDT'&gt;February 8, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Jacob_andreas Compositionality as Lexical Symmetry 2022" class="entry-link" href="https://sino-huang.github.io/posts/jacob_andreas-compositionality-as-lexical-symmetry-2022/"></a>
 </article>
 <article class="post-entry">
@@ -421,11 +425,12 @@ So, a large body of work in NLP seeks to overcome this limitation with new model
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: When Attention Meets Fast Recurrence: Training Language Models with Reduce Compute Author: Tao Lei Publish Year: Sep 2021 Review Date: Jan 2022  Summary of paper As the author mentioned, the inspiration of SRU++ comes from two lines of research:
- paralleization / speed problem of Original RNN     leveraging recurrence in conjunction with self-attention  Structure of SRU++
-New discovery :little attention is needed given recurrence....</p>
+Title: When Attention Meets Fast Recurrence: Training Language Models with Reduce Compute Author: Tao Lei Publish Year: Sep 2021 Review Date: Jan 2022 Summary of paper As the author mentioned, the inspiration of SRU++ comes from two lines of research:
+paralleization / speed problem of Original RNN leveraging recurrence in conjunction with self-attention Structure of SRU++
+New discovery :little attention is needed given recurrence.
+Similar to the observation of Merity (2019), they found using a couple of attention layers sufficient to obtain SOTA results....</p>
 </div>
-<footer class="entry-footer"><span title="2022-01-14 00:26:37 +1100 AEDT">January 14, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-01-14 00:26:37 +1100 AEDT'&gt;January 14, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Tao_lei When Attention Meets Fast Recurrence Training Language Models With Reduced Compute 2021" class="entry-link" href="https://sino-huang.github.io/posts/tao_lei-when-attention-meets-fast-recurrence-training-language-models-with-reduced-compute-2021/"></a>
 </article>
 <article class="post-entry">
@@ -435,10 +440,10 @@ New discovery :little attention is needed given recurrence....</p>
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models Author: Alex Nichol et. al. Publish Year: Dec 2021 Review Date: Jan 2022  Summary of paper In author’s previous work, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with classifier guidance, a technique which allows diffusion models to condition on a classifier’s labels.
- The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label....</p>
+Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models Author: Alex Nichol et. al. Publish Year: Dec 2021 Review Date: Jan 2022 Summary of paper In author’s previous work, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with classifier guidance, a technique which allows diffusion models to condition on a classifier’s labels.
+The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label....</p>
 </div>
-<footer class="entry-footer"><span title="2022-01-12 16:54:01 +1100 AEDT">January 12, 2022</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-01-12 16:54:01 +1100 AEDT'&gt;January 12, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Alex_nichol Glide Towards Photorealistic Image Generation and Editing With Text Guided Diffusion Models 2021" class="entry-link" href="https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/"></a>
 </article>
 <article class="post-entry">
@@ -448,11 +453,12 @@ New discovery :little attention is needed given recurrence....</p>
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: M6: A Chinese Multimodal Pretrainer Author: Junyang Lin et. al. Publish Year: May 2021 Review Date: Jan 2022  Summary of paper This paper re-emphasises that
- large model trained on big data have extremely large capacity and it can outperform the SOTA in downstream tasks especially in the zero-shot setting.  So, the author trained a big multi-modal model
-Also, they proposed a innovative way to tackle downstream tasks....</p>
+Title: M6: A Chinese Multimodal Pretrainer Author: Junyang Lin et. al. Publish Year: May 2021 Review Date: Jan 2022 Summary of paper This paper re-emphasises that
+large model trained on big data have extremely large capacity and it can outperform the SOTA in downstream tasks especially in the zero-shot setting. So, the author trained a big multi-modal model
+Also, they proposed a innovative way to tackle downstream tasks.
+they use masks to block cross attention between tokens so as to fit different types of downstream task Key idea: mask tokens during cross attention so as to solve certain tasks Overview...</p>
 </div>
-<footer class="entry-footer"><span title="2022-01-12 13:38:14 +1100 AEDT">January 12, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-01-12 13:38:14 +1100 AEDT'&gt;January 12, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Junyang_lin M6 a Chinese Multimodal Pretrainer 2021" class="entry-link" href="https://sino-huang.github.io/posts/junyang_lin-m6-a-chinese-multimodal-pretrainer-2021/"></a>
 </article>
 <article class="post-entry">
@@ -462,11 +468,11 @@ Also, they proposed a innovative way to tackle downstream tasks....</p>
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: BABYAI++: Towards Grounded-Language Learning Beyond Memorization Author: Tianshi Cao et. al. Publish Year: 2020 ICLR Review Date: Jan 2022  Summary of paper The paper introduced a new RL environment BabyAI++ that can investigate whether RL agents can extract knowledge from descriptive text and eventually increase generalisation performance.
+Title: BABYAI++: Towards Grounded-Language Learning Beyond Memorization Author: Tianshi Cao et. al. Publish Year: 2020 ICLR Review Date: Jan 2022 Summary of paper The paper introduced a new RL environment BabyAI++ that can investigate whether RL agents can extract knowledge from descriptive text and eventually increase generalisation performance.
 BabyAI++ environment example
- the descriptive text describe the feature of the object.  notice that the feature of object can easily change as we change the descriptive text....</p>
+the descriptive text describe the feature of the object. notice that the feature of object can easily change as we change the descriptive text....</p>
 </div>
-<footer class="entry-footer"><span title="2022-01-03 22:38:40 +1100 AEDT">January 3, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-01-03 22:38:40 +1100 AEDT'&gt;January 3, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Tianshi_cao Babyai Plus Plus Towards Grounded Language Learning Beyond Memorization 2020" class="entry-link" href="https://sino-huang.github.io/posts/tianshi_cao-babyai-plus-plus-towards-grounded-language-learning-beyond-memorization-2020/"></a>
 </article>
 <article class="post-entry">
@@ -476,12 +482,12 @@ BabyAI++ environment example
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction Author: Federico Bianchi Publish Year: 2021 Review Date: Jan 2022  Summary of paper the author investigated grounded language learning through the natural interaction between users and the shopping website search engine.
+Title: Language in a (Search) Box: Grounding Language Learning in Real-World Human-Machine Interaction Author: Federico Bianchi Publish Year: 2021 Review Date: Jan 2022 Summary of paper the author investigated grounded language learning through the natural interaction between users and the shopping website search engine.
 How they do it
-  convert the shopping object dataset into a Latent Grounded Domain
-  related products end up closer in the embedding space    train the mapping model (mapping from text query to a portion of product space) based on the user click behaviour (In the training dataset, the users queries about “Nike” and the they would click relevant Nike Product)...</p>
+convert the shopping object dataset into a Latent Grounded Domain
+related products end up closer in the embedding space train the mapping model (mapping from text query to a portion of product space) based on the user click behaviour (In the training dataset, the users queries about “Nike” and the they would click relevant Nike Product)...</p>
 </div>
-<footer class="entry-footer"><span title="2022-01-03 16:51:39 +1100 AEDT">January 3, 2022</span> · 1 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2022-01-03 16:51:39 +1100 AEDT'&gt;January 3, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Federico_bianchi Language in a Search Box Grounding Language Learning in Real World Human Machine Interaction 2021" class="entry-link" href="https://sino-huang.github.io/posts/federico_bianchi-language-in-a-search-box-grounding-language-learning-in-real-world-human-machine-interaction-2021/"></a>
 </article>
 <article class="post-entry">
@@ -491,12 +497,13 @@ How they do it
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Decision Transformer: Reinforcement Learning via Sequence Modeling Author: Lili Chen et. al. Publish Year: Jun 2021 Review Date: Dec 2021  Summary of paper The Architecture of Decision Transformer
+Title: Decision Transformer: Reinforcement Learning via Sequence Modeling Author: Lili Chen et. al. Publish Year: Jun 2021 Review Date: Dec 2021 Summary of paper The Architecture of Decision Transformer
 Inputs are reward, observation and action
 Outputs are action, in training time, the future action will be masked out.
-I believe this model is able to generate a very good long sequence of actions due to transformer architecture....</p>
+I believe this model is able to generate a very good long sequence of actions due to transformer architecture.
+But somehow this is not RL anymore because the transformer is not trained by reward signal …...</p>
 </div>
-<footer class="entry-footer"><span title="2021-12-24 23:29:49 +1100 AEDT">December 24, 2021</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2021-12-24 23:29:49 +1100 AEDT'&gt;December 24, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Lili_chen Decision Transformer Reinforcement Learning via Sequence Modeling 2021" class="entry-link" href="https://sino-huang.github.io/posts/lili_chen-decision-transformer-reinforcement-learning-via-sequence-modeling-2021/"></a>
 </article>
 <article class="post-entry">
@@ -506,13 +513,13 @@ I believe this model is able to generate a very good long sequence of actions du
 </header>
 <div class="entry-content">
 <p>[TOC]
- Title: Grammar-Based Grounded Lexicon Learning Author: Jiayuan Mao Publish Year: 2021 NeurIPS Review Date: Dec 2021  Summary of paper The paper extend the previous work “Neuro-Symbolic Concept Learner” by parsing the natural language questions using symbolic manner.
+Title: Grammar-Based Grounded Lexicon Learning Author: Jiayuan Mao Publish Year: 2021 NeurIPS Review Date: Dec 2021 Summary of paper The paper extend the previous work “Neuro-Symbolic Concept Learner” by parsing the natural language questions using symbolic manner.
 The core semantic parsing technique is Combinatory Categorical Grammar with CKY algorithm to prune unlikely expressions.
 The full picture looks like this
 The detailed algorithm process looks like this
 How to derive concept embedding...</p>
 </div>
-<footer class="entry-footer"><span title="2021-12-22 17:22:15 +1100 AEDT">December 22, 2021</span> · 2 min · Sukai Huang</footer>
+<footer class="entry-footer">&lt;span title='2021-12-22 17:22:15 +1100 AEDT'&gt;December 22, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Jiayuan_mao Grammar Based Grounded Lexicon Learning 2021" class="entry-link" href="https://sino-huang.github.io/posts/jiayuan_mao-grammar-based-grounded-lexicon-learning-2021/"></a>
 </article>
 <footer class="page-footer">

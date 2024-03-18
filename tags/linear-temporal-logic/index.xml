@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>linear temporal logic on Sukai Huang</title>
+    <title>Linear Temporal Logic on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/linear-temporal-logic/</link>
-    <description>Recent content in linear temporal logic on Sukai Huang</description>
+    <description>Recent content in Linear Temporal Logic on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Fri, 04 Mar 2022 12:12:57 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/linear-temporal-logic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giuseppe_de_giacomo Foundations for Retraining Bolts Rl With Ltl 2019</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/giuseppe_de_giacomo-foundations-for-retraining-bolts-rl-with-ltl-2019/</guid>
       <description>[TOC]
- Title: Foundations for Restraining Bolts: Reinforcement Learning with LTLf/LDLf Restraining Specification Author: Giuseppe De Giacomo et. al. Publish Year: 2019 Review Date: Mar 2022  Summary of paper The author investigated the concept of &amp;ldquo;restraining bolt&amp;rdquo; that can control the behaviour of learning agents.
+Title: Foundations for Restraining Bolts: Reinforcement Learning with LTLf/LDLf Restraining Specification Author: Giuseppe De Giacomo et. al. Publish Year: 2019 Review Date: Mar 2022 Summary of paper The author investigated the concept of &amp;ldquo;restraining bolt&amp;rdquo; that can control the behaviour of learning agents.
 Essentially, the way to control a RL agent is that the bolt provides additional rewards to the agent
 Although this method is essentially the same as reward shaping (providing additional rewards to the agent), the contribution of this paper is</description>
     </item>
@@ -30,7 +31,7 @@ Although this method is essentially the same as reward shaping (providing additi
       <guid>https://sino-huang.github.io/posts/pashootan_vaezipoor-ltl2action-generalising-ltl-instructions-for-multi-task-rl-2021/</guid>
       <description>please modify the following
 [TOC]
- Title: LTL2Action: Generalizing LTL Instructions for Multi-Task RL Author: Pashootan Vaezipoor et. al. Publish Year: 2021 Review Date: March 2022  Summary of paper Motivation they addressed the problem of teaching a deep reinforcement learning agent to follow instructions in multi-task environments. Instructions are expressed in a well-known formal language &amp;ndash; linear temporal logic (LTL)
+Title: LTL2Action: Generalizing LTL Instructions for Multi-Task RL Author: Pashootan Vaezipoor et. al. Publish Year: 2021 Review Date: March 2022 Summary of paper Motivation they addressed the problem of teaching a deep reinforcement learning agent to follow instructions in multi-task environments. Instructions are expressed in a well-known formal language &amp;ndash; linear temporal logic (LTL)
 Limitation of the vanilla MDP
 temporal constraints cannot be expressed as rewards in MDP setting and thus modular policy and other stuffs are not able to obtain maximum rewards.</description>
     </item>
@@ -42,7 +43,7 @@ temporal constraints cannot be expressed as rewards in MDP setting and thus modu
       
       <guid>https://sino-huang.github.io/posts/roma_patel-learning-to-ground-language-temporal-logical-form-2019/</guid>
       <description>[TOC]
- Title: Learning to Ground Language to Temporal Logical Form Author: Roma Patel et. al. Publish Year: 2019 Review Date: Feb 2022  Summary of paper Motivation natural language commands often exhibits sequential (temporal) constraints e.g., &amp;ldquo;go through the kitchen and then into the living room&amp;rdquo;.
+Title: Learning to Ground Language to Temporal Logical Form Author: Roma Patel et. al. Publish Year: 2019 Review Date: Feb 2022 Summary of paper Motivation natural language commands often exhibits sequential (temporal) constraints e.g., &amp;ldquo;go through the kitchen and then into the living room&amp;rdquo;.
 But this constraints cannot be expressed in the reward of Markov Decision Process setting. (see this paper)
 Therefore, they proposed to ground language to Linear Temporal logic (LTL) and after that continue to map from LTL expressions to action sequences.</description>
     </item>

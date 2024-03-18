@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>multimodal learning on Sukai Huang</title>
+    <title>Multimodal Learning on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/multimodal-learning/</link>
-    <description>Recent content in multimodal learning on Sukai Huang</description>
+    <description>Recent content in Multimodal Learning on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 08 Oct 2023 10:37:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/multimodal-learning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haotian Liu Improved Baselines With Visual Instruction Tuning 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/haotian-liu-improved-baselines-with-visual-instruction-tuning-2023/</guid>
       <description>[TOC]
- Title: Improved Baselines With Visual Instruction Tuning Author: Haotian Liu et. al. Publish Year: Oct 5 2023 Review Date: Sun, Oct 8, 2023 url: https://arxiv.org/pdf/2310.03744.pdf  Summary of paper Motivation  we show that the fully-connected vision-language cross-modal connector in LLaVA is surprisingly powerful and data-efficient.  Contribution  with simple modifications to LLaVA, namely, using CLIP-ViT with an MLP projection and adding academic-task-oriented VQA data with simple response formatting prompts, they establish stronger baseline.</description>
+Title: Improved Baselines With Visual Instruction Tuning Author: Haotian Liu et. al. Publish Year: Oct 5 2023 Review Date: Sun, Oct 8, 2023 url: https://arxiv.org/pdf/2310.03744.pdf Summary of paper Motivation we show that the fully-connected vision-language cross-modal connector in LLaVA is surprisingly powerful and data-efficient. Contribution with simple modifications to LLaVA, namely, using CLIP-ViT with an MLP projection and adding academic-task-oriented VQA data with simple response formatting prompts, they establish stronger baseline.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/junnan_li-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation-2022/</guid>
       <description>[TOC]
- Title: BLIP Bootstrapping Language Image Pre Training for Unified Vision Language Understanding and Generation 2022 Author: Junnan Li et. al. Publish Year: 15 Feb 2022 Review Date: Mon, May 22, 2023 url: https://arxiv.org/pdf/2201.12086.pdf  Summary of paper Motivation  performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision  Contribution  BLIP effectively utilises the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones.</description>
+Title: BLIP Bootstrapping Language Image Pre Training for Unified Vision Language Understanding and Generation 2022 Author: Junnan Li et. al. Publish Year: 15 Feb 2022 Review Date: Mon, May 22, 2023 url: https://arxiv.org/pdf/2201.12086.pdf Summary of paper Motivation performance improvement has been largely achieved by scaling up the dataset with noisy image-text pairs collected from the web, which is a suboptimal source of supervision Contribution BLIP effectively utilises the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones.</description>
     </item>
     
     <item>
@@ -37,7 +38,7 @@
       
       <guid>https://sino-huang.github.io/posts/rohit_gridhar-imagebind-one-embedding-space-to-bind-them-all-2023/</guid>
       <description>[TOC]
- Title: ImageBind One Embedding Space to Bind Them All Author: Rohit Girdhar et. al. Publish Year: 9 May 2023 Review Date: Mon, May 15, 2023 url: https://arxiv.org/pdf/2305.05665.pdf  Summary of paper Motivation  we present ImageBind, an approach to learn a joint embedding across six different modalities ImageBind can leverage recent large scale vision-language models, and extend their zero shot capabilities to new modalities just using their natural pairing with images.</description>
+Title: ImageBind One Embedding Space to Bind Them All Author: Rohit Girdhar et. al. Publish Year: 9 May 2023 Review Date: Mon, May 15, 2023 url: https://arxiv.org/pdf/2305.05665.pdf Summary of paper Motivation we present ImageBind, an approach to learn a joint embedding across six different modalities ImageBind can leverage recent large scale vision-language models, and extend their zero shot capabilities to new modalities just using their natural pairing with images. Contribution we show that all combinations of paired data are not necessary to train such a joint embedding, and only image-paired data is sufficient to bind the modalities together.</description>
     </item>
     
     <item>
@@ -47,7 +48,7 @@
       
       <guid>https://sino-huang.github.io/posts/qinghao_hitea-hierarchical-temporal-aware-video-language-pre-training-2022/</guid>
       <description>[TOC]
- Title: Hierarchical Temporal Aware Video Language Pre Training Author: Qinghao Ye, Fei Huang et. al. Publish Year: 30 Dec 2022 Review Date: Thu, Apr 6, 2023 url: https://arxiv.org/pdf/2212.14546.pdf  Summary of paper Motivation  most previous methods directly inherit or adapt typical image-language pre-training paradigms to video-language pretraining, thus not fully exploiting the unique characteristic of video, i.e., temporal.  Contribution  this paper, the two novel pretraining tasks for modeling cross-modal alignment between moments and texts as well as the temporal relations of video-text pairs.</description>
+Title: Hierarchical Temporal Aware Video Language Pre Training Author: Qinghao Ye, Fei Huang et. al. Publish Year: 30 Dec 2022 Review Date: Thu, Apr 6, 2023 url: https://arxiv.org/pdf/2212.14546.pdf Summary of paper Motivation most previous methods directly inherit or adapt typical image-language pre-training paradigms to video-language pretraining, thus not fully exploiting the unique characteristic of video, i.e., temporal. Contribution this paper, the two novel pretraining tasks for modeling cross-modal alignment between moments and texts as well as the temporal relations of video-text pairs.</description>
     </item>
     
     <item>
@@ -57,7 +58,7 @@
       
       <guid>https://sino-huang.github.io/posts/anthony_liu-a-picture-is-worth-a-thousand-words-language-models-plan-from-pixels-2023/</guid>
       <description>[TOC]
- Title: A Picture Is Worth a Thousand Words Language Models Plan From Pixels Author: Anthony Liu et.al. Publish Year: 16 Mar 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.09031v1.pdf  Summary of paper Motivation  planning is a important capability of AI that perform long-horizon tasks in real-world environments. prior PLM based approaches for planning either assume observations are available in the form of text, reason about plans from the instruction alone, or incorporate information about the visual environment in limited ways.</description>
+Title: A Picture Is Worth a Thousand Words Language Models Plan From Pixels Author: Anthony Liu et.al. Publish Year: 16 Mar 2023 Review Date: Mon, Apr 3, 2023 url: https://arxiv.org/pdf/2303.09031v1.pdf Summary of paper Motivation planning is a important capability of AI that perform long-horizon tasks in real-world environments. prior PLM based approaches for planning either assume observations are available in the form of text, reason about plans from the instruction alone, or incorporate information about the visual environment in limited ways.</description>
     </item>
     
     <item>
@@ -67,8 +68,8 @@
       
       <guid>https://sino-huang.github.io/posts/tatsuki_kuribayashi-does-vision-accelerate-hierarchical-generalisation-of-neural-language-learners-2023/</guid>
       <description>[TOC]
- Title: Does Vision Accelerate Hierarchical Generalisation of Neural Language Learners Author: Tatsuki Kuribayashi Publish Year: 1 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.00667.pdf  Summary of paper Motivation   we want to know if the visual information improves hierarchical generalisaiton of the language model
-        Contribution  our results have exhibited that vision accelerated a proper linguistic generlisation in the simplified, artificial setting, but LMs struggled with the proper generalisation in the noisy, realistic setting.</description>
+Title: Does Vision Accelerate Hierarchical Generalisation of Neural Language Learners Author: Tatsuki Kuribayashi Publish Year: 1 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.00667.pdf Summary of paper Motivation we want to know if the visual information improves hierarchical generalisaiton of the language model
+Contribution our results have exhibited that vision accelerated a proper linguistic generlisation in the simplified, artificial setting, but LMs struggled with the proper generalisation in the noisy, realistic setting.</description>
     </item>
     
     <item>
@@ -78,7 +79,7 @@
       
       <guid>https://sino-huang.github.io/posts/xiwen_liang-contrastive-instruction-trajectory-learning-for-vision-language-navigation-2022/</guid>
       <description>[TOC]
- Title: Contrastive Instruction Trajectory Learning for Vision Language Navigation Author: Xiwen Liang et. al. Publish Year: AAAI 2022 Review Date: Fri, Feb 10, 2023 url: https://arxiv.org/abs/2112.04138  Summary of paper Motivation  previous works learn to navigate step-by-step following an instruction. However, these works may fail to discriminate the similarities and discrepancies across instruction-trajectory pairs and ignore the temporal continuity of sub-instructions. These problems hinder agents from learning distinctive vision-and-language representations,  Contribution  we propose  a coarse-grained contrastive learning objective to enhance vision-and-language representations by contrasting semantics of full trajectory observations and instructions respectively; a fine-grained contrastive learning objective to perceive instructions by leveraging the temporal information of the sub-instructions.</description>
+Title: Contrastive Instruction Trajectory Learning for Vision Language Navigation Author: Xiwen Liang et. al. Publish Year: AAAI 2022 Review Date: Fri, Feb 10, 2023 url: https://arxiv.org/abs/2112.04138 Summary of paper Motivation previous works learn to navigate step-by-step following an instruction. However, these works may fail to discriminate the similarities and discrepancies across instruction-trajectory pairs and ignore the temporal continuity of sub-instructions. These problems hinder agents from learning distinctive vision-and-language representations, Contribution we propose a coarse-grained contrastive learning objective to enhance vision-and-language representations by contrasting semantics of full trajectory observations and instructions respectively; a fine-grained contrastive learning objective to perceive instructions by leveraging the temporal information of the sub-instructions.</description>
     </item>
     
     <item>
@@ -88,7 +89,7 @@
       
       <guid>https://sino-huang.github.io/posts/zhuosheng_zhang-multimodal-chain-of-thought-reasoning-in-language-models-2023/</guid>
       <description>[TOC]
- Title: Multimodal Chain of Thought Reasoning in Language Models Author: Zhuosheng Zhang et. al. Publish Year: 2023 Review Date: Wed, Feb 8, 2023 url: https://arxiv.org/pdf/2302.00923.pdf  Summary of paper Motivation  LLMs have shown impressive performance on complex reasoning by leveraging chain-of-thought (CoT) prompting to generate intermediate reasoning chains as the rationale to infer the answer. to elicit CoT reasoning in multimodality, a possible solution is to fine-tune small language models by fusing the vision and language features to perform CoT reasoning.</description>
+Title: Multimodal Chain of Thought Reasoning in Language Models Author: Zhuosheng Zhang et. al. Publish Year: 2023 Review Date: Wed, Feb 8, 2023 url: https://arxiv.org/pdf/2302.00923.pdf Summary of paper Motivation LLMs have shown impressive performance on complex reasoning by leveraging chain-of-thought (CoT) prompting to generate intermediate reasoning chains as the rationale to infer the answer. to elicit CoT reasoning in multimodality, a possible solution is to fine-tune small language models by fusing the vision and language features to perform CoT reasoning.</description>
     </item>
     
     <item>
@@ -98,7 +99,7 @@
       
       <guid>https://sino-huang.github.io/posts/jing_yu_koh-grounding-language-models-to-images-for-multimodal-generation-2023/</guid>
       <description>[TOC]
- Title: Grounding Language Models to Images for Multimodal Generation Author: Jing Yu Koh et. al. Publish Year: 31 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.13823.pdf  Summary of paper Motivation  we propose an efficient method to ground pre-trained text-only language models to the visual domain How  we keep the language model frozen, and finetune input and output linear layers to enable cross-modality interactions. This allows our model to process arbitrarily interleaved    Contribution  our approach works with any off-the-shelf language model and paves the way towards an effective, general solution for leveraging pre-trained language models in visually grounded settings.</description>
+Title: Grounding Language Models to Images for Multimodal Generation Author: Jing Yu Koh et. al. Publish Year: 31 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.13823.pdf Summary of paper Motivation we propose an efficient method to ground pre-trained text-only language models to the visual domain How we keep the language model frozen, and finetune input and output linear layers to enable cross-modality interactions. This allows our model to process arbitrarily interleaved Contribution our approach works with any off-the-shelf language model and paves the way towards an effective, general solution for leveraging pre-trained language models in visually grounded settings.</description>
     </item>
     
     <item>
@@ -108,7 +109,7 @@
       
       <guid>https://sino-huang.github.io/posts/zhenfang_chen-see-think-confirm-interactive-prompting-between-vision-and-language-models-for-knowledge-based-visual-reasoning-2023/</guid>
       <description>[TOC]
- Title: See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning Author: Zhenfang Chen et. al. Publish Year: 12 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.05226.pdf  Summary of paper Motivation  Solving the knowledge-based visual reasoning tasks remains challenging, which requires a model to comprehensively understand image content, connect external world knowledge, and perform step-by-step reasoning to answer the questions correctly.</description>
+Title: See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning Author: Zhenfang Chen et. al. Publish Year: 12 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.05226.pdf Summary of paper Motivation Solving the knowledge-based visual reasoning tasks remains challenging, which requires a model to comprehensively understand image content, connect external world knowledge, and perform step-by-step reasoning to answer the questions correctly. Contribution We propose a novel framework named Interactive Prompting Visual Reasoner (IPVR) for few-shot knowledge based visual reasoning.</description>
     </item>
     
     <item>
@@ -118,8 +119,8 @@
       
       <guid>https://sino-huang.github.io/posts/xin_wang-reinforced-cross-modal-matching-and-self-supervised-imitation-learning-for-vision-language-navigation-2019/</guid>
       <description>[TOC]
- Title: Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019 Author: Xin Wang et. al. Publish Year: Review Date: Wed, Jan 18, 2023  Summary of paper Motivation Visual Language Navigation (VLN) presents some unique challenges
- first, reasoning over images and natural language instructions can be difficult. secondly, except for strictly following expert demonstrations, the feedback is rather coarse, since the &amp;ldquo;Success&amp;rdquo; feedback is provided only when the agent reaches a target position (sparse reward) A good &amp;ldquo;instruction following&amp;rdquo; trajectory may ended up just stop before you reaching the goal state and then receive zero rewards.</description>
+Title: Reinforced Cross Modal Matching and Self Supervised Imitation Learning for Vision Language Navigation 2019 Author: Xin Wang et. al. Publish Year: Review Date: Wed, Jan 18, 2023 Summary of paper Motivation Visual Language Navigation (VLN) presents some unique challenges
+first, reasoning over images and natural language instructions can be difficult. secondly, except for strictly following expert demonstrations, the feedback is rather coarse, since the &amp;ldquo;Success&amp;rdquo; feedback is provided only when the agent reaches a target position (sparse reward) A good &amp;ldquo;instruction following&amp;rdquo; trajectory may ended up just stop before you reaching the goal state and then receive zero rewards.</description>
     </item>
     
   </channel>

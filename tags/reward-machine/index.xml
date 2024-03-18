@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>reward machine on Sukai Huang</title>
+    <title>Reward Machine on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/reward-machine/</link>
-    <description>Recent content in reward machine on Sukai Huang</description>
+    <description>Recent content in Reward Machine on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 17 Aug 2023 16:32:09 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/reward-machine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rodrigo Reward Machines Exploiting Reward Function Structure in Rl 2022</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/rodrigo-reward-machines-exploiting-reward-function-structure-in-rl-2022/</guid>
       <description>[TOC]
- Title: Reward Machines: Exploiting Reward Function Structure in Reinforcement Learning 2022 Author: Rodrigo Toro Icarte et. al. Publish Year: 2022 AI Access Foundation Review Date: Thu, Aug 17, 2023 url: https://arxiv.org/abs/2010.03950  Summary of paper Motivation  in most RL applications, however, users have to program the reward function and hence, there is the opportunity to make the reward function visible and RL agent can exploit the function&amp;rsquo;s internal structure to learn optimal policies in a more sample efficient manner.</description>
+Title: Reward Machines: Exploiting Reward Function Structure in Reinforcement Learning 2022 Author: Rodrigo Toro Icarte et. al. Publish Year: 2022 AI Access Foundation Review Date: Thu, Aug 17, 2023 url: https://arxiv.org/abs/2010.03950 Summary of paper Motivation in most RL applications, however, users have to program the reward function and hence, there is the opportunity to make the reward function visible and RL agent can exploit the function&amp;rsquo;s internal structure to learn optimal policies in a more sample efficient manner.</description>
     </item>
     
     <item>
@@ -27,7 +28,7 @@
       
       <guid>https://sino-huang.github.io/posts/rodrigo-using-reward-machines-for-high-level-task-specification-and-decomposition-in-rl-2018/</guid>
       <description>[TOC]
- Title: Reward Machines for High Level Task Specification and Decomposition in Reinforcement Learning Author: Rodrigo Toro Icarte et. al. Publish Year: PMLR 2018 Review Date: Thu, Aug 17, 2023 url: http://proceedings.mlr.press/v80/icarte18a/icarte18a.pdf  Summary of paper Motivation  proposing a reward machine while exposing reward function structure to the learner and supporting decomposition.  Contribution  in contrast to hierarchical RL methods which might converge to suboptimal policies. We prove that QRM is guaranteed to converge to an optimal policy in the tabular case.</description>
+Title: Reward Machines for High Level Task Specification and Decomposition in Reinforcement Learning Author: Rodrigo Toro Icarte et. al. Publish Year: PMLR 2018 Review Date: Thu, Aug 17, 2023 url: http://proceedings.mlr.press/v80/icarte18a/icarte18a.pdf Summary of paper Motivation proposing a reward machine while exposing reward function structure to the learner and supporting decomposition. Contribution in contrast to hierarchical RL methods which might converge to suboptimal policies. We prove that QRM is guaranteed to converge to an optimal policy in the tabular case.</description>
     </item>
     
   </channel>

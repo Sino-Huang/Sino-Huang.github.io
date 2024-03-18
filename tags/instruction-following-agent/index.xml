@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>instruction following agent on Sukai Huang</title>
+    <title>Instruction Following Agent on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/instruction-following-agent/</link>
-    <description>Recent content in instruction following agent on Sukai Huang</description>
+    <description>Recent content in Instruction Following Agent on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 15 Mar 2023 21:09:32 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/instruction-following-agent/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Theodore_r_sumers How to Talk So Ai Will Learn 2022</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/theodore_r_sumers-how-to-talk-so-ai-will-learn-2022/</guid>
       <description>[TOC]
- Title: How to talk so AI will learn: Instructions, descriptions, and autonomy Author: Theodore R. Sumers et. al. Publish Year: NeurIPS 2022 Review Date: Wed, Mar 15, 2023 url: https://arxiv.org/pdf/2206.07870.pdf  Summary of paper Motivation  yet today, we lack computational models explaining such language use  Contribution  To address this challenge, we formalise learning from language in a contextual bandit setting and ask how a human might communicate preferences over behaviours.</description>
+Title: How to talk so AI will learn: Instructions, descriptions, and autonomy Author: Theodore R. Sumers et. al. Publish Year: NeurIPS 2022 Review Date: Wed, Mar 15, 2023 url: https://arxiv.org/pdf/2206.07870.pdf Summary of paper Motivation yet today, we lack computational models explaining such language use Contribution To address this challenge, we formalise learning from language in a contextual bandit setting and ask how a human might communicate preferences over behaviours. (obtain intent (preference) from the presentation (behaviour)) we show that instructions are better in low-autonomy settings, but descriptions are better when the agent will need to act independently.</description>
     </item>
     
   </channel>

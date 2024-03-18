@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ltl on Sukai Huang</title>
+    <title>Ltl on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/ltl/</link>
-    <description>Recent content in ltl on Sukai Huang</description>
+    <description>Recent content in Ltl on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 21 Jan 2024 00:34:56 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/ltl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jun Wang Conformal Temporal Logic Planning Using Llm 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/jun-wang-conformal-temporal-logic-planning-using-llm-2023/</guid>
       <description>[TOC]
- Title: Conformal Temporal Logic Planning Using Llm 2023 Author: Jun Wang et. al. Publish Year: 19 Dec, 2023 Review Date: Sun, Jan 21, 2024 url: arXiv:2309.10092v2  Summary of paper Motivation  Unlike previous methods that focus on low-level system configurations, this approach focuses on NL-based atomic propositions.  now the LTL tasks are defined over NL-based atomic propositions   Robots are required to perform high-level sub tasks specified in natural language.</description>
+Title: Conformal Temporal Logic Planning Using Llm 2023 Author: Jun Wang et. al. Publish Year: 19 Dec, 2023 Review Date: Sun, Jan 21, 2024 url: arXiv:2309.10092v2 Summary of paper Motivation Unlike previous methods that focus on low-level system configurations, this approach focuses on NL-based atomic propositions. now the LTL tasks are defined over NL-based atomic propositions Robots are required to perform high-level sub tasks specified in natural language. To formally define the overarching mission, they leverage LTL defined over atomic predicates modelling these NL-based sub-tasks.</description>
     </item>
     
   </channel>

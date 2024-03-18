@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>attention mechanism on Sukai Huang</title>
+    <title>Attention Mechanism on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/attention-mechanism/</link>
-    <description>Recent content in attention mechanism on Sukai Huang</description>
+    <description>Recent content in Attention Mechanism on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 15 Dec 2021 12:59:07 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/attention-mechanism/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>David_ding Attention Over Learned Object Embeddings Enables Complex Visual Reasoning 2021</title>
@@ -16,10 +17,10 @@
       <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/david_ding-attention-over-learned-object-embeddings-enables-complex-visual-reasoning-2021/</guid>
-      <description>Title: Attention Over Learned Object Embeddings Enables Complex Visual Reasoning Author: David Ding et. al. Publish Year: 2021 NeurIPS Review Date: Dec 2021  Background info for this paper:
+      <description>Title: Attention Over Learned Object Embeddings Enables Complex Visual Reasoning Author: David Ding et. al. Publish Year: 2021 NeurIPS Review Date: Dec 2021 Background info for this paper:
 Their paper propose a all-in-one transformer model that is able to answer CLEVRER counterfactual questions with higher accuracy (75.6% vs 46.5%) and less training data (- 40%)
 They believe that their model relies on three key aspects:
- self-attention soft-discretization self-supervised learning  What is self-attention</description>
+self-attention soft-discretization self-supervised learning What is self-attention</description>
     </item>
     
   </channel>

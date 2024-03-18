@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>exploration strategy on Sukai Huang</title>
+    <title>Exploration Strategy on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/exploration-strategy/</link>
-    <description>Recent content in exploration strategy on Sukai Huang</description>
+    <description>Recent content in Exploration Strategy on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 05 Apr 2023 10:02:24 +0800</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/exploration-strategy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jacob_andreas Guiding Pretraining in Reinforcement Learning With Llms 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/jacob_andreas-guiding-pretraining-in-reinforcement-learning-with-llms-2023/</guid>
       <description>[TOC]
- Title: Guiding Pretraining in Reinforcement Learning With Large Language Models Author: Yuqing De, Jacob Andreas et. al. Publish Year: 13 Feb 2023 Review Date: Wed, Apr 5, 2023 url: https://arxiv.org/pdf/2302.06692.pdf  Summary of paper Motivation  intrinstically motivated exploration methods address sparse reward problem by rewarding agents for visiting novel states or transitions.  Contribution  we describe a method that uses background knowledge from text corpora to shape exploration.</description>
+Title: Guiding Pretraining in Reinforcement Learning With Large Language Models Author: Yuqing De, Jacob Andreas et. al. Publish Year: 13 Feb 2023 Review Date: Wed, Apr 5, 2023 url: https://arxiv.org/pdf/2302.06692.pdf Summary of paper Motivation intrinstically motivated exploration methods address sparse reward problem by rewarding agents for visiting novel states or transitions. Contribution we describe a method that uses background knowledge from text corpora to shape exploration. This method, call Exploring with LLMs, reward an agent for achieving goals suggested by a language model prompted with a description of agent&amp;rsquo;s current state.</description>
     </item>
     
   </channel>

@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>hindsight instruction relabeling on Sukai Huang</title>
+    <title>Hindsight Instruction Relabeling on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/hindsight-instruction-relabeling/</link>
-    <description>Recent content in hindsight instruction relabeling on Sukai Huang</description>
+    <description>Recent content in Hindsight Instruction Relabeling on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Thu, 02 Mar 2023 19:06:35 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/hindsight-instruction-relabeling/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tianjun_zhang the Wisdom of Hindsight Makes Language Models Better Instruction Followers 2023</title>
@@ -17,7 +18,7 @@
       
       <guid>https://sino-huang.github.io/posts/tianjun_zhang-the-wisdom-of-hindsight-makes-language-models-better-instruction-followers-2023/</guid>
       <description>[TOC]
- Title: The Wisdom of Hindsight Makes Language Models Better Instruction Followers Author: Tianjun Zhang et. al. Publish Year: 10 Feb 2023 Review Date: Thu, Mar 2, 2023 url: https://arxiv.org/pdf/2302.05206.pdf  Summary of paper Motivation  Reinforcement learning with Human Feedback (RLHF) demonstrates impressive performance on the GPT series models. However, the pipeline for reward and value networks  Contribution  in this paper, we consider an alternative approach: converting feedback to instruction by relabeling the original one and training the model for better alignment in a supervised manner.</description>
+Title: The Wisdom of Hindsight Makes Language Models Better Instruction Followers Author: Tianjun Zhang et. al. Publish Year: 10 Feb 2023 Review Date: Thu, Mar 2, 2023 url: https://arxiv.org/pdf/2302.05206.pdf Summary of paper Motivation Reinforcement learning with Human Feedback (RLHF) demonstrates impressive performance on the GPT series models. However, the pipeline for reward and value networks Contribution in this paper, we consider an alternative approach: converting feedback to instruction by relabeling the original one and training the model for better alignment in a supervised manner.</description>
     </item>
     
   </channel>
