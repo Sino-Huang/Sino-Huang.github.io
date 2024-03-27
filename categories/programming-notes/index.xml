@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Feb 2024 19:50:31 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Mar 2024 21:50:10 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Kedro And Optuna for Your Project</title>
+      <link>https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/</link>
+      <pubDate>Wed, 27 Mar 2024 21:50:10 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/</guid>
+      <description>[TOC]
+Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 url: https://neptune.ai/blog/kedro-pipelines-with-optuna-hyperparameter-sweeps Use Kedro and Optuan for your ML project Kedro - manage the ML pipeline Optuna - hyperparameter tuning tool Example pyproject.toml 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 [build-system] requires = [ &amp;#34;setuptools&amp;#34;,] build-backend = &amp;#34;setuptools.</description>
+    </item>
+    
     <item>
       <title>How to Design Your Research Project Structure</title>
       <link>https://sino-huang.github.io/programming-notes/how-to-design-your-research-project-structure/</link>
