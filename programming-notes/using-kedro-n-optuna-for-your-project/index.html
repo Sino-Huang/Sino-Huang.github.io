@@ -192,7 +192,11 @@ if (!doNotTrack) {
 <li>
 <a aria-label="Example pyproject.toml" href="#example-pyprojecttoml">Example pyproject.toml</a></li>
 <li>
-<a aria-label="The default Kedro project structure is as follows:" href="#the-default-kedro-project-structure-is-as-follows">The default Kedro project structure is as follows:</a>
+<a aria-label="The default Kedro project structure is as follows:" href="#the-default-kedro-project-structure-is-as-follows">The default Kedro project structure is as follows:</a></li>
+<li>
+<a aria-label="Use Jupyter lab" href="#use-jupyter-lab">Use Jupyter lab</a></li>
+<li>
+<a aria-label="Troubleshoot" href="#troubleshoot">Troubleshoot</a>
 </li>
 </ul>
 </div>
@@ -353,7 +357,15 @@ if (!doNotTrack) {
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">└──</span><span class="w"> </span><span class="n">src</span><span class="w">             </span><span class="c1"># Project source code
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><h2 id="use-jupyter-lab">Use Jupyter lab<a aria-hidden="true" class="anchor" hidden="" href="#use-jupyter-lab">#</a></h2>
+<p>ref: <a href="https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html">https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html</a></p>
+<p>it is very useful for having data preprocessing</p>
+<h2 id="troubleshoot">Troubleshoot<a aria-hidden="true" class="anchor" hidden="" href="#troubleshoot">#</a></h2>
+<ol>
+<li>how to save the intermediate data output</li>
+</ol>
+<p>ref: <a href="https://www.youtube.com/watch?v=sll_LhZE-p8">https://www.youtube.com/watch?v=sll_LhZE-p8</a></p>
+<p>well the official team suggested that the intermediate dataset can use <a href="https://docs.kedro.org/projects/kedro-datasets/en/kedro-datasets-2.0.0/api/kedro_datasets.pandas.ParquetDataset.html#kedro_datasets.pandas.ParquetDataset"><code>parquette</code></a>, which is faster for access , and for saving the intermediate data output, just register that in the catelog file.</p>
 </div>
 </main>
 <footer class="footer">

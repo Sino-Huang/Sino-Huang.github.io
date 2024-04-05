@@ -10,7 +10,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Apr 2024 21:02:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discover Hierarchical Achieve in Rl via Cl 2023</title>
+      <link>https://sino-huang.github.io/posts/seungyong-discover-hierarchical-achieve-in-rl-via-cl-2023/</link>
+      <pubDate>Tue, 02 Apr 2024 21:02:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/seungyong-discover-hierarchical-achieve-in-rl-via-cl-2023/</guid>
+      <description>[TOC]
+Title: Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning Author: Seungyong Moon et. al. Publish Year: 2 Nov 2023 Review Date: Tue, Apr 2, 2024 url: https://arxiv.org/abs/2307.03486 Summary of paper Contribution PPO agents demonstrate some ability to predict future achievements. Leveraging this observation, a novel contrastive learning method called achievement distillation is introduced, enhancing the agent&amp;rsquo;s predictive abilities. This approach excels at discovering hierarchical achievements, Some key terms Model based and explicit module in previous studies are not that good</description>
+    </item>
+    
     <item>
       <title>Jia Li Structured Cot Prompting for Code Generation 2023</title>
       <link>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</link>

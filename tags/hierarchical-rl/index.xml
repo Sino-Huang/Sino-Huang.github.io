@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hierarchical RL on Sukai Huang</title>
+    <title>Hierarchical Rl on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/hierarchical-rl/</link>
-    <description>Recent content in Hierarchical RL on Sukai Huang</description>
+    <description>Recent content in Hierarchical Rl on Sukai Huang</description>
     <image>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Dec 2021 13:11:05 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/hierarchical-rl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Apr 2024 21:02:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/hierarchical-rl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discover Hierarchical Achieve in Rl via Cl 2023</title>
+      <link>https://sino-huang.github.io/posts/seungyong-discover-hierarchical-achieve-in-rl-via-cl-2023/</link>
+      <pubDate>Tue, 02 Apr 2024 21:02:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/seungyong-discover-hierarchical-achieve-in-rl-via-cl-2023/</guid>
+      <description>[TOC]
+Title: Discovering Hierarchical Achievements in Reinforcement Learning via Contrastive Learning Author: Seungyong Moon et. al. Publish Year: 2 Nov 2023 Review Date: Tue, Apr 2, 2024 url: https://arxiv.org/abs/2307.03486 Summary of paper Contribution PPO agents demonstrate some ability to predict future achievements. Leveraging this observation, a novel contrastive learning method called achievement distillation is introduced, enhancing the agent&amp;rsquo;s predictive abilities. This approach excels at discovering hierarchical achievements, Some key terms Model based and explicit module in previous studies are not that good</description>
+    </item>
+    
     <item>
       <title>Hengyuan_hu Hierarchical Decision Making by Generating and Following Natural Language Instructions 2019</title>
       <link>https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/</link>

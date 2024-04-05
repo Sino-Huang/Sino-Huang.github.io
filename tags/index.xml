@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Apr 2024 21:02:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hierarchical Rl</title>
+      <link>https://sino-huang.github.io/tags/hierarchical-rl/</link>
+      <pubDate>Tue, 02 Apr 2024 21:02:37 +1100</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/hierarchical-rl/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Chain of Thought</title>
       <link>https://sino-huang.github.io/tags/chain-of-thought/</link>
@@ -926,15 +935,6 @@
       <pubDate>Fri, 17 Dec 2021 13:07:53 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/width-based-planning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hierarchical RL</title>
-      <link>https://sino-huang.github.io/tags/hierarchical-rl/</link>
-      <pubDate>Wed, 15 Dec 2021 13:11:05 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/hierarchical-rl/</guid>
       <description></description>
     </item>
     
