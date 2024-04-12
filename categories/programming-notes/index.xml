@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Mar 2024 21:50:10 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Apr 2024 12:23:29 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/programming-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Autostart Apps on Your Server</title>
+      <link>https://sino-huang.github.io/programming-notes/how-to-autostart-apps-on-your-server/</link>
+      <pubDate>Fri, 12 Apr 2024 12:23:29 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/programming-notes/how-to-autostart-apps-on-your-server/</guid>
+      <description>[TOC]
+Title: How to Autostart Apps on Your Server Review Date: Fri, Apr 12, 2024 url: - How to Autostart Apps on Your Server we can try systemd --user modules
+First of all, write the service in the ~/.config/systemd/user/ folder
+1 2 3 4 5 6 7 8 9 10 11 12 [Unit] Description=My TorchSErve Server Wants=network-online.target After=network-online.target [Service] Type=forking ExecStart=/datadrive/run_torchserve.sh [Install] WantedBy=multi-user.target Note that Type=forking is important if you want to maintain the session, especially when you want to maintain a tmux</description>
+    </item>
+    
     <item>
       <title>Using Kedro And Optuna for Your Project</title>
       <link>https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/</link>

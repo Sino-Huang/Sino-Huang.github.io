@@ -154,6 +154,22 @@ if (!doNotTrack) {
 </h1>
 </header>
 <article class="post-entry tag-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/how-to-autostart-apps-on-your-server/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>How to Autostart Apps on Your Server
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: How to Autostart Apps on Your Server Review Date: Fri, Apr 12, 2024 url: - How to Autostart Apps on Your Server we can try systemd --user modules
+First of all, write the service in the ~/.config/systemd/user/ folder
+1 2 3 4 5 6 7 8 9 10 11 12 [Unit] Description=My TorchSErve Server Wants=network-online.target After=network-online.target [Service] Type=forking ExecStart=/datadrive/run_torchserve.sh [Install] WantedBy=multi-user.target Note that Type=forking is important if you want to maintain the session, especially when you want to maintain a tmux...</p>
+</div>
+<footer class="entry-footer">&lt;span title='2024-04-12 12:23:29 +1000 AEST'&gt;April 12, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;4 min&amp;nbsp;·&amp;nbsp;742 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
+<a aria-label="post link to How to Autostart Apps on Your Server" class="entry-link" href="https://sino-huang.github.io/programming-notes/how-to-autostart-apps-on-your-server/"></a>
+</article>
+<article class="post-entry tag-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/using-kedro-n-optuna-for-your-project/image-assets/cover.png"/>
 </figure>
 <header class="entry-header">
