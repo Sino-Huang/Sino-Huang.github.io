@@ -4,11 +4,12 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
-<title>Categories | Sukai Huang</title>
-<meta content="" name="keywords"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="description"/>
+<title>Daniel Hierarchies of Reward Machines 2023 | Sukai Huang</title>
+<meta content="rl reward, intrinsic reward" name="keywords"/>
+<meta content="[TOC]
+Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Contribution Some key terms Results Summary Potential future work " name="description"/>
 <meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/categories/" rel="canonical"/>
+<link href="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
@@ -17,8 +18,8 @@
 <link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
 <meta content="#2e2e33" name="theme-color"/>
 <meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/categories/index.xml" rel="alternate" type="application/rss+xml"/>
-<link href="https://sino-huang.github.io/categories/" hreflang="en" rel="alternate"/>
+<link href="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/" hreflang="en" rel="alternate"/>
 <noscript>
 <style>
         #theme-toggle,
@@ -56,6 +57,25 @@
 
     </style>
 </noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
 var doNotTrack = false;
@@ -66,14 +86,35 @@ if (!doNotTrack) {
 	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
 }
 </script>
-<meta content="Categories" property="og:title"/>
+<meta content="Daniel Hierarchies of Reward Machines 2023" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/categories/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/" property="og:url"/>
+<meta content="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
-<meta content="Categories" name="twitter:title"/>
+<meta content="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/image-assets/cover.png" name="twitter:image"/>
+<meta content="Daniel Hierarchies of Reward Machines 2023" name="twitter:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://sino-huang.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Daniel Hierarchies of Reward Machines 2023",
+      "item": "https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/"
+    }
+  ]
+}
+</script>
 </head>
 <body class="list" id="top">
 <script>
@@ -124,7 +165,7 @@ if (!doNotTrack) {
 </li>
 <li>
 <a href="https://sino-huang.github.io/categories/" title="📁">
-<span class="active">📁</span>
+<span>📁</span>
 </a>
 </li>
 <li>
@@ -140,84 +181,62 @@ if (!doNotTrack) {
 </ul>
 </nav>
 </header>
-<main class="main">
-<header class="page-header">
-<h1>Categories</h1>
-</header>
-<ul class="terms-tags">
+<main class="main"><div class="toc">
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
 <li>
-<a href="https://sino-huang.github.io/categories/april-2022-weekly-progress/">April-2022-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
+<a aria-label="Summary of paper" href="#summary-of-paper">Summary of paper</a><ul>
+<li>
+<a aria-label="Motivation" href="#motivation">Motivation</a></li>
+<li>
+<a aria-label="Contribution" href="#contribution">Contribution</a></li>
+<li>
+<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
 </li>
 <li>
-<a href="https://sino-huang.github.io/categories/april-2023-weekly-progress/">April-2023-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
+<a aria-label="Results" href="#results">Results</a></li>
 <li>
-<a href="https://sino-huang.github.io/categories/august-2022-weekly-progress/">August-2022-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
+<a aria-label="Summary" href="#summary">Summary</a></li>
 <li>
-<a href="https://sino-huang.github.io/categories/blog-review/">blog review <sup><strong><sup>3</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/december-2021-weekly-progress/">December-2021-weekly-progress <sup><strong><sup>3</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/december-2022-weekly-progress/">December-2022-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/february-2022-weekly-progress/">February-2022-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/february-2023-weekly-progress/">February-2023-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/future-work/">future work <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/january-2022-weekly-progress/">January-2022-weekly-progress <sup><strong><sup>4</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/july-2023-weekly-progress/">July-2023-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/june-2022-weekly-progress/">June-2022-weekly-progress <sup><strong><sup>4</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/june-2023-weekly-progress/">June-2023-weekly-progress <sup><strong><sup>3</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/march-2022-weekly-progress/">March-2022-weekly-progress <sup><strong><sup>4</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/march-2023-weekly-progress/">March-2023-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/may-2022-weekly-progress/">May-2022-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/may-2023-weekly-progress/">May-2023-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/november-2022-weekly-progress/">November-2022-weekly-progress <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/october-2022-weekly-progress/">October-2022-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/paper-review/">paper review <sup><strong><sup>185</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/programming/">programming <sup><strong><sup>2</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/programming-notes/">programming notes <sup><strong><sup>13</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/september-2022-weekly-progress/">September-2022-weekly-progress <sup><strong><sup>1</sup></strong></sup> </a>
-</li>
-<li>
-<a href="https://sino-huang.github.io/categories/thesis-review/">thesis review <sup><strong><sup>1</sup></strong></sup> </a>
+<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
 </li>
 </ul>
+</div>
+</details>
+</div>
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
+<h1>
+    Daniel Hierarchies of Reward Machines 2023
+    <a aria-label="RSS" href="index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
+</header>
+<div class="post-content"><p>[TOC]</p>
+<ol>
+<li>Title: Hierarchies of Reward Machines</li>
+<li>Author: Daniel Furelos-Blanco et. al.</li>
+<li>Publish Year: 4 Jun 2023</li>
+<li>Review Date: Fri, Apr 12, 2024</li>
+<li>url: <a href="https://arxiv.org/abs/2205.15752">https://arxiv.org/abs/2205.15752</a></li>
+</ol>
+<h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
+<p><img alt="image-20240412151420609" loading="lazy" src="image-assets/cover.png"/>
+</p>
+<h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
+<h2 id="results">Results<a aria-hidden="true" class="anchor" hidden="" href="#results">#</a></h2>
+<h2 id="summary">Summary<a aria-hidden="true" class="anchor" hidden="" href="#summary">#</a></h2>
+<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+</div>
 </main>
 <footer class="footer">
 <span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>

@@ -10,7 +10,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Apr 2024 21:02:37 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Apr 2024 15:12:54 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daniel Hierarchies of Reward Machines 2023</title>
+      <link>https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/</link>
+      <pubDate>Fri, 12 Apr 2024 15:12:54 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/</guid>
+      <description>[TOC]
+Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Contribution Some key terms Results Summary Potential future work </description>
+    </item>
+    
+    <item>
+      <title>Shanchuan Efficient N Robust Exploration Through Discriminative Ir 2023</title>
+      <link>https://sino-huang.github.io/posts/shanchuan-efficient-n-robust-exploration-through-discriminative-ir-2023/</link>
+      <pubDate>Fri, 12 Apr 2024 15:07:58 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/shanchuan-efficient-n-robust-exploration-through-discriminative-ir-2023/</guid>
+      <description>[TOC]
+Title: DEIR: Efficient and Robust Exploration through Discriminative-Model-Based Episodic Intrinsic Rewards Author: Shanchuan Wan et. al. Publish Year: 18 May 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2304.10770 Summary of paper Motivation Recent studies have shown the effectiveness of encouraging exploration with intrinsic rewards estimated from novelties in observations However, there is a gap between the novelty of an observation and an exploration, as both the stochasticity in the environment and agent&amp;rsquo;s behaviour may affect the observation.</description>
+    </item>
+    
     <item>
       <title>Discover Hierarchical Achieve in Rl via Cl 2023</title>
       <link>https://sino-huang.github.io/posts/seungyong-discover-hierarchical-achieve-in-rl-via-cl-2023/</link>
