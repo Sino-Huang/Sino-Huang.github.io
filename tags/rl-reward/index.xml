@@ -18,7 +18,8 @@
       
       <guid>https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/</guid>
       <description>[TOC]
-Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Contribution Some key terms Results Summary Potential future work </description>
+Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Finite state machine are a simple yet powerful formalism for abstractly representing temporal tasks in a structured manner. Contribution The work introduces Hierarchies of Reinforcement Models (HRMs) to enhance the abstraction power of existing models. Key contributions include:
+HRM Abstraction Power: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs.</description>
     </item>
     
     <item>

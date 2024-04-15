@@ -7,7 +7,8 @@
 <title>Daniel Hierarchies of Reward Machines 2023 | Sukai Huang</title>
 <meta content="rl reward, intrinsic reward" name="keywords"/>
 <meta content="[TOC]
-Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Contribution Some key terms Results Summary Potential future work " name="description"/>
+Title: Hierarchies of Reward Machines Author: Daniel Furelos-Blanco et. al. Publish Year: 4 Jun 2023 Review Date: Fri, Apr 12, 2024 url: https://arxiv.org/abs/2205.15752 Summary of paper Motivation Finite state machine are a simple yet powerful formalism for abstractly representing temporal tasks in a structured manner. Contribution The work introduces Hierarchies of Reinforcement Models (HRMs) to enhance the abstraction power of existing models. Key contributions include:
+HRM Abstraction Power: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs." name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/daniel-hierarchies-of-reward-machines-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -197,11 +198,7 @@ if (!doNotTrack) {
 <a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
 </li>
 <li>
-<a aria-label="Results" href="#results">Results</a></li>
-<li>
-<a aria-label="Summary" href="#summary">Summary</a></li>
-<li>
-<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
+<a aria-label="Problem Definition" href="#problem-definition">Problem Definition</a>
 </li>
 </ul>
 </div>
@@ -231,11 +228,100 @@ if (!doNotTrack) {
 <p><img alt="image-20240412151420609" loading="lazy" src="image-assets/cover.png"/>
 </p>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<ul>
+<li>Finite state machine are a simple yet powerful formalism for abstractly representing temporal tasks in a structured manner.</li>
+</ul>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<p>The work introduces Hierarchies of Reinforcement Models (HRMs) to enhance the abstraction power of existing models. Key contributions include:</p>
+<ol>
+<li>
+<p><strong>HRM Abstraction Power</strong>: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs. It’s proven that any HRM can be converted into an equivalent flat HRM with identical behavior. However, the equivalent flat HRM can have significantly more states and edges, especially under specific conditions.</p>
+</li>
+<li>
+<p><strong>Hierarchical Reinforcement Learning (HRL) Algorithm</strong>: A novel HRL algorithm is proposed to leverage HRMs by treating each call as a subtask. Learning policies in HRMs align with desired criteria, offering flexibility across multiple time scales and a richer range of abstract events and durations. Hierarchies also promote modularity and reusability of RMs and policies. Empirical results demonstrate that utilizing a handcrafted HRM leads to faster convergence compared to an equivalent flat HRM.</p>
+</li>
+<li>
+<p><strong>Curriculum-Based Learning for HRMs</strong>: A curriculum-based method is introduced to learn HRMs from traces given a set of composable tasks. This approach is essential due to the complexity of learning flat HRMs from scratch. By decomposing an RM into several simpler ones, learning becomes feasible, and previously learned RMs can efficiently explore the environment for traces in more complex tasks.</p>
+</li>
+</ol>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
-<h2 id="results">Results<a aria-hidden="true" class="anchor" hidden="" href="#results">#</a></h2>
-<h2 id="summary">Summary<a aria-hidden="true" class="anchor" hidden="" href="#summary">#</a></h2>
-<h2 id="potential-future-work">Potential future work<a aria-hidden="true" class="anchor" hidden="" href="#potential-future-work">#</a></h2>
+<p><strong>Reward machine</strong></p>
+<ul>
+<li>specifically, each <strong><u><em>edge</em></u></strong> is labeled with (i) a formula over a set of high-level events that capture a task’ subgoal, and (ii) a reward for satisfying the formula</li>
+<li>I think each <em><strong><u>node</u></strong></em> will be the key state…</li>
+<li>RM fulfill the need for structuring events and durations, and keep track of the achieved and pending subgoals.</li>
+</ul>
+<p><strong>The use of HRL</strong></p>
+<ul>
+<li>the subtask decomposition powered by HRL enables learning at multiple scales simultaneously, and ease the handling of long-horizon and sparse reward tasks.</li>
+</ul>
+<p><strong>Limitation</strong></p>
+<p>A common problem among methods learning minimal RMs is that they scale poorly as the number of states grows. $\rightarrow$ learning the RM automatically is an open research question</p>
+<h2 id="problem-definition">Problem Definition<a aria-hidden="true" class="anchor" hidden="" href="#problem-definition">#</a></h2>
+<p><strong>label trace</strong></p>
+<p>$\lambda_t  = \langle l(s_0), …,l(s_t)\rangle \in (2^P)^+$ assigns labels to all states in history $\langle s_0,a_0,…, s_t\rangle$</p>
+<p>assumption: $\lambda_t, s_t$ captures all relevant information about history $h_t$ (i.e., the label trace is a summary of history state trajectory $h_t$​)</p>
+<p><img alt="image-20240414215505895" loading="lazy" src="image-assets/image-20240414215505895.png"/>
+</p>
+<p>where $\tau$ is the termination function which will indicate whether a trajectory reach a terminal state or a goal state</p>
+<ul>
+<li>terminal state and goal state are different</li>
+</ul>
+<p>So, we can have different types of traces</p>
+<ul>
+<li>A trace $\lambda_t$ is a <em>goal</em> trace if $(s^T_t, s^G_t) = (\top, \top)$,</li>
+<li>a <em>dead-end</em> trace if $(s^T_t, s^G_t) = (\top, \bot)$,</li>
+<li>an <em>incomplete</em> trace if $s^T_t = \bot$.</li>
+</ul>
+<p><strong>reward construction</strong></p>
+<ul>
+<li>We assume that the reward is $r(\lambda_{t+1},s_{t+1})=\mathbb{1}[\tau(\lambda_{t+1},s_{t+1})=(\top,\top)]$, i.e.~$1$ for goal traces and $0$​ otherwise.</li>
+</ul>
+<p><strong>reward machine mapping to trace</strong></p>
+<p>Ideally, RM states should capture traces, such that (i) pairs (u, s) of an RM state and an MDP state make termination and reward Markovian, (ii) the reward r(u, u′) matches the underlying MDP’s reward, and (iii) goal traces end in an accepting state, rejecting traces end in a rejecting state, and incomplete traces do not end in accepting or rejecting states.</p>
+<p><strong>DNF definition</strong></p>
+<p>it is just the propositional logic formula</p>
+<p>What is Disjunctive Normal Form (DNF)?</p>
+<p>Disjunctive Normal Form (DNF) is a standard logical format used in boolean algebra where a formula is expressed as a disjunction (OR operation) of several conjunctions (AND operations) of literals. A literal is either a proposition or its negation. This form makes it straightforward to evaluate whether the formula is true based on the truth values of its constituent propositions.</p>
+<p>Structure of a DNF Formula</p>
+<p>A DNF formula can be structured as follows:
+$$ \text{DNF} = (l_{11} \land l_{12} \land \ldots \land l_{1n}) \lor (l_{21} \land l_{22} \land \ldots \land l_{2n}) \lor \ldots \lor (l_{m1} \land l_{m2} \land \ldots \land l_{mn}) $$
+Where:</p>
+<ul>
+<li>$ l_{ij} $ is a literal, which can be either a proposition (e.g., $ p $) or its negation (e.g., $ \neg p $).</li>
+<li>Each group of literals connected by AND (e.g., $ l_{11} \land l_{12} \land \ldots \land l_{1n} $) forms a clause.</li>
+<li>The entire formula is a disjunction (OR) of one or more such clauses.</li>
+</ul>
+<p>Examples of DNF Formulas</p>
+<p>Here are a few examples to illustrate DNF formulas, considering a set of propositions $ P = {a, b, c} $:</p>
+<ol>
+<li>
+<p><strong>Simple DNF Formula</strong>:
+$$ a \land b $$
+This formula has only one clause consisting of two literals without negation.</p>
+</li>
+<li>
+<p><strong>Single Clause with Negations</strong>:
+$$ a \land \neg b $$
+This formula is also a single clause but includes a negation.</p>
+</li>
+<li>
+<p><strong>Multiple Clauses</strong>:
+$$ (a \land b) \lor (\neg a \land c) $$
+This DNF formula consists of two clauses. The first clause asserts that both $ a $ and $ b $ are true, while the second clause is true if $ a $ is false and $ c $ is true.</p>
+</li>
+<li>
+<p><strong>More Complex DNF</strong>:
+$$ (a \land b \land \neg c) \lor (b \land c) \lor (\neg a \land \neg b) $$
+Here, the formula has three clauses with a mixture of negated and non-negated literals. It is satisfied if either both $ a $ and $ b $ are true and $ c $ is false, or $ b $ and $ c $ are both true, or both $ a $ and $ b $ are false.</p>
+</li>
+</ol>
+<p><strong>Deterministic property</strong></p>
+<ul>
+<li>the trace or we say the trajectory can only match only one transition formula</li>
+<li>for example, if the trace obtained both rabbit leather and paper, the reward machine will only transit from u0 to u1</li>
+</ul>
+<img alt="image-20240414233226703" src="image-assets/image-20240414233226703.png" style="zoom:50%;"/>
 </div>
 </main>
 <footer class="footer">
