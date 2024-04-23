@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 12 Apr 2024 15:12:54 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Apr 2024 13:20:22 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llm Planner</title>
+      <link>https://sino-huang.github.io/tags/llm-planner/</link>
+      <pubDate>Tue, 23 Apr 2024 13:20:22 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Llm Policy</title>
+      <link>https://sino-huang.github.io/tags/llm-policy/</link>
+      <pubDate>Tue, 23 Apr 2024 13:20:22 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/tags/llm-policy/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Intrinsic Reward</title>
       <link>https://sino-huang.github.io/tags/intrinsic-reward/</link>
@@ -98,15 +116,6 @@
       <pubDate>Tue, 30 Jan 2024 16:58:06 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/tags/planning-for-dialogue-ai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Llm Planner</title>
-      <link>https://sino-huang.github.io/tags/llm-planner/</link>
-      <pubDate>Mon, 29 Jan 2024 23:02:47 +1100</pubDate>
-      
-      <guid>https://sino-huang.github.io/tags/llm-planner/</guid>
       <description></description>
     </item>
     

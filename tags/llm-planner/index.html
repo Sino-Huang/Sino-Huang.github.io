@@ -58,14 +58,18 @@
 </noscript>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
-}
-</script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script>
 <meta content="Llm Planner" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
@@ -153,6 +157,20 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
+<article class="post-entry tag-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/thomas-carta-grounding-llms-in-rl-2023/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>Thomas Carta Grounding Llms in Rl 2023
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning Author: Thomas Carta el. al. Publish Year: 6 Sep 2023 Review Date: Tue, Apr 23, 2024 url: arXiv:2302.02662v3 Summary of paper Summary The author considered an agent using an LLM as a policy that is progressively updated as the agent interacts with the environment, leveraging online reinforcement learning to improve its performance to solve goals (under the RL paradigm environment (MDP))...</p>
+</div>
+<footer class="entry-footer">&lt;span title='2024-04-23 13:20:22 +1000 AEST'&gt;April 23, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;242 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
+<a aria-label="post link to Thomas Carta Grounding Llms in Rl 2023" class="entry-link" href="https://sino-huang.github.io/posts/thomas-carta-grounding-llms-in-rl-2023/"></a>
+</article>
 <article class="post-entry tag-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/image-assets/cover.png"/>
 </figure>

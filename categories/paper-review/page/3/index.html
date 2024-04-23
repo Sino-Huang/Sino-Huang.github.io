@@ -58,14 +58,18 @@
 </noscript>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
-}
-</script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script>
 <meta content="Paper Review" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
@@ -153,6 +157,20 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
+<article class="post-entry tag-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf Summary of paper Motivation a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies Contribution we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists....</p>
+</div>
+<footer class="entry-footer">&lt;span title='2023-05-24 19:57:16 +1000 AEST'&gt;May 24, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;304 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
+<a aria-label="post link to Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022" class="entry-link" href="https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/"></a>
+</article>
 <article class="post-entry tag-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/shunyu_yao-tree-of-thoughts-2023/image-assets/cover.png"/>
 </figure>
@@ -494,20 +512,6 @@ Title: Jing_cheng_pang Natural Language Conditioned Reinforcement Learning With 
 </div>
 <footer class="entry-footer">&lt;span title='2023-03-03 15:19:43 +1100 AEDT'&gt;March 3, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;173 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Jing_cheng_pang Natural Language Conditioned Reinforcement Learning With Inside Out Task Language Development and Translation 2023" class="entry-link" href="https://sino-huang.github.io/posts/jing_cheng_pang-natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation-2023/"></a>
-</article>
-<article class="post-entry tag-entry">
-<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/suvaansh_bhambri-multi-level-compositional-reasoning-for-interactive-instruction-following-2023/image-assets/cover.png"/>
-</figure>
-<header class="entry-header">
-<h2>Suvaansh_bhambri Multi Level Compositional Reasoning for Interactive Instruction Following 2023
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: Multi-Level Compositional Reasoning for Interactive Instruction Following Author: Suvaansh Bhambri et. al. Publish Year: 2023 Review Date: Fri, Mar 3, 2023 url: https://ppolon.github.io/paper/aaai2023-alfred-mocha.pdf Summary of paper Motivation The task given to the agents are often composite thus are challenging as completing them require to reason about multiple subtasks. Contribution we propose to divide and conquer it by breaking the task into multiple subgoals and attend to them individually for better navigation and interaction....</p>
-</div>
-<footer class="entry-footer">&lt;span title='2023-03-03 11:17:01 +1100 AEDT'&gt;March 3, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;1 min&amp;nbsp;·&amp;nbsp;144 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
-<a aria-label="post link to Suvaansh_bhambri Multi Level Compositional Reasoning for Interactive Instruction Following 2023" class="entry-link" href="https://sino-huang.github.io/posts/suvaansh_bhambri-multi-level-compositional-reasoning-for-interactive-instruction-following-2023/"></a>
 </article>
 <footer class="page-footer">
 <nav class="pagination">

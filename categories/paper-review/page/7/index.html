@@ -58,14 +58,18 @@
 </noscript>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
-}
-</script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script>
 <meta content="Paper Review" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
@@ -153,6 +157,19 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
+<article class="post-entry tag-entry">
+<header class="entry-header">
+<h2>Sebastian_borgeaud Improving Language Models by Retrieving From Trillions of Tokens 2022
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: Improving language models by retrieving from trillions of tokens Author: Sebastian Borgeaud et. al. Publish Year: Feb 2022 Review Date: Mar 2022 Summary of paper Motivation in order to decrease the size of language model, this work suggested retrieval from a large text database as a complementary path to scaling language models.
+they equip models with the ability to directly access a large dataset to perform prediction – a semi-parametric approach....</p>
+</div>
+<footer class="entry-footer">&lt;span title='2022-03-21 19:07:36 +1100 AEDT'&gt;March 21, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
+<a aria-label="post link to Sebastian_borgeaud Improving Language Models by Retrieving From Trillions of Tokens 2022" class="entry-link" href="https://sino-huang.github.io/posts/sebastian_borgeaud-improving-language-models-by-retrieving-from-trillions-of-tokens-2022/"></a>
+</article>
 <article class="post-entry tag-entry">
 <header class="entry-header">
 <h2>Machel_reid Can Wikipedia Help Offline Rl 2022
@@ -490,20 +507,6 @@ They present their framework for training a 2-layer hierarchical policy with com
 </div>
 <footer class="entry-footer">&lt;span title='2021-12-15 19:49:28 +1100 AEDT'&gt;December 15, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Yiding_jiang Language as Abstraction for Hierarchical Deep Reinforcement Learning" class="entry-link" href="https://sino-huang.github.io/posts/yiding_jiang-language-as-abstraction-for-hierarchical-deep-reinforcement-learning/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Hengyuan_hu Hierarchical Decision Making by Generating and Following Natural Language Instructions 2019
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: Hierarchical Decision Making by Generating and Following Natural Language Instructions Author: Hengyuan Hu et. al. FAIR Publish Year: 2019 Review Date: Dec 2021 Summary of paper One line summary: they build a Architect Builder model to clone human behaviour for playing RTS game
-Their task environment is very similar to IGLU competition setting, but their model is too task-specific
-The author mentioned some properties about natural language instructions...</p>
-</div>
-<footer class="entry-footer">&lt;span title='2021-12-15 13:11:05 +1100 AEDT'&gt;December 15, 2021&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
-<a aria-label="post link to Hengyuan_hu Hierarchical Decision Making by Generating and Following Natural Language Instructions 2019" class="entry-link" href="https://sino-huang.github.io/posts/hengyuan_hu-hierarchical-decision-making-by-generating-and-following-natural-language-instructions-2019/"></a>
 </article>
 <footer class="page-footer">
 <nav class="pagination">

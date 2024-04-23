@@ -58,14 +58,18 @@
 </noscript>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-TTFTV1EWH5', { 'anonymize_ip': false });
-}
-</script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script>
 <meta content="Paper Review" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
@@ -153,6 +157,20 @@ if (!doNotTrack) {
 </a>
 </h1>
 </header>
+<article class="post-entry tag-entry">
+<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/gautier-dagan-dynamic-planning-with-a-llm-2023/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2>Gautier Dagan Dynamic Planning With a Llm 2023
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: Dynamic Planning With a LLM Author: Gautier Dagan et. al. Publish Year: 11 Aug 2023 Review Date: Sun, Jan 21, 2024 url: arXiv:2308.06391v1 Summary of paper Motivation Traditional symbolic planners can find optimal solutions quickly but need complete and accurate problem representations. In contrast, LLMs can handle noisy data and uncertainty but struggle with planning tasks. The LLM-DP framework combines LLMs and traditional planners to solve embodied tasks efficiently....</p>
+</div>
+<footer class="entry-footer">&lt;span title='2024-01-21 01:42:23 +1100 AEDT'&gt;January 21, 2024&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;384 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
+<a aria-label="post link to Gautier Dagan Dynamic Planning With a Llm 2023" class="entry-link" href="https://sino-huang.github.io/posts/gautier-dagan-dynamic-planning-with-a-llm-2023/"></a>
+</article>
 <article class="post-entry tag-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/jun-wang-conformal-temporal-logic-planning-using-llm-2023/image-assets/cover.png"/>
 </figure>
@@ -490,20 +508,6 @@ Title: Language Models Meet World Models: Embodied Experiences Enhance Language 
 </div>
 <footer class="entry-footer">&lt;span title='2023-05-26 01:00:02 +1000 AEST'&gt;May 26, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;357 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
 <a aria-label="post link to Jiannan_xiang Language Models Meet World Models 2023" class="entry-link" href="https://sino-huang.github.io/posts/jiannan_xiang-language-models-meet-world-models-2023/"></a>
-</article>
-<article class="post-entry tag-entry">
-<figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/image-assets/cover.png"/>
-</figure>
-<header class="entry-header">
-<h2>Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: PG3 Policy Guided Planning for Generalised Policy Generation Author: Ryan Yang et. al. Publish Year: 21 Apr 2022 Review Date: Wed, May 24, 2023 url: https://arxiv.org/pdf/2204.10420.pdf Summary of paper Motivation a longstanding objective in classical planning is to synthesise policies that generalise across multiple problems from the same domain this work, we study generalised policy search-based methods with a focus on the score function used to guide the search over policies Contribution we study a specific instantiation of policy search where planning problems are PDDL-based and policies are lifted decision lists....</p>
-</div>
-<footer class="entry-footer">&lt;span title='2023-05-24 19:57:16 +1000 AEST'&gt;May 24, 2023&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;304 words&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
-<a aria-label="post link to Ryan_yang PG3 Policy Guided Planning for Generalised Policy Generation 2022" class="entry-link" href="https://sino-huang.github.io/posts/ryan_yang-pg3-policy-guided-planning-for-generalised-policy-generation-2022/"></a>
 </article>
 <footer class="page-footer">
 <nav class="pagination">
