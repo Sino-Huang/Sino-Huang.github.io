@@ -10,7 +10,19 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2024 12:49:03 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Apr 2024 17:53:46 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Xuran Pan on the Integration of Self Attention and Convolution 2022</title>
+      <link>https://sino-huang.github.io/posts/xuran-pan-on-the-integration-of-self-attention-and-convolution-2022/</link>
+      <pubDate>Thu, 25 Apr 2024 17:53:46 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/xuran-pan-on-the-integration-of-self-attention-and-convolution-2022/</guid>
+      <description>[TOC]
+Title: On the Integration of Self-Attention and Convolution Author: Xuran Pan et. al. Publish Year: 2022 IEEE Review Date: Thu, Apr 25, 2024 url: https://arxiv.org/abs/2111.14556 Summary of paper Motivation there exists a strong underlying relation between convolution and self-attention. Related work Convolution NN
+it uses convolution kernels to extract local features, have become the most powerful and conventional technique for various vision tasks Self-attention only
+Recently, vision transformer shows that given enough data, we can treat an image as a sequence of 256 tokens and leverage Transformer models to achieve competitive results in image recognition.</description>
+    </item>
+    
     <item>
       <title>Recent Language Model Technique 2024</title>
       <link>https://sino-huang.github.io/posts/recent-language-model-technique-2024/</link>

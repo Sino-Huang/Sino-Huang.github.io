@@ -200,6 +200,8 @@ Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 ur
 <li>
 <a aria-label="Use Jupyter lab" href="#use-jupyter-lab">Use Jupyter lab</a></li>
 <li>
+<a aria-label="Global configs and catalog factory issue" href="#global-configs-and-catalog-factory-issue">Global configs and catalog factory issue</a></li>
+<li>
 <a aria-label="Troubleshoot" href="#troubleshoot">Troubleshoot</a>
 </li>
 </ul>
@@ -364,6 +366,182 @@ Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 ur
 </div><h2 id="use-jupyter-lab">Use Jupyter lab<a aria-hidden="true" class="anchor" hidden="" href="#use-jupyter-lab">#</a></h2>
 <p>ref: <a href="https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html">https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html</a></p>
 <p>it is very useful for having data preprocessing</p>
+<h2 id="global-configs-and-catalog-factory-issue">Global configs and catalog factory issue<a aria-hidden="true" class="anchor" hidden="" href="#global-configs-and-catalog-factory-issue">#</a></h2>
+<p>to have global configs that can be used in both <code>parameters.yml</code> and <code>catalog.yml</code> you can create a <code>globals.yml</code> file, and do the following</p>
+<p><code>globals.yml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">env_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"crafter"</span><span class="w"> </span><span class="c"># crafter | minigrid </span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"lang"</span><span class="w"> </span><span class="c"># lang | policy, lang is for language model training, policy is for policy training</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>parameters.yml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">env_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"${globals:env_name}"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"${globals:env_purpose}"</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>catalog.yml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">debug_data</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">pandas.CSVDataset</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">filepath</span><span class="p">:</span><span class="w"> </span><span class="s2">"data/03_traj_instr_pairs/${globals:env_name}/test_debug_data.csv"</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>However</strong>, the following is not allowed</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s2">"${globals:env_name}_debug_data#csv"</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">pandas.CSVDataset</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">filepath</span><span class="p">:</span><span class="w"> </span><span class="s2">"data/03_traj_instr_pairs/${globals:env_name}-nested/test_debug_data.csv"</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>It is because the following node can not be parsed</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">node</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">func</span><span class="o">=</span><span class="n">generate_traj_instr_pairs</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">inputs</span><span class="o">=</span><span class="p">[</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">"expert_model"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">"expert_model_eval_env"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">"eval_env_init_obs"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">"parameters"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">"params:traj_instr_pairs_params"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">outputs</span><span class="o">=</span><span class="s2">"${globals:env_name}_debug_data#csv"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">name</span><span class="o">=</span><span class="s2">"generate_traj_instr_pairs_node"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Some hints for the usage of Kedro namespace and Configs structure</strong></p>
+<ul>
+<li>
+<p>if you have so called “alternative” module that will swap any current module very likely, then give them a separate <em>namespace</em></p>
+</li>
+<li>
+<p>if you have two modules that need to be compared with each other, use namespace with different pipeline</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">kedro.pipeline.modular_pipeline</span> <span class="kn">import</span> <span class="n">pipeline</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">create_pipeline</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Pipeline</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">pipeline_instance</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="n">node</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">func</span><span class="o">=</span><span class="n">split_data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="s2">"model_input_table"</span><span class="p">,</span> <span class="s2">"params:model_options"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">outputs</span><span class="o">=</span><span class="p">[</span><span class="s2">"X_train"</span><span class="p">,</span> <span class="s2">"y_train"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">name</span><span class="o">=</span><span class="s2">"split_data_node"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">node</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">func</span><span class="o">=</span><span class="n">train_model</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="s2">"X_train"</span><span class="p">,</span> <span class="s2">"y_train"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">outputs</span><span class="o">=</span><span class="s2">"regressor"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">name</span><span class="o">=</span><span class="s2">"train_model_node"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ds_pipeline_1</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pipe</span><span class="o">=</span><span class="n">pipeline_instance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">inputs</span><span class="o">=</span><span class="s2">"model_input_table"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">namespace</span><span class="o">=</span><span class="s2">"active_modelling_pipeline"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ds_pipeline_2</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">pipe</span><span class="o">=</span><span class="n">pipeline_instance</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">inputs</span><span class="o">=</span><span class="s2">"model_input_table"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">namespace</span><span class="o">=</span><span class="s2">"candidate_modelling_pipeline"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">ds_pipeline_1</span> <span class="o">+</span> <span class="n">ds_pipeline_2</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>catalog.yml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="s2">"{namespace}.regressor"</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">pickle.PickleDataset</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">filepath</span><span class="p">:</span><span class="w"> </span><span class="l">data/06_models/regressor_{namespace}.pkl</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">versioned</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>if you have parallel environment that will not impact each other, control it using <code>global configs</code></p>
+</li>
+</ul>
 <h2 id="troubleshoot">Troubleshoot<a aria-hidden="true" class="anchor" hidden="" href="#troubleshoot">#</a></h2>
 <ol>
 <li>how to save the intermediate data output</li>
