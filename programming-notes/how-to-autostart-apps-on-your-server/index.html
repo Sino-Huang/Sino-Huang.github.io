@@ -202,11 +202,21 @@ First of all, write the service in the ~/.config/systemd/user/ folder
 <li>
 <a aria-label="Important Considerations" href="#important-considerations">Important Considerations</a></li>
 <li>
-<a aria-label="Reload systemd daemon" href="#reload-systemd-daemon">Reload systemd daemon</a></li>
-<li>
-<a aria-label="Tmux activate server example" href="#tmux-activate-server-example">Tmux activate server example</a>
+<a aria-label="Reload systemd daemon" href="#reload-systemd-daemon">Reload systemd daemon</a></li></ul>
 </li>
-</ul>
+<li>
+<a aria-label="Check the log" href="#check-the-log">Check the log</a></li>
+<li>
+<a aria-label="Manually start the service" href="#manually-start-the-service">Manually start the service</a><ul>
+<li>
+<a aria-label="User systemctl and User runtime directory" href="#user-systemctl-and-user-runtime-directory">User systemctl and User runtime directory</a></li></ul>
+</li>
+<li>
+<a aria-label="Add-on: Cron service" href="#add-on-cron-service">Add-on: Cron service</a></li>
+<li>
+<a aria-label="Tmux activate server example" href="#tmux-activate-server-example">Tmux activate server example</a></li>
+<li>
+<a aria-label="Relocate the docker lib" href="#relocate-the-docker-lib">Relocate the docker lib</a>
 </li>
 </ul>
 </div>
@@ -307,7 +317,77 @@ First of all, write the service in the ~/.config/systemd/user/ folder
 </span></span><span class="line"><span class="cl">sudo loginctl enable-linger <span class="nv">$USER</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="tmux-activate-server-example">Tmux activate server example<a aria-hidden="true" class="anchor" hidden="" href="#tmux-activate-server-example">#</a></h3>
+</div><h2 id="check-the-log">Check the log<a aria-hidden="true" class="anchor" hidden="" href="#check-the-log">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">journalctl --user-unit<span class="o">=</span>mytorchserve.service -f -e
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="manually-start-the-service">Manually start the service<a aria-hidden="true" class="anchor" hidden="" href="#manually-start-the-service">#</a></h2>
+<p><code>systemctl --user restart mytorchserve.service</code></p>
+<h3 id="user-systemctl-and-user-runtime-directory">User systemctl and User runtime directory<a aria-hidden="true" class="anchor" hidden="" href="#user-systemctl-and-user-runtime-directory">#</a></h3>
+<p>ref: <a href="https://superuser.com/questions/1561076/systemctl-user-failed-to-connect-to-bus-no-such-file-or-directory-debian-9">https://superuser.com/questions/1561076/systemctl-user-failed-to-connect-to-bus-no-such-file-or-directory-debian-9</a></p>
+<p><strong>Solution</strong>: Using <code>sudo loginctl enable-linger $USER</code> makes <code>systemd</code> keep the user’s <code>systemd --user</code> process running even after the user logs out. This is crucial for  running background services under that user without requiring them to be continuously logged in.</p>
+<p>monitor by <code>loginctl list-users</code></p>
+<p><strong>Issue</strong>: If <code>XDG_RUNTIME_DIR</code> isn’t set in <code>crontab</code> or other auto task-scheduling scripts, then tools like <code>systemctl --user</code> might fail because they cannot find the correct runtime directory to communicate with <code>systemd --user</code>.</p>
+<p><strong>Solution</strong>: <code>export XDG_RUNTIME_DIR=/run/user/$(id -u);</code></p>
+<h2 id="add-on-cron-service">Add-on: Cron service<a aria-hidden="true" class="anchor" hidden="" href="#add-on-cron-service">#</a></h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># For more information see the manual pages of crontab(5) and cron(8)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># </span>
+</span></span><span class="line"><span class="cl"><span class="c1"># m h  dom mon dow   command</span>
+</span></span><span class="line"><span class="cl">*/5 * * * * <span class="nb">export</span> <span class="nv">XDG_RUNTIME_DIR</span><span class="o">=</span>/run/user/<span class="k">$(</span>id -u<span class="k">)</span><span class="p">;</span> /datadrive/check_service.sh &gt;&gt; /datadrive/check_service_cron.log 2&gt;<span class="p">&amp;</span><span class="m">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Perform the curl request and capture the response</span>
+</span></span><span class="line"><span class="cl"><span class="nv">response</span><span class="o">=</span><span class="k">$(</span>curl http://10.102.5.4:8080/ping 2&gt;<span class="p">&amp;</span>1<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># echo "Response ${response}"</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Check if the response contains "Healthy"</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">"</span><span class="nv">$response</span><span class="s2">"</span> <span class="o">==</span> *<span class="s1">'"status": "Healthy"'</span>* <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">"All good at </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">"</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># Check for 'Connection refused' in the response</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="o">[[</span> <span class="s2">"</span><span class="nv">$response</span><span class="s2">"</span> <span class="o">==</span> *<span class="s2">"Connection refused"</span>* <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">"Restart Service at </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">"</span>
+</span></span><span class="line"><span class="cl">    systemctl --user restart mytorchserve.service
+</span></span><span class="line"><span class="cl">  <span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="tmux-activate-server-example">Tmux activate server example<a aria-hidden="true" class="anchor" hidden="" href="#tmux-activate-server-example">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma" tabindex="0"><code><span class="lnt"> 1
@@ -343,15 +423,39 @@ First of all, write the service in the ~/.config/systemd/user/ folder
 </span><span class="lnt">31
 </span><span class="lnt">32
 </span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">sessname</span><span class="o">=</span><span class="s2">"server"</span>
-</span></span><span class="line"><span class="cl">tmux new-session -d -s <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$USER</span> is running the script
+</span></span><span class="line"><span class="cl">/usr/bin/tmux new-session -d -s <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$?</span> -eq <span class="m">1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl">    tmux kill-session -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
-</span></span><span class="line"><span class="cl">    tmux new-session -d -s <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
+</span></span><span class="line"><span class="cl">    /usr/bin/tmux kill-session -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
+</span></span><span class="line"><span class="cl">    /usr/bin/tmux new-session -d -s <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sleep <span class="m">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="sb">`</span>/usr/bin/tmux ls<span class="sb">`</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s2">"cd /datadrive ; sudo systemctl stop docker.service ; cp docker.service.config.bak /lib/systemd/system/docker.service"</span> Enter
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s2">"sudo systemctl daemon-reload ; sudo systemctl start docker.service"</span> Enter
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s2">"cd /datadrive/avmmodel_project/torchserve-deployment ; sudo docker stop torchserve-dev-apr-12-2 ; sudo docker container rm torchserve-dev-apr-12-2"</span> Enter
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sleep <span class="m">2</span>
@@ -360,7 +464,11 @@ First of all, write the service in the ~/.config/systemd/user/ folder
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">sleep <span class="m">2</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s1">'sudo docker run -p 8080:8080 --name torchserve-dev-apr-12-2 -v ./torchserve:/torchserve avmmodel_image'</span> Enter
+</span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s1">'sudo docker build -t avmmodel_image . -f torchserve.dockerfile'</span> Enter
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sleep <span class="m">2</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span> <span class="s1">'sudo docker run -p 8080:8089 --name torchserve-dev-apr-12-2 -v ./torchserve:/torchserve avmmodel_image'</span> Enter
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">tmux split-window -v -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
@@ -378,6 +486,33 @@ First of all, write the service in the ~/.config/systemd/user/ folder
 </span></span><span class="line"><span class="cl">tmux split-window -h -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">tmux send-keys -t <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">:0.3"</span> <span class="s1">'cd /datadrive'</span> Enter
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="relocate-the-docker-lib">Relocate the docker lib<a aria-hidden="true" class="anchor" hidden="" href="#relocate-the-docker-lib">#</a></h2>
+<ol>
+<li>Edit docker service configuration with:
+sudo vi /lib/systemd/system/docker.service</li>
+<li>Locate the Exec line:
+ExecStart=/usr/bin/dockerd -H fd:// –containerd=/run/containerd/containerd.sock</li>
+<li>Add a parameter that points docker to the new directory:
+ExecStart=/usr/bin/dockerd <strong>–data-root /second_drive/docker</strong> -H fd:// –containerd=/run/containerd/containerd.sock</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo systemctl stop docker.service
+</span></span><span class="line"><span class="cl"><span class="c1"># edit your docker.service.config.bak</span>
+</span></span><span class="line"><span class="cl">sudo chown root:root docker.service.config.bak <span class="c1"># make sure the owner for docker config file is root</span>
+</span></span><span class="line"><span class="cl">cp docker.service.config.bak /lib/systemd/system/docker.service
+</span></span><span class="line"><span class="cl">sudo systemctl daemon-reload
+</span></span><span class="line"><span class="cl">sudo systemctl start docker
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
