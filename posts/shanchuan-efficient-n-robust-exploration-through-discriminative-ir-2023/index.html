@@ -316,7 +316,7 @@ with a discriminative forward model.</li>
 </ul>
 <p><strong>Mutual Information Formula</strong>:
 $$
-I(D_{t+1,i}; a_t | s_t, s_i) = \mathbb{E}<em>{s_t, s_i, a_t} [ \mathrm{D</em>{KL}}(p(D_{t+1,i} | s_t, s_i, a_t) | p(D_{t+1,i} | s_t, s_i))].
+I(D_{t+1,i}; a_t \mid s_{t}, s_{i}) = \mathbb{E}<em>{s</em>{t}, s_{i}, a_{t}} [ \mathrm{D_{KL}}(p(D_{t+1,i} \mid s_{t}, s_{i}, a_{t}) \parallel p(D_{t+1,i} \mid s_{t}, s_{i}))]
 $$
 This tells us how much the action (a_t) impacts the change in observation, beyond what could be expected just from knowing the current and previous states alone.</p>
 <ol>
