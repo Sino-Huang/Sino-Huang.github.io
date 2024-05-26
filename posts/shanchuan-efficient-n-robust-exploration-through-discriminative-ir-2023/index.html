@@ -314,11 +314,11 @@ with a discriminative forward model.</li>
 <ul>
 <li>KL divergence – the higher means the two distribution are more dissimilar</li>
 </ul>
-<p><strong>Mutual Information Formula</strong>:
-$$
+<p><strong>Mutual Information Formula</strong>:</p>
+<p>$$
 I(D_{t+1,i}; a_t \mid s_{t}, s_{i}) = \mathbb{E}<em>{s</em>{t}, s_{i}, a_{t}} [ \mathrm{D_{KL}}(p(D_{t+1,i} \mid s_{t}, s_{i}, a_{t}) \parallel p(D_{t+1,i} \mid s_{t}, s_{i}))]
-$$
-This tells us how much the action (a_t) impacts the change in observation, beyond what could be expected just from knowing the current and previous states alone.</p>
+$$</p>
+<p>This tells us how much the action (a_t) impacts the change in observation, beyond what could be expected just from knowing the current and previous states alone.</p>
 <ol>
 <li>
 <p><strong>Bretagnolle–Huber Inequality</strong>:
@@ -362,23 +362,25 @@ $$</p>
 $$
 Q(D_{t+1,i}) = \lambda e^{-\lambda D_{t+1,i}}
 $$
-Substituting $\lambda = \frac{1}{\mathrm{dist}(s_t, s_i)}$, the PDF becomes:
-$$
+Substituting $\lambda = \frac{1}{\mathrm{dist}(s_t, s_i)}$​, the PDF becomes:</p>
+<p>$$
 Q(D_{t+1,i}) = \frac{1}{\mathrm{dist}(s_t, s_i)} \exp\left(-\frac{\mathrm{dist}(o_{t+1}, o_i)}{\mathrm{dist}(s_t, s_i)}\right)
 $$</p>
 </li>
 <li>
-<p><strong>Logarithm of the PDF</strong>: Applying the logarithm to the PDF, we get:
-$$</p>
+<p><strong>Logarithm of the PDF</strong>: Applying the logarithm to the PDF, we get:</p>
+<p>$$</p>
 <ul>
-<li>\log\bigl( Q(D_{t+1,i}) \bigr) = - \log \left( \frac{1}{\mathrm{dist}(s_t, s_i)} \exp{\bigl(- \frac{\mathrm{dist}(o_{t+1}, o_i)}{\mathrm{dist}(s_t, s_i)} \bigr)} \right)
-$$
-This simplifies using the properties of logarithms ($-\log(ab) = -\log a - \log b$) to:
+<li>\log( Q(D_{t+1,i}) ) = - \log \left( \frac{1}{\mathrm{dist}(s_{t}, s_{i})} \exp{\bigl(- \frac{\mathrm{dist}(o_{t+1}, o_{i})}{\mathrm{dist}(s_{t}, s_{i})} \bigr)} \right)
 $$</li>
-<li>\log\bigl( Q(D_{t+1,i}) \bigr) = \log(\mathrm{dist}(s_t, s_i)) + \frac{\mathrm{dist}(o_{t+1}, o_i)}{\mathrm{dist}(s_t, s_i)}
-$$
-The term $\log(\mathrm{dist}(s_t, s_i))$ reflects the natural logarithm of the distance between states, while the other term linearly scales the observation distance by the inverse of the state distance, effectively normalizing it.</li>
 </ul>
+<p>This simplifies using the properties of logarithms ($-\log(ab) = -\log a - \log b$​) to:</p>
+<p>$$</p>
+<ul>
+<li>\log( Q(D_{t+1,i}) ) = \log(\mathrm{dist}(s_t, s_i)) + \frac{\mathrm{dist}(o_{t+1}, o_i)}{\mathrm{dist}(s_t, s_i)}
+$$</li>
+</ul>
+<p>The term $\log(\mathrm{dist}(s_t, s_i))$ reflects the natural logarithm of the distance between states, while the other term linearly scales the observation distance by the inverse of the state distance, effectively normalizing it.</p>
 </li>
 </ul>
 <h2 id="now-the-issue-is-how-to-represent-state">Now the issue is how to represent state<a aria-hidden="true" class="anchor" hidden="" href="#now-the-issue-is-how-to-represent-state">#</a></h2>
