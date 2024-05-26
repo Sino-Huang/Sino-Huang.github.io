@@ -315,9 +315,8 @@ with a discriminative forward model.</li>
 <li>KL divergence – the higher means the two distribution are more dissimilar</li>
 </ul>
 <p><strong>Mutual Information Formula</strong>:</p>
-<p>$$
-I(D_{t+1,i}; a_t \mid s_{t}, s_{i}) = \mathbb{E}<em>{s</em>{t}, s_{i}, a_{t}} [ \mathrm{D_{KL}}(p(D_{t+1,i} \mid s_{t}, s_{i}, a_{t}) \parallel p(D_{t+1,i} \mid s_{t}, s_{i}))]
-$$</p>
+<p><img alt="image-20240526232546902" loading="lazy" src="image-assets/image-20240526232546902.png"/>
+</p>
 <p>This tells us how much the action (a_t) impacts the change in observation, beyond what could be expected just from knowing the current and previous states alone.</p>
 <ol>
 <li>
@@ -369,20 +368,14 @@ $$</p>
 </li>
 <li>
 <p><strong>Logarithm of the PDF</strong>: Applying the logarithm to the PDF, we get:</p>
-<p>$$</p>
-<ul>
-<li>\log( Q(D_{t+1,i}) ) = - \log \left( \frac{1}{\mathrm{dist}(s_{t}, s_{i})} \exp{\bigl(- \frac{\mathrm{dist}(o_{t+1}, o_{i})}{\mathrm{dist}(s_{t}, s_{i})} \bigr)} \right)
-$$</li>
-</ul>
-<p>This simplifies using the properties of logarithms ($-\log(ab) = -\log a - \log b$​) to:</p>
-<p>$$</p>
-<ul>
-<li>\log( Q(D_{t+1,i}) ) = \log(\mathrm{dist}(s_t, s_i)) + \frac{\mathrm{dist}(o_{t+1}, o_i)}{\mathrm{dist}(s_t, s_i)}
-$$</li>
-</ul>
-<p>The term $\log(\mathrm{dist}(s_t, s_i))$ reflects the natural logarithm of the distance between states, while the other term linearly scales the observation distance by the inverse of the state distance, effectively normalizing it.</p>
 </li>
 </ul>
+<p><img alt="image-20240526232503857" loading="lazy" src="image-assets/image-20240526232503857.png"/>
+</p>
+<p>This simplifies using the properties of logarithms ($-\log(ab) = -\log a - \log b$​) to:</p>
+<p><img alt="image-20240526232522218" loading="lazy" src="image-assets/image-20240526232522218.png"/>
+</p>
+<p>The term $\log(\mathrm{dist}(s_t, s_i))$ reflects the natural logarithm of the distance between states, while the other term linearly scales the observation distance by the inverse of the state distance, effectively normalizing it.</p>
 <h2 id="now-the-issue-is-how-to-represent-state">Now the issue is how to represent state<a aria-hidden="true" class="anchor" hidden="" href="#now-the-issue-is-how-to-represent-state">#</a></h2>
 <ol>
 <li>
