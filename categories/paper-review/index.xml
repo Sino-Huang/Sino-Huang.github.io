@@ -10,7 +10,39 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 10 May 2024 22:23:31 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jun 2024 11:47:25 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jessy Lin Learning to Model the World With Language 2024</title>
+      <link>https://sino-huang.github.io/posts/jessy-lin-learning-to-model-the-world-with-language-2024/</link>
+      <pubDate>Fri, 21 Jun 2024 11:47:25 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jessy-lin-learning-to-model-the-world-with-language-2024/</guid>
+      <description>[TOC]
+Title: Learning to Model the World With Language 2024 Author: Jessy Lin et. al. Publish Year: ICML 2024 Review Date: Fri, Jun 21, 2024 url: https://arxiv.org/abs/2308.01399 Summary of paper Motivation in this work, we propose that agents can ground diverse kinds of language by using it to predict the future in contrast to directly predicting what to do with a language-conditioned policy, Dynalang decouples learning to model the world with language (supervised learning with prediction objectives) from learning to act given that model (RL with task rewards) Future prediction provides a rich grounding signal for learning what language utterances mean, which in turn equip the agent with a richer understanding of the world to solve complex tasks.</description>
+    </item>
+    
+    <item>
+      <title>Jiuzhou Reward Engineering for Generating Semi Structured Explan 2023</title>
+      <link>https://sino-huang.github.io/posts/jiuzhou-reward-engineering-for-generating-semi-structured-explan-2023/</link>
+      <pubDate>Thu, 20 Jun 2024 14:11:32 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiuzhou-reward-engineering-for-generating-semi-structured-explan-2023/</guid>
+      <description>[TOC]
+Title: Reward Engineering for Generating Semi-Structured Explanation Author: Jiuzhou Han et. al. Publish Year: EACL2024 Review Date: Thu, Jun 20, 2024 url: https://github.com/Jiuzhouh/Reward-Engineering-for-Generating-SEG Summary of paper Motivation Contribution the objective is to equip moderately-sized LMs with the ability to not only provide answers but also generate structured explanations Some key terms Intro
+the author talked about some background on Cui et al. incorporate a generative pre-training mechanism over synthetic graphs by aligning inputs pairs of text-graph to improve the model&amp;rsquo;s capability in generating semi-structured explanation.</description>
+    </item>
+    
+    <item>
+      <title>Jiuzhou Towards Uncertainty Aware Lang Agent 2024</title>
+      <link>https://sino-huang.github.io/posts/jiuzhou-towards-uncertaintty-aware-lang-agent-2024/</link>
+      <pubDate>Thu, 20 Jun 2024 11:15:18 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiuzhou-towards-uncertaintty-aware-lang-agent-2024/</guid>
+      <description>[TOC]
+Title: Towards Uncertainty Aware Language Agent Author: Jiuzhou Han et. al. Publish Year: 30 May 2024 Review Date: Thu, Jun 20, 2024 url: arXiv:2401.14016v3 Summary of paper Motivation The existing approaches neglect the notion of uncertainty during these interactions Contribution Some key terms Related work 1: lang agent
+the author define what is language agent and discuss it &amp;ndash; the prominent work of ReAct propose a general language agent framework to combine reasoning and acting with LLMs for solving diverse language reasoning tasks.</description>
+    </item>
+    
     <item>
       <title>Silviu Pitis Failure Modes of Learning Reward Models for Sequence Model 2023</title>
       <link>https://sino-huang.github.io/posts/silviu-pitis-failure-modes-of-learning-reward-models-for-sequence-model-2023/</link>

@@ -10,7 +10,28 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Jun 2024 11:47:25 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jessy Lin Learning to Model the World With Language 2024</title>
+      <link>https://sino-huang.github.io/posts/jessy-lin-learning-to-model-the-world-with-language-2024/</link>
+      <pubDate>Fri, 21 Jun 2024 11:47:25 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jessy-lin-learning-to-model-the-world-with-language-2024/</guid>
+      <description>[TOC]
+Title: Learning to Model the World With Language 2024 Author: Jessy Lin et. al. Publish Year: ICML 2024 Review Date: Fri, Jun 21, 2024 url: https://arxiv.org/abs/2308.01399 Summary of paper Motivation in this work, we propose that agents can ground diverse kinds of language by using it to predict the future in contrast to directly predicting what to do with a language-conditioned policy, Dynalang decouples learning to model the world with language (supervised learning with prediction objectives) from learning to act given that model (RL with task rewards) Future prediction provides a rich grounding signal for learning what language utterances mean, which in turn equip the agent with a richer understanding of the world to solve complex tasks.</description>
+    </item>
+    
+    <item>
+      <title>Jiuzhou Reward Engineering for Generating Semi Structured Explan 2023</title>
+      <link>https://sino-huang.github.io/posts/jiuzhou-reward-engineering-for-generating-semi-structured-explan-2023/</link>
+      <pubDate>Thu, 20 Jun 2024 14:11:32 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiuzhou-reward-engineering-for-generating-semi-structured-explan-2023/</guid>
+      <description>[TOC]
+Title: Reward Engineering for Generating Semi-Structured Explanation Author: Jiuzhou Han et. al. Publish Year: EACL2024 Review Date: Thu, Jun 20, 2024 url: https://github.com/Jiuzhouh/Reward-Engineering-for-Generating-SEG Summary of paper Motivation Contribution the objective is to equip moderately-sized LMs with the ability to not only provide answers but also generate structured explanations Some key terms Intro
+the author talked about some background on Cui et al. incorporate a generative pre-training mechanism over synthetic graphs by aligning inputs pairs of text-graph to improve the model&amp;rsquo;s capability in generating semi-structured explanation.</description>
+    </item>
+    
     <item>
       <title>Jia Li Structured Cot Prompting for Code Generation 2023</title>
       <link>https://sino-huang.github.io/posts/jia-li-structured-cot-prompting-for-code-generation-2023/</link>

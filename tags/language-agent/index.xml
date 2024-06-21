@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Language Agent on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/language-agent/</link>
+    <description>Recent content in Language Agent on Sukai Huang</description>
+    <image>
+      <url>https://sino-huang.github.io/cute_avatar.jpg</url>
+      <link>https://sino-huang.github.io/cute_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jun 2024 11:15:18 +1000</lastBuildDate><atom:link href="https://sino-huang.github.io/tags/language-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jiuzhou Towards Uncertainty Aware Lang Agent 2024</title>
+      <link>https://sino-huang.github.io/posts/jiuzhou-towards-uncertaintty-aware-lang-agent-2024/</link>
+      <pubDate>Thu, 20 Jun 2024 11:15:18 +1000</pubDate>
+      
+      <guid>https://sino-huang.github.io/posts/jiuzhou-towards-uncertaintty-aware-lang-agent-2024/</guid>
+      <description>[TOC]
+Title: Towards Uncertainty Aware Language Agent Author: Jiuzhou Han et. al. Publish Year: 30 May 2024 Review Date: Thu, Jun 20, 2024 url: arXiv:2401.14016v3 Summary of paper Motivation The existing approaches neglect the notion of uncertainty during these interactions Contribution Some key terms Related work 1: lang agent
+the author define what is language agent and discuss it &amp;ndash; the prominent work of ReAct propose a general language agent framework to combine reasoning and acting with LLMs for solving diverse language reasoning tasks.</description>
+    </item>
+    
+  </channel>
+</rss>
