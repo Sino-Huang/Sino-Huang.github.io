@@ -7,9 +7,32 @@
 <title>Thang_m_pham Out of Order How Important Is the Sequential Order of Words in a Sentence in Natural Language Understanding Tasks 2021 | Sukai Huang</title>
 <meta content="GLUE, natural language understanding" name="keywords"/>
 <meta content="[TOC]
-Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks? Author: Thang M. Pham Publish Year: Jul 2021 Review Date: Feb 2022 Summary of paper The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
+
+Title: Out of Order: How Important Is The Sequential Order of Words in a Sentence in Natural Language Understanding Tasks?
+Author: Thang M. Pham
+Publish Year: Jul 2021
+Review Date: Feb 2022
+
+Summary of paper
+The author found out that BERT-based models trained on GLUE have low sensitivity to word orders.
+
+
 The research questions are the following
-Do BERT-based models trained on GLUE care about the order of words in a sentence?" name="description"/>
+
+Do BERT-based models trained on GLUE care about the order of words in a sentence?
+
+ANS: NO, except one task named CoLA, which is to detecting grammatically incorrect sentences. Surprisingly, for the rest of the 5 out of 6 binary-classification tasks (i.e.  except CoLA), between75% and 90% of the originally correct predictions remain constant after  1-grams are randomly re-ordered
+
+
+Are SOTA BERT-based models using word order information when solving NLU tasks? If not, what cues do they rely on?
+
+ANS: they heavily rely on the word itself rather than the ordering. The results showed that if the top - 1 most important word measured by LIME has a positive meaning, then there is 100% probability that the sentence’s label is “positive”
+
+
+
+
+
+Results" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/thang_m_pham-out-of-order-how-important-is-the-sequential-order-of-words-in-a-sentence-in-natural-language-understanding-tasks-2021/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -72,8 +95,7 @@ Do BERT-based models trained on GLUE care about the order of words in a sentence
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Thang_m_pham Out of Order How Important Is the Sequential Order of Words in a Sentence in Natural Language Understanding Tasks 2021" property="og:title"/>
+      </script><meta content="Thang_m_pham Out of Order How Important Is the Sequential Order of Words in a Sentence in Natural Language Understanding Tasks 2021" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/posts/thang_m_pham-out-of-order-how-important-is-the-sequential-order-of-words-in-a-sentence-in-natural-language-understanding-tasks-2021/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>

@@ -17,9 +17,20 @@
       <pubDate>Mon, 29 Jan 2024 17:44:10 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/mingyu-jin-the-impact-of-reasoning-steps-length-on-llm-2024/</guid>
-      <description>[TOC]
-Title: The Impact of Reasoning Steps Length on Large Language Models Author: Mingyu Jin et. al. Publish Year: 20 Jan 2024 Review Date: Mon, Jan 29, 2024 url: arXiv:2401.04925v3 Summary of paper Contribution The study investigates the impact of the length of reasoning steps in prompts on the reasoning abilities of Large Language Models (LLMs), focusing on Chain of Thought (CoT). Here are the key findings:
-Effect of Reasoning Step Length:</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: The Impact of Reasoning Steps Length on Large Language Models&lt;/li&gt;
+&lt;li&gt;Author: Mingyu Jin et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 20 Jan 2024&lt;/li&gt;
+&lt;li&gt;Review Date: Mon, Jan 29, 2024&lt;/li&gt;
+&lt;li&gt;url: arXiv:2401.04925v3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;p&gt;The study investigates the impact of the length of reasoning steps in prompts on the reasoning abilities of Large Language Models (LLMs), focusing on Chain of Thought (CoT). Here are the key findings:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Effect of Reasoning Step Length&lt;/strong&gt;:&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -17,16 +17,41 @@
       <pubDate>Fri, 10 Dec 2021 06:18:31 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/weekly-report/05-dec-11-dec-2021/iglu-neurips-2021-workshop/</guid>
-      <description>[TOC]
-IGLU Minecraft challenge NeurIPS 2021 workshop https://nips.cc/virtual/2021/competition/22444
-The organiser introduced a Web environment for data collection
-CraftAssist and VoxelWorld.js Architect task Baseline model
-Ha! No winner that outperforms the baseline?!
-&amp;hellip;. which means I have a chance !
-Builder task the organiser found out that the reward function would motivate the agent to break blocks Their Future direction Breakout session Winner Solution https://github.com/LinarAbdrazakov/IGLU-Minecraft
-Highlight:
-the data augmentation method
-they tried to change the colour of objects / translate position in the training dataset so as to increase the number of training data</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&#34;iglu-minecraft-challenge-neurips-2021-workshop&#34;&gt;IGLU Minecraft challenge NeurIPS 2021 workshop&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://nips.cc/virtual/2021/competition/22444&#34;&gt;https://nips.cc/virtual/2021/competition/22444&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The organiser introduced a Web environment for data collection&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CraftAssist and VoxelWorld.js
+&lt;ul&gt;
+&lt;li&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210065730299.png&#34; alt=&#34;image-20211210065730299&#34;  /&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;architect-task&#34;&gt;Architect task&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Baseline model&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210070437284.png&#34; alt=&#34;image-20211210070437284&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;Ha! No winner that outperforms the baseline?!&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210070601738.png&#34; alt=&#34;image-20211210070601738&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&amp;hellip;. which means I have a chance !&lt;/p&gt;
+&lt;h3 id=&#34;builder-task&#34;&gt;Builder task&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210070730935.png&#34; alt=&#34;image-20211210070730935&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210070753279.png&#34; alt=&#34;image-20211210070753279&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210071041719.png&#34; alt=&#34;image-20211210071041719&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210071153129.png&#34; alt=&#34;image-20211210071153129&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the organiser found out that the reward function would motivate the agent to break blocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;their-future-direction&#34;&gt;Their Future direction&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211210071234132.png&#34; alt=&#34;image-20211210071234132&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,9 +60,20 @@ they tried to change the colour of objects / translate position in the training 
       <pubDate>Wed, 22 Dec 2021 15:10:56 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/julia_kiseleva-interactive-grounded-language-understanding-in-a-collaborative-environment-2021/</guid>
-      <description>[TOC]
-Title: Interactive Grounded Language Understanding in a Collaborative Environment Author: Julia Kiseleva et. al. Publish Year: 2021 Review Date: Dec 2021 Summary of paper The primary goal of the competition is to approach the problem of how to build interactive agents that learn to solve a task while provided with grounded natural language instructions in a collaborative environment.
-The split the problem into following concrete research questions, which correspond to separate tasks that can be used to study each component individually before joining all of them into one system</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Interactive Grounded Language Understanding in a Collaborative Environment&lt;/li&gt;
+&lt;li&gt;Author: Julia Kiseleva et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 2021&lt;/li&gt;
+&lt;li&gt;Review Date: Dec 2021&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;The primary goal of the competition is to approach the problem of how to build interactive agents that learn to solve a task while provided with grounded natural language instructions in a collaborative environment.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211222154135180.png&#34; alt=&#34;image-20211222154135180&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211222154153920.png&#34; alt=&#34;image-20211222154153920&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;The split the problem into following concrete research questions, which correspond to separate tasks that can be used to study each component individually before joining all of them into one system&lt;/p&gt;</description>
     </item>
     
   </channel>

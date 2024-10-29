@@ -6,7 +6,74 @@
 <meta content="index, follow" name="robots"/>
 <title>Biography | Sukai Huang</title>
 <meta content="" name="keywords"/>
-<meta content="Previous Next Page: / Publications preprint \textsc{Pacmand}: A Robust PDDL Action Constructor for Modelling Ambiguous Descriptions using LLM Sukai Huang, Nir Lipovetzky and Trevor Cohn arXiv ePrint 2023 Abstract paper code Despite the strides in the hybrid planning systems that capitalize on Large Language Models (LLMs)' capabilities to translate natural language directives directly into Planning Domain Definition Language (PDDL) problem files, a significant gap remains -- the dependency on domain experts to supply the PDDL domain models, a requirement that restricts the scalability and accessibility of the hybrid planning solution." name="description"/>
+<meta content="
+
+
+
+Previous
+Next
+       
+    Page:  / 
+
+
+
+
+
+
+  
+    
+  
+    
+  
+
+
+
+
+
+Publications
+
+
+
+
+
+    
+
+         
+             
+                 
+                     preprint
+                 
+ 
+                 
+ 
+                     The Dark Side of Rich Rewards: Understanding and Mitigating Noise in VLM Rewards
+                     
+                         Sukai Huang, Nir Lipovetzky and Trevor Cohn
+ 
+                     
+ 
+                     
+ 
+                         arXiv ePrint 2024
+                         
+ 
+                     
+ 
+ 
+                     
+ 
+                         Abstract
+                         paper
+                         
+                         code
+                         
+                         
+                     
+ 
+                     
+ 
+                     
+                         While Vision-Language Models (VLMs) are increasingly used to generate reward signals for training embodied agents to follow instructions, our research reveals that agents guided by VLM rewards often underperform compared to those employing only intrinsic (exploration-driven) rewards, contradicting expectations set by recent work. We hypothesize that false positive rewards -- instances where unintended trajectories are incorrectly rewarded -- are more detrimental than false negatives. Our analysis confirms this hypothesis, revealing that the widely used cosine similarity metric is prone to false positive reward estimates. To address this, we introduce BiMI ({Bi}nary {M}utual {I}nformation), a novel reward function designed to mitigate noise. BiMI significantly enhances learning efficiency across diverse and challenging embodied navigation environments. Our findings offer a nuanced understanding of how different types of reward noise impact agent learning and highlight the importance of addressing multimodal reward signal noise when training embodied agents " name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/biography/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -69,8 +136,7 @@
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Biography" property="og:title"/>
+      </script><meta content="Biography" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/biography/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
@@ -536,22 +602,48 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
 <abbr class="badge">preprint</abbr>
 </div>
 <div class="col-sm-8">
-<div class="title">\textsc{Pacmand}: A Robust PDDL Action Constructor for Modelling Ambiguous Descriptions using LLM</div>
+<div class="title">The Dark Side of Rich Rewards: Understanding and Mitigating Noise in VLM Rewards</div>
 <div class="author">
                          Sukai Huang, Nir Lipovetzky and Trevor Cohn
  
                      </div>
 <div class="periodical">
-<em>arXiv ePrint 2023</em>
+<em>arXiv ePrint 2024</em>
 <br/>
 </div>
 <div class="links">
 <a class="abstract btn btn-sm z-depth-0 waves-effect waves-light" role="button">Abstract</a>
-<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://www.google.com" role="button" target="_blank">paper</a>
-<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://www.google.com" role="button" target="_blank">code</a>
+<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://arxiv.org/abs/2409.15922" role="button" target="_blank">paper</a>
+<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://www.shorturl.at/VsH70" role="button" target="_blank">code</a>
 </div>
 <div class="abstract hidden">
-<p>Despite the strides in the hybrid planning systems that capitalize on Large Language Models (LLMs)' capabilities to translate natural language directives directly into Planning Domain Definition Language (PDDL) problem files, a significant gap remains -- the dependency on domain experts to supply the PDDL domain models, a requirement that restricts the scalability and accessibility of the hybrid planning solution. In this work, we tackle this challenge by focusing on the crucial aspect of action modeling within PDDL domain modeling. We introduce \textsc{Pacmand} (\emph{\textbf{P}DDL \textbf{A}ction \textbf{C}onstructor for \textbf{M}odelling \textbf{A}mbiguous \textbf{N}atural language \textbf{D}escriptions}), a pipeline designed to autonomously translate ambiguous natural language descriptions from non-expert users into formal PDDL action definitions using LLMs. By integrating task-agnostic Chain of Thought (CoT) prompting with Conformal Prediction (CP) techniques, \textsc{Pacmand} effectively manages the inherent ambiguity present in non-expert descriptions, ensuring the generation of accurate PDDL action definitions. [\emph{TODO: ADD PERFORMANCE INCREASE STATS COMPARED TO THE BASELINE}] This work contributes to the vision of creating more inclusive and intuitive interfaces for planning systems, marking a significant step towards the broader integration of LLMs into automated planning and scheduling.</p>
+<p>While Vision-Language Models (VLMs) are increasingly used to generate reward signals for training embodied agents to follow instructions, our research reveals that agents guided by VLM rewards often underperform compared to those employing only intrinsic (exploration-driven) rewards, contradicting expectations set by recent work. We hypothesize that false positive rewards -- instances where unintended trajectories are incorrectly rewarded -- are more detrimental than false negatives. Our analysis confirms this hypothesis, revealing that the widely used cosine similarity metric is prone to false positive reward estimates. To address this, we introduce BiMI ({Bi}nary {M}utual {I}nformation), a novel reward function designed to mitigate noise. BiMI significantly enhances learning efficiency across diverse and challenging embodied navigation environments. Our findings offer a nuanced understanding of how different types of reward noise impact agent learning and highlight the importance of addressing multimodal reward signal noise when training embodied agents </p>
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="row">
+<div class="col-sm-2 abbr">
+<abbr class="badge">preprint</abbr>
+</div>
+<div class="col-sm-8">
+<div class="title">Planning in the Dark: LLM-Symbolic Planning Pipeline without Experts</div>
+<div class="author">
+                         Sukai Huang, Nir Lipovetzky and Trevor Cohn
+ 
+                     </div>
+<div class="periodical">
+<em>arXiv ePrint 2024</em>
+<br/>
+</div>
+<div class="links">
+<a class="abstract btn btn-sm z-depth-0 waves-effect waves-light" role="button">Abstract</a>
+<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://arxiv.org/abs/2409.15915" role="button" target="_blank">paper</a>
+<a class="btn btn-sm z-depth-0 waves-effect waves-light" href="https://anonymous.4open.science/r/Official-LLM-Symbolic-Planning-without-Experts-7466" role="button" target="_blank">code</a>
+</div>
+<div class="abstract hidden">
+<p>Large Language Models (LLMs) have shown promise in solving natural language-described planning tasks, but their direct use often leads to inconsistent reasoning and hallucination. While hybrid LLM-symbolic planning pipelines have emerged as a more robust alternative, they typically require extensive expert intervention to refine and validate generated action schemas. It not only limits scalability but also introduces a potential for biased interpretation, as a single expert's interpretation of ambiguous natural language descriptions might not align with the user's actual intent. To address this, we propose a novel approach that constructs an action schema library to generate multiple candidates, accounting for the diverse possible interpretations of natural language descriptions. We further introduce a semantic validation and ranking module that automatically filter and rank the generated schemas and plans without expert-in-the-loop. The experiments showed our pipeline maintains superiority in planning over the direct LLM planning approach. These findings demonstrate the feasibility of a fully automated end-to-end LLM-symbolic planner that requires no expert intervention, opening up the possibility for a broader audience to engage with AI planning with less prerequisite of domain expertise.</p>
 </div>
 </div>
 </div>

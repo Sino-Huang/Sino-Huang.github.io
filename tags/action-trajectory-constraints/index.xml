@@ -17,8 +17,16 @@
       <pubDate>Sun, 28 Jan 2024 21:28:51 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/luigi-bonassi-planning-with-qualitative-constraints-pddl3-2022/</guid>
-      <description>[TOC]
-Title: Planning With Qualitative Constraints Pddl3 2022 Author: Luigi Bonassi et. al. Publish Year: Review Date: Sun, Jan 28, 2024 url: https://www.ijcai.org/proceedings/2022/0639.pdf Summary of paper The paper introduces a formalism to express trajectory constraints over actions in plans, complementing the state-trajectory constraints of PDDL3. This new formalism retains PDDL3&amp;rsquo;s temporal modal operators and adds two modalities. The authors then explore compilation-based methods for dealing with action-trajectory constraints in propositional planning, proposing a new, simple, and effective method.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Planning With Qualitative Constraints Pddl3 2022&lt;/li&gt;
+&lt;li&gt;Author: Luigi Bonassi et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year:&lt;/li&gt;
+&lt;li&gt;Review Date: Sun, Jan 28, 2024&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://www.ijcai.org/proceedings/2022/0639.pdf&#34;&gt;https://www.ijcai.org/proceedings/2022/0639.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;The paper introduces a formalism to express trajectory constraints over actions in plans, complementing the state-trajectory constraints of PDDL3. This new formalism retains PDDL3&amp;rsquo;s temporal modal operators and adds two modalities. The authors then explore compilation-based methods for dealing with action-trajectory constraints in propositional planning, proposing a new, simple, and effective method. Experimental results demonstrate the utility of action-trajectory constraints for expressing control knowledge, showing significant performance improvements in classical planners when leveraging knowledge expressed through action constraints. Conversely, the same knowledge specified as state constraints and handled by two state-of-the-art systems yields less beneficial results.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -7,7 +7,50 @@
 <title>Langchain Use Cases 2023 | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content="[TOC]
-Title: Langchain Use Cases 2023 Review Date: Sat, Aug 26, 2023 url: https://python.langchain.com/docs/get_started/quickstart Langchain quickstart The core building block of LangChain applications is the LLMChain. This combines three things: LLM: The language model is the core reasoning engine here. In order to work with LangChain, you need to understand the different types of language models and how to work with them. Prompt Templates: This provides instructions to the language model." name="description"/>
+
+Title: Langchain Use Cases 2023
+Review Date: Sat, Aug 26, 2023
+url: https://python.langchain.com/docs/get_started/quickstart
+
+Langchain quickstart
+
+The core building block of LangChain applications is the LLMChain. This combines three things:
+
+LLM: The language model  is the core reasoning engine here. In order to work with LangChain, you  need to understand the different types of language models and how to  work with them.
+Prompt Templates: This provides instructions to  the language model. This controls what the language model outputs, so  understanding how to construct prompts and different prompting  strategies is crucial.
+Output Parsers: These translate the raw  response from the LLM to a more workable format, making it easy to use  the output downstream.
+
+
+
+PromptTemplate
+
+modify prompt format easily
+
+Chains: Combine LLMs and prompts in multi-step workflows
+
+
+1
+2
+
+
+from langchain.chains import LLMChain
+chain = LLMChain(llm=llm, prompt=prompt)
+
+
+Agents: dynamically call chains based on user input
+
+
+1
+2
+3
+
+
+from langchain.agents import load_tools
+from langchain.agents import initialize_agent
+from langchain.llms import OpenAI
+
+
+we can connect Google AI with ChatGPT" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/langchain-use-cases-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -89,8 +132,7 @@ Title: Langchain Use Cases 2023 Review Date: Sat, Aug 26, 2023 url: https://pyth
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Langchain Use Cases 2023" property="og:title"/>
+      </script><meta content="Langchain Use Cases 2023" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/programming-notes/langchain-use-cases-2023/" property="og:url"/>
@@ -226,7 +268,7 @@ Title: Langchain Use Cases 2023 Review Date: Sat, Aug 26, 2023 url: https://pyth
 <li>
 <a aria-label="Output Parsers" href="#output-parsers">Output Parsers</a></li>
 <li>
-<a aria-label="Indexes &amp;ndash; Structuring documents to LLMs" href="#indexes----structuring-documents-to-llms">Indexes – Structuring documents to LLMs</a><ul>
+<a aria-label="Indexes – Structuring documents to LLMs" href="#indexes----structuring-documents-to-llms">Indexes – Structuring documents to LLMs</a><ul>
 <li>
 <a aria-label="Document loaders" href="#document-loaders">Document loaders</a></li>
 <li>

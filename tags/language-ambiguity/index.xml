@@ -17,8 +17,27 @@
       <pubDate>Fri, 26 Jan 2024 17:29:29 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/allen-z-ren-robots-that-ask-for-help-uncertainty-alignment-2023/</guid>
-      <description>[TOC]
-Title: Robots That Ask for Help: Uncertainty Alignment for Large Language Model Planners Author: Allen Z. Ren et. al. Publish Year: 4 Sep 2023 Review Date: Fri, Jan 26, 2024 url: arXiv:2307.01928v2 Summary of paper Motivation LLMs have various capabilities but often make overly confident yet incorrect predictions. KNOWNO aims to measure and align this uncertainty, enabling LLM-based planners to recognize their limitations and request assistance when necessary. Contribution built on theory of conformal prediction Some key terms Ambiguity in NL</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title:  Robots That Ask for Help:  Uncertainty Alignment for Large Language Model Planners&lt;/li&gt;
+&lt;li&gt;Author: Allen Z. Ren et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 4 Sep 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Fri, Jan 26, 2024&lt;/li&gt;
+&lt;li&gt;url: arXiv:2307.01928v2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/cover.png&#34; alt=&#34;image-20240127222901220&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;LLMs have various capabilities but often make overly confident yet  incorrect predictions. KNOWNO aims to measure and align this  uncertainty, enabling LLM-based planners to recognize their limitations  and request assistance when necessary.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;built on theory of conformal prediction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ambiguity in NL&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

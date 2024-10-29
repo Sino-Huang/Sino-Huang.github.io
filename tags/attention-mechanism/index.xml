@@ -17,10 +17,22 @@
       <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/david_ding-attention-over-learned-object-embeddings-enables-complex-visual-reasoning-2021/</guid>
-      <description>Title: Attention Over Learned Object Embeddings Enables Complex Visual Reasoning Author: David Ding et. al. Publish Year: 2021 NeurIPS Review Date: Dec 2021 Background info for this paper:
-Their paper propose a all-in-one transformer model that is able to answer CLEVRER counterfactual questions with higher accuracy (75.6% vs 46.5%) and less training data (- 40%)
-They believe that their model relies on three key aspects:
-self-attention soft-discretization self-supervised learning What is self-attention</description>
+      <description>&lt;ol&gt;
+&lt;li&gt;Title: Attention Over Learned Object Embeddings Enables Complex Visual Reasoning&lt;/li&gt;
+&lt;li&gt;Author: David Ding et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 2021 NeurIPS&lt;/li&gt;
+&lt;li&gt;Review Date: Dec 2021&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Background info for this paper:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Their paper propose a all-in-one transformer model that is able to answer CLEVRER counterfactual questions with higher accuracy (75.6% vs 46.5%) and less training data (- 40%)&lt;/p&gt;
+&lt;p&gt;They believe that their model relies on three key aspects:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;self-attention&lt;/li&gt;
+&lt;li&gt;soft-discretization&lt;/li&gt;
+&lt;li&gt;self-supervised learning&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20211214201703442.png&#34; alt=&#34;image-20211214201703442&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

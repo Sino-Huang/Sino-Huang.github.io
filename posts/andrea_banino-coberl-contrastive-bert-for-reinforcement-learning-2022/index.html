@@ -7,9 +7,38 @@
 <title>Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022 | Sukai Huang</title>
 <meta content="transformer, reinforcement learning" name="keywords"/>
 <meta content="[TOC]
-Title: CoBERL Contrastive BERT for Reinforcement Learning Author: Andrea Banino et. al. DeepMind Publish Year: Feb 2022 Review Date: Wed, Oct 5, 2022 Summary of paper https://arxiv.org/pdf/2107.05431.pdf
-Motivation Contribution Some key terms Representation learning in reinforcement learning
-motivation: if state information could be effectively extracted from raw observations it may then be possible to learn from there as fast as from states. however, given the often sparse reward signal coming from the environment, learning representations in RL has to be achieved with little to no supervision." name="description"/>
+
+Title: CoBERL Contrastive BERT for Reinforcement Learning
+Author: Andrea Banino et. al. DeepMind
+Publish Year: Feb 2022
+Review Date: Wed, Oct 5, 2022
+
+Summary of paper
+https://arxiv.org/pdf/2107.05431.pdf
+Motivation
+Contribution
+Some key terms
+Representation learning in reinforcement learning
+
+motivation:
+
+if state information could be effectively extracted from raw observations it may then be possible to learn from there as fast as from states.
+however, given the often sparse reward signal coming from the environment, learning representations in RL has to be achieved with little to no supervision.
+
+
+approach types
+
+class 1: auxiliary self-supervised losses to accelerate the learning speed in model-free RL algorithm
+class 2: learn a world model and use this to collect imagined rollouts, which then act as extra data to train the RL algorithm reducing the samples required from the environment
+CoBERL is in class 1
+
+​	it uses both masked language modelling and contrastive learning
+
+
+
+
+
+RL using BERT architecture – RELIC" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -91,8 +120,7 @@ motivation: if state information could be effectively extracted from raw observa
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022" property="og:title"/>
+      </script><meta content="Andrea_banino Coberl Contrastive Bert for Reinforcement Learning 2022" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/posts/andrea_banino-coberl-contrastive-bert-for-reinforcement-learning-2022/" property="og:url"/>

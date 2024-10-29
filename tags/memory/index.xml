@@ -17,9 +17,17 @@
       <pubDate>Thu, 07 Apr 2022 12:12:20 +1000</pubDate>
       
       <guid>https://sino-huang.github.io/posts/hao_hu-generalisable-episodic-memory-for-drl-2021/</guid>
-      <description>[TOC]
-Title: Generalisable episodic memory for Deep Reinforcement Learning Author: Hao Hu et. al. Publish Year: Jun 2021 Review Date: April 2022 Summary of paper Motivation The author proposed Generalisable Episodic Memory (GEM), which effectively organises the state-action values of episodic memory in a generalisable manner and supports implicit planning on memorised trajectories.
-so compared to traditional memory table, GEM learns a virtual memory table memorized by deep neural networks to aggregate similar state-action pairs that essentially have the same nature.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Generalisable episodic memory for Deep Reinforcement Learning&lt;/li&gt;
+&lt;li&gt;Author: Hao Hu et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: Jun 2021&lt;/li&gt;
+&lt;li&gt;Review Date: April 2022&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;The author proposed Generalisable Episodic Memory (GEM), which effectively organises the state-action values of episodic memory in a generalisable manner and supports implicit planning on memorised trajectories.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;so compared to traditional memory table&lt;/strong&gt;, GEM learns a virtual memory table memorized by deep neural networks to aggregate similar state-action pairs that essentially have the same nature.&lt;/p&gt;</description>
     </item>
     
   </channel>

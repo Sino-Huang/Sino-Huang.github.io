@@ -7,7 +7,150 @@
 <title>Using Kedro And Optuna for Your Project | Sukai Huang</title>
 <meta content="" name="keywords"/>
 <meta content='[TOC]
-Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 url: https://neptune.ai/blog/kedro-pipelines-with-optuna-hyperparameter-sweeps Use Kedro and Optuan for your ML project Kedro - manage the ML pipeline Optuna - hyperparameter tuning tool Example pyproject.toml 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 [build-system] requires = [ "setuptools",] build-backend = "setuptools.' name="description"/>
+
+Title: Using Kedro And Optuna for Your Project
+Review Date: Wed, Mar 27, 2024
+url: https://neptune.ai/blog/kedro-pipelines-with-optuna-hyperparameter-sweeps
+
+Use Kedro and Optuan for your ML project
+
+Kedro - manage the ML pipeline
+Optuna - hyperparameter tuning tool
+
+Example pyproject.toml
+
+
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+
+
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kedro_hyperparameter_sweep_test"
+authors = [
+    {name = "Sukai Huang", email = "hsk6808065@163.com"}
+]
+readme = "README.md"
+dynamic = [ "dependencies", "version",]
+
+[project.scripts]
+kedro-hyperparameter-sweep-test = "kedro_hyperparameter_sweep_test.__main__:main"
+
+[project.optional-dependencies]
+docs = [ "docutils&lt;0.18.0", "sphinx~=3.4.3", "sphinx_rtd_theme==0.5.1", "nbsphinx==0.8.1", "sphinx-autodoc-typehints==1.11.1", "sphinx_copybutton==0.3.1", "ipykernel&gt;=5.3, &lt;7.0", "Jinja2&lt;3.1.0", "myst-parser~=0.17.2",]
+
+[tool.kedro]
+package_name = "kedro_hyperparameter_sweep_test"
+project_name = "kedro_hyperparameter_sweep_test"
+kedro_init_version = "0.19.3"
+tools = [ "Linting", "Custom Logging", "Documentation", "Data Structure", "Kedro Viz",]
+example_pipeline = "False"
+source_dir = "src"
+
+[tool.ruff]
+line-length = 88
+show-fixes = true
+select = [ "F", "W", "E", "I", "UP", "PL", "T201",]
+ignore = [ "E501",]
+
+[project.entry-points."kedro.hooks"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+    
+[tool.setuptools.dynamic.dependencies]
+file = "requirements.txt"
+
+[tool.setuptools.dynamic.version]
+attr = "kedro_hyperparameter_sweep_test.__version__"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+
+[tool.setuptools.package-data]
+kedro_hyperparameter_sweep_test = ["*.csv", "*.md", "*.log"]
+
+
+The default Kedro project structure is as follows:
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+project-dir         # Parent directory of the template
+├── .gitignore      # Hidden file that prevents staging of unnecessary files to `git`
+├── conf            # Project configuration files
+├── data            # Local project data (not committed to version control)
+├── docs            # Project documentation
+├── notebooks       # Project-related Jupyter notebooks (can be used for experimental code before moving the code to src)
+├── pyproject.toml  # Identifies the project root and contains configuration information
+├── README.md       # Project README
+└── src             # Project source code
+
+
+Use Jupyter lab
+ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html' name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -89,8 +232,7 @@ Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 ur
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Using Kedro And Optuna for Your Project" property="og:title"/>
+      </script><meta content="Using Kedro And Optuna for Your Project" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/" property="og:url"/>

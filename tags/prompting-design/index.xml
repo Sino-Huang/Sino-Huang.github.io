@@ -17,8 +17,30 @@
       <pubDate>Sun, 02 Jul 2023 16:09:58 +1000</pubDate>
       
       <guid>https://sino-huang.github.io/posts/jianning_wang-boosting-language-models-reasoning-with-chain-of-knowledge-prompting-2023/</guid>
-      <description>[TOC]
-Title: Boosting Language Models Reasoning With Chain of Knowledge Prompting Author: Jianing Wang et. al. Publish Year: 10 Jun 2023 Review Date: Sun, Jul 2, 2023 url: https://arxiv.org/pdf/2306.06427.pdf Summary of paper Motivation &amp;ldquo;Chain of Thought (CoT)&amp;rdquo; aims at designing a simple prompt like &amp;ldquo;Let&amp;rsquo;s think step by step&amp;rdquo; however, the generated rationales often come with mistakes, making unfactual and unfaithful reasoning chain To mitigate this brittleness, we propose a novel Chain-of-Knowlege knowledge evidence in the form of structure triple Contribution Benefiting from CoK, we additional introduce a F^2 -Verification method to estimate the reliable response, the wrong evidence can be indicated to prompt the LLM to rethink.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Boosting Language Models Reasoning With Chain of Knowledge Prompting&lt;/li&gt;
+&lt;li&gt;Author: Jianing Wang et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 10 Jun 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Sun, Jul 2, 2023&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://arxiv.org/pdf/2306.06427.pdf&#34;&gt;https://arxiv.org/pdf/2306.06427.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/cover.png&#34; alt=&#34;image-20230702162535381&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Chain of Thought (CoT)&amp;rdquo; aims at designing a simple prompt like &amp;ldquo;Let&amp;rsquo;s think step by step&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;however, the generated rationales often come with mistakes, making unfactual and unfaithful reasoning chain&lt;/li&gt;
+&lt;li&gt;To mitigate this brittleness, we propose a novel Chain-of-Knowlege knowledge evidence in the form of structure triple&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Benefiting from CoK, we additional introduce a F^2 -Verification method to estimate the reliable response, the wrong evidence can be indicated to prompt the LLM to rethink.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20230702174714043.png&#34; alt=&#34;image-20230702174714043&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

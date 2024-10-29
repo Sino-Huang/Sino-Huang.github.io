@@ -17,8 +17,31 @@
       <pubDate>Sun, 28 Jan 2024 09:31:05 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/parsa-mahmoudieh-zero-shot-reward-specification-via-grounded-natural-language-2022/</guid>
-      <description>[TOC]
-Title: Zero Shot Reward Specification via Grounded Natural Language Author: Parsa Mahnoudieh et. al. Publish Year: PMLR 2022 Review Date: Sun, Jan 28, 2024 url: Summary of paper Motivation reward signals in RL are expensive to design and often require access to the true state. common alternatives are usually demonstrations or goal images which can be label intensive on the other hand, text descriptions provide a general low-effect way of communicating.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Zero Shot Reward Specification via Grounded Natural Language&lt;/li&gt;
+&lt;li&gt;Author: Parsa Mahnoudieh et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: PMLR 2022&lt;/li&gt;
+&lt;li&gt;Review Date: Sun, Jan 28, 2024&lt;/li&gt;
+&lt;li&gt;url:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/cover.png&#34; alt=&#34;image-20240128113716178&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;reward signals in RL are expensive to design and often require access to the true state.&lt;/li&gt;
+&lt;li&gt;common alternatives are usually demonstrations or goal images which can be label intensive&lt;/li&gt;
+&lt;li&gt;on the other hand, text descriptions provide a general low-effect way of communicating.&lt;/li&gt;
+&lt;li&gt;previous work rely on true state or labelled expert demonstration match,
+&lt;ul&gt;
+&lt;li&gt;this work directly use CLIP to convert the observation to semantic embeddings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Difference&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

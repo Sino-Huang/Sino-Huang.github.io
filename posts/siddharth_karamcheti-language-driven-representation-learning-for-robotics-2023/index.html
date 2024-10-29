@@ -7,7 +7,31 @@
 <title>Siddharth_karamcheti Language Driven Representation Learning for Robotics 2023 | Sukai Huang</title>
 <meta content="natural language reinforcement learning, future work" name="keywords"/>
 <meta content="[TOC]
-Title: Language-Driven Representation Learning for Robotics Author: Siddharth Karamcheti et. al. Publish Year: 24 Feb 2023 Review Date: Fri, Mar 3, 2023 url: https://arxiv.org/pdf/2302.12766.pdf Summary of paper Motivation recent work in visual representation learning for robotics demonstrates the viability of learning from large video datasets of humans performing everyday tasks. leveraging methods such as masked autoencoding and contrastive learning, these representations exhibit strong transfer to policy learning for visuomotor control but robot learning encompasses a diverse set of problems beyond control including grasp affordance prediction, language-conditioned imitation learning, and intent scoring for human-robot collaboration amongst others." name="description"/>
+
+Title: Language-Driven Representation Learning for Robotics
+Author: Siddharth Karamcheti et. al.
+Publish Year: 24 Feb 2023
+Review Date: Fri, Mar 3, 2023
+url: https://arxiv.org/pdf/2302.12766.pdf
+
+Summary of paper
+Motivation
+
+recent work in visual representation learning for robotics demonstrates the viability of learning from large video datasets of humans performing everyday tasks.
+leveraging methods such as masked autoencoding and contrastive learning, these representations exhibit strong transfer to policy learning for visuomotor control
+but robot learning encompasses a diverse set of problems beyond control including grasp affordance prediction, language-conditioned imitation learning, and intent scoring for human-robot collaboration amongst others.
+
+Contribution
+
+first, we demonstrate that existing representations yield inconsistent results across these tasks: masked autoencoding approaches pick up on low-level spatial features at the cost of high-level semantics, while contrastive learning approaches capture the opposite (i.e., high-level semantics)
+We then introduce Voltron, a framework for language driven representation learning from human videos and associated captions.
+
+Voltron trades off language conditioned visual reconstruction to learn low-level visual patterns (mask auto-encoding) and visually grounded language generation to encode high-level semantics. (hindsight relabelling and contrastive learning)
+
+
+
+Some key terms
+How can we learn visual representations that generalise across the diverse spectrum of problems in robot learning?" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -89,8 +113,7 @@ Title: Language-Driven Representation Learning for Robotics Author: Siddharth Ka
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Siddharth_karamcheti Language Driven Representation Learning for Robotics 2023" property="og:title"/>
+      </script><meta content="Siddharth_karamcheti Language Driven Representation Learning for Robotics 2023" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/posts/siddharth_karamcheti-language-driven-representation-learning-for-robotics-2023/" property="og:url"/>

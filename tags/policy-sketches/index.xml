@@ -17,8 +17,15 @@
       <pubDate>Fri, 17 Dec 2021 13:07:53 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/dominik_drexler-expressing-and-exploiting-the-common-subgoal-structure-of-classical-planning-domains-using-sketches-2021/</guid>
-      <description>[TOC]
-Title: Expressing and Exploiting the Common Subgoal Structure of Classical Planning Domains Using Sketches Author: Dominik Drexler et. al. Publish Year: 2021 Review Date: Dec 2021 Summary of paper Algorithms like SIW often fail when the goal is not easily serialisable or when some of the subproblems have a high width. In this work, the author address these limitations by using a simple but powerful language for expressing finer problem decompositions called policy sketches.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Expressing and Exploiting the Common Subgoal Structure of Classical Planning Domains Using Sketches&lt;/li&gt;
+&lt;li&gt;Author: Dominik Drexler et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 2021&lt;/li&gt;
+&lt;li&gt;Review Date: Dec 2021&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;Algorithms like SIW often fail when the goal is not easily serialisable or when some of the subproblems have a high width. In this work, the author address these limitations by using a simple but powerful language for expressing finer problem decompositions called policy sketches.&lt;/p&gt;</description>
     </item>
     
   </channel>

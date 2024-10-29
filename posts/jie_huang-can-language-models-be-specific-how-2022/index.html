@@ -7,7 +7,40 @@
 <title>Jie_huang Can Language Models Be Specific How 2022 | Sukai Huang</title>
 <meta content="natural language processing, future work" name="keywords"/>
 <meta content="[TOC]
-Title: Can Language Models Be Specific? How? Author: Jie Huang et. al. Publish Year: 11 Oct 2022 Review Date: Tue, Nov 8, 2022 Summary of paper Motivation they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts. for instance given “J.K. Rowling was born in [MASK]”, we want to test whether a more specific answer will be better filled by PLMs." name="description"/>
+
+Title: Can Language Models Be Specific? How?
+Author: Jie Huang et. al.
+Publish Year: 11 Oct 2022
+Review Date: Tue, Nov 8, 2022
+
+Summary of paper
+Motivation
+
+they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts.
+for instance given “J.K. Rowling was born in [MASK]”, we want to test whether a more specific answer will be better filled by PLMs. e.g., Yate instead of England
+
+
+
+
+it is known that if the prediction is more specific, we can retrieve more fine-grained information from language models, and further acquire more information.
+
+viewer’s opinion: we are not saying that summarisation is easy or having less useful information, there are cases that abstract info is more useful
+
+
+
+Contribution
+
+although there are works on measuring how much knowledge is stored in PLMs or improving the correctness of the predictions, non attempted to measure or improve the specificity of prediction made by PLMs.
+Understanding how specific the language of PLMs is can help us better understand the behaviour of language models and facilitate downstream applications such as question answering etc.
+setup a dataset benchmark for specificity,  The quality of the benchmark is high, where the judgment on which answer is more specific is ∼ 97% consistent with humans.
+
+Discovery
+
+in general, PLMs prefer less specific answers without subjects given, and they only have a weak ability to differentiate coarse-grained/fine-grained objects by measuring their (cosine) similarities to subjects.
+the results indicate that specificity was neglected by existing research on language models
+
+Improving specificity of the prediction
+few-shot prompting" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -89,8 +122,7 @@ Title: Can Language Models Be Specific? How? Author: Jie Huang et. al. Publish Y
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Jie_huang Can Language Models Be Specific How 2022" property="og:title"/>
+      </script><meta content="Jie_huang Can Language Models Be Specific How 2022" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/" property="og:url"/>

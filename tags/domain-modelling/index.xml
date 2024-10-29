@@ -17,10 +17,18 @@
       <pubDate>Tue, 15 Mar 2022 16:34:45 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/stephen_cresswell-generalised-domain-model-acquisition-from-action-traces-2013/</guid>
-      <description>[TOC]
-Title: Generalised Domain Model Acquisition from Action Traces (LOCM2) Author: Stephen Cresswell et. al. Publish Year: 2013 Review Date: Mar 2022 Summary of paper Motivation One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.
-This work extended LOCM by allowing multiple parameterised state machine to represent a single object.
-In other words, it is possible to automatically infer the underlying transition system from sample action sequences of the domain.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Generalised Domain Model Acquisition from Action Traces (LOCM2)&lt;/li&gt;
+&lt;li&gt;Author: Stephen Cresswell et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 2013&lt;/li&gt;
+&lt;li&gt;Review Date: Mar 2022&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;One approach to the problem of formulating domain models for planning is to learn the models from example action sequences.&lt;/p&gt;
+&lt;p&gt;This work extended LOCM by allowing multiple parameterised state machine to represent a single object.&lt;/p&gt;
+&lt;p&gt;In other words, it is possible to automatically infer the underlying transition system from &lt;em&gt;sample action sequences of the domain&lt;/em&gt;. Using such an approach removes the necessity for the domain expert to also be an expert at modelling transition systems.&lt;/p&gt;</description>
     </item>
     
   </channel>

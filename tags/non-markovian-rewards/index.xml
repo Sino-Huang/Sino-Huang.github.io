@@ -17,8 +17,31 @@
       <pubDate>Sat, 24 Dec 2022 22:36:07 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/jan_corazza-reinforcement-learning-with-stochastic-reward-machines-2022/</guid>
-      <description>[TOC]
-Title: Reinforcement Learning With Stochastic Reward Machines Author: Jan Corazza et. al. Publish Year: AAAI 2022 Review Date: Sat, Dec 24, 2022 Summary of paper Motivation reward machines are an established tool for dealing with reinforcement learning problems in which rewards are sparse and depend on complex sequence of actions. However, existing algorithms for learning reward machines assume an overly idealized setting where rewards have to be free of noise.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Reinforcement Learning With Stochastic Reward Machines&lt;/li&gt;
+&lt;li&gt;Author: Jan Corazza et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: AAAI 2022&lt;/li&gt;
+&lt;li&gt;Review Date: Sat, Dec 24, 2022&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;reward machines are an established tool for dealing with reinforcement learning problems in which rewards are sparse and depend on complex sequence of actions. However, existing algorithms for learning reward machines assume an overly idealized   setting where rewards have to be free of noise.&lt;/li&gt;
+&lt;li&gt;to overcome this practical limitation, we introduce a novel type of reward machines called stochastic reward machines, and an algorithm for learning them.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Discussing the handling of noisy reward for non-markovian reward function.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;limitation&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;the solution introduces multiple sub value function models, which is different from the standard RL algorithm.&lt;/li&gt;
+&lt;li&gt;The work does not emphasise on the sample efficiency of the algorithm.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Reward machine&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

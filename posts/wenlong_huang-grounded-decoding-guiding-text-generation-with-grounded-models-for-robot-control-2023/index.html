@@ -7,7 +7,31 @@
 <title>Wenlong_huang Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control 2023 | Sukai Huang</title>
 <meta content="language reinforcement learning" name="keywords"/>
 <meta content="[TOC]
-Title: Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control Author: WenLong Huang et. al. Publish Year: 1 Mar, 2023 Review Date: Thu, Mar 30, 2023 url: https://arxiv.org/abs/2303.00855 Summary of paper Motivation Unfortunately, applying LLMs to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of rewards or safety constraints that robots may require." name="description"/>
+
+Title: Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control
+Author: WenLong Huang et. al.
+Publish Year: 1 Mar, 2023
+Review Date: Thu, Mar 30, 2023
+url: https://arxiv.org/abs/2303.00855
+
+Summary of paper
+
+
+Motivation
+
+Unfortunately, applying LLMs to settings with embodied agents, such as robots, is challenging due to their lack of experience with the physical world, inability to parse non-language observations, and ignorance of rewards or safety constraints that robots may require.
+on the other hand, language-conditioned robotic policies that learn from interaction data can provide the necessary grounding that allows the agent to be correctly situated in the real world, but such policies are limited by the lack of high-level semantic understanding due to the limited breadth of the interaction data available for training them.
+
+Contribution
+
+thus if we want to make use of the semantic knowledge in a language model while still situating it in an embodied setting, we must construct an action sequence that is both likely according to the language model and also realisable according to grounded models of the environment.
+we frame this as a problem similar to probabilistic filtering: decode a sequence that both has high probability under the language model and high probability under a set of grounded model objectives.
+
+Potential future work
+
+the work is related to using LMs info as a prior bias
+the problem framing is straightforward
+" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/wenlong_huang-grounded-decoding-guiding-text-generation-with-grounded-models-for-robot-control-2023/" rel="canonical"/>
 <link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
@@ -89,8 +113,7 @@ Title: Grounded Decoding Guiding Text Generation With Grounded Models for Robot 
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script>
-<meta content="Wenlong_huang Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control 2023" property="og:title"/>
+      </script><meta content="Wenlong_huang Grounded Decoding Guiding Text Generation With Grounded Models for Robot Control 2023" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="https://sino-huang.github.io/posts/wenlong_huang-grounded-decoding-guiding-text-generation-with-grounded-models-for-robot-control-2023/" property="og:url"/>

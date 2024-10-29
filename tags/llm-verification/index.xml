@@ -17,9 +17,22 @@
       <pubDate>Thu, 20 Jun 2024 20:19:12 +1000</pubDate>
       
       <guid>https://sino-huang.github.io/posts/verification-in-llm-topic-2024/</guid>
-      <description>[TOC]
-Review Date: Thu, Jun 20, 2024 Verification in LLM Topic 2024 Paper 1: Weng, Yixuan, et al. &amp;ldquo;Large language models are better reasoners with self-verification.&amp;rdquo; arXiv preprint arXiv:2212.09561 (2022).
-the better reasoning with CoT is carried out in the following two steps, Forward Reasoning ad Backward Verification. Specifically, in Forward Reasoning, LLM reasoners generate candidate answers using CoT, and the question and candidate answers form different conclusions to be verified.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Review Date: Thu, Jun 20, 2024&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;verification-in-llm-topic-2024&#34;&gt;Verification in LLM Topic 2024&lt;/h2&gt;
+&lt;h2 id=&#34;paper-1&#34;&gt;Paper 1:&lt;/h2&gt;
+&lt;p&gt;Weng, Yixuan, et al. &amp;ldquo;Large language models are better reasoners with self-verification.&amp;rdquo; &lt;em&gt;arXiv preprint arXiv:2212.09561&lt;/em&gt; (2022).&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/cover.png&#34; alt=&#34;image-20240620202053164&#34;  /&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the better reasoning with CoT is carried out in the following two steps, Forward Reasoning ad Backward Verification.&lt;/li&gt;
+&lt;li&gt;Specifically, in Forward Reasoning, LLM reasoners generate candidate answers using CoT, and the question and candidate answers form different conclusions to be verified. And in Backward Verification, We mask the original condition and predict its result using another CoT. We rank candidate conclusions based on a verification score, which is calculated by assessing the consistency between
+the predicted and original condition values&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20240620202519073.png&#34; alt=&#34;image-20240620202519073&#34;  /&gt;
+&lt;/p&gt;</description>
     </item>
     
   </channel>

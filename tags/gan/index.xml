@@ -17,9 +17,19 @@
       <pubDate>Wed, 12 Jan 2022 16:54:01 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/alex_nichol-glide-towards-photorealistic-image-generation-and-editing-with-text-guided-diffusion-models-2021/</guid>
-      <description>[TOC]
-Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models Author: Alex Nichol et. al. Publish Year: Dec 2021 Review Date: Jan 2022 Summary of paper In author&amp;rsquo;s previous work, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with classifier guidance, a technique which allows diffusion models to condition on a classifier&amp;rsquo;s labels.
-The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: GLIDE: Towards Photorealistic Image Generation and Editing with Text-Guided Diffusion Models&lt;/li&gt;
+&lt;li&gt;Author: Alex Nichol et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: Dec 2021&lt;/li&gt;
+&lt;li&gt;Review Date: Jan 2022&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;In author&amp;rsquo;s &lt;a href=&#34;https://arxiv.org/pdf/2105.05233.pdf&#34;&gt;previous work&lt;/a&gt;, the diffusion model can achieve photorealism in the class-conditional setting by augmenting with &lt;em&gt;classifier guidance&lt;/em&gt;, a technique which allows diffusion models to condition on a classifier&amp;rsquo;s labels.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The classifier is first trained on noised images, and during the diffusion sampling process, gradients from the classifier are used to guide the output sample towards the label.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;classifier details&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

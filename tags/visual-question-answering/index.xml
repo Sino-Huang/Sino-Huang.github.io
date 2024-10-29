@@ -17,8 +17,29 @@
       <pubDate>Mon, 06 Feb 2023 22:36:41 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/zhenfang_chen-see-think-confirm-interactive-prompting-between-vision-and-language-models-for-knowledge-based-visual-reasoning-2023/</guid>
-      <description>[TOC]
-Title: See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning Author: Zhenfang Chen et. al. Publish Year: 12 Jan 2023 Review Date: Mon, Feb 6, 2023 url: https://arxiv.org/pdf/2301.05226.pdf Summary of paper Motivation Solving the knowledge-based visual reasoning tasks remains challenging, which requires a model to comprehensively understand image content, connect external world knowledge, and perform step-by-step reasoning to answer the questions correctly. Contribution We propose a novel framework named Interactive Prompting Visual Reasoner (IPVR) for few-shot knowledge based visual reasoning.</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: See, Think, Confirm: Interactive Prompting Between Vision and Language Models for Knowledge Based Visual Reasoning&lt;/li&gt;
+&lt;li&gt;Author: Zhenfang Chen et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 12 Jan 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Mon, Feb 6, 2023&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://arxiv.org/pdf/2301.05226.pdf&#34;&gt;https://arxiv.org/pdf/2301.05226.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/cover.png&#34; alt=&#34;image-20230207113442635&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Solving the knowledge-based visual reasoning tasks remains challenging, which requires a model to comprehensively understand image content, connect external world knowledge, and perform step-by-step reasoning to answer the questions correctly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;We propose a novel framework named Interactive Prompting Visual Reasoner (IPVR) for few-shot knowledge based visual reasoning.&lt;/li&gt;
+&lt;li&gt;IPVR contains three stages, &lt;strong&gt;see, think, and confirm&lt;/strong&gt;. The see stage scans the image and &lt;u&gt;grounds the visual concept candidates&lt;/u&gt; with a visual perception model. The think stage adopts a pre-trained large language model (LLM) to attend the key concepts from candidates adaptively. It then transforms them into text context for prompting with a visual captioning model and adopts the LLM to generate the answer.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;confirm&lt;/strong&gt; stage further uses the LLM to generate the supporting rational to the answer, verify the generated rationale with a cross-modality classifier and ensure that the rationale can infer the predicted output consistently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;human process to handle knowledge-based visual reasoning&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

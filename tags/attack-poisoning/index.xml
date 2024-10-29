@@ -17,9 +17,28 @@
       <pubDate>Tue, 27 Dec 2022 20:35:10 +1100</pubDate>
       
       <guid>https://sino-huang.github.io/posts/xuezhou_zhang-robust-policy-gradient-against-strong-data-corruption-2021/</guid>
-      <description>[TOC]
-Title: Robust Policy Gradient Against Strong Data Corruption Author: Xuezhou Zhang et. al. Publish Year: 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Abstract Contribution the author utilised a SVD-denoising technique to identify and remove the possible reward perturbations this approach gives a robust RL algorithm Limitation
-This approach only solve the attack perturbation that is not consistent. (i.e. not stealthy) Some key terms Policy gradient methods</description>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Robust Policy Gradient Against Strong Data Corruption&lt;/li&gt;
+&lt;li&gt;Author: Xuezhou Zhang et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 2021&lt;/li&gt;
+&lt;li&gt;Review Date: Tue, Dec 27, 2022&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-assets/image-20221227203806030.png&#34; alt=&#34;image-20221227203806030&#34;  /&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;the author utilised a SVD-denoising technique to identify and remove the possible reward perturbations&lt;/li&gt;
+&lt;li&gt;this approach gives a robust RL algorithm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Limitation&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This approach only solve the attack perturbation that is not consistent. (i.e. not stealthy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Policy gradient methods&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
