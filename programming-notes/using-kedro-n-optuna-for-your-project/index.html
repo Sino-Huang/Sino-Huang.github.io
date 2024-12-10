@@ -153,7 +153,8 @@ Use Jupyter lab
 ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html' name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -180,7 +181,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -200,25 +201,6 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          
-          
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
-          
-          throwOnError : false
-        });
-    });
-</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
@@ -232,10 +214,13 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="Using Kedro And Optuna for Your Project" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+      </script><meta content="https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Using Kedro And Optuna for Your Project" property="og:title"/>
+<meta content='[TOC]
+Title: Using Kedro And Optuna for Your Project Review Date: Wed, Mar 27, 2024 url: https://neptune.ai/blog/kedro-pipelines-with-optuna-hyperparameter-sweeps Use Kedro and Optuan for your ML project Kedro - manage the ML pipeline Optuna - hyperparameter tuning tool Example pyproject.toml 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 [build-system] requires = [ "setuptools",] build-backend = "setuptools.build_meta" [project] name = "kedro_hyperparameter_sweep_test" authors = [ {name = "Sukai Huang", email = "hsk6808065@163.com"} ] readme = "README.md" dynamic = [ "dependencies", "version",] [project.scripts] kedro-hyperparameter-sweep-test = "kedro_hyperparameter_sweep_test.__main__:main" [project.optional-dependencies] docs = [ "docutils&lt;0.18.0", "sphinx~=3.4.3", "sphinx_rtd_theme==0.5.1", "nbsphinx==0.8.1", "sphinx-autodoc-typehints==1.11.1", "sphinx_copybutton==0.3.1", "ipykernel&gt;=5.3, &lt;7.0", "Jinja2&lt;3.1.0", "myst-parser~=0.17.2",] [tool.kedro] package_name = "kedro_hyperparameter_sweep_test" project_name = "kedro_hyperparameter_sweep_test" kedro_init_version = "0.19.3" tools = [ "Linting", "Custom Logging", "Documentation", "Data Structure", "Kedro Viz",] example_pipeline = "False" source_dir = "src" [tool.ruff] line-length = 88 show-fixes = true select = [ "F", "W", "E", "I", "UP", "PL", "T201",] ignore = [ "E501",] [project.entry-points."kedro.hooks"] [tool.ruff.format] docstring-code-format = true [tool.setuptools.dynamic.dependencies] file = "requirements.txt" [tool.setuptools.dynamic.version] attr = "kedro_hyperparameter_sweep_test.__version__" [tool.setuptools.packages.find] where = [ "src",] namespaces = false [tool.setuptools.package-data] kedro_hyperparameter_sweep_test = ["*.csv", "*.md", "*.log"] The default Kedro project structure is as follows: 1 2 3 4 5 6 7 8 9 project-dir # Parent directory of the template ├── .gitignore # Hidden file that prevents staging of unnecessary files to `git` ├── conf # Project configuration files ├── data # Local project data (not committed to version control) ├── docs # Project documentation ├── notebooks # Project-related Jupyter notebooks (can be used for experimental code before moving the code to src) ├── pyproject.toml # Identifies the project root and contains configuration information ├── README.md # Project README └── src # Project source code Use Jupyter lab ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.html' property="og:description"/>
+<meta content="en" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/programming-notes/using-kedro-n-optuna-for-your-project/" property="og:url"/>
 <meta content="https://sino-huang.github.io/posts/using-kedro-n-optuna-for-your-project/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/posts/using-kedro-n-optuna-for-your-project/image-assets/cover.png" name="twitter:image"/>
@@ -279,10 +264,10 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 <a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
 <div class="logo-switches">
 <button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 </svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12" cy="12" r="5"></circle>
 <line x1="12" x2="12" y1="1" y2="3"></line>
 <line x1="12" x2="12" y1="21" y2="23"></line>
@@ -294,8 +279,6 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
-<ul class="lang-switch"><li>|</li>
-</ul>
 </div>
 </div>
 <ul id="menu">
@@ -327,33 +310,11 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </ul>
 </nav>
 </header>
-<main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Use Kedro and Optuan for your ML project" href="#use-kedro-and-optuan-for-your-ml-project">Use Kedro and Optuan for your ML project</a></li>
-<li>
-<a aria-label="Example pyproject.toml" href="#example-pyprojecttoml">Example pyproject.toml</a></li>
-<li>
-<a aria-label="The default Kedro project structure is as follows:" href="#the-default-kedro-project-structure-is-as-follows">The default Kedro project structure is as follows:</a></li>
-<li>
-<a aria-label="Use Jupyter lab" href="#use-jupyter-lab">Use Jupyter lab</a></li>
-<li>
-<a aria-label="Global configs and catalog factory issue" href="#global-configs-and-catalog-factory-issue">Global configs and catalog factory issue</a></li>
-<li>
-<a aria-label="Troubleshoot" href="#troubleshoot">Troubleshoot</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+<main class="main">
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-Notes</a></div>
 <h1>
     Using Kedro And Optuna for Your Project
-    <a aria-label="RSS" href="index.xml" title="RSS">
+    <a aria-label="RSS" href="/programming-notes/using-kedro-n-optuna-for-your-project/index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -693,8 +654,9 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </div>
 </main>
 <footer class="footer">
-<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>

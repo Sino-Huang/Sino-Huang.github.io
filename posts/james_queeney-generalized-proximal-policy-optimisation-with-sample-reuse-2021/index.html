@@ -17,7 +17,6 @@ Summary of paper
 Motivation
 
 
-
 it is critical for data-driven reinforcement learning methods to be both stable and sample efficient. On-policy methods typically generate reliable policy improvement throughout training, while off-policy methods make more efficient use of data through sample reuse.
 
 Contribution
@@ -31,7 +30,8 @@ Some key terms
 sample complexity" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -58,7 +58,7 @@ sample complexity" name="description"/>
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -78,25 +78,6 @@ sample complexity" name="description"/>
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          
-          
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
-          
-          throwOnError : false
-        });
-    });
-</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
@@ -110,10 +91,13 @@ sample complexity" name="description"/>
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="James_queeney Generalized Proximal Policy Optimisation With Sample Reuse 2021" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+      </script><meta content="https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="James_queeney Generalized Proximal Policy Optimisation With Sample Reuse 2021" property="og:title"/>
+<meta content="[TOC]
+Title: Generalized Proximal Policy Optimisation With Sample Reuse 2021 Author: James Queeney et. al. Publish Year: 29 Oct 2021 Review Date: Wed, Dec 28, 2022 Summary of paper Motivation it is critical for data-driven reinforcement learning methods to be both stable and sample efficient. On-policy methods typically generate reliable policy improvement throughout training, while off-policy methods make more efficient use of data through sample reuse. Contribution in this work, we combine the theoretically supported stability benefits of on-policy algorithms with the sample efficiency of off-policy algorithms. We develop policy improvement guarantees that are suitable for off-policy setting, and connect these bounds to the clipping mechanism used in PPO this motivate an off-policy version of the popular algorithm that we call GePPO. we demonstrate both theoretically and empirically that our algorithm delivers improved performance by effectively balancing the competing goals of stability and sample efficiency Some key terms sample complexity" property="og:description"/>
+<meta content="en" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/" property="og:url"/>
 <meta content="https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/cover.png" name="twitter:image"/>
@@ -157,10 +141,10 @@ sample complexity" name="description"/>
 <a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
 <div class="logo-switches">
 <button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 </svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12" cy="12" r="5"></circle>
 <line x1="12" x2="12" y1="1" y2="3"></line>
 <line x1="12" x2="12" y1="21" y2="23"></line>
@@ -172,8 +156,6 @@ sample complexity" name="description"/>
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
-<ul class="lang-switch"><li>|</li>
-</ul>
 </div>
 </div>
 <ul id="menu">
@@ -205,34 +187,11 @@ sample complexity" name="description"/>
 </ul>
 </nav>
 </header>
-<main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Summary of paper" href="#summary-of-paper">Summary of paper</a><ul>
-<li>
-<a aria-label="Motivation" href="#motivation">Motivation</a></li>
-<li>
-<a aria-label="Contribution" href="#contribution">Contribution</a></li>
-<li>
-<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
-</li>
-<li>
-<a aria-label="Sample efficiency analysis (IMPORTANT)" href="#sample-efficiency-analysis-important"><strong>Sample efficiency analysis</strong> (IMPORTANT)</a></li>
-<li>
-<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+<main class="main">
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
 <h1>
     James_queeney Generalized Proximal Policy Optimisation With Sample Reuse 2021
-    <a aria-label="RSS" href="index.xml" title="RSS">
+    <a aria-label="RSS" href="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -250,8 +209,7 @@ sample complexity" name="description"/>
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<p><img alt="image-20221228140752324" loading="lazy" src="image-assets/cover.png"/>
-</p>
+<p><img alt="image-20221228140752324" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/cover.png"/></p>
 <ul>
 <li>it is critical for data-driven reinforcement learning methods to be both stable and sample efficient. On-policy methods typically generate reliable policy improvement throughout training, while off-policy methods make more efficient use of data through sample reuse.</li>
 </ul>
@@ -297,11 +255,9 @@ sample complexity" name="description"/>
 <li>Some other methods are related to the penalty term that appears in our genralized policy improvement lower bound, which can be bounded by a penalty that depends on KL divergence</li>
 </ul>
 <p><strong>state visitation distribution</strong></p>
-<p><img alt="image-20221228163740769" loading="lazy" src="image-assets/image-20221228163740769.png"/>
-</p>
+<p><img alt="image-20221228163740769" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228163740769.png"/></p>
 <p><strong>Policy improvement lower bound</strong></p>
-<p><img alt="image-20221228164207986" loading="lazy" src="image-assets/image-20221228164207986.png"/>
-</p>
+<p><img alt="image-20221228164207986" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228164207986.png"/></p>
 <ul>
 <li>we refer to the first term of the lower bound in lemma 1 as the surrogate objective, and the second term as the penalty term.</li>
 <li>we can guarantee policy improvement at every step of the learning process by choosing the next policy $\pi_{k+1}$ to maximise this lower bound.</li>
@@ -319,14 +275,12 @@ sample complexity" name="description"/>
 <p><strong>Generalised policy improvement lower bound</strong></p>
 <ul>
 <li>in order to retain the stability benefits of PPO while reusing samples from prior policies, we must incorporate these off-policy samples in a principled way.</li>
-<li><img alt="image-20221228200322392" loading="lazy" src="image-assets/image-20221228200322392.png"/>
-</li>
+<li><img alt="image-20221228200322392" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228200322392.png"/></li>
 <li>proof: we generalise Lemma 1 to depend on expectations with respect to any reference policy, and we apply this result M times for the past policies. Then, the convex combination determined by the distribution determined by $\nu$ of the resulting M policy improvement lower bounds is also a lower bound.</li>
 <li>this lower bound provides theoretical support for extending PPO to include off-policy samples</li>
 <li>The penalty term is Theorem 1 suggests that we should control the expected total <strong>variance distance between the future policy $\pi$ and the last $M$ policies.</strong></li>
 </ul>
-<p><img alt="image-20221228201528123" loading="lazy" src="image-assets/image-20221228201528123.png"/>
-</p>
+<p><img alt="image-20221228201528123" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228201528123.png"/></p>
 <ul>
 <li>this means we can effectively control the expected performance loss at every policy update by controlling the expected total variance distance between consecutive policies.
 <ul>
@@ -336,14 +290,12 @@ sample complexity" name="description"/>
 </ul>
 <p><strong>The expected total variation distance between the current policy $\pi_k$ and the future policy pi</strong></p>
 <ul>
-<li><img alt="image-20221228202117593" loading="lazy" src="image-assets/image-20221228202117593.png"/>
-</li>
+<li><img alt="image-20221228202117593" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228202117593.png"/></li>
 </ul>
 <h2 id="sample-efficiency-analysis-important"><strong>Sample efficiency analysis</strong> (IMPORTANT)<a aria-hidden="true" class="anchor" hidden="" href="#sample-efficiency-analysis-important">#</a></h2>
 <ul>
 <li>in order to compare GePPO to PPO, we first must determine the appropriate choice of clipping parameter that results in the <strong><u>same worst-case expected performance loss</u></strong> at every update.</li>
-<li><img alt="image-20221228202950131" loading="lazy" src="image-assets/image-20221228202950131.png"/>
-</li>
+<li><img alt="image-20221228202950131" loading="lazy" src="/posts/james_queeney-generalized-proximal-policy-optimisation-with-sample-reuse-2021/image-assets/image-20221228202950131.png"/></li>
 <li>this shows that we must make smaller policy updates compared to PPO in terms of total variation distance, which is a result of utilizing samples from prior policies.</li>
 <li>Assume we require N=Bn samples for the empirical objective to be a sufficiently accurate estimate of the true objective, where n is the smallest possible batch size we can collect and B is some positive integer</li>
 <li>In this setting, PPO makes one policy update per N samples collected, while GePPO leverage data from prior policies to make B updates per N samples collected as long as M &gt;= B.</li>
@@ -354,8 +306,9 @@ sample complexity" name="description"/>
 </div>
 </main>
 <footer class="footer">
-<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>

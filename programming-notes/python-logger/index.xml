@@ -5,11 +5,13 @@
     <link>https://sino-huang.github.io/programming-notes/python-logger/</link>
     <description>Recent content in Python Logger on Sukai Huang</description>
     <image>
+      <title>Sukai Huang</title>
       <url>https://sino-huang.github.io/cute_avatar.jpg</url>
       <link>https://sino-huang.github.io/cute_avatar.jpg</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.139.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Dec 2023 20:25:12 +1100</lastBuildDate><atom:link href="https://sino-huang.github.io/programming-notes/python-logger/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/programming-notes/python-logger/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

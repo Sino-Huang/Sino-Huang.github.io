@@ -54,7 +54,8 @@ Solution: setup pyproject.toml and install it as a proper module
 python -m venv .venv" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -81,7 +82,7 @@ python -m venv .venv" name="description"/>
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -101,25 +102,6 @@ python -m venv .venv" name="description"/>
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          
-          
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
-          
-          throwOnError : false
-        });
-    });
-</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
@@ -133,10 +115,13 @@ python -m venv .venv" name="description"/>
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="Python Module and Package Management 2023" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+      </script><meta content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Python Module and Package Management 2023" property="og:title"/>
+<meta content="[TOC]
+Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10 Python module common issue 1: python -m dir vs python dir python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library. thus ModuleNotFoundError may appear Standard way of import when you want to create a module use absolute path -&gt; from moduledir/packagename import filename avoid using relative path e.g., from .xxx import yyy if within the same module, you can just use from xxx import yyy However, in a complicated project where there are too many modules. one workaround is that we still make it a module, but try to append folder path to the system path. 1 2 import os, sys sys.path.append(os.path.dirname(os.path.realpath(__file__))) always use it as the last resort. Solution: setup pyproject.toml and install it as a proper module python -m venv .venv" property="og:description"/>
+<meta content="en" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" property="og:url"/>
 <meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" name="twitter:image"/>
@@ -180,10 +165,10 @@ python -m venv .venv" name="description"/>
 <a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
 <div class="logo-switches">
 <button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 </svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12" cy="12" r="5"></circle>
 <line x1="12" x2="12" y1="1" y2="3"></line>
 <line x1="12" x2="12" y1="21" y2="23"></line>
@@ -195,8 +180,6 @@ python -m venv .venv" name="description"/>
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
-<ul class="lang-switch"><li>|</li>
-</ul>
 </div>
 </div>
 <ul id="menu">
@@ -228,47 +211,11 @@ python -m venv .venv" name="description"/>
 </ul>
 </nav>
 </header>
-<main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Python module" href="#python-module">Python module</a><ul>
-<li>
-<a aria-label="common issue 1: python -m dir vs python dir" href="#common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code></a></li>
-<li>
-<a aria-label="Standard way of import when you want to create a module" href="#standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module</a></li>
-<li>
-<a aria-label="However, in a complicated project where there are too many modules." href="#however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.</a></li>
-<li>
-<a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module</a></li>
-<li>
-<a aria-label="Sample code" href="#sample-code">Sample code</a></li></ul>
-</li>
-<li>
-<a aria-label="Hydra module" href="#hydra-module">Hydra module</a><ul>
-<li>
-<a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code></a></li>
-<li>
-<a aria-label="Extra: what is [tool.setuptools.packages.find]" href="#extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code></a></li>
-<li>
-<a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li>
-<li>
-<a aria-label="Extra: update gitignore" href="#extra-update-gitignore">Extra: update gitignore</a></li></ul>
-</li>
-<li>
-<a aria-label="Useful VSCode python extension" href="#useful-vscode-python-extension">Useful VSCode python extension</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+<main class="main">
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-Notes</a></div>
 <h1>
     Python Module and Package Management 2023
-    <a aria-label="RSS" href="index.xml" title="RSS">
+    <a aria-label="RSS" href="/programming-notes/python-module-and-package-management-2023/index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -723,8 +670,7 @@ python -m venv .venv" name="description"/>
 </div>
 </div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
 <ul>
-<li><img alt="image-20230528181250046" loading="lazy" src="image-assets/image-20230528181250046.png"/>
-</li>
+<li><img alt="image-20230528181250046" loading="lazy" src="/programming-notes/python-module-and-package-management-2023/image-assets/image-20230528181250046.png"/></li>
 </ul>
 <h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a aria-hidden="true" class="anchor" hidden="" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
 <div class="highlight"><div class="chroma">
@@ -836,8 +782,9 @@ python -m venv .venv" name="description"/>
 </div>
 </main>
 <footer class="footer">
-<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>

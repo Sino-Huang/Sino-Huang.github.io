@@ -16,7 +16,6 @@ Review Date: Wed, Dec 28, 2022
 Summary of paper
 Motivation
 
-
 Contribution
 
 on discrete action space with sparse high rewards, standard PPO often gets stuck at suboptimal actions. Why analyze the reason fort these failure modes and explain why they are not exposed by standard benchmarks
@@ -27,7 +26,8 @@ Some key terms
 design choices" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -54,7 +54,7 @@ design choices" name="description"/>
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -74,25 +74,6 @@ design choices" name="description"/>
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.css" integrity="sha384-ZPe7yZ91iWxYumsBEOn7ieg8q/o+qh/hQpSaPow8T6BwALcXSCS6C6fSRPIAnTQs" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-ljao5I1l+8KYFXG7LNEA7DyaFvuvSCmedUf6Y6JI7LJqiu8q5dEivP2nDdFH31V4" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-          
-          
-          delimiters: [
-              {left: '$$', right: '$$', display: true},
-              {left: '$', right: '$', display: false},
-              {left: '\\(', right: '\\)', display: false},
-              {left: '\\[', right: '\\]', display: true}
-          ],
-          
-          throwOnError : false
-        });
-    });
-</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
@@ -106,10 +87,13 @@ design choices" name="description"/>
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="Chloe_ching_yun_hsu Revisiting Design Choices in Proximal Policy Optimisation 2020" property="og:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+      </script><meta content="https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Chloe_ching_yun_hsu Revisiting Design Choices in Proximal Policy Optimisation 2020" property="og:title"/>
+<meta content="[TOC]
+Title: Revisiting Design Choices in Proximal Policy Optimisation Author: Chloe Ching-Yun Hsu et. al. Publish Year: 23 Sep 2020 Review Date: Wed, Dec 28, 2022 Summary of paper Motivation Contribution on discrete action space with sparse high rewards, standard PPO often gets stuck at suboptimal actions. Why analyze the reason fort these failure modes and explain why they are not exposed by standard benchmarks In summary, our study suggests that Beta policy parameterization and KL-regularized objectives should be reconsidered for PPO, especially when alternatives improves PPO in all settings. The author proved the convergence guarantee for PPO-KL penalty version, as it inherits convergence guarantees of mirror descent for policy families that are closed under mixture Some key terms design choices" property="og:description"/>
+<meta content="en" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/" property="og:url"/>
 <meta content="https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/cover.png" name="twitter:image"/>
@@ -153,10 +137,10 @@ design choices" name="description"/>
 <a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
 <div class="logo-switches">
 <button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 </svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12" cy="12" r="5"></circle>
 <line x1="12" x2="12" y1="1" y2="3"></line>
 <line x1="12" x2="12" y1="21" y2="23"></line>
@@ -168,8 +152,6 @@ design choices" name="description"/>
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
-<ul class="lang-switch"><li>|</li>
-</ul>
 </div>
 </div>
 <ul id="menu">
@@ -201,36 +183,11 @@ design choices" name="description"/>
 </ul>
 </nav>
 </header>
-<main class="main"><div class="toc">
-<details>
-<summary accesskey="c" title="(Alt + C)">
-<span class="details">Table of Contents</span>
-</summary>
-<div class="inner"><ul>
-<li>
-<a aria-label="Summary of paper" href="#summary-of-paper">Summary of paper</a><ul>
-<li>
-<a aria-label="Motivation" href="#motivation">Motivation</a></li>
-<li>
-<a aria-label="Contribution" href="#contribution">Contribution</a></li>
-<li>
-<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li></ul>
-</li>
-<li>
-<a aria-label="Good things about the paper (one paragraph)" href="#good-things-about-the-paper-one-paragraph">Good things about the paper (one paragraph)</a></li>
-<li>
-<a aria-label="Major comments" href="#major-comments">Major comments</a></li>
-<li>
-<a aria-label="Potential future work" href="#potential-future-work">Potential future work</a>
-</li>
-</ul>
-</div>
-</details>
-</div>
+<main class="main">
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
 <h1>
     Chloe_ching_yun_hsu Revisiting Design Choices in Proximal Policy Optimisation 2020
-    <a aria-label="RSS" href="index.xml" title="RSS">
+    <a aria-label="RSS" href="/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -248,8 +205,7 @@ design choices" name="description"/>
 </ol>
 <h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
 <h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
-<p><img alt="image-20221228143502296" loading="lazy" src="image-assets/cover.png"/>
-</p>
+<p><img alt="image-20221228143502296" loading="lazy" src="/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/cover.png"/></p>
 <h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
 <ul>
 <li>on discrete action space with sparse high rewards, standard PPO often gets stuck at suboptimal actions. Why analyze the reason fort these failure modes and explain why they are not exposed by standard benchmarks</li>
@@ -259,14 +215,12 @@ design choices" name="description"/>
 <h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
 <p><strong>design choices</strong></p>
 <ul>
-<li><img alt="image-20221229001853310" loading="lazy" src="image-assets/image-20221229001853310.png"/>
-</li>
+<li><img alt="image-20221229001853310" loading="lazy" src="/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/image-20221229001853310.png"/></li>
 </ul>
 <p><strong>Failure modes of standard PPO</strong></p>
 <ul>
 <li>the clipping mechanism effectively prevents the policy from moving further away once it is outside the trust region, but it does not bound the size of an individual policy update step. this behaviour is particularly problematic if a single reward signal can cause the policy to end up in region with low reward signal.</li>
-<li><img alt="image-20221229003459375" loading="lazy" src="image-assets/image-20221229003459375.png"/>
-</li>
+<li><img alt="image-20221229003459375" loading="lazy" src="/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/image-20221229003459375.png"/></li>
 <li>the abruptly vanishing reward signal outside the interval [-1.0, -0.8] is the main culprit</li>
 <li>reason
 <ul>
@@ -284,7 +238,7 @@ design choices" name="description"/>
 <p><strong>Advantages of KL-regularization</strong></p>
 <ul>
 <li>KL-regularized PPO enjoys convergence guarantees when the parameterized policy class is closed under mixture</li>
-<li><img alt="image-20221229012148342" loading="lazy" src="image-assets/image-20221229012148342.png"/>
+<li><img alt="image-20221229012148342" loading="lazy" src="/posts/chloe_ching_yun_hsu-revisiting-design-choices-in-proximal-policy-optimisation-2020/image-assets/image-20221229012148342.png"/>
 <ul>
 <li>ref: Liu, Boyi, et al. “Neural proximal/trust region policy optimization attains globally optimal policy.” <em>arXiv preprint arXiv:1906.10306</em> (2019).</li>
 </ul>
@@ -301,8 +255,9 @@ size of |S| × |A|.</li>
 </div>
 </main>
 <footer class="footer">
-<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>

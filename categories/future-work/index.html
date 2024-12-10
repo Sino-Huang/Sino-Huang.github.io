@@ -9,7 +9,8 @@
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/categories/future-work/" rel="canonical"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.b36ca07d743a05bea80b11e78b6318a606e2d7c47753890d66fbbbdebe2d8045.css" integrity="sha256-s2ygfXQ6Bb6oCxHni2MYpgbi18R3U4kNZvu73r4tgEU=" rel="preload stylesheet"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk+4bvpN+sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -36,7 +37,7 @@
                 --secondary: rgb(155, 156, 157);
                 --tertiary: rgb(65, 66, 68);
                 --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
+                --code-block-bg: rgb(46, 46, 51);
                 --code-bg: rgb(55, 56, 62);
                 --border: rgb(51, 51, 51);
             }
@@ -69,10 +70,13 @@
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="Future Work" property="og:title"/>
+      </script><meta content="https://sino-huang.github.io/categories/future-work/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Future Work" property="og:title"/>
 <meta content="Sukai's academic blog - storing weekly reports and research paper reviews" property="og:description"/>
+<meta content="en" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/categories/future-work/" property="og:url"/><meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
+<meta content="https://sino-huang.github.io/cute_avatar.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/cute_avatar.jpg" name="twitter:image"/>
 <meta content="Future Work" name="twitter:title"/>
@@ -95,10 +99,10 @@
 <a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
 <div class="logo-switches">
 <button accesskey="t" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="24" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 </svg>
-<svg fill="none" height="24" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 <circle cx="12" cy="12" r="5"></circle>
 <line x1="12" x2="12" y1="1" y2="3"></line>
 <line x1="12" x2="12" y1="21" y2="23"></line>
@@ -110,8 +114,6 @@
 <line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
 </svg>
 </button>
-<ul class="lang-switch"><li>|</li>
-</ul>
 </div>
 </div>
 <ul id="menu">
@@ -147,7 +149,7 @@
 <header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/categories/">Categories</a></div>
 <h1>
     Future Work
-    <a aria-label="RSS" href="index.xml" title="RSS">
+    <a aria-label="RSS" href="/categories/future-work/index.xml" title="RSS">
 <svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path d="M4 11a9 9 0 0 1 9 9"></path>
 <path d="M4 4a16 16 0 0 1 16 16"></path>
@@ -156,40 +158,11 @@
 </a>
 </h1>
 </header>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Angela_fan Augmenting Transformer With Knn Composite Memory for Dialog 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: Augmenting Transformers with KNN-based composite memory for dialog Author: Angela Fan et. al. Publish Year: 2021 Review Date: Apr 2022 Summary of paper Motivation The author proposed augmenting generative Transformer neural network with KNN based Information Fetching module
-Each KIF module learns a read operation to access fix external knowledge (e.g., WIKI)
-The author demonstrated the effectiveness of this approach by identifying relevant knowledge required for knowledgeable but engaging dialog from Wikipedia, images and human-written dialog utterances.
-...</p>
-</div>
-<footer class="entry-footer">&lt;span title='2022-04-21 11:01:14 +1000 AEST'&gt;April 21, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;3 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
-<a aria-label="post link to Angela_fan Augmenting Transformer With Knn Composite Memory for Dialog 2021" class="entry-link" href="https://sino-huang.github.io/posts/angela_fan-augmenting-transformer-with-knn-composite-memory-for-dialog-2021/"></a>
-</article>
-<article class="post-entry tag-entry">
-<header class="entry-header">
-<h2>Machel_reid Can Wikipedia Help Offline Rl 2022
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: Can Wikipedia Help Offline Reinforcement Learning Author: Machel Reid et. al. Publish Year: Mar 2022 Review Date: Mar 2022 Summary of paper Motivation Fine-tuning reinforcement learning (RL) models has been challenging because of a lack of large scale off-the-shelf datasets as well as high variance in transferability among different environments.
-Moreover, when the model is trained from scratch, it suffers from slow convergence speeds
-In this paper, they look to take advantage of this formulation of reinforcement learning as sequence modelling and investigate the transferability of pre-trained sequence models on other domains (vision, language) when fine tuned on offline RL tasks (control, games).
-...</p>
-</div>
-<footer class="entry-footer">&lt;span title='2022-03-16 21:18:24 +1100 AEDT'&gt;March 16, 2022&lt;/span&gt;&amp;nbsp;·&amp;nbsp;2 min&amp;nbsp;·&amp;nbsp;Sukai Huang</footer>
-<a aria-label="post link to Machel_reid Can Wikipedia Help Offline Rl 2022" class="entry-link" href="https://sino-huang.github.io/posts/machel_reid-can-wikipedia-help-offline-rl-2022/"></a>
-</article>
 </main>
 <footer class="footer">
-<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span>
-<span>
+<span>© 2024 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
