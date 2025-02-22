@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Llm Planner on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/llm-planner/</link>
+    <description>Recent content in Llm Planner on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 24 Dec 2024 22:25:58 +1100</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/tags/llm-planner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pallagani Plansformer Generating Plans 2023</title>
+      <link>https://sino-huang.github.io/posts/pallagani-plansformer-generating-plans-2023/</link>
+      <pubDate>Tue, 24 Dec 2024 22:25:58 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/pallagani-plansformer-generating-plans-2023/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Pallagani Plansformer Generating Plans 2023&lt;/li&gt;
+&lt;li&gt;Author: Pallagani, Vishal et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: GenPlan 2023 Workshop&lt;/li&gt;
+&lt;li&gt;Review Date: Tue, Dec 24, 2024&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://arxiw.org/pdf/2212.08681&#34;&gt;https://arxiw.org/pdf/2212.08681&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bibtex&#34; data-lang=&#34;bibtex&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;# input bibtex here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nc&#34;&gt;@InProceedings&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nl&#34;&gt;pallagani2023plansformer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;author&lt;/span&gt;    &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{Pallagani, Vishal and Muppasani, Bharath and Murugesan, Keerthiram and Rossi, Francesca and Horesh, Lior and Srivastava, Biplav and Fabiano, Francesco and Loreggia, Andrea}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;title&lt;/span&gt;     &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{Plansformer: Generating Symbolic Plans using Transformers}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;booktitle&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{Seventh Workshop on Generalization in Planning (GenPlan 2023)}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;year&lt;/span&gt;      &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{2023}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;month&lt;/span&gt;     &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{December}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;address&lt;/span&gt;   &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{New Orleans, USA}&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;na&#34;&gt;venue&lt;/span&gt;     &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;{Room 238-239, New Orleans Ernest N. Morial Convention Center}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;Pallagani, Vishal, et al. &amp;#34;Plansformer: Generating Symbolic Plans using Transformers.&amp;#34; NeurIPS 2023 Workshop on Generalization in Planning.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;[!Note]&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thomas Carta Grounding Llms in Rl 2023</title>
+      <link>https://sino-huang.github.io/posts/thomas-carta-grounding-llms-in-rl-2023/</link>
+      <pubDate>Tue, 23 Apr 2024 13:20:22 +1000</pubDate>
+      <guid>https://sino-huang.github.io/posts/thomas-carta-grounding-llms-in-rl-2023/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Grounding Large Language Models in Interactive Environments with Online Reinforcement Learning&lt;/li&gt;
+&lt;li&gt;Author: Thomas Carta el. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 6 Sep 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Tue, Apr 23, 2024&lt;/li&gt;
+&lt;li&gt;url: arXiv:2302.02662v3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240423132057110&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/thomas-carta-grounding-llms-in-rl-2023/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;p&gt;The author considered an agent using an LLM as a policy that is progressively updated as the agent interacts with the environment, leveraging online reinforcement learning to improve its performance to solve goals (under the RL paradigm environment (MDP))&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vishal Pallagani Llm N Planning Survey 2024</title>
+      <link>https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/</link>
+      <pubDate>Mon, 29 Jan 2024 23:02:47 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/vishal-pallagani-llm-n-planning-survey-2024/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title:  &amp;ldquo;On the Prospects of Incorporating Large  Language Models (LLMs) in Automated Planning and Scheduling (APS).&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Author: Pallagani, Vishal, et al.&lt;/li&gt;
+&lt;li&gt;Publish Year:  &lt;em&gt;arXiv preprint arXiv:2401.02500&lt;/em&gt; (2024).&lt;/li&gt;
+&lt;li&gt;Review Date: Mon, Jan 29, 2024&lt;/li&gt;
+&lt;li&gt;url:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;p&gt;The paper provides a comprehensive review of 126 papers focusing on the integration of Large Language Models (LLMs) within Automated Planning and Scheduling, a growing area in Artificial Intelligence (AI). It identifies eight categories where LLMs are applied in addressing various aspects of planning problems:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Avichai Levy Understanding Natural Language in Context 2023</title>
+      <link>https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/</link>
+      <pubDate>Mon, 29 Jan 2024 20:25:43 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title:  Understanding Natural Language in Context&lt;/li&gt;
+&lt;li&gt;Author: Avichai Levy et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: ICAPS 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Mon, Jan 29, 2024&lt;/li&gt;
+&lt;li&gt;url: &lt;a href=&#34;https://ojs.aaai.org/index.php/ICAPS/article/view/27248&#34;&gt;https://ojs.aaai.org/index.php/ICAPS/article/view/27248&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240129203153924&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/avichai-levy-understanding-natural-language-in-context-2023/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;p&gt;The paper discusses the increasing prevalence of applications with natural language interfaces, such as chatbots and personal assistants like Alexa, Google Assistant, Siri, and Cortana. While current dialogue systems mainly involve static robots, the challenge intensifies with cognitive robots capable of movement and object manipulation in home environments. The focus is on cognitive robots equipped with knowledge-based models of the world, enabling reasoning and planning. The paper proposes an approach to translate natural language directives into the robot&amp;rsquo;s formalism, leveraging state-of-the-art large language models, planning tools, and the robot&amp;rsquo;s knowledge of the world and its own model. This approach enhances the interpretation of directives in natural language, facilitating the completion of complex household tasks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marta Skreta Replan Robotic Replanning 2024</title>
+      <link>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</link>
+      <pubDate>Thu, 25 Jan 2024 00:55:05 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/</guid>
+      <description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: RePlan: Robotic Replanning with Perception and Language Models&lt;/li&gt;
+&lt;li&gt;Author: Marta Skreta et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year: 8 Jan 2024&lt;/li&gt;
+&lt;li&gt;Review Date: Thu, Jan 25, 2024&lt;/li&gt;
+&lt;li&gt;url: arXiv:2401.04157v1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20240126170742457&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/marta-skreta-replan-robotic-replanning-2024/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;motivation&#34;&gt;Motivation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;However, the challenge remains that even with syntac- tically correct plans, robots can still fail to achieve their intended goals. This failure can be attributed to imperfect plans proposed by LLMs or to unforeseeable environmental circumstances that hinder the execution of planned subtasks due to erroneous assumptions about the state of objects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Robotic Replanning with Perception and Language Models that enables &lt;strong&gt;real-time replanning&lt;/strong&gt; capabilities for long-horizon tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Address the challenge of multi-stage long-horizon tasks&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
