@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Feb 2025 21:07:11 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 26 Feb 2025 12:53:37 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neuro-Symbolic</title>
+      <link>https://sino-huang.github.io/tags/neuro-symbolic/</link>
+      <pubDate>Wed, 26 Feb 2025 12:53:37 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/neuro-symbolic/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Llm Reasoning</title>
       <link>https://sino-huang.github.io/tags/llm-reasoning/</link>
@@ -798,13 +805,6 @@
       <description></description>
     </item>
     <item>
-      <title>Neuro-Symbolic</title>
-      <link>https://sino-huang.github.io/tags/neuro-symbolic/</link>
-      <pubDate>Wed, 22 Dec 2021 17:22:15 +1100</pubDate>
-      <guid>https://sino-huang.github.io/tags/neuro-symbolic/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>IGLU</title>
       <link>https://sino-huang.github.io/tags/iglu/</link>
       <pubDate>Wed, 22 Dec 2021 15:10:56 +1100</pubDate>
@@ -844,27 +844,6 @@
       <link>https://sino-huang.github.io/tags/object-detection/</link>
       <pubDate>Wed, 15 Dec 2021 12:59:07 +1100</pubDate>
       <guid>https://sino-huang.github.io/tags/object-detection/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NeurIPS-2021</title>
-      <link>https://sino-huang.github.io/tags/neurips-2021/</link>
-      <pubDate>Fri, 10 Dec 2021 06:18:31 +1100</pubDate>
-      <guid>https://sino-huang.github.io/tags/neurips-2021/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://sino-huang.github.io/tags/python/</link>
-      <pubDate>Mon, 06 Dec 2021 20:13:12 +1100</pubDate>
-      <guid>https://sino-huang.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>https://sino-huang.github.io/tags/docker/</link>
-      <pubDate>Sun, 05 Dec 2021 20:40:59 +1100</pubDate>
-      <guid>https://sino-huang.github.io/tags/docker/</guid>
       <description></description>
     </item>
     <item>
