@@ -130,8 +130,8 @@
   "keywords": [
     
   ],
-  "articleBody": "\nThere are two primary paradigms for sequential decision-making: imagine you are playing Minecraft — a complex, open-ended problem-solving environment where players can build, explore, and survive. There are two ways you might approach this task.\nModel-Free Reinforcement Learning The first way is learning through play: you try different moves, like minting, crafting or building. Success (like finding diamonds) acts as a ‘‘reward,’’ while failure (like dying) is like a ‘‘penalty.’’ You gradually build up your strategies of playing, not by studying rules or creating a detailed model of Minecraft’s world beforehand, but by experiencing the game directly and adapting based on the feedback. This is the essence of model-free reinforcement learning (RL) (see part A in the Figure).\nModel-Based Automated Planning The second way is planning ahead: you might have a specific goal, like finding diamonds or building a house. To achieve this, you would first figure out the rules of Minecraft and how the world works. For example, you’d learn that building a house requires wood and stone, and that using axes makes it faster to chop down trees. With this understanding, you then create a kind of mental map or model of the game world — a model that tells you what actions are valid at this moment, and what the consequences of those actions will be. Using this model, you then search for a sequence of actions, a plan, that will lead you to your goal. This is the essence of model-based automated planning (see part B in the Figure).\nThe two paradigms play complementary roles, with their applicability varying based on the characteristics of the environment and the accessibility of domain knowledge. RL excels in complex and uncertain environments where it is impractical to exhaustively specify the dynamics. Conversely, when sequential decision problems can be clearly encoded into action schemas, initial states, and goal specifications, the planning approach is a more efficient and interpretable solution.\nCritical bottleneck for two paradigms However, both paradigms share a critical bottleneck: their reliance on expert input for designing task specifications. In RL, this manifests as the need to carefully engineer reward functions that accurately align with the desired behaviors [7, 8]. Poorly designed rewards can lead to unintended consequences, such as reward hacking, where agents exploit loopholes in the reward signal to achieve high scores without fulfilling the intended task [9–11]. Similarly, in automated planning systems, formalizing tasks requires precise descriptions of domain dynamics and goals using specialized languages like Planning Domain Definition Language (PDDL) [6]. The reliance on expert knowledge ultimately constrains the accessibility of these systems to non-experts, and also limits the applicability of the method, eventually posing a challenge to AI democratization.\nRelation to the development of Large Language Models (LLMs) Therefore, we love to see that natural language can be integrated into these two types of sequential decision making systems. Recent breakthroughs in LLMs [19–21] have made the integration of natural language into AI systems feasible. Through next-token prediction training on web-scale corpora, LLMs exhibit emergent capabilities not only in traditional natural language processing NLP) tasks like machine translation [22, 23], but also in more complex decision-making tasks spanning arithmetic [24–26], question answering [27], and commonsense reasoning [28–30]. The self-attention mechanism [31] from LLM has also significantly influenced advancements in vision models. By decomposing images into patches — akin to splitting text into words — and applying self-attention across these patches, vision models have demonstrated a notable improvement in image understanding and generation [32–34]. Furthermore, this technique facilitates multimodal fusion by integrating visual and textual data through a shared attention mechanism, driving significant advancements in VLMs [35–37].\nThese advancements have sparked a shared vision among researchers from both the AI and NLP communities: LLMs are now seen as a pivotal technology for unlocking the potential of language-integrated AI systems. For AI researchers, LLMs provide a powerful mechanism to bridge the gap between human users and AI systems, enabling non-expert users to interact with AI systems without requiring expert skills [38]. Meanwhile, for NLP researchers, LLMs serve as a fascinating means to explore how probabilistic text generation can derive decision logic from linguistic patterns in training data, offering insights into the capacity of models to learn and reason [39–42].\n",
-  "wordCount" : "702",
+  "articleBody": "\nThere are two primary paradigms for sequential decision-making: imagine you are playing Minecraft — a complex, open-ended problem-solving environment where players can build, explore, and survive. There are two ways you might approach this task.\nModel-Free Reinforcement Learning The first way is learning through play: you try different moves, like minting, crafting or building. Success (like finding diamonds) acts as a ‘‘reward,’’ while failure (like dying) is like a ‘‘penalty.’’ You gradually build up your strategies of playing, not by studying rules or creating a detailed model of Minecraft’s world beforehand, but by experiencing the game directly and adapting based on the feedback. This is the essence of model-free reinforcement learning (RL) (see part A in the Figure).\nModel-Based Automated Planning The second way is planning ahead: you might have a specific goal, like finding diamonds or building a house. To achieve this, you would first figure out the rules of Minecraft and how the world works. For example, you’d learn that building a house requires wood and stone, and that using axes makes it faster to chop down trees. With this understanding, you then create a kind of mental map or model of the game world — a model that tells you what actions are valid at this moment, and what the consequences of those actions will be. Using this model, you then search for a sequence of actions, a plan, that will lead you to your goal. This is the essence of model-based automated planning (see part B in the Figure).\nThe two paradigms play complementary roles, with their applicability varying based on the characteristics of the environment and the accessibility of domain knowledge. RL excels in complex and uncertain environments where it is impractical to exhaustively specify the dynamics. Conversely, when sequential decision problems can be clearly encoded into action schemas, initial states, and goal specifications, the planning approach is a more efficient and interpretable solution.\nCritical bottleneck for two paradigms However, both paradigms share a critical bottleneck: their reliance on expert input for designing task specifications. In RL, this manifests as the need to carefully engineer reward functions that accurately align with the desired behaviors [7, 8]. Poorly designed rewards can lead to unintended consequences, such as reward hacking, where agents exploit loopholes in the reward signal to achieve high scores without fulfilling the intended task [9–11]. Similarly, in automated planning systems, formalizing tasks requires precise descriptions of domain dynamics and goals using specialized languages like Planning Domain Definition Language (PDDL) [6]. The reliance on expert knowledge ultimately constrains the accessibility of these systems to non-experts, and also limits the applicability of the method, eventually posing a challenge to AI democratization.\nRelation to the development of Large Language Models (LLMs) Therefore, we love to see that natural language can be integrated into these two types of sequential decision making systems. Recent breakthroughs in LLMs [19–21] have made the integration of natural language into AI systems feasible. Through next-token prediction training on web-scale corpora, LLMs exhibit emergent capabilities not only in traditional natural language processing NLP) tasks like machine translation [22, 23], but also in more complex decision-making tasks spanning arithmetic [24–26], question answering [27], and commonsense reasoning [28–30]. The self-attention mechanism [31] from LLM has also significantly influenced advancements in vision models. By decomposing images into patches — akin to splitting text into words — and applying self-attention across these patches, vision models have demonstrated a notable improvement in image understanding and generation [32–34]. Furthermore, this technique facilitates multimodal fusion by integrating visual and textual data through a shared attention mechanism, driving significant advancements in VLMs [35–37].\nThese advancements have sparked a shared vision among researchers from both the AI and NLP communities: LLMs are now seen as a pivotal technology for unlocking the potential of language-integrated AI systems. For AI researchers, LLMs provide a powerful mechanism to bridge the gap between human users and AI systems, enabling non-expert users to interact with AI systems without requiring expert skills [38]. Meanwhile, for NLP researchers, LLMs serve as a fascinating means to explore how probabilistic text generation can derive decision logic from linguistic patterns in training data, offering insights into the capacity of models to learn and reason [39–42].\nPrevious Next Page: / ",
+  "wordCount" : "706",
   "inLanguage": "en",
   "image": "https://sino-huang.github.io/sukai_avatar.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -258,6 +258,240 @@
 <p>Therefore, we love to see that natural language can be integrated into these two types of sequential decision making systems. Recent breakthroughs in LLMs [19–21] have made the integration of natural language into AI systems feasible. Through next-token prediction training on web-scale corpora, LLMs exhibit emergent capabilities not only in traditional natural language processing NLP) tasks like machine translation [22, 23], but also in more complex decision-making tasks spanning arithmetic [24–26], question answering [27], and commonsense reasoning [28–30]. The self-attention mechanism [31] from LLM has also significantly influenced advancements in vision models. By decomposing images into patches — akin to splitting text into words — and applying self-attention across these patches, vision models have demonstrated a notable improvement in image understanding and generation [32–34]. Furthermore, this technique facilitates multimodal fusion by integrating visual and textual data through a shared attention mechanism, driving significant advancements in VLMs [35–37].</p>
 <p>These advancements have sparked a shared vision among researchers from both the AI and NLP communities: LLMs are now seen as a pivotal technology for unlocking the potential of language-integrated AI systems. For AI researchers, LLMs provide a powerful mechanism to bridge the gap between human users and AI systems, enabling non-expert users to interact with AI systems without requiring expert skills [38]. Meanwhile, for
 NLP researchers, LLMs serve as a fascinating means to explore how probabilistic text generation can derive decision logic from linguistic patterns in training data, offering insights into the capacity of models to learn and reason [39–42].</p>
+<script crossorigin="anonymous" integrity="sha512-i+UmpoqoJqHkpXQ3mQfaIF8UZ2RAGoyqJvMzAKTadhBVhRk883EHluxdPsMf7c5/43D5tVpwIE8KLE1kQa0uCg==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-NuVK4+sDE809oDhbdAABRO1nTe80t56vXda8dg1UQ+RcQ8x7WakwTzKE7LOosoNCKi7EH7FXo7mritFNWpZiLQ==" referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js"></script>
+<style>
+.embed-pdf-the-canvas {
+  direction: ltr;
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+#paginator {
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#loadingWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+}
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #d2d0d0;;
+  border-radius: 50%;
+  border-top-color: #383838;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+</style>
+<div id="paginator">
+<button id="prev">Previous</button>
+<button id="next">Next</button>
+       
+    <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+</div>
+<div id="embed-pdf-container">
+<div id="loadingWrapper">
+<div id="loading"></div>
+</div>
+<canvas class="embed-pdf-the-canvas" id="the-canvas-1"></canvas>
+</div>
+<script type="text/javascript">
+window.onload = function() {
+
+
+var url =  '..\/detailed-background-bib.pdf';
+
+var hidePaginator =  "" === "true" ;
+var hideLoader = "" === "true";
+var selectedPageNum = parseInt("") || 1;
+var showMultiPage = parseInt("") || 1;
+
+
+var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = "https:\/\/sino-huang.github.io\/" + '/js/pdf-js/build/pdf.worker.js';
+
+
+var pdfDoc = null,
+    pageNum = selectedPageNum,
+    pageRendering = false,
+    pageNumPending = null,
+    scale = 3,
+    canvas = document.getElementById('the-canvas-1'),
+    ctx = canvas.getContext('2d'),
+    paginator = document.getElementById("paginator"),
+    loadingWrapper = document.getElementById('loadingWrapper');
+
+
+
+showPaginator();
+showLoader();
+
+
+
+function renderPage(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      showContent(canvas);
+      
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+function renderPageExpanded(num) {
+  pageRendering = true;
+  
+  pdfDoc.getPage(num).then(function(page) {
+    var viewport = page.getViewport({scale: scale});
+    let localcanvas = document.getElementById('the-canvas-'+num);
+    let ctx = localcanvas.getContext('2d');
+    localcanvas.height = viewport.height;
+    localcanvas.width = viewport.width;
+
+    
+    var renderContext = {
+      canvasContext: ctx,
+      viewport: viewport
+    };
+    var renderTask = page.render(renderContext);
+
+    
+    renderTask.promise.then(function() {
+      pageRendering = false;
+      showContent(localcanvas);
+      
+      if (pageNumPending !== null) {
+        
+        renderPage(pageNumPending);
+        pageNumPending = null;
+      }
+    });
+  });
+
+  
+  document.getElementById('page_num').textContent = num;
+}
+
+
+
+function showContent(mycanvas) {
+  loadingWrapper.style.display = 'none';
+  mycanvas.style.display = 'block';
+}
+
+
+
+function showLoader() {
+  if(hideLoader) return
+  loadingWrapper.style.display = 'flex';
+  canvas.style.display = 'none';
+}
+
+
+
+function showPaginator() {
+  if(hidePaginator) return
+  paginator.style.display = 'block';
+}
+
+
+
+function queueRenderPage(num) {
+  if (pageRendering) {
+    pageNumPending = num;
+  } else {
+    renderPage(num);
+  }
+}
+
+
+
+function onPrevPage() {
+  if (pageNum <= 1) {
+    return;
+  }
+  pageNum--;
+  queueRenderPage(pageNum);
+}
+document.getElementById('prev').addEventListener('click', onPrevPage);
+
+
+
+function onNextPage() {
+  if (pageNum >= pdfDoc.numPages) {
+    return;
+  }
+  pageNum++;
+  queueRenderPage(pageNum);
+}
+document.getElementById('next').addEventListener('click', onNextPage);
+
+
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+  pdfDoc = pdfDoc_;
+  var numPages = pdfDoc.numPages;
+  document.getElementById('page_count').textContent = numPages;
+  
+  
+  if(pageNum > numPages) {
+    pageNum = numPages
+  }
+
+  
+  if (showMultiPage > 1){
+    while (pageNum <= numPages){
+      renderPageExpanded(pageNum);
+      pageNum++;
+    }
+  } else {
+    renderPage(pageNum);
+  }
+});
+}
+
+</script>
 </div>
 <footer class="post-footer">
 <ul class="post-tags">

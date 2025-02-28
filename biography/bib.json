@@ -1,0 +1,3704 @@
+[
+  {
+    "author": [
+      {
+        "family": "Rocamonde",
+        "given": "Juan"
+      },
+      {
+        "family": "Montesinos",
+        "given": "Victoriano"
+      },
+      {
+        "family": "Nava",
+        "given": "Elvis"
+      },
+      {
+        "family": "Perez",
+        "given": "Ethan"
+      },
+      {
+        "family": "Lindner",
+        "given": "David"
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "DBLP:conf/iclr/RocamondeMNPL24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Vision-language models are zero-shot reward models for reinforcement learning",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Todorov",
+        "given": "Emanuel"
+      },
+      {
+        "family": "Erez",
+        "given": "Tom"
+      },
+      {
+        "family": "Tassa",
+        "given": "Yuval"
+      }
+    ],
+    "container-title": "2012 IEEE/RSJ international conference on intelligent robots and systems",
+    "id": "todorov2012mujoco",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "5026-5033",
+    "publisher": "IEEE",
+    "title": "Mujoco: A physics engine for model-based control",
+    "title-short": "Mujoco",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Brockman",
+        "given": "Greg"
+      },
+      {
+        "family": "Cheung",
+        "given": "Vicki"
+      },
+      {
+        "family": "Pettersson",
+        "given": "Ludwig"
+      },
+      {
+        "family": "Schneider",
+        "given": "Jonas"
+      },
+      {
+        "family": "Schulman",
+        "given": "John"
+      },
+      {
+        "family": "Tang",
+        "given": "Jie"
+      },
+      {
+        "family": "Zaremba",
+        "given": "Wojciech"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "BrockmanCPSSTZ16",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "OpenAI gym",
+    "type": "article-journal",
+    "volume": "abs/1606.01540"
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Yufei"
+      },
+      {
+        "family": "Sun",
+        "given": "Zhanyi"
+      },
+      {
+        "family": "Zhang",
+        "given": "Jesse"
+      },
+      {
+        "family": "Xian",
+        "given": "Zhou"
+      },
+      {
+        "family": "Biyik",
+        "given": "Erdem"
+      },
+      {
+        "family": "Held",
+        "given": "David"
+      },
+      {
+        "family": "Erickson",
+        "given": "Zackory"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/WangSZXBHE24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "RL-VLM-F: Reinforcement learning from vision language foundation model feedback",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Mnih",
+        "given": "Volodymyr"
+      },
+      {
+        "family": "Kavukcuoglu",
+        "given": "Koray"
+      },
+      {
+        "family": "Silver",
+        "given": "David"
+      },
+      {
+        "family": "Rusu",
+        "given": "Andrei A."
+      },
+      {
+        "family": "Veness",
+        "given": "Joel"
+      },
+      {
+        "family": "Bellemare",
+        "given": "Marc G."
+      },
+      {
+        "family": "Graves",
+        "given": "Alex"
+      },
+      {
+        "family": "Riedmiller",
+        "given": "Martin A."
+      },
+      {
+        "family": "Fidjeland",
+        "given": "Andreas"
+      },
+      {
+        "family": "Ostrovski",
+        "given": "Georg"
+      },
+      {
+        "family": "Petersen",
+        "given": "Stig"
+      },
+      {
+        "family": "Beattie",
+        "given": "Charles"
+      },
+      {
+        "family": "Sadik",
+        "given": "Amir"
+      },
+      {
+        "family": "Antonoglou",
+        "given": "Ioannis"
+      },
+      {
+        "family": "King",
+        "given": "Helen"
+      },
+      {
+        "family": "Kumaran",
+        "given": "Dharshan"
+      },
+      {
+        "family": "Wierstra",
+        "given": "Daan"
+      },
+      {
+        "family": "Legg",
+        "given": "Shane"
+      },
+      {
+        "family": "Hassabis",
+        "given": "Demis"
+      }
+    ],
+    "container-title": "Nat.",
+    "id": "nature/MnihKSRVBGRFOPB15",
+    "issue": "7540",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "529-533",
+    "title": "Human-level control through deep reinforcement learning",
+    "type": "article-journal",
+    "volume": "518"
+  },
+  {
+    "author": [
+      {
+        "family": "Hill",
+        "given": "Felix"
+      },
+      {
+        "family": "Tieleman",
+        "given": "Olivier"
+      },
+      {
+        "dropping-particle": "von",
+        "family": "Glehn",
+        "given": "Tamara"
+      },
+      {
+        "family": "Wong",
+        "given": "Nathaniel"
+      },
+      {
+        "family": "Merzic",
+        "given": "Hamza"
+      },
+      {
+        "family": "Clark",
+        "given": "Stephen"
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "iclr/HillTGWMC21",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Grounded language learning fast and slow",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Mei",
+        "given": "Hongyuan"
+      },
+      {
+        "family": "Bansal",
+        "given": "Mohit"
+      },
+      {
+        "family": "Walter",
+        "given": "Matthew R."
+      }
+    ],
+    "container-title": "AAAI",
+    "id": "aaai/MeiBW16",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "2772-2778",
+    "publisher": "AAAI Press",
+    "title": "Listen, attend, and walk: Neural mapping of navigational instructions to action sequences",
+    "title-short": "Listen, attend, and walk",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Richter",
+        "given": "Silvia"
+      },
+      {
+        "family": "Westphal",
+        "given": "Matthias"
+      }
+    ],
+    "container-title": "J. Artif. Intell. Res.",
+    "id": "jair/RichterW10",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "127-177",
+    "title": "The LAMA planner: Guiding cost-based anytime planning with landmarks",
+    "title-short": "The LAMA planner",
+    "type": "article-journal",
+    "volume": "39"
+  },
+  {
+    "author": [
+      {
+        "family": "Bonet",
+        "given": "Blai"
+      },
+      {
+        "family": "Geffner",
+        "given": "Hector"
+      }
+    ],
+    "container-title": "Artif. Intell.",
+    "id": "ai/BonetG01",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "page": "5-33",
+    "title": "Planning as heuristic search",
+    "type": "article-journal",
+    "volume": "129"
+  },
+  {
+    "author": [
+      {
+        "family": "Haslum",
+        "given": "Patrik"
+      },
+      {
+        "family": "Lipovetzky",
+        "given": "Nir"
+      },
+      {
+        "family": "Magazzeni",
+        "given": "Daniele"
+      },
+      {
+        "family": "Muise",
+        "given": "Christian"
+      }
+    ],
+    "collection-title": "Synthesis lectures on artificial intelligence and machine learning",
+    "id": "synthesis/2019Haslum",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "Morgan & Claypool Publishers",
+    "title": "An introduction to the planning domain definition language",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Ng",
+        "given": "Andrew Y."
+      },
+      {
+        "family": "Russell",
+        "given": "Stuart"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "icml/NgR00",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "page": "663-670",
+    "publisher": "Morgan Kaufmann",
+    "title": "Algorithms for inverse reinforcement learning",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Ng",
+        "given": "Andrew Y."
+      },
+      {
+        "family": "Harada",
+        "given": "Daishi"
+      },
+      {
+        "family": "Russell",
+        "given": "Stuart"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "icml/NgHR99",
+    "issued": {
+      "date-parts": [
+        [
+          1999
+        ]
+      ]
+    },
+    "page": "278-287",
+    "publisher": "Morgan Kaufmann",
+    "title": "Policy invariance under reward transformations: Theory and application to reward shaping",
+    "title-short": "Policy invariance under reward transformations",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "dropping-particle": "di",
+        "family": "Langosco",
+        "given": "Lauro Langosco"
+      },
+      {
+        "family": "Koch",
+        "given": "Jack"
+      },
+      {
+        "family": "Sharkey",
+        "given": "Lee D."
+      },
+      {
+        "family": "Pfau",
+        "given": "Jacob"
+      },
+      {
+        "family": "Krueger",
+        "given": "David"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "icml/LangoscoKSPK22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "12004-12019",
+    "publisher": "PMLR",
+    "title": "Goal misgeneralization in deep reinforcement learning",
+    "type": "paper-conference",
+    "volume": "162"
+  },
+  {
+    "author": [
+      {
+        "family": "Pan",
+        "given": "Alexander"
+      },
+      {
+        "family": "Bhatia",
+        "given": "Kush"
+      },
+      {
+        "family": "Steinhardt",
+        "given": "Jacob"
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "iclr/PanBS22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "The effects of reward misspecification: Mapping and mitigating misaligned models",
+    "title-short": "The effects of reward misspecification",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Koch",
+        "given": "Jack"
+      },
+      {
+        "family": "Langosco",
+        "given": "Lauro"
+      },
+      {
+        "family": "Pfau",
+        "given": "Jacob"
+      },
+      {
+        "family": "Le",
+        "given": "James"
+      },
+      {
+        "family": "Sharkey",
+        "given": "Lee"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "corr/abs-2105-14111",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Objective robustness in deep reinforcement learning",
+    "type": "article-journal",
+    "volume": "abs/2105.14111"
+  },
+  {
+    "author": [
+      {
+        "family": "Kaplan",
+        "given": "Jared"
+      },
+      {
+        "family": "McCandlish",
+        "given": "Sam"
+      },
+      {
+        "family": "Henighan",
+        "given": "Tom"
+      },
+      {
+        "family": "Brown",
+        "given": "Tom B"
+      },
+      {
+        "family": "Chess",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Child",
+        "given": "Rewon"
+      },
+      {
+        "family": "Gray",
+        "given": "Scott"
+      },
+      {
+        "family": "Radford",
+        "given": "Alec"
+      },
+      {
+        "family": "Wu",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Amodei",
+        "given": "Dario"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:2001.08361",
+    "id": "kaplan2020scaling",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Scaling laws for neural language models",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Zheng",
+        "given": "Duo"
+      },
+      {
+        "family": "Huang",
+        "given": "Shijia"
+      },
+      {
+        "family": "Zhao",
+        "given": "Lin"
+      },
+      {
+        "family": "Zhong",
+        "given": "Yiwu"
+      },
+      {
+        "family": "Wang",
+        "given": "Liwei"
+      }
+    ],
+    "container-title": "CVPR",
+    "id": "cvpr/ZhengHZZ024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "13624-13634",
+    "publisher": "IEEE",
+    "title": "Towards learning a generalist model for embodied navigation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Raffel",
+        "given": "Colin"
+      },
+      {
+        "family": "Shazeer",
+        "given": "Noam"
+      },
+      {
+        "family": "Roberts",
+        "given": "Adam"
+      },
+      {
+        "family": "Lee",
+        "given": "Katherine"
+      },
+      {
+        "family": "Narang",
+        "given": "Sharan"
+      },
+      {
+        "family": "Matena",
+        "given": "Michael"
+      },
+      {
+        "family": "Zhou",
+        "given": "Yanqi"
+      },
+      {
+        "family": "Li",
+        "given": "Wei"
+      },
+      {
+        "family": "Liu",
+        "given": "Peter J."
+      }
+    ],
+    "container-title": "J. Mach. Learn. Res.",
+    "id": "jmlr/RaffelSRLNMZLL20",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "140:1-140:67",
+    "title": "Exploring the limits of transfer learning with a unified text-to-text transformer",
+    "type": "article-journal",
+    "volume": "21"
+  },
+  {
+    "author": [
+      {
+        "family": "Fan",
+        "given": "Linxi"
+      },
+      {
+        "family": "Wang",
+        "given": "Guanzhi"
+      },
+      {
+        "family": "Jiang",
+        "given": "Yunfan"
+      },
+      {
+        "family": "Mandlekar",
+        "given": "Ajay"
+      },
+      {
+        "family": "Yang",
+        "given": "Yuncong"
+      },
+      {
+        "family": "Zhu",
+        "given": "Haoyi"
+      },
+      {
+        "family": "Tang",
+        "given": "Andrew"
+      },
+      {
+        "family": "Huang",
+        "given": "De-An"
+      },
+      {
+        "family": "Zhu",
+        "given": "Yuke"
+      },
+      {
+        "family": "Anandkumar",
+        "given": "Anima"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "nips/FanWJMYZTHZA22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "MineDojo: Building open-ended embodied agents with internet-scale knowledge",
+    "title-short": "MineDojo",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Du",
+        "given": "Yuqing"
+      },
+      {
+        "family": "Watkins",
+        "given": "Olivia"
+      },
+      {
+        "family": "Wang",
+        "given": "Zihan"
+      },
+      {
+        "family": "Colas",
+        "given": "Cédric"
+      },
+      {
+        "family": "Darrell",
+        "given": "Trevor"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Gupta",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Andreas",
+        "given": "Jacob"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "icml/DuWWCDA0A23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "8657-8677",
+    "publisher": "PMLR",
+    "title": "Guiding pretraining in reinforcement learning with large language models",
+    "type": "paper-conference",
+    "volume": "202"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2501.09775",
+    "author": [
+      {
+        "family": "Fu",
+        "given": "Tairan"
+      },
+      {
+        "family": "Conde",
+        "given": "Javier"
+      },
+      {
+        "family": "Martínez",
+        "given": "Gonzalo"
+      },
+      {
+        "family": "Grandury",
+        "given": "María"
+      },
+      {
+        "family": "Reviriego",
+        "given": "Pedro"
+      }
+    ],
+    "id": "fu2025multiplechoicequestionsreasoning",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Multiple choice questions: Reasoning makes large language models (LLMs) more self-confident even when they are wrong",
+    "title-short": "Multiple choice questions",
+    "type": ""
+  },
+  {
+    "author": [
+      {
+        "family": "Le",
+        "given": "Minh"
+      },
+      {
+        "family": "Fokkens",
+        "given": "Antske"
+      }
+    ],
+    "container-title": "EACL (1)",
+    "id": "eacl/LeF17",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "677-687",
+    "publisher": "Association for Computational Linguistics",
+    "title": "Tackling error propagation through reinforcement learning: A case of greedy dependency parsing",
+    "title-short": "Tackling error propagation through reinforcement learning",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Robinson",
+        "given": "Joshua"
+      },
+      {
+        "family": "Wingate",
+        "given": "David"
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "iclr/RobinsonW23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Leveraging large language models for multiple choice question answering",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Bachmann",
+        "given": "Gregor"
+      },
+      {
+        "family": "Nagarajan",
+        "given": "Vaishnavh"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "icml/BachmannN24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "The pitfalls of next-token prediction",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Zhou",
+        "given": "Hattie"
+      },
+      {
+        "family": "Bradley",
+        "given": "Arwen"
+      },
+      {
+        "family": "Littwin",
+        "given": "Etai"
+      },
+      {
+        "family": "Razin",
+        "given": "Noam"
+      },
+      {
+        "family": "Saremi",
+        "given": "Omid"
+      },
+      {
+        "family": "Susskind",
+        "given": "Joshua M."
+      },
+      {
+        "family": "Bengio",
+        "given": "Samy"
+      },
+      {
+        "family": "Nakkiran",
+        "given": "Preetum"
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "iclr/ZhouBLRSSBN24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "What algorithms can transformers learn? A study in length generalization",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Fu",
+        "given": "Yuwei"
+      },
+      {
+        "family": "Zhang",
+        "given": "Haichao"
+      },
+      {
+        "family": "Wu",
+        "given": "Di"
+      },
+      {
+        "family": "Xu",
+        "given": "Wei"
+      },
+      {
+        "family": "Boulet",
+        "given": "Benoit"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "icml/FuZ0XB24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "FuRL: Visual-language models as fuzzy rewards for reinforcement learning",
+    "title-short": "FuRL",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Kojima",
+        "given": "Takeshi"
+      },
+      {
+        "family": "Gu",
+        "given": "Shixiang Shane"
+      },
+      {
+        "family": "Reid",
+        "given": "Machel"
+      },
+      {
+        "family": "Matsuo",
+        "given": "Yutaka"
+      },
+      {
+        "family": "Iwasawa",
+        "given": "Yusuke"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/KojimaGRMI22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Large language models are zero-shot reasoners",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Wei",
+        "given": "Jason"
+      },
+      {
+        "family": "Wang",
+        "given": "Xuezhi"
+      },
+      {
+        "family": "Schuurmans",
+        "given": "Dale"
+      },
+      {
+        "family": "Bosma",
+        "given": "Maarten"
+      },
+      {
+        "family": "Ichter",
+        "given": "Brian"
+      },
+      {
+        "family": "Xia",
+        "given": "Fei"
+      },
+      {
+        "family": "Chi",
+        "given": "Ed H."
+      },
+      {
+        "family": "Le",
+        "given": "Quoc V."
+      },
+      {
+        "family": "Zhou",
+        "given": "Denny"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/Wei0SBIXCLZ22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Chain-of-thought prompting elicits reasoning in large language models",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2501.12948",
+    "author": [
+      {
+        "family": "DeepSeek-AI"
+      },
+      {
+        "family": "Guo",
+        "given": "Daya"
+      },
+      {
+        "family": "Yang",
+        "given": "Dejian"
+      },
+      {
+        "family": "Zhang",
+        "given": "Haowei"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "id": "deepseekai2025deepseekr1incentivizingreasoningcapability",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "DeepSeek-R1: Incentivizing reasoning capability in LLMs via reinforcement learning",
+    "title-short": "DeepSeek-R1",
+    "type": ""
+  },
+  {
+    "author": [
+      {
+        "family": "Frydenlund",
+        "given": "Arvid"
+      }
+    ],
+    "container-title": "EMNLP",
+    "id": "emnlp/Frydenlund24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "12493-12516",
+    "publisher": "Association for Computational Linguistics",
+    "title": "The mystery of the pathological path-star task for language models",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Weiss",
+        "given": "Gail"
+      },
+      {
+        "family": "Goldberg",
+        "given": "Yoav"
+      },
+      {
+        "family": "Yahav",
+        "given": "Eran"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "icml/WeissGY21",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "11080-11090",
+    "publisher": "PMLR",
+    "title": "Thinking like transformers",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "author": [
+      {
+        "family": "Pallagani",
+        "given": "Vishal"
+      },
+      {
+        "family": "Muppasani",
+        "given": "Bharath C."
+      },
+      {
+        "family": "Roy",
+        "given": "Kaushik"
+      },
+      {
+        "family": "Fabiano",
+        "given": "Francesco"
+      },
+      {
+        "family": "Loreggia",
+        "given": "Andrea"
+      },
+      {
+        "family": "Murugesan",
+        "given": "Keerthiram"
+      },
+      {
+        "family": "Srivastava",
+        "given": "Biplav"
+      },
+      {
+        "family": "Rossi",
+        "given": "Francesca"
+      },
+      {
+        "family": "Horesh",
+        "given": "Lior"
+      },
+      {
+        "family": "Sheth",
+        "given": "Amit P."
+      }
+    ],
+    "container-title": "ICAPS",
+    "id": "icaps/PallaganiM0FLMS24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "432-444",
+    "publisher": "AAAI Press",
+    "title": "On the prospects of incorporating large language models (LLMs) in automated planning and scheduling (APS)",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Chen",
+        "given": "Xinyun"
+      },
+      {
+        "family": "Chi",
+        "given": "Ryan A."
+      },
+      {
+        "family": "Wang",
+        "given": "Xuezhi"
+      },
+      {
+        "family": "Zhou",
+        "given": "Denny"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "icml/ChenC0Z24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Premise order matters in reasoning with large language models",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Brown",
+        "given": "Tom B."
+      },
+      {
+        "family": "Mann",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Ryder",
+        "given": "Nick"
+      },
+      {
+        "family": "Subbiah",
+        "given": "Melanie"
+      },
+      {
+        "family": "Kaplan",
+        "given": "Jared"
+      },
+      {
+        "family": "Dhariwal",
+        "given": "Prafulla"
+      },
+      {
+        "family": "Neelakantan",
+        "given": "Arvind"
+      },
+      {
+        "family": "Shyam",
+        "given": "Pranav"
+      },
+      {
+        "family": "Sastry",
+        "given": "Girish"
+      },
+      {
+        "family": "Askell",
+        "given": "Amanda"
+      },
+      {
+        "family": "Agarwal",
+        "given": "Sandhini"
+      },
+      {
+        "family": "Herbert-Voss",
+        "given": "Ariel"
+      },
+      {
+        "family": "Krueger",
+        "given": "Gretchen"
+      },
+      {
+        "family": "Henighan",
+        "given": "Tom"
+      },
+      {
+        "family": "Child",
+        "given": "Rewon"
+      },
+      {
+        "family": "Ramesh",
+        "given": "Aditya"
+      },
+      {
+        "family": "Ziegler",
+        "given": "Daniel M."
+      },
+      {
+        "family": "Wu",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Winter",
+        "given": "Clemens"
+      },
+      {
+        "family": "Hesse",
+        "given": "Christopher"
+      },
+      {
+        "family": "Chen",
+        "given": "Mark"
+      },
+      {
+        "family": "Sigler",
+        "given": "Eric"
+      },
+      {
+        "family": "Litwin",
+        "given": "Mateusz"
+      },
+      {
+        "family": "Gray",
+        "given": "Scott"
+      },
+      {
+        "family": "Chess",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Clark",
+        "given": "Jack"
+      },
+      {
+        "family": "Berner",
+        "given": "Christopher"
+      },
+      {
+        "family": "McCandlish",
+        "given": "Sam"
+      },
+      {
+        "family": "Radford",
+        "given": "Alec"
+      },
+      {
+        "family": "Sutskever",
+        "given": "Ilya"
+      },
+      {
+        "family": "Amodei",
+        "given": "Dario"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/BrownMRSKDNSSAA20",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Language models are few-shot learners",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Touvron",
+        "given": "Hugo"
+      },
+      {
+        "family": "Lavril",
+        "given": "Thibaut"
+      },
+      {
+        "family": "Izacard",
+        "given": "Gautier"
+      },
+      {
+        "family": "Martinet",
+        "given": "Xavier"
+      },
+      {
+        "family": "Lachaux",
+        "given": "Marie-Anne"
+      },
+      {
+        "family": "Lacroix",
+        "given": "Timothée"
+      },
+      {
+        "family": "Rozière",
+        "given": "Baptiste"
+      },
+      {
+        "family": "Goyal",
+        "given": "Naman"
+      },
+      {
+        "family": "Hambro",
+        "given": "Eric"
+      },
+      {
+        "family": "Azhar",
+        "given": "Faisal"
+      },
+      {
+        "family": "Rodriguez",
+        "given": "Aurélien"
+      },
+      {
+        "family": "Joulin",
+        "given": "Armand"
+      },
+      {
+        "family": "Grave",
+        "given": "Edouard"
+      },
+      {
+        "family": "Lample",
+        "given": "Guillaume"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/abs-2302-13971",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "LLaMA: Open and efficient foundation language models",
+    "title-short": "LLaMA",
+    "type": "article-journal",
+    "volume": "abs/2302.13971"
+  },
+  {
+    "author": [
+      {
+        "family": "Shao",
+        "given": "Zhihong"
+      },
+      {
+        "family": "Wang",
+        "given": "Peiyi"
+      },
+      {
+        "family": "Zhu",
+        "given": "Qihao"
+      },
+      {
+        "family": "Xu",
+        "given": "Runxin"
+      },
+      {
+        "family": "Song",
+        "given": "Junxiao"
+      },
+      {
+        "family": "Zhang",
+        "given": "Mingchuan"
+      },
+      {
+        "family": "Li",
+        "given": "Y. K."
+      },
+      {
+        "family": "Wu",
+        "given": "Y."
+      },
+      {
+        "family": "Guo",
+        "given": "Daya"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/abs-2402-03300",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "DeepSeekMath: Pushing the limits of mathematical reasoning in open language models",
+    "title-short": "DeepSeekMath",
+    "type": "article-journal",
+    "volume": "abs/2402.03300"
+  },
+  {
+    "author": [
+      {
+        "family": "Ye",
+        "given": "Tian"
+      },
+      {
+        "family": "Xu",
+        "given": "Zicheng"
+      },
+      {
+        "family": "Li",
+        "given": "Yuanzhi"
+      },
+      {
+        "family": "Allen-Zhu",
+        "given": "Zeyuan"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/abs-2407-20311",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Physics of language models: Part 2.1, grade-school math and the hidden reasoning process",
+    "title-short": "Physics of language models",
+    "type": "article-journal",
+    "volume": "abs/2407.20311"
+  },
+  {
+    "author": [
+      {
+        "family": "Lewkowycz",
+        "given": "Aitor"
+      },
+      {
+        "family": "Andreassen",
+        "given": "Anders"
+      },
+      {
+        "family": "Dohan",
+        "given": "David"
+      },
+      {
+        "family": "Dyer",
+        "given": "Ethan"
+      },
+      {
+        "family": "Michalewski",
+        "given": "Henryk"
+      },
+      {
+        "family": "Ramasesh",
+        "given": "Vinay V."
+      },
+      {
+        "family": "Slone",
+        "given": "Ambrose"
+      },
+      {
+        "family": "Anil",
+        "given": "Cem"
+      },
+      {
+        "family": "Schlag",
+        "given": "Imanol"
+      },
+      {
+        "family": "Gutman-Solo",
+        "given": "Theo"
+      },
+      {
+        "family": "Wu",
+        "given": "Yuhuai"
+      },
+      {
+        "family": "Neyshabur",
+        "given": "Behnam"
+      },
+      {
+        "family": "Gur-Ari",
+        "given": "Guy"
+      },
+      {
+        "family": "Misra",
+        "given": "Vedant"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/LewkowyczADDMRS22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Solving quantitative reasoning problems with language models",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Yang",
+        "given": "Zonglin"
+      },
+      {
+        "family": "Dong",
+        "given": "Li"
+      },
+      {
+        "family": "Du",
+        "given": "Xinya"
+      },
+      {
+        "family": "Cheng",
+        "given": "Hao"
+      },
+      {
+        "family": "Cambria",
+        "given": "Erik"
+      },
+      {
+        "family": "Liu",
+        "given": "Xiaodong"
+      },
+      {
+        "family": "Gao",
+        "given": "Jianfeng"
+      },
+      {
+        "family": "Wei",
+        "given": "Furu"
+      }
+    ],
+    "container-title": "EACL (1)",
+    "id": "DBLP:conf/eacl/YangDDCCLGW24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "209-225",
+    "publisher": "Association for Computational Linguistics",
+    "title": "Language models as inductive reasoners",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Jung",
+        "given": "Jaehun"
+      },
+      {
+        "family": "Qin",
+        "given": "Lianhui"
+      },
+      {
+        "family": "Welleck",
+        "given": "Sean"
+      },
+      {
+        "family": "Brahman",
+        "given": "Faeze"
+      },
+      {
+        "family": "Bhagavatula",
+        "given": "Chandra"
+      },
+      {
+        "family": "Bras",
+        "given": "Ronan Le"
+      },
+      {
+        "family": "Choi",
+        "given": "Yejin"
+      }
+    ],
+    "container-title": "EMNLP",
+    "id": "DBLP:conf/emnlp/JungQWBB0C22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1266-1279",
+    "publisher": "Association for Computational Linguistics",
+    "title": "Maieutic prompting: Logically consistent reasoning with recursive explanations",
+    "title-short": "Maieutic prompting",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Hoang",
+        "given": "Cong Duy Vu"
+      },
+      {
+        "family": "Koehn",
+        "given": "Philipp"
+      },
+      {
+        "family": "Haffari",
+        "given": "Gholamreza"
+      },
+      {
+        "family": "Cohn",
+        "given": "Trevor"
+      }
+    ],
+    "container-title": "NMT@ACL",
+    "id": "DBLP:conf/aclnmt/HoangKHC18",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "18-24",
+    "publisher": "Association for Computational Linguistics",
+    "title": "Iterative back-translation for neural machine translation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Wu",
+        "given": "Yonghui"
+      },
+      {
+        "family": "Schuster",
+        "given": "Mike"
+      },
+      {
+        "family": "Chen",
+        "given": "Zhifeng"
+      },
+      {
+        "family": "Le",
+        "given": "Quoc V."
+      },
+      {
+        "family": "Norouzi",
+        "given": "Mohammad"
+      },
+      {
+        "family": "Macherey",
+        "given": "Wolfgang"
+      },
+      {
+        "family": "Krikun",
+        "given": "Maxim"
+      },
+      {
+        "family": "Cao",
+        "given": "Yuan"
+      },
+      {
+        "family": "Gao",
+        "given": "Qin"
+      },
+      {
+        "family": "Macherey",
+        "given": "Klaus"
+      },
+      {
+        "family": "Klingner",
+        "given": "Jeff"
+      },
+      {
+        "family": "Shah",
+        "given": "Apurva"
+      },
+      {
+        "family": "Johnson",
+        "given": "Melvin"
+      },
+      {
+        "family": "Liu",
+        "given": "Xiaobing"
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lukasz"
+      },
+      {
+        "family": "Gouws",
+        "given": "Stephan"
+      },
+      {
+        "family": "Kato",
+        "given": "Yoshikiyo"
+      },
+      {
+        "family": "Kudo",
+        "given": "Taku"
+      },
+      {
+        "family": "Kazawa",
+        "given": "Hideto"
+      },
+      {
+        "family": "Stevens",
+        "given": "Keith"
+      },
+      {
+        "family": "Kurian",
+        "given": "George"
+      },
+      {
+        "family": "Patil",
+        "given": "Nishant"
+      },
+      {
+        "family": "Wang",
+        "given": "Wei"
+      },
+      {
+        "family": "Young",
+        "given": "Cliff"
+      },
+      {
+        "family": "Smith",
+        "given": "Jason"
+      },
+      {
+        "family": "Riesa",
+        "given": "Jason"
+      },
+      {
+        "family": "Rudnick",
+        "given": "Alex"
+      },
+      {
+        "family": "Vinyals",
+        "given": "Oriol"
+      },
+      {
+        "family": "Corrado",
+        "given": "Greg"
+      },
+      {
+        "family": "Hughes",
+        "given": "Macduff"
+      },
+      {
+        "family": "Dean",
+        "given": "Jeffrey"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/WuSCLNMKCGMKSJL16",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "title": "Google’s neural machine translation system: Bridging the gap between human and machine translation",
+    "title-short": "Google’s neural machine translation system",
+    "type": "article-journal",
+    "volume": "abs/1609.08144"
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Zihao"
+      },
+      {
+        "family": "Cai",
+        "given": "Shaofei"
+      },
+      {
+        "family": "Chen",
+        "given": "Guanzhou"
+      },
+      {
+        "family": "Liu",
+        "given": "Anji"
+      },
+      {
+        "family": "Ma",
+        "given": "Xiaojian"
+      },
+      {
+        "family": "Liang",
+        "given": "Yitao"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/WangCCLML23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Describe, explain, plan and select: Interactive planning with LLMs enables open-world multi-task agents",
+    "title-short": "Describe, explain, plan and select",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Hu",
+        "given": "Hengyuan"
+      },
+      {
+        "family": "Yarats",
+        "given": "Denis"
+      },
+      {
+        "family": "Gong",
+        "given": "Qucheng"
+      },
+      {
+        "family": "Tian",
+        "given": "Yuandong"
+      },
+      {
+        "family": "Lewis",
+        "given": "Mike"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/HuYGTL19",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "10025-10034",
+    "title": "Hierarchical decision making by generating and following natural language instructions",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Shridhar",
+        "given": "Mohit"
+      },
+      {
+        "family": "Thomason",
+        "given": "Jesse"
+      },
+      {
+        "family": "Gordon",
+        "given": "Daniel"
+      },
+      {
+        "family": "Bisk",
+        "given": "Yonatan"
+      },
+      {
+        "family": "Han",
+        "given": "Winson"
+      },
+      {
+        "family": "Mottaghi",
+        "given": "Roozbeh"
+      },
+      {
+        "family": "Zettlemoyer",
+        "given": "Luke"
+      },
+      {
+        "family": "Fox",
+        "given": "Dieter"
+      }
+    ],
+    "container-title": "CVPR",
+    "id": "DBLP:conf/cvpr/ShridharTGBHMZF20",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "10737-10746",
+    "publisher": "Computer Vision Foundation / IEEE",
+    "title": "ALFRED: A benchmark for interpreting grounded instructions for everyday tasks",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Carta",
+        "given": "Thomas"
+      },
+      {
+        "family": "Romac",
+        "given": "Clément"
+      },
+      {
+        "family": "Wolf",
+        "given": "Thomas"
+      },
+      {
+        "family": "Lamprier",
+        "given": "Sylvain"
+      },
+      {
+        "family": "Sigaud",
+        "given": "Olivier"
+      },
+      {
+        "family": "Oudeyer",
+        "given": "Pierre-Yves"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/CartaRWLSO23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "3676-3713",
+    "publisher": "PMLR",
+    "title": "Grounding large language models in interactive environments with online reinforcement learning",
+    "type": "paper-conference",
+    "volume": "202"
+  },
+  {
+    "author": [
+      {
+        "family": "Stooke",
+        "given": "Adam"
+      },
+      {
+        "family": "Lee",
+        "given": "Kimin"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Laskin",
+        "given": "Michael"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/StookeLAL21",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "page": "9870-9879",
+    "publisher": "PMLR",
+    "title": "Decoupling representation learning from reinforcement learning",
+    "type": "paper-conference",
+    "volume": "139"
+  },
+  {
+    "author": [
+      {
+        "family": "Cao",
+        "given": "Yuji"
+      },
+      {
+        "family": "Zhao",
+        "given": "Huan"
+      },
+      {
+        "family": "Cheng",
+        "given": "Yuheng"
+      },
+      {
+        "family": "Shu",
+        "given": "Ting"
+      },
+      {
+        "family": "Liu",
+        "given": "Guolong"
+      },
+      {
+        "family": "Liang",
+        "given": "Gaoqi"
+      },
+      {
+        "family": "Zhao",
+        "given": "Junhua"
+      },
+      {
+        "family": "Li",
+        "given": "Yun"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "corr/abs-2404-00282",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Survey on large language model-enhanced reinforcement learning: Concept, taxonomy, and methods",
+    "title-short": "Survey on large language model-enhanced reinforcement learning",
+    "type": "article-journal",
+    "volume": "abs/2404.00282"
+  },
+  {
+    "URL": "https://api.semanticscholar.org/CorpusID:6022828",
+    "author": [
+      {
+        "family": "Kaplan",
+        "given": "Russell"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "ArXiv",
+    "id": "Kaplan2017BeatingAW",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Beating atari with natural language guided reinforcement learning",
+    "type": "article-journal",
+    "volume": "abs/1704.05539"
+  },
+  {
+    "author": [
+      {
+        "family": "Goyal",
+        "given": "Prasoon"
+      },
+      {
+        "family": "Niekum",
+        "given": "Scott"
+      },
+      {
+        "family": "Mooney",
+        "given": "Raymond J."
+      }
+    ],
+    "container-title": "IJCAI",
+    "id": "DBLP:conf/ijcai/GoyalNM19",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "2385-2391",
+    "publisher": "ijcai.org",
+    "title": "Using natural language for reward shaping in reinforcement learning",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Goyal",
+        "given": "Prasoon"
+      },
+      {
+        "family": "Niekum",
+        "given": "Scott"
+      },
+      {
+        "family": "Mooney",
+        "given": "Raymond J."
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "CoRL",
+    "id": "DBLP:conf/corl/GoyalNM20",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "485-497",
+    "publisher": "PMLR",
+    "title": "PixL2R: Guiding reinforcement learning using natural language by mapping pixels to rewards",
+    "title-short": "PixL2R",
+    "type": "paper-conference",
+    "volume": "155"
+  },
+  {
+    "author": [
+      {
+        "family": "Du",
+        "given": "Yuqing"
+      },
+      {
+        "family": "Watkins",
+        "given": "Olivia"
+      },
+      {
+        "family": "Wang",
+        "given": "Zihan"
+      },
+      {
+        "family": "Colas",
+        "given": "Cédric"
+      },
+      {
+        "family": "Darrell",
+        "given": "Trevor"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Gupta",
+        "given": "Abhishek"
+      },
+      {
+        "family": "Andreas",
+        "given": "Jacob"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/DuWWCDA0A23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "8657-8677",
+    "publisher": "PMLR",
+    "title": "Guiding pretraining in reinforcement learning with large language models",
+    "type": "paper-conference",
+    "volume": "202"
+  },
+  {
+    "author": [
+      {
+        "family": "Liu",
+        "given": "Bo"
+      },
+      {
+        "family": "Jiang",
+        "given": "Yuqian"
+      },
+      {
+        "family": "Zhang",
+        "given": "Xiaohan"
+      },
+      {
+        "family": "Liu",
+        "given": "Qiang"
+      },
+      {
+        "family": "Zhang",
+        "given": "Shiqi"
+      },
+      {
+        "family": "Biswas",
+        "given": "Joydeep"
+      },
+      {
+        "family": "Stone",
+        "given": "Peter"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "corr/abs-2304-11477",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "LLM+P: Empowering large language models with optimal planning proficiency",
+    "type": "article-journal",
+    "volume": "abs/2304.11477"
+  },
+  {
+    "author": [
+      {
+        "family": "Wei",
+        "given": "Jason"
+      },
+      {
+        "family": "Bosma",
+        "given": "Maarten"
+      },
+      {
+        "family": "Zhao",
+        "given": "Vincent Y."
+      },
+      {
+        "family": "Guu",
+        "given": "Kelvin"
+      },
+      {
+        "family": "Yu",
+        "given": "Adams Wei"
+      },
+      {
+        "family": "Lester",
+        "given": "Brian"
+      },
+      {
+        "family": "Du",
+        "given": "Nan"
+      },
+      {
+        "family": "Dai",
+        "given": "Andrew M."
+      },
+      {
+        "family": "Le",
+        "given": "Quoc V."
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "DBLP:conf/iclr/WeiBZGYLDDL22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Finetuned language models are zero-shot learners",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Pallagani",
+        "given": "Vishal"
+      },
+      {
+        "family": "Muppasani",
+        "given": "Bharath"
+      },
+      {
+        "family": "Srivastava",
+        "given": "Biplav"
+      },
+      {
+        "family": "Rossi",
+        "given": "Francesca"
+      },
+      {
+        "family": "Horesh",
+        "given": "Lior"
+      },
+      {
+        "family": "Murugesan",
+        "given": "Keerthiram"
+      },
+      {
+        "family": "Loreggia",
+        "given": "Andrea"
+      },
+      {
+        "family": "Fabiano",
+        "given": "Francesco"
+      },
+      {
+        "family": "Joseph",
+        "given": "Rony"
+      },
+      {
+        "family": "Kethepalli",
+        "given": "Yathin"
+      }
+    ],
+    "container-title": "IJCAI",
+    "id": "DBLP:conf/ijcai/PallaganiMSRHML23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "7158-7162",
+    "publisher": "ijcai.org",
+    "title": "Plansformer tool: Demonstrating generation of symbolic plans using transformers",
+    "title-short": "Plansformer tool",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Rossetti",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Tummolo",
+        "given": "Massimiliano"
+      },
+      {
+        "family": "Gerevini",
+        "given": "Alfonso Emilio"
+      },
+      {
+        "family": "Putelli",
+        "given": "Luca"
+      },
+      {
+        "family": "Serina",
+        "given": "Ivan"
+      },
+      {
+        "family": "Chiari",
+        "given": "Mattia"
+      },
+      {
+        "family": "Olivato",
+        "given": "Matteo"
+      }
+    ],
+    "container-title": "ICAPS",
+    "id": "DBLP:conf/icaps/RossettiTGPSCO24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "500-508",
+    "publisher": "AAAI Press",
+    "title": "Learning general policies for planning through GPT models",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Silver",
+        "given": "Tom"
+      },
+      {
+        "family": "Dan",
+        "given": "Soham"
+      },
+      {
+        "family": "Srinivas",
+        "given": "Kavitha"
+      },
+      {
+        "family": "Tenenbaum",
+        "given": "Joshua B."
+      },
+      {
+        "family": "Kaelbling",
+        "given": "Leslie Pack"
+      },
+      {
+        "family": "Katz",
+        "given": "Michael"
+      }
+    ],
+    "container-title": "AAAI",
+    "id": "DBLP:conf/aaai/SilverDSTK024",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "page": "20256-20264",
+    "publisher": "AAAI Press",
+    "title": "Generalized planning in PDDL domains with pretrained large language models",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Guan",
+        "given": "Lin"
+      },
+      {
+        "family": "Valmeekam",
+        "given": "Karthik"
+      },
+      {
+        "family": "Sreedharan",
+        "given": "Sarath"
+      },
+      {
+        "family": "Kambhampati",
+        "given": "Subbarao"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/GuanVSK23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Leveraging pre-trained large language models to construct and utilize world models for model-based task planning",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Kambhampati",
+        "given": "Subbarao"
+      },
+      {
+        "family": "Valmeekam",
+        "given": "Karthik"
+      },
+      {
+        "family": "Guan",
+        "given": "Lin"
+      },
+      {
+        "family": "Verma",
+        "given": "Mudit"
+      },
+      {
+        "family": "Stechly",
+        "given": "Kaya"
+      },
+      {
+        "family": "Bhambri",
+        "given": "Siddhant"
+      },
+      {
+        "family": "Saldyt",
+        "given": "Lucas"
+      },
+      {
+        "family": "Murthy",
+        "given": "Anil"
+      }
+    ],
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/KambhampatiVGVS24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Position: LLMs can’t plan, but can help planning in LLM-modulo frameworks",
+    "title-short": "Position",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Valmeekam",
+        "given": "Karthik"
+      },
+      {
+        "family": "Marquez",
+        "given": "Matthew"
+      },
+      {
+        "family": "Hernandez",
+        "given": "Alberto Olmo"
+      },
+      {
+        "family": "Sreedharan",
+        "given": "Sarath"
+      },
+      {
+        "family": "Kambhampati",
+        "given": "Subbarao"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/ValmeekamMHSK23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "PlanBench: An extensible benchmark for evaluating large language models on planning and reasoning about change",
+    "title-short": "PlanBench",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Valmeekam",
+        "given": "Karthik"
+      },
+      {
+        "family": "Marquez",
+        "given": "Matthew"
+      },
+      {
+        "family": "Sreedharan",
+        "given": "Sarath"
+      },
+      {
+        "family": "Kambhampati",
+        "given": "Subbarao"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/ValmeekamMSK23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "On the planning abilities of large language models - A critical investigation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Huang",
+        "given": "Lei"
+      },
+      {
+        "family": "Yu",
+        "given": "Weijiang"
+      },
+      {
+        "family": "Ma",
+        "given": "Weitao"
+      },
+      {
+        "family": "Zhong",
+        "given": "Weihong"
+      },
+      {
+        "family": "Feng",
+        "given": "Zhangyin"
+      },
+      {
+        "family": "Wang",
+        "given": "Haotian"
+      },
+      {
+        "family": "Chen",
+        "given": "Qianglong"
+      },
+      {
+        "family": "Peng",
+        "given": "Weihua"
+      },
+      {
+        "family": "Feng",
+        "given": "Xiaocheng"
+      },
+      {
+        "family": "Qin",
+        "given": "Bing"
+      },
+      {
+        "family": "Liu",
+        "given": "Ting"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "corr/abs-2311-05232",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "A survey on hallucination in large language models: Principles, taxonomy, challenges, and open questions",
+    "title-short": "A survey on hallucination in large language models",
+    "type": "article-journal",
+    "volume": "abs/2311.05232"
+  },
+  {
+    "author": [
+      {
+        "family": "Lin",
+        "given": "Jessy"
+      },
+      {
+        "family": "Du",
+        "given": "Yuqing"
+      },
+      {
+        "family": "Watkins",
+        "given": "Olivia"
+      },
+      {
+        "family": "Hafner",
+        "given": "Danijar"
+      },
+      {
+        "family": "Abbeel",
+        "given": "Pieter"
+      },
+      {
+        "family": "Klein",
+        "given": "Dan"
+      },
+      {
+        "family": "Dragan",
+        "given": "Anca D."
+      }
+    ],
+    "container-title": "ICML",
+    "id": "DBLP:conf/icml/LinDWHAKD24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Learning to model the world with language",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Ichter",
+        "given": "Brian"
+      },
+      {
+        "family": "Brohan",
+        "given": "Anthony"
+      },
+      {
+        "family": "Chebotar",
+        "given": "Yevgen"
+      },
+      {
+        "family": "Finn",
+        "given": "Chelsea"
+      },
+      {
+        "family": "Hausman",
+        "given": "Karol"
+      },
+      {
+        "family": "Herzog",
+        "given": "Alexander"
+      },
+      {
+        "family": "Ho",
+        "given": "Daniel"
+      },
+      {
+        "family": "Ibarz",
+        "given": "Julian"
+      },
+      {
+        "family": "Irpan",
+        "given": "Alex"
+      },
+      {
+        "family": "Jang",
+        "given": "Eric"
+      },
+      {
+        "family": "Julian",
+        "given": "Ryan"
+      },
+      {
+        "family": "Kalashnikov",
+        "given": "Dmitry"
+      },
+      {
+        "family": "Levine",
+        "given": "Sergey"
+      },
+      {
+        "family": "Lu",
+        "given": "Yao"
+      },
+      {
+        "family": "Parada",
+        "given": "Carolina"
+      },
+      {
+        "family": "Rao",
+        "given": "Kanishka"
+      },
+      {
+        "family": "Sermanet",
+        "given": "Pierre"
+      },
+      {
+        "family": "Toshev",
+        "given": "Alexander"
+      },
+      {
+        "family": "Vanhoucke",
+        "given": "Vincent"
+      },
+      {
+        "family": "Xia",
+        "given": "Fei"
+      },
+      {
+        "family": "Xiao",
+        "given": "Ted"
+      },
+      {
+        "family": "Xu",
+        "given": "Peng"
+      },
+      {
+        "family": "Yan",
+        "given": "Mengyuan"
+      },
+      {
+        "family": "Brown",
+        "given": "Noah"
+      },
+      {
+        "family": "Ahn",
+        "given": "Michael"
+      },
+      {
+        "family": "Cortes",
+        "given": "Omar"
+      },
+      {
+        "family": "Sievers",
+        "given": "Nicolas"
+      },
+      {
+        "family": "Tan",
+        "given": "Clayton"
+      },
+      {
+        "family": "Xu",
+        "given": "Sichun"
+      },
+      {
+        "family": "Reyes",
+        "given": "Diego"
+      },
+      {
+        "family": "Rettinghouse",
+        "given": "Jarek"
+      },
+      {
+        "family": "Quiambao",
+        "given": "Jornell"
+      },
+      {
+        "family": "Pastor",
+        "given": "Peter"
+      },
+      {
+        "family": "Luu",
+        "given": "Linda"
+      },
+      {
+        "family": "Lee",
+        "given": "Kuang-Huei"
+      },
+      {
+        "family": "Kuang",
+        "given": "Yuheng"
+      },
+      {
+        "family": "Jesmonth",
+        "given": "Sally"
+      },
+      {
+        "family": "Joshi",
+        "given": "Nikhil J."
+      },
+      {
+        "family": "Jeffrey",
+        "given": "Kyle"
+      },
+      {
+        "family": "Ruano",
+        "given": "Rosario Jauregui"
+      },
+      {
+        "family": "Hsu",
+        "given": "Jasmine"
+      },
+      {
+        "family": "Gopalakrishnan",
+        "given": "Keerthana"
+      },
+      {
+        "family": "David",
+        "given": "Byron"
+      },
+      {
+        "family": "Zeng",
+        "given": "Andy"
+      },
+      {
+        "family": "Fu",
+        "given": "Chuyuan Kelly"
+      }
+    ],
+    "collection-title": "Proceedings of machine learning research",
+    "container-title": "CoRL",
+    "id": "DBLP:conf/corl/IchterBCFHHHIIJ22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "287-318",
+    "publisher": "PMLR",
+    "title": "Do as I can, not as I say: Grounding language in robotic affordances",
+    "title-short": "Do as I can, not as I say",
+    "type": "paper-conference",
+    "volume": "205"
+  },
+  {
+    "author": [
+      {
+        "family": "Luketina",
+        "given": "Jelena"
+      },
+      {
+        "family": "Nardelli",
+        "given": "Nantas"
+      },
+      {
+        "family": "Farquhar",
+        "given": "Gregory"
+      },
+      {
+        "family": "Foerster",
+        "given": "Jakob N."
+      },
+      {
+        "family": "Andreas",
+        "given": "Jacob"
+      },
+      {
+        "family": "Grefenstette",
+        "given": "Edward"
+      },
+      {
+        "family": "Whiteson",
+        "given": "Shimon"
+      },
+      {
+        "family": "Rocktäschel",
+        "given": "Tim"
+      }
+    ],
+    "container-title": "IJCAI",
+    "id": "DBLP:conf/ijcai/LuketinaNFFAGWR19",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "6309-6317",
+    "publisher": "ijcai.org",
+    "title": "A survey of reinforcement learning informed by natural language",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Singh",
+        "given": "Ishika"
+      },
+      {
+        "family": "Singh",
+        "given": "Gargi"
+      },
+      {
+        "family": "Modi",
+        "given": "Ashutosh"
+      }
+    ],
+    "container-title": "AAMAS",
+    "id": "DBLP:conf/atal/SinghSM22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "1729-1731",
+    "publisher": "International Foundation for Autonomous Agents; Multiagent Systems (IFAAMAS)",
+    "title": "Pre-trained language models as prior knowledge for playing text-based games",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Li",
+        "given": "Shuang"
+      },
+      {
+        "family": "Puig",
+        "given": "Xavier"
+      },
+      {
+        "family": "Paxton",
+        "given": "Chris"
+      },
+      {
+        "family": "Du",
+        "given": "Yilun"
+      },
+      {
+        "family": "Wang",
+        "given": "Clinton"
+      },
+      {
+        "family": "Fan",
+        "given": "Linxi"
+      },
+      {
+        "family": "Chen",
+        "given": "Tao"
+      },
+      {
+        "family": "Huang",
+        "given": "De-An"
+      },
+      {
+        "family": "Akyürek",
+        "given": "Ekin"
+      },
+      {
+        "family": "Anandkumar",
+        "given": "Anima"
+      },
+      {
+        "family": "Andreas",
+        "given": "Jacob"
+      },
+      {
+        "family": "Mordatch",
+        "given": "Igor"
+      },
+      {
+        "family": "Torralba",
+        "given": "Antonio"
+      },
+      {
+        "family": "Zhu",
+        "given": "Yuke"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/LiPPDWF0HAAAM0Z22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Pre-trained language models for interactive decision-making",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Szot",
+        "given": "Andrew"
+      },
+      {
+        "family": "Schwarzer",
+        "given": "Max"
+      },
+      {
+        "family": "Agrawal",
+        "given": "Harsh"
+      },
+      {
+        "family": "Mazoure",
+        "given": "Bogdan"
+      },
+      {
+        "family": "Metcalf",
+        "given": "Rin"
+      },
+      {
+        "family": "Talbott",
+        "given": "Walter"
+      },
+      {
+        "family": "Mackraz",
+        "given": "Natalie"
+      },
+      {
+        "family": "Hjelm",
+        "given": "R. Devon"
+      },
+      {
+        "family": "Toshev",
+        "given": "Alexander T."
+      }
+    ],
+    "container-title": "ICLR",
+    "id": "DBLP:conf/iclr/SzotSAMMTMHT24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OpenReview.net",
+    "title": "Large language models as generalizable policies for embodied tasks",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Weaver",
+        "given": "Warren"
+      }
+    ],
+    "container-title": "Proceedings of the conference on mechanical translation",
+    "id": "weaver1952translation",
+    "issued": {
+      "date-parts": [
+        [
+          1952
+        ]
+      ]
+    },
+    "title": "Translation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Peebles",
+        "given": "William"
+      },
+      {
+        "family": "Xie",
+        "given": "Saining"
+      }
+    ],
+    "container-title": "ICCV",
+    "id": "DBLP:conf/iccv/PeeblesX23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "4172-4182",
+    "publisher": "IEEE",
+    "title": "Scalable diffusion models with transformers",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Yu",
+        "given": "Jiahui"
+      },
+      {
+        "family": "Xu",
+        "given": "Yuanzhong"
+      },
+      {
+        "family": "Koh",
+        "given": "Jing Yu"
+      },
+      {
+        "family": "Luong",
+        "given": "Thang"
+      },
+      {
+        "family": "Baid",
+        "given": "Gunjan"
+      },
+      {
+        "family": "Wang",
+        "given": "Zirui"
+      },
+      {
+        "family": "Vasudevan",
+        "given": "Vijay"
+      },
+      {
+        "family": "Ku",
+        "given": "Alexander"
+      },
+      {
+        "family": "Yang",
+        "given": "Yinfei"
+      },
+      {
+        "family": "Ayan",
+        "given": "Burcu Karagol"
+      },
+      {
+        "family": "Hutchinson",
+        "given": "Ben"
+      },
+      {
+        "family": "Han",
+        "given": "Wei"
+      },
+      {
+        "family": "Parekh",
+        "given": "Zarana"
+      },
+      {
+        "family": "Li",
+        "given": "Xin"
+      },
+      {
+        "family": "Zhang",
+        "given": "Han"
+      },
+      {
+        "family": "Baldridge",
+        "given": "Jason"
+      },
+      {
+        "family": "Wu",
+        "given": "Yonghui"
+      }
+    ],
+    "container-title": "Trans. Mach. Learn. Res.",
+    "id": "DBLP:journals/tmlr/YuXKLBWVKYAHHPLZBW22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Scaling autoregressive models for content-rich text-to-image generation",
+    "type": "article-journal",
+    "volume": "2022"
+  },
+  {
+    "author": [
+      {
+        "family": "Tian",
+        "given": "Keyu"
+      },
+      {
+        "family": "Jiang",
+        "given": "Yi"
+      },
+      {
+        "family": "Yuan",
+        "given": "Zehuan"
+      },
+      {
+        "family": "Peng",
+        "given": "Bingyue"
+      },
+      {
+        "family": "Wang",
+        "given": "Liwei"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/TianJYPW24",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Visual autoregressive modeling: Scalable image generation via next-scale prediction",
+    "title-short": "Visual autoregressive modeling",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Zhou",
+        "given": "Chunting"
+      },
+      {
+        "family": "Yu",
+        "given": "Lili"
+      },
+      {
+        "family": "Babu",
+        "given": "Arun"
+      },
+      {
+        "family": "Tirumala",
+        "given": "Kushal"
+      },
+      {
+        "family": "Yasunaga",
+        "given": "Michihiro"
+      },
+      {
+        "family": "Shamis",
+        "given": "Leonid"
+      },
+      {
+        "family": "Kahn",
+        "given": "Jacob"
+      },
+      {
+        "family": "Ma",
+        "given": "Xuezhe"
+      },
+      {
+        "family": "Zettlemoyer",
+        "given": "Luke"
+      },
+      {
+        "family": "Levy",
+        "given": "Omer"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/abs-2408-11039",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Transfusion: Predict the next token and diffuse images with one multi-modal model",
+    "title-short": "Transfusion",
+    "type": "article-journal",
+    "volume": "abs/2408.11039"
+  },
+  {
+    "URL": "https://arxiv.org/abs/2501.17811",
+    "author": [
+      {
+        "family": "Chen",
+        "given": "Xiaokang"
+      },
+      {
+        "family": "Wu",
+        "given": "Zhiyu"
+      },
+      {
+        "family": "Liu",
+        "given": "Xingchao"
+      },
+      {
+        "family": "Pan",
+        "given": "Zizheng"
+      },
+      {
+        "family": "Liu",
+        "given": "Wen"
+      },
+      {
+        "family": "Xie",
+        "given": "Zhenda"
+      },
+      {
+        "family": "Yu",
+        "given": "Xingkai"
+      },
+      {
+        "family": "Ruan",
+        "given": "Chong"
+      }
+    ],
+    "id": "chen2025janusprounifiedmultimodalunderstanding",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "title": "Janus-pro: Unified multimodal understanding and generation with data and model scaling",
+    "title-short": "Janus-pro",
+    "type": ""
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Xinlong"
+      },
+      {
+        "family": "Zhang",
+        "given": "Xiaosong"
+      },
+      {
+        "family": "Luo",
+        "given": "Zhengxiong"
+      },
+      {
+        "family": "Sun",
+        "given": "Quan"
+      },
+      {
+        "family": "Cui",
+        "given": "Yufeng"
+      },
+      {
+        "family": "Wang",
+        "given": "Jinsheng"
+      },
+      {
+        "family": "Zhang",
+        "given": "Fan"
+      },
+      {
+        "family": "Wang",
+        "given": "Yueze"
+      },
+      {
+        "family": "Li",
+        "given": "Zhen"
+      },
+      {
+        "family": "Yu",
+        "given": "Qiying"
+      },
+      {
+        "family": "Zhao",
+        "given": "Yingli"
+      },
+      {
+        "family": "Ao",
+        "given": "Yulong"
+      },
+      {
+        "family": "Min",
+        "given": "Xuebin"
+      },
+      {
+        "family": "Li",
+        "given": "Tao"
+      },
+      {
+        "family": "Wu",
+        "given": "Boya"
+      },
+      {
+        "family": "Zhao",
+        "given": "Bo"
+      },
+      {
+        "family": "Zhang",
+        "given": "Bowen"
+      },
+      {
+        "family": "Wang",
+        "given": "Liangdong"
+      },
+      {
+        "family": "Liu",
+        "given": "Guang"
+      },
+      {
+        "family": "He",
+        "given": "Zheqi"
+      },
+      {
+        "family": "Yang",
+        "given": "Xi"
+      },
+      {
+        "family": "Liu",
+        "given": "Jingjing"
+      },
+      {
+        "family": "Lin",
+        "given": "Yonghua"
+      },
+      {
+        "family": "Huang",
+        "given": "Tiejun"
+      },
+      {
+        "family": "Wang",
+        "given": "Zhongyuan"
+      }
+    ],
+    "container-title": "CoRR",
+    "id": "DBLP:journals/corr/abs-2409-18869",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "title": "Emu3: Next-token prediction is all you need",
+    "title-short": "Emu3",
+    "type": "article-journal",
+    "volume": "abs/2409.18869"
+  },
+  {
+    "author": [
+      {
+        "family": "Vaswani",
+        "given": "Ashish"
+      },
+      {
+        "family": "Shazeer",
+        "given": "Noam"
+      },
+      {
+        "family": "Parmar",
+        "given": "Niki"
+      },
+      {
+        "family": "Uszkoreit",
+        "given": "Jakob"
+      },
+      {
+        "family": "Jones",
+        "given": "Llion"
+      },
+      {
+        "family": "Gomez",
+        "given": "Aidan N."
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lukasz"
+      },
+      {
+        "family": "Polosukhin",
+        "given": "Illia"
+      }
+    ],
+    "container-title": "NIPS",
+    "id": "DBLP:conf/nips/VaswaniSPUJGKP17",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "5998-6008",
+    "title": "Attention is all you need",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Icarte",
+        "given": "Rodrigo Toro"
+      },
+      {
+        "family": "Klassen",
+        "given": "Toryn Q."
+      },
+      {
+        "family": "Valenzano",
+        "given": "Richard Anthony"
+      },
+      {
+        "family": "McIlraith",
+        "given": "Sheila A."
+      }
+    ],
+    "container-title": "J. Artif. Intell. Res.",
+    "id": "DBLP:journals/jair/IcarteKVM22",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "page": "173-208",
+    "title": "Reward machines: Exploiting reward function structure in reinforcement learning",
+    "title-short": "Reward machines",
+    "type": "article-journal",
+    "volume": "73"
+  },
+  {
+    "author": [
+      {
+        "family": "Yao",
+        "given": "Shunyu"
+      },
+      {
+        "family": "Yu",
+        "given": "Dian"
+      },
+      {
+        "family": "Zhao",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Shafran",
+        "given": "Izhak"
+      },
+      {
+        "family": "Griffiths",
+        "given": "Tom"
+      },
+      {
+        "family": "Cao",
+        "given": "Yuan"
+      },
+      {
+        "family": "Narasimhan",
+        "given": "Karthik"
+      }
+    ],
+    "container-title": "NeurIPS",
+    "id": "DBLP:conf/nips/YaoYZS00N23",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Tree of thoughts: Deliberate problem solving with large language models",
+    "title-short": "Tree of thoughts",
+    "type": "paper-conference"
+  }
+]
