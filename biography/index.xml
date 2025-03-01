@@ -25,7 +25,71 @@
       <link>https://sino-huang.github.io/biography/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://sino-huang.github.io/biography/publications/</guid>
-      <description>Sukai&amp;rsquo;s Research Details and Paper Collection</description>
+      <description>&lt;h2 id=&#34;the-big-picture-of-my-research&#34;&gt;&lt;strong&gt;The Big Picture of My Research&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Integrating natural language into current AI system is a promising direction to &lt;strong&gt;democratize AI technology&lt;/strong&gt;. Moreover, the &lt;strong&gt;vast knowledge embedded&lt;/strong&gt; in natural language presents an opportunity to enhance AI-driven decision-making.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Imagine you want to instruct an AI system in Minecraft to build a house. Instead of programming a detailed set of construction rules or crafting reward functions that require expert insight, you simply tell the AI:&lt;/p&gt;
+&lt;p&gt;  &amp;ldquo;Build a two-story house with a garden, using bricks for the walls and wood for the roof.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;A natural language (NL)-integrated sequential decision making (SDM) system shall leverage its understanding of natural language to break down this instruction into a series of actionable steps, and progressing to the desired goal you want!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;problem-tldr&#34;&gt;&lt;strong&gt;Problem (TL;DR)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The current design of these natural language-integrated AI systems has significant room for improvement. For example, the algorithms often lack robustness and efficiency, which undermines the reliability of sequential decision making.&lt;/p&gt;
+&lt;details&gt;
+  &lt;summary&gt;Know more about the problem setting (two paradigms for sequential decision-making)&lt;/summary&gt;
+  &lt;div&gt;&lt;p&gt;&lt;img alt=&#34;illustration of two paradigms part A&#34; loading=&#34;lazy&#34; src=&#34;./image-assets/1_2_twotypeoflrs_overall_part_a.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;illustration of two paradigms part B&#34; loading=&#34;lazy&#34; src=&#34;./image-assets/1_2_twotypeoflrs_overall_part_b.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There are two primary paradigms for sequential decision-making: imagine you are playing Minecraft &amp;mdash; a complex, open-ended problem-solving environment where players can build, explore, and survive. There are two ways you might approach this task.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../detailed-background&#34;&gt;Click here to know more about the context&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/details&gt;
+
+&lt;h3 id=&#34;my-research-during-phd-study-improving-nl-integrated-sdm-systems-under-the-two-paradigms&#34;&gt;&lt;strong&gt;My research during PhD study: Improving NL-integrated SDM systems under the two paradigms&lt;/strong&gt;&lt;/h3&gt;
+&lt;details&gt;
+  &lt;summary&gt;1. Model-free reinforcement learning (RL) -- (a) VLM &amp;#43; Language-based Reward &amp;#43; RL agent)&lt;/summary&gt;
+  &lt;div&gt;&lt;p&gt;&lt;img alt=&#34;language reward model illustration&#34; loading=&#34;lazy&#34; src=&#34;image-assets/1_2_twotypeoflrs_overall.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Problem a&lt;/em&gt;: Noisy rewards from language models misguide AI agents.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Solution&lt;/em&gt;: &lt;strong&gt;BiMI Reward Function&lt;/strong&gt; (&lt;a href=&#34;https://arxiv.org/abs/2409.15922&#34;&gt;paper&lt;/a&gt;)
+&lt;ul&gt;
+&lt;li&gt;Reduces false positives (e.g., rewarding irrelevant actions).&lt;/li&gt;
+&lt;li&gt;Combines mutual information and thresholding for robustness.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Result&lt;/em&gt;: Faster learning in navigation tasks (e.g., robots avoiding obstacles).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+&lt;/details&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;2. Model-based automated planning -- (b) LLM-Symbolic Planning Pipeline and (c) LLMs for plan generation)&lt;/summary&gt;
+  &lt;div&gt;&lt;p&gt;&lt;img alt=&#34;automated planning senario&#34; loading=&#34;lazy&#34; src=&#34;image-assets/1_3_llm_with_planning.png&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Problem b&lt;/em&gt;: LLMs hallucinate plans or require expert validation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Solution&lt;/em&gt;: &lt;strong&gt;Fully Automated LLM-Symbolic Pipeline&lt;/strong&gt; (&lt;a href=&#34;https://arxiv.org/abs/2409.15915&#34;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Generates and validates action schemas without human intervention.&lt;/li&gt;
+&lt;li&gt;Resolves ambiguity by exploring multiple interpretations of language.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Result&lt;/em&gt;: Outperforms expert-dependent methods in scalability and bias reduction.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Problem c&lt;/em&gt;: There has been ongoing controversy about the genuine planning abilities of LLMs, with critics questioning whether their outputs reflect true reasoning or superficial statistical patterns.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Contribution&lt;/em&gt;: &lt;strong&gt;Reassessment of LLMs for end-to-end plan generation&lt;/strong&gt; (&lt;a href=&#34;https://arxiv.org/abs/2412.10675&#34;&gt;paper&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Conducts a rigorous re-evaluation of &lt;strong&gt;various&lt;/strong&gt; strategies claiming to enhance LLM reasoning in  end-to-end planning, using diverse metrics for a comprehensive assessment.
+&lt;ul&gt;
+&lt;li&gt;Found that RL promotes better generalization than supervised fine-tuning (SFT) for training LLMs to plan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/details&gt;</description>
     </item>
   </channel>
 </rss>

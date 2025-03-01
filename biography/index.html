@@ -464,7 +464,18 @@ pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
     </h2>
 </header>
 <div class="entry-content">
-<p>Sukai’s Research Details and Paper Collection</p>
+<p>The Big Picture of My Research Integrating natural language into current AI system is a promising direction to democratize AI technology. Moreover, the vast knowledge embedded in natural language presents an opportunity to enhance AI-driven decision-making.
+Imagine you want to instruct an AI system in Minecraft to build a house. Instead of programming a detailed set of construction rules or crafting reward functions that require expert insight, you simply tell the AI:
+“Build a two-story house with a garden, using bricks for the walls and wood for the roof.”
+A natural language (NL)-integrated sequential decision making (SDM) system shall leverage its understanding of natural language to break down this instruction into a series of actionable steps, and progressing to the desired goal you want!
+Problem (TL;DR) The current design of these natural language-integrated AI systems has significant room for improvement. For example, the algorithms often lack robustness and efficiency, which undermines the reliability of sequential decision making.
+Know more about the problem setting (two paradigms for sequential decision-making) There are two primary paradigms for sequential decision-making: imagine you are playing Minecraft — a complex, open-ended problem-solving environment where players can build, explore, and survive. There are two ways you might approach this task.
+Click here to know more about the context
+My research during PhD study: Improving NL-integrated SDM systems under the two paradigms 1. Model-free reinforcement learning (RL) -- (a) VLM + Language-based Reward + RL agent) Problem a: Noisy rewards from language models misguide AI agents. Solution: BiMI Reward Function (paper) Reduces false positives (e.g., rewarding irrelevant actions). Combines mutual information and thresholding for robustness. Result: Faster learning in navigation tasks (e.g., robots avoiding obstacles). 2. Model-based automated planning -- (b) LLM-Symbolic Planning Pipeline and (c) LLMs for plan generation) Problem b: LLMs hallucinate plans or require expert validation.
+Solution: Fully Automated LLM-Symbolic Pipeline (paper)
+Generates and validates action schemas without human intervention. Resolves ambiguity by exploring multiple interpretations of language. Result: Outperforms expert-dependent methods in scalability and bias reduction. Problem c: There has been ongoing controversy about the genuine planning abilities of LLMs, with critics questioning whether their outputs reflect true reasoning or superficial statistical patterns.
+Contribution: Reassessment of LLMs for end-to-end plan generation (paper)
+Conducts a rigorous re-evaluation of various strategies claiming to enhance LLM reasoning in end-to-end planning, using diverse metrics for a comprehensive assessment. Found that RL promotes better generalization than supervised fine-tuning (SFT) for training LLMs to plan ...</p>
 </div>
 <footer class="entry-footer">15 min · Sukai Huang</footer>
 <a aria-label="post link to My Research (I'm Seeking Postdoc Positions!)" class="entry-link" href="https://sino-huang.github.io/biography/publications/"></a>
