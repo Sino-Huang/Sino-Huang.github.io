@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Feb 2025 12:53:37 +1100</lastBuildDate>
+    <lastBuildDate>Sat, 01 Mar 2025 21:49:37 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Llm as Policy Model in Online RL Setting</title>
+      <link>https://sino-huang.github.io/tags/llm-as-policy-model-in-online-rl-setting/</link>
+      <pubDate>Sat, 01 Mar 2025 21:49:37 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/llm-as-policy-model-in-online-rl-setting/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Neuro-Symbolic</title>
       <link>https://sino-huang.github.io/tags/neuro-symbolic/</link>

@@ -11,8 +11,15 @@
 </image>
 <generator>Hugo -- 0.140.2</generator>
 <language>en</language>
-<lastBuildDate>Wed, 26 Feb 2025 12:53:37 +1100</lastBuildDate>
+<lastBuildDate>Sat, 01 Mar 2025 21:49:37 +1100</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Awesome_llm_for_embodied_rl_and_decision_making_by_2025</title>
+<link>https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/</link>
+<pubDate>Sat, 01 Mar 2025 21:49:37 +1100</pubDate>
+<guid>https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/</guid>
+<description>&lt;p&gt;The study in this field is very &lt;em&gt;&lt;strong&gt;messy&lt;/strong&gt;&lt;/em&gt; I should say, a lot of researchers coming from different background and most of them try to publish their own embodied environments and baseline models. There is a lack of systematic study in this field. Most importantly, their model are really difficult to reproduce. In fact, there is no standard phrase for this research field. Some people call it &lt;strong&gt;instruction following with LM&lt;/strong&gt;, some people call it &lt;strong&gt;language grounding in embodied environments&lt;/strong&gt;, some people call it instruction-following with RL and all the papers in this area did not even try to reproduce other&amp;rsquo;s work and compare with each other. So, I want to say be careful to enter this area.&lt;/p&gt;</description>
+</item>
 <item>
 <title>Neuro Symbolic Works From A.Prof. Hamid @ Monash</title>
 <link>https://sino-huang.github.io/posts/neuro_symbolic_works_from_hamid_2024_2025/</link>
