@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/</loc>
-    <lastmod>2025-03-01T21:49:37+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/rp-pgms/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2025-03-02T23:24:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/</loc>
     <lastmod>2025-03-01T21:49:37+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/llm-as-policy-model-in-online-rl-setting/</loc>
     <lastmod>2025-03-01T21:49:37+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/paper-collection-review/</loc>
-    <lastmod>2025-03-01T21:49:37+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2025-03-01T21:49:37+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2025-03-01T21:49:37+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2025-03-01T21:49:37+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/neuro_symbolic_works_from_hamid_2024_2025/</loc>
@@ -42,9 +51,6 @@
     <lastmod>2024-12-24T22:25:58+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/pallagani-plansformer-generating-plans-2023/</loc>
-    <lastmod>2024-12-24T22:25:58+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review/</loc>
     <lastmod>2024-12-24T22:25:58+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/posts/damai-dai-deepseekmoe-2024/</loc>

@@ -11,8 +11,55 @@
 </image>
 <generator>Hugo -- 0.140.2</generator>
 <language>en</language>
-<lastBuildDate>Sat, 01 Mar 2025 21:49:37 +1100</lastBuildDate>
+<lastBuildDate>Sun, 02 Mar 2025 23:24:05 +1100</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Model-Based Reparameterization Policy Gradient Methods: Theory and Practical Algorithms 2023</title>
+<link>https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/</link>
+<pubDate>Sun, 02 Mar 2025 23:24:05 +1100</pubDate>
+<guid>https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/</guid>
+<description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: Model-Based Reparameterization Policy Gradient Methods: Theory and Practical Algorithms&lt;/li&gt;
+&lt;li&gt;Author: Shenao Zhang et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year:  NIPS 2023&lt;/li&gt;
+&lt;li&gt;Review Date: Sun, Mar 2, 2025&lt;/li&gt;
+&lt;li&gt;url: &lt;a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/d78e9e4316e1714fbb0f20be66f8044c-Paper-Conference.pdf"&gt;https://proceedings.neurips.cc/paper_files/paper/2023/file/d78e9e4316e1714fbb0f20be66f8044c-Paper-Conference.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bibtex" data-lang="bibtex"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;# input bibtex here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nc"&gt;@inproceedings&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="nl"&gt;DBLP:conf/nips/ZhangL0Z23&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;  &lt;span class="na"&gt;author&lt;/span&gt;       &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;{Shenao Zhang and
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s"&gt;                  Boyi Liu and
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s"&gt;                  Zhaoran Wang and
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s"&gt;                  Tuo Zhao}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;  &lt;span class="na"&gt;title&lt;/span&gt;        &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;{Model-Based Reparameterization Policy Gradient Methods: Theory and
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="s"&gt;                  Practical Algorithms}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;  &lt;span class="na"&gt;booktitle&lt;/span&gt;    &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;{NeurIPS}&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;  &lt;span class="na"&gt;year&lt;/span&gt;         &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;{2023}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img alt="image-20250302232753899" loading="lazy" src="https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/image-assets/image-20250302232753899.png"&gt;&lt;/p&gt;</description>
+</item>
 <item>
 <title>Awesome_llm_for_embodied_rl_and_decision_making_by_2025</title>
 <link>https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/</link>
