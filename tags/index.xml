@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Mar 2025 23:24:05 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 05 Mar 2025 09:44:58 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTN Planning</title>
+      <link>https://sino-huang.github.io/tags/htn-planning/</link>
+      <pubDate>Wed, 05 Mar 2025 09:44:58 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/htn-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge Representation</title>
+      <link>https://sino-huang.github.io/tags/knowledge-representation/</link>
+      <pubDate>Tue, 04 Mar 2025 12:07:13 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/knowledge-representation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sketch</title>
+      <link>https://sino-huang.github.io/tags/sketch/</link>
+      <pubDate>Tue, 04 Mar 2025 12:07:13 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/sketch/</guid>
+      <description></description>
+    </item>
     <item>
       <title>RP PGMs</title>
       <link>https://sino-huang.github.io/tags/rp-pgms/</link>
@@ -599,13 +620,6 @@
       <link>https://sino-huang.github.io/tags/language-model-reasoning/</link>
       <pubDate>Wed, 08 Feb 2023 22:23:45 +1100</pubDate>
       <guid>https://sino-huang.github.io/tags/language-model-reasoning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Knowledge Representation</title>
-      <link>https://sino-huang.github.io/tags/knowledge-representation/</link>
-      <pubDate>Wed, 08 Feb 2023 22:17:31 +1100</pubDate>
-      <guid>https://sino-huang.github.io/tags/knowledge-representation/</guid>
       <description></description>
     </item>
     <item>

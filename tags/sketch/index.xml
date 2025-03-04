@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sketch on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/sketch/</link>
+    <description>Recent content in Sketch on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 04 Mar 2025 12:07:13 +1100</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/tags/sketch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning General Policies Through Sketch @ Hector Geffner</title>
+      <link>https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/</link>
+      <pubDate>Tue, 04 Mar 2025 12:07:13 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/</guid>
+      <description>&lt;p&gt;I will list some important literatures about the topic of &lt;em&gt;learning general policies through sketches&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The research is initiated by Blai Bonet and Hector Geffner&lt;/p&gt;
+&lt;p&gt;The high level goal of the research is as follows&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!IMPORTANT]&lt;/p&gt;
+&lt;p&gt;The construction of &lt;strong&gt;reusable&lt;/strong&gt; knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
 <title>Learning General Policies Through Sketch @ Hector Geffner | Sukai Huang</title>
-<meta content="" name="keywords"/>
+<meta content="knowledge representation, sketch" name="keywords"/>
 <meta content="I will list some important literatures about the topic of learning general policies through sketches
 The research is initiated by Blai Bonet and Hector Geffner
 The high level goal of the research is as follows
@@ -106,6 +106,8 @@ The construction of reusable knowledge (transfer learning) is a central concern 
 <meta content="posts" property="article:section"/>
 <meta content="2025-03-04T12:07:13+11:00" property="article:published_time"/>
 <meta content="2025-03-04T12:07:13+11:00" property="article:modified_time"/>
+<meta content="Knowledge Representation" property="article:tag"/>
+<meta content="Sketch" property="article:tag"/>
 <meta content="https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/image-assets/cover.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/image-assets/cover.png" name="twitter:image"/>
@@ -144,7 +146,7 @@ The construction of reusable knowledge (transfer learning) is a central concern 
   "name": "Learning General Policies Through Sketch @ Hector Geffner",
   "description": "I will list some important literatures about the topic of learning general policies through sketches\nThe research is initiated by Blai Bonet and Hector Geffner\nThe high level goal of the research is as follows\n[!IMPORTANT]\nThe construction of reusable knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.\n",
   "keywords": [
-    
+    "knowledge representation", "sketch"
   ],
   "articleBody": "I will list some important literatures about the topic of learning general policies through sketches\nThe research is initiated by Blai Bonet and Hector Geffner\nThe high level goal of the research is as follows\n[!IMPORTANT]\nThe construction of reusable knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.\nFor addressing this challenge, new ideas and methods are required that build on those of planning, deep and reinforcement learning, logic and knowledge representation, and combinatorial optimization. Our approach is a form of top-down representation learning based on a clear separation and characterization of what is to be learned from how (Video). The research methodology that is common in deep learning, which focuses mainly on relative performance is not good enough as it does not give us a crisp understanding. At the same time, we cannot afford not to use deep learning, namely, the optimization of parametric functions (neural nets) by means of stochastic gradient descent, because deep learning represents a very useful, versatile, and effective class of solvers.\nAn intro: ICAPS 2024 Keynote: Hector Geffner on “Learning Representations to Act and Plan” Learning Sketch Decompositions in Planning via Deep Reinforcement Learning https://arxiv.org/abs/2412.08574\nConclusion quote: We have demonstrated that DRL methods can effectively learn the common subgoal structures of entire collections of planning problems, enabling them to be solved efficiently through greedy sequences of IW(k) searches.\nSymmetries and Expressive Requirements for Learning General Policies https://arxiv.org/pdf/2409.15892\nAbstract: State symmetries play an important role in planning and generalized planning. In the first case, state symmetries can be used to reduce the size of the search; in the second, to reduce the size of the training set. In the case of general planning, however, it is also critical to distinguish non-symmetric states, i.e., states that represent non-isomorphic relational structures. However, while the language of first-order logic distinguishes non-symmetric states, the languages and architectures used to represent and learn general policies do not. In particular, recent approaches for learning general policies use state features derived from description logics or learned via graph neural networks (GNNs) that are known to be limited by the expressive power of C2, first-order logic with two variables and counting. In this work, we address the problem of detecting symmetries in planning and generalized planning and use the results to assess the expressive requirements for learning general policies over various planning domains. For this, we map planning states to plain graphs, run off-the-shelf algorithms to determine whether two states are isomorphic with respect to the goal, and run coloring algorithms to determine if C2 features computed logically or via GNNs distinguish non-isomorphic states. Symmetry detection results in more effective learning, while the failure to detect non-symmetries prevents general policies from being learned at all in certain domains\nOn Policy Reuse: An Expressive Language for Representing and Executing General Policies that Call Other Policies https://openreview.net/forum?id=TSl0tWPiXT\nhttps://ojs.aaai.org/index.php/ICAPS/article/view/31458/33618\nIt provides a types of language to express the general policies (which is a collection of rules)\nLearning General Policies with Policy Gradient Methods https://proceedings.kr.org/2023/63/kr2023-0063-stahlberg-et-al.pdf\nThe learning of general policy is different from standard policy gradient learning as the general policy has different semantic than the standard policy\nThe long dicussion of the search: https://arxiv.org/pdf/2311.05490 ",
   "wordCount" : "555",
@@ -306,8 +308,15 @@ The construction of reusable knowledge (transfer learning) is a central concern 
 </div>
 <footer class="post-footer">
 <ul class="post-tags">
+<li><a href="https://sino-huang.github.io/tags/knowledge-representation/">Knowledge Representation</a></li>
+<li><a href="https://sino-huang.github.io/tags/sketch/">Sketch</a></li>
 </ul>
 <nav class="paginav">
+<a class="prev" href="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/">
+<span class="title">« Prev</span>
+<br/>
+<span>HTN planning @ Pascal Bercher ANU</span>
+</a>
 <a class="next" href="https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/">
 <span class="title">Next »</span>
 <br/>
@@ -316,7 +325,7 @@ The construction of reusable knowledge (transfer learning) is a central concern 
 </nav>
 <ul class="share-buttons">
 <li>
-<a aria-label="share Learning General Policies Through Sketch @ Hector Geffner on x" href="https://x.com/intent/tweet/?text=Learning%20General%20Policies%20Through%20Sketch%20%40%20Hector%20Geffner&amp;url=https%3a%2f%2fsino-huang.github.io%2fposts%2flearning_general_policy_by_hector_2025%2f&amp;hashtags=" rel="noopener noreferrer" target="_blank">
+<a aria-label="share Learning General Policies Through Sketch @ Hector Geffner on x" href="https://x.com/intent/tweet/?text=Learning%20General%20Policies%20Through%20Sketch%20%40%20Hector%20Geffner&amp;url=https%3a%2f%2fsino-huang.github.io%2fposts%2flearning_general_policy_by_hector_2025%2f&amp;hashtags=knowledgerepresentation%2csketch" rel="noopener noreferrer" target="_blank">
 <svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
 <path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
 </svg>

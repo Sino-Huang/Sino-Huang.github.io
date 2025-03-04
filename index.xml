@@ -11,8 +11,25 @@
 </image>
 <generator>Hugo -- 0.140.2</generator>
 <language>en</language>
-<lastBuildDate>Tue, 04 Mar 2025 12:07:13 +1100</lastBuildDate>
+<lastBuildDate>Wed, 05 Mar 2025 09:44:58 +1100</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>HTN planning @ Pascal Bercher ANU</title>
+<link>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</link>
+<pubDate>Wed, 05 Mar 2025 09:44:58 +1100</pubDate>
+<guid>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</guid>
+<description>&lt;h2 id="overview-of-what-is-hierarchical-planning"&gt;Overview of what is hierarchical planning&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="image-20250305094619303" loading="lazy" src="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/cover.png"&gt;&lt;/p&gt;
+&lt;h3 id="1-a-survey-on-hierarchical-planning--one-abstract-idea-many-concrete-realizations"&gt;1. A Survey on Hierarchical Planning – One Abstract Idea, Many Concrete Realizations&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf"&gt;https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This gives you a survey about what is hierarchical planning and HTN planning&lt;/p&gt;
+&lt;h3 id="2-daniel-hoellers-dissertation"&gt;2. Daniel Hoeller’s dissertation&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c"&gt;https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It has a summary of what is hierarchical planning&lt;/p&gt;
+&lt;h3 id="3-on-the-decidability-of-htn-planning-with-task-insertion"&gt;3. On the Decidability of HTN Planning with Task Insertion&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf"&gt;https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A more technical details about the formalization of HTN planning&lt;/p&gt;</description>
+</item>
 <item>
 <title>Learning General Policies Through Sketch @ Hector Geffner</title>
 <link>https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/</link>

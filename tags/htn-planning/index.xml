@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>HTN Planning on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/htn-planning/</link>
+    <description>Recent content in HTN Planning on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.140.2</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 05 Mar 2025 09:44:58 +1100</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/tags/htn-planning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTN planning @ Pascal Bercher ANU</title>
+      <link>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</link>
+      <pubDate>Wed, 05 Mar 2025 09:44:58 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</guid>
+      <description>&lt;h2 id=&#34;overview-of-what-is-hierarchical-planning&#34;&gt;Overview of what is hierarchical planning&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250305094619303&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-a-survey-on-hierarchical-planning--one-abstract-idea-many-concrete-realizations&#34;&gt;1. A Survey on Hierarchical Planning – One Abstract Idea, Many Concrete Realizations&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf&#34;&gt;https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This gives you a survey about what is hierarchical planning and HTN planning&lt;/p&gt;
+&lt;h3 id=&#34;2-daniel-hoellers-dissertation&#34;&gt;2. Daniel Hoeller’s dissertation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c&#34;&gt;https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It has a summary of what is hierarchical planning&lt;/p&gt;
+&lt;h3 id=&#34;3-on-the-decidability-of-htn-planning-with-task-insertion&#34;&gt;3. On the Decidability of HTN Planning with Task Insertion&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf&#34;&gt;https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A more technical details about the formalization of HTN planning&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
