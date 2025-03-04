@@ -11,8 +11,20 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 02 Mar 2025 23:24:05 +1100</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2025 12:07:13 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/categories/paper-review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning General Policies Through Sketch @ Hector Geffner</title>
+      <link>https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/</link>
+      <pubDate>Tue, 04 Mar 2025 12:07:13 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/learning_general_policy_by_hector_2025/</guid>
+      <description>&lt;p&gt;I will list some important literatures about the topic of &lt;em&gt;learning general policies through sketches&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The research is initiated by Blai Bonet and Hector Geffner&lt;/p&gt;
+&lt;p&gt;The high level goal of the research is as follows&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!IMPORTANT]&lt;/p&gt;
+&lt;p&gt;The construction of &lt;strong&gt;reusable&lt;/strong&gt; knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Model-Based Reparameterization Policy Gradient Methods: Theory and Practical Algorithms 2023</title>
       <link>https://sino-huang.github.io/posts/shenan-model-based-rpgm-2023/</link>
