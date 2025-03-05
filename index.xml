@@ -20,15 +20,13 @@
 <guid>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</guid>
 <description>&lt;h2 id="overview-of-what-is-hierarchical-planning"&gt;Overview of what is hierarchical planning&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="image-20250305094619303" loading="lazy" src="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/cover.png"&gt;&lt;/p&gt;
-&lt;h3 id="1-a-survey-on-hierarchical-planning--one-abstract-idea-many-concrete-realizations"&gt;1. A Survey on Hierarchical Planning – One Abstract Idea, Many Concrete Realizations&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf"&gt;https://bercher.net/publications/2019/Bercher2019HierarchicalPlanningSurvey.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This gives you a survey about what is hierarchical planning and HTN planning&lt;/p&gt;
-&lt;h3 id="2-daniel-hoellers-dissertation"&gt;2. Daniel Hoeller’s dissertation&lt;/h3&gt;
+&lt;h3 id="1-daniel-hoellers-dissertation"&gt;1. Daniel Hoeller’s dissertation&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c"&gt;https://oparu.uni-ulm.de/items/a6c64b47-76e7-4532-8179-3e215a9eac9c&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It has a summary of what is hierarchical planning&lt;/p&gt;
-&lt;h3 id="3-on-the-decidability-of-htn-planning-with-task-insertion"&gt;3. On the Decidability of HTN Planning with Task Insertion&lt;/h3&gt;
-&lt;p&gt;&lt;a href="https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf"&gt;https://bercher.net/publications/2011/Geier2011TIHTNDecidability.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;A more technical details about the formalization of HTN planning&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt="image-20250305234324630" loading="lazy" src="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/image-20250305234324630.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image-20250305235138374" loading="lazy" src="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/image-20250305235138374.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image-20250305235553916" loading="lazy" src="https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/image-assets/image-20250305235553916.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;comment&lt;/strong&gt;: a $t$ is a task id that can either refer to a $c \in C$ or an $a \in A$, but a method decompose $c$ only. Ok I see, the point, the whole thing trys to allow the set to have duplicate (? why not just claim that you have a multiset)&lt;/p&gt;</description>
 </item>
 <item>
 <title>Learning General Policies Through Sketch @ Hector Geffner</title>
