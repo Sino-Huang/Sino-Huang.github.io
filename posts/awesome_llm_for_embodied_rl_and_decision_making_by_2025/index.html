@@ -133,8 +133,8 @@
   "keywords": [
     "llm as policy model in online RL setting"
   ],
-  "articleBody": "The study in this field is very messy I should say, a lot of researchers coming from different background and most of them try to publish their own embodied environments and baseline models. There is a lack of systematic study in this field. Most importantly, their model are really difficult to reproduce. In fact, there is no standard phrase for this research field. Some people call it instruction following with LM, some people call it language grounding in embodied environments, some people call it instruction-following with RL and all the papers in this area did not even try to reproduce other’s work and compare with each other. So, I want to say be careful to enter this area.\nSurvey paper: A Survey of Reinforcement Learning Informed by Natural Language https://arxiv.org/pdf/1906.03926\nTRUE KNOWLEDGE COMES FROM PRACTICE: ALIGNING LLMS WITH EMBODIED ENVIRONMENTS VIA REINFORCEMENT LEARNING https://arxiv.org/pdf/2401.14151\nLARGE LANGUAGE MODELS AS GENERALIZABLE POLICIES FOR EMBODIED TASKS https://arxiv.org/pdf/2310.17722\nTo our knowledge, no prior work demonstrates that LLMs can be used as vision-language policies in online RL problems to improve generalization.\nThis is the statement made by the authors.\nThe reviewer call it as adapting large language models to embodied visual tasks - particularly in online reinforcement learning setting\nhttps://openreview.net/forum?id=u6imHU4Ebu\nGrounding Large Language Models in Interactive Environments with Online Reinforcement Learning https://arxiv.org/pdf/2302.02662v4\nLearning to Model the World With Language * https://arxiv.org/pdf/2308.01399\nALFWORLD: ALIGNING TEXT AND EMBODIED ENVIRONMENTS FOR INTERACTIVE LEARNING https://arxiv.org/pdf/2010.03768\nHuman Instruction-Following with Deep Reinforcement Learning via Transfer-Learning from Text https://arxiv.org/pdf/2005.09382\nReflect-RL: Two-Player Online RL Fine-Tuning for LMs https://arxiv.org/pdf/2402.12621\nDescribe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents https://arxiv.org/pdf/2302.01560\nNatural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation https://arxiv.org/pdf/2302.09368\n",
-  "wordCount" : "283",
+  "articleBody": "The study in this field is very messy I should say, a lot of researchers coming from different background and most of them try to publish their own embodied environments and baseline models. There is a lack of systematic study in this field. Most importantly, their model are really difficult to reproduce. In fact, there is no standard phrase for this research field. Some people call it instruction following with LM, some people call it language grounding in embodied environments, some people call it instruction-following with RL and all the papers in this area did not even try to reproduce other’s work and compare with each other. So, I want to say be careful to enter this area.\nSurvey paper: A Survey of Reinforcement Learning Informed by Natural Language https://arxiv.org/pdf/1906.03926\nTRUE KNOWLEDGE COMES FROM PRACTICE: ALIGNING LLMS WITH EMBODIED ENVIRONMENTS VIA REINFORCEMENT LEARNING https://arxiv.org/pdf/2401.14151\nLARGE LANGUAGE MODELS AS GENERALIZABLE POLICIES FOR EMBODIED TASKS https://arxiv.org/pdf/2310.17722\nTo our knowledge, no prior work demonstrates that LLMs can be used as vision-language policies in online RL problems to improve generalization.\nThat adapter layer is also used in Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling. ICML 2023: 26311-26325\nThis is the statement made by the authors.\nThe reviewer call it as adapting large language models to embodied visual tasks - particularly in online reinforcement learning setting\nhttps://openreview.net/forum?id=u6imHU4Ebu\nGrounding Large Language Models in Interactive Environments with Online Reinforcement Learning https://arxiv.org/pdf/2302.02662v4\nLearning to Model the World With Language * https://arxiv.org/pdf/2308.01399\nALFWORLD: ALIGNING TEXT AND EMBODIED ENVIRONMENTS FOR INTERACTIVE LEARNING https://arxiv.org/pdf/2010.03768\nHuman Instruction-Following with Deep Reinforcement Learning via Transfer-Learning from Text https://arxiv.org/pdf/2005.09382\nReflect-RL: Two-Player Online RL Fine-Tuning for LMs https://arxiv.org/pdf/2402.12621\nDescribe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents https://arxiv.org/pdf/2302.01560\nNatural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation https://arxiv.org/pdf/2302.09368\nDo Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling https://arxiv.org/abs/2301.12050\nThis also belongs to Plan first and then train policy but this time it is modular policy.\nICML 2023\nA nice thing for their policy model is that they use an adapter to the original decision transformer policy model to train their own fine-tuned policy.\nRelevant but in Robotics field, but they are using offline data to train low-level control policy and they are effective PaLM-E https://arxiv.org/abs/2303.03378 and SayCan https://say-can.github.io/assets/palm_saycan.pdf\nSayCan, CodeAsPolicy and ProgPrompt are zero-shot applications of LLMs that require describing the environment in text\nPaLM-E are offline: they are given 130,000 human teleoperated demonstrations collected over almost 2 years as training data [2,3]\nBoth try to separate into high-level plan action and then low-level control action\nPalm-E\nSaycan\n",
+  "wordCount" : "444",
   "inLanguage": "en",
   "image":"https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/cover.png","datePublished": "2025-03-01T21:49:37+11:00",
   "dateModified": "2025-03-01T21:49:37+11:00",
@@ -227,7 +227,7 @@
 <h1 class="post-title entry-hint-parent">
       Awesome_llm_for_embodied_rl_and_decision_making_by_2025
     </h1>
-<div class="post-meta"><span title="2025-03-01 21:49:37 +1100 AEDT">March 1, 2025</span> · 2 min · 283 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/index.md" rel="noopener noreferrer" target="_blank">Submit a report</a>
+<div class="post-meta"><span title="2025-03-01 21:49:37 +1100 AEDT">March 1, 2025</span> · 3 min · 444 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/index.md" rel="noopener noreferrer" target="_blank">Submit a report</a>
 </div>
 </header>
 <figure class="entry-cover"><img alt="" loading="eager" src="https://sino-huang.github.io/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/cover.png"/>
@@ -237,7 +237,7 @@
 <summary accesskey="c" title="(Alt + C)">
 <span class="details">Table of Contents</span>
 </summary>
-<div class="inner"><ul>
+<div class="inner"><ul><ul>
 <li>
 <a aria-label="Survey paper: A Survey of Reinforcement Learning Informed by Natural Language" href="#survey-paper-a-survey-of-reinforcement-learning-informed-by-natural-language">Survey paper: A Survey of Reinforcement Learning Informed by Natural Language</a></li>
 <li>
@@ -257,7 +257,11 @@
 <li>
 <a aria-label="Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents" href="#describe-explain-plan-and-select-interactive-planning-with-large-language-models-enables-open-world-multi-task-agents">Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents</a></li>
 <li>
-<a aria-label="Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation" href="#natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation">Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation</a>
+<a aria-label="Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation" href="#natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation">Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation</a></li>
+<li>
+<a aria-label="Do Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling" href="#do-embodied-agents-dream-of-pixelated-sheep-embodied-decision-making-using-language-guided-world-modelling">Do Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling</a></li></ul>
+<li>
+<a aria-label="Relevant but in Robotics field, but they are using offline data to train low-level control policy and they are effective" href="#relevant-but-in-robotics-field-but-they-are-using-offline-data-to-train-low-level-control-policy-and-they-are-effective">Relevant but in Robotics field, but they are using offline data to train low-level control policy and they are effective</a>
 </li>
 </ul>
 </div>
@@ -276,6 +280,7 @@
 <blockquote>
 <p>To our knowledge, no prior work demonstrates that LLMs can be used as vision-language policies in online RL problems to improve generalization.</p>
 </blockquote>
+<p>That adapter layer is also used in <code>Do Embodied Agents Dream of Pixelated Sheep: Embodied Decision Making using Language Guided World Modelling. ICML 2023: 26311-26325</code></p>
 <p>This is the statement made by the authors.</p>
 <p>The reviewer call it as <em>adapting large language models to embodied visual tasks - particularly in online reinforcement learning setting</em></p>
 <p><a href="https://openreview.net/forum?id=u6imHU4Ebu">https://openreview.net/forum?id=u6imHU4Ebu</a></p>
@@ -300,6 +305,23 @@
 <h3 id="natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation">Natural Language-conditioned Reinforcement Learning with Inside-out Task Language Development and Translation<a aria-hidden="true" class="anchor" hidden="" href="#natural-language-conditioned-reinforcement-learning-with-inside-out-task-language-development-and-translation">#</a></h3>
 <p><a href="https://arxiv.org/pdf/2302.09368">https://arxiv.org/pdf/2302.09368</a></p>
 <p><img alt="image-20250301222247134" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250301222247134.png"/></p>
+<h3 id="do-embodied-agents-dream-of-pixelated-sheep-embodied-decision-making-using-language-guided-world-modelling">Do Embodied Agents Dream of Pixelated Sheep?: Embodied Decision Making using Language Guided World Modelling<a aria-hidden="true" class="anchor" hidden="" href="#do-embodied-agents-dream-of-pixelated-sheep-embodied-decision-making-using-language-guided-world-modelling">#</a></h3>
+<p><a href="https://arxiv.org/abs/2301.12050">https://arxiv.org/abs/2301.12050</a></p>
+<p>This also belongs to Plan first and then train policy but this time it is <strong>modular policy.</strong></p>
+<p>ICML 2023</p>
+<p><img alt="image-20250310230052239" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250310230052239.png"/></p>
+<p>A nice thing for their policy model is that they use an adapter to the original decision transformer policy model to train their own fine-tuned policy.</p>
+<p><img alt="image-20250310230411651" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250310230411651.png"/></p>
+<h2 id="relevant-but-in-robotics-field-but-they-are-using-offline-data-to-train-low-level-control-policy-and-they-are-effective">Relevant but in Robotics field, but they are using offline data to train low-level control policy and they are effective<a aria-hidden="true" class="anchor" hidden="" href="#relevant-but-in-robotics-field-but-they-are-using-offline-data-to-train-low-level-control-policy-and-they-are-effective">#</a></h2>
+<p>PaLM-E <a href="https://arxiv.org/abs/2303.03378">https://arxiv.org/abs/2303.03378</a> and SayCan <a href="https://say-can.github.io/assets/palm_saycan.pdf">https://say-can.github.io/assets/palm_saycan.pdf</a></p>
+<p>SayCan, CodeAsPolicy and ProgPrompt are zero-shot applications of LLMs that require describing the environment in text</p>
+<p>PaLM-E are offline:  they are given 130,000 human teleoperated demonstrations collected over almost 2 years as training data [2,3]</p>
+<p>Both try to separate into high-level plan action and then low-level control action</p>
+<p><strong>Palm-E</strong></p>
+<p><img alt="image-20250310232641615" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250310232641615.png"/></p>
+<p><strong>Saycan</strong></p>
+<p><img alt="image-20250310232719880" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250310232719880.png"/></p>
+<p><img alt="image-20250310232854916" loading="lazy" src="/posts/awesome_llm_for_embodied_rl_and_decision_making_by_2025/image-assets/image-20250310232854916.png"/></p>
 </div>
 <footer class="post-footer">
 <ul class="post-tags">
