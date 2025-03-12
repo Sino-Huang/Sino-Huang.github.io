@@ -11,8 +11,23 @@
     </image>
     <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Mar 2025 09:44:58 +1100</lastBuildDate>
+    <lastBuildDate>Thu, 13 Mar 2025 10:19:40 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/categories/paper-review-collection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Survey of LLMs for Planning 2025</title>
+      <link>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</link>
+      <pubDate>Thu, 13 Mar 2025 10:19:40 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</guid>
+      <description>&lt;h3 id=&#34;plangenllms-a-modern-survey-of-llm-planning-capabilities&#34;&gt;PlanGenLLMs: A Modern Survey of LLM Planning Capabilities&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2502.11221&#34;&gt;https://arxiv.org/pdf/2502.11221&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250313102103580&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102103580.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;understanding-the-planning-of-llm-agents-a-survey&#34;&gt;Understanding the planning of LLM agents: A survey&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.02716&#34;&gt;https://arxiv.org/pdf/2402.02716&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250313102128028&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102128028.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;llms-as-planning-modelers-a-survey-for-leveraging-large-language-models-to-construct-automated-planning-models&#34;&gt;LLMs as Planning Modelers: A Survey for Leveraging large Language Models to Construct Automated Planning Models&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://openreview.net/pdf?id=ebJIJkQjcE&#34;&gt;https://openreview.net/pdf?id=ebJIJkQjcE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250313102211808&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102211808.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>HTN planning @ Pascal Bercher ANU</title>
       <link>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</link>

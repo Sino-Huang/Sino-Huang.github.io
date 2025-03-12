@@ -11,8 +11,23 @@
 </image>
 <generator>Hugo -- 0.140.2</generator>
 <language>en</language>
-<lastBuildDate>Wed, 05 Mar 2025 09:44:58 +1100</lastBuildDate>
+<lastBuildDate>Thu, 13 Mar 2025 10:19:40 +1100</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Survey of LLMs for Planning 2025</title>
+<link>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</link>
+<pubDate>Thu, 13 Mar 2025 10:19:40 +1100</pubDate>
+<guid>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</guid>
+<description>&lt;h3 id="plangenllms-a-modern-survey-of-llm-planning-capabilities"&gt;PlanGenLLMs: A Modern Survey of LLM Planning Capabilities&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2502.11221"&gt;https://arxiv.org/pdf/2502.11221&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image-20250313102103580" loading="lazy" src="https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102103580.png"&gt;&lt;/p&gt;
+&lt;h3 id="understanding-the-planning-of-llm-agents-a-survey"&gt;Understanding the planning of LLM agents: A survey&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/pdf/2402.02716"&gt;https://arxiv.org/pdf/2402.02716&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image-20250313102128028" loading="lazy" src="https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102128028.png"&gt;&lt;/p&gt;
+&lt;h3 id="llms-as-planning-modelers-a-survey-for-leveraging-large-language-models-to-construct-automated-planning-models"&gt;LLMs as Planning Modelers: A Survey for Leveraging large Language Models to Construct Automated Planning Models&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://openreview.net/pdf?id=ebJIJkQjcE"&gt;https://openreview.net/pdf?id=ebJIJkQjcE&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image-20250313102211808" loading="lazy" src="https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/image-assets/image-20250313102211808.png"&gt;&lt;/p&gt;</description>
+</item>
 <item>
 <title>HTN planning @ Pascal Bercher ANU</title>
 <link>https://sino-huang.github.io/posts/htn_planning_by_pascal_2025/</link>

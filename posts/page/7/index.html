@@ -192,6 +192,21 @@
 </h1>
 </header>
 <article class="post-entry">
+<figure class="entry-cover"><img alt="Relatedness and naturalness" loading="lazy" src="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/image-assets/cover.png"/>
+</figure>
+<header class="entry-header">
+<h2 class="entry-hint-parent">Jie_huang Can Language Models Be Specific How 2022
+    </h2>
+</header>
+<div class="entry-content">
+<p>[TOC]
+Title: Can Language Models Be Specific? How? Author: Jie Huang et. al. Publish Year: 11 Oct 2022 Review Date: Tue, Nov 8, 2022 Summary of paper Motivation they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts. for instance given “J.K. Rowling was born in [MASK]”, we want to test whether a more specific answer will be better filled by PLMs. e.g., Yate instead of England it is known that if the prediction is more specific, we can retrieve more fine-grained information from language models, and further acquire more information. viewer’s opinion: we are not saying that summarisation is easy or having less useful information, there are cases that abstract info is more useful Contribution although there are works on measuring how much knowledge is stored in PLMs or improving the correctness of the predictions, non attempted to measure or improve the specificity of prediction made by PLMs. Understanding how specific the language of PLMs is can help us better understand the behaviour of language models and facilitate downstream applications such as question answering etc. setup a dataset benchmark for specificity, The quality of the benchmark is high, where the judgment on which answer is more specific is ∼ 97% consistent with humans. Discovery in general, PLMs prefer less specific answers without subjects given, and they only have a weak ability to differentiate coarse-grained/fine-grained objects by measuring their (cosine) similarities to subjects. the results indicate that specificity was neglected by existing research on language models Improving specificity of the prediction few-shot prompting
+...</p>
+</div>
+<footer class="entry-footer"><span title="2022-11-08 20:41:04 +1100 AEDT">November 8, 2022</span> · 3 min · 429 words · Sukai Huang</footer>
+<a aria-label="post link to Jie_huang Can Language Models Be Specific How 2022" class="entry-link" href="https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/"></a>
+</article>
+<article class="post-entry">
 <figure class="entry-cover"><img alt="" loading="lazy" src="https://sino-huang.github.io/posts/yizhou_zhao-semantic-aligned-fusion-transformer-for-one-shot-object-detection-2022/image-assets/cover.png"/>
 </figure>
 <header class="entry-header">
@@ -556,21 +571,6 @@ so compared to traditional memory table, GEM learns a virtual memory table memor
 </div>
 <footer class="entry-footer"><span title="2022-04-07 12:12:20 +1000 AEST">April 7, 2022</span> · 2 min · Sukai Huang</footer>
 <a aria-label="post link to Hao_hu Generalisable Episodic Memory for Drl 2021" class="entry-link" href="https://sino-huang.github.io/posts/hao_hu-generalisable-episodic-memory-for-drl-2021/"></a>
-</article>
-<article class="post-entry">
-<header class="entry-header">
-<h2 class="entry-hint-parent">Ilya_kostrikov Offline Rl With Implicit Q Learning 2021
-    </h2>
-</header>
-<div class="entry-content">
-<p>[TOC]
-Title: Offline Reinforcement Learning with Implicit Q-learning Author:Ilya Kostrikov et. al. Publish Year: 2021 Review Date: Mar 2022 Summary of paper Motivation conflict in offline reinforcement learning
-offline reinforcement learning requires reconciling two conflicting aims:
-learning a policy that improves over the behaviour policy (old policy) that collected the dataset while at the same time minimizing the deviation from the behaviour policy so as to avoid errors due to distributional shift (e.g., obtain out of distribution actions) -&gt; the challenge is how to constrain those unseen actions to be in-distribution. (meaning there is no explicit Q-function for actions, and thus the issue of unseen action is gone) all the previous solutions like 1. limit how far the new policy deviates from the behaviour policy and 2. assign low value to out of distribution actions impose a trade-off between how much the policy improve and how vulnerable it is to misestimation due to distributional shift.
-...</p>
-</div>
-<footer class="entry-footer"><span title="2022-03-22 19:01:49 +1100 AEDT">March 22, 2022</span> · 4 min · Sukai Huang</footer>
-<a aria-label="post link to Ilya_kostrikov Offline Rl With Implicit Q Learning 2021" class="entry-link" href="https://sino-huang.github.io/posts/ilya_kostrikov-offline-rl-with-implicit-q-learning-2021/"></a>
 </article>
 <footer class="page-footer">
 <ul class="post-tags">
