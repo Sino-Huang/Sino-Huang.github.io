@@ -9,10 +9,39 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Mar 2025 10:19:40 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 23:03:05 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/categories/paper-review-collection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awesome_life_long_rl_2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 23:03:05 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</guid>
+      <description>&lt;h3 id=&#34;fine-tuning-reinforcement-learning-models-is-secretly-a-forgetting-mitigation-problem&#34;&gt;Fine-tuning Reinforcement Learning Models is Secretly a Forgetting Mitigation Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.02868v3&#34;&gt;https://arxiv.org/pdf/2402.02868v3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316230434709&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316230434709.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231300369&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lifelong-reinforcement-learning-with-modulating-masks&#34;&gt;Lifelong Reinforcement Learning with Modulating Masks&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2212.11110&#34;&gt;https://arxiv.org/pdf/2212.11110&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This has some connection with LLM + adapter Policy model.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231607110&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316231607110.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Awesome LLMs with Different Abstraction of Language Data 2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 22:17:16 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;there is a lack of this research on how different level of abstraction / granularity of language instructions could affect LLMs performance in instruction following or other works.&lt;/p&gt;
+&lt;h3 id=&#34;absinstruct-eliciting-abstraction-ability-from-llms-through-explanation-tuning-with-plausibility-estimation&#34;&gt;ABSINSTRUCT: Eliciting Abstraction Ability from LLMs through Explanation Tuning with Plausibility Estimation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.10646&#34;&gt;https://arxiv.org/pdf/2402.10646&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316221951317&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316221951317.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;inference-helps-plms-conceptual-understanding-improving-the-abstract-inference-ability-with-hierarchical-conceptual-entailment-graphs&#34;&gt;Inference Helps PLMs’ Conceptual Understanding: Improving the Abstract Inference Ability with Hierarchical Conceptual Entailment Graphs&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.1233.pdf&#34;&gt;https://aclanthology.org/2024.emnlp-main.1233.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316222237547&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316222237547.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That is the end!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Survey of LLMs for Planning 2025</title>
       <link>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</link>

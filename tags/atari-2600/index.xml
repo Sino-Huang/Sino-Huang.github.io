@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 04 Mar 2022 12:12:27 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/atari-2600/index.xml" rel="self" type="application/rss+xml" />
@@ -61,8 +61,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The author proposed a method that uses &lt;strong&gt;&lt;u&gt;human expert&amp;rsquo;s annotation&lt;/u&gt;&lt;/strong&gt; rather than extrinsic reward from the environment to guide the reinforcement learning.&lt;/p&gt;</description>
     </item>
     <item>
@@ -79,8 +78,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The author hypothesised that there are two main issues that prevent DRL agents from achieving high score in exploration-hard game (e.g., Montezuma&amp;rsquo;s Revenge)&lt;/p&gt;</description>
     </item>
     <item>
@@ -97,8 +95,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Agent57 is the SOTA Atari RL agent in 2020 that can play difficult Atari games like &amp;ldquo;Montezuma&amp;rsquo;s Revenge, &amp;ldquo;Pitfall&amp;rdquo;, &amp;ldquo;Solaris&amp;rdquo; and &amp;ldquo;Skiing&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
@@ -115,8 +112,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This paper proposed a new width-based planning and learning agent that can play Atari-2600 games (though it cannot play Montezuma&amp;rsquo;s Revenge). The author claimed that width-based planning &lt;em&gt;exploration&lt;/em&gt; plus (greedy) optimal MDP policy exploitation is able to achieve better performance than Monte-Carlo Tree Search.&lt;/p&gt;</description>
     </item>
   </channel>

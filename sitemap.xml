@@ -2,8 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2025-03-13T10:19:40+11:00</lastmod>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/forgetting-of-pre-trained-capabilities/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/lifelong-rl/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/multi-task-rl/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/categories/paper-review-collection/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/</loc>
+    <lastmod>2025-03-16T23:03:05+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</loc>
+    <lastmod>2025-03-16T22:17:16+11:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/tags/level-of-abstraction-of-language-instruction/</loc>
+    <lastmod>2025-03-16T22:17:16+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/llms-as-modelers/</loc>
     <lastmod>2025-03-13T10:19:40+11:00</lastmod>
@@ -14,19 +44,7 @@
     <loc>https://sino-huang.github.io/tags/llms-for-planning/</loc>
     <lastmod>2025-03-13T10:19:40+11:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/categories/paper-review-collection/</loc>
-    <lastmod>2025-03-13T10:19:40+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/posts/</loc>
-    <lastmod>2025-03-13T10:19:40+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2025-03-13T10:19:40+11:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</loc>
-    <lastmod>2025-03-13T10:19:40+11:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/tags/</loc>
     <lastmod>2025-03-13T10:19:40+11:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/htn-planning/</loc>

@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Apr 2022 11:01:14 +1000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/dialogue-system/index.xml" rel="self" type="application/rss+xml" />
@@ -45,8 +45,7 @@
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The contribution of this paper is &lt;strong&gt;the mind modelling dataset&lt;/strong&gt; (Using Minecraft environment).&lt;/p&gt;</description>
     </item>
   </channel>

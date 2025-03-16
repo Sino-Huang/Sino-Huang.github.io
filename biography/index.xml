@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/biography/index.xml" rel="self" type="application/rss+xml" />
@@ -30,8 +30,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;Imagine you want to instruct an AI system in Minecraft to build a house. Instead of programming a detailed set of construction rules or crafting reward functions that require expert insight, you simply tell the AI:&lt;/p&gt;
 &lt;p&gt;  &amp;ldquo;Build a two-story house with a garden, using bricks for the walls and wood for the roof.&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;A natural language (NL)-integrated sequential decision making (SDM) system shall leverage its understanding of natural language to break down this instruction into a series of actionable steps, and progressing to the desired goal you want!&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;A natural language (NL)-integrated sequential decision making (SDM) system shall leverage its understanding of natural language to break down this instruction into a series of actionable steps, and progressing to the desired goal you want!&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h3 id=&#34;problem-tldr&#34;&gt;&lt;strong&gt;Problem (TL;DR)&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The current design of these natural language-integrated AI systems has significant room for improvement. For example, the algorithms often lack robustness and efficiency, which undermines the reliability of sequential decision making.&lt;/p&gt;
 &lt;details&gt;

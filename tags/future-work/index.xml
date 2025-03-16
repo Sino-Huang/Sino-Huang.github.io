@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jan 2024 17:29:29 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/future-work/index.xml" rel="self" type="application/rss+xml" />
@@ -117,7 +117,7 @@
 &lt;li&gt;they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts.&lt;/li&gt;
 &lt;li&gt;for instance given &amp;ldquo;J.K. Rowling was born in [MASK]&amp;rdquo;, we want to test whether a more specific answer will be better filled by PLMs. e.g., Yate instead of England&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;image-20221108211541780image-assetsimage-20221108211541780png&#34;&gt;&lt;img alt=&#34;image-20221108211541780&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/image-assets/image-20221108211541780.png&#34;&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;image-20221108211541780&#34;&gt;&lt;img alt=&#34;image-20221108211541780&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/image-assets/image-20221108211541780.png&#34;&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;it is known that if the prediction is more specific, we can retrieve more fine-grained information from language models, and further acquire more information.
 &lt;ul&gt;

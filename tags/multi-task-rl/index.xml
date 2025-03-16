@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Multi-Task Rl on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/multi-task-rl/</link>
+    <description>Recent content in Multi-Task Rl on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Mar 2025 23:03:05 +1100</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/tags/multi-task-rl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awesome_life_long_rl_2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 23:03:05 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</guid>
+      <description>&lt;h3 id=&#34;fine-tuning-reinforcement-learning-models-is-secretly-a-forgetting-mitigation-problem&#34;&gt;Fine-tuning Reinforcement Learning Models is Secretly a Forgetting Mitigation Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.02868v3&#34;&gt;https://arxiv.org/pdf/2402.02868v3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316230434709&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316230434709.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231300369&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lifelong-reinforcement-learning-with-modulating-masks&#34;&gt;Lifelong Reinforcement Learning with Modulating Masks&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2212.11110&#34;&gt;https://arxiv.org/pdf/2212.11110&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This has some connection with LLM + adapter Policy model.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231607110&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316231607110.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

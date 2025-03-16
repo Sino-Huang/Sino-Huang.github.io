@@ -9,10 +9,39 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Mar 2025 10:19:40 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 16 Mar 2025 23:03:05 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awesome_life_long_rl_2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 23:03:05 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</guid>
+      <description>&lt;h3 id=&#34;fine-tuning-reinforcement-learning-models-is-secretly-a-forgetting-mitigation-problem&#34;&gt;Fine-tuning Reinforcement Learning Models is Secretly a Forgetting Mitigation Problem&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.02868v3&#34;&gt;https://arxiv.org/pdf/2402.02868v3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316230434709&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316230434709.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231300369&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/cover.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lifelong-reinforcement-learning-with-modulating-masks&#34;&gt;Lifelong Reinforcement Learning with Modulating Masks&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2212.11110&#34;&gt;https://arxiv.org/pdf/2212.11110&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This has some connection with LLM + adapter Policy model.&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316231607110&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_life_long_rl_2025/image-assets/image-20250316231607110.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Awesome LLMs with Different Abstraction of Language Data 2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 22:17:16 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;there is a lack of this research on how different level of abstraction / granularity of language instructions could affect LLMs performance in instruction following or other works.&lt;/p&gt;
+&lt;h3 id=&#34;absinstruct-eliciting-abstraction-ability-from-llms-through-explanation-tuning-with-plausibility-estimation&#34;&gt;ABSINSTRUCT: Eliciting Abstraction Ability from LLMs through Explanation Tuning with Plausibility Estimation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.10646&#34;&gt;https://arxiv.org/pdf/2402.10646&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316221951317&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316221951317.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;inference-helps-plms-conceptual-understanding-improving-the-abstract-inference-ability-with-hierarchical-conceptual-entailment-graphs&#34;&gt;Inference Helps PLMs’ Conceptual Understanding: Improving the Abstract Inference Ability with Hierarchical Conceptual Entailment Graphs&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.1233.pdf&#34;&gt;https://aclanthology.org/2024.emnlp-main.1233.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316222237547&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316222237547.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That is the end!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Survey of LLMs for Planning 2025</title>
       <link>https://sino-huang.github.io/posts/survey_of_llm_for_planning_2025/</link>
@@ -4260,7 +4289,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;li&gt;they propose to measure how specific the language of pre-trained language models (PLM) is, To achieve this, they introduced a novel approach to build a benchmark for specificity testing by forming masked token prediction tasks with prompts.&lt;/li&gt;
 &lt;li&gt;for instance given &amp;ldquo;J.K. Rowling was born in [MASK]&amp;rdquo;, we want to test whether a more specific answer will be better filled by PLMs. e.g., Yate instead of England&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;image-20221108211541780image-assetsimage-20221108211541780png&#34;&gt;&lt;img alt=&#34;image-20221108211541780&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/image-assets/image-20221108211541780.png&#34;&gt;&lt;/h4&gt;
+&lt;h4 id=&#34;image-20221108211541780&#34;&gt;&lt;img alt=&#34;image-20221108211541780&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/jie_huang-can-language-models-be-specific-how-2022/image-assets/image-20221108211541780.png&#34;&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;it is known that if the prediction is more specific, we can retrieve more fine-grained information from language models, and further acquire more information.
 &lt;ul&gt;
@@ -4330,7 +4359,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;heading&#34;&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20221025162638405&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/ting_i_hsieh-one-shot-object-detection-with-co-attention-and-co-excitation-2019/image-assets/image-20221025162638405.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
@@ -5507,8 +5536,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Most current published results on deep RL benchmarks uses &lt;em&gt;point estimate&lt;/em&gt; of aggregate performance such as mean and median score across the task.&lt;/p&gt;</description>
     </item>
     <item>
@@ -5525,8 +5553,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The author proposed a method that uses &lt;strong&gt;&lt;u&gt;human expert&amp;rsquo;s annotation&lt;/u&gt;&lt;/strong&gt; rather than extrinsic reward from the environment to guide the reinforcement learning.&lt;/p&gt;</description>
     </item>
     <item>
@@ -5543,8 +5570,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The author hypothesised that there are two main issues that prevent DRL agents from achieving high score in exploration-hard game (e.g., Montezuma&amp;rsquo;s Revenge)&lt;/p&gt;</description>
     </item>
     <item>
@@ -5553,7 +5579,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
       <pubDate>Thu, 18 Nov 2021 12:08:53 +1100</pubDate>
       <guid>https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/</guid>
       <description>&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&#34;论文简析sac-soft-actor-critic-part-1180101290httpswwwbilibilicomvideobv1yk4y1t7b6fromsearchseid13778340264869221460&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460&#34;&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;heading&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460&#34;&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221032880&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221032880.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221054067&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221054067.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221439305&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221439305.png&#34;&gt;&lt;/p&gt;
@@ -5600,8 +5626,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;Agent57 is the SOTA Atari RL agent in 2020 that can play difficult Atari games like &amp;ldquo;Montezuma&amp;rsquo;s Revenge, &amp;ldquo;Pitfall&amp;rdquo;, &amp;ldquo;Solaris&amp;rdquo; and &amp;ldquo;Skiing&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     <item>
@@ -5618,8 +5643,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;This paper proposed a new width-based planning and learning agent that can play Atari-2600 games (though it cannot play Montezuma&amp;rsquo;s Revenge). The author claimed that width-based planning &lt;em&gt;exploration&lt;/em&gt; plus (greedy) optimal MDP policy exploitation is able to achieve better performance than Monte-Carlo Tree Search.&lt;/p&gt;</description>
     </item>
     <item>
@@ -5636,8 +5660,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;summary-of-paper&#34;&gt;Summary of paper&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;This needs to be only 1-3 sentences, but it demonstrates that you understand the paper and, moreover, can summarize it more concisely than the author in his abstract.&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;The contribution of this paper is &lt;strong&gt;the mind modelling dataset&lt;/strong&gt; (Using Minecraft environment).&lt;/p&gt;</description>
     </item>
   </channel>

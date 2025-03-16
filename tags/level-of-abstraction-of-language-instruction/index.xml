@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Level of Abstraction of Language Instruction on Sukai Huang</title>
+    <link>https://sino-huang.github.io/tags/level-of-abstraction-of-language-instruction/</link>
+    <description>Recent content in Level of Abstraction of Language Instruction on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Mar 2025 22:17:16 +1100</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/tags/level-of-abstraction-of-language-instruction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awesome LLMs with Different Abstraction of Language Data 2025</title>
+      <link>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</link>
+      <pubDate>Sun, 16 Mar 2025 22:17:16 +1100</pubDate>
+      <guid>https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/</guid>
+      <description>&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;there is a lack of this research on how different level of abstraction / granularity of language instructions could affect LLMs performance in instruction following or other works.&lt;/p&gt;
+&lt;h3 id=&#34;absinstruct-eliciting-abstraction-ability-from-llms-through-explanation-tuning-with-plausibility-estimation&#34;&gt;ABSINSTRUCT: Eliciting Abstraction Ability from LLMs through Explanation Tuning with Plausibility Estimation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/pdf/2402.10646&#34;&gt;https://arxiv.org/pdf/2402.10646&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316221951317&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316221951317.png&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;inference-helps-plms-conceptual-understanding-improving-the-abstract-inference-ability-with-hierarchical-conceptual-entailment-graphs&#34;&gt;Inference Helps PLMs’ Conceptual Understanding: Improving the Abstract Inference Ability with Hierarchical Conceptual Entailment Graphs&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.1233.pdf&#34;&gt;https://aclanthology.org/2024.emnlp-main.1233.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;image-20250316222237547&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/awesome_llm_and_diff_abst_of_language_info_2025/image-assets/image-20250316222237547.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That is the end!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
