@@ -11,8 +11,40 @@
 </image>
 <generator>Hugo -- 0.145.0</generator>
 <language>en</language>
-<lastBuildDate>Sun, 16 Mar 2025 23:03:05 +1100</lastBuildDate>
+<lastBuildDate>Wed, 02 Apr 2025 17:17:26 +1100</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models</title>
+<link>https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/</link>
+<pubDate>Wed, 02 Apr 2025 17:17:26 +1100</pubDate>
+<guid>https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/</guid>
+<description>&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Title: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models&lt;/li&gt;
+&lt;li&gt;Author: Ouxiang Li, Xinting Hu et. al.&lt;/li&gt;
+&lt;li&gt;Publish Year:  Mar 2025&lt;/li&gt;
+&lt;li&gt;Review Date: Wed, Apr 2, 2025&lt;/li&gt;
+&lt;li&gt;url: &lt;a href="https://arxiv.org/abs/2503.07392"&gt;https://arxiv.org/abs/2503.07392&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bibtex" data-lang="bibtex"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c"&gt;# input bibtex here&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Prerequisite:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Training Networks in Null Space of Feature Covariance for Continual Learning&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/abs/2103.07113"&gt;https://arxiv.org/abs/2103.07113&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id="prerequisite-knowledge"&gt;Prerequisite knowledge&lt;/h1&gt;
+&lt;h2 id="projection-on-to-a-subspace-of-a-vector"&gt;projection on to a subspace of a vector&lt;/h2&gt;
+&lt;p&gt;Suppose $ U = {\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \mathbf{U} $ whose columns are these vectors:
+$$
+\mathbf{U} = [\mathbf{u}_1 , \mathbf{u}_2 , \cdots , \mathbf{u}_k]
+$$
+Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $).&lt;/p&gt;</description>
+</item>
 <item>
 <title>Awesome_life_long_rl_2025</title>
 <link>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</link>

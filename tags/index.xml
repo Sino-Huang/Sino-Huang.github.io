@@ -11,8 +11,29 @@
     </image>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Mar 2025 23:03:05 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 02 Apr 2025 17:17:26 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concept Erase</title>
+      <link>https://sino-huang.github.io/tags/concept-erase/</link>
+      <pubDate>Wed, 02 Apr 2025 17:17:26 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/concept-erase/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Null Space</title>
+      <link>https://sino-huang.github.io/tags/null-space/</link>
+      <pubDate>Wed, 02 Apr 2025 17:17:26 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/null-space/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Svd</title>
+      <link>https://sino-huang.github.io/tags/svd/</link>
+      <pubDate>Wed, 02 Apr 2025 17:17:26 +1100</pubDate>
+      <guid>https://sino-huang.github.io/tags/svd/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Forgetting of Pre-Trained Capabilities</title>
       <link>https://sino-huang.github.io/tags/forgetting-of-pre-trained-capabilities/</link>

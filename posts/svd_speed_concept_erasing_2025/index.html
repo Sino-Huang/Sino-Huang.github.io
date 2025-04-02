@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models | Sukai Huang</title>
+<meta content="svd, concept erase, null space" name="keywords"/>
+<meta content="[TOC]
+
+Title: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models
+Author: Ouxiang Li, Xinting Hu et. al.
+Publish Year:  Mar 2025
+Review Date: Wed, Apr 2, 2025
+url: https://arxiv.org/abs/2503.07392
+
+
+
+1
+
+
+# input bibtex here
+
+
+Prerequisite:
+Training Networks in Null Space of Feature Covariance for Continual Learning
+https://arxiv.org/abs/2103.07113
+Prerequisite knowledge
+projection on to a subspace of a vector
+Suppose $ U = {\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \mathbf{U} $ whose columns are these vectors:
+$$
+\mathbf{U} = [\mathbf{u}_1 , \mathbf{u}_2 , \cdots , \mathbf{u}_k]
+$$
+Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $)." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.216db197d28df88a47bfb89498be748381c9d960a20db4b7d59e51e8b91f60b6.css" integrity="sha256-IW2xl9KN+IpHv7iUmL50g4HJ2WCiDbS31Z5R6LkfYLY=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/" hreflang="en" rel="alternate"/>
+<noscript>
+<style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+<style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script><meta content="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models" property="og:title"/>
+<meta content="[TOC]
+Title: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models Author: Ouxiang Li, Xinting Hu et. al. Publish Year: Mar 2025 Review Date: Wed, Apr 2, 2025 url: https://arxiv.org/abs/2503.07392 1 # input bibtex here Prerequisite:
+Training Networks in Null Space of Feature Covariance for Continual Learning
+https://arxiv.org/abs/2103.07113
+Prerequisite knowledge projection on to a subspace of a vector Suppose $ U = {\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \mathbf{U} $ whose columns are these vectors: $$ \mathbf{U} = [\mathbf{u}_1 , \mathbf{u}_2 , \cdots , \mathbf{u}_k] $$ Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $)." property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="posts" property="article:section"/>
+<meta content="2025-04-02T17:17:26+11:00" property="article:published_time"/>
+<meta content="2025-04-02T17:17:26+11:00" property="article:modified_time"/>
+<meta content="Svd" property="article:tag"/>
+<meta content="Concept Erase" property="article:tag"/>
+<meta content="Null Space" property="article:tag"/>
+<meta content="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/image-assets/cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/image-assets/cover.png" name="twitter:image"/>
+<meta content="SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models" name="twitter:title"/>
+<meta content="[TOC]
+
+Title: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models
+Author: Ouxiang Li, Xinting Hu et. al.
+Publish Year:  Mar 2025
+Review Date: Wed, Apr 2, 2025
+url: https://arxiv.org/abs/2503.07392
+
+
+
+1
+
+
+# input bibtex here
+
+
+Prerequisite:
+Training Networks in Null Space of Feature Covariance for Continual Learning
+https://arxiv.org/abs/2103.07113
+Prerequisite knowledge
+projection on to a subspace of a vector
+Suppose $ U = {\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \mathbf{U} $ whose columns are these vectors:
+$$
+\mathbf{U} = [\mathbf{u}_1 , \mathbf{u}_2 , \cdots , \mathbf{u}_k]
+$$
+Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $)." name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://sino-huang.github.io/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models",
+      "item": "https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models",
+  "name": "SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models",
+  "description": "[TOC]\nTitle: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models Author: Ouxiang Li, Xinting Hu et. al. Publish Year: Mar 2025 Review Date: Wed, Apr 2, 2025 url: https://arxiv.org/abs/2503.07392 1 # input bibtex here Prerequisite:\nTraining Networks in Null Space of Feature Covariance for Continual Learning\nhttps://arxiv.org/abs/2103.07113\nPrerequisite knowledge projection on to a subspace of a vector Suppose $ U = {\\mathbf{u}_1, \\mathbf{u}_2, \\ldots, \\mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \\mathbf{U} $ whose columns are these vectors: $$ \\mathbf{U} = [\\mathbf{u}_1 , \\mathbf{u}_2 , \\cdots , \\mathbf{u}_k] $$ Here, $ \\mathbf{U} $ is an $ n \\times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \\mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $).\n",
+  "keywords": [
+    "svd", "concept erase", "null space"
+  ],
+  "articleBody": "[TOC]\nTitle: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models Author: Ouxiang Li, Xinting Hu et. al. Publish Year: Mar 2025 Review Date: Wed, Apr 2, 2025 url: https://arxiv.org/abs/2503.07392 1 # input bibtex here Prerequisite:\nTraining Networks in Null Space of Feature Covariance for Continual Learning\nhttps://arxiv.org/abs/2103.07113\nPrerequisite knowledge projection on to a subspace of a vector Suppose $ U = {\\mathbf{u}_1, \\mathbf{u}_2, \\ldots, \\mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \\mathbf{U} $ whose columns are these vectors: $$ \\mathbf{U} = [\\mathbf{u}_1 , \\mathbf{u}_2 , \\cdots , \\mathbf{u}_k] $$ Here, $ \\mathbf{U} $ is an $ n \\times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \\mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $).\nThe projection of a vector $ \\mathbf{v} $ onto $ S $ can then be written as: $$ \\text{proj}_S \\mathbf{v} = \\mathbf{U} (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} $$ This is the formula for the orthogonal projection onto the column space of $ \\mathbf{U} $. Let’s break it down:\n$ \\mathbf{U}^T $ is the transpose of $ \\mathbf{U} $, a $ k \\times n $ matrix. $ \\mathbf{U}^T \\mathbf{v} $ is a $ k \\times 1 $ vector, computing the dot products $ \\mathbf{u}_i \\cdot \\mathbf{v} $ for each $ i $. $ \\mathbf{U}^T \\mathbf{U} $ is a $ k \\times k $ matrix, with entries $ (\\mathbf{U}^T \\mathbf{U})_{ij} = \\mathbf{u}_i \\cdot \\mathbf{u}_j $. Since the $ \\mathbf{u}_i $’s are orthogonal, this is a diagonal matrix with $ \\mathbf{u}_i \\cdot \\mathbf{u}_i = |\\mathbf{u}_i|^2 $ on the diagonal (and zeros off-diagonal). $ (\\mathbf{U}^T \\mathbf{U})^{-1} $ is the inverse of that diagonal matrix, so it’s also diagonal with entries $ 1 / |\\mathbf{u}_i|^2 $. $ \\mathbf{U} (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} $ combines these to give the projection as a single matrix-vector product. Why It’s Equivalent The matrix form recovers the sum we had before. Since $ \\mathbf{U}^T \\mathbf{U} $ is diagonal, $ (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} $ computes the coefficients $ \\frac{\\mathbf{v} \\cdot \\mathbf{u}_i}{\\mathbf{u}_i \\cdot \\mathbf{u}_i} $ for each $ \\mathbf{u}i $, and multiplying by $ \\mathbf{U} $ builds the linear combination: $$ \\mathbf{U} (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} = \\sum{i=1}^k \\frac{\\mathbf{v} \\cdot \\mathbf{u}_i}{\\mathbf{u}_i \\cdot \\mathbf{u}_i} \\mathbf{u}_i $$ The orthogonality ensures $ \\mathbf{U}^T \\mathbf{U} $ is easy to invert (just a diagonal matrix), making this compact and computationally friendly.\nEven Simpler (if Orthonormal) If $ U $ were orthonormal (i.e., $ \\mathbf{u}_i \\cdot \\mathbf{u}_i = 1 $ and $ \\mathbf{u}_i \\cdot \\mathbf{u}_j = 0 $ for $ i \\neq j $), then $ \\mathbf{U}^T \\mathbf{U} = \\mathbf{I} $ (the identity matrix), and the formula simplifies further to: $$ \\text{proj}_S \\mathbf{v} = \\mathbf{U} \\mathbf{U}^T \\mathbf{v} $$ But since you asked about orthogonal vectors (not necessarily orthonormal), the full form with $ (\\mathbf{U}^T \\mathbf{U})^{-1} $ is the most compact general expression.\nExample Revisited Take $ \\mathbf{v} = [1, 2, 3] $, $ \\mathbf{u}_1 = [1, 1, 0] $, $ \\mathbf{u}_2 = [1, -1, 1] $: $$ \\mathbf{U} = \\begin{bmatrix} 1 \u0026 1 \\ 1 \u0026 -1 \\ 0 \u0026 1 \\end{bmatrix} $$\n$ \\mathbf{U}^T \\mathbf{U} = \\begin{bmatrix} 1 \u0026 1 \u0026 0 \\ 1 \u0026 -1 \u0026 1 \\end{bmatrix} \\begin{bmatrix} 1 \u0026 1 \\ 1 \u0026 -1 \\ 0 \u0026 1 \\end{bmatrix} = \\begin{bmatrix} 2 \u0026 0 \\ 0 \u0026 3 \\end{bmatrix} $ (since $ \\mathbf{u}_1 \\cdot \\mathbf{u}_1 = 2 $, $ \\mathbf{u}_2 \\cdot \\mathbf{u}_2 = 3 $, and $ \\mathbf{u}_1 \\cdot \\mathbf{u}_2 = 0 $). $ (\\mathbf{U}^T \\mathbf{U})^{-1} = \\begin{bmatrix} \\frac{1}{2} \u0026 0 \\ 0 \u0026 \\frac{1}{3} \\end{bmatrix} $ $ \\mathbf{U}^T \\mathbf{v} = \\begin{bmatrix} 3 \\ 2 \\end{bmatrix} $ (from dot products). $ (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} = \\begin{bmatrix} \\frac{1}{2} \u0026 0 \\ 0 \u0026 \\frac{1}{3} \\end{bmatrix} \\begin{bmatrix} 3 \\ 2 \\end{bmatrix} = \\begin{bmatrix} \\frac{3}{2} \\ \\frac{2}{3} \\end{bmatrix} $ $ \\mathbf{U} (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} = \\begin{bmatrix} 1 \u0026 1 \\ 1 \u0026 -1 \\ 0 \u0026 1 \\end{bmatrix} \\begin{bmatrix} \\frac{3}{2} \\ \\frac{2}{3} \\end{bmatrix} = [\\frac{13}{6}, \\frac{7}{6}, \\frac{2}{3}] $, matching the sum method. Final Compact Form So, the projection is: $$ \\text{proj}_S \\mathbf{v} = \\mathbf{U} (\\mathbf{U}^T \\mathbf{U})^{-1} \\mathbf{U}^T \\mathbf{v} $$ This avoids the summation symbol, encapsulates everything in matrix operations, and scales nicely for any number of orthogonal vectors. It’s a sleek, elegant way to express the same idea—perfect for linear algebra enthusiasts!\nNull space and Covariance Matrix Let’s dive into why $ C v_i = 0 $ when $ v_i $ is a null vector, specifically in the context of a covariance matrix $ C $ and its relationship to Singular Value Decomposition (SVD). This ties back to our earlier discussions, so I’ll build on that foundation and keep it clear and logical.\nSetting the Stage Covariance Matrix $ C $: Assume $ C $ is the uncentered covariance matrix of a data matrix $ X $ (with $ m $ observations and $ n $ features), defined as: $$ C = \\frac{1}{m} X^T X $$ $ C $ is an $ n \\times n $ symmetric, positive semi-definite matrix. Null Vector: A vector $ v_i $ is in the null space of $ C $ if $ C v_i = 0 $. The null space consists of all vectors that $ C $ maps to the zero vector. SVD of $ X $: $ X = U \\Sigma V^T $, where: $ U $ is $ m \\times m $ (left singular vectors), $ \\Sigma $ is $ m \\times n $ (diagonal matrix of singular values $ \\sigma_1, \\sigma_2, \\dots $), $ V $ is $ n \\times n $ (right singular vectors, with columns $ v_1, v_2, \\dots, v_n $). Connecting $ C $ to SVD First, express $ C $ using the SVD of $ X $: $$ X^T X = (U \\Sigma V^T)^T (U \\Sigma V^T) = V \\Sigma^T U^T U \\Sigma V^T $$ Since $ U $ is orthogonal ($ U^T U = I $): $$ X^T X = V \\Sigma^T \\Sigma V^T $$ Thus: $$ C = \\frac{1}{m} X^T X = \\frac{1}{m} V \\Sigma^T \\Sigma V^T $$\n$ \\Sigma^T \\Sigma $ is an $ n \\times n $ diagonal matrix with entries $ \\sigma_i^2 $ (squared singular values) on the diagonal and zeros elsewhere. $ V $ is orthogonal ($ V^T V = I $), and its columns $ v_i $ are the eigenvectors of $ X^T X $ (and thus of $ C $). The eigenvalues of $ C $ are $ \\lambda_i = \\frac{\\sigma_i^2}{m} $. Why $ C v_i = 0 $ for a Null Vector A vector $ v_i $ is a null vector of $ C $ if $ C v_i = 0 $. Let’s see how this happens:\nApply $ C $ to $ v_i $: $$ C v_i = \\left( \\frac{1}{m} V \\Sigma^T \\Sigma V^T \\right) v_i $$ Since $ v_i $ is a column of $ V $ (say the $ i $-th column), and $ V $ is orthogonal: $$ V^T v_i = e_i $$ where $ e_i $ is the $ i $-th standard basis vector (all zeros except a 1 in the $ i $-th position).\nMultiply by $ \\Sigma^T \\Sigma $: $$ \\Sigma^T \\Sigma V^T v_i = \\Sigma^T \\Sigma e_i $$\n$ \\Sigma^T \\Sigma $ is diagonal, with entries $ \\sigma_1^2, \\sigma_2^2, \\dots, \\sigma_n^2 $. Multiplying $ \\Sigma^T \\Sigma $ by $ e_i $ picks out the $ i $-th diagonal element: $$ \\Sigma^T \\Sigma e_i = \\sigma_i^2 e_i $$ Multiply by $ V $: $$ C v_i = \\frac{1}{m} V (\\Sigma^T \\Sigma e_i) = \\frac{1}{m} V (\\sigma_i^2 e_i) $$\n$ V e_i = v_i $ (since $ e_i $ extracts the $ i $-th column of $ V $). So: $$ C v_i = \\frac{1}{m} \\sigma_i^2 v_i $$ Condition for Null Vector:\nFor $ C v_i = 0 $ to hold: $$ \\frac{1}{m} \\sigma_i^2 v_i = 0 $$ Since $ \\frac{1}{m} \\neq 0 $ and $ v_i \\neq 0 $ (it’s a non-zero vector as a column of $ V $), this is true if and only if: $$ \\sigma_i^2 = 0 \\quad \\text{or equivalently,} \\quad \\sigma_i = 0 $$ Thus, $ v_i $ is a null vector of $ C $ when its corresponding singular value $ \\sigma_i = 0 $. Eigenvalue Perspective Since $ C = \\frac{1}{m} V \\Sigma^T \\Sigma V^T $ is the eigen decomposition of $ C $:\n$ v_i $ is an eigenvector of $ C $. The corresponding eigenvalue is $ \\lambda_i = \\frac{\\sigma_i^2}{m} $. If $ \\sigma_i = 0 $, then $ \\lambda_i = 0 $, and: $$ C v_i = \\lambda_i v_i = 0 \\cdot v_i = 0 $$ This confirms that $ v_i $ being in the null space corresponds to a zero eigenvalue, which happens when $ \\sigma_i = 0 $. Intuition Geometric View: The singular value $ \\sigma_i $ measures the “stretch” of $ X $ along the direction $ v_i $ in the feature space. If $ \\sigma_i = 0 $, $ X $ has no variation in that direction—all data points project to zero along $ v_i $. For the uncentered covariance matrix, this means the raw data lies entirely in a subspace orthogonal to $ v_i $. Data Example: If $ X = \\begin{bmatrix} 1 \u0026 1 \\ 1 \u0026 1 \\end{bmatrix} $, the second singular vector $ v_2 = \\begin{bmatrix} -\\frac{1}{\\sqrt{2}} \\ \\frac{1}{\\sqrt{2}} \\end{bmatrix} $ has $ \\sigma_2 = 0 $, and $ C v_2 = 0 $, because the data has no variation in that direction (all rows are identical). Why It Happens $ C v_i = 0 $ when $ v_i $ is a null vector because:\n$ v_i $ is a right singular vector of $ X $ with a zero singular value ($ \\sigma_i = 0 $). This zero singular value indicates no variance in the direction of $ v_i $ in the data. The covariance matrix $ C $, being derived from $ X^T X $, reflects this by mapping $ v_i $ to zero, placing it in the null space. In short, $ C v_i = 0 $ because $ v_i $ corresponds to a direction where the data (via $ X $) has no spread, and SVD neatly identifies these directions through zero singular values.\nCovariance Matrix and its semantic In the context of your question and our previous discussion about covariance matrices and SVD, the term “variable” typically refers to a feature, not an observation. Let me clarify the distinction and how it applies here:\nDefinitions Feature (Variable): A feature is a measurable property or characteristic of the data, often represented as a column in a data matrix. For example, in a dataset about people, features might be height, weight, or age. In statistics and machine learning, “variable” is often synonymous with “feature” when discussing datasets. Observation: An observation is an individual data point or instance, typically represented as a row in a data matrix. It’s a single measurement of all features for one entity (e.g., one person’s height, weight, and age). In the Context of a Data Matrix Suppose you have a data matrix $ X $ with $ m $ rows and $ n $ columns:\n$ m $: Number of observations (e.g., number of people). $ n $: Number of features/variables (e.g., height, weight, etc.). $ X $ is $ m \\times n $, where each column corresponds to a feature (variable) and each row corresponds to an observation. For example: $$ X = \\begin{bmatrix} 160 \u0026 60 \u0026 7 \\ 165 \u0026 65 \u0026 8 \\ 170 \u0026 70 \u0026 9 \\end{bmatrix} $$\nRows (3 observations): Each row is a person. Columns (3 features/variables): Height, weight, shoe size. Covariance Matrix and Variables The covariance matrix $ C $ is computed over the features (variables): $$ C = \\frac{1}{m-1} X^T X \\quad \\text{(centered)} \\quad \\text{or} \\quad C = \\frac{1}{m} X^T X \\quad \\text{(uncentered)} $$\n$ C $ is $ n \\times n $, where $ n $ is the number of features. The diagonal of $ C $ gives the variance of each feature (e.g., variance of height, variance of weight). The off-diagonal elements give the covariance between pairs of features (e.g., covariance between height and weight). So, in this context, “variable” refers to a feature (a column of $ X $), not an observation.\nSVD Context In SVD ($ X = U \\Sigma V^T $):\n$ V $ (right singular vectors) corresponds to the feature space (variables). $ U $ (left singular vectors) corresponds to the observation space. The covariance matrix $ C $ relates to $ V $ because $ X^T X = V \\Sigma^T \\Sigma V^T $, and $ V $’s columns are the eigenvectors of $ C $, describing directions in the feature (variable) space. Answering Your Question “Is variable feature or observation?”\nVariable = Feature. In the discussions we’ve had (covariance matrix, SVD, null space), “variable” refers to a feature (a column in $ X $), not an observation (a row in $ X $). Summary of paper Motivation This paper introduces SPEED, a novel editing-based method for concept erasure in text-to-image (T2I) diffusion models. SPEED addresses the key challenge of balancing erasure efficacy with preservation of non-target semantics (prior preservation). It incorporates null-space constraints for model editing, and introduces three key innovations: Influence-based Prior Filtering (IPF), Directed Prior Augmentation (DPA), and Invariant Equality Constraints (IEC). The method achieves scalable and efficient erasure, outperforming existing techniques across multiple tasks (e.g., multi-concept, implicit concept erasure), and demonstrates 350× speedup over state-of-the-art.\nContribution Technical Novelty:\nThe use of null-space projection to minimize non-target drift is theoretically sound and well-justified. IPF identifies key non-targets affected by erasure, improving the retain set selection adaptively. DPA improves on random augmentation by introducing semantically meaningful variations. IEC cleverly leverages architectural invariants to preserve critical components of the generation pipeline. Some key terms What is training-free editing-based paradigm for concept erasing\nit jointly optimizes erasure and preservation objectives for target and non-target concept (contrastive samples!) in a closed-form solution, obtaining direct modification over model parameters e.g., projection weights in cross-attention layer some objective is bad e.g., weighted least squares optimization will always imposing a non-zero lower bound on preservation error. What is null space\nthe subspace that does not alter the feature representation of non-target concepts By projecting the model parameter updates for erasing concepts onto the null space of non-target concepts, SPEED can minimize the preservation error close to zero without compromising erasure efficacy. [!IMPORTANT]\nBut what if the relationship between non-target and target are in hierarchical relationship? (human and mammal )\nIn the context of null space construction refers to the situation where the matrix used to define the null space (often from a set of vectors you want to preserve) becomes full rank, thereby shrinking or eliminating the null space entirely.\nLet’s break it down in simple terms: ❓ What is the null space? In linear algebra, the null space of a matrix $ A $ is the set of all vectors $ x $ such that: $$ Ax = 0 $$\nIn this paper (SPEED), the matrix $ C_0 $ is built from non-target concept embeddings (concepts you want to preserve). The null space of $ C_0 $ is used to find directions where modifications (i.e., concept erasure updates) don’t interfere with these preserved concepts.\n💥 What is rank saturation? The rank of $ C_0 $ is the number of linearly independent vectors in the retain set. The null space gets smaller as the rank of $ C_0 $ increases. If the rank of $ C_0 $ equals the dimension of the space (i.e., full rank), then the null space becomes trivial — it only contains the zero vector. This is called rank saturation — you’ve added so many concepts to preserve that there’s no more “safe space” left for edits (the null space is zero-dimensional).\n⚠️ Why is this a problem in SPEED? SPEED projects edits onto the null space of $ C_0 $ to preserve the non-target concepts. But if the retain set becomes too large or too diverse, $ C_0 $ becomes full-rank, and the null space collapses. This means you can no longer update the model without affecting at least one non-target concept — so preservation breaks down. 🛠️ How does SPEED fix this? SPEED introduces:\nIPF to filter only the most affected non-targets. DPA to augment the retain set intelligently using semantically similar embeddings — so they don’t add too much rank. These steps ensure that the null space remains non-trivial and useful for concept erasure without corrupting preserved knowledge. Method target, anchor and non-target [!IMPORTANT]\nThis anchor vectors explain the hierarchical relationship concern\nGoal of concept erase You have a target concept embedding $ c_1 $ (e.g., “Snoopy”) that you want to erase, and replace it with a more generic or neutral anchor concept $ c^* $ (e.g., “Dog”).\nYou want the model’s updated behavior to treat $ c_1 $ like $ c^* $. So we want the updated weights to satisfy: $$ (W + \\Delta) c_1 \\approx W c^* $$\nThis leads to the erasure objective:\nMinimize the difference between what the model used to do with the anchor and what it will do with the erased concept after the update: $$ e_1 = | (W + \\Delta) c_1 - W c^* |^2 $$\nWhy does $ \\Delta \\cdot c_0 \\ne 0 $ mean that the weight update impacts $ c_0 $? This boils down to how linear transformations work in neural networks — especially in the cross-attention layers of diffusion models where these concepts live.\nLet’s walk through it clearly:\n🔁 Recap: What is $ \\Delta \\cdot c_0 $ in context?\n$ \\Delta $: the change you’re making to a model weight matrix (like a projection matrix in attention). $ c_0 $: a non-target concept embedding (e.g., “Mickey”). So, $ \\Delta \\cdot c_0 $ is the change in the model’s output when inputting the concept $ c_0 $ — caused solely by your weight update.\n🧠 Why does it mean “impact”?\nBecause in linear models, output = weight × input.\nSo, if the original model had: $$ W \\cdot c_0 = \\text{some output} $$ and you apply an update $ \\Delta $, the new output becomes: $$ (W + \\Delta) \\cdot c_0 = W \\cdot c_0 + \\Delta \\cdot c_0 $$\nSo:\nThe change in output is: $$ \\text{new output} - \\text{old output} = \\Delta \\cdot c_0 $$ Therefore:\nIf $ \\Delta \\cdot c_0 = 0 $, then the model’s output for $ c_0 $ hasn’t changed If $ \\Delta \\cdot c_0 \\ne 0 $, then the model’s output for $ c_0 $ has changed That’s why we say $ \\Delta \\cdot c_0 $ measures how much impact your update has on $ c_0 $\n🧮 Analogy\nImagine you have a function $ f(x) = Wx $, and you perturb $ W $ to $ W + \\Delta $. Now:\n$ f_{\\text{old}}(x) = Wx $ $ f_{\\text{new}}(x) = (W + \\Delta)x = Wx + \\Delta x $ That extra $ \\Delta x $ is the effect of your update on the output. If it’s not zero, you’ve changed the function’s behavior on $ x $.\nDPA After IPF, do data augmentation to have diversity of the retrain set, but not increasing the null space as they are semantic similar\nIntroduce directed noise by projecting the random noise $\\epsilon$ on the direct in which the model parameter $\\textbf{W}$ exhibit minimal variation\nIEC “Hard equality constraint means that the update of weights are in the null space of $ C_2 $, and thus will not impact $ C_2 $”\n$C_2$ is the feature stack matrix where the features are those we do not want to change, e.g., [SOT] start of text token\nWhat are Lagrange Multipliers? Lagrange multipliers are a method from optimization theory used to solve constrained optimization problems. Specifically:\nMinimize some function $ f(x) $,\nsubject to equality constraints: $ g(x) = 0 $\nWe introduce a Lagrange multiplier $ \\lambda $, and define a new function (the Lagrangian): $$ \\mathcal{L}(x, \\lambda) = f(x) + \\lambda^\\top g(x) $$\nThen we find the stationary point by solving: $$ \\nabla_x \\mathcal{L} = 0 \\quad \\text{and} \\quad g(x) = 0 $$ $g(x) = 0$ is a hard constraint — not just a preference. We must enforce it.\nBut in regular unconstrained optimization (like gradient descent), we can’t do this easily. So we use Lagrange multipliers to turn it into one function that combines both the objective and the constraint.\n🔍 What is $ \\Lambda $ in this context? In SPEED’s constrained optimization:\n$ \\Delta $: weight update (what we’re solving for) Constraint: $ (\\Delta P) C_2 = 0 $ — don’t affect invariant embeddings $ \\Lambda $: the matrix of Lagrange multipliers, one column per constraint (one per column in $ C_2 $) So:\n$ \\Lambda $ tells you how “costly” it is (in terms of increased loss) to enforce each constraint. ✨ Interpretations of $ \\Lambda $\nSensitivity of the objective to the constraint\nEach component of $ \\Lambda $ corresponds to how much the final loss would increase if you relaxed the corresponding constraint just a bit.\nSo:\nA large magnitude in $ \\Lambda $ for a column $ c_2^{(i)} \\in C_2 $ means:\nThe constraint on that invariant is really tight — the optimizer had to work hard to keep it satisfied, and relaxing it would lower the loss significantly.\nA small or zero $ \\Lambda $ means:\nThat invariant was easy to preserve — it didn’t interfere much with erasure.\nShape ",
+  "wordCount" : "3615",
+  "inLanguage": "en",
+  "image":"https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/image-assets/cover.png","datePublished": "2025-04-02T17:17:26+11:00",
+  "dateModified": "2025-04-02T17:17:26+11:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sukai Huang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sukai Huang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sino-huang.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/archives" title="Archive">
+<span>Archive</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/tags/" title="Tags">
+<span>Tags</span>
+</a>
+</li>
+<li>
+<a href="https://sino-huang.github.io/categories/" title="Categories">
+<span>Categories</span>
+</a>
+</li>
+<li>
+<a accesskey="/" href="https://sino-huang.github.io/search/" title="Search (Alt + /)">
+<span>Search</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main">
+<article class="post-single">
+<header class="post-header">
+<div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/posts/">Posts</a></div>
+<h1 class="post-title entry-hint-parent">
+      SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models
+    </h1>
+<div class="post-meta"><span title="2025-04-02 17:17:26 +1100 AEDT">April 2, 2025</span> · 17 min · 3615 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/posts/svd_speed_concept_erasing_2025/index.md" rel="noopener noreferrer" target="_blank">Submit a report</a>
+</div>
+</header>
+<figure class="entry-cover"><img alt="" loading="eager" src="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/image-assets/cover.png"/>
+<p><text></text></p>
+</figure><div class="toc">
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
+<li>
+<a aria-label="Prerequisite knowledge" href="#prerequisite-knowledge">Prerequisite knowledge</a><ul>
+<li>
+<a aria-label="projection on to a subspace of a vector" href="#projection-on-to-a-subspace-of-a-vector">projection on to a subspace of a vector</a><ul>
+<li>
+<a aria-label="Why It’s Equivalent" href="#why-its-equivalent">Why It’s Equivalent</a></li>
+<li>
+<a aria-label="Even Simpler (if Orthonormal)" href="#even-simpler-if-orthonormal">Even Simpler (if Orthonormal)</a></li>
+<li>
+<a aria-label="Example Revisited" href="#example-revisited">Example Revisited</a></li>
+<li>
+<a aria-label="Final Compact Form" href="#final-compact-form">Final Compact Form</a></li></ul>
+</li>
+<li>
+<a aria-label="Null space and Covariance Matrix" href="#null-space-and-covariance-matrix">Null space and Covariance Matrix</a><ul>
+<li>
+<a aria-label="Setting the Stage" href="#setting-the-stage">Setting the Stage</a></li>
+<li>
+<a aria-label="Connecting $ C $ to SVD" href="#connecting--c--to-svd">Connecting $ C $ to SVD</a></li>
+<li>
+<a aria-label="Why $ C v_i = 0 $ for a Null Vector" href="#why--c-v_i--0--for-a-null-vector">Why $ C v_i = 0 $ for a Null Vector</a></li>
+<li>
+<a aria-label="Eigenvalue Perspective" href="#eigenvalue-perspective">Eigenvalue Perspective</a></li>
+<li>
+<a aria-label="Intuition" href="#intuition">Intuition</a></li>
+<li>
+<a aria-label="Why It Happens" href="#why-it-happens">Why It Happens</a></li></ul>
+</li>
+<li>
+<a aria-label="Covariance Matrix and its semantic" href="#covariance-matrix-and-its-semantic">Covariance Matrix and its semantic</a><ul>
+<li>
+<a aria-label="Definitions" href="#definitions">Definitions</a></li>
+<li>
+<a aria-label="In the Context of a Data Matrix" href="#in-the-context-of-a-data-matrix">In the Context of a Data Matrix</a></li>
+<li>
+<a aria-label="Covariance Matrix and Variables" href="#covariance-matrix-and-variables">Covariance Matrix and Variables</a></li>
+<li>
+<a aria-label="SVD Context" href="#svd-context">SVD Context</a></li>
+<li>
+<a aria-label="Answering Your Question" href="#answering-your-question">Answering Your Question</a></li></ul>
+</li>
+<li>
+<a aria-label="Summary of paper" href="#summary-of-paper">Summary of paper</a><ul>
+<li>
+<a aria-label="Motivation" href="#motivation">Motivation</a></li>
+<li>
+<a aria-label="Contribution" href="#contribution">Contribution</a></li>
+<li>
+<a aria-label="Some key terms" href="#some-key-terms">Some key terms</a></li>
+<li>
+<a aria-label="Let’s break it down in simple terms:" href="#lets-break-it-down-in-simple-terms">Let’s break it down in simple terms:</a><ul>
+<li>
+<a aria-label="❓ What is the null space?" href="#-what-is-the-null-space">❓ What is the null space?</a></li>
+<li>
+<a aria-label="💥 What is rank saturation?" href="#-what-is-rank-saturation">💥 What is rank saturation?</a></li></ul>
+</li>
+<li>
+<a aria-label="⚠️ Why is this a problem in SPEED?" href="#-why-is-this-a-problem-in-speed">⚠️ Why is this a problem in SPEED?</a></li>
+<li>
+<a aria-label="🛠️ How does SPEED fix this?" href="#-how-does-speed-fix-this">🛠️ How does SPEED fix this?</a></li></ul>
+</li>
+<li>
+<a aria-label="Method" href="#method">Method</a><ul>
+<li>
+<a aria-label="target, anchor and non-target" href="#target-anchor-and-non-target">target, anchor and non-target</a></li>
+<li>
+<a aria-label="Goal of concept erase" href="#goal-of-concept-erase">Goal of concept erase</a></li>
+<li>
+<a aria-label="Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?" href="#why-does--delta-cdot-c_">Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</a></li>
+<li>
+<a aria-label="DPA" href="#dpa">DPA</a></li>
+<li>
+<a aria-label="IEC" href="#iec">IEC</a></li>
+<li>
+<a aria-label="What are Lagrange Multipliers?" href="#what-are-lagrange-multipliers">What are Lagrange Multipliers?</a></li>
+<li>
+<a aria-label="🔍 What is $ \Lambda $ in this context?" href="#-what-is--lambda--in-this-context">🔍 What is $ \Lambda $ in this context?</a></li></ul>
+</li>
+<li>
+<a aria-label="Shape" href="#shape">Shape</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</details>
+</div>
+<div class="post-content"><p>[TOC]</p>
+<ol>
+<li>Title: SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models</li>
+<li>Author: Ouxiang Li, Xinting Hu et. al.</li>
+<li>Publish Year:  Mar 2025</li>
+<li>Review Date: Wed, Apr 2, 2025</li>
+<li>url: <a href="https://arxiv.org/abs/2503.07392">https://arxiv.org/abs/2503.07392</a></li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma" tabindex="0"><code class="language-bibtex" data-lang="bibtex"><span class="line"><span class="cl"><span class="c"># input bibtex here</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Prerequisite:</strong></p>
+<p>Training Networks in Null Space of Feature Covariance for Continual Learning</p>
+<p><a href="https://arxiv.org/abs/2103.07113">https://arxiv.org/abs/2103.07113</a></p>
+<h1 id="prerequisite-knowledge">Prerequisite knowledge<a aria-hidden="true" class="anchor" hidden="" href="#prerequisite-knowledge">#</a></h1>
+<h2 id="projection-on-to-a-subspace-of-a-vector">projection on to a subspace of a vector<a aria-hidden="true" class="anchor" hidden="" href="#projection-on-to-a-subspace-of-a-vector">#</a></h2>
+<p>Suppose $ U = {\mathbf{u}_1, \mathbf{u}_2, \ldots, \mathbf{u}_k} $ are the orthogonal vectors spanning the subspace $ S $. Construct a matrix $ \mathbf{U} $ whose columns are these vectors:
+$$
+\mathbf{U} = [\mathbf{u}_1 , \mathbf{u}_2 , \cdots , \mathbf{u}_k]
+$$
+Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension of the ambient space (e.g., $ \mathbb{R}^n $), and $ k $ is the number of basis vectors (the dimension of $ S $).</p>
+<p>The projection of a vector $ \mathbf{v} $ onto $ S $ can then be written as:
+$$
+\text{proj}_S \mathbf{v} = \mathbf{U} (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v}
+$$
+This is the formula for the orthogonal projection onto the column space of $ \mathbf{U} $. Let’s break it down:</p>
+<ul>
+<li>$ \mathbf{U}^T $ is the transpose of $ \mathbf{U} $, a $ k \times n $ matrix.</li>
+<li>$ \mathbf{U}^T \mathbf{v} $ is a $ k \times 1 $ vector, computing the dot products $ \mathbf{u}_i \cdot \mathbf{v} $ for each $ i $.</li>
+<li>$ \mathbf{U}^T \mathbf{U} $ is a $ k \times k $ matrix, with entries $ (\mathbf{U}^T \mathbf{U})_{ij} = \mathbf{u}_i \cdot \mathbf{u}_j $. Since the $ \mathbf{u}_i $’s are orthogonal, this is a diagonal matrix with $ \mathbf{u}_i \cdot \mathbf{u}_i = |\mathbf{u}_i|^2 $ on the diagonal (and zeros off-diagonal).</li>
+<li>$ (\mathbf{U}^T \mathbf{U})^{-1} $ is the inverse of that diagonal matrix, so it’s also diagonal with entries $ 1 / |\mathbf{u}_i|^2 $.</li>
+<li>$ \mathbf{U} (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v} $ combines these to give the projection as a single matrix-vector product.</li>
+</ul>
+<h3 id="why-its-equivalent">Why It’s Equivalent<a aria-hidden="true" class="anchor" hidden="" href="#why-its-equivalent">#</a></h3>
+<p>The matrix form recovers the sum we had before. Since $ \mathbf{U}^T \mathbf{U} $ is diagonal, $ (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v} $ computes the coefficients $ \frac{\mathbf{v} \cdot \mathbf{u}_i}{\mathbf{u}_i \cdot \mathbf{u}_i} $ for each $ \mathbf{u}<em>i $, and multiplying by $ \mathbf{U} $ builds the linear combination:
+$$
+\mathbf{U} (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v} = \sum</em>{i=1}^k \frac{\mathbf{v} \cdot \mathbf{u}_i}{\mathbf{u}_i \cdot \mathbf{u}_i} \mathbf{u}_i
+$$
+The orthogonality ensures $ \mathbf{U}^T \mathbf{U} $ is easy to invert (just a diagonal matrix), making this compact and computationally friendly.</p>
+<h3 id="even-simpler-if-orthonormal">Even Simpler (if Orthonormal)<a aria-hidden="true" class="anchor" hidden="" href="#even-simpler-if-orthonormal">#</a></h3>
+<p>If $ U $ were orthonormal (i.e., $ \mathbf{u}_i \cdot \mathbf{u}_i = 1 $ and $ \mathbf{u}_i \cdot \mathbf{u}_j = 0 $ for $ i \neq j $), then $ \mathbf{U}^T \mathbf{U} = \mathbf{I} $ (the identity matrix), and the formula simplifies further to:
+$$
+\text{proj}_S \mathbf{v} = \mathbf{U} \mathbf{U}^T \mathbf{v}
+$$
+But since you asked about orthogonal vectors (not necessarily orthonormal), the full form with $ (\mathbf{U}^T \mathbf{U})^{-1} $ is the most compact general expression.</p>
+<h3 id="example-revisited">Example Revisited<a aria-hidden="true" class="anchor" hidden="" href="#example-revisited">#</a></h3>
+<p>Take $ \mathbf{v} = [1, 2, 3] $, $ \mathbf{u}_1 = [1, 1, 0] $, $ \mathbf{u}_2 = [1, -1, 1] $:
+$$
+\mathbf{U} = \begin{bmatrix} 1 &amp; 1 \ 1 &amp; -1 \ 0 &amp; 1 \end{bmatrix}
+$$</p>
+<ul>
+<li>$ \mathbf{U}^T \mathbf{U} = \begin{bmatrix} 1 &amp; 1 &amp; 0 \ 1 &amp; -1 &amp; 1 \end{bmatrix} \begin{bmatrix} 1 &amp; 1 \ 1 &amp; -1 \ 0 &amp; 1 \end{bmatrix} = \begin{bmatrix} 2 &amp; 0 \ 0 &amp; 3 \end{bmatrix} $ (since $ \mathbf{u}_1 \cdot \mathbf{u}_1 = 2 $, $ \mathbf{u}_2 \cdot \mathbf{u}_2 = 3 $, and $ \mathbf{u}_1 \cdot \mathbf{u}_2 = 0 $).</li>
+<li>$ (\mathbf{U}^T \mathbf{U})^{-1} = \begin{bmatrix} \frac{1}{2} &amp; 0 \ 0 &amp; \frac{1}{3} \end{bmatrix} $</li>
+<li>$ \mathbf{U}^T \mathbf{v} = \begin{bmatrix} 3 \ 2 \end{bmatrix} $ (from dot products).</li>
+<li>$ (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v} = \begin{bmatrix} \frac{1}{2} &amp; 0 \ 0 &amp; \frac{1}{3} \end{bmatrix} \begin{bmatrix} 3 \ 2 \end{bmatrix} = \begin{bmatrix} \frac{3}{2} \ \frac{2}{3} \end{bmatrix} $</li>
+<li>$ \mathbf{U} (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v} = \begin{bmatrix} 1 &amp; 1 \ 1 &amp; -1 \ 0 &amp; 1 \end{bmatrix} \begin{bmatrix} \frac{3}{2} \ \frac{2}{3} \end{bmatrix} = [\frac{13}{6}, \frac{7}{6}, \frac{2}{3}] $, matching the sum method.</li>
+</ul>
+<h3 id="final-compact-form">Final Compact Form<a aria-hidden="true" class="anchor" hidden="" href="#final-compact-form">#</a></h3>
+<p>So, the projection is:
+$$
+\text{proj}_S \mathbf{v} = \mathbf{U} (\mathbf{U}^T \mathbf{U})^{-1} \mathbf{U}^T \mathbf{v}
+$$
+This avoids the summation symbol, encapsulates everything in matrix operations, and scales nicely for any number of orthogonal vectors. It’s a sleek, elegant way to express the same idea—perfect for linear algebra enthusiasts!</p>
+<h2 id="null-space-and-covariance-matrix">Null space and Covariance Matrix<a aria-hidden="true" class="anchor" hidden="" href="#null-space-and-covariance-matrix">#</a></h2>
+<p>Let’s dive into why $ C v_i = 0 $ when $ v_i $ is a null vector, specifically in the context of a covariance matrix $ C $ and its relationship to Singular Value Decomposition (SVD). This ties back to our earlier discussions, so I’ll build on that foundation and keep it clear and logical.</p>
+<h3 id="setting-the-stage">Setting the Stage<a aria-hidden="true" class="anchor" hidden="" href="#setting-the-stage">#</a></h3>
+<ul>
+<li><strong>Covariance Matrix $ C $</strong>: Assume $ C $ is the uncentered covariance matrix of a data matrix $ X $ (with $ m $ observations and $ n $ features), defined as:
+$$
+C = \frac{1}{m} X^T X
+$$
+$ C $ is an $ n \times n $ symmetric, positive semi-definite matrix.</li>
+<li><strong>Null Vector</strong>: A vector $ v_i $ is in the null space of $ C $ if $ C v_i = 0 $. The null space consists of all vectors that $ C $ maps to the zero vector.</li>
+<li><strong>SVD of $ X $</strong>: $ X = U \Sigma V^T $, where:
+<ul>
+<li>$ U $ is $ m \times m $ (left singular vectors),</li>
+<li>$ \Sigma $ is $ m \times n $ (diagonal matrix of singular values $ \sigma_1, \sigma_2, \dots $),</li>
+<li>$ V $ is $ n \times n $ (right singular vectors, with columns $ v_1, v_2, \dots, v_n $).</li>
+</ul>
+</li>
+</ul>
+<h3 id="connecting--c--to-svd">Connecting $ C $ to SVD<a aria-hidden="true" class="anchor" hidden="" href="#connecting--c--to-svd">#</a></h3>
+<p>First, express $ C $ using the SVD of $ X $:
+$$
+X^T X = (U \Sigma V^T)^T (U \Sigma V^T) = V \Sigma^T U^T U \Sigma V^T
+$$
+Since $ U $ is orthogonal ($ U^T U = I $):
+$$
+X^T X = V \Sigma^T \Sigma V^T
+$$
+Thus:
+$$
+C = \frac{1}{m} X^T X = \frac{1}{m} V \Sigma^T \Sigma V^T
+$$</p>
+<ul>
+<li>$ \Sigma^T \Sigma $ is an $ n \times n $ diagonal matrix with entries $ \sigma_i^2 $ (squared singular values) on the diagonal and zeros elsewhere.</li>
+<li>$ V $ is orthogonal ($ V^T V = I $), and its columns $ v_i $ are the eigenvectors of $ X^T X $ (and thus of $ C $).</li>
+<li>The eigenvalues of $ C $ are $ \lambda_i = \frac{\sigma_i^2}{m} $.</li>
+</ul>
+<h3 id="why--c-v_i--0--for-a-null-vector">Why $ C v_i = 0 $ for a Null Vector<a aria-hidden="true" class="anchor" hidden="" href="#why--c-v_i--0--for-a-null-vector">#</a></h3>
+<p>A vector $ v_i $ is a null vector of $ C $ if $ C v_i = 0 $. Let’s see how this happens:</p>
+<ol>
+<li>
+<p><strong>Apply $ C $ to $ v_i $</strong>:
+$$
+C v_i = \left( \frac{1}{m} V \Sigma^T \Sigma V^T \right) v_i
+$$
+Since $ v_i $ is a column of $ V $ (say the $ i $-th column), and $ V $ is orthogonal:
+$$
+V^T v_i = e_i
+$$
+where $ e_i $ is the $ i $-th standard basis vector (all zeros except a 1 in the $ i $-th position).</p>
+</li>
+<li>
+<p><strong>Multiply by $ \Sigma^T \Sigma $</strong>:
+$$
+\Sigma^T \Sigma V^T v_i = \Sigma^T \Sigma e_i
+$$</p>
+<ul>
+<li>$ \Sigma^T \Sigma $ is diagonal, with entries $ \sigma_1^2, \sigma_2^2, \dots, \sigma_n^2 $.</li>
+<li>Multiplying $ \Sigma^T \Sigma $ by $ e_i $ picks out the $ i $-th diagonal element:
+$$
+\Sigma^T \Sigma e_i = \sigma_i^2 e_i
+$$</li>
+</ul>
+</li>
+<li>
+<p><strong>Multiply by $ V $</strong>:
+$$
+C v_i = \frac{1}{m} V (\Sigma^T \Sigma e_i) = \frac{1}{m} V (\sigma_i^2 e_i)
+$$</p>
+<ul>
+<li>$ V e_i = v_i $ (since $ e_i $ extracts the $ i $-th column of $ V $).</li>
+<li>So:
+$$
+C v_i = \frac{1}{m} \sigma_i^2 v_i
+$$</li>
+</ul>
+</li>
+<li>
+<p><strong>Condition for Null Vector</strong>:</p>
+<ul>
+<li>For $ C v_i = 0 $ to hold:
+$$
+\frac{1}{m} \sigma_i^2 v_i = 0
+$$</li>
+<li>Since $ \frac{1}{m} \neq 0 $ and $ v_i \neq 0 $ (it’s a non-zero vector as a column of $ V $), this is true if and only if:
+$$
+\sigma_i^2 = 0 \quad \text{or equivalently,} \quad \sigma_i = 0
+$$</li>
+<li>Thus, $ v_i $ is a null vector of $ C $ when its corresponding singular value $ \sigma_i = 0 $.</li>
+</ul>
+</li>
+</ol>
+<h3 id="eigenvalue-perspective">Eigenvalue Perspective<a aria-hidden="true" class="anchor" hidden="" href="#eigenvalue-perspective">#</a></h3>
+<p>Since $ C = \frac{1}{m} V \Sigma^T \Sigma V^T $ is the eigen decomposition of $ C $:</p>
+<ul>
+<li>$ v_i $ is an eigenvector of $ C $.</li>
+<li>The corresponding eigenvalue is $ \lambda_i = \frac{\sigma_i^2}{m} $.</li>
+<li>If $ \sigma_i = 0 $, then $ \lambda_i = 0 $, and:
+$$
+C v_i = \lambda_i v_i = 0 \cdot v_i = 0
+$$
+This confirms that $ v_i $ being in the null space corresponds to a zero eigenvalue, which happens when $ \sigma_i = 0 $.</li>
+</ul>
+<h3 id="intuition">Intuition<a aria-hidden="true" class="anchor" hidden="" href="#intuition">#</a></h3>
+<ul>
+<li><strong>Geometric View</strong>: The singular value $ \sigma_i $ measures the “stretch” of $ X $ along the direction $ v_i $ in the feature space. If $ \sigma_i = 0 $, $ X $ has no variation in that direction—all data points project to zero along $ v_i $. For the uncentered covariance matrix, this means the raw data lies entirely in a subspace orthogonal to $ v_i $.</li>
+<li><strong>Data Example</strong>: If $ X = \begin{bmatrix} 1 &amp; 1 \ 1 &amp; 1 \end{bmatrix} $, the second singular vector $ v_2 = \begin{bmatrix} -\frac{1}{\sqrt{2}} \ \frac{1}{\sqrt{2}} \end{bmatrix} $ has $ \sigma_2 = 0 $, and $ C v_2 = 0 $, because the data has no variation in that direction (all rows are identical).</li>
+</ul>
+<h3 id="why-it-happens">Why It Happens<a aria-hidden="true" class="anchor" hidden="" href="#why-it-happens">#</a></h3>
+<p>$ C v_i = 0 $ when $ v_i $ is a null vector because:</p>
+<ul>
+<li>$ v_i $ is a right singular vector of $ X $ with a zero singular value ($ \sigma_i = 0 $).</li>
+<li>This zero singular value indicates no variance in the direction of $ v_i $ in the data.</li>
+<li>The covariance matrix $ C $, being derived from $ X^T X $, reflects this by mapping $ v_i $ to zero, placing it in the null space.</li>
+</ul>
+<p>In short, $ C v_i = 0 $ because $ v_i $ corresponds to a direction where the data (via $ X $) has no spread, and SVD neatly identifies these directions through zero singular values.</p>
+<h2 id="covariance-matrix-and-its-semantic">Covariance Matrix and its semantic<a aria-hidden="true" class="anchor" hidden="" href="#covariance-matrix-and-its-semantic">#</a></h2>
+<p>In the context of your question and our previous discussion about covariance matrices and SVD, the term “variable” typically refers to a <strong>feature</strong>, not an observation. Let me clarify the distinction and how it applies here:</p>
+<h3 id="definitions">Definitions<a aria-hidden="true" class="anchor" hidden="" href="#definitions">#</a></h3>
+<ul>
+<li><strong>Feature (Variable)</strong>: A feature is a measurable property or characteristic of the data, often represented as a column in a data matrix. For example, in a dataset about people, features might be height, weight, or age. In statistics and machine learning, “variable” is often synonymous with “feature” when discussing datasets.</li>
+<li><strong>Observation</strong>: An observation is an individual data point or instance, typically represented as a row in a data matrix. It’s a single measurement of all features for one entity (e.g., one person’s height, weight, and age).</li>
+</ul>
+<h3 id="in-the-context-of-a-data-matrix">In the Context of a Data Matrix<a aria-hidden="true" class="anchor" hidden="" href="#in-the-context-of-a-data-matrix">#</a></h3>
+<p>Suppose you have a data matrix $ X $ with $ m $ rows and $ n $ columns:</p>
+<ul>
+<li>$ m $: Number of observations (e.g., number of people).</li>
+<li>$ n $: Number of features/variables (e.g., height, weight, etc.).</li>
+<li>$ X $ is $ m \times n $, where each column corresponds to a feature (variable) and each row corresponds to an observation.</li>
+</ul>
+<p>For example:
+$$
+X =
+\begin{bmatrix}
+160 &amp; 60 &amp; 7 \
+165 &amp; 65 &amp; 8 \
+170 &amp; 70 &amp; 9
+\end{bmatrix}
+$$</p>
+<ul>
+<li>Rows (3 observations): Each row is a person.</li>
+<li>Columns (3 features/variables): Height, weight, shoe size.</li>
+</ul>
+<h3 id="covariance-matrix-and-variables">Covariance Matrix and Variables<a aria-hidden="true" class="anchor" hidden="" href="#covariance-matrix-and-variables">#</a></h3>
+<p>The covariance matrix $ C $ is computed over the <strong>features</strong> (variables):
+$$
+C = \frac{1}{m-1} X^T X \quad \text{(centered)} \quad \text{or} \quad C = \frac{1}{m} X^T X \quad \text{(uncentered)}
+$$</p>
+<ul>
+<li>$ C $ is $ n \times n $, where $ n $ is the number of features.</li>
+<li>The diagonal of $ C $ gives the variance of each feature (e.g., variance of height, variance of weight).</li>
+<li>The off-diagonal elements give the covariance between pairs of features (e.g., covariance between height and weight).</li>
+</ul>
+<p>So, in this context, “variable” refers to a <strong>feature</strong> (a column of $ X $), not an observation.</p>
+<h3 id="svd-context">SVD Context<a aria-hidden="true" class="anchor" hidden="" href="#svd-context">#</a></h3>
+<p>In SVD ($ X = U \Sigma V^T $):</p>
+<ul>
+<li>$ V $ (right singular vectors) corresponds to the feature space (variables).</li>
+<li>$ U $ (left singular vectors) corresponds to the observation space.</li>
+<li>The covariance matrix $ C $ relates to $ V $ because $ X^T X = V \Sigma^T \Sigma V^T $, and $ V $’s columns are the eigenvectors of $ C $, describing directions in the feature (variable) space.</li>
+</ul>
+<h3 id="answering-your-question">Answering Your Question<a aria-hidden="true" class="anchor" hidden="" href="#answering-your-question">#</a></h3>
+<p>“Is variable feature or observation?”</p>
+<ul>
+<li><strong>Variable = Feature</strong>. In the discussions we’ve had (covariance matrix, SVD, null space), “variable” refers to a feature (a column in $ X $), not an observation (a row in $ X $).</li>
+</ul>
+<p><img alt="image-20250402174214955" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402174214955.png"/></p>
+<p><img alt="image-20250402174256868" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402174256868.png"/></p>
+<p><img alt="image-20250402174315146" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402174315146.png"/></p>
+<h2 id="summary-of-paper">Summary of paper<a aria-hidden="true" class="anchor" hidden="" href="#summary-of-paper">#</a></h2>
+<h3 id="motivation">Motivation<a aria-hidden="true" class="anchor" hidden="" href="#motivation">#</a></h3>
+<p>This paper introduces <strong>SPEED</strong>, a novel editing-based method for concept erasure in text-to-image (T2I) diffusion models. SPEED addresses the key challenge of balancing erasure efficacy with preservation of non-target semantics (prior preservation). It incorporates <strong>null-space constraints</strong> for model editing, and introduces three key innovations: <strong>Influence-based Prior Filtering (IPF)</strong>, <strong>Directed Prior Augmentation (DPA)</strong>, and <strong>Invariant Equality Constraints (IEC)</strong>. The method achieves scalable and efficient erasure, outperforming existing techniques across multiple tasks (e.g., multi-concept, implicit concept erasure), and demonstrates 350× speedup over state-of-the-art.</p>
+<h3 id="contribution">Contribution<a aria-hidden="true" class="anchor" hidden="" href="#contribution">#</a></h3>
+<p><strong>Technical Novelty</strong>:</p>
+<ul>
+<li>The use of <strong>null-space projection</strong> to minimize non-target drift is theoretically sound and well-justified.</li>
+<li><strong>IPF</strong> identifies key non-targets affected by erasure, improving the retain set selection adaptively.</li>
+<li><strong>DPA</strong> improves on random augmentation by introducing semantically meaningful variations.</li>
+<li><strong>IEC</strong> cleverly leverages architectural invariants to preserve critical components of the generation pipeline.</li>
+</ul>
+<h3 id="some-key-terms">Some key terms<a aria-hidden="true" class="anchor" hidden="" href="#some-key-terms">#</a></h3>
+<p><strong>What is training-free editing-based paradigm for concept erasing</strong></p>
+<ul>
+<li>it jointly optimizes erasure and preservation objectives for target and non-target concept (contrastive samples!) in a closed-form solution, obtaining direct modification over model parameters
+<ul>
+<li>e.g., projection <em>weights</em> in cross-attention layer</li>
+</ul>
+</li>
+<li>some objective is bad
+<ul>
+<li>e.g., weighted least squares optimization will always imposing a non-zero lower bound on preservation error.</li>
+</ul>
+</li>
+</ul>
+<p><strong>What is null space</strong></p>
+<ul>
+<li>the subspace that does not alter the feature representation of non-target concepts</li>
+<li>By <strong>projecting the model parameter</strong> updates for erasing concepts onto the null space of non-target concepts, SPEED can minimize the preservation error close to zero without compromising erasure
+efficacy.</li>
+</ul>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<p>But what if the relationship between non-target and target are in hierarchical relationship? (human and mammal )</p></blockquote>
+<p>In the context of <strong>null space construction</strong> refers to the situation where the matrix used to define the null space (often from a set of vectors you want to preserve) becomes <strong>full rank</strong>, thereby <strong>shrinking or eliminating the null space entirely</strong>.</p>
+<h3 id="lets-break-it-down-in-simple-terms">Let’s break it down in simple terms:<a aria-hidden="true" class="anchor" hidden="" href="#lets-break-it-down-in-simple-terms">#</a></h3>
+<h4 id="-what-is-the-null-space">❓ What is the null space?<a aria-hidden="true" class="anchor" hidden="" href="#-what-is-the-null-space">#</a></h4>
+<p>In linear algebra, the <strong>null space</strong> of a matrix $ A $ is the set of all vectors $ x $ such that:
+$$
+Ax = 0
+$$</p>
+<p>In this paper (SPEED), the matrix $ C_0 $ is built from <strong>non-target concept embeddings</strong> (concepts you want to preserve). The null space of $ C_0 $ is used to find directions where <strong>modifications (i.e., concept erasure updates) don’t interfere with these preserved concepts</strong>.</p>
+<h4 id="-what-is-rank-saturation">💥 What is rank saturation?<a aria-hidden="true" class="anchor" hidden="" href="#-what-is-rank-saturation">#</a></h4>
+<ul>
+<li>The <strong>rank</strong> of $ C_0 $ is the number of <strong>linearly independent vectors</strong> in the retain set.</li>
+<li>The <strong>null space gets smaller</strong> as the rank of $ C_0 $ increases.</li>
+<li>If the rank of $ C_0 $ equals the dimension of the space (i.e., <strong>full rank</strong>), then the <strong>null space becomes trivial</strong> — it only contains the zero vector.</li>
+</ul>
+<p>This is called <strong>rank saturation</strong> — you’ve added so many concepts to preserve that there’s no more “safe space” left for edits (the null space is zero-dimensional).</p>
+<hr/>
+<h3 id="-why-is-this-a-problem-in-speed">⚠️ Why is this a problem in SPEED?<a aria-hidden="true" class="anchor" hidden="" href="#-why-is-this-a-problem-in-speed">#</a></h3>
+<ul>
+<li>SPEED projects edits onto the null space of $ C_0 $ to preserve the non-target concepts.</li>
+<li>But if the retain set becomes too large or too diverse, $ C_0 $ becomes <strong>full-rank</strong>, and the null space <strong>collapses</strong>.</li>
+<li>This means you can <strong>no longer update the model</strong> without affecting at least one non-target concept — so preservation breaks down.</li>
+</ul>
+<hr/>
+<h3 id="-how-does-speed-fix-this">🛠️ How does SPEED fix this?<a aria-hidden="true" class="anchor" hidden="" href="#-how-does-speed-fix-this">#</a></h3>
+<p>SPEED introduces:</p>
+<ul>
+<li><strong>IPF</strong> to <strong>filter</strong> only the most affected non-targets.</li>
+<li><strong>DPA</strong> to augment the retain set <strong>intelligently</strong> using semantically similar embeddings — so they don’t add too much rank.</li>
+<li>These steps ensure that the null space remains <strong>non-trivial</strong> and useful for concept erasure without corrupting preserved knowledge.</li>
+</ul>
+<h2 id="method">Method<a aria-hidden="true" class="anchor" hidden="" href="#method">#</a></h2>
+<h3 id="target-anchor-and-non-target"><strong>target, anchor and non-target</strong><a aria-hidden="true" class="anchor" hidden="" href="#target-anchor-and-non-target">#</a></h3>
+<p><img alt="image-20250402220746540" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402220746540.png"/></p>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<p>This anchor vectors explain the hierarchical relationship concern</p></blockquote>
+<h3 id="goal-of-concept-erase"><strong>Goal of concept erase</strong><a aria-hidden="true" class="anchor" hidden="" href="#goal-of-concept-erase">#</a></h3>
+<p>You have a <strong>target concept embedding</strong> $ c_1 $ (e.g., “Snoopy”) that you want to <strong>erase</strong>, and replace it with a more generic or neutral <strong>anchor concept</strong> $ c^* $ (e.g., “Dog”).</p>
+<p>You want the <strong>model’s updated behavior</strong> to treat $ c_1 $ like $ c^* $. So we want the <strong>updated weights</strong> to satisfy:
+$$
+(W + \Delta) c_1 \approx W c^*
+$$</p>
+<p>This leads to the <strong>erasure objective</strong>:<br/>
+Minimize the difference between what the model <strong>used to do with the anchor</strong> and what it <strong>will do with the erased concept</strong> after the update:
+$$
+e_1 = | (W + \Delta) c_1 - W c^* |^2
+$$</p>
+<h3 id="why-does--delta-cdot-c_"><strong>Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</strong><a aria-hidden="true" class="anchor" hidden="" href="#why-does--delta-cdot-c_">#</a></h3>
+<p>This boils down to how <strong>linear transformations</strong> work in neural networks — especially in the <strong>cross-attention layers</strong> of diffusion models where these concepts live.</p>
+<p>Let’s walk through it clearly:</p>
+<hr/>
+<p>🔁 Recap: What is $ \Delta \cdot c_0 $ in context?</p>
+<ul>
+<li>$ \Delta $: the <strong>change</strong> you’re making to a model weight matrix (like a projection matrix in attention).</li>
+<li>$ c_0 $: a <strong>non-target concept embedding</strong> (e.g., “Mickey”).</li>
+</ul>
+<p>So, $ \Delta \cdot c_0 $ is the <strong>change in the model’s output when inputting the concept $ c_0 $</strong> — caused solely by your weight update.</p>
+<hr/>
+<p>🧠 Why does it mean “impact”?</p>
+<p>Because in linear models, <strong>output = weight × input</strong>.</p>
+<p>So, if the original model had:
+$$
+W \cdot c_0 = \text{some output}
+$$
+and you apply an update $ \Delta $, the new output becomes:
+$$
+(W + \Delta) \cdot c_0 = W \cdot c_0 + \Delta \cdot c_0
+$$</p>
+<p>So:</p>
+<ul>
+<li>The change in output is:
+$$
+\text{new output} - \text{old output} = \Delta \cdot c_0
+$$</li>
+</ul>
+<p>Therefore:</p>
+<ul>
+<li>If $ \Delta \cdot c_0 = 0 $, then the model’s output for $ c_0 $ <strong>hasn’t changed</strong></li>
+<li>If $ \Delta \cdot c_0 \ne 0 $, then the model’s output for $ c_0 $ <strong>has changed</strong></li>
+</ul>
+<p>That’s <strong>why we say</strong> $ \Delta \cdot c_0 $ measures how much <strong>impact</strong> your update has on $ c_0 $</p>
+<hr/>
+<p>🧮 Analogy</p>
+<p>Imagine you have a function $ f(x) = Wx $, and you perturb $ W $ to $ W + \Delta $. Now:</p>
+<ul>
+<li>$ f_{\text{old}}(x) = Wx $</li>
+<li>$ f_{\text{new}}(x) = (W + \Delta)x = Wx + \Delta x $</li>
+</ul>
+<p>That extra $ \Delta x $ is <strong>the effect</strong> of your update on the output. If it’s not zero, <strong>you’ve changed the function’s behavior</strong> on $ x $.</p>
+<h3 id="dpa"><strong>DPA</strong><a aria-hidden="true" class="anchor" hidden="" href="#dpa">#</a></h3>
+<p>After IPF, do data augmentation to have diversity of the retrain set, but not increasing the null space as they are semantic similar</p>
+<p>Introduce directed noise by projecting the random noise $\epsilon$ on the direct in which the model parameter $\textbf{W}$ exhibit minimal variation</p>
+<p><img alt="image-20250402213514127" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402213514127.png"/></p>
+<h3 id="iec"><strong>IEC</strong><a aria-hidden="true" class="anchor" hidden="" href="#iec">#</a></h3>
+<p><strong>“Hard equality constraint means that the update of weights are in the null space of $ C_2 $, and thus will not impact $ C_2 $”</strong></p>
+<p>$C_2$ is the feature stack matrix where the features are those we do not want to change, e.g., [SOT] start of text token</p>
+<h3 id="what-are-lagrange-multipliers"><strong>What are Lagrange Multipliers?</strong><a aria-hidden="true" class="anchor" hidden="" href="#what-are-lagrange-multipliers">#</a></h3>
+<p>Lagrange multipliers are a method from optimization theory used to solve <strong>constrained optimization problems</strong>. Specifically:</p>
+<blockquote>
+<p>Minimize some function $ f(x) $,<br/>
+subject to <strong>equality constraints</strong>: $ g(x) = 0 $</p></blockquote>
+<p>We introduce a <strong>Lagrange multiplier</strong> $ \lambda $, and define a new function (the <strong>Lagrangian</strong>):
+$$
+\mathcal{L}(x, \lambda) = f(x) + \lambda^\top g(x)
+$$</p>
+<p>Then we find the <strong>stationary point</strong> by solving:
+$$
+\nabla_x \mathcal{L} = 0 \quad \text{and} \quad g(x) = 0
+$$
+$g(x) = 0$ is a <strong>hard constraint</strong> — not just a preference. We <strong>must</strong> enforce it.</p>
+<p>But in regular unconstrained optimization (like gradient descent), we can’t do this easily. So we use <strong>Lagrange multipliers</strong> to turn it into <strong>one function</strong> that combines both the objective and the constraint.</p>
+<h3 id="-what-is--lambda--in-this-context"><strong>🔍 What is $ \Lambda $ in this context?</strong><a aria-hidden="true" class="anchor" hidden="" href="#-what-is--lambda--in-this-context">#</a></h3>
+<p>In SPEED’s constrained optimization:</p>
+<ul>
+<li>$ \Delta $: weight update (what we’re solving for)</li>
+<li>Constraint: $ (\Delta P) C_2 = 0 $ — don’t affect invariant embeddings</li>
+<li>$ \Lambda $: the <strong>matrix of Lagrange multipliers</strong>, one column per constraint (one per column in $ C_2 $)</li>
+</ul>
+<p>So:</p>
+<ul>
+<li>$ \Lambda $ tells you <strong>how “costly” it is</strong> (in terms of increased loss) to enforce each constraint.</li>
+</ul>
+<hr/>
+<p>✨ Interpretations of $ \Lambda $</p>
+<p><strong>Sensitivity of the objective to the constraint</strong></p>
+<p>Each component of $ \Lambda $ corresponds to <strong>how much the final loss would increase if you relaxed the corresponding constraint just a bit</strong>.</p>
+<p>So:</p>
+<ul>
+<li>
+<p>A <strong>large magnitude</strong> in $ \Lambda $ for a column $ c_2^{(i)} \in C_2 $ means:</p>
+<blockquote>
+<p>The constraint on that invariant is really tight — the optimizer had to work hard to keep it satisfied, and relaxing it would lower the loss significantly.</p></blockquote>
+</li>
+<li>
+<p>A <strong>small or zero</strong> $ \Lambda $ means:</p>
+<blockquote>
+<p>That invariant was easy to preserve — it didn’t interfere much with erasure.</p></blockquote>
+</li>
+</ul>
+<h2 id="shape">Shape<a aria-hidden="true" class="anchor" hidden="" href="#shape">#</a></h2>
+<p><img alt="image-20250402223640523" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402223640523.png"/></p>
+<p><img alt="image-20250402223722657" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402223722657.png"/></p>
+<p><img alt="image-20250402224035642" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402224035642.png"/></p>
+</div>
+<footer class="post-footer">
+<ul class="post-tags">
+<li><a href="https://sino-huang.github.io/tags/svd/">Svd</a></li>
+<li><a href="https://sino-huang.github.io/tags/concept-erase/">Concept Erase</a></li>
+<li><a href="https://sino-huang.github.io/tags/null-space/">Null Space</a></li>
+</ul>
+<nav class="paginav">
+<a class="next" href="https://sino-huang.github.io/posts/awesome_life_long_rl_2025/">
+<span class="title">Next »</span>
+<br/>
+<span>Awesome_life_long_rl_2025</span>
+</a>
+</nav>
+<ul class="share-buttons">
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on x" href="https://x.com/intent/tweet/?text=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models&amp;url=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f&amp;hashtags=svd%2cconcepterase%2cnullspace" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f&amp;title=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models&amp;summary=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models&amp;source=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f&amp;title=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on whatsapp" href="https://api.whatsapp.com/send?text=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models%20-%20https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on telegram" href="https://telegram.me/share/url?text=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models&amp;url=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="2 2 28 28" width="30px" xml:space="preserve">
+<path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models on ycombinator" href="https://news.ycombinator.com/submitlink?t=SPEED%3a%20Scalable%2c%20Precise%2c%20and%20Efficient%20Concept%20Erasure%20for%20Diffusion%20Models&amp;u=https%3a%2f%2fsino-huang.github.io%2fposts%2fsvd_speed_concept_erasing_2025%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<path d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z"></path>
+</svg>
+</a>
+</li>
+</ul>
+</footer>
+</article>
+</main>
+<footer class="footer">
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+</span>
+</footer>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
+</a>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+</html>
