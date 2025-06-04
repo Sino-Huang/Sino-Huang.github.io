@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>Python Module and Package Management 2023 | Sukai Huang</title>
-<meta name="keywords" content="">
-<meta name="description" content="[TOC]
+<meta content="" name="keywords"/>
+<meta content="[TOC]
 
 Title: Python Module and Package Management 2023
 url: https://www.youtube.com/watch?v=v6tALyc4C10
@@ -52,28 +51,28 @@ always use it as the last resort.
 Solution: setup pyproject.toml and install it as a proper module
 
 
-python -m venv .venv">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/">
-<meta name="google-site-verification" content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.216db197d28df88a47bfb89498be748381c9d960a20db4b7d59e51e8b91f60b6.css" integrity="sha256-IW2xl9KN&#43;IpHv7iUmL50g4HJ2WCiDbS31Z5R6LkfYLY=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/">
+python -m venv .venv" name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.cf31157431f6973ddd3332493ac18f7417b18c23f2fecd55486849a99ab7c529.css" integrity="sha256-zzEVdDH2lz3dMzJJOsGPdBexjCPy/s1VSGhJqZq3xSk=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" hreflang="en" rel="alternate"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -102,9 +101,9 @@ python -m venv .venv">
 
     </style>
 </noscript>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -121,9 +120,8 @@ python -m venv .venv">
         });
     });
 </script>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
-      <script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
         var doNotTrack = false;
         if ( false ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
@@ -135,21 +133,21 @@ python -m venv .venv">
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta property="og:url" content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/">
-  <meta property="og:site_name" content="Sukai Huang">
-  <meta property="og:title" content="Python Module and Package Management 2023">
-  <meta property="og:description" content="[TOC]
-Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10 Python module common issue 1: python -m dir vs python dir python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library. thus ModuleNotFoundError may appear Standard way of import when you want to create a module use absolute path -&gt; from moduledir/packagename import filename avoid using relative path e.g., from .xxx import yyy if within the same module, you can just use from xxx import yyy However, in a complicated project where there are too many modules. one workaround is that we still make it a module, but try to append folder path to the system path. 1 2 import os, sys sys.path.append(os.path.dirname(os.path.realpath(__file__))) always use it as the last resort. Solution: setup pyproject.toml and install it as a proper module python -m venv .venv">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="programming-notes">
-    <meta property="article:published_time" content="2023-05-28T11:56:47+10:00">
-    <meta property="article:modified_time" content="2023-05-28T11:56:47+10:00">
-    <meta property="og:image" content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png">
-<meta name="twitter:title" content="Python Module and Package Management 2023">
-<meta name="twitter:description" content="[TOC]
+      </script><meta content="https://sino-huang.github.io/programming-notes/python-module-and-package-management-2023/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Python Module and Package Management 2023" property="og:title"/>
+<meta content="[TOC]
+Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10 Python module common issue 1: python -m dir vs python dir python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library. thus ModuleNotFoundError may appear Standard way of import when you want to create a module use absolute path -&gt; from moduledir/packagename import filename avoid using relative path e.g., from .xxx import yyy if within the same module, you can just use from xxx import yyy However, in a complicated project where there are too many modules. one workaround is that we still make it a module, but try to append folder path to the system path. 1 2 import os, sys sys.path.append(os.path.dirname(os.path.realpath(__file__))) always use it as the last resort. Solution: setup pyproject.toml and install it as a proper module python -m venv .venv" property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="programming-notes" property="article:section"/>
+<meta content="2023-05-28T11:56:47+10:00" property="article:published_time"/>
+<meta content="2023-05-28T11:56:47+10:00" property="article:modified_time"/>
+<meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" name="twitter:image"/>
+<meta content="Python Module and Package Management 2023" name="twitter:title"/>
+<meta content="[TOC]
 
 Title: Python Module and Package Management 2023
 url: https://www.youtube.com/watch?v=v6tALyc4C10
@@ -194,9 +192,7 @@ always use it as the last resort.
 Solution: setup pyproject.toml and install it as a proper module
 
 
-python -m venv .venv">
-
-
+python -m venv .venv" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -251,7 +247,6 @@ python -m venv .venv">
 }
 </script>
 </head>
-
 <body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -263,116 +258,105 @@ python -m venv .venv">
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
-                    <span>Lit Reviews</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+<span>Lit Reviews</span> 
+                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
+<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+<path d="M15 3h6v6"></path>
+<path d="M10 14L21 3"></path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
 </header>
 <main class="main">
-
 <article class="post-single">
-  <header class="post-header">
-    <div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/programming-notes/">Programming-Notes</a></div>
-    <h1 class="post-title entry-hint-parent">
+<header class="post-header">
+<div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/programming-notes/">Programming-Notes</a></div>
+<h1 class="post-title entry-hint-parent">
       Python Module and Package Management 2023
     </h1>
-    <div class="post-meta"><span title='2023-05-28 11:56:47 +1000 AEST'>May 28, 2023</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;1024 words&nbsp;·&nbsp;Sukai Huang&nbsp;|&nbsp;<a href="mailto:sukaih@student.unimelb.edu.au/programming-notes/python-module-and-package-management-2023/index.md" rel="noopener noreferrer" target="_blank">Submit a report</a>
-
+<div class="post-meta"><span title="2023-05-28 11:56:47 +1000 AEST">May 28, 2023</span> · 5 min · 1024 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/programming-notes/python-module-and-package-management-2023/index.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
 </div>
-  </header> 
-<figure class="entry-cover"><img loading="eager" src="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png" alt="">
-        <p><text></p>
+</header>
+<figure class="entry-cover">
+<img alt="" loading="eager" src="https://sino-huang.github.io/posts/python-module-and-package-management-2023/image-assets/cover.png"/>
+<figcaption><text></text></figcaption>
 </figure><div class="toc">
-    <details >
-        <summary accesskey="c" title="(Alt + C)">
-            <span class="details">Table of Contents</span>
-        </summary>
-
-        <div class="inner"><ul>
-                <li>
-                    <a href="#python-module" aria-label="Python module">Python module</a><ul>
-                        
-                <li>
-                    <a href="#common-issue-1-python--m-dir--vs-python-dir" aria-label="common issue 1: python -m dir vs python dir">common issue 1: python -m dir vs python dir</a></li>
-                <li>
-                    <a href="#standard-way-of-import-when-you-want-to-create-a-module" aria-label="Standard way of import when you want to create a module">Standard way of import when you want to create a module</a></li>
-                <li>
-                    <a href="#however-in-a-complicated-project-where-there-are-too-many-modules" aria-label="However, in a complicated project where there are too many modules.">However, in a complicated project where there are too many modules.</a></li>
-                <li>
-                    <a href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module" aria-label="Solution: setup pyproject.toml and install it as a proper module">Solution: setup pyproject.toml and install it as a proper module</a></li>
-                <li>
-                    <a href="#sample-code" aria-label="Sample code">Sample code</a></li></ul>
-                </li>
-                <li>
-                    <a href="#hydra-module" aria-label="Hydra module">Hydra module</a><ul>
-                        
-                <li>
-                    <a href="#extra-where-do-these-square-brackets-do-in-pip-install" aria-label="Extra: where do these square brackets do in pip install">Extra: where do these square brackets do in pip install</a></li>
-                <li>
-                    <a href="#extra-what-is-toolsetuptoolspackagesfind" aria-label="Extra: what is [tool.setuptools.packages.find]">Extra: what is [tool.setuptools.packages.find]</a></li>
-                <li>
-                    <a href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml" aria-label="Extra: useful tools that can integrate within pyproject.toml">Extra: useful tools that can integrate within pyproject.toml</a></li>
-                <li>
-                    <a href="#extra-update-gitignore" aria-label="Extra: update gitignore">Extra: update gitignore</a></li></ul>
-                </li>
-                <li>
-                    <a href="#useful-vscode-python-extension" aria-label="Useful VSCode python extension">Useful VSCode python extension</a>
-                </li>
-            </ul>
-        </div>
-    </details>
+<details>
+<summary accesskey="c" title="(Alt + C)">
+<span class="details">Table of Contents</span>
+</summary>
+<div class="inner"><ul>
+<li>
+<a aria-label="Python module" href="#python-module">Python module</a><ul>
+<li>
+<a aria-label="common issue 1: python -m dir vs python dir" href="#common-issue-1-python--m-dir--vs-python-dir">common issue 1: python -m dir vs python dir</a></li>
+<li>
+<a aria-label="Standard way of import when you want to create a module" href="#standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module</a></li>
+<li>
+<a aria-label="However, in a complicated project where there are too many modules." href="#however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.</a></li>
+<li>
+<a aria-label="Solution: setup pyproject.toml and install it as a proper module" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup pyproject.toml and install it as a proper module</a></li>
+<li>
+<a aria-label="Sample code" href="#sample-code">Sample code</a></li></ul>
+</li>
+<li>
+<a aria-label="Hydra module" href="#hydra-module">Hydra module</a><ul>
+<li>
+<a aria-label="Extra: where do these square brackets do in pip install" href="#extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in pip install</a></li>
+<li>
+<a aria-label="Extra: what is [tool.setuptools.packages.find]" href="#extra-what-is-toolsetuptoolspackagesfind">Extra: what is [tool.setuptools.packages.find]</a></li>
+<li>
+<a aria-label="Extra: useful tools that can integrate within pyproject.toml" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml</a></li>
+<li>
+<a aria-label="Extra: update gitignore" href="#extra-update-gitignore">Extra: update gitignore</a></li></ul>
+</li>
+<li>
+<a aria-label="Useful VSCode python extension" href="#useful-vscode-python-extension">Useful VSCode python extension</a>
+</li>
+</ul>
 </div>
-
-  <div class="post-content"><p>[TOC]</p>
+</details>
+</div>
+<div class="post-content"><p>[TOC]</p>
 <ol>
 <li>Title: Python Module and Package Management 2023</li>
 <li>url: <a href="https://www.youtube.com/watch?v=v6tALyc4C10">https://www.youtube.com/watch?v=v6tALyc4C10</a></li>
 </ol>
-<h2 id="python-module">Python module<a hidden class="anchor" aria-hidden="true" href="#python-module">#</a></h2>
-<h3 id="common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code><a hidden class="anchor" aria-hidden="true" href="#common-issue-1-python--m-dir--vs-python-dir">#</a></h3>
+<h2 id="python-module">Python module<a aria-hidden="true" class="anchor" hidden="" href="#python-module">#</a></h2>
+<h3 id="common-issue-1-python--m-dir--vs-python-dir">common issue 1: <code>python -m dir </code> vs <code>python dir</code><a aria-hidden="true" class="anchor" hidden="" href="#common-issue-1-python--m-dir--vs-python-dir">#</a></h3>
 <ul>
 <li><code>python dir</code> will use the dir as the <code>PYTHONPATH</code> as run <code>__main__.py</code> file.</li>
 <li>however, <code>python -m dir</code> will not use the dir as <code>PYTHONPATH</code> but rather it will search the local library.
@@ -381,7 +365,7 @@ python -m venv .venv">
 </ul>
 </li>
 </ul>
-<h3 id="standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module<a hidden class="anchor" aria-hidden="true" href="#standard-way-of-import-when-you-want-to-create-a-module">#</a></h3>
+<h3 id="standard-way-of-import-when-you-want-to-create-a-module">Standard way of import when you want to create a module<a aria-hidden="true" class="anchor" hidden="" href="#standard-way-of-import-when-you-want-to-create-a-module">#</a></h3>
 <ul>
 <li>use absolute path -&gt; <code>from moduledir/packagename import filename</code></li>
 <li>avoid using relative path
@@ -391,24 +375,24 @@ python -m venv .venv">
 </li>
 <li>if within the same module, you can just use <code>from xxx import yyy</code></li>
 </ul>
-<h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a hidden class="anchor" aria-hidden="true" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
+<h3 id="however-in-a-complicated-project-where-there-are-too-many-modules">However, in a complicated project where there are too many modules.<a aria-hidden="true" class="anchor" hidden="" href="#however-in-a-complicated-project-where-there-are-too-many-modules">#</a></h3>
 <ul>
 <li>one workaround is that we still make it a module, but try to append folder path to the system path.</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
 </span></span><span class="line"><span class="cl"><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)))</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
 <li>always use it as the last resort.</li>
 </ul>
-<h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a hidden class="anchor" aria-hidden="true" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
+<h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">Solution: setup <code>pyproject.toml</code> and install it as a proper module<a aria-hidden="true" class="anchor" hidden="" href="#solution-setup-pyprojecttoml-and-install-it-as-a-proper-module">#</a></h3>
 <ul>
 <li>
 <p><code>python -m venv .venv</code></p>
@@ -429,13 +413,13 @@ python -m venv .venv">
 <p><a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html">https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html</a></p>
 </li>
 </ul>
-<h3 id="sample-code">Sample code<a hidden class="anchor" aria-hidden="true" href="#sample-code">#</a></h3>
+<h3 id="sample-code">Sample code<a aria-hidden="true" class="anchor" hidden="" href="#sample-code">#</a></h3>
 <ul>
 <li>hydra <code>default.yaml</code> config</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -455,19 +439,19 @@ python -m venv .venv">
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">defaults</span><span class="p">:</span><span class="w">
+<pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">defaults</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">_self_</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">hydra</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">job</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">chdir</span><span class="p">:</span><span class="w"> </span><span class="kc">True</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;outputs/${now:%Y-%m-%d}/${monitor.name}_${now:%H-%M-%S}&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dir</span><span class="p">:</span><span class="w"> </span><span class="s2">"outputs/${now:%Y-%m-%d}/${monitor.name}_${now:%H-%M-%S}"</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">monitor</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">use_wandb</span><span class="p">:</span><span class="w"> </span><span class="kc">False</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project_name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;My Test Program&#34;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">project_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"My Test Program"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">taglist</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">notes</span><span class="p">:</span><span class="w"> </span><span class="l">None</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -480,7 +464,7 @@ python -m venv .venv">
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -507,37 +491,37 @@ python -m venv .venv">
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">requires</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;setuptools&#34;</span><span class="p">,</span> <span class="s2">&#34;setuptools-scm&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">&#34;setuptools.build_meta&#34;</span>
+<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">build-system</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">requires</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"setuptools"</span><span class="p">,</span> <span class="s2">"setuptools-scm"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">build-backend</span> <span class="p">=</span> <span class="s2">"setuptools.build_meta"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;my_test&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">name</span> <span class="p">=</span> <span class="s2">"my_test"</span>
 </span></span><span class="line"><span class="cl"><span class="nx">authors</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span> <span class="p">=</span> <span class="s2">&#34;Sukai Huang&#34;</span><span class="p">,</span> <span class="nx">email</span> <span class="p">=</span> <span class="s2">&#34;sukaih@student.unimelb.edu.au&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span><span class="nx">name</span> <span class="p">=</span> <span class="s2">"Sukai Huang"</span><span class="p">,</span> <span class="nx">email</span> <span class="p">=</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">},</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;My test package description&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nx">readme</span> <span class="p">=</span> <span class="s2">&#34;readme.md&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">description</span> <span class="p">=</span> <span class="s2">"My test package description"</span>
+</span></span><span class="line"><span class="cl"><span class="nx">readme</span> <span class="p">=</span> <span class="s2">"readme.md"</span>
 </span></span><span class="line"><span class="cl"><span class="nx">dependencies</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;hydra-core&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;tqdm&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"hydra-core"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"tqdm"</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">&#34;1.0.0&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">version</span> <span class="p">=</span> <span class="s2">"1.0.0"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">setuptools</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">include-package-data</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl"><span class="nx">packages</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;my_test&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">package-dir</span> <span class="p">=</span> <span class="p">{</span><span class="s2">&#34;my_test&#34;</span> <span class="p">=</span> <span class="s2">&#34;my_test_folder&#34;</span><span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="nx">package-data</span> <span class="p">=</span> <span class="p">{</span><span class="s2">&#34;my_test&#34;</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;**/*&#34;</span><span class="p">]}</span> <span class="c"># include all of them</span>
+</span></span><span class="line"><span class="cl"><span class="nx">packages</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"my_test"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">package-dir</span> <span class="p">=</span> <span class="p">{</span><span class="s2">"my_test"</span> <span class="p">=</span> <span class="s2">"my_test_folder"</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">package-data</span> <span class="p">=</span> <span class="p">{</span><span class="s2">"my_test"</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"**/*"</span><span class="p">]}</span> <span class="c"># include all of them</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">setuptools</span><span class="p">.</span><span class="nx">packages</span><span class="p">.</span><span class="nx">find</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;config&#34;</span><span class="p">,</span> <span class="s2">&#34;outputs&#34;</span><span class="p">,</span> <span class="s2">&#34;multirun&#34;</span><span class="p">,</span> <span class="s2">&#34;logs&#34;</span><span class="p">]</span> 
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"config"</span><span class="p">,</span> <span class="s2">"outputs"</span><span class="p">,</span> <span class="s2">"multirun"</span><span class="p">,</span> <span class="s2">"logs"</span><span class="p">]</span> 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="hydra-module">Hydra module<a hidden class="anchor" aria-hidden="true" href="#hydra-module">#</a></h2>
+</div><h2 id="hydra-module">Hydra module<a aria-hidden="true" class="anchor" hidden="" href="#hydra-module">#</a></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -579,7 +563,7 @@ python -m venv .venv">
 </span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">wandb</span>
@@ -590,14 +574,14 @@ python -m venv .venv">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
 </span></span><span class="line"><span class="cl">    <span class="n">wandb_cfg</span> <span class="o">=</span> <span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_container</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">resolve</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;--------Model Config---------&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"--------Model Config---------"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">OmegaConf</span><span class="o">.</span><span class="n">to_yaml</span><span class="p">(</span><span class="n">cfg</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&#34;-----End of Model Config-----&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">log</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"-----End of Model Config-----"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="n">projectname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">project_name</span>
 </span></span><span class="line"><span class="cl">    <span class="n">jobname</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">name</span>
 </span></span><span class="line"><span class="cl">    <span class="n">tagslist</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">taglist</span>
 </span></span><span class="line"><span class="cl">    <span class="n">notes</span> <span class="o">=</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">notes</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">use_wandb</span> <span class="ow">and</span> <span class="n">cfg</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">&#34;train&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">cfg</span><span class="o">.</span><span class="n">monitor</span><span class="o">.</span><span class="n">use_wandb</span> <span class="ow">and</span> <span class="n">cfg</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s2">"train"</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">wandb</span><span class="o">.</span><span class="n">init</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">            <span class="n">project</span><span class="o">=</span><span class="n">projectname</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">            <span class="n">name</span><span class="o">=</span><span class="n">jobname</span><span class="p">,</span>
@@ -615,7 +599,7 @@ python -m venv .venv">
 </span></span><span class="line"><span class="cl"><span class="n">log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="nd">@hydra.main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">&#34;config&#34;</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">&#34;default&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@hydra.main</span><span class="p">(</span><span class="n">version_base</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">config_path</span><span class="o">=</span><span class="s2">"config"</span><span class="p">,</span> <span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">cfg</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># print config</span>
 </span></span><span class="line"><span class="cl">    <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="n">log</span><span class="p">)</span>
@@ -626,18 +610,18 @@ python -m venv .venv">
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">&#34;../../config&#34;</span><span class="p">):</span>
-</span></span><span class="line"><span class="cl">        <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">&#34;default&#34;</span><span class="p">)</span>
+<pre class="chroma" tabindex="0"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">initialize</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">"../../config"</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">cfg</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">config_name</span><span class="o">=</span><span class="s2">"default"</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">cfg</span> <span class="o">=</span> <span class="n">init_hydra</span><span class="p">(</span><span class="n">cfg</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">get_original_cwd</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;PYTHONPATH&#34;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">get_original_cwd</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"PYTHONPATH"</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">())</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -650,7 +634,7 @@ python -m venv .venv">
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -688,40 +672,40 @@ python -m venv .venv">
 </span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.languageServer&#34;</span><span class="p">:</span> <span class="s2">&#34;Pylance&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.analysis.extraPaths&#34;</span><span class="p">:</span> <span class="p">[</span> <span class="s2">&#34;.venv/lib/python3.9/site-packages&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;terminal.integrated.env.linux&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;PYTHONPATH&#34;</span><span class="p">:</span> <span class="s2">&#34;${workspaceFolder}&#34;</span>
+<pre class="chroma" tabindex="0"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.languageServer"</span><span class="p">:</span> <span class="s2">"Pylance"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.analysis.extraPaths"</span><span class="p">:</span> <span class="p">[</span> <span class="s2">".venv/lib/python3.9/site-packages"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"terminal.integrated.env.linux"</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">"PYTHONPATH"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}"</span>
 </span></span><span class="line"><span class="cl">    <span class="p">},</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;python.envFile&#34;</span><span class="p">:</span> <span class="s2">&#34;${workspaceFolder}/.env&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"python.envFile"</span><span class="p">:</span> <span class="s2">"${workspaceFolder}/.env"</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;psi-header.variables&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;projectCreationYear&#34;</span><span class="p">,</span> <span class="s2">&#34;2023&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;authoremail&#34;</span><span class="p">,</span> <span class="s2">&#34;sukaih@student.unimelb.edu.au&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;projectname&#34;</span><span class="p">,</span> <span class="s2">&#34;Modular RL from LLM&#34;</span><span class="p">],</span>
-</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">&#34;company&#34;</span><span class="p">,</span> <span class="s2">&#34;Sukai@Unimelb NLP Group&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.variables"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectCreationYear"</span><span class="p">,</span> <span class="s2">"2023"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"authoremail"</span><span class="p">,</span> <span class="s2">"sukaih@student.unimelb.edu.au"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"projectname"</span><span class="p">,</span> <span class="s2">"Modular RL from LLM"</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">        <span class="p">[</span><span class="s2">"company"</span><span class="p">,</span> <span class="s2">"Sukai@Unimelb NLP Group"</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;psi-header.templates&#34;</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"psi-header.templates"</span><span class="p">:</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;language&#34;</span><span class="p">:</span> <span class="s2">&#34;*&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="nt">&#34;template&#34;</span><span class="p">:</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;File Created: &lt;&lt;filecreated(&#39;dddd, Do MMMM YYYY h:mm:ss a&#39;)&gt;&gt;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Author: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;)&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-----&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Last Modified: &lt;&lt;dateformat(&#39;dddd, Do MMMM YYYY h:mm:ss a&#39;)&gt;&gt;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Modified By: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;&gt;)&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;-----&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Copyright &lt;&lt;projectCreationYear&gt;&gt; - &lt;&lt;year&gt;&gt; by &lt;&lt;company&gt;&gt;&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;All rights reserved.&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;This file is part of The &lt;&lt;projectname&gt;&gt; Project,&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;and is released under The MIT License. Please see the LICENSE&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;file that should have been included as part of this project.&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">"language"</span><span class="p">:</span> <span class="s2">"*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">"template"</span><span class="p">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"File Created: &lt;&lt;filecreated('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Author: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;)"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Last Modified: &lt;&lt;dateformat('dddd, Do MMMM YYYY h:mm:ss a')&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Modified By: &lt;&lt;author&gt;&gt; (&lt;&lt;authoremail&gt;&gt;&gt;)"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"-----"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"Copyright &lt;&lt;projectCreationYear&gt;&gt; - &lt;&lt;year&gt;&gt; by &lt;&lt;company&gt;&gt;"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"All rights reserved."</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"This file is part of The &lt;&lt;projectname&gt;&gt; Project,"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"and is released under The MIT License. Please see the LICENSE"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">"file that should have been included as part of this project."</span>
 </span></span><span class="line"><span class="cl">            <span class="p">]</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">    <span class="p">],</span>
-</span></span><span class="line"><span class="cl">    <span class="nt">&#34;[python]&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="nt">&#34;editor.defaultFormatter&#34;</span><span class="p">:</span> <span class="s2">&#34;ms-python.autopep8&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">"[python]"</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">"editor.defaultFormatter"</span><span class="p">:</span> <span class="s2">"ms-python.autopep8"</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
@@ -731,7 +715,7 @@ python -m venv .venv">
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -755,7 +739,7 @@ python -m venv .venv">
 </span><span class="lnt">22
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
+<pre class="chroma" tabindex="0"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">root
 </span></span><span class="line"><span class="cl">|   pyproject.toml
 </span></span><span class="line"><span class="cl">|   README.md
 </span></span><span class="line"><span class="cl">|   .venv
@@ -782,16 +766,16 @@ python -m venv .venv">
 </div><ul>
 <li>once we setup the toml file, we can use <code>pip install -e .</code></li>
 </ul>
-<h3 id="extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code><a hidden class="anchor" aria-hidden="true" href="#extra-where-do-these-square-brackets-do-in-pip-install">#</a></h3>
+<h3 id="extra-where-do-these-square-brackets-do-in-pip-install">Extra: where do these square brackets do in <code>pip install</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-where-do-these-square-brackets-do-in-pip-install">#</a></h3>
 <ul>
 <li>we often see</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="s2">&#34;splinter[django]&#34;</span>
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pip install <span class="s2">"splinter[django]"</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><ul>
@@ -800,24 +784,24 @@ python -m venv .venv">
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">.</span><span class="nx">optional-dependencies</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">pdf</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;ReportLab&gt;=1.2&#34;</span><span class="p">,</span> <span class="s2">&#34;RXP&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">rest</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;docutils&gt;=0.3&#34;</span><span class="p">,</span> <span class="s2">&#34;pack ==1.1, ==1.3&#34;</span><span class="p">]</span>
+<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">project</span><span class="p">.</span><span class="nx">optional-dependencies</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">pdf</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"ReportLab&gt;=1.2"</span><span class="p">,</span> <span class="s2">"RXP"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">rest</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"docutils&gt;=0.3"</span><span class="p">,</span> <span class="s2">"pack ==1.1, ==1.3"</span><span class="p">]</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a hidden class="anchor" aria-hidden="true" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
+</div><h3 id="extra-what-is-toolsetuptoolspackagesfind">Extra: what is <code>[tool.setuptools.packages.find]</code><a aria-hidden="true" class="anchor" hidden="" href="#extra-what-is-toolsetuptoolspackagesfind">#</a></h3>
 <ul>
-<li><img alt="image-20230528181250046" loading="lazy" src="/programming-notes/python-module-and-package-management-2023/image-assets/image-20230528181250046.png"></li>
+<li><img alt="image-20230528181250046" loading="lazy" src="/programming-notes/python-module-and-package-management-2023/image-assets/image-20230528181250046.png"/></li>
 </ul>
-<h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a hidden class="anchor" aria-hidden="true" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
+<h3 id="extra-useful-tools-that-can-integrate-within-pyprojecttoml">Extra: useful tools that can integrate within pyproject.toml<a aria-hidden="true" class="anchor" hidden="" href="#extra-useful-tools-that-can-integrate-within-pyprojecttoml">#</a></h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+<pre class="chroma" tabindex="0"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -853,61 +837,61 @@ python -m venv .venv">
 </span><span class="lnt">34
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">black</span><span class="p">]</span>   <span class="c"># format code</span>
+<pre class="chroma" tabindex="0"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">black</span><span class="p">]</span>   <span class="c"># format code</span>
 </span></span><span class="line"><span class="cl"><span class="nx">line-length</span> <span class="p">=</span> <span class="mi">88</span>
-</span></span><span class="line"><span class="cl"><span class="nx">target-version</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;py38&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="c"># &#39;extend-exclude&#39; excludes files or directories in addition to the defaults</span>
-</span></span><span class="line"><span class="cl"><span class="nx">extend-exclude</span> <span class="p">=</span> <span class="s2">&#34;&#34;&#34;
+</span></span><span class="line"><span class="cl"><span class="nx">target-version</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"py38"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="c"># 'extend-exclude' excludes files or directories in addition to the defaults</span>
+</span></span><span class="line"><span class="cl"><span class="nx">extend-exclude</span> <span class="p">=</span> <span class="s2">"""
 </span></span></span><span class="line"><span class="cl"><span class="s2"># A regex preceded with ^/ will apply only to files and directories
 </span></span></span><span class="line"><span class="cl"><span class="s2"># in the root of the project.
 </span></span></span><span class="line"><span class="cl"><span class="s2">(
 </span></span></span><span class="line"><span class="cl"><span class="s2">  llm_genplan/third_party
 </span></span></span><span class="line"><span class="cl"><span class="s2">)
-</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span></span><span class="line"><span class="cl"><span class="s2">"""</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">isort</span><span class="p">]</span>  <span class="c"># format import libs</span>
 </span></span><span class="line"><span class="cl"><span class="nx">py_version</span> <span class="p">=</span> <span class="mi">38</span>
-</span></span><span class="line"><span class="cl"><span class="nx">profile</span> <span class="p">=</span> <span class="s2">&#34;black&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">profile</span> <span class="p">=</span> <span class="s2">"black"</span>
 </span></span><span class="line"><span class="cl"><span class="nx">multi_line_output</span> <span class="p">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl"><span class="nx">skip_glob</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;venv/*&#34;</span><span class="p">,</span> <span class="s2">&#34;llm_genplan/third_party/*&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">skip_glob</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">split_on_trailing_comma</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">]</span>  <span class="c"># add static type comments</span>
 </span></span><span class="line"><span class="cl"><span class="nx">strict_equality</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="nx">disallow_untyped_calls</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span><span class="line"><span class="cl"><span class="nx">warn_unreachable</span> <span class="p">=</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">&#34;venv/*&#34;</span><span class="p">,</span> <span class="s2">&#34;llm_genplan/third_party/*&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="nx">follow_imports</span> <span class="p">=</span> <span class="s2">&#34;skip&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">exclude</span> <span class="p">=</span> <span class="p">[</span><span class="s2">"venv/*"</span><span class="p">,</span> <span class="s2">"llm_genplan/third_party/*"</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="nx">follow_imports</span> <span class="p">=</span> <span class="s2">"skip"</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">[[</span><span class="nx">tool</span><span class="p">.</span><span class="nx">mypy</span><span class="p">.</span><span class="nx">overrides</span><span class="p">]]</span>  <span class="c"># we specify certain modules that we want to ignore the mypy static type check</span>
 </span></span><span class="line"><span class="cl"><span class="nx">module</span> <span class="p">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;matplotlib.*&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pddlgym.*&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pyperclip.*&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pandas.*&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"matplotlib.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pddlgym.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pyperclip.*"</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">"pandas.*"</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="nx">ignore_missing_imports</span> <span class="p">=</span> <span class="kc">true</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="extra-update-gitignore">Extra: update gitignore<a hidden class="anchor" aria-hidden="true" href="#extra-update-gitignore">#</a></h3>
+</div><h3 id="extra-update-gitignore">Extra: update gitignore<a aria-hidden="true" class="anchor" hidden="" href="#extra-update-gitignore">#</a></h3>
 <ul>
 <li>when we want to update gitignore, often we need to remove all the cache and then add it back again</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre class="chroma" tabindex="0"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm -r --cached .
+<pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git rm -r --cached .
 </span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m<span class="s1">&#39;.gitignore update&#39;</span>
+</span></span><span class="line"><span class="cl">git commit -m<span class="s1">'.gitignore update'</span>
 </span></span><span class="line"><span class="cl">git push origin master
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a hidden class="anchor" aria-hidden="true" href="#useful-vscode-python-extension">#</a></h2>
+</div><h2 id="useful-vscode-python-extension">Useful VSCode python extension<a aria-hidden="true" class="anchor" hidden="" href="#useful-vscode-python-extension">#</a></h2>
 <ol>
 <li>Python Extension Package</li>
 <li>GitGraph</li>
@@ -921,113 +905,90 @@ python -m venv .venv">
 <li>code spell checker</li>
 <li>black formatter</li>
 </ol>
-
-
-  </div>
-
-  <footer class="post-footer">
-    <ul class="post-tags">
-    </ul>
-<nav class="paginav">
-  <a class="prev" href="https://sino-huang.github.io/posts/lin_guan-leveraging-pretrained-llm-to-construct-and-utilise-world-models-for-model-based-task-planning-2023/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Lin_guan Leveraging Pretrained Llm to Construct and Utilise World Models for Model Based Task Planning 2023</span>
-  </a>
-  <a class="next" href="https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/">
-    <span class="title">Next »</span>
-    <br>
-    <span>Dharma_kc Neural Machine Translation for Code Generation 2023</span>
-  </a>
-</nav>
-
-
-<ul class="share-buttons">
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on x"
-            href="https://x.com/intent/tweet/?text=Python%20Module%20and%20Package%20Management%202023&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&amp;hashtags=">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&amp;title=Python%20Module%20and%20Package%20Management%202023&amp;summary=Python%20Module%20and%20Package%20Management%202023&amp;source=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on reddit"
-            href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&title=Python%20Module%20and%20Package%20Management%202023">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on facebook"
-            href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on whatsapp"
-            href="https://api.whatsapp.com/send?text=Python%20Module%20and%20Package%20Management%202023%20-%20https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f">
-            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on telegram"
-            href="https://telegram.me/share/url?text=Python%20Module%20and%20Package%20Management%202023&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f">
-            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
-                <path
-                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
-            </svg>
-        </a>
-    </li>
-    <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Python Module and Package Management 2023 on ycombinator"
-            href="https://news.ycombinator.com/submitlink?t=Python%20Module%20and%20Package%20Management%202023&u=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f">
-            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
-                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
-                <path
-                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
-            </svg>
-        </a>
-    </li>
+</div>
+<footer class="post-footer">
+<ul class="post-tags">
 </ul>
-
-  </footer>
+<nav class="paginav">
+<a class="prev" href="https://sino-huang.github.io/posts/lin_guan-leveraging-pretrained-llm-to-construct-and-utilise-world-models-for-model-based-task-planning-2023/">
+<span class="title">« Prev</span>
+<br/>
+<span>Lin_guan Leveraging Pretrained Llm to Construct and Utilise World Models for Model Based Task Planning 2023</span>
+</a>
+<a class="next" href="https://sino-huang.github.io/posts/dharma_kc-neural-machine-translation-for-code-generation-2023/">
+<span class="title">Next »</span>
+<br/>
+<span>Dharma_kc Neural Machine Translation for Code Generation 2023</span>
+</a>
+</nav>
+<ul class="share-buttons">
+<li>
+<a aria-label="share Python Module and Package Management 2023 on x" href="https://x.com/intent/tweet/?text=Python%20Module%20and%20Package%20Management%202023&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&amp;hashtags=" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&amp;title=Python%20Module%20and%20Package%20Management%202023&amp;summary=Python%20Module%20and%20Package%20Management%202023&amp;source=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f&amp;title=Python%20Module%20and%20Package%20Management%202023" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on whatsapp" href="https://api.whatsapp.com/send?text=Python%20Module%20and%20Package%20Management%202023%20-%20https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on telegram" href="https://telegram.me/share/url?text=Python%20Module%20and%20Package%20Management%202023&amp;url=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="2 2 28 28" width="30px" xml:space="preserve">
+<path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Python Module and Package Management 2023 on ycombinator" href="https://news.ycombinator.com/submitlink?t=Python%20Module%20and%20Package%20Management%202023&amp;u=https%3a%2f%2fsino-huang.github.io%2fprogramming-notes%2fpython-module-and-package-management-2023%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<path d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z"></path>
+</svg>
+</a>
+</li>
+</ul>
+</footer>
 </article>
-    </main>
-    
+</main>
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
 
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -1130,5 +1091,4 @@ python -m venv .venv">
     });
 </script>
 </body>
-
 </html>
