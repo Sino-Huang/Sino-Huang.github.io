@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Granularity is Important! | Sukai Huang</title>
+<meta content="" name="keywords"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/" hreflang="en" rel="alternate"/>
+<noscript>
+<style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+<style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script><meta content="https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Granularity is Important!" property="og:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="research-idea" property="article:section"/>
+<meta content="2025-06-07T22:49:29+10:00" property="article:published_time"/>
+<meta content="2025-06-07T22:49:29+10:00" property="article:modified_time"/>
+<meta content="https://sino-huang.github.io/posts/awesome-internal-representation-of-if-agents/image-assets/cover.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/posts/awesome-internal-representation-of-if-agents/image-assets/cover.png" name="twitter:image"/>
+<meta content="Granularity is Important!" name="twitter:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Research-Idea",
+      "item": "https://sino-huang.github.io/research-idea/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Granularity is Important!",
+      "item": "https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Granularity is Important!",
+  "name": "Granularity is Important!",
+  "description": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\nEncrypted Section Part of this article is encrypted with password:\n--- DON'T MODIFY THIS LINE --- 🧭 1. Problem Statement \u0026 Motivation What is the problem you’re tackling? Why is it important? Ground the reader in a real, compelling issue in the ML/AI landscape. Mention a bottleneck, limitation, or a surprising gap in current literature. 📚 2. Background \u0026 Related Work What has been done already? Cite key prior work and how your idea differs or extends them. Include recent breakthroughs and how your idea connects to them. (Where are you from?) 💡 3. Key Insight or Hypothesis What is your main idea or insight? Keep it one paragraph or a few bullet points. It should sound non-trivial but also testable or implementable. 🧪 4. Research Questions or Objectives Make them explicit: What will you try to discover, test, or prove? Frame them as hypotheses or measurable goals. Example:\nHow does instruction granularity affect the trade-off between learning efficiency and generalization performance in VLA instruction following learning agents. 🛠 5. Proposed Methodology Break this down as appropriate to your research:\nOverall Approach – high-level method and pipeline Key Components – any novel model, architecture, algorithm, or setup Comparison or Baselines – what will you compare against? Implementation Plan – how you will run this, what environment/tools/datasets 📊 6. Evaluation Plan How will you know your idea works? Include metrics, datasets, environments, or simulated tasks. Mention qualitative vs. quantitative eval if both apply. 🧠 7. Expected Contributions Be direct. For example: A novel method, New benchmark, Theoretical analysis, Neuro-symbolic framework that integrating some symbolic structure into the internal computation or representation of agents.\n📅 9. Timeline and Milestone Timeframe Milestone Description Deliverable(s) (Insert time) Literature review on VLA and instruction granularity, Policy Sketch Annotated bibliography, summary (Insert time) Environment setup and baseline replication Working codebase with Dynalang, Craftext, PDDLGym (Insert time) Design Hector’s policy sketches for all environments Symbolic policy sketches (Insert time) Data collection and training pipeline implementation Dataset + training scripts (Insert time) Initial experiments on sample efficiency Experimental plots, logs (Insert time) Generalization experiments on unseen tasks Zero-shot evaluations, analysis plots (Insert time) Design and evaluate instruction granularity schedules to optimize learning efficiency and generalization performance of VLA agents. A curve plot showing the optimal instruction granularity schedule (abstract-to-detailed ratio over training time) and its impact on learning efficiency and generalization. (Insert time) Analysis and insight synthesis Draft results, visualizations (Insert time) Paper drafting Initial paper draft, figures (Insert time) Internal review and final submission Final version, submission receipt ",
+  "wordCount" : "439",
+  "inLanguage": "en",
+  "image":"https://sino-huang.github.io/posts/awesome-internal-representation-of-if-agents/image-assets/cover.png","datePublished": "2025-06-07T22:49:29+10:00",
+  "dateModified": "2025-06-07T22:49:29+10:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sukai Huang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sukai Huang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sino-huang.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+<span>Lit Reviews</span> 
+                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
+<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+<path d="M15 3h6v6"></path>
+<path d="M10 14L21 3"></path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main">
+<article class="post-single">
+<header class="post-header">
+<div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/research-idea/">Research-Idea</a></div>
+<h1 class="post-title entry-hint-parent">
+      Granularity is Important!
+    </h1>
+<div class="post-meta"><span title="2025-06-07 22:49:29 +1000 AEST">June 7, 2025</span> · 3 min · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/research-idea/awesome-internal-representation-of-if-agents/index.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
+</div>
+</header>
+<figure class="entry-cover">
+<img alt="" loading="eager" src="https://sino-huang.github.io/posts/awesome-internal-representation-of-if-agents/image-assets/cover.png"/>
+<figcaption><text></text></figcaption>
+</figure>
+<div class="post-content"><p>The research idea is confidential and you need password to access to the content, sorry for any inconvenience.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3><strong>Encrypted Section<strong></strong></strong></h3>
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<script>
+  
+  document.querySelector(".hugo-encryptor-input").addEventListener("keyup", event => {
+      if(event.key !== "Enter") return; 
+      document.querySelector(".hugo-encryptor-button").click(); 
+      event.preventDefault(); 
+  });
+</script>
+</div>
+<footer class="post-footer">
+<ul class="post-tags">
+</ul>
+<ul class="share-buttons">
+<li>
+<a aria-label="share Granularity is Important! on x" href="https://x.com/intent/tweet/?text=Granularity%20is%20Important%21&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f&amp;hashtags=" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f&amp;title=Granularity%20is%20Important%21&amp;summary=Granularity%20is%20Important%21&amp;source=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f&amp;title=Granularity%20is%20Important%21" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on whatsapp" href="https://api.whatsapp.com/send?text=Granularity%20is%20Important%21%20-%20https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on telegram" href="https://telegram.me/share/url?text=Granularity%20is%20Important%21&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="2 2 28 28" width="30px" xml:space="preserve">
+<path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Granularity is Important! on ycombinator" href="https://news.ycombinator.com/submitlink?t=Granularity%20is%20Important%21&amp;u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fawesome-internal-representation-of-if-agents%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<path d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z"></path>
+</svg>
+</a>
+</li>
+</ul>
+</footer>
+</article>
+</main>
+<footer class="footer">
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+</span>
+</footer>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
+</a>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</html>

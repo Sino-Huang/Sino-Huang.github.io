@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Research Idea on Sukai Huang</title>
+    <link>https://sino-huang.github.io/categories/research-idea/</link>
+    <description>Recent content in Research Idea on Sukai Huang</description>
+    <image>
+      <title>Sukai Huang</title>
+      <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
+      <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.7</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 07 Jun 2025 22:49:29 +1000</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/categories/research-idea/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Granularity is Important!</title>
+      <link>https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/</link>
+      <pubDate>Sat, 07 Jun 2025 22:49:29 +1000</pubDate>
+      <guid>https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/</guid>
+      <description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
