@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/language-abstraction/</loc>
+    <lastmod>2025-06-27T22:49:29+10:00</lastmod>
+  </url><url>
     <loc>https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/</loc>
     <lastmod>2025-06-07T22:49:29+10:00</lastmod>
   </url><url>
@@ -11,17 +14,17 @@
     <loc>https://sino-huang.github.io/research-idea/awesome-internal-representation-of-if-agents/vllm-vs-vla/</loc>
     <lastmod>2025-06-07T22:49:29+10:00</lastmod>
   </url><url>
-    <loc>https://sino-huang.github.io/research-idea/</loc>
-    <lastmod>2025-06-28T22:49:29+10:00</lastmod>
-  </url><url>
-    <loc>https://sino-huang.github.io/</loc>
-    <lastmod>2025-06-28T22:49:29+10:00</lastmod>
-  </url><url>
     <loc>https://sino-huang.github.io/categories/</loc>
-    <lastmod>2025-06-07T22:49:29+10:00</lastmod>
+    <lastmod>2025-06-27T22:49:29+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/categories/research-idea/</loc>
-    <lastmod>2025-06-07T22:49:29+10:00</lastmod>
+    <lastmod>2025-06-27T22:49:29+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/research-idea/</loc>
+    <lastmod>2025-06-27T22:49:29+10:00</lastmod>
+  </url><url>
+    <loc>https://sino-huang.github.io/</loc>
+    <lastmod>2025-06-27T22:49:29+10:00</lastmod>
   </url><url>
     <loc>https://sino-huang.github.io/tags/concept-erase/</loc>
     <lastmod>2025-04-02T17:17:26+11:00</lastmod>
