@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Research-Idea on Sukai Huang</title>
-    <link>https://sino-huang.github.io/research-idea/</link>
-    <description>Recent content in Research-Idea on Sukai Huang</description>
+    <title>Multi-agent Communication with Varying Levels of Granularities on Sukai Huang</title>
+    <link>https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/</link>
+    <description>Recent content in Multi-agent Communication with Varying Levels of Granularities on Sukai Huang</description>
     <image>
       <title>Sukai Huang</title>
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
@@ -12,6 +12,6 @@
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://sino-huang.github.io/research-idea/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
