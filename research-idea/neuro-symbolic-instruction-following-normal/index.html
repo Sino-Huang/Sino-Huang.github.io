@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html dir="auto" lang="en">
-<head><meta charset="utf-8"/>
-<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
-<meta content="index, follow" name="robots"/>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
 <title>Account for Levels of Granularity of Language Instructions for Embodied Agents | Sukai Huang</title>
-<meta content="" name="keywords"/>
-<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="description"/>
-<meta content="Sukai Huang" name="author"/>
-<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/" rel="canonical"/>
-<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
-<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
-<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
-<meta content="#2e2e33" name="theme-color"/>
-<meta content="#2e2e33" name="msapplication-TileColor"/>
-<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/index.xml" rel="alternate" type="application/rss+xml"/>
-<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/" hreflang="en" rel="alternate"/>
+<meta name="keywords" content="">
+<meta name="description" content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience.">
+<meta name="author" content="Sukai Huang">
+<link rel="canonical" href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/">
+<meta name="google-site-verification" content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V&#43;OBX&#43;7uVm4R&#43;XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/index.xml">
+<link rel="alternate" hreflang="en" href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/">
 <noscript>
-<style>
+    <style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-<style>
+    <style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -57,9 +58,9 @@
 
     </style>
 </noscript>
-<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
-<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
-<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -76,8 +77,9 @@
         });
     });
 </script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
-<script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+      <script>
         var doNotTrack = false;
         if ( false ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
@@ -89,17 +91,19 @@
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/" property="og:url"/>
-<meta content="Sukai Huang" property="og:site_name"/>
-<meta content="Account for Levels of Granularity of Language Instructions for Embodied Agents" property="og:title"/>
-<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." property="og:description"/>
-<meta content="en" property="og:locale"/>
-<meta content="website" property="og:type"/>
-<meta content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629161302925.png" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629161302925.png" name="twitter:image"/>
-<meta content="Account for Levels of Granularity of Language Instructions for Embodied Agents" name="twitter:title"/>
-<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
+      </script><meta property="og:url" content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/">
+  <meta property="og:site_name" content="Sukai Huang">
+  <meta property="og:title" content="Account for Levels of Granularity of Language Instructions for Embodied Agents">
+  <meta property="og:description" content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629161302925.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629161302925.png">
+<meta name="twitter:title" content="Account for Levels of Granularity of Language Instructions for Embodied Agents">
+<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews">
+
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -121,6 +125,7 @@
 }
 </script>
 </head>
+
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -132,72 +137,581 @@
     }
 
 </script>
+
 <header class="header">
-<nav class="nav">
-<div class="logo">
-<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-<div class="logo-switches">
-<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
-<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-</svg>
-<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-<circle cx="12" cy="12" r="5"></circle>
-<line x1="12" x2="12" y1="1" y2="3"></line>
-<line x1="12" x2="12" y1="21" y2="23"></line>
-<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
-<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
-<line x1="1" x2="3" y1="12" y2="12"></line>
-<line x1="21" x2="23" y1="12" y2="12"></line>
-<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
-<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
-</svg>
-</button>
-</div>
-</div>
-<ul id="menu">
-<li>
-<a href="https://sino-huang.github.io/biography/" title="Biography">
-<span>Biography</span>
-</a>
-</li>
-<li>
-<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
-<span>Lit Reviews</span> 
-                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
-<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-<path d="M15 3h6v6"></path>
-<path d="M10 14L21 3"></path>
-</svg>
-</a>
-</li>
-</ul>
-</nav>
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://sino-huang.github.io/biography/" title="Biography">
+                    <span>Biography</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+                    <span>Lit Reviews</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
-<main class="main">
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/research-idea/">Research-Idea</a></div>
-<h1>
+<main class="main"> 
+
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/research-idea/">Research-Idea</a></div>
+  <h1>
     Account for Levels of Granularity of Language Instructions for Embodied Agents
-    <a aria-label="RSS" href="/research-idea/neuro-symbolic-instruction-following-normal/index.xml" title="RSS">
-<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 11a9 9 0 0 1 9 9"></path>
-<path d="M4 4a16 16 0 0 1 16 16"></path>
-<circle cx="5" cy="19" r="1"></circle>
-</svg>
-</a>
-</h1>
+    <a href="/research-idea/neuro-symbolic-instruction-following-normal/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 <div class="post-content"><p>The research idea is confidential and you need password to access to the content, sorry for any inconvenience.</p>
+
+
+
 <div class="hugo-encryptor-container">
-<div class="hugo-encryptor-prompt">
-<h3><strong>Encrypted Section<strong></strong></strong></h3>
-<p>Part of this article is encrypted with password:</p>
+  <div class="hugo-encryptor-prompt">
+    <h3><strong>Encrypted Section<strong></h3>
+    
+      <p>Part of this article is encrypted with password:</p>
+    
+  </div>
+  <div class="hugo-encryptor-form">
+    <input
+      class="hugo-encryptor-input"
+      placeholder='Please input the password'
+    />
+    <input
+      class="hugo-encryptor-button"
+      type="button"
+      value='Click to verify'
+      onclick="_click_handler(this)"
+    />
+  </div>
+  <div
+    class="hugo-encryptor-cipher-text"
+    data-password="siyang-and-monash-are-two-of-my-focus"
+    style="display: none;"
+  >
+    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
+    <h3 id="-1-short-motivation">🧭 1. <strong>Short Motivation</strong><a hidden class="anchor" aria-hidden="true" href="#-1-short-motivation">#</a></h3>
+<details>
+  <summary>Tips</summary>
+  <div><p><strong>What is the problem you&rsquo;re tackling?</strong></p>
+<p><strong>Why is it important?</strong></p>
+<ul>
+<li>Ground the reader in a real, compelling issue in the ML/AI landscape.</li>
+<li>Mention a bottleneck, limitation, or a surprising gap in current literature.</li>
+</ul>
+<p><strong>Consolidate this after you find out the concrete research area and prior work</strong></p>
 </div>
-<div class="hugo-encryptor-form">
-<input class="hugo-encryptor-input" placeholder="Please input the password"/>
-<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</details>
+<ul>
+<li>
+<p>Neuro-symbolic approaches for embodied agents have shown impressive capabilities in following natural language instructions across diverse environments and robotic embodiments.</p>
+</li>
+<li>
+<p>However, most existing studies assume a uniform instruction granularity &mdash; often are highly detailed and action-specific. In contrast, human instructors naturally vary the level of instruction granularity depending on the context, the learner&rsquo;s expertise, and habitual communication style.</p>
+</li>
+<li>
+<p>Thus, we see a clear mismatch between research assumptions and real-world scenarios.</p>
+</li>
+</ul>
+<p><img alt="image-20250703142259928" loading="lazy" src="/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250703142259928.png"></p>
+<blockquote>
+<p>[!IMPORTANT]</p>
+<p>By leveraging Hector Geffner’s Policy sketch formalism to model natural language instructions, we can <strong>systematically quantify</strong> the granularity of these instructions.</p></blockquote>
+<table>
+  <thead>
+      <tr>
+          <th>Aspect</th>
+          <th>High-Level Instruction</th>
+          <th>Low-Level Instruction</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Subproblem Coverage</td>
+          <td>Few subproblem are omitted (e.g., washing dishes)</td>
+          <td>Full pipeline: get → cook → assemble → serve → wash</td>
+      </tr>
+      <tr>
+          <td>Feature Count</td>
+          <td>Fewer features (e.g., omit <strong>is_clean</strong> predicate for plates, or omit <strong>distance</strong> property of the target objects)</td>
+          <td>More features</td>
+      </tr>
+      <tr>
+          <td>Type Specificity</td>
+          <td>General (e.g., Chop vegetables)</td>
+          <td>Precise (e.g., “Chop tomatoes”)</td>
+      </tr>
+      <tr>
+          <td><strong>Example Instruction</strong></td>
+          <td>“Prepare rice, seaweed and fish, make sushi, and then serve it to the table.”</td>
+          <td>“Pick up rice, cook it in the top-left pot, then place it on a plate with seaweed and chopped fish. Blah blah&hellip;</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="-2-background--related-work">📚 2. <strong>Background &amp; Related Work</strong><a hidden class="anchor" aria-hidden="true" href="#-2-background--related-work">#</a></h3>
+<details>
+  <summary>Tips</summary>
+  <div><p><strong>You shall not be the first one working on this topic.</strong> Find the prior works that are closely relevant to what you want to solve. Ask yourself &mdash; How did those works solve the research problem you target, what are the advantages and trade-offs of your approach?</p>
+<blockquote>
+<p>[!TIP]</p>
+<p>You can design a prompt for ScholarQA</p></blockquote>
 </div>
-<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</details>
+<h4 id="-topic-1-formal-representation-of-instruction-abstraction">🧠 <strong>Topic 1: Formal Representation of Instruction Abstraction</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-1-formal-representation-of-instruction-abstraction">#</a></h4>
+<p><strong>Prompt for ScholarQA:</strong></p>
+<blockquote>
+<p>What prior work has proposed <strong>formal or symbolic models</strong> to represent the <strong>abstraction level</strong> of natural language instructions in planning, robotics, or instruction-following tasks? Are there existing frameworks (e.g., program sketches, hierarchical policies, task decomposition) that allow explicit modeling or control over instruction granularity?</p></blockquote>
+<details>
+  <summary>Check the details for Topic 1</summary>
+  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/cfa8c2b1-ad07-46ca-9e17-532c7036dcc0">https://ai2-scholar-qa.allen.ai/query/cfa8c2b1-ad07-46ca-9e17-532c7036dcc0</a></p>
+<p><strong>Background</strong></p>
+<p>Human instructors convey NL instructions with varying levels of granularity depending on context, user expertise, and habitual communication style. This variation creates a key challenge for embodied agents: instructions can range from abstract commands (e.g., &ldquo;deliver the package&rdquo;) to detailed procedures (e.g., &ldquo;move to coordinates (x, y), ensure hands are empty, then pick up the package&rdquo;). This diverse abstraction spectrum makes it difficult for agents to adapt and ground instructions into concrete action sequences.</p>
+<p>Formal and symbolic representations have emerged as a crucial bridge between the flexibility of NL and the structured representations required by computational systems [1,2], targeting several key challenges:</p>
+<ol>
+<li>Disambiguating vague instructions</li>
+<li>Inferring implicit steps</li>
+<li>Handling instructions at varying levels of abstractions</li>
+</ol>
+<p><strong>Related Work</strong></p>
+<p>Prior works have leveraged well-established symbolic representation frameworks to map NL instructions into symbolic formalism to that support symbolic reasoning and action planning. Below, we outline three main classes of symbolic representations used for this purpose:</p>
+<ol>
+<li>
+<p><strong>Temporal Logic</strong> has been a cornerstone method for representing time-dependent properties and constraints within instructions [6, 7]. It enables the decomposition of high-level goals into temporal subgoals [4, 8] and even serves as specification language for tasks in embodied agent benchmark simulators [5].</p>
+<p><img alt="image-20250703122037576" loading="lazy" src="image-assets/image-20250703122037576.png"></p>
+</li>
+<li>
+<p><strong>PDDL</strong> (Planning Domain Definition Language) has also been widely adopted as an intermediate formalism in embodied instruction following. Some recent works translate natural language task descriptions into PDDL [9, 10, 11], enabling the use of external symbolic planners to generate or verify action sequences. This pipeline offers robustness against hallucinations by LLM agents and provides a structured, declarative representation of tasks that supports symbolic reasoning.</p>
+<p>Benchmarks like ALFWorld [12] employ PDDL to formally specify the environment. Participants are prompted to derive the world’s PDDL representation from perceptual inputs and natural language instructions [13].</p>
+<p><img alt="image-20250703121940950" loading="lazy" src="image-assets/image-20250703121940950.png"></p>
+<p>However, mainstream PDDL planners have limited support for modeling expert instructions (i.e., behavior preference) [14]. The language itself also lacks expressivity for capturing different levels of granularity in expert instructions, which is the focus of our work.</p>
+</li>
+<li>
+<p><strong>Programs as Plans.</strong> Some works represent tasks as executable programs &mdash; such as Python scripts [15] &mdash; or probabilistic programs [1], enabling structured reasoning about physical outcomes of actions. based on NL descriptions [3].</p>
+<p><img alt="image-20250703122159117" loading="lazy" src="image-assets/image-20250703122159117.png"></p>
+</li>
+</ol>
+<p><strong>Sum up</strong></p>
+<p>However, most existing approaches assume a fixed (often low-level) or uniform level of granularity in instructions. The challenge of modeling instructions that vary in granularity remains under-explored. While hierarchical policy models &mdash; such as option-based MDPs [16] and architectures combining high-level planners with low-level executors [17, 18] &mdash; partially address abstract high-level instructions, their focus remains on task decomposition and policy optimization, not on modeling the semantic structure of instruction language itself. To this end, we investigate how <em>policy sketch</em> formalism &mdash; a structured representation developed recently <em>[citation]</em>, can be leveraged to explicitly account for different instruction granularity levels, thereby enabling more robust reasoning and action generation.</p>
+<p><strong>Ref:</strong></p>
+<p>[1] Wong, Lionel, et al. &ldquo;From word models to world models: Translating from natural language to the probabilistic language of thought.&rdquo; <em>arXiv preprint arXiv:2306.12672</em> (2023).</p>
+<p>[2] Tenenbaum, Joshua B. &ldquo;Cognitive and computational building blocks for more human-like language in machines.&rdquo; (2020).</p>
+<p>[3] Zhang, Cedegao, et al. &ldquo;Grounded physical language understanding with probabilistic programs and simulated worlds.&rdquo; Proceedings of the annual meeting of the cognitive science society. Vol. 45. No. 45. 2023.</p>
+<p>[4] Wang, Jun, et al. &ldquo;Conformal temporal logic planning using large language models.&rdquo; <em>arXiv preprint arXiv:2309.10092</em> (2023).</p>
+<p>[5] Li, Manling, et al. &ldquo;Embodied agent interface: Benchmarking llms for embodied decision making.&rdquo; <em>Advances in Neural Information Processing Systems</em> 37 (2024): 100428-100534.</p>
+<p>[6] Wang, Christopher et al. “Learning a natural-language to LTL executable semantic parser for grounded robotics.” <em>Conference on Robot Learning</em> (2020).</p>
+<p>[7] Yongchao Chen, Rujul Gandhi, Yang Zhang, Chuchu Fan. &ldquo;NL2TL: Transforming Natural Languages to Temporal Logics using Large Language Models.&rdquo; EMNLP 2023: 15880-15903</p>
+<p>[8] Liu, Jason Xinyu, et al. &ldquo;Lang2ltl: Translating natural language commands to temporal specification with large language models.&rdquo; Workshop on Language and Robotics at CoRL 2022. 2022.</p>
+<p>[9] Guan, Lin, et al. &ldquo;Leveraging pre-trained large language models to construct and utilize world models for model-based task planning.&rdquo; <em>Advances in Neural Information Processing Systems</em> 36 (2023): 79081-79094.</p>
+<p>[10] Mahdavi, Sadegh et al. “Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models.” <em>Neural Information Processing Systems</em> (2024).</p>
+<p>[11] Huang, Sukai, Nir Lipovetzky, and Trevor Cohn. &ldquo;Planning in the Dark: LLM-Symbolic Planning Pipeline without Experts.&rdquo; <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>. Vol. 39. No. 25. 2025.</p>
+<p>[12] Shridhar, Mohit, et al. &ldquo;ALFWorld: Aligning Text and Embodied Environments for Interactive Learning.&rdquo; <em>International Conference on Learning Representations</em>.</p>
+<p>[13] Xie, Yaqi, et al. &ldquo;Translating natural language to planning goals with large-language models.&rdquo; <em>arXiv preprint arXiv:2302.05128</em> (2023).</p>
+<p>[14] Gerevini, Alfonso E., et al. &ldquo;Deterministic planning in the fifth international planning competition: PDDL3 and experimental evaluation of the planners.&rdquo; <em>Artificial Intelligence</em> 173.5-6 (2009): 619-668.</p>
+<p>[15] Singh, Ishika, et al. &ldquo;ProgPrompt: program generation for situated robot task planning using large language models.&rdquo; Autonomous Robots 47.8 (2023): 999-1012.</p>
+<p>[16] Andreas, Jacob, Dan Klein, and Sergey Levine. &ldquo;Modular multitask reinforcement learning with policy sketches.&rdquo; <em>International conference on machine learning</em>. PMLR, 2017.</p>
+<p>[17] Wang, Zihao, et al. &ldquo;Describe, explain, plan and select: interactive planning with llms enables open-world multi-task agents.&rdquo; <em>Advances in Neural Information Processing Systems</em> 36 (2023): 34153-34189.</p>
+<p>[18] Nottingham, Kolby, et al. &ldquo;Do embodied agents dream of pixelated sheep: Embodied decision making using language guided world modelling.&rdquo; <em>International Conference on Machine Learning</em>. PMLR, 2023.</p>
+</div>
+</details>
+<h4 id="-topic-2-robustness-to-incomplete-or-underspecified-instructions">🔍 <strong>Topic 2: Robustness to Incomplete or Underspecified Instructions</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-2-robustness-to-incomplete-or-underspecified-instructions">#</a></h4>
+<p><strong>Prompt for ScholarQA:</strong></p>
+<blockquote>
+<p>What prior work exists on instruction-following agents that are robust to <strong>incomplete</strong>, <strong>underspecified</strong>, or <strong>ambiguous</strong> natural language instructions, particularly in embodied or interactive environments? Include approaches from both end-to-end and neuro-symbolic models that handle ambiguity, implicit goals, or missing information during execution.</p></blockquote>
+<details>
+  <summary>Check the details for Topic 2</summary>
+  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/fee23fea-c021-4d9d-9465-7e71fdd92843">https://ai2-scholar-qa.allen.ai/query/fee23fea-c021-4d9d-9465-7e71fdd92843</a></p>
+<p><strong>Background</strong></p>
+<p>Natural language instructions are often vague, or omit details that humans readily infer from context, but which pose significant challenges for instruction-following agents. For example, a command like <em>&ldquo;pick up the cup&rdquo;</em> may be ambiguous in an environment with multiple cups, relying on implicit contextual cues—such as &ldquo;selecting the <strong>closest</strong> cup&rdquo;.</p>
+<p><strong>Related Work</strong></p>
+<p>Approaches to handling ambiguous or underspecified instructions can be broadly categorized into end-to-end neural methods and neuro-symbolic frameworks.</p>
+<p><strong>Neural Approaches:</strong> End-to-end models often rely on large-scale training and multimodal attention mechanisms [4] to resolve ambiguity, such as those based on vision-language models like SAM [1, 2], Grounding DINO [3]. These models can leverage learned priors from pretraining to resolve some forms of reference ambiguity. However, their performance tends to degrade in out-of-distribution (OOD) environments [5] or tasks requiring compositional reasoning on novel compositions [6].</p>
+<p><strong>Neuro-symbolic approaches</strong> aim to resolve ambiguity in natural language by converting instructions into formal symbolic representations. For example, some methods disambiguate linguistic paraphrases by mapping them to discrete symbolic forms [7], while some translates free-form language into structured planning languages like PDDL [8]. However, traditional symbolic languages often only support deterministic inference, which struggles to handle the inherent <strong>uncertainty</strong> of natural language. To address this, probabilistic programming languages have been proposed to explicitly model such uncertainty, offering a more flexible approach [9, 10].</p>
+<p><strong>Sum up</strong></p>
+<p>In this work, we investigate Geffner’s <em>policy sketch</em> formalism, which provides a structural representation of rule-based general policy. One notable advantage of this approach is that it offers a way to quantify the ambiguity or underspecification of instructions by analyzing the time complexity of solving the corresponding subproblem via <em>width-based planning</em>. This complexity is influenced by both the <em>quality</em> of the features chosen (i.e., those aspects the instructor deems relevant) and the <em>number</em> of such features included in the sketch. Thus, policy sketches provide a insightful framework not just for interpreting abstract instructions, but also for measuring how difficult it is for an agent to act upon them, offering a principled lens on instruction ambiguity.</p>
+<p><strong>Ref:</strong></p>
+<p>[1] Kirillov, Alexander, et al. &ldquo;Segment anything.&rdquo; <em>Proceedings of the IEEE/CVF international conference on computer vision</em>. 2023.</p>
+<p>[2] Nikhila Ravi, Valentin Gabeur, et. al. &ldquo;SAM 2: Segment Anything in Images and Videos.&rdquo; ICLR 2025</p>
+<p>[3] Shilong Liu, Zhaoyang Zeng, Tianhe Ren, Feng Li, Hao Zhang, Jie Yang, Qing Jiang, Chunyuan Li, Jianwei Yang, Hang Su, Jun Zhu, Lei Zhang. &ldquo;Grounding DINO: Marrying DINO with Grounded Pre-training for Open-Set Object Detection.&rdquo; ECCV (47) 2024: 38-55</p>
+<p>[4] Hill, Felix, et al. &ldquo;Human instruction-following with deep reinforcement learning via transfer-learning from text.&rdquo; <em>arXiv preprint arXiv:2005.09382</em> (2020).</p>
+<p>[5] Lake, Brenden, and Marco Baroni. &ldquo;Generalization without systematicity: On the compositional skills of sequence-to-sequence recurrent networks.&rdquo; <em>International conference on machine learning</em>. PMLR, 2018.</p>
+<p>[6] Press, Ofir, et al. &ldquo;Measuring and Narrowing the Compositionality Gap in Language Models.&rdquo; <em>Findings of the Association for Computational Linguistics: EMNLP 2023</em>. 2023.</p>
+<p>[7] Kazutoshi Shinoda, Yuki Takezawa, Masahiro Suzuki, Yusuke Iwasawa, Yutaka Matsuo. &ldquo;Improving the Robustness to Variations of Objects and Instructions with a Neuro-Symbolic Approach for Interactive Instruction Following.&rdquo; MMM (2) 2023: 635-646</p>
+<p>[8] Xie, Yaqi, et al. &ldquo;Translating natural language to planning goals with large-language models.&rdquo; <em>arXiv preprint arXiv:2302.05128</em> (2023).</p>
+<p>[9] Tenenbaum, Joshua B. &ldquo;Cognitive and computational building blocks for more human-like language in machines.&rdquo; (2020).</p>
+<p>[10] Wong, Lionel, et al. &ldquo;From word models to world models: Translating from natural language to the probabilistic language of thought.&rdquo; <em>arXiv preprint arXiv:2306.12672</em> (2023).</p>
+</div>
+</details>
+<h4 id="-topic-3-curriculum-learning-of-instruction-granularity">🎓 <strong>Topic 3: Curriculum Learning of Instruction Granularity</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-3-curriculum-learning-of-instruction-granularity">#</a></h4>
+<p><strong>Prompt for ScholarQA:</strong></p>
+<blockquote>
+<p>What research has studied <strong>curriculum learning</strong> in instruction-following or reinforcement learning agents, specifically where the <strong>granularity or abstraction level</strong> of natural language instructions is varied over time? Are there existing studies that analyze how instruction specificity affects <strong>learning efficiency</strong> or <strong>generalization</strong>?</p></blockquote>
+<details>
+  <summary>Check the details for Topic 3</summary>
+  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/403fbe22-08b1-4ef5-bd6b-b2d666805a01">https://ai2-scholar-qa.allen.ai/query/403fbe22-08b1-4ef5-bd6b-b2d666805a01</a></p>
+<p><strong>Background</strong></p>
+<p>Curriculum learning in artificial intelligence is inspired by pedagogical principles in human education, where learners are exposed to concepts in a structured order—typically progressing from simpler to more complex tasks [1, 2]. In machine learning, curriculum learning frameworks are often organized into two key components [3]:</p>
+<ol>
+<li><strong>Complexity Assessment</strong> – estimating the difficulty of each task or example in order to prioritize learning.</li>
+<li><strong>Scheduler Formulation</strong> – devising a strategy to sequence and pace the training data or tasks.</li>
+</ol>
+<p>In the context of vision-and-language navigation (VLN), <em>BabyWalk</em> [4] introduced a curriculum-based approach by incrementally training agents on navigation tasks of increasing length and complexity, thereby allowing agents to progressively acquire and integrate navigational skills.</p>
+<p>While curriculum learning has been applied in various embodied AI settings, there is limited work exploring curricula based on the granularity or abstraction level of natural language instructions. The most relevant line of work involves decomposing complex tasks into sequences of simpler subtasks and learn the policy gradually [5, 6]. However, these approaches primarily focus on scaling the <em>task complexity</em> itself. In contrast, we vary the <strong>linguistic abstraction</strong> of the instruction while keeping the underlying task constant.</p>
+<p>Our focus differs: we hold the core embodied task fixed and manipulate only the abstraction level of the instructions provided to the agent. The challenge lies not in solving increasingly difficult tasks, but in <strong>reasoning from instructions that vary in granularity</strong>.</p>
+<p>As in Topic 2, <em>policy sketch</em> formalism not only provides a structured representation of instructions at varying abstraction levels, but also offers a means of <strong>quantifying the interpretive difficulty</strong> of a given instruction. This enables us to explore two things:</p>
+<ol>
+<li>
+<p>We investigate whether the learning efficiency of embodied agents (e.g., VLA models) correlates with the <strong>planning width</strong> of the task sketch (a complexity metric from width-based planning formalism). A positive correlation would imply that:</p>
+<ul>
+<li>The model&rsquo;s learning efficiency scales polynomially with problem size (where &ldquo;size&rdquo; is quantified via the number of &ldquo;atoms&rdquo; in the grounded problem world model)
+<ul>
+<li>Actually I <strong>do not think</strong> the training time correlates to the <strong>planning width</strong> (otherwise we can never scale up), rather, I think the inference time (the time of action generation via denoising) may be correlates with the <strong>planning width</strong> of the policy sketch. Check the next section.</li>
+</ul>
+</li>
+<li><strong>If correlation is found (Yes):</strong>
+<ul>
+<li><strong>Granularity-Sensitive Computation</strong>
+<ul>
+<li><em>Evidence</em>: The model’s denoising steps scale with planning width (abstract instruction -&gt; larger width).</li>
+<li><em>Implication</em>: Develops <strong>causal alignment</strong> between language structure and action generation, mirroring human-like effort allocation:
+<ul>
+<li>Abstract instruction -&gt; system 2 (slow, require deep reasoning)</li>
+<li>Fine instruction -&gt; system 1 (fast, shallow processing, even if the number of tokens required to be processed is larger)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>If no correlation (No):</strong>
+<ul>
+<li><strong>Ablation Studies</strong>
+<ul>
+<li><em>Hypothesis</em>: Curriculum learning (low-level to abstract instruction) may artificially induce/obscure correlation.</li>
+<li><em>Tests</em>:
+<ul>
+<li>Ablate curriculum: Train on shuffled granularity → Measure correlation strength.</li>
+</ul>
+</li>
+<li><em>Interpretation</em>:
+<ul>
+<li>Stronger correlation post-ablation → Curriculum was masking granularity-sensitivity.</li>
+<li>Weaker correlation → Granularity-sensitivity may require explicit architectural bias.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Alternative Explanations</strong>
+<ul>
+<li>Check if correlation is absorbed by other factors (e.g., instruction length, object count).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Design optimal instructional curricula to identify how embodied agents best learn tasks. This inquiry may yield insights into <strong>human pedagogy</strong>, such as how instruction granularity affects learning.</p>
+</li>
+</ol>
+<p><strong>Ref:</strong></p>
+<p>[1] Lee, Bruce W., Hyunsoo Cho, and Kang Min Yoo. &ldquo;Instruction Tuning with Human Curriculum.&rdquo; <em>Findings of the Association for Computational Linguistics: NAACL 2024</em>. 2024.</p>
+<p>[2] Graves, Alex, et al. &ldquo;Automated curriculum learning for neural networks.&rdquo; <em>international conference on machine learning</em>. Pmlr, 2017.</p>
+<p>[3] Wang, Xin, Yudong Chen, and Wenwu Zhu. &ldquo;A survey on curriculum learning.&rdquo; <em>IEEE transactions on pattern analysis and machine intelligence</em> 44.9 (2021): 4555-4576.</p>
+<p>[4] Zhu, Wang, et al. &ldquo;BabyWalk: Going Farther in Vision-and-Language Navigation by Taking Baby Steps.&rdquo; <em>Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics</em>. 2020.</p>
+<p>[5] Kravchenko, Anna, and Rhodri Cusack. &ldquo;The limitations of automatically generated curricula for continual learning.&rdquo; <em>Plos one</em> 19.4 (2024): e0290706.</p>
+<p>[6] Manela, Binyamin, and Armin Biess. &ldquo;Curriculum learning with hindsight experience replay for sequential object manipulation tasks.&rdquo; <em>Neural Networks</em> 145 (2022): 260-270.</p>
+</div>
+</details>
+<h4 id="-prompt-4-adaptive-noise-schedule-based-on-instruction-complexity-in-diffusionflow-matching-based-generative-model">🧠 <strong>Prompt 4: Adaptive Noise Schedule Based on Instruction Complexity in Diffusion/Flow Matching Based Generative Model</strong><a hidden class="anchor" aria-hidden="true" href="#-prompt-4-adaptive-noise-schedule-based-on-instruction-complexity-in-diffusionflow-matching-based-generative-model">#</a></h4>
+<p><strong>Prompt for ScholarQA:</strong></p>
+<blockquote>
+<p>What research has explored <strong>adaptive noise scheduling</strong>, <strong>step control</strong>, or <strong>dynamic denoising strategies</strong> in <strong>diffusion models</strong> or <strong>flow matching-based generative models</strong>, especially in <strong>instruction-conditioned generation</strong>? Are there methods that estimate the <strong>complexity of conditioning input</strong> (e.g., language instructions, symbolic structure, task difficulty) and adjust the <strong>noise level</strong>, <strong>number of inference steps</strong>, or <strong>guidance scale</strong> accordingly to improve sample efficiency, quality, or reasoning alignment?</p></blockquote>
+<details>
+  <summary>Check the details for Topic 4</summary>
+  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/4ce728c6-1b94-4806-b3d2-82847e7efd26">https://ai2-scholar-qa.allen.ai/query/4ce728c6-1b94-4806-b3d2-82847e7efd26</a></p>
+<p>We are not aiming to dive deeply into this topic, but rather to explore a practical hypothesis: that in VLA (vision-language-action) models where the action generation module is implemented via a flow matching-based generator, <strong>more concrete instructions should require fewer denoising steps</strong> to generate executable actions &mdash; a relationship where instruction concreteness governs the computational efficiency of action generation &mdash; more concrete instructions enable both faster convergence (fewer denoising steps)</p>
+<p>To evaluate this, we take inspiration from [1] (Check <a href="https://www.notion.so/sdf-225396e9a0fd80aaaa9ee0ef27ea7cb3?source=copy_link">summary</a>) , which introduces Time Prediction Diffusion Models (TPDMs). TPDMs <strong>learn</strong> a plug-and-play <strong>scheduler</strong> that adaptively adjusts both the noise level and the total number of denoising steps during inference. The optimized scheduler allows simple prompts (e.g., <em>&ldquo;a single red apple&rdquo;</em>) to complete generation in fewer steps, while complex prompts (e.g., <em>&ldquo;an astronaut floating in space&rdquo;</em>) are allocated more steps for better fidelity.</p>
+<p>In our proposed experiment, we can:</p>
+<ul>
+<li>Implement TPDM-style adaptive step scheduler in an instruction-conditioned flow matching action generator.</li>
+<li>Measure whether low-level or explicit commands lead to consistently <strong>fewer denoising steps</strong> compared to <strong>abstract instructions</strong>.</li>
+<li>Further investigate whether the <strong>optimized number of denoising steps</strong> learned by the scheduler <strong>correlates with the planning width</strong> of the policy sketch (<strong>a metric for instructional complexity</strong> (see Topic 3).</li>
+</ul>
+<p><strong>Ref:</strong></p>
+<p>[1] Ye, Zilyu, et al. &ldquo;Schedule on the fly: Diffusion time prediction for faster and better image generation.&rdquo; <em>Proceedings of the Computer Vision and Pattern Recognition Conference</em>. 2025.</p>
+</div>
+</details>
+<h3 id="-3-methodology-and-experiment-setup">🧪 3. <strong>Methodology and Experiment Setup</strong><a hidden class="anchor" aria-hidden="true" href="#-3-methodology-and-experiment-setup">#</a></h3>
+<details>
+  <summary>Tips</summary>
+  <div><p>Break this down as appropriate to your research:</p>
+<p><strong>Overall Approach</strong> – high-level method and pipeline</p>
+<p><strong>Key Components</strong> – any novel model, architecture, algorithm, or setup</p>
+<p><strong>Comparison or Baselines</strong> – what will you compare against? Make sure <strong>you know did the survey well and know the SOTA work</strong></p>
+<p><strong>Implementation Details</strong> – how you will run this, what environment/tools/datasets</p>
+</div>
+</details>
+<p><img alt="image-20250629172226708" loading="lazy" src="/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629172226708.png"></p>
+<p><img alt="image-20250629172241487" loading="lazy" src="/research-idea/neuro-symbolic-instruction-following-normal/image-assets/image-20250629172241487.png"></p>
+<h4 id="overall-approach">Overall Approach<a hidden class="anchor" aria-hidden="true" href="#overall-approach">#</a></h4>
+<p>The embodied agent we use is</p>
+<ol>
+<li>Finetuning <a href="https://www.notion.so/SmolVLA-A-Vision-Language-Action-Model-for-Affordable-and-Efficient-Robotics-20b396e9a0fd802894f1f0c013ca8be3?source=copy_link">SmolVLA</a> model</li>
+<li>Finetuning <a href="https://github.com/microsoft/Magma">Magma</a> (4 x A100 GPUs may be required, ask Reza for help)</li>
+</ol>
+<p>Check the diagram to see how policy sketch is involved.</p>
+<details>
+  <summary>Diagram</summary>
+  <div><img alt="image-20250703223823068" loading="lazy" src="image-assets/image-20250703223823068.png"></div>
+</details>
+<h4 id="key-components">Key Components<a hidden class="anchor" aria-hidden="true" href="#key-components">#</a></h4>
+<ul>
+<li>
+<p>The mapping from natural language to policy sketch</p>
+<ul>
+<li>we need to collect training data for this mapping for different environments
+<ul>
+<li>three stage training data
+<ul>
+<li>Stage 1: image + NL instruction -&gt; target features and policy sketches</li>
+<li>Stage 2:  image + policy sketches -&gt; which policy sketch is activated</li>
+<li>Stage 3: target features and activated policy sketch + image -&gt; ground truth action and whether the policy sketch is completed
+<ul>
+<li>Borrowing the idea of <a href="https://arxiv.org/abs/2207.12598">Classifier-Free Diffusion Guidance</a>. During training, randomly replace sketches with:
+<ul>
+<li><em>Abstract versions</em> (higher-level goals, e.g., &ldquo;Grasp tool&rdquo; instead of &ldquo;Close gripper to 5cm&rdquo;)</li>
+<li><em>Concrete versions</em> (detailed sub-actions)</li>
+<li><em><code>null</code></em> (10% probability) → Forces <em>visual improvisation</em>:
+<ul>
+<li>The agent must infer actions solely from target features and image context.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Justification of the translation
+<ul>
+<li>Check this Safe RL <a href="https://www.notion.so/Safe-Reinforcement-Learning-with-Free-form-Natural-Language-Constraints-and-Pre-Trained-Language-Mod-21d396e9a0fd8077b9d9de6db6eb4e79?source=copy_link">work</a>
+<ul>
+<li>condensed version of the NL instruction can be semantically vague.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>We may want to further train and eval the VLM to</p>
+<ul>
+<li>Grounding high level policy sketches into low level policy sketches</li>
+<li>Recover missing policy sketch</li>
+</ul>
+</li>
+</ul>
+<h4 id="comparison">Comparison<a hidden class="anchor" aria-hidden="true" href="#comparison">#</a></h4>
+<p>Given that this is the modification of the NL output of VLM into the corresponding symbolic representation. We therefore can compare our approach with</p>
+<ol>
+<li>Raw SmolVLA</li>
+<li>Raw OpenVLA</li>
+<li>Classical planner (check whether the inference time of VLA correlates to the planning time), only available in PDDLGym env</li>
+</ol>
+<h4 id="experimental-design">Experimental design<a hidden class="anchor" aria-hidden="true" href="#experimental-design">#</a></h4>
+<p><strong>Topic 1</strong></p>
+<ol>
+<li>Comparing the performance with baselines</li>
+<li>Evaluate generalization performance
+<ol>
+<li>Environment map size and training instance size</li>
+<li>transfer learning to new environment</li>
+</ol>
+</li>
+</ol>
+<p><strong>Topic 2</strong></p>
+<ol>
+<li>Re-plan the action by upgrade or downgrade the policy sketch</li>
+<li>Recover missing policy sketch</li>
+</ol>
+<p><strong>Topic 3</strong></p>
+<ol>
+<li>analyze the learning efficiency of varying width of the policy sketch
+<ol>
+<li>check whether the learning time / inference time correlates with the width of the policy sketch</li>
+</ol>
+</li>
+<li>learn a curriculum scheduler that can gives the best learning efficiency</li>
+</ol>
+<p><strong>Topic 4</strong></p>
+<ul>
+<li>already discussed already in the 📚 2. <strong>Background &amp; Related Work</strong> section, train a TPDM-style adaptive step scheduler and prove the hypothesis.</li>
+</ul>
+<h4 id="implementation-details">Implementation Details<a hidden class="anchor" aria-hidden="true" href="#implementation-details">#</a></h4>
+<p>Testing Environments:</p>
+<ol>
+<li><a href="https://github.com/StanfordVL/mini_behavior">Mini-Behavior</a></li>
+<li><a href="https://github.com/tomsilver/pddlgym">PDDLGym</a></li>
+<li><a href="https://github.com/VT-Collab/overcooked">Overcooked AI</a></li>
+</ol>
+<h3 id="-4-expected-contributions-and-abstract-draft">🧠 4. <strong>Expected Contributions and Abstract Draft</strong><a hidden class="anchor" aria-hidden="true" href="#-4-expected-contributions-and-abstract-draft">#</a></h3>
+<details>
+  <summary>Tips</summary>
+  <div>Be direct. For example: A novel method, New benchmark, Theoretical analysis, Neuro-symbolic framework that integrating some symbolic structure into the internal computation or representation of agents.</div>
+</details>
+<h4 id="contribution-paragraph-draft">Contribution Paragraph Draft<a hidden class="anchor" aria-hidden="true" href="#contribution-paragraph-draft">#</a></h4>
+<ul>
+<li>
+<p>Propose Policy Sketch to account for the levels of granularity of NL instructions and model the complexity based on the width of the sketch</p>
+<ul>
+<li>or we say we propose a computational model that maps natural language instructions into symbolic policy sketch, which provide a formal basis for granularity measurement and problem decomposition.</li>
+</ul>
+</li>
+<li>
+<p>We design the architecture and training for this Neuro-Symbolic instruction following AI</p>
+</li>
+<li>
+<p>Propose a novel evaluation to fit the research study we focus on</p>
+</li>
+</ul>
+<h4 id="abstract-draft">Abstract Draft<a hidden class="anchor" aria-hidden="true" href="#abstract-draft">#</a></h4>
+<ol>
+<li>Opening: Broad context and motivation
+<ul>
+<li>Neuro-symbolic approaches for embodied agents have shown impressive capabilities in following natural language instructions across diverse environments and robotic embodiments.</li>
+</ul>
+</li>
+<li>Problem Statement / Gap
+<ul>
+<li>However, most existing studies assume a uniform, low-level instruction granularity—where all instructions are highly detailed and action-specific. In contrast, human instructors naturally vary the level of instruction granularity depending on the context, the learner&rsquo;s expertise, and habitual communication style.</li>
+</ul>
+</li>
+<li>Research Question / Aim</li>
+</ol>
+<ul>
+<li>In this paper, we address this gap by investigating how natural language instructions can be mapped into symbolic representations that explicitly account for varying levels of granularity. To formalize this variation, we leverage the policy sketch formalism from automated planning, enabling a structured representation of instruction abstraction levels.</li>
+</ul>
+<ol start="4">
+<li>Main Finding</li>
+<li>Comparative Evaluation</li>
+<li>Deeper Insight / Secondary Result</li>
+<li>Generalization</li>
+<li>Conclusion / Broader Implications</li>
+</ol>
+<h3 id="-5-timeline-and-milestone">📅 5. <strong>Timeline and Milestone</strong><a hidden class="anchor" aria-hidden="true" href="#-5-timeline-and-milestone">#</a></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Timeframe</th>
+          <th>Milestone Description</th>
+          <th>Deliverable(s)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>June - 5 July</td>
+          <td>Literature review on VLA and instruction granularity, Policy Sketch</td>
+          <td>Annotated bibliography, summary</td>
+      </tr>
+      <tr>
+          <td>6 July - 16 July</td>
+          <td>Environment setup and baseline replication (3 Envs, 2 VLAs)</td>
+          <td>Train the baseline model (2) among 3 Envs</td>
+      </tr>
+      <tr>
+          <td>17 July - 25 July</td>
+          <td>Design Hector&rsquo;s policy sketches for PDDLGym</td>
+          <td>PDDLGym the training data are collected</td>
+      </tr>
+      <tr>
+          <td>25 July - 31 July</td>
+          <td>Design Hector&rsquo;s policy sketches for other envs and setup training scripts</td>
+          <td>Full training Dataset + training scripts (T1.1, T2.1, T2.2, T3.1)</td>
+      </tr>
+      <tr>
+          <td>1 Aug - 8 Aug</td>
+          <td>Model training + Manuscript writing (ICLR)</td>
+          <td>Training logs and plots for T1.1, T2.1, T2.2 T3.1</td>
+      </tr>
+      <tr>
+          <td>9 Aug - 13 Aug</td>
+          <td>Evaluation T1.1, T2.1, T2.2 T3.1, T1.2</td>
+          <td>Collecting results, visualizations</td>
+      </tr>
+      <tr>
+          <td>14 Aug - 20 Aug</td>
+          <td>Training and eval T3.2 , T4</td>
+          <td>A curve plot showing the optimal instruction granularity schedule (abstract-to-detailed ratio over training time) and its impact on learning efficiency and generalization; The result of whether the action inference time correlates with the width of the sketch</td>
+      </tr>
+      <tr>
+          <td>21 Aug - 26 Aug</td>
+          <td>Analysis and insight synthesis</td>
+          <td>Finalize results, visualizations</td>
+      </tr>
+      <tr>
+          <td>27 Aug - 1 Sep</td>
+          <td>Paper drafting</td>
+          <td>Initial paper draft, figures</td>
+      </tr>
+      <tr>
+          <td>1 Sep - 24 Sep</td>
+          <td>Internal review and final submission</td>
+          <td>Final version, submission to ICLR</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="-6-future-extension">🌱 6. <strong>Future Extension</strong><a hidden class="anchor" aria-hidden="true" href="#-6-future-extension">#</a></h3>
+<ol>
+<li>
+<p>Adapt to 3D and egocentric view (partial observability) (ALFRED environment) -&gt; can collaborate with Boying</p>
+</li>
+<li>
+<p>Again in 3D environment, how the level of granularity of instruction interacts with the coarse-to-fine vision Semantics (boying)</p>
+</li>
+</ol>
+
+  </div>
 </div>
 <script>
   
@@ -207,28 +721,31 @@
       event.preventDefault(); 
   });
 </script>
+
 </div>
 <footer class="page-footer">
-<ul class="post-tags">
-</ul>
-<nav class="pagination">
-</nav>
+  <ul class="post-tags">
+  </ul>
+  <nav class="pagination">
+  </nav>
 </footer>
-</main>
+    </main>
+    
 <footer class="footer">
-<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+        <span>&copy; 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
 
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-</span>
+    </span>
 </footer>
-<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
-<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6H0l6-6z"></path>
-</svg>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
+
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -283,5 +800,6 @@
     })
 
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</body>
+
 </html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Research Idea on Sukai Huang</title>
-    <link>https://sino-huang.github.io/categories/research-idea/</link>
-    <description>Recent content in Research Idea on Sukai Huang</description>
+    <title>Deprecated Research Notes June-2025 on Sukai Huang</title>
+    <link>https://sino-huang.github.io/research-idea/awesome-ideas/</link>
+    <description>Recent content in Deprecated Research Notes June-2025 on Sukai Huang</description>
     <image>
       <title>Sukai Huang</title>
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
@@ -11,34 +11,13 @@
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 29 Jun 2025 16:04:23 +1000</lastBuildDate>
-    <atom:link href="https://sino-huang.github.io/categories/research-idea/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Multi-agent Communication with Varying Levels of Granularities</title>
-      <link>https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/</link>
-      <pubDate>Sun, 29 Jun 2025 16:04:23 +1000</pubDate>
-      <guid>https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/</guid>
-      <description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Account for Levels of Granularity of Language Instructions for Embodied Agents</title>
-      <link>https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/</link>
-      <pubDate>Sun, 29 Jun 2025 16:04:04 +1000</pubDate>
-      <guid>https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/</guid>
-      <description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Fri, 27 Jun 2025 22:49:29 +1000</lastBuildDate>
+    <atom:link href="https://sino-huang.github.io/research-idea/awesome-ideas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Literature Review For Different Language Abstractions</title>
       <link>https://sino-huang.github.io/research-idea/awesome-ideas/language-abstraction/</link>
       <pubDate>Fri, 27 Jun 2025 22:49:29 +1000</pubDate>
       <guid>https://sino-huang.github.io/research-idea/awesome-ideas/language-abstraction/</guid>
-      <description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Deprecated Research Notes June-2025</title>
-      <link>https://sino-huang.github.io/research-idea/awesome-ideas/</link>
-      <pubDate>Sat, 07 Jun 2025 22:49:29 +1000</pubDate>
-      <guid>https://sino-huang.github.io/research-idea/awesome-ideas/</guid>
       <description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
     </item>
     <item>
