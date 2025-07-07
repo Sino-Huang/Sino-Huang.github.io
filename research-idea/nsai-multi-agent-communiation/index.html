@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
-
-<head><meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
 <title>Multi-agent Communication with Varying Levels of Granularities | Sukai Huang</title>
-<meta name="keywords" content="">
-<meta name="description" content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience.">
-<meta name="author" content="Sukai Huang">
-<link rel="canonical" href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/">
-<meta name="google-site-verification" content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V&#43;OBX&#43;7uVm4R&#43;XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://sino-huang.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://sino-huang.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://sino-huang.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://sino-huang.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://sino-huang.github.io/safari-pinned-tab.svg">
-<meta name="theme-color" content="#2e2e33">
-<meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/index.xml">
-<link rel="alternate" hreflang="en" href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/">
+<meta content="" name="keywords"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/index.xml" rel="alternate" type="application/rss+xml"/>
+<link href="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/" hreflang="en" rel="alternate"/>
 <noscript>
-    <style>
+<style>
         #theme-toggle,
         .top-link {
             display: none;
         }
 
     </style>
-    <style>
+<style>
         @media (prefers-color-scheme: dark) {
             :root {
                 --theme: rgb(29, 30, 32);
@@ -58,9 +57,9 @@
 
     </style>
 </noscript>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -77,9 +76,8 @@
         });
     });
 </script>
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
-      <script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
         var doNotTrack = false;
         if ( false ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
@@ -91,19 +89,17 @@
           gtag('js', new Date());
           gtag('config', 'G-TTFTV1EWH5');
         }
-      </script><meta property="og:url" content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/">
-  <meta property="og:site_name" content="Sukai Huang">
-  <meta property="og:title" content="Multi-agent Communication with Varying Levels of Granularities">
-  <meta property="og:description" content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience.">
-  <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/image-assets/image-20250703130038402.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/image-assets/image-20250703130038402.png">
-<meta name="twitter:title" content="Multi-agent Communication with Varying Levels of Granularities">
-<meta name="twitter:description" content="Sukai&#39;s academic blog - storing weekly reports and research paper reviews">
-
-
+      </script><meta content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Multi-agent Communication with Varying Levels of Granularities" property="og:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/image-assets/image-20250703130038402.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/research-idea/nsai-multi-agent-communiation/image-assets/image-20250703130038402.png" name="twitter:image"/>
+<meta content="Multi-agent Communication with Varying Levels of Granularities" name="twitter:title"/>
+<meta content="Sukai's academic blog - storing weekly reports and research paper reviews" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -125,7 +121,6 @@
 }
 </script>
 </head>
-
 <body class="list" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
@@ -137,265 +132,72 @@
     }
 
 </script>
-
 <header class="header">
-    <nav class="nav">
-        <div class="logo">
-            <a href="https://sino-huang.github.io/" accesskey="h" title="Sukai Huang (Alt + H)">Sukai Huang</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <ul id="menu">
-            <li>
-                <a href="https://sino-huang.github.io/biography/" title="Biography">
-                    <span>Biography</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
-                    <span>Lit Reviews</span>&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+<span>Lit Reviews</span> 
+                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
+<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+<path d="M15 3h6v6"></path>
+<path d="M10 14L21 3"></path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
 </header>
-<main class="main"> 
-
-<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a>&nbsp;»&nbsp;<a href="https://sino-huang.github.io/research-idea/">Research-Idea</a></div>
-  <h1>
+<main class="main">
+<header class="page-header"><div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/research-idea/">Research-Idea</a></div>
+<h1>
     Multi-agent Communication with Varying Levels of Granularities
-    <a href="/research-idea/nsai-multi-agent-communiation/index.xml" title="RSS" aria-label="RSS">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round" height="23">
-        <path d="M4 11a9 9 0 0 1 9 9" />
-        <path d="M4 4a16 16 0 0 1 16 16" />
-        <circle cx="5" cy="19" r="1" />
-      </svg>
-    </a>
-  </h1>
+    <a aria-label="RSS" href="/research-idea/nsai-multi-agent-communiation/index.xml" title="RSS">
+<svg fill="none" height="23" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 11a9 9 0 0 1 9 9"></path>
+<path d="M4 4a16 16 0 0 1 16 16"></path>
+<circle cx="5" cy="19" r="1"></circle>
+</svg>
+</a>
+</h1>
 </header>
 <div class="post-content"><p>The research idea is confidential and you need password to access to the content, sorry for any inconvenience.</p>
-
-
-
 <div class="hugo-encryptor-container">
-  <div class="hugo-encryptor-prompt">
-    <h3><strong>Encrypted Section<strong></h3>
-    
-      <p>Part of this article is encrypted with password:</p>
-    
-  </div>
-  <div class="hugo-encryptor-form">
-    <input
-      class="hugo-encryptor-input"
-      placeholder='Please input the password'
-    />
-    <input
-      class="hugo-encryptor-button"
-      type="button"
-      value='Click to verify'
-      onclick="_click_handler(this)"
-    />
-  </div>
-  <div
-    class="hugo-encryptor-cipher-text"
-    data-password="siyang-and-monash-are-two-of-my-focus"
-    style="display: none;"
-  >
-    <span style="display: none;">--- DON'T MODIFY THIS LINE ---</span>
-    <h3 id="-1-short-motivation">🧭 1. <strong>Short Motivation</strong><a hidden class="anchor" aria-hidden="true" href="#-1-short-motivation">#</a></h3>
-<details>
-  <summary>Tips</summary>
-  <div><p><strong>What is the problem you&rsquo;re tackling?</strong></p>
-<p><strong>Why is it important?</strong></p>
-<ul>
-<li>Ground the reader in a real, compelling issue in the ML/AI landscape.</li>
-<li>Mention a bottleneck, limitation, or a surprising gap in current literature.</li>
-</ul>
-<p><strong>Consolidate this after you find out the concrete research area and prior work</strong></p>
+<div class="hugo-encryptor-prompt">
+<h3><strong>Encrypted Section<strong></strong></strong></h3>
+<p>Part of this article is encrypted with password:</p>
 </div>
-</details>
-<h3 id="-2-background--related-work">📚 2. <strong>Background &amp; Related Work</strong><a hidden class="anchor" aria-hidden="true" href="#-2-background--related-work">#</a></h3>
-<details>
-  <summary>Tips</summary>
-  <div><p><strong>You shall not be the first one working on this topic.</strong> Find the prior works that are closely relevant to what you want to solve. Ask yourself &mdash; How did those works solve the research problem you target, what are the advantages and trade-offs of your approach?</p>
-<blockquote>
-<p>[!TIP]</p>
-<p>You can design a prompt for ScholarQA</p></blockquote>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
 </div>
-</details>
-<h4 id="-topic-1--instruction-granularity-vs-communication-constraints-in-multi-agent-rl">🤖 <strong>Topic 1 : Instruction Granularity vs Communication Constraints in Multi-Agent RL</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-1--instruction-granularity-vs-communication-constraints-in-multi-agent-rl">#</a></h4>
-<p><strong>Prompt for ScholarQA</strong></p>
-<blockquote>
-<p>What prior work has studied the trade-off between <strong>instruction granularity</strong> and <strong>communication bandwidth, latency, or noise</strong> in <strong>multi-agent reinforcement learning</strong> or <strong>robotic coordination</strong>? Specifically, are there studies that analyze how abstract vs. detailed instructions affect <strong>task success</strong>, <strong>robustness to delayed communication</strong>, or <strong>reasoning complexity</strong>? Also, are there symbolic or hierarchical models (e.g., policy sketches, options, task decompositions) used to control or adapt communication content?</p></blockquote>
-<details>
-  <summary>Check the details for Topic 1</summary>
-  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/601012f8-3c13-449e-a64c-905c934bb931">https://ai2-scholar-qa.allen.ai/query/601012f8-3c13-449e-a64c-905c934bb931</a></p>
-<p><strong>Background</strong></p>
-<p>In multi-agent reinforcement learning (MARL) and robotic coordination, the trade-off between instruction granularity and communication constraints represents a central research challenge. At its core, this trade-off involves balancing the level of detail in instructions against limitations in communication bandwidth, latency, and robustness to noise.</p>
-<ul>
-<li>More detailed instructions can potentially enable more precise coordination but require higher bandwidth and may be more vulnerable to communication failures.</li>
-<li>Conversely, abstract instructions require less bandwidth and might be more robust to noise or delays, but may leave more room for interpretation or error during execution.</li>
-</ul>
-<p>The optimal level of instruction abstraction may depend on various factors, such as task complexity or even the intelligence of the collaborating agent.</p>
-<p>Therefore, it is important to investigate the most effective communication strategy in a master–follower setting, where the master agent leads the Overcooked mission and issues instructions to guide the follower in coordinating with them.</p>
-</div>
-</details>
-<h4 id="-topic-2-learning-via-entropy-minimization-and-free-energy-principle">🔍 <strong>Topic 2: Learning via Entropy Minimization and Free Energy Principle</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-2-learning-via-entropy-minimization-and-free-energy-principle">#</a></h4>
-<p><strong>Prompt for ScholarQA</strong></p>
-<blockquote>
-<p>What prior research has explored the use of <strong>entropy minimization</strong>, <strong>uncertainty reduction</strong>, or <strong>free energy minimization</strong> as a principle for guiding <strong>instruction</strong>, <strong>teaching</strong>, or <strong>curriculum design</strong> in machine learning or reinforcement learning? Are there studies connecting <strong>instruction granularity</strong> or <strong>abstraction level</strong> with the learner’s <strong>action entropy</strong> or <strong>policy uncertainty</strong>? Also include relevant neuroscience-inspired approaches such as <strong>active inference</strong> or <strong>predictive coding</strong>.</p></blockquote>
-<details>
-  <summary>Check the details for Topic 2</summary>
-  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/6b27ba03-5892-4697-a4c9-f4c361263f5d">https://ai2-scholar-qa.allen.ai/query/6b27ba03-5892-4697-a4c9-f4c361263f5d</a></p>
-<p>This is a bit fancy terminology, but essentially, our training objective may incorporate the master&rsquo;s surprise—when the follower behaves in unexpected ways—and the follower&rsquo;s uncertainty—when they struggle to understand the master&rsquo;s instructions.</p>
-</div>
-</details>
-<h4 id="-topic-3-temporal-cost-of-language-and-instruction-timing-in-multi-agent-communication">🕒 <strong>Topic 3: Temporal Cost of Language and Instruction Timing in Multi-Agent Communication</strong><a hidden class="anchor" aria-hidden="true" href="#-topic-3-temporal-cost-of-language-and-instruction-timing-in-multi-agent-communication">#</a></h4>
-<p><strong>Prompt for ScholarQA</strong></p>
-<blockquote>
-<p>What prior work has studied the <strong>temporal cost</strong> of language-based communication (e.g., speech time, instruction duration, latency due to verbal transmission) in <strong>multi-agent reinforcement learning</strong>, <strong>human-robot interaction</strong>, or <strong>teacher-student communication</strong>? Are there studies that explicitly model or evaluate how <strong>instruction length</strong>, <strong>speech rate</strong>, or <strong>verbal instruction time</strong> affects <strong>task efficiency</strong>, <strong>coordination</strong>, or <strong>instruction granularity</strong>? Particularly in time-sensitive domains (e.g., Overcooked, collaborative robotics), is there any research that integrates <strong>instruction content</strong> with its <strong>delivery time</strong>, and optimizes for both <strong>understanding</strong> and <strong>timely action</strong>?</p></blockquote>
-<details>
-  <summary>Check the details for Topic 3</summary>
-  <div><p><a href="https://ai2-scholar-qa.allen.ai/query/ee02a95f-4412-44df-993c-fdb8fd0a2747">https://ai2-scholar-qa.allen.ai/query/ee02a95f-4412-44df-993c-fdb8fd0a2747</a></p>
-<p>Results from ScholarQA suggest this area remains relatively under-explored. It is especially interesting to consider how <strong>speech time</strong>—the time cost of transmitting instructions</p>
-<ul>
-<li>detailed instructions is longer, thus require more time to deliver</li>
-<li>vague instruction is short, but hard to understand if the follower is not intelligent enough</li>
-<li>Adding the temporal cost of instruction speaking will affect significantly the performance in overcooked game.</li>
-</ul>
-</div>
-</details>
-<h3 id="-3-methodology-and-experiment-setup">🧪 3. <strong>Methodology and Experiment Setup</strong><a hidden class="anchor" aria-hidden="true" href="#-3-methodology-and-experiment-setup">#</a></h3>
-<details>
-  <summary>Tips</summary>
-  <div><p>Break this down as appropriate to your research:</p>
-<p><strong>Overall Approach</strong> – high-level method and pipeline</p>
-<p><strong>Key Components</strong> – any novel model, architecture, algorithm, or setup</p>
-<p><strong>Comparison or Baselines</strong> – what will you compare against? Make sure <strong>you know did the survey well and know the SOTA work</strong></p>
-<p><strong>Implementation Details</strong> – how you will run this, what environment/tools/datasets</p>
-</div>
-</details>
-<h4 id="overall-approach">Overall Approach<a hidden class="anchor" aria-hidden="true" href="#overall-approach">#</a></h4>
-<p>We can easily transfer the codebase of previous project into this project, we will have</p>
-<h4 id="experimental-design">Experimental design<a hidden class="anchor" aria-hidden="true" href="#experimental-design">#</a></h4>
-<p><strong>Topic 1</strong></p>
-<p><strong>Topic 2</strong></p>
-<p><strong>Topic 3</strong></p>
-<h4 id="implementation-details">Implementation details<a hidden class="anchor" aria-hidden="true" href="#implementation-details">#</a></h4>
-<p>Testing Environments:</p>
-<ol>
-<li><a href="https://github.com/VT-Collab/overcooked">Overcooked AI</a></li>
-</ol>
-<p>All other</p>
-<h3 id="-4-expected-contributions-and-abstract-draft">🧠 4. <strong>Expected Contributions and Abstract Draft</strong><a hidden class="anchor" aria-hidden="true" href="#-4-expected-contributions-and-abstract-draft">#</a></h3>
-<details>
-  <summary>Tips</summary>
-  <div>Be direct. For example: A novel method, New benchmark, Theoretical analysis, Neuro-symbolic framework that integrating some symbolic structure into the internal computation or representation of agents.</div>
-</details>
-<h4 id="contribution-paragraph-draft">Contribution Paragraph Draft<a hidden class="anchor" aria-hidden="true" href="#contribution-paragraph-draft">#</a></h4>
-<h4 id="abstract-draft">Abstract Draft<a hidden class="anchor" aria-hidden="true" href="#abstract-draft">#</a></h4>
-<ol>
-<li>Opening: Broad context and motivation</li>
-<li>Problem Statement / Gap</li>
-<li>Research Question / Aim</li>
-<li>Main Finding</li>
-<li>Comparative Evaluation</li>
-<li>Deeper Insight / Secondary Result</li>
-<li>Generalization</li>
-<li>Conclusion / Broader Implications</li>
-</ol>
-<h3 id="-5-timeline-and-milestone">📅 5. <strong>Timeline and Milestone</strong><a hidden class="anchor" aria-hidden="true" href="#-5-timeline-and-milestone">#</a></h3>
-<table>
-  <thead>
-      <tr>
-          <th>Timeframe</th>
-          <th>Milestone Description</th>
-          <th>Deliverable(s)</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Literature review on VLA and instruction granularity, Policy Sketch</td>
-          <td>Annotated bibliography, summary</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Environment setup and baseline replication</td>
-          <td>Working codebase with Dynalang, Craftext, PDDLGym</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Design Hector&rsquo;s policy sketches for all environments</td>
-          <td>Symbolic policy sketches</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Data collection and training pipeline implementation</td>
-          <td>Dataset + training scripts</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Initial experiments on sample efficiency</td>
-          <td>Experimental plots, logs</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Generalization experiments on unseen tasks</td>
-          <td>Zero-shot evaluations, analysis plots</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Design and evaluate instruction granularity schedules to optimize learning efficiency and generalization performance of VLA agents.</td>
-          <td>A curve plot showing the optimal instruction granularity schedule (abstract-to-detailed ratio over training time) and its impact on learning efficiency and generalization.</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Analysis and insight synthesis</td>
-          <td>Draft results, visualizations</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Paper drafting</td>
-          <td>Initial paper draft, figures</td>
-      </tr>
-      <tr>
-          <td>(Insert time)</td>
-          <td>Internal review and final submission</td>
-          <td>Final version, submission receipt</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="-6-future-extension">🌱 6. <strong>Future Extension</strong><a hidden class="anchor" aria-hidden="true" href="#-6-future-extension">#</a></h3>
-
-  </div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">AJgAAJbuOgPdu8bvY0uOvls+fb8P+oMclVH9E91Yemj3RslTW3wJsBExZxF3VfPJIp7I1PlM7WtcPpXRhq5X0DpMLCwxPEtKmCUOIvfx4SU+BrPhEUt4p7892tqPH1fZNsEa1y5qq6vYt8Xk3wzfSYwACjeqotpuPmEPLxBUIICfTz+NYp1DbCf9Q5bMv3Q4G7NUhN2iw7208Y+gkOOkjOfck/dECfbXGqA5DrGelJCxfoYg7AAIcVaA9ZwHXsYR56nCETDvxSvkySlG4Rk2oBGbT3z+r6z8yTUa/+yQ9WhcrzMJwsq/sr9g3MbqIzRyxNh7wmbWx6XAlqaCFqL8n6xGJDMEwwaXsb7IeIiriFyPJ7bPdZJZKLQckk8C8oxzeJio1vezGFJCSakj2tDWCBTLrpar1wAGgYj7I9/c2EbBYgjkyx4xhdZJXP1SGx7gPH+vO0aYB6dK73ItMotkc5Ku7ie+sr5JVRUEDDI+oV0e5lA1/2mV3eiQr4yHuAW/p7qKrNtTgJLmYpIP0B5NxS4PLJi2R81zMXZLp/Urc7vEZ0WSbIV9TMfQO3EcIua7G69chC6MGiCySqzOj8s0skFawkS2QzfqLXvdI631uNgKe0FmkMPLc40UvcMHXt4IJ1NG6AyNAFqop2Cgsxm+kc3Pd5QnvBGp3T4Rj7mRsd+96bm4jr0gd4TCL9Zl26GiOtIjmEvZyXhFHcsL66S3Qw0DdAvoFjR0kEnaY9VnvikBi+3fFdxp1fspYm46aCae5Z1qdvo8Sla+bIcfwngLcnoIutHOwKpiOmql1LJj56QZjuHuPg0s6TTMcwyy12ANefOm8olS3FkgFRv34vXxhqs1YudMD4q9pLCf5b5fV4uNSrSaw2WtObOS6RfCBrul9VlyeeNlmSfkzIV7EQXFGGHMFNmymjEcDxFMbL6SpHncE+fgMhsAWlQzvXvHEqNwKRekwlcj8Gfdzft0YacbFsPWW1jXyHN4Ug3G0UQchyDaNiFckWbGj9dP18+jJISG/mZpugAkWln86hDVPFntpGFHK7ahFqXHiYfcQeW7GxZrMRXCMNlNWGgKzyRCr34eb6/62XZKN19fT5BIo7eDHYRt2w2Bq+zCiLaLp3rclfp5ZxStvpTlO+wX3Nmkucn8U0oQCUDttOhoPouYn2CqDdCebnSG+S1YCNsscYIms/CEhNlvh9SzE8f0vUl1dWNv5kXoYQc57QNiam2Cmhz353vDdSsutuQ5arx6C9ML2L34SXIl3nwkghauU8oJOu5jhMC65EJenUPyBml1l8wNWIGOk6K+0unzaxoqHvLKQiHMH+vZRJCzdcL3XoqgpKuHQsyaI0A6Y7YxX7qtP1GsqRRFu+fa/i8jsAnYwFYnTqQC4YQO6Xzunw7qBYpx15qSze7I+wLjgLBPjzuROQ2PADxo0hr/AEwQkjRyUVPHkYLX3skSx4GWbBaSm3MtmxLxVb/la6k5AzM6haGoFDL5gwbMN3ODgBu7Yd4S3ouqNe35TLMrWIbEK+eD2lx2GPiUtARxzJ1qwsjwF2Zv/q+Jy1GEjQTuAbe7UNgcn/Y/UxSj2QqJAULtnVjukrmhwXmLV0OfWLj4FuQBfomeWpgWGdRdAvaqyQPF+bmK94TkIhVB0Rq3ociL3P4wK9655EYugYzcN2YpWxHr+h6ud9iat62Jdlq4sGZkGw1DKYFJoPfa0BczaUlBuWMHsG7aa1FwaU130PtrsCLZ4jznu7QoYvhHTmPUJc/ouw9IvIuj+83F9FcEU29Xw8VzMVIvSw4n418hrjl7BN2QroQN+DVZiYl+S5upsALsHU6/51AyM5oELDzyhHfapcQW2jh24yLlNqksybUlsj5/XEdatCf0mu0+J2bo8XHrah5Oal9D8R7LcEXNXdhb3BhwXLiUb9QUsEuRxTAy3k9liFao1MdjR73shqp4kQZ37OPCkQgN9Pw9Tm4ZveXfyg7HWaA6sPr/eqQsR6lcCo8LQNICRkzN2aat3+kMCPp7pMysOuLDU8qC0RQ4h670Imd/UNqxY2AxF2rv1XdSzyNM0A3XayY7jmKj/bmS8IgD+wnnTFj0kRw8mw/h22BqMDy70N7wyTF8AD9yNr7CIIf/s550P2oT3KuZvr25V9+yX/QUOeCeDNkdsGc2qVwwkCYr5/36YSiPvAjNDmrrqTqRziDr8noOXAm3GIyQVVY+QkjUTht38nx2hsC44Ah+WMbfreJdCDcdz9IoKPvcPqxevTufi1BhVGtP6YWWfPdeS4Qi/MLM0vDE5UCkAbWEP5EBQa3ggnnYsI46cX0Ou0e6iiCXbCwvquz7rgwC0syhhWAE7re49A2mkKJfax2v+ArGMiZuXMsXypuvAUK4sGfMzaBUeek1b1x8be0lEAgNO1eeXeobFXK8nl711Qi/csrbGb8sGmmrQqeAtn0lBWKA2m56CQa7USFS0hIkZ2CfLwJrjLCSXViunvD61CizyHNmz++FG9LS5lsgDz7cGwuKDSIfcY6uyrFn1FUbz1A5SvQrZga2nQTm7zagwoRnV6yQA3jbet7/qvwFeoX6mLNyDI56xK3ZpVzmDG0WXjxKhv8KAd13Ka5lq/D+JBtcy4i3uw+Gsb3Z9TjFtmXGciC46wHRpZ/mQnGhCO6GMNkg2HPm60desvmfG7fghciFqH6XEZpphvGuueiFbFQuiEPW7F2J3s2iDuhHLxnhOT/IYiTmPzPxJz0z5Xkc2cm+1X4tsvlPfPHQds9roCe35kJZquU/33XvVJLIY4ZuLLGCu9ZM3gIbp5acBq03AoVj/R6ngRtDA7rGj0ksL3qtklOdZoK0k+Bq1k5MrKO1UszzikuHq+FIB3cg2xUfhqht/5dZt1YD5lRN0lGTBs8aKK2U+hx3P2r15THnclbH9H8UVcUR/7oozdA4EFqQH6HzTAbX50IbRupj5AkDtWRbb5Z2eLS9K6p9tfhRYcomoygxvtnLbMS1GtIgBavz7j0e5Ufs9W5hDOtdVfDQbi/ccJMhxtxLJCusrnPw9uk8o1wAKP2QP5HO5kBu56ra9yXlsRpAaunZuFUB3Yy/gAjoQ0rc4Yigw+9tMs3mD37qKWtW2w2unBtl7JZ4R6MFXLjBEFOJuEekJHHH42RVj/BRnTM5/jQAPG0jPNAgqWuS413iATWE1+kzVbhcuspuS/JIn9QC8Ol9x4oaikgY8T7vwgVqFxgL4eZ6gyx7u9gNJO2wdlAl8kZ46cdfu6vp3kylFu1qfGZ+/z82UW/uO/aobpLsoKVsfAwnJv2DN1Ed/hHGNPyPP/GNTQSWQek10sL1tM5+vCplgdAxRuRCB4383cPjUbKLYc1tUZpdi4a23vXHgG+zeDmZXhGjpcsIGo9rD93fJo0IGcOir5NzsUICw46gOpEYY/dFUZhgsAC0Q1UIsuKCDNiWuXbGCepr3jiq7v0rReatn/3Zi8rCE2g1/3RSJ3Bt7WlF3vGWYAfVAcG6ovVmA+IZzHhsLoBu7hvqgs1r6V0jT8k6XFFIObL3nO+VXDTw9vksIh3OZ66SC9zs+xTFxRS8HXSoJ0DpaGshLI/v76RvfK20cc45OwTuqC67xaKTEcXt6tUmVVwQa7kocdgMs0YK5f4Hhdj9sL3ry8q1UVRLuHOK+cnr9M2QqFX7wakWQANjrTEa5TaD8pmS+YI5+uL2z8vFkF0qQgs5bjFNNlj59j5eQGLFRBaUvvyhAnI+kxwRbCTkw2BfR3Yio99Bq40z10c2p+qY/B/J7dVWaB7+DjCVOdjyrU+vMTTmrTZEX2GMqWfZj8a/iGaiXfuY70okuZGSYR5r/WWcJpsK9bO90rSE6wvIfcyQiRsQ4GTs7OQFrxE9d2CzDEHYT7PwBCOI98fPY79iZq1CcQ8MuS3CF8kr9RYUK2qZE7aMf8+b/X3m/vUu2Fk+abJut+p50V+PbBgx7KKEMMZCTWytmvYnMq++2mcU4DkS3EGQDHt8WYRGLjhbMTpz4KsJdXuxMUu37sZCqws7rlJkN4eF5nT5m3wpTvPeYT2ijZiGH+v1vWC5z5+0HgPYpSzZhihmpRCJML65Jqu3mNwAKWpEt1OTzpnFkyKYBqw2dn9rYA5H4HNtPuZDZ4nFyKoN8O/asmlNE8O34AnnLKR0uLfOkKaZet+3v5b0XKY4R2jNGBWwSKkZFjSCV+ZSCMjvpLFNB+gYGXHRyajxq3aB8MSmcfjQagtApnOlK681NIAPrTUnuwYe8wgCuFWDT+3legqEAXMgwu2VQJofr+BBAaYeRTVVqIzcLK5PBu8g8Y9L6Vyy4vPqtWlW0imBKyjR1Iaj1mcHXfCshkp6nVYmuPBB/9msNhB81SPFsEtJoSn2g9NpRQAIE/KPHYSmW/6y1+59DRVlrJAmY4C8kSjRNRTaQC43KRzd0Jk0RiYi6Ioyin1P81z4v0ZLcZkcxbr+5cYA6ewm4IsUurbs9dhm1SoDP8U4UNVFUFa8M7h5dISLxhr6zKbVqaybtaLDnR6Q2nPZfMN7DZNK1jziPUdXmlG8ZCiRlMAhiHqURj1nBSkuBP5yosTI0Bbfrl+pp3edHktNNxEa/pxkiU7KOa0OomsMssGaBGpmPyhWUF5Uy5jkwkKPiLYKmSpO4KxcrjFSrSD4yhM6VKb4Ch3jvY8boQSDNB57QqUIUkHYx0L+564kfqutKURvbfAvcs5dllQZEKm+uT9c3lQF8TFaCODku7p+nA2HNzvpxPRuLX1wdw4lh6uGSDqDrpxif2cS2x8to6H1AQtaYaf0pKcexbdjgHKW6xl9K1JWdNmedtAyk0MsvQ1CHvuZKLZLgeVVMCk0MPayGWWq7aS3kbV5yk5oPj4rSfpcdh9ghBZEN0BA1J5yvhJ3LuOKA5rxfSyEizp6fdC9bq4KKwjfRaqFmCJhT4LSa0/hz6bfIMiU103js22a3JeF1teZjT/6L38lQ5SP/nouJmWMSlBTNrIOH+vqbWBCgP8GfPDn+gzy6OIfej54KC2h+Q0xl4YVhOVmkZkzi0r6ujXBtLY4TRk0gUxzEv8R/Hf11myGl6hxAvNRWPGkTjtsezTO1iGFOHa8vjlOI5V+eEDWmRt2kVXr0HXCshLWarFlozxyN75/vez4hb+l7xLCDkc2jMdTMa5u81KrznkpmUSQA4zEIVeABkucy047pRCN+tvGBPxccFdv9/GcGGCNjvrAWc+StNJ54zSlcgMMwxm7eFvBd9XplzkXUsMSi5VqzplDCyXIlsmrz/D6ZnSgCPhsWo8XV21PrneMuTElfL0cXngENhNSt7hg3pLz7j0LjGEw+bY9B7vLisi2LAaG+WmPKkIvu5A7766F8TfErIUdCHIgh7YlXEmwlLJNqsBYKYE/xb0HZw8WSwncAVaWxFRM0xcpFTsn4PfXPV50HfFkgyt1/FUIMqLCaRVoYCFPBzD997EkkJAeal0+knX3+zi2TJf3a3ReG2VNnuoMtbDy4ma2hB0LrM6T7zf/ZV+0HS1i7FWEblb+nGpfFinVi3zts2VdVOSXanLRxVD5RdgEZrZhpkBrUU7ujl2PTtmyMXszuxWK1JvhdJvRtosEhPUBEzRCPTebMBC9VWrQf7A8H9mVNcQAQ7jFdvq2NT+nSvPiRQS43OBwDGmUTm5wGW1omrC92U9OqEVQvQi5chhE82elH7lQQXkAmVPg3HRnVFkcqmXteG8xXlbZgkoc0qZt/Lrdx5aNhDJ48yUb/VvKq0I9P1XyUpKtybXb0QNN/kkVIplsZAXgAXHgPkSpVZjMxqDPmt7zLW8mBkbD4YQ/2zPHpBraYiHoec2TrMz0HV5S5K/VI4Fp0MhhO4u98aTSEuAhb68DOYF4e6J0jHA08eXChjNOAOs6O2BTp2mNYDYqcuGwyDHAely4R6sZ9TPxNLHyVAwJKD+WT/FONjGBS6U5nceWNfNXc4g7dm0L+lwZlyrAPp9bxrQQhTy3gYQU/EkaUMGraEkSWc3VHzqP9maxOXtmyLKYfqNc57ScTPwyzVPVTxMGN57sZZGUHSPB47wK1SaxLwZWa+CbfDr0399PkMO9J/RI4IdOy0kpEzAxIETR1bFFtNeyfF0nK0dGEx4O8cvriA17UpE6Mn66Avx6p+AmT2EZJsP3ZecJMzoqMwcmnuKmbTMhsZkwrEa67Yk4UrHJN5CNMl/ALEx3YdhpOjzd6MKrT66VYb43w+8LFTvWtiWay2XJaujbGY8cX2H1E7HOPWGTXJWS7L3+C5bm2Pfm/bf2lHDfPb3vAMuRP9+SDTrxL4gL/U8zLpgX6eV66npTouG92LJDZiBvBrtCOHgZpTWAKg1PpZoiW5s/QTZbaeXiQUfnKIaA4D6i7o/iprlWwn6BR+5CQZDQ3tQuVVpW0rKgRMndbUet2ZG1IjPE6aJBM6nWna3217l8xbd1nNUhZXFf6KdX2PLZhMbXzpLERf6036rEn5NDC/Zv2VgVHXrJ9aoMDlGgcSVGBQyz0r4682Xr2dgyAKKHuEhEghysWav1JHlmNG5kq3hbv1aWfPIYHB/ccSz+9Qf1kZsr9XOFiTKYkHBmB0iPAYUJ8t+Qzl3FsSWJkYznjdD1BfM2vmOk1l1GMD5+SHD4bLDe9Hoil7EgJh/y+/YkcaFdG9Gb9lIfqn3Ytr0OBaKyd8rl83Nf6leK+oXqOk6XJCqhJLZ2D8vqkJFLcYt/zq9tnwC4RVa7mrC0EZdIg9DPUiAfTf2T8u12ZdNXyjh6b7TbzbhcYh1qED2bruKQxrap6ZNsm/zwoEmFwqWzc6QEBggYguCi+TnBFl8y4gmwCt10FkYd6HjlQtfSi2ZJ9eowpDtXoFPfrrPPi47BP+TEKxz+8wbk6Ylphoq2WnfmH3tH575K3d661rUxeBTkKNS4+c9Gf5wKuRULIQjCGAyxS6dlbkjbf92ptKeUYZcAC7EL9CpocCg1ooSyFdwiEUGJFKEwy3fotqF+mgsCFhbb8CUr5bBWTeHafJ97qJHzopXVhcb5pyJjkxQgzrcEBVyX41D/HzGgXnrxalYLzZKVzbceWlYSjuBsq5W2LhuJE2cEU3kRqPIlJ+HWz4nOgEf4xtWHLpFojKcAf0VdQGTBeEl7OlZ0XEgnWvw5S03+B6fKQ9TLQSwaOYOzfRdjPuqHk2Oa1r6AVNLypgI3IOmZuFwN55iOJXjxvwMaLY7Urv+agRPxsXMTZ0Jqp2spBSfNGgHxfEj3C84mXd8ygLV3ixOaWqNQIe1YBHKq20FJ8wsbXzHQiGMhtXLg9kzBNqEmOmKAufD4yeOqqrrJ4oc06BrqBX3JVyghcs3mjqxuJPCMyWFBEyWPxP0SE09LIZZPv3fnYKu3RMy4bLuZo8PddsJqiNCa+vdbQYu/xcr9Ecsw0u+5tvLqbycJWRiiUVo92KWf3K9bB51+6nt7OmNzLvGoOyas2GCO0LvT9BHLmww2tcG61pYJofJFDnBV4tgRxGxGlV1TqLgNhkfEEwF+7OnLtbj4bJ7JANg+XYoR5wArZAfAmw3sSjdC8ssypb55xbEghsjhebioo+w+A83wMRfaH4btQMPmjweIq+dgXJiEvR6IB7XK6/aXxIREUJ7McyMb/dLLkN5jYZiFYe5toNskMXoz6v8M5Ak7bqi6EZJvfHnbmj9ODENSkSGLDSLz4tLe2p4NNFfbZyd9b6ilgwd0C8pjb2/ZRv5tMrSZ9bB+y3+EMZ/nnxAFmfF6JpOoO8eeERbfhpslYmhYK+RfwXiWYK73JreUvJuJocnwcptucWF4WvxtCkH93YPBesMOklcRsSjTUfpmfsKEJPsFXucmDDdMsAOvndFuxptULRI4KbdKCTRNR+CnTsNsIThpR8LrDpOgioUe4RVH8tDBqaQdN1JE/ISNVPfbGy4qt8NHdNb6UPbU7WlCW7hQlNOlMBrX98QOJz/h6Xt1kzhBKDt/TsYaAK5NzSfNsEAOHfxx6e1ABdMBn4x8XEFG5rxhl/EgyBmzq216doRmin9Bsxojw1tS5wTTpjH570h7PH8jyDhgnhU2WkGrjk/cJVsvzSG1zNNfLPXgak7lPdXkGi3nRaQZh9VTnNLUBlQhz5VT5DrGXcVipVpi32FRdMZElhWUuvewwrB6CoHYS1WW+V9T0JCHoZR4b0RZVqgc0cE6gJIVHTFOUUpJ2raHoJ5wyJ/tTw3vqwx/N+AyR514glHRankd9Yf4P5kayw3y8IFzVUCY7JaT2L887gCTf26Y3bTbRNrRBlwfxo0LixfSsbj7onHamirgg8g2kst5duFqBd44TvYw9g+vojhaMBNWsX6o+AhMik8iHLpnqyQjBMFuoXekH3k7+8ikE3MrYD4EtsENqfNfDHClj5rFn9H8PLPonTjBzMbF9VvitB/1DdzwSZ9o+u8oUmlZDSDD8uPhNTWCSickjR8SI2H/R53yWigywCI0dGoXHTAZefvZ28Nwrp79gWZ67rHT+/tvWcwmpfEhYaG7W+P83KOURQrr+vTQ1JxxvwqtFEgIxk6LZyrESyU+HRTtLyU5VROjL10SXBPgQeLE2nVc6uYVrgUHBzmID+9h/sRE6jempBE+Bo56mdYaQfYzVmcMBiWBOjSBmJu+6Dpivb5GkJGPas3lpEyHBysbap8pHZu7lsDAk9How5tiC88SmY3M65yftkZ7m150SOUMyFAhAy3VHzgoWYyGw9NrS/4Vcw8kVmbiVPK70NVTZBmFL7acRuprA7Jofwx6N2YQkJglPO4S/qrBmEs+trk1p/8UIFZc04VEXUesNdqrfECbDRiWkw+6tPtRmVEIZq6SRlwM3R8U/EFujKhOifZLhluncVhKBBuHir0cAfa/5DepnNPi0j5y58IcycxYTGn1JBHLKt578H3b/rI56qHCSl6CxrRbOkMXej8nXBnu5lAhVnCDpEgDmiF15C+KL+g1XSKQaN2cC9KURIJVs3SNE43YzYLCtCwACYCBdv2ZfTWmBZDv0tjfeXHo6AOteIzrEYtGZZPsl6vsSsRSGW4w/qlDCe5tNziN5wb4ubTePpGYamKx8W9FaKdXUtB/Y1/4sAGt/Z78Mw67OSEWRLVaFyLC1FeMUj3TFeIo1rCn94VeUVQyrpxiN7QWTVcl/kMvOKG2j1+5xViUzmMCbzkOHF8tuZvmDpTR46Q+zB0t4guVjNs4c5h25UHIUh53jtbF5H34/aDDy1DeGGxF12wU7cbfFIMELMrwPdJb4UKkvI9+WDKKbpjDMJ+NEZCPAwKCMrJoQjZSohObvSlJJjB2hlJrAouwNCpTHAPajfiIxCELkHia+peoc1S09C82ZvutPHhk0OZJbae7VyCGs70lz/8n6qBDsLsX/BAYwHGAL8VmbJTWFQ+77gDOO0+3ThVrEW/lKQogTntbIwyA59vmNiPKxNT9yh1PPOgwi35jcIblFU2OrjbpJHBWVxl3g/uWCJnWTu5qQlYq8gRmK/GesyYEsCtI2AbcJ+8ZEPajNQqa0vBuvB4rocJzTfh29v6x3E4MNY50UfhVq5o6UBCeW1Gq/H8pWaslErjEL56r+UxyTsyiEVKiVlZgGv2BHeCRcXCBK/sJ6FnE3RSWWcy7MNrijXLXOTfQT2XYyFUuijR1XVPRuQbgRbh+CuqlwcbjcHwBLOyQYbCZh4BT6qUqMh2mgYxmtD+6bsktRE0bbkTF0ctJW0uk3Rqa65gmMhSY1yDqY4AhYYYcAK+WrejW1O2pMRgk3f/opvFg6gUvfGgDB1wp69I/3TfOEtEIpR7N4Kn0e35++mi7Q5Nh6xoJzQi3FwwEhgjwTKPgWs2EMqhmpKLoL6U7V+IYhj+SYSNpLb7LY7hLPmYkY0MG+4jdAnQo1U9isrK6Ji+g0+ne3x3brkSCF+j9+kI45mzC38o6CZM3qteDXk1Ivrl3wI7+EDphGBHS6Bm+S6o4CbRxeN+Bc24yXW71UUI6iKO2cR+6UWryBmVrsUOsPV3H1l2CSbK6m9Bl8fryEkIsbf/5vTTN24xzi/k9dAPODCAuwwQJa4fNCPgROaOEfW0xQjUNPO/IO6sVvmhTzoh9Sd91dMSqOsRLVIAq6XCnQ84rhx3V7Yn7yuTs0iJPrCaSy3FATN3izhd/lmLGkFoYaOsvfACxLvOtTy4NokKPagbB0dAjVLic4WnBZYJMkb0yGCD1uXn+9qy2m6kA2+AHLAAJz15YCd+/WEyBY97OgvV9DkRcrq/KZ49ubuNDJugw8Qansr1QDh7S5PVLRVW6pA2Nhmu5Y/hTtpx+RxuEHXpvVFbBcwFQd3KUEY7cKKDjd8/ax11UjpR6iZTQ4Knr2PtZplxjnMKnC91G90LaILeDVHHGH6NG5XStj9TaHQKxp8cpFtwwEu4Lf30XlLjWWrhveuGyPM4FuqvTqtsvVeL18ZGyZVGLB5936WenBD8HckImt2YEGy56uNDfXjK9EOQXYkwTNUru6D6Y3KaZ5lZ5RCoTDkcdpePuNdU9XK5sKN4gVHpdYYmH49ys0ej/OYew9QumxwUu7CVQZb0ATRTIjTunmRIxDVUmaBJCXG0grJTSTVrOJwwvHqp0Swf/PsO3c7V86kBSjUL7Z1+xBJXYcKn7qT4eV5qRQEkJVoV2MFzp6T1shvfdH12fr3S+4KQTno4E+0r0iSbq+4Nw4Phkx0zdsQF0i/69jSA8Oj3jXkyyxYlfvqEzdKhWmqSEYfLJw4AxjF8lmc73uW3ty9TCt0qZDfPZYDQ6Lv7NZh2rk4NTNX74cR9lylUaEh5BC6YHN6lhDdoQCrmlkq1EYRCTRW9nox7CK6qYt8N3hnwcBNS5RxYwcoa7LseeQC+2If6M2uPSO0/crxrM+de4LbitnFTJRH4ZFL5W2VKFtFWbid8Ldk+tKxAut/dyGEtCcOyiz4BRCKb5nBCfnTcnuf9bUoRKu8NLBvEYDJ0SpwX5G1QlpAGTRhFKRigTVl5Q+rLzXuD7hKJURRUmNoJVJrjuk9NcxA/2GNPddQmLbuUBzV4w7uoP9vdRDEb/+ps8TENoK0f5o0WgeOkAE4ovj6C/3iDy1mgVATiAUELyBwsTUB+4oyeU4+jrfY6w4+vdCJSO+w2LaI/BCvOYtvFnZroS1coYmW760NBQVojVlab58s5b3uKM07Yk4uOYZbc7rLVrBvyMX/Qsnp1hImKVm3hGIZPwUPga5QHg5uqFJDIrntXRQL0qwQGQB2TlIIvwTUDFIuBLuWsf2qmV6KXZoZj8NNN2PqHUHyFlHiZko69BHZUMxKMTwwstO/M09DLHhW0Rf8ORgMV8Axy/SgrF5eEmguOYBLOX/wRr6VA0f/dgZk5SWwHOfbYGJokbArZGEbDRbl03fx2THlaLzVC6qUK7oLdhkOSKvyF+LEnovRJJy8FWfxQ6GaW876vk2ye0lbqSS1F5CN9dXYmdrl9xbXAR9gMsHrWOYv9CyPS1hgOIUYiDxFbBpFoYxCV+SdVoP/10CxYTVQdkYhxkZqntag8dEvzDL7zLEHTxaiHG1ZF7MsR7f/whywisAvNAgQiylFtRs697rBeqXK3gIC6uLi08OIdgswTaGRplIRNc5WU1cluXIXapYROLyLHwRjoxF2P1jS0o3/Vj4m4udZPTndR2dq6EZl2pmUQ7rFHsPoUVoSOL2uplc0DAvm4fl4VXmSi63Myi2drIXSq/F9W0PnjBPhI88jFPlmpT2oQpOzTXYYV6rsVT3uMyS2YSRC1CxlayNpdiKKanmQe1naWGws0Uf+MHvMgExWy/7q7A+2XjPkQF+KyRM/K0zOEp37xfudmAQpFcTJwYU7SiBEOLkgUxj5lVH0Ly/JJoKz9ZE0jm5+8RVek6p41CESO6RTspTv2dZBPVtBeNZVJLolCHXKFD89tQt+zT3BS3GzQRjklazbxhdLNFa7fVO7trIT5/KqmGv1V0NLq+RdoKYdKpOP0jJTiqfnxRmTMqFZHBQLHtrfnydvy0mmrC5YPoLIW+Jn2Env86OUkRsvPvyMVoz2h819FyBQTXP4YygUO8lNejPgjcR3jC7amVKJpBFqZEG85CjhHtol8YcQBOBmuLiXZs0Lnqvi5KWw6DbRBYhinRYJNl/MNywAAiFeigoS24mqTsb2ydRg4rGlSOvISGtaKafb9gCX6yrYwIljWH2DmnVekgR0b+QJvJytUH8nLCh6kHTqeYsW31i88kLStp0QVoYS5Fhg7HlKtCnetYr/snwf+dOsRe+dRBbkukOpxw5j2VBPFbFW3fr0sMXWda4JSjW5rlBfdSOCc82ingJDRMO7P5xXOuFyp8ryDBekbLXTmRXhT3hIvPw3bYXbdhErR2TiyIhL6QVFzXY0zD2+6LiZlJevojUzz4ekpCuKQ/zO/uvhyZNUbTZaLOSFA5eyybWhEM4Ru83rGcnuXWrgaoLpnITFPc7B6rIbmfFgh0zab5oXAQP9bZfw5LQEQ12wlkHglcpwk8xKLaOBpNrFC58lGvAHjJM1bjeRLe7h67EoyIgaCB7bcYafEqyBIczCsTZdiELRGIorY0AjnMVGaIsxJIWoFG7k7WnMIdAukNcmVnD4Ylc00c1ovMw5IUaHQDaqqZ/OOM0ilhi7ObngYm9sS14RszNS9AEWOsLk7bDYaT0hhQOdk9RxLqBZsSN37crbXn5zaLB1dTW944wSxACsvI8llG+hUWJrc8t7z184xMUgmdnB/H2M/IVhYtZ0ohGTjzLNI2MhSPtQiRYIXZLjaW0IJZiIxzwYhxvOZ/WlI6YbAlaelupp0/p3n5OoOAVk70TE0wNuqEoGnQ0fOAQIVnuxEktMOO9B8n/qE3WfOGl3I4GP7KNE7WZT5fJBu+sya367piOJjJSRidEL0EB38bq4eFs5c7J5fvJQNNrp1/Vdw/DucJeosZVb95qlu/DMhEoDBqTgJncqHgarMEHiesSimQLFe0y8tJUQOK8vMAMAae2Wc8dN1fnD7EzwOtuofoGzi/HxNYVHVj3+FqAIIokGWCXESmllrP+fLM2Q0W1IyMGSZuZRKepPVpfI4sjB/eW6WmuwN7aeMGn12o2pRNKa/K8soICSxnkmgPcunBPq3pdim52MLhjZ0nBj8wDKNKtje0GWdI0+BibnPom8xQLrJ0Sug46VbgytGWPHNFKHuZ/16UwrRqc1XqSKBTpEOoo1WLXUB7ZLzrR3HImxc+fm06+FHB6aKSEDar4v4kGHnAz7oLhFF6+7kVXFiFFC8FXuN02qXqrWEs9fkRmuqN46qM30G71eY0U8LXFMDoyLBSnEcSN4degsnAe3QEWYtbnKAXxQh29863R/SF8zCLrT5l08iPGXV+R3FdQiUxtkN5sRhtoEaLmotgPkFruroHTZ3k7mZNk4dIH8fkF5DiWv0mVaiRnTLW7XSPdX27EVjTCQleMgxr+my+9zDGym5ArTlmUcSGn/9TRvtZDFWn3JrgzPTNdZhwXHlF4SBSc5nHqvPi6N5eV9VEBdvHZVbiW+BlOGKP+/Ln1yrqZIdvWDOuqhPReLI+onV9pX2WbOkSyXvEd7oSAJrZ89RmsvSIez8wAXSspoVNpbatO6G9Uvk95Fn8oN17PKLk4lzDGMh6uUtKmQ+2fb6Au9wZHYkV0txaOnnyQNdwHLl/t5Laj9xaRgHfa7bDWwggAcP1pv9xkqn6+fwh9tOFV9N5U5CD0qIOOYq1mj+7mSBBF9AkdKkKKMgd8/coMZgy8akz6U36b/x+i5ih3WFzzByCOXJTqcBgiwMyJvo2oJb77AObvthqoVEho+IT8vD6nL/ixP4glevhW7U/btz8wOY3Xc5/lyaX9pb8bjLbbvzAbwatxSdTPUPtZXMAirFf09skfRANPgFSXSYvpMOiDOQC3tAEZeBepnhnkiUYUHnss0b2acFaQ/h9JWSp+24o1UpFMGv60OnhdKO1pF43qeak8cuOM42qkdEzIFOc8xwXZ0cnZg9hlsItrtjgUSBfywW5gKJfFEVerMe8xDNFvppfkwo6Xw5BYlYZYOCPcO3qbNHpe7ZaTpcQgo3WnLRsV1gi2my7bQfPt2Ix2guXzIgJQ4pVgyZgh7iMeeySi2wEft0sJ3fa+iFNB5BN00trKCY/cxAQw60bP1zJHrXpZEMzBwDLn1i2AHBNKrsl1IlabfBJ2iWlIJ9uFCzmTfJvWZ6CkJ0BM0ubvztH++YEIITp7+8GLxiMvL5mZyc9RHWRt3X4z+18aUdMrdr1VbmCLrNLvbl9E3njjbd4KCXlB68KV/6PH3Nf2+zmbu/FI8X86q1BO+JDpPPz9hQoa/+7mhLrHbg7/C7vFTjNYnvbGJGMwWrE8mZ5Fm5SDeF6z8nJuat03vd7Cr3fObteRrcCj+DZncKScJrd0yTsPVOQUKLq57Tyugf9p1hoaplDJJF/aRdgcl6e+2GoseLi91flbvqJFYUoYsUuDz4G0JNJPRZP/MFH4EpbNpgjPjYol8/4wvZtxVwkEl18oq8aEL277EMGG3PC8Bg1RFymsyHHKh3wx/L/QL+7eFFJZdmBFENVnmxWpu9+BArCOfnqFh4vEDr6gkL97O+pA+zjxWeiXc9VJ/TFLP8CE5KQC9tJUEjRm4EZmBZS6zWCK6mabSN1O6y3iWWHQtGkZKXBtyeprfyqj4EoQa7VNkwax9Ny7oHM/Wsrvf0jjcBcb5G4KOIdWNmaqodxfkaptNLjzkkLvjLp2FOawy+pSD04fiSsTeTstgCsTdwrucOQIgGTmXszEGGgTkNVwAl1u/+r2YYK9PKIA/BTqwbWItHAIG74FdUBI86+RW0zhjG8i6atyExPoDhGxMsGJjPeR4DwOnerkANrQqFyJezL8aZRTABU7PlbFXikyLXfAvCn4CwGW8bE4/Wk2bMqNylaLsnWj/jKHcXfx4gQvfGhWvPFRRmlp0XNZ11mR8t2/EHnI4wVh5nzvpdnRmI5p6zq8lPpAb4G2z7+U9hFMJx+hKADKu8Oe0kR4X6RI59qPXaY8I6/ptpULHAmtA+kQW25nXdx+AV05OsiS2AM02LdwquUv0ER8kSCZmthwVpnpX/cfGt+q+4yOjhkClh4//JFbbxACxnpihgJovpxEO+ZEE38VV88YkQbUHpVp8BIhkoAIZ9JlB1joK6xXP5xr+5BEK1Pr67Ths/EA4h7QntSEzw6MfOd1baQuWe/0W61IiXSvB/5uNrI8ZCiiSntFWJJG/zXg9KTFms/YNm41Z61mszv5XZs9VHoWqTZ4HRwwRwD4b5JMRRFmObHz8cNFo7I8hdWXoQpqya031LbTzBSE/S/Ur5odfTR9QQwEnCfcmC8sgTJzd7Y+DNmQ0sP+TRAQr1/l6y3sMrtjipnvGxZgjdHG0RTbljE2j0Aek2tivJms/OpuBIVzaQDy1VUngCHjp1ZVSHtFBt3TMsznuFqxQCxGvl5wHWKWNNolrrr7otqM07FXlt4gFHB+pizHWeLK11DHe5coz/ZxnubYVsefi+K0hvP5M4pA6tj1mVD3LJr8YI/CSUAHWfqpTioH7xxHQZOGiqofZFXoSz5U9Tkqkwhw+EN91tA/KzXn7Ysdp89aIGguWY200H+gkueZHVmfcim0geshSsOtHzHhhjF8AVmz4TF+kcBpZzzri0GDfB3pxa/kg3Y4Sw22Q/LLz3MhYCT5qQloA9VSMBCw6sOxfeQ4Ewmi5KZmqKdXCnxXEOX7lcbrdaDuywKnloaG8yj0u6pUfQycmVqpRexq3t0l5mhJUGhPOYace8tNF69TfMipkJkkvutv9ZRZRCvVuqn+xXlZF5vM3mawf99v0xojPTXFxrmSbKmOJxDssJI5IotRSzcqdtfRQrYXLZ8etIcM2KBKL3BuJygBirepSxRbuCcRQsKJPpjn5w+diiXoPWeYq8efaYuuMbCW8SUm8gfCstTIt8OCeJIVu0U1Dl1nJN8Z64=</div>
 </div>
 <script>
   
@@ -405,31 +207,28 @@
       event.preventDefault(); 
   });
 </script>
-
 </div>
 <footer class="page-footer">
-  <ul class="post-tags">
-  </ul>
-  <nav class="pagination">
-  </nav>
+<ul class="post-tags">
+</ul>
+<nav class="pagination">
+</nav>
 </footer>
-    </main>
-    
+</main>
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
 
     <span>
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+</span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
 </a>
-
 <script>
     let menu = document.getElementById('menu')
     if (menu) {
@@ -484,6 +283,5 @@
     })
 
 </script>
-</body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
 </html>
