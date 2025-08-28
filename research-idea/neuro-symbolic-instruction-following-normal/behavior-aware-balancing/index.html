@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Behavior Aware Training Data Balancing for Behavior Cloning | Sukai Huang</title>
+<meta content="" name="keywords"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/" hreflang="en" rel="alternate"/>
+<noscript>
+<style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+<style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script><meta content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Behavior Aware Training Data Balancing for Behavior Cloning" property="og:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="research-idea" property="article:section"/>
+<meta content="2025-06-29T16:04:04+10:00" property="article:published_time"/>
+<meta content="2025-06-29T16:04:04+10:00" property="article:modified_time"/>
+<meta content="https://sino-huang.github.io/sukai_avatar.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/sukai_avatar.jpg" name="twitter:image"/>
+<meta content="Behavior Aware Training Data Balancing for Behavior Cloning" name="twitter:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Research-Idea",
+      "item": "https://sino-huang.github.io/research-idea/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Account for Levels of Granularity of Language Instructions for Embodied Agents",
+      "item": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Behavior Aware Training Data Balancing for Behavior Cloning",
+      "item": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Behavior Aware Training Data Balancing for Behavior Cloning",
+  "name": "Behavior Aware Training Data Balancing for Behavior Cloning",
+  "description": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\nEncrypted Section Part of this article is encrypted with password:\n--- DON'T MODIFY THIS LINE --- Q: Does behavior cloning use cross entropy loss? how does BC deal with imbalance of different action occurrence in the training data?\nShort answer: yes. In behavior cloning (BC), you usually train by maximum-likelihood on expert actions. That’s cross-entropy for discrete action spaces, and (Gaussian) negative log-likelihood—often implemented as MSE—for continuous actions. (arXiv, scikit-learn)\nHow imbalance is (not) handled by default Vanilla BC just averages loss over all (state, action) pairs, so frequent actions dominate the objective; with imbalanced demos, the learned policy is biased toward common behaviors. Recent work formalizes this and shows equal per-sample weighting leads to imbalanced learning. (arXiv)\nPractical ways to deal with action/behavior imbalance\nRe-weight the loss (cost-sensitive BC). Add per-class/per-behavior weights (or per-sample weights) in the cross-entropy/NLL so rarer actions/behaviors count more. This is standard in supervised learning and is directly applicable to BC. (scikit-learn, arXiv) Re-sample the data. Over-sample rare actions/behaviors and/or under-sample common ones; up-sampling is equivalent to increasing those samples’ weights in the objective. (arXiv) Use focal or class-balanced losses (discrete actions). These reshape cross-entropy to focus training on hard/rare examples—useful when action classification is very skewed. (arXiv) Behavior-aware balancing. Group demos into “sub-policies” (distinct behaviors) and set weights to learn each behavior to a desired accuracy; recent work proposes meta-gradient schemes to learn such weights automatically. (arXiv) Quality-aware weighting (if imbalance = optimal vs. suboptimal). Down-weight likely suboptimal samples using a discriminator while still doing BC. (Proceedings of Machine Learning Research) If you want one line to remember: BC = MLE (cross-entropy/MSE), and it doesn’t fix imbalance unless you add reweighting or resampling—ideally at the behavior level, not just per action. (arXiv)\nTotally—here are three drop-in PyTorch options. The first matches what you described (weights from the last few batches); the others are standard, well-cited class-imbalance tricks.\n1) Dynamic, “last-few-batches” class-weighted CE (EMA of per-class loss) 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 import torch, torch.nn.functional as F C = num_classes ema = torch.ones(C, device=device) # init once, persists across steps alpha = 0.9 # EMA decay (≈ remembers ~1/(1-α) batches) def cb_ce_dynamic(logits, y): # per-sample CE ce = F.cross_entropy(logits, y, reduction='none') # batch per-class sums \u0026 counts cls_sum = torch.zeros(C, device=logits.device).scatter_add_(0, y, ce) cls_cnt = torch.zeros(C, device=logits.device).scatter_add_(0, y, torch.ones_like(y, dtype=torch.float)) # update EMA only for classes seen this step seen = cls_cnt \u003e 0 ema[seen] = alpha * ema[seen] + (1 - alpha) * (cls_sum[seen] / cls_cnt[seen]) # inverse-EMA weights (normalize for stability) w = (ema.mean() / (ema + 1e-12)).detach() return (ce * w[y]).mean() 2) Class-Balanced loss (effective number of samples; static but strong) 1 2 3 4 5 6 # counts: 1D LongTensor with training-set counts per class (size C) beta = 0.999 cb_w = ((1 - beta) / (1 - beta**counts.float())).to(device) cb_w = cb_w / cb_w.mean() # optional normalization criterion = torch.nn.CrossEntropyLoss(weight=cb_w) loss = criterion(logits, y) (From “Class-Balanced Loss Based on Effective Number of Samples.”) (arXiv, CVF Open Access)\n3) Balanced Softmax (fixes softmax bias under long tails) 1 2 3 # class_counts: float Tensor of size C (training frequencies) log_prior = class_counts.to(device).clamp_min(1).log() loss = F.cross_entropy(logits + log_prior[None, :], y) (“Balanced Softmax for Long-Tailed Visual Recognition.”) (arXiv, NeurIPS Proceedings, Google Sites)\nAlso handy (alternative to reweighting) Focal loss: focuses on hard/rare examples; often good with imbalance.\n1 2 3 4 5 6 7 8 def focal_loss(logits, y, gamma=2.0, alpha=None): logp = F.log_softmax(logits, dim=1) p = logp.exp().gather(1, y[:, None]).squeeze(1) loss = -(1 - p).pow(gamma) * logp.gather(1, y[:, None]).squeeze(1) if alpha is not None: # optional scalar or per-class tensor aw = (alpha if alpha.ndim == 0 else alpha[y]).to(logits.device) loss = loss * aw return loss.mean() (Focal Loss for class-imbalance.) (arXiv, CVF Open Access)\nWhen to use what\nWant a quick, principled baseline? Use (2) Class-Balanced. (arXiv) Training/test priors differ or you sample imbalanced mini-batches? Try (3) Balanced Softmax. (arXiv) Need your “learned weights” to adapt online to whatever the demo stream serves? Use (1) Dynamic EMA (a practical heuristic). For extreme skew with many easy negatives, add focal loss. (arXiv) If you tell me your action vocabulary size and class counts, I can plug them into (2)/(3) for you.\n",
+  "wordCount" : "729",
+  "inLanguage": "en",
+  "image": "https://sino-huang.github.io/sukai_avatar.jpg","datePublished": "2025-06-29T16:04:04+10:00",
+  "dateModified": "2025-06-29T16:04:04+10:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sukai Huang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sukai Huang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sino-huang.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+<span>Lit Reviews</span> 
+                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
+<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+<path d="M15 3h6v6"></path>
+<path d="M10 14L21 3"></path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main">
+<article class="post-single">
+<header class="post-header">
+<div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/research-idea/">Research-Idea</a> » <a href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/">Account for Levels of Granularity of Language Instructions for Embodied Agents</a></div>
+<h1 class="post-title entry-hint-parent">
+      Behavior Aware Training Data Balancing for Behavior Cloning
+    </h1>
+<div class="post-meta"><span title="2025-06-29 16:04:04 +1000 AEST">June 29, 2025</span> · 4 min · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
+</div>
+</header>
+<div class="post-content"><p>The research idea is confidential and you need password to access to the content, sorry for any inconvenience.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3><strong>Encrypted Section<strong></strong></strong></h3>
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<script>
+  
+  document.querySelector(".hugo-encryptor-input").addEventListener("keyup", event => {
+      if(event.key !== "Enter") return; 
+      document.querySelector(".hugo-encryptor-button").click(); 
+      event.preventDefault(); 
+  });
+</script>
+</div>
+<footer class="post-footer">
+<ul class="post-tags">
+</ul>
+<ul class="share-buttons">
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on x" href="https://x.com/intent/tweet/?text=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f&amp;hashtags=" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f&amp;title=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning&amp;summary=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning&amp;source=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f&amp;title=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on whatsapp" href="https://api.whatsapp.com/send?text=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning%20-%20https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on telegram" href="https://telegram.me/share/url?text=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="2 2 28 28" width="30px" xml:space="preserve">
+<path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Behavior Aware Training Data Balancing for Behavior Cloning on ycombinator" href="https://news.ycombinator.com/submitlink?t=Behavior%20Aware%20Training%20Data%20Balancing%20for%20Behavior%20Cloning&amp;u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fbehavior-aware-balancing%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<path d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z"></path>
+</svg>
+</a>
+</li>
+</ul>
+</footer>
+</article>
+</main>
+<footer class="footer">
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+</span>
+</footer>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
+</a>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</html>
