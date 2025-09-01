@@ -11,8 +11,15 @@
 </image>
 <generator>Hugo -- 0.148.2</generator>
 <language>en</language>
-<lastBuildDate>Sun, 29 Jun 2025 16:04:04 +1000</lastBuildDate>
+<lastBuildDate>Mon, 01 Sep 2025 16:04:04 +1000</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Instruction Granularity Literature Review (NLP side)</title>
+<link>https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/</link>
+<pubDate>Mon, 01 Sep 2025 16:04:04 +1000</pubDate>
+<guid>https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/</guid>
+<description>&lt;p&gt;The research idea is confidential and you need password to access to the content, sorry for any inconvenience.&lt;/p&gt;</description>
+</item>
 <item>
 <title>Behavior Aware Training Data Balancing for Behavior Cloning</title>
 <link>https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/behavior-aware-balancing/</link>

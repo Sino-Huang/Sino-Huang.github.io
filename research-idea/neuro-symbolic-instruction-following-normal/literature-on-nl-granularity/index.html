@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html dir="auto" lang="en">
+<head><meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+<meta content="index, follow" name="robots"/>
+<title>Instruction Granularity Literature Review (NLP side) | Sukai Huang</title>
+<meta content="" name="keywords"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="description"/>
+<meta content="Sukai Huang" name="author"/>
+<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/" rel="canonical"/>
+<meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
+<link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
+<link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://sino-huang.github.io/apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://sino-huang.github.io/safari-pinned-tab.svg" rel="mask-icon"/>
+<meta content="#2e2e33" name="theme-color"/>
+<meta content="#2e2e33" name="msapplication-TileColor"/>
+<link href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/" hreflang="en" rel="alternate"/>
+<noscript>
+<style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+<style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" integrity="sha384-veTAhWILPOotXm+kbR5uY7dRamYLJf58I7P+hJhjeuc7hsMAkJHTsPahAl0hBST0" rel="stylesheet"/>
+<script crossorigin="anonymous" defer="" integrity="sha384-v6mkHYHfY/4BWq54f7lQAdtIsoZZIByznQ3ZqN38OL4KCsrxo31SLlPiak7cj/Mg" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+<script crossorigin="anonymous" defer="" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          
+          
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          
+          throwOnError : false
+        });
+    });
+</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
+<script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TTFTV1EWH5');
+        }
+      </script><meta content="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/" property="og:url"/>
+<meta content="Sukai Huang" property="og:site_name"/>
+<meta content="Instruction Granularity Literature Review (NLP side)" property="og:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." property="og:description"/>
+<meta content="en" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="research-idea" property="article:section"/>
+<meta content="2025-09-01T16:04:04+10:00" property="article:published_time"/>
+<meta content="2025-09-01T16:04:04+10:00" property="article:modified_time"/>
+<meta content="https://sino-huang.github.io/sukai_avatar.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://sino-huang.github.io/sukai_avatar.jpg" name="twitter:image"/>
+<meta content="Instruction Granularity Literature Review (NLP side)" name="twitter:title"/>
+<meta content="The research idea is confidential and you need password to access to the content, sorry for any inconvenience." name="twitter:description"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Research-Idea",
+      "item": "https://sino-huang.github.io/research-idea/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Account for Levels of Granularity of Language Instructions for Embodied Agents",
+      "item": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Instruction Granularity Literature Review (NLP side)",
+      "item": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Instruction Granularity Literature Review (NLP side)",
+  "name": "Instruction Granularity Literature Review (NLP side)",
+  "description": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "The research idea is confidential and you need password to access to the content, sorry for any inconvenience.\nEncrypted Section Part of this article is encrypted with password:\n--- DON'T MODIFY THIS LINE --- Background and Motivation The problem of instruction granularity emerges from the inherent flexibility of natural language, where the same goal can be expressed at vastly different levels of abstraction.\nWhen humans give instructions, they naturally adjust the level of detail based on context, audience expertise, and task complexity - a cooking recipe might say “sauté the onions” to an experienced cook but “heat oil in pan, add chopped onions, cook until translucent” to a beginner.\nThis variability creates significant challenges for AI systems that need to understand, decompose, and execute these instructions effectively\n1. Granularity and Learning Efficiency Fine-grained instructions (step-by-step, explicit) tend to reduce cognitive load for learners and AI systems alike. They minimize ambiguity and can improve sample efficiency because the system has less guesswork about the intended steps. This is why beginner-oriented instruction or low-level robotic planning often requires high granularity. However, overly fine-grained instructions can introduce opportunities for abstraction. For example, a robot that’s told every micro-movement may learn slowly because it cannot leverage higher-level patterns. 2. Granularity and Generalization Coarser-grained instructions (abstract, high-level) require the learner to infer missing details. While this increases difficulty, it often improves generalization, because the learner must learn transferable strategies rather than rote sequences. For instance, “sauté the onions” generalizes across kitchens, pans, and stoves, whereas “heat oil in a cast iron pan on medium heat for 3 minutes” may overfit to a specific context. The right balance can encourage flexible problem-solving: providing just enough structure to guide execution, but not so much that the model/language agent becomes brittle when faced with novel conditions. 3. The Efficiency–Generalization Trade-off It feels like a bias–variance trade-off analogue:\nFine granularity = higher efficiency, lower generalization. Coarse granularity = lower efficiency, higher generalization. This suggests we can think of instruction granularity as a tunable hyperparameter that needs to be optimized depending on the downstream task — just like we tune model capacity or regularization. Hierarchical and Subgoal-Based approaches For instance, in studies such as Few-shot Subgoal Planning with Language Models (https://aclanthology.org/2022.naacl-main.402.pdf) and Modular Multitask Reinforcement Learning with Policy Sketches (https://arxiv.org/abs/1611.01796), the agent infers subgoals directly from the target instruction. Notably, the granularity in these cases typically only has two levels: the high level corresponds solely to the goal description itself, while the low level involves breaking down this overarching goal into specific subgoals\nSimilarly, The study Multi-Level Compositional Reasoning for Interactive Instruction Following (https://arxiv.org/pdf/2308.09387) proposes a three-level compositional reasoning framework, with each level undertaking distinct, coordinated functions:\nThe high-level module is responsible for decomposing natural language instructions into subgoals that are easily interpretable by humans. The middle-level module executes navigation tasks and makes critical judgments about when to transition from navigation to manipulation. The low-level module consists of a set of interaction policies, which carry out task-specific manipulation actions while achieving precise object localization. Despite the layered division of functional modules in this framework, there remains a lack of a specific framework for quantifying the granularity level of natural language (NL) instructions themselves. Moreover, when examining the core logic of instruction decomposition, this approach still appears to rely on only one layer of decomposition: it primarily breaks down the original NL instruction into a set of subgoals, without further subdividing these subgoals into finer-grained units to form a multi-tiered granularity hierarchy for the instruction itself.\nConstraint-based Taxonomies and Frameworks A complementary line of work measures instruction complexity by its constraints and their composition, rather than by where the instruction sits on an abstraction ladder. The central idea is to (i) enumerate the kinds of constraints a natural-language instruction can impose (format, semantics, utility, etc.), and (ii) model how those constraints are composed (e.g., simultaneous “AND”, sequential “Chain”, conditional “Selection”, and nested variants). (e.g., Benchmarking Complex Instruction-Following with Multiple Constraints Composition(https://arxiv.org/pdf/2407.03978) )\nWhat these frameworks capture—and what they don’t These taxonomies provide a principled way to represent and score the compositional structure of an instruction (how many constraints there are, how they branch/chain/condition, and how satisfaction should be aggregated). That is not the same thing as granularity in the sense of abstraction level. An instruction can be coarse-grained yet highly complex (few implementation details but many conditional/branched requirements), or fine-grained yet simple (a single, fully specified operation). Treating “more constraints” as “finer granularity” conflates two orthogonal axes.\nCurrent limitation and Research Gap Existing research typically focuses on measuring constraint composition or mapping goal-to-subgoal hierarchies—both of which offer valuable insights, but neither provides a domain-agnostic, quantitative measure of instruction granularity. Metrics like subgoal depths are highly domain-dependent, making cross-domain comparisons unreliable. Similarly, using temporal intervals as a metric is problematic, since some simple tasks may require extended execution times, while certain complex tasks may be completed quickly but involve numerous constraints, complicating optimal decision-making.\nTo address these limitations, we propose adapting unified, feature-based granularity metric inspired by Hector’s policy sketch formalism, enabling consistent and quantitative evaluation of instruction granularity across diverse domains.\n",
+  "wordCount" : "850",
+  "inLanguage": "en",
+  "image": "https://sino-huang.github.io/sukai_avatar.jpg","datePublished": "2025-09-01T16:04:04+10:00",
+  "dateModified": "2025-09-01T16:04:04+10:00",
+  "author":{
+    "@type": "Person",
+    "name": "Sukai Huang"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sukai Huang",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sino-huang.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<header class="header">
+<nav class="nav">
+<div class="logo">
+<a accesskey="h" href="https://sino-huang.github.io/" title="Sukai Huang (Alt + H)">Sukai Huang</a>
+<div class="logo-switches">
+<button accesskey="t" aria-label="Toggle theme" id="theme-toggle" title="(Alt + T)">
+<svg fill="none" height="18" id="moon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+</svg>
+<svg fill="none" height="18" id="sun" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="5"></circle>
+<line x1="12" x2="12" y1="1" y2="3"></line>
+<line x1="12" x2="12" y1="21" y2="23"></line>
+<line x1="4.22" x2="5.64" y1="4.22" y2="5.64"></line>
+<line x1="18.36" x2="19.78" y1="18.36" y2="19.78"></line>
+<line x1="1" x2="3" y1="12" y2="12"></line>
+<line x1="21" x2="23" y1="12" y2="12"></line>
+<line x1="4.22" x2="5.64" y1="19.78" y2="18.36"></line>
+<line x1="18.36" x2="19.78" y1="5.64" y2="4.22"></line>
+</svg>
+</button>
+</div>
+</div>
+<ul id="menu">
+<li>
+<a href="https://sino-huang.github.io/biography/" title="Biography">
+<span>Biography</span>
+</a>
+</li>
+<li>
+<a href="https://www.notion.so/Literature-Review-Tracker-for-Embodied-Agent-Neuro-Symbolic-AI-208396e9a0fd802a88cdec436d42509b?source=copy_link" title="Lit Reviews">
+<span>Lit Reviews</span> 
+                    <svg fill="none" height="12" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="12">
+<path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+<path d="M15 3h6v6"></path>
+<path d="M10 14L21 3"></path>
+</svg>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class="main">
+<article class="post-single">
+<header class="post-header">
+<div class="breadcrumbs"><a href="https://sino-huang.github.io/">Home</a> » <a href="https://sino-huang.github.io/research-idea/">Research-Idea</a> » <a href="https://sino-huang.github.io/research-idea/neuro-symbolic-instruction-following-normal/">Account for Levels of Granularity of Language Instructions for Embodied Agents</a></div>
+<h1 class="post-title entry-hint-parent">
+      Instruction Granularity Literature Review (NLP side)
+    </h1>
+<div class="post-meta"><span title="2025-09-01 16:04:04 +1000 AEST">September 1, 2025</span> · 4 min · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/research-idea/neuro-symbolic-instruction-following-normal/literature-on-nl-granularity.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
+</div>
+</header>
+<div class="post-content"><p>The research idea is confidential and you need password to access to the content, sorry for any inconvenience.</p>
+<div class="hugo-encryptor-container">
+<div class="hugo-encryptor-prompt">
+<h3><strong>Encrypted Section<strong></strong></strong></h3>
+<p>Part of this article is encrypted with password:</p>
+</div>
+<div class="hugo-encryptor-form">
+<input class="hugo-encryptor-input" placeholder="Please input the password"/>
+<input class="hugo-encryptor-button" onclick="_click_handler(this)" type="button" value="Click to verify"/>
+</div>
+<div class="hugo-encryptor-cipher-text" style="display: none;">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</div>
+</div>
+<script>
+  
+  document.querySelector(".hugo-encryptor-input").addEventListener("keyup", event => {
+      if(event.key !== "Enter") return; 
+      document.querySelector(".hugo-encryptor-button").click(); 
+      event.preventDefault(); 
+  });
+</script>
+</div>
+<footer class="post-footer">
+<ul class="post-tags">
+</ul>
+<ul class="share-buttons">
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on x" href="https://x.com/intent/tweet/?text=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f&amp;hashtags=" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f&amp;title=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29&amp;summary=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29&amp;source=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f&amp;title=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on whatsapp" href="https://api.whatsapp.com/send?text=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29%20-%20https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve">
+<path d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on telegram" href="https://telegram.me/share/url?text=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29&amp;url=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="2 2 28 28" width="30px" xml:space="preserve">
+<path d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z"></path>
+</svg>
+</a>
+</li>
+<li>
+<a aria-label="share Instruction Granularity Literature Review (NLP side) on ycombinator" href="https://news.ycombinator.com/submitlink?t=Instruction%20Granularity%20Literature%20Review%20%28NLP%20side%29&amp;u=https%3a%2f%2fsino-huang.github.io%2fresearch-idea%2fneuro-symbolic-instruction-following-normal%2fliterature-on-nl-granularity%2f" rel="noopener noreferrer" target="_blank">
+<svg fill="currentColor" height="30px" version="1.1" viewbox="0 0 512 512" width="30px" xml:space="preserve" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+<path d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z"></path>
+</svg>
+</a>
+</li>
+</ul>
+</footer>
+</article>
+</main>
+<footer class="footer">
+<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp;
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+</span>
+</footer>
+<a accesskey="g" aria-label="go to top" class="top-link" href="#top" id="top-link" title="Go to Top (Alt + G)">
+<svg fill="currentColor" viewbox="0 0 12 6" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6H0l6-6z"></path>
+</svg>
+</a>
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script><script src="https://sino-huang.github.io/js/decrypt.js"></script></body>
+</html>
