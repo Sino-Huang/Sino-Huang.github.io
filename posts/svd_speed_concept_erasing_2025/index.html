@@ -35,7 +35,7 @@ Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension o
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/svd_speed_concept_erasing_2025/" rel="canonical"/>
 <meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
-<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.a3557e3815feeee566e11f975dc096145ea63713e4a0b4392b9e3de0d725c1b5.css" integrity="sha256-o1V+OBX+7uVm4R+XXcCWFF6mNxPkoLQ5K5494NclwbU=" rel="preload stylesheet"/>
+<link as="style" crossorigin="anonymous" href="/assets/css/stylesheet.cf31157431f6973ddd3332493ac18f7417b18c23f2fecd55486849a99ab7c529.css" integrity="sha256-zzEVdDH2lz3dMzJJOsGPdBexjCPy/s1VSGhJqZq3xSk=" rel="preload stylesheet"/>
 <link href="https://sino-huang.github.io/favicon.ico" rel="icon"/>
 <link href="https://sino-huang.github.io/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
 <link href="https://sino-huang.github.io/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -641,7 +641,8 @@ efficacy.</li>
 </ul>
 <blockquote>
 <p>[!IMPORTANT]</p>
-<p>But what if the relationship between non-target and target are in hierarchical relationship? (human and mammal )</p></blockquote>
+<p>But what if the relationship between non-target and target are in hierarchical relationship? (human and mammal )</p>
+</blockquote>
 <p>In the context of <strong>null space construction</strong> refers to the situation where the matrix used to define the null space (often from a set of vectors you want to preserve) becomes <strong>full rank</strong>, thereby <strong>shrinking or eliminating the null space entirely</strong>.</p>
 <h3 id="lets-break-it-down-in-simple-terms">Let’s break it down in simple terms:<a aria-hidden="true" class="anchor" hidden="" href="#lets-break-it-down-in-simple-terms">#</a></h3>
 <h4 id="-what-is-the-null-space">❓ What is the null space?<a aria-hidden="true" class="anchor" hidden="" href="#-what-is-the-null-space">#</a></h4>
@@ -677,7 +678,8 @@ $$</p>
 <p><img alt="image-20250402220746540" loading="lazy" src="/posts/svd_speed_concept_erasing_2025/image-assets/image-20250402220746540.png"/></p>
 <blockquote>
 <p>[!IMPORTANT]</p>
-<p>This anchor vectors explain the hierarchical relationship concern</p></blockquote>
+<p>This anchor vectors explain the hierarchical relationship concern</p>
+</blockquote>
 <h3 id="goal-of-concept-erase"><strong>Goal of concept erase</strong><a aria-hidden="true" class="anchor" hidden="" href="#goal-of-concept-erase">#</a></h3>
 <p>You have a <strong>target concept embedding</strong> $ c_1 $ (e.g., “Snoopy”) that you want to <strong>erase</strong>, and replace it with a more generic or neutral <strong>anchor concept</strong> $ c^* $ (e.g., “Dog”).</p>
 <p>You want the <strong>model’s updated behavior</strong> to treat $ c_1 $ like $ c^* $. So we want the <strong>updated weights</strong> to satisfy:
@@ -742,7 +744,8 @@ $$</li>
 <p>Lagrange multipliers are a method from optimization theory used to solve <strong>constrained optimization problems</strong>. Specifically:</p>
 <blockquote>
 <p>Minimize some function $ f(x) $,<br/>
-subject to <strong>equality constraints</strong>: $ g(x) = 0 $</p></blockquote>
+subject to <strong>equality constraints</strong>: $ g(x) = 0 $</p>
+</blockquote>
 <p>We introduce a <strong>Lagrange multiplier</strong> $ \lambda $, and define a new function (the <strong>Lagrangian</strong>):
 $$
 \mathcal{L}(x, \lambda) = f(x) + \lambda^\top g(x)
@@ -773,12 +776,14 @@ $g(x) = 0$ is a <strong>hard constraint</strong> — not just a preference. We <
 <li>
 <p>A <strong>large magnitude</strong> in $ \Lambda $ for a column $ c_2^{(i)} \in C_2 $ means:</p>
 <blockquote>
-<p>The constraint on that invariant is really tight — the optimizer had to work hard to keep it satisfied, and relaxing it would lower the loss significantly.</p></blockquote>
+<p>The constraint on that invariant is really tight — the optimizer had to work hard to keep it satisfied, and relaxing it would lower the loss significantly.</p>
+</blockquote>
 </li>
 <li>
 <p>A <strong>small or zero</strong> $ \Lambda $ means:</p>
 <blockquote>
-<p>That invariant was easy to preserve — it didn’t interfere much with erasure.</p></blockquote>
+<p>That invariant was easy to preserve — it didn’t interfere much with erasure.</p>
+</blockquote>
 </li>
 </ul>
 <h2 id="shape">Shape<a aria-hidden="true" class="anchor" hidden="" href="#shape">#</a></h2>
