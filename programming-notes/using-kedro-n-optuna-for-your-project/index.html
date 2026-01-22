@@ -222,7 +222,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -667,14 +667,14 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-mysql" data-lang="mysql"><span class="line"><span class="cl"><span class="n">project</span><span class="o">-</span><span class="n">dir</span><span class="w">         </span><span class="c1"># Parent directory of the template
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="p">.</span><span class="n">gitignore</span><span class="w">      </span><span class="c1"># Hidden file that prevents staging of unnecessary files to `git`
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">conf</span><span class="w">            </span><span class="c1"># Project configuration files
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">data</span><span class="w">            </span><span class="c1"># Local project data (not committed to version control)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">docs</span><span class="w">            </span><span class="c1"># Project documentation
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">notebooks</span><span class="w">       </span><span class="c1"># Project-related Jupyter notebooks (can be used for experimental code before moving the code to src)
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">pyproject</span><span class="p">.</span><span class="n">toml</span><span class="w">  </span><span class="c1"># Identifies the project root and contains configuration information
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">├──</span><span class="w"> </span><span class="n">README</span><span class="p">.</span><span class="n">md</span><span class="w">       </span><span class="c1"># Project README
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="err">└──</span><span class="w"> </span><span class="n">src</span><span class="w">             </span><span class="c1"># Project source code
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="p">.</span><span class="n">gitignore</span><span class="w">      </span><span class="c1"># Hidden file that prevents staging of unnecessary files to `git`
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">conf</span><span class="w">            </span><span class="c1"># Project configuration files
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">data</span><span class="w">            </span><span class="c1"># Local project data (not committed to version control)
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">docs</span><span class="w">            </span><span class="c1"># Project documentation
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">notebooks</span><span class="w">       </span><span class="c1"># Project-related Jupyter notebooks (can be used for experimental code before moving the code to src)
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">pyproject</span><span class="p">.</span><span class="n">toml</span><span class="w">  </span><span class="c1"># Identifies the project root and contains configuration information
+</span></span></span><span class="line"><span class="cl"><span class="err">├──</span><span class="w"> </span><span class="n">README</span><span class="p">.</span><span class="n">md</span><span class="w">       </span><span class="c1"># Project README
+</span></span></span><span class="line"><span class="cl"><span class="err">└──</span><span class="w"> </span><span class="n">src</span><span class="w">             </span><span class="c1"># Project source code
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="use-jupyter-lab">Use Jupyter lab<a aria-hidden="true" class="anchor" hidden="" href="#use-jupyter-lab">#</a></h2>
@@ -690,7 +690,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">env_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"crafter"</span><span class="w"> </span><span class="c"># crafter | minigrid </span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"lang"</span><span class="w"> </span><span class="c"># lang | policy, lang is for language model training, policy is for policy training</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"lang"</span><span class="w"> </span><span class="c"># lang | policy, lang is for language model training, policy is for policy training</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>parameters.yml</code></p>
@@ -701,7 +701,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">env_name</span><span class="p">:</span><span class="w"> </span><span class="s2">"${globals:env_name}"</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"${globals:env_purpose}"</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">env_purpose</span><span class="p">:</span><span class="w"> </span><span class="s2">"${globals:env_purpose}"</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>catalog.yml</code></p>
@@ -727,7 +727,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="s2">"${globals:env_name}_debug_data#csv"</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="s2">"${globals:env_name}_debug_data#csv"</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">pandas.CSVDataset</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">filepath</span><span class="p">:</span><span class="w"> </span><span class="s2">"data/03_traj_instr_pairs/${globals:env_name}-nested/test_debug_data.csv"</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
@@ -933,7 +933,7 @@ ref: https://docs.kedro.org/en/stable/notebooks_and_ipython/kedro_and_notebooks.
 </article>
 </main>
 <footer class="footer">
-<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+<span>© 2026 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
 
     <span>
         Powered by

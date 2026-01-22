@@ -117,7 +117,7 @@ Note that Type=forking is important if you want to maintain the session, especia
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TTFTV1EWH5"></script>
 <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -474,7 +474,7 @@ Note that Type=forking is important if you want to maintain the session, especia
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Perform the curl request and capture the response</span>
 </span></span><span class="line"><span class="cl"><span class="nv">response</span><span class="o">=</span><span class="k">$(</span>curl http://10.102.5.4:8080/ping 2&gt;<span class="p">&amp;</span>1<span class="k">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># echo "Response ${response}"</span>
@@ -544,7 +544,7 @@ Note that Type=forking is important if you want to maintain the session, especia
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma" tabindex="0"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">sessname</span><span class="o">=</span><span class="s2">"server"</span>
+</span></span></span><span class="line"><span class="cl"><span class="nv">sessname</span><span class="o">=</span><span class="s2">"server"</span>
 </span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="nv">$USER</span> is running the script
 </span></span><span class="line"><span class="cl">/usr/bin/tmux new-session -d -s <span class="s2">"</span><span class="nv">$sessname</span><span class="s2">"</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="nv">$?</span> -eq <span class="m">1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
@@ -691,7 +691,7 @@ ExecStart=/usr/bin/dockerd <strong>–data-root /second_drive/docker</strong> -H
 </article>
 </main>
 <footer class="footer">
-<span>© 2025 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
+<span>© 2026 <a href="https://sino-huang.github.io/">Sukai Huang</a></span> · 
 
     <span>
         Powered by
