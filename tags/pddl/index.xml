@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Pddl on Sukai Huang</title>
+    <title>PDDL on Sukai Huang</title>
     <link>https://sino-huang.github.io/tags/pddl/</link>
-    <description>Recent content in Pddl on Sukai Huang</description>
+    <description>Recent content in PDDL on Sukai Huang</description>
     <image>
       <title>Sukai Huang</title>
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.154.2</generator>
+    <generator>Hugo -- 0.157.0</generator>
     <language>en</language>
     <lastBuildDate>Thu, 11 Jan 2024 19:54:29 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/pddl/index.xml" rel="self" type="application/rss+xml" />
