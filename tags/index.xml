@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.157.0</generator>
+    <generator>Hugo -- 0.160.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Apr 2025 17:17:26 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -441,7 +441,7 @@
       <description></description>
     </item>
     <item>
-      <title>PDDL</title>
+      <title>Pddl</title>
       <link>https://sino-huang.github.io/tags/pddl/</link>
       <pubDate>Thu, 11 Jan 2024 19:54:29 +1100</pubDate>
       <guid>https://sino-huang.github.io/tags/pddl/</guid>
