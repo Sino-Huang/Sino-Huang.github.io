@@ -42,13 +42,13 @@
     <lastmod>2025-09-01T16:04:04+10:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://sino-huang.github.io/zh/categories/"
+                hreflang="en"
+                href="https://sino-huang.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sino-huang.github.io/categories/"
+                hreflang="zh"
+                href="https://sino-huang.github.io/zh/categories/"
                 />
   </url><url>
     <loc>https://sino-huang.github.io/categories/research-idea/</loc>
@@ -61,13 +61,13 @@
     <lastmod>2025-09-01T16:04:04+10:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://sino-huang.github.io/zh/"
+                hreflang="en"
+                href="https://sino-huang.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sino-huang.github.io/"
+                hreflang="zh"
+                href="https://sino-huang.github.io/zh/"
                 />
   </url><url>
     <loc>https://sino-huang.github.io/tags/concept-erase/</loc>
@@ -92,13 +92,13 @@
     <lastmod>2025-04-02T17:17:26+11:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://sino-huang.github.io/zh/tags/"
+                hreflang="en"
+                href="https://sino-huang.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sino-huang.github.io/tags/"
+                hreflang="zh"
+                href="https://sino-huang.github.io/zh/tags/"
                 />
   </url><url>
     <loc>https://sino-huang.github.io/posts/awesome_life_long_rl_2025/</loc>
@@ -1011,13 +1011,13 @@
     <lastmod>2022-05-31T20:37:09+10:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://sino-huang.github.io/zh/biography/"
+                hreflang="en"
+                href="https://sino-huang.github.io/biography/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sino-huang.github.io/biography/"
+                hreflang="zh"
+                href="https://sino-huang.github.io/zh/biography/"
                 />
   </url><url>
     <loc>https://sino-huang.github.io/posts/deepmind-flamingo-a-visual-language-model-for-few-shot-learning-2022/</loc>
@@ -1237,13 +1237,13 @@
     <loc>https://sino-huang.github.io/series/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh"
-                href="https://sino-huang.github.io/zh/series/"
+                hreflang="en"
+                href="https://sino-huang.github.io/series/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://sino-huang.github.io/series/"
+                hreflang="zh"
+                href="https://sino-huang.github.io/zh/series/"
                 />
   </url>
 </urlset>
