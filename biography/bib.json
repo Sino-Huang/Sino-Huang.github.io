@@ -2,6 +2,49 @@
   {
     "author": [
       {
+        "family": "Huang",
+        "given": "Sukai"
+      },
+      {
+        "family": "Zhang",
+        "given": "Chenyuan"
+      },
+      {
+        "family": "Ke",
+        "given": "Fucai"
+      },
+      {
+        "family": "Cai",
+        "given": "Zhixi"
+      },
+      {
+        "family": "Haffari",
+        "given": "Gholamreza"
+      },
+      {
+        "family": "Qu",
+        "given": "Lizhen"
+      },
+      {
+        "family": "Rezatofighi",
+        "given": "Hamid"
+      }
+    ],
+    "container-title": "EMNLP",
+    "id": "huang2026minibehaviorgran",
+    "issued": {
+      "date-parts": [
+        [
+          2026
+        ]
+      ]
+    },
+    "title": "MiniBEHAVIOR-Gran: Revealing U-Shaped Effects of Instruction Granularity on Language-Guided Embodied Agents",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
         "family": "Rocamonde",
         "given": "Juan"
       },
