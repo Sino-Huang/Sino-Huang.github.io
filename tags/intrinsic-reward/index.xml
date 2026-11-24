@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2024 15:12:54 +1000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/intrinsic-reward/index.xml" rel="self" type="application/rss+xml" />
@@ -36,7 +36,15 @@
 &lt;p&gt;The work introduces Hierarchies of Reinforcement Models (HRMs) to enhance the abstraction power of existing models. Key contributions include:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;HRM Abstraction Power&lt;/strong&gt;: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs. It&amp;rsquo;s proven that any HRM can be converted into an equivalent flat HRM with identical behavior. However, the equivalent flat HRM can have significantly more states and edges, especially under specific conditions.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;HRM Abstraction Power&lt;/strong&gt;: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs. It&amp;rsquo;s proven that any HRM can be converted into an equivalent flat HRM with identical behavior. However, the equivalent flat HRM can have significantly more states and edges, especially under specific conditions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hierarchical Reinforcement Learning (HRL) Algorithm&lt;/strong&gt;: A novel HRL algorithm is proposed to leverage HRMs by treating each call as a subtask. Learning policies in HRMs align with desired criteria, offering flexibility across multiple time scales and a richer range of abstract events and durations. Hierarchies also promote modularity and reusability of RMs and policies. Empirical results demonstrate that utilizing a handcrafted HRM leads to faster convergence compared to an equivalent flat HRM.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Curriculum-Based Learning for HRMs&lt;/strong&gt;: A curriculum-based method is introduced to learn HRMs from traces given a set of composable tasks. This approach is essential due to the complexity of learning flat HRMs from scratch. By decomposing an RM into several simpler ones, learning becomes feasible, and previously learned RMs can efficiently explore the environment for traces in more complex tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Shanchuan Efficient N Robust Exploration Through Discriminative Ir 2023</title>

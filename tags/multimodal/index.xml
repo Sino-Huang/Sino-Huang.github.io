@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 28 Aug 2023 18:48:08 +1000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/multimodal/index.xml" rel="self" type="application/rss+xml" />
@@ -93,7 +93,15 @@
 &lt;p&gt;Existing method simply concatenates image region features (patch features) and text features as input to the model to be pre-trained and use self-attention to learn image-text semantic alignments in a brute force manner.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task.&lt;/p&gt;</description>
+&lt;p&gt;the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moreover, visual regions are often over-sampled, noisy and ambiguous, which makes the task even more challenging.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in this paper, they proposed a method that uses object tag detected in images as &lt;em&gt;anchor points&lt;/em&gt; to significantly ease the learning of alignments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Jiali_duan Multimodal Alignment Using Representation Codebook 2022</title>

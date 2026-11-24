@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html dir="auto" lang="zh">
-<head>
-<meta content="Hugo 0.165.0" name="generator"/><meta charset="utf-8"/>
+<head><meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <meta content="index, follow" name="robots"/>
@@ -108,13 +107,14 @@
   "@type": "Organization",
   "name": "Sukai Huang",
   "url": "https://sino-huang.github.io/zh/",
-  "description": "Sukai's academic blog - storing weekly reports and research paper reviews",
+  "description": "Sukai\u0026#39;s academic blog - storing weekly reports and research paper reviews",
   "logo": "https://sino-huang.github.io/favicon.ico",
   "sameAs": [
       "https://scholar.google.com.au/citations?hl=en\u0026user=f0ai9sMAAAAJ", "biography/", "https://github.com/Sino-Huang", "mailto:sukaih@student.unimelb.edu.au", "https://au.linkedin.com/in/sukai-huang-683368169"
   ]
 }
 </script>
+<meta content="Hugo 0.169.0" name="generator"/>
 </head>
 <body class="list" id="top">
 <script>
@@ -270,16 +270,20 @@
 <li><strong>HARNESS 项目（美国 DARPA 资助）｜异构自主机器人的神经符号规划</strong>
 <ul>
 <li>构建「LLM 任务理解 → 符号计划生成 → 强化学习控制」完整链路；</li>
-<li>系统研究指令粒度对智能体性能的影响，完成大规模评测分析。</li>
+<li>完成无人机（UAV）真机 VLA 感知-规划系统的集成与部署，并参与 HARNESS 工程验收实验；</li>
+<li>系统研究指令粒度对智能体性能的影响，并作为红队成员评测纯神经网络智能体的能力与局限。</li>
 </ul>
 </li>
-<li><strong>SEA-AI 项目（美国 ONR 资助）｜海上自主系统的世界模型与任务规划</strong>
+<li><strong>SEA-AI 项目（美国 ONR 资助）｜海事多智能体自主系统与监控</strong>
 <ul>
-<li>将三维场景抽象为紧凑的 2.5D 规划表示；</li>
-<li>在部分可观测条件下实现 D* Lite 路径规划与可视性区域搜索。</li>
+<li>设计并搭建分层多智能体系统，协同 LLM 任务规划、机动控制与共享上下文，覆盖报告核验、碰撞预警、异常巡检、侦察搜索四类任务；</li>
+<li>将三维场景抽象为 2.5D 符号世界模型，结合贝叶斯信念更新，支持部分可观测下的 D* Lite 导航、可视性区域搜索及证据驱动重规划；</li>
+<li>在仿真决策核心评测中（10 个合成场景、理想感知、无 LLM 调用），发现异常船舶报告 189/210，对比按报告顺序巡航基线的 93/210，提升 103%；</li>
+<li>集成 MiniZinc/PDDL 求解与计划校验，生成可执行状态图，实现优先级多任务调度、时限与可行性检查及执行前审批；</li>
+<li>开发操作员任务监控台，支持实时状态、证据溯源的文本/语音问答、人工干预与可审计任务记录。</li>
 </ul>
 </li>
-<li><strong>任务分析流水线：</strong> 将高层自然语言描述转换为结构化规划任务，使操作员由底层控制转为任务级监督。</li>
+<li><strong>学生联合指导：</strong> 在蒙纳士大学联合指导 2 名荣誉学士 / 硕士学生，课题为 PACE-Drone（结合 POMDP 规划与高斯过程偏好学习的无人机偏好感知持续探索）和 WALR（缓解 VLA 模型语言忽略问题的奖励设计）。</li>
 </ul>
 <h3 id="finvise-london机器学习工程师博士在读期间远程兼职202205--202311">FINVISE London｜机器学习工程师（博士在读期间远程兼职）｜2022.05 – 2023.11</h3>
 <ul>
@@ -291,7 +295,8 @@
 <h3 id="starvla-开源-vla-项目代码贡献者"><a href="https://github.com/starVLA">StarVLA</a> 开源 VLA 项目｜代码贡献者</h3>
 <ul>
 <li>针对 Qwen VLA 开源仓库 Issue #59 反馈的 Adapter 架构复现效果不达预期问题，定位并重构动作查询嵌入（Action Query Embedding）构造环节的隐蔽实现偏差；</li>
-<li>对齐 Qwen-OFT 官方参考逻辑，修复训练收敛异常。</li>
+<li>对齐 Qwen-OFT 官方参考逻辑，修复训练收敛异常；</li>
+<li>基于 Qwen3-VL-2B 骨干模型（冻结语言侧），在 LIBERO-All 上训练 50k 步，在 LIBERO-Goal 评测中取得 89.8% 端到端成功率，复现官方基线收敛趋势，并贡献可复现的训练启动脚本。</li>
 </ul>
 <h2 id="学术论文">学术论文</h2>
 <p>共 9 篇，均发表于国际会议或研讨会；其中<strong>独立第一作者 4 篇</strong>、<strong>共同第一作者 2 篇</strong>，<strong>CORE A* 级 7 篇</strong>。按作者贡献排序（第一作者 → 共同第一作者 → 合作作者）。</p>

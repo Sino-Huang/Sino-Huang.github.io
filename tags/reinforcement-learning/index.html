@@ -356,6 +356,8 @@ Title: Reward Poisoning Attacks on Offline Multi Agent Reinforcement Learning Au
 <div class="entry-content">
 <p>[TOC]
 Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards. Contribution we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include
+we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks – this framework focuses on optimizing the agent’s worst-case utility among the set of reward functions that are plausible candidates of the true reward function we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy we empirically demonstrate the effectiveness of our approach using numerical simulations to our knowledge, this is the first framework for studying this type of defenses against reward poisoning attacks that try to force a target policy at minimal cost
+it defines a novel optimisation objective to guarantee the lower bound of the performance of the defense agent under reward poisoning attacks.
 ...</p>
 </div>
 <footer class="entry-footer"><span title="2022-12-27 18:27:17 +1100 AEDT">December 27, 2022</span> · 2 min · 303 words · Sukai Huang</footer>
@@ -469,6 +471,7 @@ Title: No-Regret Reinforcement Learning With Heavy Tailed Rewards Author: Vincen
 <div class="entry-content">
 <p>[TOC]
 Title: Towards Closing the Sim to Real Gap in Collaborative Multi Robot Deep Reinforcement Learning Author: Wenshuai Zhao et. al. Publish Year: 2020 Review Date: Sun, Dec 25, 2022 Summary of paper Motivation we introduce the effect of sensing, calibration, and accuracy mismatches in distributed reinforcement learning we discuss on how both the different types of perturbations and how the number of agents experiencing those perturbations affect the collaborative learning effort Contribution This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors
+with the conclusion of this work, we set the initial point for future work on designing and developing methods to achieve robust reinforcement learning on the presence of real-world perturbation that might differ within a multi-robot system.
 ...</p>
 </div>
 <footer class="entry-footer"><span title="2022-12-25 16:54:11 +1100 AEDT">December 25, 2022</span> · 2 min · 365 words · Sukai Huang</footer>

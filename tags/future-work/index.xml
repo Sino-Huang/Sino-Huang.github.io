@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 26 Jan 2024 17:29:29 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/future-work/index.xml" rel="self" type="application/rss+xml" />
@@ -275,7 +275,9 @@
 &lt;p&gt;BERT adopts masked language modelling (MLM) for pre-training and is one of the most successful pre-training models.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Since BERT is all attention block and the positional embedding is the only info that care about the ordering, BERT neglects dependency among predicted tokens&lt;/p&gt;</description>
+&lt;p&gt;Since BERT is all attention block and the positional embedding is the only info that care about the ordering, BERT neglects dependency among predicted tokens&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Jiali_duan Multimodal Alignment Using Representation Codebook 2022</title>

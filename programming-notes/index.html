@@ -354,6 +354,11 @@ Title: Web Scrawler Using Selenium 2023 Review Date: Thu, Jun 22, 2023 Web scraw
 <div class="entry-content">
 <p>[TOC]
 Title: Python Module and Package Management 2023 url: https://www.youtube.com/watch?v=v6tALyc4C10 Python module common issue 1: python -m dir vs python dir python dir will use the dir as the PYTHONPATH as run __main__.py file. however, python -m dir will not use the dir as PYTHONPATH but rather it will search the local library. thus ModuleNotFoundError may appear Standard way of import when you want to create a module use absolute path -&gt; from moduledir/packagename import filename avoid using relative path e.g., from .xxx import yyy if within the same module, you can just use from xxx import yyy However, in a complicated project where there are too many modules. one workaround is that we still make it a module, but try to append folder path to the system path. 1 2 import os, sys sys.path.append(os.path.dirname(os.path.realpath(__file__))) always use it as the last resort. Solution: setup pyproject.toml and install it as a proper module python -m venv .venv
+pip install -U pip
+pip install -U setuptools
+pip install -r requirements.txt
+pyproject.toml should be outside of the code dir
+https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 ...</p>
 </div>
 <footer class="entry-footer"><span title="2023-05-28 11:56:47 +1000 AEST">May 28, 2023</span> · 5 min · 1024 words · Sukai Huang</footer>

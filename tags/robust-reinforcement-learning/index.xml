@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Tue, 27 Dec 2022 20:35:10 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/robust-reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
@@ -60,7 +60,21 @@
 &lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;</description>
+&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal&lt;/li&gt;
+&lt;li&gt;we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks &amp;ndash; this framework focuses on optimizing the agent&amp;rsquo;s worst-case utility among the set of reward functions that are plausible candidates of the true reward function&lt;/li&gt;
+&lt;li&gt;we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy&lt;/li&gt;
+&lt;li&gt;we empirically demonstrate the effectiveness of our approach using numerical simulations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;to our knowledge, this is the first framework for studying this type of defenses against reward poisoning attacks that try to force a target policy at minimal cost&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;it defines a novel optimisation objective to guarantee the lower bound of the performance of the defense agent under reward poisoning attacks.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Fri, 12 Apr 2024 12:23:29 +1000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/programming-notes/index.xml" rel="self" type="application/rss+xml" />
@@ -936,7 +936,24 @@
 &lt;h3 id=&#34;solution-setup-pyprojecttoml-and-install-it-as-a-proper-module&#34;&gt;Solution: setup &lt;code&gt;pyproject.toml&lt;/code&gt; and install it as a proper module&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;python -m venv .venv&lt;/code&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;code&gt;python -m venv .venv&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -U pip&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -U setuptools&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pyproject.toml&lt;/code&gt; should be outside of the code dir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html&#34;&gt;https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

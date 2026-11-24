@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 15 Mar 2023 21:09:32 +0800</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
@@ -340,7 +340,21 @@
 &lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;</description>
+&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal&lt;/li&gt;
+&lt;li&gt;we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks &amp;ndash; this framework focuses on optimizing the agent&amp;rsquo;s worst-case utility among the set of reward functions that are plausible candidates of the true reward function&lt;/li&gt;
+&lt;li&gt;we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy&lt;/li&gt;
+&lt;li&gt;we empirically demonstrate the effectiveness of our approach using numerical simulations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;to our knowledge, this is the first framework for studying this type of defenses against reward poisoning attacks that try to force a target policy at minimal cost&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;it defines a novel optimisation objective to guarantee the lower bound of the performance of the defense agent under reward poisoning attacks.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Amin_rakhsha Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments 2021</title>
@@ -537,7 +551,12 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors&lt;/p&gt;</description>
+&lt;p&gt;This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;with the conclusion of this work, &lt;strong&gt;we set the initial point for future work on designing and developing methods&lt;/strong&gt; to achieve robust reinforcement learning on the presence of real-world perturbation that might differ within a multi-robot system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Jan_corazza Reinforcement Learning With Stochastic Reward Machines 2022</title>
@@ -876,7 +895,12 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.&lt;/p&gt;</description>
+&lt;p&gt;Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;e.g., (Ray &amp;amp; RLLib &amp;lt;==&amp;gt; Redis/Plasma, Seed RL &amp;lt;==&amp;gt; GRPC, Catalyst &amp;lt;==&amp;gt; Mongo DB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     <item>
       <title>Dongwon Fire Burns Sword Cuts Commonsense Inductive Bias for Exploration in Text Based Games 2022</title>
@@ -1282,7 +1306,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
       <pubDate>Thu, 18 Nov 2021 12:08:53 +1100</pubDate>
       <guid>https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/</guid>
       <description>&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&#34;heading&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460&#34;&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;论文简析sac-soft-actor-critic-part-1180101290&#34;&gt;&lt;a href=&#34;https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460&#34;&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221032880&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221032880.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221054067&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221054067.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt=&#34;image-20211123221439305&#34; loading=&#34;lazy&#34; src=&#34;https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221439305.png&#34;&gt;&lt;/p&gt;

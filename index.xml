@@ -9,7 +9,7 @@
 <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
 <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
 </image>
-<generator>Hugo -- 0.165.0</generator>
+<generator>Hugo -- 0.169.0</generator>
 <language>en</language>
 <lastBuildDate>Mon, 01 Sep 2025 16:04:04 +1000</lastBuildDate>
 <atom:link href="https://sino-huang.github.io/index.xml" rel="self" type="application/rss+xml"/>
@@ -180,7 +180,9 @@ Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension o
 &lt;p&gt;The high level goal of the research is as follows&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[!IMPORTANT]&lt;/p&gt;
-&lt;p&gt;The construction of &lt;strong&gt;reusable&lt;/strong&gt; knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.&lt;/p&gt;</description>
+&lt;p&gt;The construction of &lt;strong&gt;reusable&lt;/strong&gt; knowledge (transfer learning) is a central concern in (deep) reinforcement learning, but the semantic and conceptual gap between the low level techniques that are used, and the high-level representations that are required, is too large.&lt;/p&gt;
+&lt;p&gt;For addressing this challenge, new ideas and methods are required that build on those of  planning, deep and reinforcement learning, logic and knowledge representation, and combinatorial optimization. Our approach is a form of &lt;strong&gt;top-down representation learning based on a clear separation and characterization of what is to be learned from how&lt;/strong&gt; (&lt;a href="https://www.youtube.com/watch?v=EZ2bb-ZiVsE&amp;amp;ab_channel=ICAPS"&gt;Video&lt;/a&gt;). The research methodology that is common in deep learning, which focuses mainly on relative performance is not good enough as it does not give us a crisp understanding. At the same time, we cannot afford not to use deep learning, namely, the optimization of parametric functions (neural nets) by means of stochastic gradient descent, because &lt;strong&gt;deep learning represents a very useful, versatile, and effective class of solvers.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
 </item>
 <item>
 <title>Model-Based Reparameterization Policy Gradient Methods: Theory and Practical Algorithms 2023</title>
@@ -465,7 +467,10 @@ with Explicit Logic Reasoning&lt;/a&gt;&lt;/li&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;blockquote&gt;
-&lt;p&gt;[!Note]&lt;/p&gt;</description>
+&lt;p&gt;[!Note]&lt;/p&gt;
+&lt;p&gt;please also check MVSplat360 openreview &lt;a href="https://openreview.net/forum?id=B0OWOkMwhz&amp;amp;referrer=%5Bthe%20profile%20of%20Bohan%20Zhuang%5D%28%2Fprofile%3Fid%3D~Bohan_Zhuang1%29"&gt;https://openreview.net/forum?id=B0OWOkMwhz&amp;referrer=%5Bthe%20profile%20of%20Bohan%20Zhuang%5D(%2Fprofile%3Fid%3D~Bohan_Zhuang1)&lt;/a&gt; in terms of how to do rebuttal.&lt;/p&gt;
+&lt;p&gt;Also check plangpt openreview &lt;a href="https://openreview.net/forum?id=yB8oafJ8bu"&gt;https://openreview.net/forum?id=yB8oafJ8bu&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
 </item>
 <item>
 <title>Damai Dai Deepseekmoe 2024</title>
@@ -816,7 +821,9 @@ the predicted and original condition values&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;fine-tuning tool: &lt;a href="https://github.com/pytorch/torchtune"&gt;torchtune&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;fine-tuning tool: &lt;a href="https://github.com/pytorch/torchtune"&gt;torchtune&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Thomas Carta Grounding Llms in Rl 2023</title>
@@ -859,7 +866,15 @@ the predicted and original condition values&lt;/li&gt;
 &lt;p&gt;The work introduces Hierarchies of Reinforcement Models (HRMs) to enhance the abstraction power of existing models. Key contributions include:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;HRM Abstraction Power&lt;/strong&gt;: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs. It&amp;rsquo;s proven that any HRM can be converted into an equivalent flat HRM with identical behavior. However, the equivalent flat HRM can have significantly more states and edges, especially under specific conditions.&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;HRM Abstraction Power&lt;/strong&gt;: HRMs allow for the creation of hierarchies of Reinforcement Models (RMs), enabling constituent RMs to call other RMs. It&amp;rsquo;s proven that any HRM can be converted into an equivalent flat HRM with identical behavior. However, the equivalent flat HRM can have significantly more states and edges, especially under specific conditions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Hierarchical Reinforcement Learning (HRL) Algorithm&lt;/strong&gt;: A novel HRL algorithm is proposed to leverage HRMs by treating each call as a subtask. Learning policies in HRMs align with desired criteria, offering flexibility across multiple time scales and a richer range of abstract events and durations. Hierarchies also promote modularity and reusability of RMs and policies. Empirical results demonstrate that utilizing a handcrafted HRM leads to faster convergence compared to an equivalent flat HRM.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Curriculum-Based Learning for HRMs&lt;/strong&gt;: A curriculum-based method is introduced to learn HRMs from traces given a set of composable tasks. This approach is essential due to the complexity of learning flat HRMs from scratch. By decomposing an RM into several simpler ones, learning becomes feasible, and previously learned RMs can efficiently explore the environment for traces in more complex tasks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
 </item>
 <item>
 <title>Shanchuan Efficient N Robust Exploration Through Discriminative Ir 2023</title>
@@ -1191,7 +1206,21 @@ with a discriminative forward model.&lt;/li&gt;
 &lt;h3 id="motivation"&gt;Motivation&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;using an LLM to generate the task PDDL from a natural language planning task descriptions is challenging. One of the primary reasons for failure is that the LLM often make errors generating information that must abide by the constraints specified in the domain knowledge or the task descriptions&lt;/p&gt;</description>
+&lt;p&gt;using an LLM to generate the task PDDL from a natural language planning task descriptions is challenging. One of the primary reasons for failure is that the LLM often make errors generating information that must abide by the constraints specified in the domain knowledge or the task descriptions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It could be that the crucial domain knowledge information is often implicitly embedded or hidden within the descriptions, making it difficult for the LLM to accurately generate the task PDDL.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;In fact, in this paper, the issue that LLM faced is that LLMs cannot handle the &amp;ldquo;fact enumeration and object enumeration&amp;rdquo; well. e.g., the description  &amp;ldquo;3 dispensers for 3 ingredients.&amp;rdquo; is more directly represented as the shortcut map(dispenser, dispenses,
+ingredient) rather than explicitly enumerating all the facts.&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;hr&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>How to Design Your Research Project Structure</title>
@@ -1396,7 +1425,32 @@ with a discriminative forward model.&lt;/li&gt;
 &lt;p&gt;The study investigates the impact of the length of reasoning steps in prompts on the reasoning abilities of Large Language Models (LLMs), focusing on Chain of Thought (CoT). Here are the key findings:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Effect of Reasoning Step Length&lt;/strong&gt;:&lt;/p&gt;</description>
+&lt;p&gt;&lt;strong&gt;Effect of Reasoning Step Length&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lengthening reasoning steps in prompts, even without introducing new information, notably improves LLMs&amp;rsquo; reasoning abilities across various datasets.&lt;/li&gt;
+&lt;li&gt;Conversely, shortening reasoning steps, while preserving key information, notably diminishes LLMs&amp;rsquo; reasoning abilities.&lt;/li&gt;
+&lt;li&gt;This suggests the critical role of reasoning step length in CoT prompts and offers practical insights for leveraging LLMs in complex problem-solving scenarios.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Impact of Rationales&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Surprisingly, even incorrect rationales can lead to favorable outcomes if they maintain the necessary length of inference.&lt;/li&gt;
+&lt;li&gt;This finding suggests that the length of reasoning steps may compensate for inaccuracies in rationales, emphasizing the importance of sequence length in CoT.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Task-Dependent Nature&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The advantages of increasing reasoning steps vary depending on the complexity of tasks:
+&lt;ul&gt;
+&lt;li&gt;Simpler tasks require fewer steps.&lt;/li&gt;
+&lt;li&gt;Complex tasks benefit significantly from longer inference sequences.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
 </item>
 <item>
 <title>Weak-To-Strong-Generalization: Eliciting Strong Capabilities with Weak Supervision</title>
@@ -2277,7 +2331,12 @@ with a discriminative forward model.&lt;/li&gt;
 &lt;h3 id="some-key-terms"&gt;Some key terms&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.&lt;/p&gt;</description>
+&lt;p&gt;By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A prominent use-case is the formal interaction with computer systems, such as program synthesis from natural language specifications, code completion, debugging, and generating documentation&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Haotian Liu Improved Baselines With Visual Instruction Tuning 2023</title>
@@ -2801,7 +2860,9 @@ with a discriminative forward model.&lt;/li&gt;
 &lt;p&gt;leverage a theory of linguistic meaning to build machines that think in more human-like ways.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;we frame linguistic meaning as a context-sensitive mapping from NL into a probabilistic language of thought (PLoT) &amp;ndash; a general-purpose &lt;strong&gt;symbolic substrate for probabilistic, generative world modelling&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;we frame linguistic meaning as a context-sensitive mapping from NL into a probabilistic language of thought (PLoT) &amp;ndash; a general-purpose &lt;strong&gt;symbolic substrate for probabilistic, generative world modelling&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Jianning_wang Boosting Language Models Reasoning With Chain of Knowledge Prompting 2023</title>
@@ -4232,7 +4293,24 @@ are currently impractical due to several factors, including limited correctness 
 &lt;h3 id="solution-setup-pyprojecttoml-and-install-it-as-a-proper-module"&gt;Solution: setup &lt;code&gt;pyproject.toml&lt;/code&gt; and install it as a proper module&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;python -m venv .venv&lt;/code&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;code&gt;python -m venv .venv&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -U pip&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -U setuptools&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pip install -r requirements.txt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pyproject.toml&lt;/code&gt; should be outside of the code dir&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html"&gt;https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Dharma_kc Neural Machine Translation for Code Generation 2023</title>
@@ -5105,7 +5183,18 @@ can be advantageous for sequence tagging tasks&lt;/li&gt;
 &lt;h3 id="contribution"&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;img alt="image-20230302175434615" loading="lazy" src="https://sino-huang.github.io/posts/ying_shen-learning-by-asking-for-embodied-visual-navigation-and-task-completion-2023/image-assets/image-20230302175434615.png"&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;img alt="image-20230302175434615" loading="lazy" src="https://sino-huang.github.io/posts/ying_shen-learning-by-asking-for-embodied-visual-navigation-and-task-completion-2023/image-assets/image-20230302175434615.png"&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;we introduce an Embodied Learning by asking (ELBA) model that learns when to ask and what to ask for vision-dialog navigation and task completion. in contrast to prior work, our proposed model can ask questions both in templates and free-form formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;we demonstrate the effectiveness of the proposed approach and show that ELBA outperforms baselines on vision-dialog task completion&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;we further verify that the ability to dynamically ask questions improves task performance in embodied household tasks&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Ernest_davis Benchmarks for Automated Commonsense Reasoning a Survey 2023</title>
@@ -5942,7 +6031,15 @@ visual in-context learning.
 &lt;h3 id="contribution"&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;we characterise the degree of vulnerability across tasks and training algorithm, for a subclass of adversarial example attacks in white-box and black-box settings.&lt;/p&gt;</description>
+&lt;p&gt;we characterise the degree of vulnerability across tasks and training algorithm, for a subclass of adversarial example attacks in white-box and black-box settings.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;regardless of the learned tasks or training algorithm, we observed a significant drop in performance, even with small adversarial perturbations that do not interfere with human perceptions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;main contribution is to characterise how the efffectiveness of adversarial examples is impacted by two factors: the deep RL algorithm used to learn the policy and whether the adversary has access to the policy network&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Yinglun_xu Efficient Reward Poisoning Attacks on Online Deep Reinforcement Learning 2022</title>
@@ -6038,7 +6135,21 @@ visual in-context learning.
 &lt;h3 id="contribution"&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;</description>
+&lt;p&gt;we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal&lt;/li&gt;
+&lt;li&gt;we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks &amp;ndash; this framework focuses on optimizing the agent&amp;rsquo;s worst-case utility among the set of reward functions that are plausible candidates of the true reward function&lt;/li&gt;
+&lt;li&gt;we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy&lt;/li&gt;
+&lt;li&gt;we empirically demonstrate the effectiveness of our approach using numerical simulations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;to our knowledge, this is the first framework for studying this type of defenses against reward poisoning attacks that try to force a target policy at minimal cost&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;it defines a novel optimisation objective to guarantee the lower bound of the performance of the defense agent under reward poisoning attacks.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Amin_rakhsha Reward Poisoning in Reinforcement Learning Attacks Against Unknown Learners in Unknown Environments 2021</title>
@@ -6260,7 +6371,12 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;h3 id="contribution"&gt;Contribution&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors&lt;/p&gt;</description>
+&lt;p&gt;This is, to the best of our knowledge, the first work exploring the limitation of PPO in multi-robot systems when considering that different robots might be exposed to different environment where their sensors or actuators have induced errors&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;with the conclusion of this work, &lt;strong&gt;we set the initial point for future work on designing and developing methods&lt;/strong&gt; to achieve robust reinforcement learning on the presence of real-world perturbation that might differ within a multi-robot system.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Jan_corazza Reinforcement Learning With Stochastic Reward Machines 2022</title>
@@ -6881,7 +6997,12 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.&lt;/p&gt;</description>
+&lt;p&gt;Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;e.g., (Ray &amp;amp; RLLib &amp;lt;==&amp;gt; Redis/Plasma, Seed RL &amp;lt;==&amp;gt; GRPC, Catalyst &amp;lt;==&amp;gt; Mongo DB)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
 </item>
 <item>
 <title>Jonathan_ho Video Diffusion Models 2022</title>
@@ -7013,7 +7134,15 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;p&gt;Existing method simply concatenates image region features (patch features) and text features as input to the model to be pre-trained and use self-attention to learn image-text semantic alignments in a brute force manner.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task.&lt;/p&gt;</description>
+&lt;p&gt;the lack of explicit alignment information between the image regions and the text poses alignment modelling a weakly-supervised learning task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Moreover, visual regions are often over-sampled, noisy and ambiguous, which makes the task even more challenging.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;in this paper, they proposed a method that uses object tag detected in images as &lt;em&gt;anchor points&lt;/em&gt; to significantly ease the learning of alignments.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Yung_sung_chuang Diffcse Difference Based Contrastive Learning for Sentence Embeddings 2022</title>
@@ -7084,7 +7213,9 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;p&gt;BERT adopts masked language modelling (MLM) for pre-training and is one of the most successful pre-training models.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Since BERT is all attention block and the positional embedding is the only info that care about the ordering, BERT neglects dependency among predicted tokens&lt;/p&gt;</description>
+&lt;p&gt;Since BERT is all attention block and the positional embedding is the only info that care about the ordering, BERT neglects dependency among predicted tokens&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
 </item>
 <item>
 <title>Sergios_karagiannakos Vision Language Models Towards Multimodal Dl 2022</title>
@@ -7695,7 +7826,21 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;train the mapping model (mapping from text query to a portion of product space) based on the user click behaviour (In the training dataset, the users queries about &amp;ldquo;Nike&amp;rdquo; and the they would click relevant Nike Product)&lt;/p&gt;</description>
+&lt;p&gt;train the mapping model (mapping from text query to a portion of product space) based on the user click behaviour (In the training dataset, the users queries about &amp;ldquo;Nike&amp;rdquo; and the they would click relevant Nike Product)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;This approach can be seen as a neural generalisation of model-theoretic semantics, where the ex-tension of “shoes” is not a discrete set of objects, but a region in the grounding space.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;train the functional composition model&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img alt="image-20220103221637240" loading="lazy" src="https://sino-huang.github.io/posts/federico_bianchi-language-in-a-search-box-grounding-language-learning-in-real-world-human-machine-interaction-2021/image-assets/image-20220103221637240.png"&gt;&lt;/li&gt;
+&lt;li&gt;(looks like) this compositional model is designed for solving zero-shot learning problems&lt;/li&gt;
+&lt;li&gt;this is a model that input two DeepSet embedding and output another DeepSet embedding&lt;/li&gt;
+&lt;li&gt;e.g., &amp;ldquo;Nike&amp;rdquo; + &amp;ldquo;Shoes&amp;rdquo; = &amp;ldquo;Nike Shoes&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
 </item>
 <item>
 <title>Lili_chen Decision Transformer Reinforcement Learning via Sequence Modeling 2021</title>
@@ -7921,7 +8066,7 @@ dle the heavy-tailed reward setting&lt;/li&gt;
 <pubDate>Thu, 18 Nov 2021 12:08:53 +1100</pubDate>
 <guid>https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/</guid>
 <description>&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id="heading"&gt;&lt;a href="https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460"&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="论文简析sac-soft-actor-critic-part-1180101290"&gt;&lt;a href="https://www.bilibili.com/video/BV1YK4y1T7b6?from=search&amp;amp;seid=13778340264869221460"&gt;[论文简析]SAC: Soft Actor-Critic Part 1[1801.01290]&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="image-20211123221032880" loading="lazy" src="https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221032880.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="image-20211123221054067" loading="lazy" src="https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221054067.png"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="image-20211123221439305" loading="lazy" src="https://sino-huang.github.io/posts/tuomas_haarnoja-soft-actor-critic-off-policy-maximum-entropy-deep-reinforcement-learning-with-a-stochastic-actor-2018-paper-review/image-assets/image-20211123221439305.png"&gt;&lt;/p&gt;

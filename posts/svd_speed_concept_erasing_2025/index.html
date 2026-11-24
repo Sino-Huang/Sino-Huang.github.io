@@ -273,7 +273,7 @@ Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension o
 <h1 class="post-title entry-hint-parent">
       SPEED: Scalable, Precise, and Efficient Concept Erasure for Diffusion Models
     </h1>
-<div class="post-meta"><span title="2025-04-02 17:17:26 +1100 AEDT">April 2, 2025</span> · 17 min · 3614 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/posts/svd_speed_concept_erasing_2025/index.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
+<div class="post-meta"><span title="2025-04-02 17:17:26 +1100 AEDT">April 2, 2025</span> · 18 min · 3614 words · Sukai Huang | <a href="mailto:sukaih@student.unimelb.edu.au/posts/svd_speed_concept_erasing_2025/index.md" rel="noopener noreferrer edit" target="_blank">Submit a report</a>
 </div>
 </header>
 <figure class="entry-cover">
@@ -353,7 +353,7 @@ Here, $ \mathbf{U} $ is an $ n \times k $ matrix, where $ n $ is the dimension o
 <li>
 <a aria-label="Goal of concept erase" href="#goal-of-concept-erase">Goal of concept erase</a></li>
 <li>
-<a aria-label="Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?" href="#why-does--delta-cdot-c_">Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</a></li>
+<a aria-label="Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?" href="#why-does--delta-cdot-c_0-ne-0--mean-that-the-weight-update-impacts--c_0-">Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</a></li>
 <li>
 <a aria-label="DPA" href="#dpa">DPA</a></li>
 <li>
@@ -691,7 +691,7 @@ Minimize the difference between what the model <strong>used to do with the ancho
 $$
 e_1 = | (W + \Delta) c_1 - W c^* |^2
 $$</p>
-<h3 id="why-does--delta-cdot-c_"><strong>Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</strong><a aria-hidden="true" class="anchor" hidden="" href="#why-does--delta-cdot-c_">#</a></h3>
+<h3 id="why-does--delta-cdot-c_0-ne-0--mean-that-the-weight-update-impacts--c_0-"><strong>Why does $ \Delta \cdot c_0 \ne 0 $ mean that the weight update impacts $ c_0 $?</strong><a aria-hidden="true" class="anchor" hidden="" href="#why-does--delta-cdot-c_0-ne-0--mean-that-the-weight-update-impacts--c_0-">#</a></h3>
 <p>This boils down to how <strong>linear transformations</strong> work in neural networks — especially in the <strong>cross-attention layers</strong> of diffusion models where these concepts live.</p>
 <p>Let’s walk through it clearly:</p>
 <hr/>

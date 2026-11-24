@@ -30,7 +30,12 @@ In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -
 
 
 
-Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc." name="description"/>
+Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.
+
+e.g., (Ray &amp; RLLib &lt;==&gt; Redis/Plasma, Seed RL &lt;==&gt; GRPC, Catalyst &lt;==&gt; Mongo DB)
+
+
+" name="description"/>
 <meta content="Sukai Huang" name="author"/>
 <link href="https://sino-huang.github.io/posts/alex_petrekno-sample-factory-asynchronous-rl-at-very-high-fps-2020/" rel="canonical"/>
 <meta content="IFgzhtDTVCjONQMwQsBfuf0ZyHdzUR5WFYzbWsf2Gf8" name="google-site-verification"/>
@@ -118,7 +123,8 @@ Existing high-throughput methods focus on distributed training, therefore introd
 <meta content="[TOC]
 Title: Sample Factory: Asynchronous Rl at Very High FPS Author: Alex Petrenko Publish Year: Oct, 2020 Review Date: Sun, Sep 25, 2022 Summary of paper Motivation Identifying performance bottlenecks
 RL involves three workloads:
-environment simulation inference backpropagation overall performance depends on the lowest workload In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -&gt; under-utilisation of the system resources. Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc." property="og:description"/>
+environment simulation inference backpropagation overall performance depends on the lowest workload In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -&gt; under-utilisation of the system resources. Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.
+e.g., (Ray &amp; RLLib &lt;==&gt; Redis/Plasma, Seed RL &lt;==&gt; GRPC, Catalyst &lt;==&gt; Mongo DB) " property="og:description"/>
 <meta content="en" property="og:locale"/>
 <meta content="article" property="og:type"/>
 <meta content="posts" property="article:section"/>
@@ -153,7 +159,12 @@ In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -
 
 
 
-Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc." name="twitter:description"/>
+Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.
+
+e.g., (Ray &amp; RLLib &lt;==&gt; Redis/Plasma, Seed RL &lt;==&gt; GRPC, Catalyst &lt;==&gt; Mongo DB)
+
+
+" name="twitter:description"/>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -180,7 +191,7 @@ Existing high-throughput methods focus on distributed training, therefore introd
   "@type": "BlogPosting",
   "headline": "Alex_petrekno Sample Factory Asynchronous Rl at Very High Fps 2020",
   "name": "Alex_petrekno Sample Factory Asynchronous Rl at Very High Fps 2020",
-  "description": "[TOC]\nTitle: Sample Factory: Asynchronous Rl at Very High FPS Author: Alex Petrenko Publish Year: Oct, 2020 Review Date: Sun, Sep 25, 2022 Summary of paper Motivation Identifying performance bottlenecks\nRL involves three workloads:\nenvironment simulation inference backpropagation overall performance depends on the lowest workload In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -\u0026gt; under-utilisation of the system resources. Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.\n",
+  "description": "[TOC]\nTitle: Sample Factory: Asynchronous Rl at Very High FPS Author: Alex Petrenko Publish Year: Oct, 2020 Review Date: Sun, Sep 25, 2022 Summary of paper Motivation Identifying performance bottlenecks\nRL involves three workloads:\nenvironment simulation inference backpropagation overall performance depends on the lowest workload In existing methods (A2C/PPO/IMPALA) the computational workloads are dependent -\u0026gt; under-utilisation of the system resources. Existing high-throughput methods focus on distributed training, therefore introducing a lot of overhead such as networking serialisation, etc.\ne.g., (Ray \u0026amp; RLLib \u0026lt;==\u0026gt; Redis/Plasma, Seed RL \u0026lt;==\u0026gt; GRPC, Catalyst \u0026lt;==\u0026gt; Mongo DB) ",
   "keywords": [
     "reinforcement learning"
   ],

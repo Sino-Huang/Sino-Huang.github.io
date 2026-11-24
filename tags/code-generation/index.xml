@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 Feb 2024 19:59:38 +1100</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/code-generation/index.xml" rel="self" type="application/rss+xml" />
@@ -88,7 +88,12 @@
 &lt;h3 id=&#34;some-key-terms&#34;&gt;Some key terms&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.&lt;/p&gt;</description>
+&lt;p&gt;By training on domain-specific datasets, LLM have proved effective more broadly on applications that require advanced natural language understanding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A prominent use-case is the formal interaction with computer systems, such as program synthesis from natural language specifications, code completion, debugging, and generating documentation&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Dharma_kc Neural Machine Translation for Code Generation 2023</title>

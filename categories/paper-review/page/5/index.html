@@ -483,6 +483,8 @@ Title: BackdooRL Backdoor Attack Against Competitive Reinforcement Learning 2021
 <div class="entry-content">
 <p>[TOC]
 Title: Adversarial Attacks on Neural Network Policies Author: Sandy Huang et. al. Publish Year: 8 Feb 2017 Review Date: Wed, Dec 28, 2022 Summary of paper Motivation in this work, we show adversarial attacks are also effective when targeting neural network policies in reinforcement learning. Specifically, we show existing adversarial example crafting techniques can be used to significantly degrade test-time performance of trained policies. Contribution we characterise the degree of vulnerability across tasks and training algorithm, for a subclass of adversarial example attacks in white-box and black-box settings.
+regardless of the learned tasks or training algorithm, we observed a significant drop in performance, even with small adversarial perturbations that do not interfere with human perceptions.
+main contribution is to characterise how the efffectiveness of adversarial examples is impacted by two factors: the deep RL algorithm used to learn the policy and whether the adversary has access to the policy network
 ...</p>
 </div>
 <footer class="entry-footer"><span title="2022-12-28 00:08:22 +1100 AEDT">December 28, 2022</span> · 2 min · 346 words · Sukai Huang</footer>
@@ -548,6 +550,8 @@ This approach only solve the attack perturbation that is not consistent. (i.e. n
 <div class="entry-content">
 <p>[TOC]
 Title: Defense Against Reward Poisoning Attacks in Reinforcement Learning Author: Kiarash Banihashem et. al. Publish Year: 20 Jun 2021 Review Date: Tue, Dec 27, 2022 Summary of paper Motivation our goal is to design agents that are robust against such attacks in terms of the worst-case utility w.r.t. the true unpoisoned rewards while computing their policies under the poisoned rewards. Contribution we formalise this reasoning and characterize the utility of our novel framework for designing defense policies. In summary, the key contributions include
+we formalise the problem of finding defense policies that are effective against reward poisoning attacks that minimally modify the original reward function to achieve their goal we introduce a novel optimisation framework for designing defense policies against reward poisoning attacks – this framework focuses on optimizing the agent’s worst-case utility among the set of reward functions that are plausible candidates of the true reward function we provide characterisation results that establish lower bounds on the performance of defense policies derived from our optimisation framework, and upper bounds on the suboptimality of these defense policies compared to the target policy we empirically demonstrate the effectiveness of our approach using numerical simulations to our knowledge, this is the first framework for studying this type of defenses against reward poisoning attacks that try to force a target policy at minimal cost
+it defines a novel optimisation objective to guarantee the lower bound of the performance of the defense agent under reward poisoning attacks.
 ...</p>
 </div>
 <footer class="entry-footer"><span title="2022-12-27 18:27:17 +1100 AEDT">December 27, 2022</span> · 2 min · 303 words · Sukai Huang</footer>

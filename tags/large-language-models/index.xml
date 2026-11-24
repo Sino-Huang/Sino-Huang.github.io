@@ -9,7 +9,7 @@
       <url>https://sino-huang.github.io/sukai_avatar.jpg</url>
       <link>https://sino-huang.github.io/sukai_avatar.jpg</link>
     </image>
-    <generator>Hugo -- 0.165.0</generator>
+    <generator>Hugo -- 0.169.0</generator>
     <language>en</language>
     <lastBuildDate>Sun, 02 Jul 2023 21:24:50 +1000</lastBuildDate>
     <atom:link href="https://sino-huang.github.io/tags/large-language-models/index.xml" rel="self" type="application/rss+xml" />
@@ -33,7 +33,9 @@
 &lt;p&gt;leverage a theory of linguistic meaning to build machines that think in more human-like ways.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;we frame linguistic meaning as a context-sensitive mapping from NL into a probabilistic language of thought (PLoT) &amp;ndash; a general-purpose &lt;strong&gt;symbolic substrate for probabilistic, generative world modelling&lt;/strong&gt;&lt;/p&gt;</description>
+&lt;p&gt;we frame linguistic meaning as a context-sensitive mapping from NL into a probabilistic language of thought (PLoT) &amp;ndash; a general-purpose &lt;strong&gt;symbolic substrate for probabilistic, generative world modelling&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Jianning_wang Boosting Language Models Reasoning With Chain of Knowledge Prompting 2023</title>
